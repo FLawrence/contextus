@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY loc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY aktloc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/location#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/physitem#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:loc="&loc;"
+ xmlns:omt="&omt;"
+ xmlns:omb="&omb;"
+ xmlns:aktloc="&aktloc;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>Physical Items Extension</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Physical Items Ontology</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) Physical Items has been designed to describe physical objects.</dc:description>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2006-04-05</dct:created>
+ <owl:versionInfo>0.1</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Classes -->
+
+<owl:Class rdf:ID="Art-Work">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents an item of art work</rdfs:comment>
+	<rdfs:label>Attire</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Astronomical">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents an astronomical object</rdfs:comment>
+	<rdfs:label>Attire</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Attire">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents an item of clothing</rdfs:comment>
+	<rdfs:label>Attire</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="BodyPart">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents a part of a biological organism</rdfs:comment>
+	<rdfs:label>Body Part</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Building">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<owl:equivalentClass rdf:resource="&aktloc;Building" />
+	<rdfs:comment>This class represents a building</rdfs:comment>
+	<rdfs:label>Building</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Chemical-Compond">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents a chemical compound</rdfs:comment>
+	<rdfs:label>Chemical Compound</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Consumables">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects which are intended to be eaten or drunk</rdfs:comment>
+	<rdfs:label>Consumables</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Craft">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<owl:equivalentClass rdf:resource="&loc;Vessel" />
+	<rdfs:comment>This class represents physical objects which can be used for transportantion</rdfs:comment>
+	<rdfs:label>Craft</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Document">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects which are documents</rdfs:comment>
+	<rdfs:label>Document</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Fossil">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects which is a fossil</rdfs:comment>
+	<rdfs:label>Fossil</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Furniture">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects which is an item of furniture</rdfs:comment>
+	<rdfs:label>Furniture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Geo">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects which is related to the earth/ground/landscape</rdfs:comment>
+	<rdfs:label>Geo-</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Monument">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects which is a monument</rdfs:comment>
+	<rdfs:label>Monument-</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Vegetation">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical object of vegetation</rdfs:comment>
+	<rdfs:label>Vegetation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Toy">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects intended for play</rdfs:comment>
+	<rdfs:label>Toy</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="AdultToy">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents physical objects intended for "play" between consenting adults</rdfs:comment>
+	<rdfs:label>"Toy"</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Weapon">
+	<rdfs:subClassOf rdf:resource="&ome;Physical-Item" />
+	<rdfs:comment>This class represents a weapon</rdfs:comment>
+	<rdfs:label>Weapon</rdfs:label>
+</owl:Class>
+
+<!-- Properties -->
+
+<owl:ObjectProperty rdf:ID="usually_worn_for">
+	<rdfs:domain rdf:resource="&base;Attire" />
+	<rdfs:range rdf:resource="&ome;Event"/>
+</owl:ObjectProperty>  
+
+<owl:ObjectProperty rdf:ID="usually_worn_by">
+	<rdfs:domain rdf:resource="&base;Attire" />
+	<rdfs:range>
+		<owl:Class>
+			<owl:unionOf rdf:parseType="Collection">
+				<owl:Class rdf:about="&omb;Group"/>
+				<owl:Class rdf:about="&omb;Being"/>
+			</owl:unionOf>
+		</owl:Class>
+	</rdfs:range>
+</owl:ObjectProperty>
+ 
+<owl:ObjectProperty rdf:ID="usually_used_for">
+	<rdfs:domain rdf:resource="&ome;Physical-Item" />
+	<rdfs:range rdf:resource="&ome;Event"/>
+</owl:ObjectProperty>  
+
+<owl:ObjectProperty rdf:ID="usually_used_by">
+	<rdfs:domain rdf:resource="&ome;Physical-Item" />
+	<rdfs:range>
+		<owl:Class>
+			<owl:unionOf rdf:parseType="Collection">
+				<owl:Class rdf:about="&omb;Group"/>
+				<owl:Class rdf:about="&omb;Being"/>
+			</owl:unionOf>
+		</owl:Class>
+	</rdfs:range>
+</owl:ObjectProperty>
+  
+ 
+
+</rdf:RDF>

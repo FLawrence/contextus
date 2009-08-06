@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/intro#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia </rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Introduction Events</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Introduction Classes -->
+
+<owl:Class rdf:ID="First-Meeting">
+  <rdfs:subClassOf rdf:resource="&ome;Introduction" />
+  <rdfs:comment>This class represents an event focused on the first meeting of two or more characters</rdfs:comment>
+  <rdfs:label>First Meeting</rdfs:label>
+</owl:Class>
+
+</rdf:RDF>

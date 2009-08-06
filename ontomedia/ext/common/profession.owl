@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY loc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+<!ENTITY omea "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/action#">
+<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/profession#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omea="&omea;"
+ xmlns:omt="&omt;"
+ xmlns:omb="&omb;"
+ xmlns:loc="&loc;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>Profession Extension</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Profession Ontology</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) Profession Extension has been designed to describe general profession categories.</dc:description>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2006-04-05</dct:created>
+ <owl:versionInfo>0.1</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Events -->
+
+<owl:Class rdf:ID="GainJob">
+  <rdfs:subClassOf rdf:resource="&ome;Gain" />
+  <rdfs:comment>This class represents a being gaining a job or prossesion</rdfs:comment>
+  <rdfs:label>Gain Job/Employment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="LoseJob">
+  <rdfs:subClassOf rdf:resource="&ome;Loss" />
+  <rdfs:comment>This class represents a being losing a job or profession</rdfs:comment>
+  <rdfs:label>Lose Job/Employment</rdfs:label>
+</owl:Class>
+
+<!-- Main Classes -->
+
+<owl:Class rdf:ID="Clerical">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents clerical professions</rdfs:comment>
+  <rdfs:label>Clerical</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Criminal">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on illegal activities</rdfs:comment>
+  <rdfs:label>Criminal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Domestic">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents domestic professions</rdfs:comment>
+  <rdfs:label>Domestic</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Education">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on educational activities</rdfs:comment>
+  <rdfs:label>Education</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Enforcement">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents enforcement professions</rdfs:comment>
+  <rdfs:label>Enforcement</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Entertainment">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on entertaining activities</rdfs:comment>
+  <rdfs:label>Entertainment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Governance">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions involved in government</rdfs:comment>
+  <rdfs:label>Governance</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Healthcare">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on healthcare activities</rdfs:comment>
+  <rdfs:label>Healthcare</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Information-Services">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on information related activities</rdfs:comment>
+  <rdfs:label>Information Services</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Manual">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents manual professions</rdfs:comment>
+  <rdfs:label>Manual</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Religious">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on religious activities</rdfs:comment>
+  <rdfs:label>Religious</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Rural">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents rural professions</rdfs:comment>
+  <rdfs:label>Rural</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Trade">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on trading activities</rdfs:comment>
+  <rdfs:label>Trade</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Unemployed">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents a lack of employment</rdfs:comment>
+  <rdfs:label>Unemployed</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Volunteer">
+  <rdfs:subClassOf rdf:resource="&omb;Profession" />
+  <rdfs:comment>This class represents professions based on volunteer activities</rdfs:comment>
+  <rdfs:label>Volunteer</rdfs:label>
+</owl:Class>
+
+<!-- Clerical -->
+
+<owl:Class rdf:ID="Management">
+  <rdfs:subClassOf rdf:resource="&base;Clerical" />
+  <rdfs:comment>This class represents professions based on management activities</rdfs:comment>
+  <rdfs:label>Manager</rdfs:label>
+</owl:Class>
+
+<!-- Education -->
+
+<owl:Class rdf:ID="Student">
+  <rdfs:subClassOf rdf:resource="&base;Education" />
+  <rdfs:comment>This class represents professions based on learning activities</rdfs:comment>
+  <rdfs:label>Student</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Teacher">
+  <rdfs:subClassOf rdf:resource="&base;Education" />
+  <rdfs:comment>This class represents professions based on teaching activities</rdfs:comment>
+  <rdfs:label>Teacher</rdfs:label>
+</owl:Class>
+
+<!-- Enforcement -->
+
+<owl:Class rdf:ID="Law-Enforcement">
+  <rdfs:subClassOf rdf:resource="&base;Enforcement" />
+  <rdfs:comment>This class represents professions based on enforcing the legal code of the region</rdfs:comment>
+  <rdfs:label>Law Enforcement</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="RegionalCops">
+  <rdfs:subClassOf rdf:resource="&base;Law-Enforcement" />
+  <rdfs:comment>This class represents professions based on enforcing the legal code of a country at a regional level</rdfs:comment>
+  <rdfs:label>Regional Law Enforcement</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="NationalCops">
+  <rdfs:subClassOf rdf:resource="&base;Law-Enforcement" />
+  <rdfs:comment>This class represents professions based on enforcing the legal code of a country at a national level</rdfs:comment>
+  <rdfs:label>National Law Enforcement</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="InternationalCops">
+  <rdfs:subClassOf rdf:resource="&base;Law-Enforcement" />
+  <rdfs:comment>This class represents professions based on enforcing international legal codes or legal codes at an international level</rdfs:comment>
+  <rdfs:label>International Law Enforcement</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Military">
+  <rdfs:subClassOf rdf:resource="&base;Enforcement" />
+  <rdfs:comment>This class represents professions based on military activities</rdfs:comment>
+  <rdfs:label>Military</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Regular-Military">
+  <rdfs:subClassOf rdf:resource="&base;Military" />
+  <rdfs:comment>This class represents professions based within the regular military</rdfs:comment>
+  <rdfs:label>Regular Military</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Paramilitary">
+  <rdfs:subClassOf rdf:resource="&base;Military" />
+  <rdfs:comment>This class represents professions based on paramilitary activities</rdfs:comment>
+  <rdfs:label>Paramilitary</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Special-Services">
+  <rdfs:subClassOf rdf:resource="&base;Military" />
+  <rdfs:comment>This class represents professions based on more irregular or unusual military activities</rdfs:comment>
+  <rdfs:label>Special Services</rdfs:label>
+</owl:Class>
+
+<!-- Entertainment -->
+
+<owl:Class rdf:ID="Acting">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on acting</rdfs:comment>
+  <rdfs:label>Acting</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="VoiceActing">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on voice acting</rdfs:comment>
+  <rdfs:label>Voice Acting</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Artist">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions relating to the creation of works of art</rdfs:comment>
+  <rdfs:label>Artist</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Backstage-Crew">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on the backstage/behind the scenes professions</rdfs:comment>
+  <rdfs:label>Backstage Crew</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Dancer">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on dancing</rdfs:comment>
+  <rdfs:label>Dancer</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Musician">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on performing music with a instrament</rdfs:comment>
+  <rdfs:label>Musician</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Composer">
+  <rdfs:subClassOf rdf:resource="&base;Musician" />
+  <rdfs:comment>This class represents professions based on the composition of music</rdfs:comment>
+  <rdfs:label>Composer</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Singer">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on performing music with the voice</rdfs:comment>
+  <rdfs:label>Singer</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Writer">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on writing text</rdfs:comment>
+  <rdfs:label>Writer</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Poet">
+  <rdfs:subClassOf rdf:resource="&base;Entertainment" />
+  <rdfs:comment>This class represents professions based on writing poetry</rdfs:comment>
+  <rdfs:label>Poet</rdfs:label>
+</owl:Class>
+
+<!-- Governance -->
+
+<owl:Class rdf:ID="Legislature">
+  <rdfs:subClassOf rdf:resource="&base;Governance" />
+  <rdfs:comment>This class represents professions based on legislating activities</rdfs:comment>
+  <rdfs:label>Legislature</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Nobility">
+  <rdfs:subClassOf rdf:resource="&base;Governance" />
+  <rdfs:comment>This class represents the profession involving being part of the noble class</rdfs:comment>
+  <rdfs:label>Nobility</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Ruler">
+  <rdfs:subClassOf rdf:resource="&base;Governance" />
+  <rdfs:comment>This class represents professions based on ruling</rdfs:comment>
+  <rdfs:label>Ruler</rdfs:label>
+</owl:Class>
+
+<!-- Healthcare -->
+
+<owl:Class rdf:ID="Doctor">
+  <rdfs:subClassOf rdf:resource="&base;Healthcare" />
+  <rdfs:comment>This class represents professions of doctor</rdfs:comment>
+  <rdfs:label>Doctor</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Nurse">
+  <rdfs:subClassOf rdf:resource="&base;Healthcare" />
+  <rdfs:comment>This class represents the nursing profession</rdfs:comment>
+  <rdfs:label>Nurse</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Midwife">
+  <rdfs:subClassOf rdf:resource="&base;Healthcare" />
+  <rdfs:comment>This class represents the midwifery professions</rdfs:comment>
+  <rdfs:label>Midwife</rdfs:label>
+</owl:Class>
+
+<!-- Information Services -->
+
+<owl:Class rdf:ID="Archivist">
+  <rdfs:subClassOf rdf:resource="&base;Information-Services" />
+  <rdfs:comment>This class represents professions relating to the archiving and presevation of information</rdfs:comment>
+  <rdfs:label>Archivist</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Information-Gatherer">
+  <rdfs:subClassOf rdf:resource="&base;Information-Services" />
+  <rdfs:comment>This class represents professions relating to the gathering of information</rdfs:comment>
+  <rdfs:label>Information Gatherer</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Intelligencer">
+  <rdfs:subClassOf rdf:resource="&base;Information-Gatherer" />
+  <rdfs:comment>This class represents professions relating to the illicit gathering and processing of information i.e. spy</rdfs:comment>
+  <rdfs:label>Intelligencer</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Researcher">
+  <rdfs:subClassOf rdf:resource="&base;Information-Gatherer" />
+  <rdfs:comment>This class represents professions relating to research</rdfs:comment>
+  <rdfs:label>Researcher</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Torturer">
+  <rdfs:subClassOf rdf:resource="&base;Information-Gatherer" />
+  <rdfs:comment>This class represents professions relating to the gathering of informaton through "cruel and unusual" coercion</rdfs:comment>
+  <rdfs:label>Torturer</rdfs:label>
+</owl:Class>
+
+<!-- Manual -->
+
+<owl:Class rdf:ID="Skilled">
+  <rdfs:subClassOf rdf:resource="&base;Manual" />
+  <rdfs:comment>This class represents professions relating to skilled manual labour</rdfs:comment>
+  <rdfs:label>Manual (Skilled)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Unskilled">
+  <rdfs:subClassOf rdf:resource="&base;Manual" />
+  <rdfs:comment>This class represents professions relating to unskilled manual labour</rdfs:comment>
+  <rdfs:label>Manual (Unskilled)</rdfs:label>
+</owl:Class>
+
+  <!-- Religious -->
+
+<owl:Class rdf:ID="Martyr">
+  <rdfs:subClassOf rdf:resource="&base;Religious" />
+  <rdfs:comment>This class represents professions relating to martyrdom</rdfs:comment>
+  <rdfs:label>Martyr</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Saint">
+  <rdfs:subClassOf rdf:resource="&base;Religious" />
+  <rdfs:comment>This class represents professions relating to sainthood</rdfs:comment>
+  <rdfs:label>Saint</rdfs:label>
+</owl:Class>
+
+<!-- Medical Properties -->
+
+  <owl:ObjectProperty rdf:ID="specialisation">
+    <rdfs:label>Subject</rdfs:label>
+    <rdfs:comment>This property specifies a subject</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Healthcare"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&omb;Mental-Illness"/>
+	    <owl:Class rdf:about="&omb;Physical-Illness"/>
+	    <owl:Class rdf:about="&omb;Physical-Injury"/>
+	    <owl:Class rdf:about="&omb;Emotional-Crisis"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range> 
+  </owl:ObjectProperty> 
+
+<!-- Educational Properties -->
+
+  <owl:ObjectProperty rdf:ID="subject">
+    <rdfs:label>Subject</rdfs:label>
+    <rdfs:comment>This property specifies a subject</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Education"/>
+    <rdfs:range rdf:resource="&ome;Expression"/>
+  </owl:ObjectProperty> 
+
+
+<!-- Trade -->
+
+  <owl:ObjectProperty rdf:ID="product">
+    <rdfs:label>Product</rdfs:label>
+    <rdfs:comment>This property specifies a product</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Trade"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&omb;Character"/>
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&loc;Space"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range> 
+  </owl:ObjectProperty>    
+
+</rdf:RDF>

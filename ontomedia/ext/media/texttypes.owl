@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf [
+<!ENTITY base	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/texttype#">
+<!ENTITY xsd	"http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf	"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs	"http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY dc	"http://purl.org/dc/elements/1.1/">
+<!ENTITY dct	"http://purl.org/dc/terms/">
+<!ENTITY owl	"http://www.w3.org/2002/07/owl#">
+<!ENTITY omti	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/text#">
+]>
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:xsd="&xsd;"
+	 xml:base="&base;"
+	 xmlns:owl="&owl;"
+	 xmlns:dc="&dc;"
+	 xmlns:omti="&omti;"
+	 xmlns:dct="&dct;">
+
+<!-- Classes -->
+
+<owl:Class rdf:ID="Fiction">
+  <rdfs:subClassOf rdf:resource="&omti;TextItem" />
+  <rdfs:comment>This class represents written fiction</rdfs:comment>
+  <rdfs:label>Fiction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Non-Fiction">
+  <rdfs:subClassOf rdf:resource="&omti;TextItem" />
+  <rdfs:comment>This class represents written non-fiction</rdfs:comment>
+  <rdfs:label>Non-Fiction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Essay">
+  <rdfs:subClassOf rdf:resource="#Non-Fiction" />
+  <rdfs:comment>This class represents an essay</rdfs:comment>
+  <rdfs:label>Essay</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Review">
+  <rdfs:subClassOf rdf:resource="#Essay" />
+  <rdfs:comment>This class represents a review</rdfs:comment>
+  <rdfs:label>Review</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Discussion">
+  <rdfs:subClassOf rdf:resource="#Essay" />
+  <rdfs:comment>This class represents a discussion piece</rdfs:comment>
+  <rdfs:label>Discussion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Drabble">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a fictional text item of 100 words</rdfs:comment>
+  <rdfs:label>Drabble (100 words)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="DoubleDrabble">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a fictional text item of 200 words</rdfs:comment>
+  <rdfs:label>Double Drabble (200 words)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Flash">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a fictional text item of under 500 words</rdfs:comment>
+  <rdfs:label>Flash Story (under 500 words)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Short">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a fictional text item of 500 - 15,000 words</rdfs:comment>
+  <rdfs:label>Short Story (500-15,000 words)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Novella">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a fictional text item of 15,000 - 40,000 words</rdfs:comment>
+  <rdfs:label>Novella (15,000-40,000 words)</rdfs:label>
+</owl:Class>
+	
+<owl:Class rdf:ID="Novel">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a fictional text item of 40,000 - 120,000 words</rdfs:comment>
+  <rdfs:label>Novel (40,000-120,000 words)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Epic">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a fictional text item of over 120,000 words</rdfs:comment>
+  <rdfs:label>Epic (>120,000 words)</rdfs:label>
+</owl:Class>	
+
+<owl:Class rdf:ID="Script">
+  <rdfs:subClassOf rdf:resource="#Fiction" />
+  <rdfs:comment>This class represents a script</rdfs:comment>
+  <rdfs:label>Script</rdfs:label>
+</owl:Class>	
+</rdf:RDF>

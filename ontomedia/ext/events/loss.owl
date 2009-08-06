@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/loss#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Knowledge Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Knowledge Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+ <owl:imports rdf:resource="http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression"/>
+</owl:Ontology>
+
+<!-- Loss Classes -->
+
+<!-- 
+<owl:Class rdf:ID="LostAbstractItem">
+  <rdfs:subClassOf rdf:resource="&ome;Loss" />
+  <rdfs:comment>This class represents an abstract item being lost</rdfs:comment>
+  <rdfs:label>Lose Abstract Item</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="LostBond">
+  <rdfs:subClassOf rdf:resource="&base;AbstractItem" />
+  <rdfs:comment>This class represents a bond being lost</rdfs:comment>
+  <rdfs:label>Lose Bond</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="LostTrait">
+  <rdfs:subClassOf rdf:resource="&base;AbstractItem" />
+  <rdfs:comment>This class represents a trait being lost</rdfs:comment>
+  <rdfs:label>Lose Trait</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="LostPhysicalItem">
+  <rdfs:subClassOf rdf:resource="&ome;Loss" />
+  <rdfs:comment>This class represents an physical item being lost</rdfs:comment>
+  <rdfs:label>Lose Physical Item</rdfs:label>
+</owl:Class>
+
+-->
+
+<owl:Class rdf:ID="Betrayal">
+  <rdfs:subClassOf rdf:resource="&ome;Loss" />
+  <rdfs:comment>This class represents an act of betrayal</rdfs:comment>
+  <rdfs:label>Betrayal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Destruction">
+  <rdfs:subClassOf rdf:resource="&ome;Loss" />
+  <rdfs:comment>This class represents an act of destruction</rdfs:comment>
+  <rdfs:label>Destruction</rdfs:label>
+</owl:Class>
+
+</rdf:RDF>

@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omm "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/trait#">
+<!ENTITY bei "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/fact/being#">
+<!ENTITY spc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/detail/jobs#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omm="&omm;"
+ xmlns:omt="&omt;"
+ xmlns:bei="&bei;"
+ xmlns:spc="&spc;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Profession Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Profession Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+ <owl:imports rdf:resource="http://ontomedia.ecs.soton.ac.uk/ontologies/ext/fact/being"/>
+</owl:Ontology>
+
+<!-- Profession Areas -->
+
+<owl:Class rdf:ID="Healthcare">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents the healthcare profession</rdfs:comment>
+  <rdfs:label>Healthcare</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Religion">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents religious professions</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Criminal">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents the criminal professions</rdfs:comment>
+  <rdfs:label>Criminal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Manual">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents manual profession</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Clerical">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents clerical profession</rdfs:comment>
+  <rdfs:label>Clerical</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Unemployed">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents unemployment</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Education">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents professions related to education</rdfs:comment>
+  <rdfs:label>Criminal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Volunteer">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents volunteers</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Information-Services">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents information related profession</rdfs:comment>
+  <rdfs:label>Healthcare</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Enforcement">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents religious professions</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Domestic">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents the criminal professions</rdfs:comment>
+  <rdfs:label>Criminal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Rural">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents manual profession</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Trade">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents clerical profession</rdfs:comment>
+  <rdfs:label>Clerical</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Entertainment">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents unemployment</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Governance">
+  <rdfs:subClassOf rdf:resource="&bei;Profession" />
+  <rdfs:comment>This class represents professions related to education</rdfs:comment>
+  <rdfs:label>Criminal</rdfs:label>
+</owl:Class>
+
+<!-- Medical Properties -->
+
+  <owl:ObjectProperty rdf:ID="specialisation">
+    <rdfs:label>Subject</rdfs:label>
+    <rdfs:comment rdf:datatype="&xsd;string">This property specifies a subject</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Healthcare"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&bei;Mental-Illness"/>
+	    <owl:Class rdf:about="&bei;Physical-Illness"/>
+	    <owl:Class rdf:about="&bei;Physical-Injury"/>
+	    <owl:Class rdf:about="&bei;Emotional-Crisis"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range> 
+  </owl:ObjectProperty> 
+
+<!-- Educational Properties -->
+
+  <owl:ObjectProperty rdf:ID="subject">
+    <rdfs:label>Subject</rdfs:label>
+    <rdfs:comment rdf:datatype="&xsd;string">This property specifies a subject</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Education"/>
+    <rdfs:range rdf:resource="&ome;Expression"/>
+  </owl:ObjectProperty> 
+
+<!-- Trade -->
+
+  <owl:ObjectProperty rdf:ID="product">
+    <rdfs:label>Product</rdfs:label>
+    <rdfs:comment rdf:datatype="&xsd;string">This property specifies a product</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Trade"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&bei;Character"/>
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&spc;Space"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range> 
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="product-type">
+    <rdfs:label>Product</rdfs:label>
+    <rdfs:comment rdf:datatype="&xsd;string">This property specifies a product</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Trade"/>
+    <rdfs:range> 
+    <owl:Restriction>
+    <owl:onProperty rdf:resource="&rdf;hasParent" />
+    <owl:allValuesFrom>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&bei;Character"/>
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&spc;Space"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </owl:allValuesFrom>
+    </owl:Restriction>
+    </rdfs:range>  
+  </owl:ObjectProperty> 
+
+</rdf:RDF>

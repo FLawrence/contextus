@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY loc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+<!ENTITY omea "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/action#">
+<!ENTITY omz "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/zoology#">
+<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/critters#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omea="&omea;"
+ xmlns:omt="&omt;"
+  xmlns:omz="&omz;"
+ xmlns:omb="&omb;"
+ xmlns:loc="&loc;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>Creatures and Monsters Extension</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Creatures and Monsters Ontology</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe creatures, monsters and beasts.</dc:description>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2006-04-05</dct:created>
+ <owl:versionInfo>0.1</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Main Classes -->
+
+<owl:Class rdf:ID="Biological">
+  <rdfs:subClassOf rdf:resource="&omt;Species" />
+  <rdfs:comment>This class represents a biologically reproduced species</rdfs:comment>
+  <rdfs:label>Biological</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Artificial">
+  <rdfs:subClassOf rdf:resource="&omt;Species" />
+  <rdfs:comment>This class represents an artificially created species</rdfs:comment>
+  <rdfs:label>Artificial</rdfs:label>
+</owl:Class>
+
+<!-- Artificial -->
+
+<owl:Class rdf:ID="Android">
+  <rdfs:subClassOf rdf:resource="&base;Artificial" />
+  <rdfs:comment>This class represents a humanoid robot/automaton</rdfs:comment>
+  <rdfs:label>Android</rdfs:label>
+</owl:Class>
+
+<!-- Biological -->
+
+<owl:Class rdf:ID="Bestial">
+  <rdfs:subClassOf rdf:resource="&base;Biological" />
+  <rdfs:comment>This class represents species with purely bestial form</rdfs:comment>
+  <rdfs:label>Bestial</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Humanoid">
+  <rdfs:subClassOf rdf:resource="&base;Biological" />
+  <rdfs:comment>This class represents species with purely humanoid form</rdfs:comment>
+  <rdfs:label>Humanoid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Hybrid">
+  <rdfs:subClassOf rdf:resource="&base;Biological" />
+  <rdfs:comment>This class represents species with a hybrid or variable form</rdfs:comment>
+  <rdfs:label>Hybrid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Vegetative">
+  <rdfs:subClassOf rdf:resource="&base;Biological" />
+  <rdfs:comment>This class represents species with a vegetatation-based form</rdfs:comment>
+  <rdfs:label>Vegetative</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Cellular">
+  <rdfs:subClassOf rdf:resource="&omcm;Biological" />
+  <rdfs:comment>This class represents species with an cellular form</rdfs:comment>
+  <rdfs:label>Cellular</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Inanima">
+  <rdfs:subClassOf rdf:resource="&omcm;Biological" />
+  <rdfs:comment>This class represents species with an form resembling an inanimate object</rdfs:comment>
+  <rdfs:label>Inanima</rdfs:label>
+</owl:Class>
+
+<!-- Bestial -->
+
+<!-- Now linked to zoology classes -->
+
+<owl:Class rdf:ID="Avian">
+  <rdfs:subClassOf rdf:resource="&base;Bestial" />
+  <owl:equivalentClass rdf:resource="&omz;Avian"/>
+  <rdfs:comment>This class represents species with an avian form</rdfs:comment>
+  <rdfs:label>Avian</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Equine">
+  <rdfs:subClassOf rdf:resource="&base;Bestial" />
+  <owl:equivalentClass rdf:resource="&omz;Equine"/>
+  <rdfs:comment>This class represents species with an equine form</rdfs:comment>
+  <rdfs:label>Equine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Serpentine">
+  <rdfs:subClassOf rdf:resource="&base;Bestial" />
+  <owl:equivalentClass rdf:resource="&omz;Serpentine"/>
+  <rdfs:comment>This class represents species with an serpentine form</rdfs:comment>
+  <rdfs:label>Serpentine</rdfs:label>
+</owl:Class>
+
+
+<!-- Humanoid -->
+
+<owl:Class rdf:ID="Dwarven">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents dwarven species</rdfs:comment>
+  <rdfs:label>Dwarven</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Elven">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents elven species</rdfs:comment>
+  <rdfs:label>Elven</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="DarkElven">
+  <rdfs:subClassOf rdf:resource="&base;Elven" />
+  <rdfs:comment>This class represents dark elven species</rdfs:comment>
+  <rdfs:label>Dark Elven</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Faerie">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents faerie species</rdfs:comment>
+  <rdfs:label>Faerie</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Giant">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents giant species</rdfs:comment>
+  <rdfs:label>Giant</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Hobbit">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents hobbit species</rdfs:comment>
+  <rdfs:label>Hobbit</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Nymph">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents nymph species</rdfs:comment>
+  <rdfs:label>Nymph</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Orc">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents orc species</rdfs:comment>
+  <rdfs:label>Orc</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Troll">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents troll species</rdfs:comment>
+  <rdfs:label>Troll</rdfs:label>
+</owl:Class>
+
+<!-- Hybrid -->
+
+<owl:Class rdf:ID="BestialHybrid">
+  <rdfs:subClassOf rdf:resource="&base;Hybrid" />
+  <rdfs:comment>This class represents hybrid of bestial species</rdfs:comment>
+  <rdfs:label>Bestial Hybrid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="HumanHeadedHybrid">
+  <rdfs:subClassOf rdf:resource="&base;Hybrid" />
+  <rdfs:comment>This class represents hybrid of bestial species but with a humanoid head</rdfs:comment>
+  <rdfs:label>Human-Headed Hybrid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="HumanoidHybrid">
+  <rdfs:subClassOf rdf:resource="&base;Hybrid" />
+  <rdfs:comment>This class represents hybrid of humanoid species</rdfs:comment>
+  <rdfs:label>Humanoid Hybrid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="HumanoidBestialHybrid">
+  <rdfs:subClassOf rdf:resource="&base;Hybrid" />
+  <rdfs:comment>This class represents hybrid of bestial and humanoid species</rdfs:comment>
+  <rdfs:label>Human-Bestial Hybrid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="HumanoidVeggieHybrid">
+  <rdfs:subClassOf rdf:resource="&base;Hybrid" />
+  <rdfs:comment>This class represents hybrid of humanoid and vegitatative species</rdfs:comment>
+  <rdfs:label>Human-Vegitation Hybrid</rdfs:label>
+</owl:Class>
+
+<!-- SPECIFIC CLASSES -->
+
+<!-- Avian -->
+
+<owl:Class rdf:ID="Phoenix">
+  <rdfs:subClassOf rdf:resource="&base;Avian" />
+  <rdfs:comment>This class represents phoenix species</rdfs:comment>
+  <rdfs:label>Phoenix</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Roc">
+  <rdfs:subClassOf rdf:resource="&base;Avian" />
+  <rdfs:comment>This class represents roc species</rdfs:comment>
+  <rdfs:label>Roc</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Thunderbird">
+  <rdfs:subClassOf rdf:resource="&base;Avian" />
+  <rdfs:comment>This class represents thunderbird species</rdfs:comment>
+  <rdfs:label>Thunderbird</rdfs:label>
+</owl:Class>
+
+<!-- Equine -->
+
+<owl:Class rdf:ID="Pegasii">
+  <rdfs:subClassOf rdf:resource="&base;Equine" />
+  <rdfs:comment>This class represents winged/flying equine species</rdfs:comment>
+  <rdfs:label>Pegasii</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Unicorn">
+  <rdfs:subClassOf rdf:resource="&base;Equine" />
+  <rdfs:comment>This class represents single horned equine species</rdfs:comment>
+  <rdfs:label>Unicorn</rdfs:label>
+</owl:Class>
+
+<!-- Serpentine -->
+
+<owl:Class rdf:ID="Dragon">
+  <rdfs:subClassOf rdf:resource="&base;Serpentine" />
+  <rdfs:comment>This class represents draconian species</rdfs:comment>
+  <rdfs:label>Dragon</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Wyrm">
+  <rdfs:subClassOf rdf:resource="&base;Serpentine" />
+  <rdfs:comment>This class represents wyrm species</rdfs:comment>
+  <rdfs:label>Wyrm</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Hydra">
+  <rdfs:subClassOf rdf:resource="&base;Serpentine" />
+  <rdfs:comment>This class represents water-based, multi-headed serpentine species</rdfs:comment>
+  <rdfs:label>Dragon</rdfs:label>
+</owl:Class>
+
+<!-- Elven -->
+
+<owl:Class rdf:ID="Drow">
+  <rdfs:subClassOf rdf:resource="&base;DarkElven" />
+  <rdfs:comment>This class represents drow species</rdfs:comment>
+  <rdfs:label>Drow</rdfs:label>
+</owl:Class>
+
+<!-- Faerie -->
+
+<owl:Class rdf:ID="Sidhe">
+  <rdfs:subClassOf rdf:resource="&base;Faerie" />
+  <rdfs:comment>This class represents sidhe species</rdfs:comment>
+  <rdfs:label>Sidhe</rdfs:label>
+</owl:Class>
+
+<!-- Nymphs -->
+
+<owl:Class rdf:ID="Dryad">
+  <rdfs:subClassOf rdf:resource="&base;Hamadryad" />
+  <rdfs:comment>This class represents tree (oak) nymphs</rdfs:comment>
+  <rdfs:label>Dryad</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Helead">
+  <rdfs:subClassOf rdf:resource="&base;Nymph" />
+  <rdfs:comment>This class represents fen nymphs</rdfs:comment>
+  <rdfs:label>Helead</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Hamadryad">
+  <rdfs:subClassOf rdf:resource="&base;Nymph" />
+  <rdfs:comment>This class represents tree nymphs</rdfs:comment>
+  <rdfs:label>Hamadryad</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Meliae">
+  <rdfs:subClassOf rdf:resource="&base;Hamadryad" />
+  <rdfs:comment>This class represents tree (ash) nymphs</rdfs:comment>
+  <rdfs:label>Meliae</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Naiads">
+  <rdfs:subClassOf rdf:resource="&base;Nymph" />
+  <rdfs:comment>This class represents fresh water nymphs</rdfs:comment>
+  <rdfs:label>Naiads</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Okeanids">
+  <rdfs:subClassOf rdf:resource="&base;Nymph" />
+  <rdfs:comment>This class represents water, mostly salty, nymphs</rdfs:comment>
+  <rdfs:label>Okeanids</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Oreads">
+  <rdfs:subClassOf rdf:resource="&base;Nymph" />
+  <rdfs:comment>This class represents mountain and grotto nymphs</rdfs:comment>
+  <rdfs:label>Oreads</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Lampades">
+  <rdfs:subClassOf rdf:resource="&base;Nymph" />
+  <rdfs:comment>This class represents underworld nymphs</rdfs:comment>
+  <rdfs:label>Lampades</rdfs:label>
+</owl:Class>
+
+<!-- Giants -->
+
+<owl:Class rdf:ID="Titan">
+  <rdfs:subClassOf rdf:resource="&base;Giant" />
+  <rdfs:comment>This class represents titans</rdfs:comment>
+  <rdfs:label>Titan</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Cyclops">
+  <rdfs:subClassOf rdf:resource="&base;Titan" />
+  <rdfs:comment>This class represents one-eyed titans or the one-eyes giants descended from them</rdfs:comment>
+  <rdfs:label>Cyclops</rdfs:label>
+</owl:Class>
+
+<!-- Orcs -->
+
+<owl:Class rdf:ID="Goblin">
+  <rdfs:subClassOf rdf:resource="&base;Orc" />
+  <rdfs:comment>This class represents goblins</rdfs:comment>
+  <rdfs:label>Goblin</rdfs:label>
+</owl:Class>
+
+<!-- Beast Hybrid -->
+
+<owl:Class rdf:ID="Basilisk">
+  <rdfs:subClassOf rdf:resource="&base;BestialHybrid" />
+  <rdfs:comment>This class represents basilisks</rdfs:comment>
+  <rdfs:label>Basilisk</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Chimera">
+  <rdfs:subClassOf rdf:resource="&base;BestialHybrid" />
+  <rdfs:comment>This class represents chimerae</rdfs:comment>
+  <rdfs:label>Chimera</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Cockatrix">
+  <rdfs:subClassOf rdf:resource="&base;BestialHybrid" />
+  <rdfs:comment>This class represents cockatrice</rdfs:comment>
+  <rdfs:label>Cockatrix/Cockatrice</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Gryphon">
+  <rdfs:subClassOf rdf:resource="&base;BestialHybrid" />
+  <rdfs:comment>This class represents gryphons</rdfs:comment>
+  <rdfs:label>Gryphon</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Hippogryph">
+  <rdfs:subClassOf rdf:resource="&base;BestialHybrid" />
+  <rdfs:comment>This class represents hippogryphs</rdfs:comment>
+  <rdfs:label>Hippogryph</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Ki-lin">
+  <rdfs:subClassOf rdf:resource="&base;BestialHybrid" />
+  <rdfs:comment>This class represents Ki-lins</rdfs:comment>
+  <rdfs:label>Ki-lin</rdfs:label>
+</owl:Class>
+
+<!-- Human Headed Beast Hybrid -->
+
+<owl:Class rdf:ID="Manticore">
+  <rdfs:subClassOf rdf:resource="&base;HumanHeadedHybrid" />
+  <rdfs:comment>This class represents manticores</rdfs:comment>
+  <rdfs:label>Manticore</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Sphinx">
+  <rdfs:subClassOf rdf:resource="&base;HumanHeadedHybrid" />
+  <rdfs:comment>This class represents sphinx</rdfs:comment>
+  <rdfs:label>Sphinx</rdfs:label>
+</owl:Class>
+
+<!-- Human-Beast Hybrid -->
+
+<owl:Class rdf:ID="Centaur">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents centaurs</rdfs:comment>
+  <rdfs:label>Centaurs</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Gorgon">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents gorgons</rdfs:comment>
+  <rdfs:label>Gorgon</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Harpy">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents harpys</rdfs:comment>
+  <rdfs:label>Harpy</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Kitsune">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents kitsune</rdfs:comment>
+  <rdfs:label>Kinsune</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Merfolk">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents merfolk</rdfs:comment>
+  <rdfs:label>Merfolk</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Minotaur">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents minotaurs</rdfs:comment>
+  <rdfs:label>Minotaur</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Naga">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents naga</rdfs:comment>
+  <rdfs:label>Naga</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Satyr">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents satyr</rdfs:comment>
+  <rdfs:label>Satyr</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Shapeshifter">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents shapeshifters</rdfs:comment>
+  <rdfs:label>Merfolk</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Siran">
+  <rdfs:subClassOf rdf:resource="&base;HumanoidBestialHybrid" />
+  <rdfs:comment>This class represents sirans</rdfs:comment>
+  <rdfs:label>Siran</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Lycanthrope">
+  <rdfs:subClassOf rdf:resource="&base;Shapeshifter" />
+  <rdfs:comment>This class represents lycanthrope</rdfs:comment>
+  <rdfs:label>Lycanthrope</rdfs:label>
+</owl:Class>
+
+<!-- Default Instance -->
+
+<!-- 
+<rdf:Description rdf:about="&base;HomoSapiens">
+	<rdfs:label>Human (Homo Sapiens)</rdfs:label>
+	<rdf:type>
+		<owl:Class rdf:about="&base;Humanoid" />
+	</rdf:type>
+</rdf:Description>
+-->
+
+<owl:Class rdf:ID="HomoSapiens">
+  <rdfs:subClassOf rdf:resource="&base;Humanoid" />
+  <rdfs:comment>This class represents humans</rdfs:comment>
+  <rdfs:label>Human</rdfs:label>
+</owl:Class>
+
+<!-- Hybrid Properties -->
+
+  <owl:ObjectProperty rdf:ID="composition">
+    <rdfs:domain rdf:resource="&base;Hybrid"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&ome;PhysicalItem"/>
+          <owl:Class rdf:about="&omt;Species"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+
+</rdf:RDF>

@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/fiction/fic#">
+  <!ENTITY ome 		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+  <!ENTITY xprop	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/exprop#">
+  <!ENTITY omb 		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+  <!ENTITY loc 		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+  <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct          "http://purl.org/dc/terms/">
+]>  
+
+
+
+<rdf:RDF 
+ xmlns:rdf="&rdf;"
+ xmlns:rdfs="&rdfs;"
+ xmlns:owl="&owl;"
+ xmlns:xsd="&xsd;"
+ xml:base="&base;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xprop="&xprop;"
+ xmlns:ome="&ome;"
+>
+
+	 
+  <owl:Ontology rdf:about="&base;">
+    <rdfs:label>OntoMedia: Fiction</rdfs:label>
+    <dc:title xml:lang="en">OntoMedia: Fiction</dc:title>
+    <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+    <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+    <dct:created>2005-05-03</dct:created>
+    <owl:versionInfo>0.3</owl:versionInfo>
+  </owl:Ontology>
+
+<!-- FICTION PROPERTIES -->  
+  
+  <owl:ObjectProperty rdf:ID="is-parody-of">
+    <rdfs:label>Is Parody Of</rdfs:label>
+    <rdfs:comment>This property indicates that the expression is a parody of another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&ome;has-variant" />
+    <owl:inverseOf rdf:resource="#has-parody"/>
+    <rdfs:domain> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&omb;Character"/>    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+	    <owl:Class rdf:about="&ome;Timeline"/>
+	    <owl:Class rdf:about="&ome;Occurrence"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:domain>    
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&omb;Being"/>    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+	    <owl:Class rdf:about="&ome;Timeline"/>
+	    <owl:Class rdf:about="&ome;Occurrence"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range>
+ </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-parody">
+    <rdfs:label>Has Parody</rdfs:label>
+    <rdfs:comment>This property indicates that the expression has been parodied by another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&ome;has-variant" />
+    <owl:inverseOf rdf:resource="#is-parody-of"/>
+    <rdfs:domain> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&omb;Being"/>    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+	    <owl:Class rdf:about="&ome;Timeline"/>
+	    <owl:Class rdf:about="&ome;Occurrence"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:domain>     
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&omb;Character"/>    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+	    <owl:Class rdf:about="&ome;Timeline"/>
+	    <owl:Class rdf:about="&ome;Occurrence"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range>    
+  </owl:ObjectProperty>
+  
+<!-- Expression Properties Extensions -->
+
+  <owl:Class rdf:ID="Spoiler-Rating-Properties">
+    <rdfs:label>Spoiler Rating Properties</rdfs:label>
+    <rdfs:comment>This class represents the spoiler rating of the information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&xprop;Expression-Properties" />
+  </owl:Class>  
+
+<!-- Spoiler Classes -->
+
+  <owl:Class rdf:ID="Spoiler">
+    <rdfs:label>Spoiler</rdfs:label>
+    <rdfs:comment>This class represents the concept of spoiler information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Spoiler-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Fact" />
+    <owl:disjointWith rdf:resource="&base;Key" />
+    <owl:disjointWith rdf:resource="&base;Main" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" />    
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Key">
+    <rdfs:label>Key</rdfs:label>
+    <rdfs:comment>This class represents the concept of a key information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Spoiler-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Fact" />
+    <owl:disjointWith rdf:resource="&base;Spoiler" />
+    <owl:disjointWith rdf:resource="&base;Main" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" /> 
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Main">
+    <rdfs:label>Main</rdfs:label>
+    <rdfs:comment>This class represents the concept of main information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Spoiler-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Fact" />
+    <owl:disjointWith rdf:resource="&base;Key" />
+    <owl:disjointWith rdf:resource="&base;Spoiler" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" /> 
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Fact">
+    <rdfs:label>Fact</rdfs:label>
+    <rdfs:comment>This class represents the concept of a factual information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Spoiler-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Spoiler" />
+    <owl:disjointWith rdf:resource="&base;Key" />
+    <owl:disjointWith rdf:resource="&base;Main" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" /> 
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Nitpick">
+    <rdfs:label>Nitpick</rdfs:label>
+    <rdfs:comment>This class represents the concept of a nitpick</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Spoiler-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Fact" />
+    <owl:disjointWith rdf:resource="&base;Key" />
+    <owl:disjointWith rdf:resource="&base;Main" />
+    <owl:disjointWith rdf:resource="&base;Spoiler" /> 
+  </owl:Class>
+  
+
+<!-- Level of Descriptiove Detail -->  
+  
+  <owl:Class rdf:ID="Detail-Rating-Properties">
+    <rdfs:label>Detail Rating Properties</rdfs:label>
+    <rdfs:comment>This class represents detail of the information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&xprop;Expression-Properties" />
+  </owl:Class>  
+
+<!-- Level of Detail Classes -->
+
+  <owl:Class rdf:ID="Implied">
+    <rdfs:label>Implies</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being implied</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;References-Concept" />
+    <owl:disjointWith rdf:resource="&base;In-Passing" />
+    <owl:disjointWith rdf:resource="&base;Vague-Description" />
+    <owl:disjointWith rdf:resource="&base;Describes" />
+    <owl:disjointWith rdf:resource="&base;Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Extremely-Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Fade-To-Black" />      
+  </owl:Class>
+  
+  <owl:Class rdf:ID="References-Concept">
+    <rdfs:label>References Concept</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being referred to</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Implied" />
+    <owl:disjointWith rdf:resource="&base;In-Passing" />
+    <owl:disjointWith rdf:resource="&base;Vague-Description" />
+    <owl:disjointWith rdf:resource="&base;Describes" />
+    <owl:disjointWith rdf:resource="&base;Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Extremely-Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Fade-To-Black" /> 
+  </owl:Class>
+  
+  <owl:Class rdf:ID="In-Passing">
+    <rdfs:label>In Passing</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being discussed in passing</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;References-Concept" />
+    <owl:disjointWith rdf:resource="&base;Implied" />
+    <owl:disjointWith rdf:resource="&base;Vague-Description" />
+    <owl:disjointWith rdf:resource="&base;Describes" />
+    <owl:disjointWith rdf:resource="&base;Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Extremely-Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Fade-To-Black" /> 
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Vague-Description">
+    <rdfs:label>Vague Description</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being described in a vague manner</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;References-Concept" />
+    <owl:disjointWith rdf:resource="&base;In-Passing" />
+    <owl:disjointWith rdf:resource="&base;Implied" />
+    <owl:disjointWith rdf:resource="&base;Describes" />
+    <owl:disjointWith rdf:resource="&base;Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Extremely-Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Fade-To-Black" /> 
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Describes">
+    <rdfs:label>Describes</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being described</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;References-Concept" />
+    <owl:disjointWith rdf:resource="&base;In-Passing" />
+    <owl:disjointWith rdf:resource="&base;Vague-Description" />
+    <owl:disjointWith rdf:resource="&base;Implied" />
+    <owl:disjointWith rdf:resource="&base;Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Extremely-Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Fade-To-Black" /> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Detailed-Description">
+    <rdfs:label>Detailed Description</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being described in detail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;References-Concept" />
+    <owl:disjointWith rdf:resource="&base;In-Passing" />
+    <owl:disjointWith rdf:resource="&base;Vague-Description" />
+    <owl:disjointWith rdf:resource="&base;Describes" />
+    <owl:disjointWith rdf:resource="&base;Implied" />
+    <owl:disjointWith rdf:resource="&base;Extremely-Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Fade-To-Black" /> 
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Extremely-Detailed-Description">
+    <rdfs:label>Extremely Detailed Description</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being described in extreme detail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;References-Concept" />
+    <owl:disjointWith rdf:resource="&base;In-Passing" />
+    <owl:disjointWith rdf:resource="&base;Vague-Description" />
+    <owl:disjointWith rdf:resource="&base;Describes" />
+    <owl:disjointWith rdf:resource="&base;Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Implied" />
+    <owl:disjointWith rdf:resource="&base;Fade-To-Black" /> 
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Fade-To-Black">
+    <rdfs:label>Fade To Black</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being described but then 'fading to black'</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Detail-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;References-Concept" />
+    <owl:disjointWith rdf:resource="&base;In-Passing" />
+    <owl:disjointWith rdf:resource="&base;Vague-Description" />
+    <owl:disjointWith rdf:resource="&base;Describes" />
+    <owl:disjointWith rdf:resource="&base;Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Extremely-Detailed-Description" />
+    <owl:disjointWith rdf:resource="&base;Implied" /> 
+  </owl:Class> 
+  
+<!-- Level of Textuality -->
+
+  <owl:Class rdf:ID="Textuality-Rating-Properties">
+    <rdfs:label>Textuality Rating Properties</rdfs:label>
+    <rdfs:comment>This class represents level of textual assertion</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&xprop;Expression-Properties" />
+  </owl:Class>
+  
+<!-- Text levels -->
+
+  <owl:Class rdf:ID="Text">
+    <rdfs:label>Text</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being explictly stated in the text</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Textuality-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Subtext" />
+    <owl:disjointWith rdf:resource="&base;Calculated" />
+    <owl:disjointWith rdf:resource="&base;Interpretation" />
+    <owl:disjointWith rdf:resource="&base;Supplimental" /> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Calculated">
+      <rdfs:label>Calculated</rdfs:label>
+      <rdfs:comment>This class represents the idea of a concept being not being specifically stated but calculated from information that was</rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&base;Textuality-Rating-Properties" />
+      <owl:disjointWith rdf:resource="&base;Text" />
+      <owl:disjointWith rdf:resource="&base;Subtext" />
+      <owl:disjointWith rdf:resource="&base;Interpretation" />
+      <owl:disjointWith rdf:resource="&base;Subtext" />
+  </owl:Class> 
+  
+  <owl:Class rdf:ID="Supplemental">
+      <rdfs:label>Supplemental</rdfs:label>
+      <rdfs:comment>This class represents the idea of a concept being explictly stated in supplemental material such as making of or author interviews</rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&base;Textuality-Rating-Properties" />
+      <owl:disjointWith rdf:resource="&base;Text" />
+      <owl:disjointWith rdf:resource="&base;Calculated" />
+      <owl:disjointWith rdf:resource="&base;Interpretation" />
+      <owl:disjointWith rdf:resource="&base;Subtext" />
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Subtext">
+    <rdfs:label>Subtext</rdfs:label>
+    <rdfs:comment>This class represents the idea of a concept being as subtext</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Textuality-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Text" />
+    <owl:disjointWith rdf:resource="&base;Calculated" />
+    <owl:disjointWith rdf:resource="&base;Interpretation" />
+    <owl:disjointWith rdf:resource="&base;Supplimental" /> 
+  </owl:Class> 
+  
+    <owl:Class rdf:ID="Interpretation">
+      <rdfs:label>Interpretation</rdfs:label>
+      <rdfs:comment>This class represents the idea of a concept being an interpretation of the text</rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&base;Textuality-Rating-Properties" />
+      <owl:disjointWith rdf:resource="&base;Text" />
+      <owl:disjointWith rdf:resource="&base;Calculated" />
+      <owl:disjointWith rdf:resource="&base;Subtext" />
+      <owl:disjointWith rdf:resource="&base;Supplimental" /> 
+  </owl:Class> 
+  
+</rdf:RDF>

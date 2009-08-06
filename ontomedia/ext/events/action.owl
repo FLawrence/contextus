@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omes "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/social#">
+<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY loc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/action#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omb="&omb;"
+ xmlns:loc="&loc;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Knowledge Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Knowledge Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Action Classes -->
+
+<owl:Class rdf:ID="Celestial">
+  <rdfs:subClassOf rdf:resource="&ome;Action" />
+  <rdfs:comment>This class represents celestial actions</rdfs:comment>
+  <rdfs:label>Celestial</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Environment">
+  <rdfs:subClassOf rdf:resource="&ome;Action" />
+  <rdfs:comment>This class represents environmental actions</rdfs:comment>
+  <rdfs:label>Environment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Festivity">
+  <rdfs:subClassOf rdf:resource="&ome;Action" />
+  <rdfs:subClassOf rdf:resource="&ome;Social" />
+  <rdfs:comment>This class represents festivity actions</rdfs:comment>
+  <rdfs:label>Festivity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Ingestion">
+  <rdfs:subClassOf rdf:resource="&ome;Action" />
+  <rdfs:comment>This class represents ingestion actions i.e. eating, drinking, photosynthesis etc. The subject of the action ingests the object.</rdfs:comment>
+  <rdfs:label>Ingestion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Sex">
+  <rdfs:subClassOf rdf:resource="&ome;Action" />
+  <rdfs:comment>This class represents sexual actions</rdfs:comment>
+  <rdfs:label>Sex</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Violence">
+  <rdfs:subClassOf rdf:resource="&ome;Action" />
+  <rdfs:comment>This class represents violent actions</rdfs:comment>
+  <rdfs:label>Violence</rdfs:label>
+</owl:Class>
+
+
+<!-- Celestial -->
+
+<owl:Class rdf:ID="Body-Rise">
+  <rdfs:subClassOf rdf:resource="&ome;Celestial" />
+  <rdfs:comment>This class represents a celestial body rising over the horizon of another celestial body</rdfs:comment>
+  <rdfs:label>Body Rise</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Body-Set">
+  <rdfs:subClassOf rdf:resource="&ome;Celestial" />
+  <rdfs:comment>This class represents a celestial body lowering below the horizon of another celestial body</rdfs:comment>
+  <rdfs:label>Body Set</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Conjunction">
+  <rdfs:subClassOf rdf:resource="&ome;Celestial" />
+  <rdfs:comment>This class represents the conjunction of two or more celestial bodies</rdfs:comment>
+  <rdfs:label>Conjunction</rdfs:label>
+</owl:Class>
+
+<!-- Environment -->
+
+<owl:Class rdf:ID="Air">
+  <rdfs:subClassOf rdf:resource="&ome;Environment" />
+  <rdfs:comment>This class represents an air/gas based environmental event</rdfs:comment>
+  <rdfs:label>Environmental Event (Air)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Earth">
+  <rdfs:subClassOf rdf:resource="&ome;Environment" />
+  <rdfs:comment>This class represents an earth/ground based environmental event</rdfs:comment>
+  <rdfs:label>Environmental Event (Earth)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Fire">
+  <rdfs:subClassOf rdf:resource="&ome;Environment" />
+  <rdfs:comment>This class represents an fire based environmental event</rdfs:comment>
+  <rdfs:label>Environmental Event (Fire)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Water">
+  <rdfs:subClassOf rdf:resource="&ome;Environment" />
+  <rdfs:comment>This class represents an water based environmental event</rdfs:comment>
+  <rdfs:label>Environmental Event (Water)</rdfs:label>
+</owl:Class>
+
+<!-- Sex -->
+
+<owl:Class rdf:ID="BDSM">
+  <rdfs:subClassOf rdf:resource="&base;Sex" />
+  <rdfs:comment>This class represents sexual acts involving BDSM</rdfs:comment>
+  <rdfs:label>BDSM</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Sexual-Violence">
+  <rdfs:subClassOf rdf:resource="&base;Violence" />
+  <rdfs:subClassOf rdf:resource="&base;Sex" />
+  <rdfs:comment>This class represents actions that involve sexual violence</rdfs:comment>
+  <rdfs:label>Sexual Violence</rdfs:label>
+</owl:Class>
+
+<!-- Violence -->
+
+<owl:Class rdf:ID="Corporal-Punishment">
+  <rdfs:subClassOf rdf:resource="&base;Violence" />
+  <rdfs:comment>This class represents punishment inflicted on a being's body</rdfs:comment>
+  <rdfs:label>Corporal Punishment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="War">
+  <rdfs:subClassOf rdf:resource="&base;Violence" />
+  <rdfs:comment>This class represents actions involved in war</rdfs:comment>
+  <rdfs:label>War</rdfs:label>
+</owl:Class>
+
+<!-- Corporal-Punishment -->
+
+<owl:Class rdf:ID="Death-Penalty">
+  <rdfs:subClassOf rdf:resource="&base;Violence" />
+  <rdfs:comment>This class represents fatal punishment inflicted on a being's body</rdfs:comment>
+  <rdfs:label>Corporal Punishment</rdfs:label>
+</owl:Class>
+
+<!-- War -->
+
+<owl:Class rdf:ID="Battle">
+  <rdfs:subClassOf rdf:resource="&base;Violence" />
+  <rdfs:comment>This class represents a battle</rdfs:comment>
+  <rdfs:label>Battle</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Rebellion">
+  <rdfs:subClassOf rdf:resource="&base;Violence" />
+  <rdfs:subClassOf rdf:resource="&omes;Political" />
+  <rdfs:comment>This class represents a rebellion</rdfs:comment>
+  <rdfs:label>Rebellion</rdfs:label>
+</owl:Class>
+
+<!-- Battle -->
+
+<owl:Class rdf:ID="Assault">
+  <rdfs:subClassOf rdf:resource="&base;Battle" />
+  <rdfs:comment>This class represents an assault</rdfs:comment>
+  <rdfs:label>Assault</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Land-Battle">
+  <rdfs:subClassOf rdf:resource="&base;Battle" />
+  <rdfs:comment>This class represents a land battle</rdfs:comment>
+  <rdfs:label>Land Battle</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Navel-Battle">
+  <rdfs:subClassOf rdf:resource="&base;Battle" />
+  <rdfs:comment>This class represents a navel battle</rdfs:comment>
+  <rdfs:label>Navel Battle</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Siege">
+  <rdfs:subClassOf rdf:resource="&base;Battle" />
+  <rdfs:comment>This class represents a siege</rdfs:comment>
+  <rdfs:label>Siege</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Skirmish">
+  <rdfs:subClassOf rdf:resource="&base;Battle" />
+  <rdfs:comment>This class represents a skirmish</rdfs:comment>
+  <rdfs:label>Skirmish</rdfs:label>
+</owl:Class>
+
+<!-- Assault -->
+
+<owl:Class rdf:ID="Beach-Assault">
+  <rdfs:subClassOf rdf:resource="&base;Assault" />
+  <rdfs:comment>This class represents a beach assault</rdfs:comment>
+  <rdfs:label>Beach Assault</rdfs:label>
+</owl:Class>
+
+<!-- War Properties -->
+
+  <owl:ObjectProperty rdf:ID="admitted-defeat">
+    <rdfs:label>Admitted Defeat</rdfs:label>
+    <rdfs:comment>This property specifies the admission of defeat during a war by a being or group</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&omb;Being"/>
+          <owl:Class rdf:about="&omb;Group"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#War" />
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="surrendered">
+    <rdfs:label>Surrendered</rdfs:label>
+    <rdfs:comment>This property specifies the surrender of a being or group</rdfs:comment>
+    <rdfs:subProperyOf rdf:resource="&base;admitted-defeat" />
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&omb;Being"/>
+          <owl:Class rdf:about="&omb;Group"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#War" />
+  </owl:ObjectProperty>  
+  
+<!-- Assault Properties -->
+
+  <owl:ObjectProperty rdf:ID="assault-on">
+    <rdfs:label>Assault On</rdfs:label>
+    <rdfs:comment>This property specifies the assault on a space</rdfs:comment>
+    <rdfs:range rdf:resource="&loc;Space"/>
+    <rdfs:domain rdf:resource="&base;Assault" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="assaulting-force">
+    <rdfs:label>Assaulting Force</rdfs:label>
+    <rdfs:comment>This property specifies the assault on a space by a being or group</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&omb;Being"/>
+          <owl:Class rdf:about="&omb;Group"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Assault"/>
+          <owl:Class rdf:about="#Siege"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+
+</rdf:RDF>

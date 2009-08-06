@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/image#">
+  <!ENTITY omm		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media#">
+  <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct          "http://purl.org/dc/terms/">
+]>  
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:owl="&owl;"
+	 xmlns:xsd="&xsd;"
+	 xml:base="&base;"
+	 xmlns:dc="&dc;"
+	 xmlns:dct="&dct;">
+
+	 
+  <owl:Ontology rdf:about="&base;">
+    <rdfs:label>OntoMedia Media Representation</rdfs:label>
+    <dc:title xml:lang="en">OntoMedia Media Representation</dc:title>
+    <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+    <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+    <dct:created>2005-05-10</dct:created>
+    <owl:versionInfo>0.1</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media" />
+  </owl:Ontology>
+
+  <!-- A default image item -->
+
+  <owl:Class rdf:ID="ImageItem">
+    <rdfs:subClassOf rdf:resource="&omm;MediaAtom" />
+    <rdfs:label>ImageItem</rdfs:label>
+    <rdfs:comment>This class represents an image item</rdfs:comment>
+  </owl:Class>
+
+</rdf:RDF>

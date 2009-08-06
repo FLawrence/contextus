@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf [
+<!ENTITY base	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/vidtypes#">
+<!ENTITY xsd	"http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf	"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs	"http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY dc	"http://purl.org/dc/elements/1.1/">
+<!ENTITY dct	"http://purl.org/dc/terms/">
+<!ENTITY owl	"http://www.w3.org/2002/07/owl#">
+<!ENTITY omvi	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/video#">
+]>
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:xsd="&xsd;"
+	 xml:base="&base;"
+	 xmlns:owl="&owl;"
+	 xmlns:dc="&dc;"
+	 xmlns:omvi="&omvi;"
+	 xmlns:dct="&dct;">
+	
+	<!-- Classes -->
+	
+	<owl:Class rdf:ID="Movie">
+	  <rdfs:subClassOf rdf:resource="&omvi;VideoItem" />
+	  <rdfs:comment>This class represents a full length film</rdfs:comment>
+	  <rdfs:label>Movie</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:ID="Short">
+	  <rdfs:subClassOf rdf:resource="&omvi;VideoItem" />
+	  <rdfs:comment>This class represents a short film</rdfs:comment>
+	  <rdfs:label>Short Film</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:ID="Trailer">
+	  <rdfs:subClassOf rdf:resource="&omvi;VideoItem" />
+	  <rdfs:comment>This class represents a trailer</rdfs:comment>
+	  <rdfs:label>Trailer</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:ID="Episode">
+	  <rdfs:subClassOf rdf:resource="&omvi;VideoItem" />
+	  <rdfs:comment>This class represents an episode</rdfs:comment>
+	  <rdfs:label>Episode</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:ID="Game">
+	  <rdfs:subClassOf rdf:resource="&omvi;VideoItem" />
+	  <rdfs:comment>This class represents a multimedia game</rdfs:comment>
+	  <rdfs:label>Game/Simulation</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:ID="Survey">
+	  <rdfs:subClassOf rdf:resource="&omvi;VideoItem" />
+	  <rdfs:comment>This class represents a multimedia survey</rdfs:comment>
+	  <rdfs:label>Survey</rdfs:label>
+	</owl:Class>
+	
+	
+</rdf:RDF>
