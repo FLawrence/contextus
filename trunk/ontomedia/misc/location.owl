@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+
+<!-- $Id: location,v 1.1 2004/10/13 15:44:03 icm02r Exp $ -->
+
+<!DOCTYPE owl [
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#"> 
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY dc		"http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct		"http://purl.org/dc/terms/">
+  <!ENTITY portal	"http://www.aktors.org/ontology/portal#">   
+  <!ENTITY extension	"http://www.aktors.org/ontology/extension">
+  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/location">  
+]>
+
+<rdf:RDF xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:owl="&owl;"
+         xmlns:dc="&dc;"
+         xmlns:dct="&dct;"
+         xmlns:portal="&portal;"
+         xmlns:base="&base;">
+
+  <owl:Ontology rdf:about="&base;">
+    <rdfs:label>Building Ontology</rdfs:label>
+    <dc:title xml:lang="en">Building Ontology</dc:title>
+    <dc:description xml:lang="en">The Building Ontology has been designed to describe the structure, contents and occupants of a building, in order support a number of pervasive computing applications.</dc:description>
+    <dc:creator>Ian Millard (icm02r@ecs.soton.ac.uk)</dc:creator>
+    <dct:created>2004-08-05</dct:created>
+    <owl:versionInfo>0.6</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.aktors.org/ontology/portal" />
+    <owl:imports rdf:resource="http://www.aktors.org/ontology/extension" />
+  </owl:Ontology>
+
+
+
+  <!-- Abstract space, and associated properties -->
+
+  <owl:Class rdf:ID="Abstract-Space">
+    <rdfs:label>Abstract Space</rdfs:label>
+    <rdfs:comment>This is a high-level abstraction of any space, area, or location</rdfs:comment>
+    <owl:equivalentClass rdf:resource="&portal;Location"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="is-located-in">
+    <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    <rdfs:label>is located in</rdfs:label>
+    <rdfs:comment>This property is to be used to describe anything which is located in an Abstract-Space (quite possibly another Abstract Space)</rdfs:comment>
+    <rdfs:domain rdf:resource="&owl;Thing" />
+    <rdfs:range rdf:resource="#Abstract-Space" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-located-at">
+    <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    <rdfs:label>is located at</rdfs:label>
+    <rdfs:comment>This property is to be used to describe anything which is located at a Coordinate-Position</rdfs:comment>
+    <rdfs:domain rdf:resource="&owl;Thing" />
+    <rdfs:range rdf:resource="#Coordinate-Position" />
+  </owl:ObjectProperty>
+
+  <!-- owl:ObjectProperty rdf:ID="is-part-of">
+    <rdfs:label>is part of</rdfs:label>
+    <rdfs:comment>This property is to be used to describe an Abstract-Space which forms part of another</rdfs:comment>
+    <rdfs:domain rdf:resource="#Abstract-Space" />
+    <rdfs:range rdf:resource="#Abstract-Space" />
+  </owl:ObjectProperty -->
+
+  <owl:ObjectProperty rdf:ID="is-owned-by">
+    <rdfs:label>is owned by</rdfs:label>
+    <rdfs:comment>This property is to be used to describe the owning agent (organisation or person) of the Abstract-Space</rdfs:comment>
+    <rdfs:domain rdf:resource="#Abstract-Space" />
+    <rdfs:range rdf:resource="&portal;Generic-Agent" />
+  </owl:ObjectProperty>    
+
+  <owl:ObjectProperty rdf:ID="has-usual-occupant">
+    <rdfs:label>has usual occupant</rdfs:label>
+    <rdfs:comment>This property is to be used to describe the usual occupant of an Abstract-Space</rdfs:comment>
+    <rdfs:domain rdf:resource="#Abstract-Space" />
+    <rdfs:range rdf:resource="&portal;Person" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-visible-from">
+    <rdfs:label>is visible from</rdfs:label>
+    <rdfs:comment>This property can be used to describe the fact that the thing in question is visible from the specified location</rdfs:comment>
+    <rdfs:domain rdf:resource="&owl;Thing" />
+    <rdfs:range  rdf:resource="#Abstract-Space" />
+    <owl:inverseOf rdf:resource="#permits-viewing-of" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="permits-viewing-of">
+    <rdfs:label>permits viewing of</rdfs:label>
+    <rdfs:comment>This property can be used to describe the fact that when located at the abstract space in question, the specified thing can be viewed</rdfs:comment>
+    <rdfs:domain rdf:resource="#Abstract-Space" />
+    <rdfs:range  rdf:resource="&owl;Thing" />
+    <owl:inverseOf rdf:resource="#permits-viewing-of" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="adjacent-to">
+    <rdfs:label>adjacent to</rdfs:label>
+    <rdfs:comment>This property indicates that one Abstract Space is adjacent to another</rdfs:comment>
+    <rdfs:domain rdf:resource="#Abstract-Space" />
+    <rdfs:range  rdf:resource="#Abstract-Space" />
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="adjacent-to-on-north-side">
+    <rdfs:label>adjacent to on north side</rdfs:label>
+    <rdfs:comment>This property is to be used to describe an adjacent Abstract Space which is to the North</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="#adjacent-to" />
+    <owl:inverseOf rdf:resource="#adjacent-to-on-south-side" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="adjacent-to-on-south-side">
+    <rdfs:label>adjacent to on south side</rdfs:label>
+    <rdfs:comment>This property is to be used to describe an adjacent Abstract Space which is to the South</rdfs:comment>
+    <owl:inverseOf rdf:resource="#adjacent-to-on-north-side" />
+    <rdfs:subPropertyOf rdf:resource="#adjacent-to" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="adjacent-to-on-east-side">
+    <rdfs:label>adjacent to on east side</rdfs:label>
+    <rdfs:comment>This property is to be used to describe an adjacent Abstract Space which is to the East</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="#adjacent-to" />
+    <owl:inverseOf rdf:resource="#adjacent-to-on-west-side" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="adjacent-to-on-west-side">
+    <rdfs:label>adjacent to on west side</rdfs:label>
+    <rdfs:comment>This property is to be used to describe an adjacent Abstract Space which is to the West</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="#adjacent-to" />
+    <owl:inverseOf rdf:resource="#adjacent-to-on-east-side" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-bounding-coordinates">
+    <rdfs:label>has-bounding-coordinates</rdfs:label>
+    <rdfs:comment>A sequence of bounding Coordinate-Position resources which form the bounds of this Abstract-Space</rdfs:comment>
+    <rdfs:domain rdf:resource="#Abstract-Space" />
+    <rdfs:range rdf:resource="#Sequence-Of-Coordinates" />
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="Sequence-Of-Coordinates">
+    <rdfs:subClassOf rdf:resource="&rdf;Seq"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="has-origin-coordinate">
+    <rdfs:label>has-origin-coordinate</rdfs:label>
+    <rdfs:comment>The Origin Coordinate of this Abstract-Space</rdfs:comment>
+    <rdfs:domain rdf:resource="#Abstract-Space" />
+    <rdfs:range rdf:resource="#Coordinate-Position" />
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:ID="Abstract-Space-With-Origin">
+    <rdfs:label>Abstract-Space-With-Origin</rdfs:label>
+    <rdfs:comment>An abstract space which has a origin-coordinate</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Abstract-Space"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#has-origin-coordinate"/>
+        <owl:cardinality rdf:datatype="&xsd;integer">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+
+
+  <!-- Open space -->
+
+  <owl:Class rdf:ID="Open-Space">
+    <rdfs:label>Open Space</rdfs:label>
+    <rdfs:comment>This is a high-level abstraction of any open (un-bounded) space, offering unrestricted movement in and out of the space</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Abstract-Space" />
+  </owl:Class>
+
+
+
+  <!-- Enclosed space, and associated properties -->
+
+  <owl:Class rdf:ID="Enclosed-Space">
+    <rdfs:label>Enclosed Space</rdfs:label>
+    <rdfs:comment>This is a high-level abstraction of any enclosed or bounded space (such as a building or room) which constrians movement from one space to another</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Abstract-Space" />
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="permits-access-to">
+    <rdfs:label>permits access to</rdfs:label>
+    <rdfs:comment>This property is to be used to describe a connection (such as a door) which permits access between two Enclosed-Spaces</rdfs:comment>
+    <rdfs:domain rdf:resource="#Enclosed-Space" />
+    <rdfs:range rdf:resource="#Abstract-Space" />
+  </owl:ObjectProperty>
+
+
+
+  <!-- A building -->
+
+  <owl:Class rdf:ID="Building">
+    <rdfs:label>Building</rdfs:label>
+    <rdfs:comment>This class is used to represent a Building</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Enclosed-Space" />
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="has-postal-address">
+    <rdfs:label>has postal address</rdfs:label>
+    <rdfs:comment>This property denotes that a Building is located at a particular Postal-Address</rdfs:comment>
+    <rdfs:domain rdf:resource="#Building" />
+    <rdfs:range  rdf:resource="&portal;Postal-Address" />
+  </owl:ObjectProperty>
+
+
+
+  <!-- A floor in a building -->
+
+  <owl:Class rdf:ID="Floor">
+    <rdfs:label>Floor</rdfs:label>
+    <rdfs:comment>This class is used to represent a Floor in a Building</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Enclosed-Space" />
+    <rdfs:subClassOf>
+      <owl:Restriction> 
+        <owl:onProperty rdf:resource="#is-part-of" />
+        <owl:allValuesFrom rdf:resource="#Building" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+
+
+  <!-- A Room on a Floor of a Building -->
+
+  <owl:Class rdf:ID="Room">
+    <rdfs:label>Room</rdfs:label>
+    <rdfs:comment>This class is used to represent a Room on a Floor in a Building</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Enclosed-Space" />
+    <rdfs:subClassOf>
+      <owl:Restriction> 
+        <owl:onProperty rdf:resource="#is-part-of" />
+        <owl:allValuesFrom rdf:resource="#Floor" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+
+
+  <!-- Types of room -->
+
+  <owl:Class rdf:ID="Office">
+    <rdfs:label>Office</rdfs:label>
+    <rdfs:comment>This class is used to represent an Office, usually inhabited by a small number of people</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Room" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Laboratory">
+    <rdfs:label>Laboratory</rdfs:label>
+    <rdfs:comment>This class is used to represent a Laboratory, usually inhabited by a large number of people</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Room" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Meeting-Room">
+    <rdfs:label>Meeting Room</rdfs:label>
+    <rdfs:comment>This class is used to represent a room used for meetings</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Room" />
+  </owl:Class>
+
+
+  <!-- A Corridor -->
+
+  <owl:Class rdf:ID="Corridor">
+    <rdfs:label>Corridor</rdfs:label>
+    <rdfs:comment>This class is used to represent a corridor, on a Floor of a Building</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Enclosed-Space" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#is-part-of" />
+        <owl:allValuesFrom rdf:resource="#Floor" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+ 
+
+  <!-- Floor-Traversing-Spaces -->
+
+  <owl:Class rdf:ID="Floor-Traversing-Space">
+    <rdfs:label>Floor Traversing Space</rdfs:label>
+    <rdfs:comment>This class is used to represent a space which traverses Floors</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Enclosed-Space" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#is-part-of" />
+        <owl:allValuesFrom rdf:resource="#Building" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Stairs">
+    <rdfs:label>Stairs</rdfs:label>
+    <rdfs:comment>This class is used to represent Stairs, which traverse between Floors</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Floor-Traversing-Space" />
+  </owl:Class>   
+
+  <owl:Class rdf:ID="Lift">
+    <rdfs:label>Lift</rdfs:label>
+    <rdfs:comment>This class is used to represent a lift, which traverses between Floors</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Floor-Traversing-Space" />
+  </owl:Class>
+
+
+
+  <!-- A Partitioned-Space -->
+
+  <owl:Class rdf:ID="Partitioned-Space">
+    <rdfs:label>Partitioned Space</rdfs:label>
+    <rdfs:comment>This class is used to represent a partitioned space in a Building. This is an Enclosed-Space, like a room, but which may permit communication between Partitioned-Spaces</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Enclosed-Space" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#is-part-of" />
+        <owl:allValuesFrom rdf:resource="#Enclosed-Space" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+
+
+  <!--  Coordinate-Positions  -->
+
+  <owl:Class rdf:ID="Coordinate-Position">
+    <rdfs:label>Coordinate Position</rdfs:label>
+    <rdfs:comment>This class is used as an abstract class, with the two sub-classes Relative-Coordinate-Position and GPS-Coordinate-Position</rdfs:comment>
+  </owl:Class>
+
+
+
+  <!--  Relative coordinate position -->
+
+  <owl:Class rdf:ID="Relative-Coordinate-Position">
+    <rdfs:label>Relative Coordinate Position</rdfs:label>
+    <rdfs:comment>This position is described as an offset from the origin of another location</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Coordinate-Position"/>
+  </owl:Class>
+
+  <owl:DatatypeProperty rdf:ID="x-displacement">
+    <rdfs:label>x displacement</rdfs:label>
+    <rdfs:comment>The X displacement from the origin of another location</rdfs:comment>
+    <rdfs:domain rdf:resource="#Relative-Coordinate-Position"/>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="y-displacement">
+    <rdfs:label>y displacement</rdfs:label>
+    <rdfs:comment>The Y displacement from the origin of another location</rdfs:comment>
+    <rdfs:domain rdf:resource="#Relative-Coordinate-Position"/>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="z-displacement">
+    <rdfs:label>z displacement</rdfs:label>
+    <rdfs:comment>The Z displacement from the origin of another location</rdfs:comment>
+    <rdfs:domain rdf:resource="#Relative-Coordinate-Position"/>
+    <rdfs:range rdf:resource="&xsd;decimal"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:ID="relative-to-origin-of">
+    <rdfs:label>relative to origin of</rdfs:label>
+    <rdfs:comment>Location from which the relative position is derrived</rdfs:comment>
+    <rdfs:domain rdf:resource="#Relative-Coordinate-Position"/>
+    <rdfs:range rdf:resource="#Abstract-Space-With-Origin"/>
+  </owl:ObjectProperty>
+
+
+
+  <!--  GPS coordinate position -->
+
+  <owl:Class rdf:ID="GPS-Coordinate-Position">
+    <rdfs:label>GPS Coordinate Position</rdfs:label>
+    <rdfs:comment>This position is a lat/long/alt GPS coordinate location</rdfs:comment>
+    <owl:equivalentClass rdf:resource="&portal;Coordinate-Location"/>
+    <rdfs:subClassOf rdf:resource="#Coordinate-Position"/>
+  </owl:Class>
+
+</rdf:RDF>

@@ -1,0 +1,616 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+  <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct          "http://purl.org/dc/terms/">
+  <!ENTITY locspec      "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/locspec#">
+  <!ENTITY omt	      	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/common/trait#">
+  <!ENTITY dat	      	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/date#">
+]>  
+
+
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:owl="&owl;"
+	 xmlns:xsd="&xsd;"
+	 xmlns:locspec="&locspec;"
+	 xmlns:dat="&dat;"
+	 xml:base="&base;"
+	 xmlns:dc="&dc;"
+	 xmlns:dct="&dct;">
+
+	 
+  <owl:Ontology rdf:about="&base;">
+    <rdfs:label>OntoMedia Core</rdfs:label>
+    <dc:title xml:lang="en">OntoMedia Core</dc:title>
+    <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+    <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+    <dct:created>2005-05-03</dct:created>
+    <owl:versionInfo>0.32</owl:versionInfo>
+  </owl:Ontology>
+
+<!-- Core -->
+  
+  <owl:Class rdf:ID="Expression">
+    <rdfs:label>Expression</rdfs:label>
+    <rdfs:comment>This class represents a piece of information conveyed through a media</rdfs:comment>
+   <!--  <rdfs:subClassOf rdf:resource="#Content" /> -->
+  </owl:Class>
+ 
+  <!-- Linking Properties -->
+
+  <owl:ObjectProperty rdf:ID="is-linked-to">
+    <rdfs:label>Is Linked To</rdfs:label>
+    <rdfs:comment>This property indicates that there is some type of link between the named Expressions</rdfs:comment>
+    <owl:inverseOf rdf:resource="#is-linked-to"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-not-linked-to">
+    <rdfs:label>Is Not Linked To</rdfs:label>
+    <rdfs:comment>This property indicates that there is some no link between the named Expressions</rdfs:comment>
+    <owl:inverseOf rdf:resource="#is-not-linked-to"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="contains">
+    <rdfs:label>Contains</rdfs:label>
+    <rdfs:comment>This property indicates that one expression contains the other</rdfs:comment>
+    <owl:inverseOf rdf:resource="#contained-by"/>
+    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="contained-by">
+    <rdfs:label>Contained By</rdfs:label>
+    <rdfs:comment>This property indicates that one expression is contained by the other</rdfs:comment>
+    <owl:inverseOf rdf:resource="#contains"/>
+    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+  
+  <!-- Is the thing -->
+  
+  <owl:ObjectProperty rdf:ID="is">
+    <rdfs:label>Is</rdfs:label>
+    <rdfs:comment>This property indicates that the expression is exactly the same as another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <owl:inverseOf rdf:resource="#is"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-not">
+    <rdfs:label>Is Not</rdfs:label>
+    <rdfs:comment>This property indicates that the expression is entirely different to another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;is-not-linked-to" />
+    <owl:inverseOf rdf:resource="#is-not"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <!-- Is similar/related to the thing -->
+
+  <owl:ObjectProperty rdf:ID="has-variant">
+    <rdfs:label>Has Variant</rdfs:label>
+    <rdfs:comment>This property indicates that the expression is a variation of another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <owl:inverseOf rdf:resource="has-variant"/>
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-shadow">
+    <rdfs:label>Has Shadow</rdfs:label>
+    <rdfs:comment>This property indicates that the expression is a variation on another, very similar but not exactly the same. For example the different interpretations of the same character</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <owl:inverseOf rdf:resource="#is-shadow-of"/>
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-shadow-of">
+    <rdfs:label>Is Shadow Of</rdfs:label>
+    <rdfs:comment>This property indicates that the expression is a variation on another, very similar but not exactly the same. For example the different interpretations of the same character</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <owl:inverseOf rdf:resource="#has-shadow"/>
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-spin-off">
+    <rdfs:label>Has Spin Off</rdfs:label>
+    <rdfs:comment>This property indicates that the expression has developed from another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <owl:inverseOf rdf:resource="#is-spin-off-of"/>
+    <rdfs:domain rdf:resource="#Item"/>
+    <rdfs:range rdf:resource="#Item"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-spin-off-of">
+    <rdfs:label>Is Spin Off Of</rdfs:label>
+    <rdfs:comment>This property indicates that the expression has developed from another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <owl:inverseOf rdf:resource="#has-spin-off"/>
+   <rdfs:domain rdf:resource="#Item"/>
+   <rdfs:range rdf:resource="#Item"/>
+  </owl:ObjectProperty>
+ 
+  <owl:ObjectProperty rdf:ID="inspired-by">
+    <rdfs:label>Inspired By</rdfs:label>
+    <rdfs:comment>This property indicates that the expression was inspired by another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <owl:inverseOf rdf:resource="#inspired"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Expression"/>
+  </owl:ObjectProperty>   
+
+  <owl:ObjectProperty rdf:ID="inspired">
+    <rdfs:label>Inspired</rdfs:label>
+    <rdfs:comment>This property indicates that the expression inspired another</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <owl:inverseOf rdf:resource="#inspired-by"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:range rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-potentially">
+    <rdfs:label>Is Potentially</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <rdfs:comment>This property indicates that the expression is potentially another. For example, it may be a possible future version</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <!-- Entities -->
+ 
+  <owl:Class rdf:ID="Entity">
+    <rdfs:label>Entity</rdfs:label>
+    <rdfs:comment>A thing</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Expression" />
+    
+  </owl:Class>
+
+  <!-- Entity Subclasses -->
+
+  <!-- Items -->
+
+  <owl:Class rdf:ID="Item">
+    <rdfs:comment>This class represents an entity which may participate in an event within the media. An Item may be abstract or physical</rdfs:comment>
+    <rdfs:label>Item</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Entity" />
+  </owl:Class>
+  
+  
+  <owl:Class rdf:ID="Physical-Item">
+    <rdfs:comment>This class represents a physical entity which may participate in an event within the media</rdfs:comment>
+    <rdfs:label>Physical Item</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Item" />
+    <rdfs:subClassOf rdf:resource="#Collection" />
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Abstract-Item">
+    <rdfs:comment>This class represents an abstract entity which may participate in an event within the media</rdfs:comment>
+    <rdfs:label>Abstract Item</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Item" />
+  </owl:Class>
+
+  <!-- Abstract-Item Subclases -->
+  
+  <owl:Class rdf:ID="Context">
+    <rdfs:comment>This class represents the context in which an event or entity exists</rdfs:comment>
+    <rdfs:label>Context</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Abstract-Item" />
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Collection">
+    <rdfs:comment>This class represents a collection of entities</rdfs:comment>
+    <rdfs:label>Collection</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Abstract-Item" />
+  </owl:Class>  
+
+ <!-- Context Properties -->
+ 
+  <owl:ObjectProperty rdf:ID="allows-existence-of">
+    <rdfs:comment>This class represents that the desired expression may exist within the context</rdfs:comment>
+    <rdfs:label>Allows Existence Of</rdfs:label>  
+    <rdfs:domain rdf:resource="&base;Context" />
+    <owl:inverseOf rdf:resource="&base;exists-in"/>
+    <rdfs:range rdf:resource="&base;Expression"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="exists-in">
+    <rdfs:comment>This class represents that the expression exists within the related context</rdfs:comment>
+    <rdfs:label>Exists In</rdfs:label> 
+    <rdfs:domain rdf:resource="&base;Expression"/>
+    <owl:inverseOf rdf:resource="&base;allows-existence-of"/>
+    <rdfs:range rdf:resource="&base;Context"/>
+  </owl:ObjectProperty> 
+  
+  <!-- Collection Properties -->
+  
+  <owl:ObjectProperty rdf:ID="has-number-of-parts">
+      <rdfs:label>Has Number Of Parts</rdfs:label>
+      <rdfs:comment>This property specifies the number of parts contained by the collection</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;Collection"/>
+      <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="has-max-number-of-parts">
+      <rdfs:label>Has Maximum Number Of Parts</rdfs:label>
+      <rdfs:comment>This property specifies the maximum number of parts that can be contained by the collection</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;Collection"/>
+      <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="has-min-number-of-parts">
+        <rdfs:label>Has Minimum Number Of Parts</rdfs:label>
+        <rdfs:comment>This property specifies the minimum number of parts that can be contained by the collection</rdfs:comment>
+        <rdfs:domain rdf:resource="&base;Collection"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:ObjectProperty> 
+  
+
+  <!-- Temporal -->
+  
+  <owl:Class rdf:ID="Timeline">
+    <rdfs:comment>This class contains a sequence of occurring events</rdfs:comment>
+    <rdfs:label>Timeline</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Entity" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Occurrence">
+    <rdfs:comment>This class represents a single occurrence of an event, placing it at a position in a timeline</rdfs:comment>
+    <rdfs:label>Occurrence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Entity" />
+  </owl:Class>
+  
+  <!-- Temporal Properties -->
+  
+  <owl:ObjectProperty rdf:ID="timeline-ref">
+    <rdfs:label>Timeline Reference</rdfs:label>
+    <rdfs:comment>Reference to the Timeline that the Occurrence exists on</rdfs:comment>  
+    <rdfs:range rdf:resource="#Timeline"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:ObjectProperty>  
+  
+  <owl:ObjectProperty rdf:ID="occurrence-of">
+    <rdfs:label>Occurrence Of</rdfs:label>
+    <rdfs:comment>This property defines any the event that the occurrence relates to</rdfs:comment>
+    <owl:inverseOf rdf:resource="#has-occurrence"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="#Event"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="precedes">
+    <rdfs:label>Precedes</rdfs:label>
+    <rdfs:comment>This property defines the occurrence which immediately follows this occurrence</rdfs:comment>
+    <rdfs:range rdf:resource="#Occurrence"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <owl:inverseOf rdf:resource="#follows"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="follows">
+    <rdfs:label>Follows</rdfs:label>
+    <rdfs:comment>Follows specifies the occurrence that happens after the referencing occurrence</rdfs:comment>
+    <rdfs:range rdf:resource="#Occurrence"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <owl:inverseOf rdf:resource="#precedes"/>
+  </owl:ObjectProperty>
+  
+  <!-- Time References -->
+
+  <owl:ObjectProperty rdf:ID="TAQ">
+    <rdfs:label>Period Terminal Limit</rdfs:label>
+    <rdfs:comment>Terminus Ante Quem (Limit Before Which): The latest date that the period the event covers could have happened</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="&dat;Date"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="TPQ">
+    <rdfs:label>Temporal Start</rdfs:label>
+    <rdfs:comment>The time/date/temporal reference for the start of the event</rdfs:comment>
+    <rdfs:range rdf:resource="&dat;Date"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="StartTime">
+    <rdfs:label>Temporal End</rdfs:label>
+    <rdfs:comment>The time/date/temporal reference for the start of the event</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="&dat;Date"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="EndTime">
+    <rdfs:label>Period Initial Limit</rdfs:label>
+    <rdfs:comment>The time/date/temporal reference for the end of the event</rdfs:comment>
+    <rdfs:range rdf:resource="&dat;Date"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="DiscreteTime">
+    <rdfs:label>Time/Date</rdfs:label>
+    <rdfs:comment>The time/date/temporal reference for the the event</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="&dat;Date"/>
+  </owl:ObjectProperty>
+  
+  <!-- Links to Media -->
+  
+  <owl:FunctionalProperty rdf:ID="occurs">
+    <rdfs:label>Occurs</rdfs:label>
+    <rdfs:comment>This property specifies the region of media in when an event occurrence happens</rdfs:comment>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:FunctionalProperty>
+    
+  <owl:FunctionalProperty rdf:ID="start-point">
+    <rdfs:label>Start point in Media</rdfs:label>
+    <rdfs:comment>This property specifies the point in the media at which the event occurrence starts happening</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+  </owl:FunctionalProperty>
+  
+  <owl:FunctionalProperty rdf:ID="has-duration">
+    <rdfs:label>Duration of Occurrence</rdfs:label>
+    <rdfs:comment>This property specifies the duration of the occurrence</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&locspec;LocSpec"/>
+          <owl:Class rdf:about="&omt;Dimension"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+  
+  <owl:ObjectProperty rdf:ID="end-point">
+    <rdfs:label>End Point in Media</rdfs:label>
+    <rdfs:comment>This property specifies the point in the media at which the event occurrence stops happening</rdfs:comment>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="MediaTPQ">
+    <rdfs:label>Media Start Period Limit</rdfs:label>
+    <rdfs:comment>This property specifies the earliest point in the media at which the event occurrence could have happened</rdfs:comment>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+    <rdfs:comment>Terminus Post Quem (Limit After Which): The earliest point that the period the event covers could be said to be happening</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="MediaTAQ">
+    <rdfs:label>Media End Period Limit</rdfs:label>
+    <rdfs:comment>Terminus Ante Quem (Limit Before Which): The latest point that the period the event covers could have happened</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+  </owl:ObjectProperty>
+  
+  <!-- Events -->
+
+  <owl:Class rdf:ID="Event">
+    <rdfs:label>Event</rdfs:label>
+    <rdfs:comment>This property defines an event</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Expression" />
+  </owl:Class>
+
+  <!-- Event Properties -->
+  
+  <owl:ObjectProperty rdf:ID="final-event">
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="#Event"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="initial-event">
+    <rdfs:comment
+    >the first event which begins this sequence</rdfs:comment>
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="#Event"/>
+  </owl:ObjectProperty>  
+  
+  <owl:ObjectProperty rdf:ID="has-subject-entity">
+    <rdfs:label>Has Subject Entity</rdfs:label>
+    <rdfs:comment>This property specifies the entity which carries out the aim of the event</rdfs:comment>
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="#Entity"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-object-entity">
+    <rdfs:label>Has Object Entity</rdfs:label>
+    <rdfs:comment>This property specifies the entity which is the target of the event</rdfs:comment>
+    <rdfs:range rdf:resource="#Entity"/>
+    <rdfs:domain rdf:resource="#Event"/>
+  </owl:ObjectProperty>
+
+  
+  <owl:ObjectProperty rdf:ID="has-occurrence">
+    <rdfs:label>Has occurrence</rdfs:label>
+    <rdfs:comment>This property defines any occurrences of this event</rdfs:comment>
+    <rdfs:range rdf:resource="#Occurrence"/>
+    <rdfs:domain rdf:resource="#Event" />
+    <owl:inverseOf rdf:resource="#occurrence-of"/>
+  </owl:ObjectProperty> 
+  
+  <owl:FunctionalProperty rdf:ID="summary">
+    <rdfs:label>Summary</rdfs:label>
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:comment>This property is a plain-text summery of what occurs in the event</rdfs:comment>
+  </owl:FunctionalProperty>
+  
+  <owl:ObjectProperty rdf:ID="precondition">
+    <rdfs:label>Precondition</rdfs:label>
+    <rdfs:comment>This property is a state that must exist before the event can occur</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Entity"/>
+          <owl:Class rdf:about="#Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Event"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="postcondition">
+    <rdfs:label>Postcondition</rdfs:label>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Entity"/>
+          <owl:Class rdf:about="#Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment>This property contains the state which should occur as a consequence of this event</rdfs:comment>
+    <rdfs:domain rdf:resource="#Event"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="involves">
+    <rdfs:label>Involves</rdfs:label>
+    <rdfs:comment>This property specifies the entities involved in this event. Note that this includes the subject and object.</rdfs:comment>
+    <rdfs:range rdf:resource="#Entity"/>
+    <rdfs:domain rdf:resource="#Event"/>
+    <owl:inverseOf rdf:resource="#involved-in" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="involved-in">
+    <rdfs:label>Involves</rdfs:label>
+    <rdfs:comment>This property specifies the events involved in by this entity. Note that this includes the subject and object.</rdfs:comment>
+    <rdfs:range rdf:resource="#Event"/>
+    <rdfs:domain rdf:resource="#Entity"/>
+    <owl:inverseOf rdf:resource="#involves" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="causes">
+    <rdfs:label>Causes</rdfs:label>
+    <rdfs:comment>This property indicates the instigating factor of an event, whether it be an item, event, or collection.</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Event"/>
+          <owl:Class rdf:about="#Entity"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Event"/>
+          <owl:Class rdf:about="#Entity"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#caused-by"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="caused-by">
+    <rdfs:label>Caused By</rdfs:label>
+    <rdfs:comment>This property indicates the instigating factor of an event, whether it be an item, event, or collection.</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Event"/>
+          <owl:Class rdf:about="#Entity"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Event"/>
+          <owl:Class rdf:about="#Entity"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#causes"/>
+  </owl:ObjectProperty>
+
+
+  <!-- Event Subclasses -->
+
+  
+  <owl:Class rdf:ID="Gain">
+    <rdfs:label>Gain</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Event" />
+    <rdfs:comment>This event class results in an overall increase of the entities related to the primary subject or subjects of the event</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Introduction">
+    <rdfs:label>Introduction</rdfs:label>
+    <rdfs:comment>This event class denotes the introduction of an entity to the media</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Event" />
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Loss">
+    <rdfs:label>Loss</rdfs:label>
+    <rdfs:comment>This event class results in an overall reduction of the entities related to the primary subject or subjects of the event</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Event" />
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Transformation">
+    <rdfs:comment>This event class results in no gain or loss of attributes or entities, merely alteration</rdfs:comment>
+    <rdfs:label>Transformation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Event" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Action">
+    <rdfs:comment>This event class describes an action sequence (ie no plot)</rdfs:comment>
+    <rdfs:label>Action</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Event" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Social">
+    <rdfs:comment>This event class describes a sequence focusing on social, interpersonal and personal emotional elements</rdfs:comment>
+    <rdfs:label>Social</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Event" />
+  </owl:Class>
+  
+  <!-- Transformation Properties -->
+  
+  <owl:ObjectProperty rdf:ID="from">
+    <rdfs:label>From</rdfs:label>
+    <rdfs:comment>This property specifies the entity which is being transformed</rdfs:comment>
+    <rdfs:range rdf:resource="#Entity" />
+    <rdfs:domain rdf:resource="#Transformation" />
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="to">
+    <rdfs:label>To</rdfs:label>
+    <rdfs:comment>This property specifies the resultant entity</rdfs:comment>
+    <rdfs:range rdf:resource="#Entity" />
+    <rdfs:domain rdf:resource="#Transformation" />
+  </owl:ObjectProperty>
+  
+  
+  <!-- Unsorted -->
+<!--
+  
+  <owl:ObjectProperty rdf:ID="expresses">
+    <rdfs:domain rdf:resource="#Expressible"/>
+    <rdfs:range rdf:resource="#Expression"/>
+  </owl:ObjectProperty>
+-->  
+
+  <!-- ????
+
+  <owl:DatatypeProperty rdf:ID="type">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:domain rdf:resource="#Item"/>
+  </owl:DatatypeProperty>
+-->
+ 
+</rdf:RDF>

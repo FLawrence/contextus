@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY base 	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/geometry#">
+<!ENTITY rdf 	"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl 	"http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs 	"http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY dc	"http://purl.org/dc/elements/1.1/">
+<!ENTITY dct	"http://purl.org/dc/terms/">
+<!ENTITY xsd	"http://www.w3.org/2001/XMLSchema#">
+<!ENTITY geo	"http://www.w3.org/2003/01/geo/wgs84_pos#">
+]>
+
+
+<rdf:RDF
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:geo="&geo;"
+>
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Geometry Ontology</rdfs:label>
+
+<dc:description xml:lang="en">This ontology provides a portable representation of geometry.</dc:description>
+  <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+  <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+  <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+  <dct:created>2005-07-14</dct:created>
+  <owl:versionInfo>0.1</owl:versionInfo>
+</owl:Ontology>
+
+<owl:Class rdf:ID="Shape">
+  <rdfs:label>Shape</rdfs:label>
+  <rdfs:comment>A generic shape.</rdfs:comment>
+</owl:Class>
+
+<!-- Circle -->
+
+<owl:Class rdf:ID="Circle">
+  <rdfs:subClassOf rdf:resource="#Shape" />
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="has-circle-centre">
+  <rdfs:label>Has Centre</rdfs:label>
+  <rdfs:comment>This property specifies the circle centre</rdfs:comment>
+  <rdfs:domain rdf:resource="#Circle" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-radius">
+  <rdfs:label>Has Radius</rdfs:label>
+  <rdfs:comment>This property specifies the circle radius</rdfs:comment>
+  <rdfs:domain rdf:resource="#Circle" />
+  <rdfs:range rdf:resource="#Distance" />
+</owl:ObjectProperty>
+
+<!-- Rectangle -->
+
+<owl:Class rdf:ID="Rectangle">
+  <rdfs:subClassOf rdf:resource="#Shape" />
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="has-top-left">
+  <rdfs:label>Has Top-Left</rdfs:label>
+  <rdfs:comment>This property specifies the top-left point</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rectangle" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-top-right">
+  <rdfs:label>Has Top-Left</rdfs:label>
+  <rdfs:comment>This property specifies the top-right point</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rectangle" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-bottom-left">
+  <rdfs:label>Has Bottom-Left</rdfs:label>
+  <rdfs:comment>This property specifies the bottom-left point</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rectangle" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-bottom-right">
+  <rdfs:label>Has Bottom-Right</rdfs:label>
+  <rdfs:comment>This property specifies the bottom-right point</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rectangle" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<!-- Ellipse -->
+
+<owl:Class rdf:ID="Ellipse">
+  <rdfs:subClassOf rdf:resource="#Shape" />
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="has-ellipse-centre">
+  <rdfs:label>Has Centre</rdfs:label>
+  <rdfs:comment>This property specifies the ellipse centre</rdfs:comment>
+  <rdfs:domain rdf:resource="#Ellipse" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-horizontal-radius">
+  <rdfs:label>Has Horizontal Radius</rdfs:label>
+  <rdfs:comment>This property specifies the ellipse's horizontal radius</rdfs:comment>
+  <rdfs:domain rdf:resource="#Ellipse" />
+  <rdfs:range rdf:resource="#Distance" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-vertical-radius">
+  <rdfs:label>Has Horizontal Radius</rdfs:label>
+  <rdfs:comment>This property specifies the ellipse's vertical radius</rdfs:comment>
+  <rdfs:domain rdf:resource="#Ellipse" />
+  <rdfs:range rdf:resource="#Distance" />
+</owl:ObjectProperty>
+
+<!-- Line -->
+
+<owl:Class rdf:ID="Line">
+  <rdfs:subClassOf rdf:resource="#Shape" />
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="has-start-point">
+  <rdfs:label>Has Start Point</rdfs:label>
+  <rdfs:comment>This property specifies the start point of the line</rdfs:comment>
+  <rdfs:domain rdf:resource="#Line" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="has-end-point">
+  <rdfs:label>Has Start Point</rdfs:label>
+  <rdfs:comment>This property specifies the end point of the line</rdfs:comment>
+  <rdfs:domain rdf:resource="#Line" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+<!-- Polyline -->
+
+<owl:Class rdf:ID="Polyline">
+  <rdfs:subClassOf rdf:resource="#Shape" />
+  <rdfs:subClassOf>
+    <owl:Restriction> 
+      <owl:onProperty rdf:resource="#has-points"/>
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
+    </owl:Restriction> 
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="has-points">
+  <rdfs:label>Has Points</rdfs:label>
+  <rdfs:comment>This property specifies the points which make up the polyline</rdfs:comment>
+  <rdfs:domain rdf:resource="#Polyline" />
+  <rdfs:range rdf:resource="#Point" />
+</owl:ObjectProperty>
+
+
+<!-- Polygon -->
+
+<owl:Class rdf:ID="Polygon">
+  <rdfs:subClassOf rdf:resource="#Polyline" />
+  <rdfs:subClassOf>
+    <owl:Restriction> 
+      <owl:onProperty rdf:resource="#has-points"/>
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:minCardinality>
+    </owl:Restriction> 
+  </rdfs:subClassOf>
+</owl:Class>
+
+<!-- Distance -->
+
+<owl:class rdf:ID="Distance">
+  <rdfs:comment>This class provides a simple pairing of a distance value and a unit</rdfs:comment>
+</owl:class>
+
+<owl:DatatypeProperty rdf:ID="has-value">
+  <rdfs:label>has-value</rdfs:label>
+  <rdfs:domain rdf:resource="#Value" />
+  <rdfs:range rdf:resource="&xsd;double" />
+  <rdfs:comment>This property specifies a value</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:ObjectProperty rdf:ID="has-unit">
+  <rdfs:label>has-unit</rdfs:label>
+  <rdfs:domain rdf:resource="#Value" />
+  <rdfs:range rdf:resource="#Unit" />
+  <rdfs:comment>This property specifies the unit of a value</rdfs:comment>
+</owl:ObjectProperty>
+
+<!-- Unit -->
+
+<owl:class rdf:ID="Unit">
+  <rdfs:comment>This class represents a unit of a value</rdfs:comment>
+</owl:class>
+
+<owl:DatatypeProperty rdf:ID="has-name">
+  <rdfs:label>has-name</rdfs:label>
+  <rdfs:domain rdf:resource="#Unit" />
+  <rdfs:range rdf:resource="&rdfs;Literal" />
+  <rdfs:comment>The full name of the unit (e.g. centimetre)</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:ID="has-abbrev">
+  <rdfs:label>has-abbrev</rdfs:label>
+  <rdfs:domain rdf:resource="#Unit" />
+  <rdfs:range rdf:resource="&rdfs;Literal" />
+  <rdfs:comment>The short form of the unit (e.g. cm)</rdfs:comment>
+</owl:DatatypeProperty>
+
+<!-- Point -->
+
+<owl:class rdf:ID="Point">
+  <rdfs:comment>This class represents a point in space (or presumably time)</rdfs:comment>
+</owl:class>
+
+<owl:class rdf:ID="Point2D">
+  <rdfs:subClassOf rdf:resource="#Point" />
+  <rdfs:comment>This class represents a 2D point</rdfs:comment>
+</owl:class>
+
+<owl:DatatypeProperty rdf:ID="has-x-value">
+  <rdfs:label>Has X Value</rdfs:label>
+  <rdfs:domain rdf:resource="#Point2D" />
+  <rdfs:range rdf:resource="&xsd;double" />
+  <rdfs:comment>This property specifies the X co-ord of a point</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:ID="has-y-value">
+  <rdfs:label>Has Y Value</rdfs:label>
+  <rdfs:domain rdf:resource="#Point2D" />
+  <rdfs:range rdf:resource="&xsd;double" />
+  <rdfs:comment>This property specifies the Y co-ord of a point</rdfs:comment>
+</owl:DatatypeProperty>
+
+<owl:class rdf:ID="PixelPoint">
+  <!-- Could do with a way to restrict the type to integer here -->
+  <rdfs:subClassOf rdf:resource="#Point2D" />
+</owl:class>
+
+<owl:class rdf:ID="WGS84Point">
+   <rdfs:subClassOf rdf:resource="#Point" />
+   <rdfs:subClassOf rdf:resource="&geo;Point" />
+</owl:class>
+
+
+
+
+</rdf:RDF>  

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omm "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/exprop#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omm="&omm;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Expression Property Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Expression Property Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+ <owl:imports rdf:resource="http://ontomedia.ecs.soton.ac.uk/ontologies/core/expression"/>
+ <owl:imports rdf:resource="http://ontomedia.ecs.soton.ac.uk/ontologies/core/media"/>
+</owl:Ontology>
+
+<!-- Expression Properties -->
+
+  <owl:Class rdf:ID="Expression-Properties">
+    <rdfs:label>Expression Properties</rdfs:label>
+    <rdfs:comment>This class represents additional properties</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&ome;Expression" />
+  </owl:Class>
+
+
+<!-- Expression Properties Extensions -->
+
+  <owl:Class rdf:ID="Accuracy-Rating-Properties">
+    <rdfs:label>Accuracy Rating Properties</rdfs:label>
+    <rdfs:comment>This class represents accuracy of the information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Expression-Properties" />
+  </owl:Class>
+
+  <owl:Class rdf:ID="Abstract-Rating-Properties">
+    <rdfs:label>Abstract Rating Properties</rdfs:label>
+    <rdfs:comment>This class represents abstractness of the information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Expression-Properties" />
+  </owl:Class>
+  
+<!-- Accuracy Classes -->
+
+  <owl:Class rdf:ID="Accurate">
+    <rdfs:label>Accurate</rdfs:label>
+    <rdfs:comment>This class represents the concept of an accurate value</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Accuracy-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Approximate" />
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Approximate">
+    <rdfs:label>Approximate</rdfs:label>
+    <rdfs:comment>This class represents the concept of an approximate value</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Accuracy-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Accurate" />
+  </owl:Class>
+
+<!-- Absract Classes -->
+
+  <owl:Class rdf:ID="Generic">
+    <rdfs:label>Generic</rdfs:label>
+    <rdfs:comment>This class represents the concept of generic information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Abstract-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Specialised" />
+    <owl:disjointWith rdf:resource="&base;Specific" />
+    <owl:disjointWith rdf:resource="&base;Detail" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" />    
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Specialised">
+    <rdfs:label>Specialised</rdfs:label>
+    <rdfs:comment>This class represents the concept of a specialised information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Abstract-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Generic" />
+    <owl:disjointWith rdf:resource="&base;Specific" />
+    <owl:disjointWith rdf:resource="&base;Detail" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" /> 
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Specific">
+    <rdfs:label>Specific</rdfs:label>
+    <rdfs:comment>This class represents the concept of specific information</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Abstract-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Generic" />
+    <owl:disjointWith rdf:resource="&base;Specialised" />
+    <owl:disjointWith rdf:resource="&base;Detail" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" /> 
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Detail">
+    <rdfs:label>Detail</rdfs:label>
+    <rdfs:comment>This class represents the concept of a detail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Abstract-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Generic" />
+    <owl:disjointWith rdf:resource="&base;Specialised" />
+    <owl:disjointWith rdf:resource="&base;Specific" />
+    <owl:disjointWith rdf:resource="&base;Nitpick" /> 
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Nitpick">
+    <rdfs:label>Nitpick</rdfs:label>
+    <rdfs:comment>This class represents the concept of a nitpick</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&base;Abstract-Rating-Properties" />
+    <owl:disjointWith rdf:resource="&base;Generic" />
+    <owl:disjointWith rdf:resource="&base;Specialised" />
+    <owl:disjointWith rdf:resource="&base;Specific" />
+    <owl:disjointWith rdf:resource="&base;Detail" /> 
+  </owl:Class> 
+  
+</rdf:RDF>  
+  

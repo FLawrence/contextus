@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/date#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY omk "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/detail/know#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xmlns:omt="&omt;" 
+ xmlns:ome="&ome;"
+ xmlns:omb="&omb;" 
+ xmlns:omk="&omk;" 
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Date Part Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Date-Component Part Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) Date Component has been designed to describe the different ways of marking time in media.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.21</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Date -->
+
+<owl:Class rdf:ID="Calendar">
+  <rdfs:subClassOf rdf:resource="&omk;Culture" />
+  <rdfs:comment>This class represents a system of representing time</rdfs:comment>
+  <rdfs:label>Calendar</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Date">
+  <rdfs:subClassOf rdf:resource="&omt;Value" />
+  <rdfs:comment>This class represents a value representing time</rdfs:comment>
+  <rdfs:label>Date</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="CalendarReferencePoint">
+  <rdfs:subClassOf rdf:resource="&base;Date" />
+  <rdfs:comment>This class represents a reference point which a calendar measures other dates relative to</rdfs:comment>
+  <rdfs:label>Calendar Reference Point</rdfs:label>
+</owl:Class>
+
+<!-- Date-Component -->
+
+<owl:Class rdf:ID="Date-Component">
+  <rdfs:subClassOf rdf:resource="&omt;AbstractComponent" />
+  <rdfs:comment>This class represents the parts of a date</rdfs:comment>
+  <rdfs:label>Date Component</rdfs:label>
+</owl:Class>
+
+<!-- Date-Ordering -->
+
+<owl:Class rdf:ID="Date-Ordering">
+  <rdfs:subClassOf rdf:resource="&omt;Ordering" />
+  <rdfs:comment>This class represents the order in which components describing a date should be displayed</rdfs:comment>
+  <rdfs:label>Date Ordering</rdfs:label>
+</owl:Class>
+
+<!-- Date Component Classes -->
+
+<owl:Class rdf:ID="Second">
+  <rdfs:subClassOf rdf:resource="&base;Date-Component" />
+  <rdfs:comment>This class represents the part of a date which is the second designaition</rdfs:comment>
+  <rdfs:label>Second</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Minute">
+  <rdfs:subClassOf rdf:resource="&base;Date-Component" />
+  <rdfs:comment>This class represents the part of a date which is the minute designaition</rdfs:comment>
+  <rdfs:label>Minute</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Hour">
+  <rdfs:subClassOf rdf:resource="&base;Date-Component" />
+  <rdfs:comment>This class represents the part of a date which is the hour designaition</rdfs:comment>
+  <rdfs:label>Hour</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Day">
+  <rdfs:subClassOf rdf:resource="&base;Date-Component" />
+  <rdfs:comment>This class represents the part of a date which is the day designaition</rdfs:comment>
+  <rdfs:label>Day</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Month">
+  <rdfs:subClassOf rdf:resource="&base;Date-Component" />
+  <rdfs:comment>This class represents the part of a date which is the month designaition</rdfs:comment>
+  <rdfs:label>Month</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Year">
+  <rdfs:subClassOf rdf:resource="&base;Date-Component" />
+  <rdfs:comment>This class represents the part of a date which is the year designaition</rdfs:comment>
+  <rdfs:label>Year</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Qualifier">
+  <rdfs:subClassOf rdf:resource="&base;Date-Component" />
+  <rdfs:comment>This class represents the textual qualifier that may be part of the data i.e. AD, BCE etc</rdfs:comment>
+  <rdfs:label>Qualifier</rdfs:label>
+</owl:Class>
+
+<!-- Date Ordering Classes -->
+
+<owl:Class rdf:ID="Standard">
+  <rdfs:subClassOf rdf:resource="&base;Date-Ordering" />
+  <rdfs:comment>This class represents the International Standard form of the date</rdfs:comment>
+  <rdfs:label>International Standard</rdfs:label>
+</owl:Class>
+
+<!-- Date-Component Properties -->
+
+
+<!--  HAS-VALUE NOW USED
+
+  <owl:ObjectProperty rdf:ID="date-component-value">
+    <rdfs:label>Date Component Value</rdfs:label>
+    <rdfs:comment>This property specifies the name represented by the component</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Date-Component"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:ObjectProperty>  
+  
+-->
+  
+<!-- Date Properties -->
+
+  <owl:ObjectProperty rdf:ID="has-date-component">
+    <rdfs:label>Has Date Component</rdfs:label>
+    <rdfs:comment>This property specifies the name represented by the component</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Date"/>
+    <rdfs:range rdf:resource="&base;Date-Component"/>
+  </owl:ObjectProperty> 
+   
+  <owl:ObjectProperty rdf:ID="abstracted-from-occurrence">
+      <rdfs:label>Abstracted From Occurrence</rdfs:label>
+      <rdfs:comment>The occurrance of an event from which the reference point was abstracted</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;Date"/>
+      <rdfs:range rdf:resource="&ome;Occurrence"/>
+  </owl:ObjectProperty>  
+
+  <owl:ObjectProperty rdf:ID="before-reference-point">
+      <rdfs:label>Before Reference Point</rdfs:label>
+      <rdfs:comment>The relative reference point before which the desired point of time occurs</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;Date"/>
+      <rdfs:range rdf:resource="&base;CalendarReferencePoint"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="after-reference-point">
+      <rdfs:label>After Reference Point</rdfs:label>
+      <rdfs:comment>The relative reference point after which the desired point of time occurs</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;Date"/>
+      <rdfs:range rdf:resource="&base;CalendarReferencePoint"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="uses-calendar">
+      <rdfs:label>Uses Calendar</rdfs:label>
+      <rdfs:comment>The calandar which the date uses</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;Date"/>
+      <rdfs:range rdf:resource="&base;Calendar"/>
+  </owl:ObjectProperty>
+  
+<!-- Calander Properties -->
+   
+  <owl:ObjectProperty rdf:ID="has-reference-point">
+      <rdfs:label>Has Reference Point</rdfs:label>
+      <rdfs:comment>This property specifies a point of reference in a Calendar</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;Calendar"/>
+      <rdfs:range rdf:resource="&base;CalendarReferencePoint"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="reference-point-minus-one">
+      <rdfs:label>Reference Point Minus One</rdfs:label>
+      <rdfs:comment>The Year Preceeding the Reference Point Year</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;CalendarReferencePoint"/>
+      <rdfs:range rdf:resource="&base;Year"/>
+  </owl:ObjectProperty>  
+
+  <owl:ObjectProperty rdf:ID="reference-point-plus-one">
+      <rdfs:label>Reference Point Plus One</rdfs:label>
+      <rdfs:comment>The Year Following the Reference Point Year</rdfs:comment>
+      <rdfs:domain rdf:resource="&base;CalendarReferencePoint"/>
+      <rdfs:range rdf:resource="&base;Year"/>
+  </owl:ObjectProperty>  
+
+</rdf:RDF>

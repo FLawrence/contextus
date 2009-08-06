@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/travel#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/trans#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xmlns:omt="&omt;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Knowledge Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Knowledge Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+ <owl:imports rdf:resource="http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression"/>
+</owl:Ontology>
+
+<!-- Travel Classes -->
+
+<owl:Class rdf:ID="Travel">
+  <rdfs:subClassOf rdf:resource="&omt;Transference" />
+  <rdfs:comment>This class represents travel</rdfs:comment>
+  <rdfs:label>Travel</rdfs:label>
+</owl:Class>
+
+<!-- Travel Types Classes -->
+
+<owl:Class rdf:ID="Void-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Travel" />
+  <rdfs:comment>This class represents travel through or within voids eg. space travel, interdimensional travel etc</rdfs:comment>
+  <rdfs:label>Void Travel</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Solid-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Travel" />
+  <rdfs:comment>This class represents travel on or through solid objects</rdfs:comment>
+  <rdfs:label>Solid Travel</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Liquid-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Travel" />
+  <rdfs:comment>This class represents travel on or through liquid</rdfs:comment>
+  <rdfs:label>Liquid Travel</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Gas-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Travel" />
+  <rdfs:comment>This class represents travel within gas compounds (including air)</rdfs:comment>
+  <rdfs:label>Gas Travel</rdfs:label>
+</owl:Class>
+  
+<!-- Void Travel Classes -->
+
+<owl:Class rdf:ID="Space-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Void-Travel" />
+  <rdfs:comment>This class represents travel through space</rdfs:comment>
+  <rdfs:label>Space Travel</rdfs:label>
+</owl:Class>
+
+<!-- Solid Travel Classes -->
+
+<owl:Class rdf:ID="Terrain-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Solid-Travel" />
+  <rdfs:comment>This class represents travel on a solid object</rdfs:comment>
+  <rdfs:label>Terrain Travel</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Submatter-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Solid-Travel" />
+  <rdfs:comment>This class represents travel within a solid object</rdfs:comment>
+  <rdfs:label>Submatter Travel</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Subterranean-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Solid-Travel" />
+  <rdfs:comment>This class represents travel underground</rdfs:comment>
+  <rdfs:label>Subterranean Travel</rdfs:label>
+</owl:Class>
+
+<!-- Liquid Travel Classes -->
+
+<owl:Class rdf:ID="Marine-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Liquid-Travel" />
+  <rdfs:comment>This class represents travel on a liquid</rdfs:comment>
+  <rdfs:label>Marine Travel</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Submarine-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Liquid-Travel" />
+  <rdfs:comment>This class represents travel under the surface of a liquid</rdfs:comment>
+  <rdfs:label>Submarine Travel</rdfs:label>
+</owl:Class>
+
+<!-- Gas Travel Classes -->
+
+<owl:Class rdf:ID="Air-Travel">
+  <rdfs:subClassOf rdf:resource="&base;Gas-Travel" />
+  <rdfs:comment>This class represents air travel</rdfs:comment>
+  <rdfs:label>Air Travel</rdfs:label>
+</owl:Class>
+
+</rdf:RDF>

@@ -1,0 +1,948 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY ome		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+  <!ENTITY omk 	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/detail/know#">
+  <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct          "http://purl.org/dc/terms/">
+  <!ENTITY locspec      "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/locspec#">
+  <!ENTITY omt	      	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+  <!ENTITY omm	      	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media#">
+  <!ENTITY dat	      	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/owl/misc/date#">
+  <!ENTITY base	      	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait">
+]>  
+
+
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:owl="&owl;"
+	 xmlns:xsd="&xsd;"
+	 xmlns:locspec="&locspec;"
+	 xmlns:ome="&ome;"
+	 xmlns:omm="&omm;"
+	 xmlns:nom="&nom;"
+	 xmlns:omb="&omb;"
+	 xmlns:loc="&loc;"
+	 xmlns:dat="&dat;"
+	 xml:base="&base;"
+	 xmlns:dc="&dc;"
+	 xmlns:dct="&dct;">
+
+
+<?xml version="1.0"?>
+<rdf:RDF
+
+  <owl:Ontology rdf:about="&base;">
+    <rdfs:label>OntoMedia Trait Representation</rdfs:label>
+    <dc:title xml:lang="en">OntoMedia Trait</dc:title>
+    <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the traits of entities.</dc:description>
+    <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+    <dct:created>2005-05-11</dct:created>
+    <owl:versionInfo>0.2</owl:versionInfo>
+  </owl:Ontology>
+  
+  <!-- Traits -->
+    
+  <owl:Class rdf:about="#Trait">
+    <rdfs:label>Trait</rdfs:label>
+    <rdfs:comment>This class represents the characteristics that describe an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&ome;Abstract-Item"/>
+  </owl:Class>
+  
+    <owl:Class rdf:about="#Being-Trait">
+    <rdfs:label>Character Trait</rdfs:label>
+    <rdfs:comment>This class represents the characteristics that describe a Character Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+  </owl:Class>
+  
+  <!-- Trait Classes -->  
+    
+  <owl:Class rdf:about="#Value">
+    <rdfs:label>Value</rdfs:label>
+    <rdfs:comment>This class represents the value of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+  </owl:Class>
+
+  <!-- Being Trait Classes -->
+  
+    <owl:Class rdf:ID="Age">
+    <rdfs:comment>This class represents the age of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>Age</rdfs:label>
+  </owl:Class>
+    
+  <owl:Class rdf:about="#Description">
+    <rdfs:label>Description</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:comment>This class represents the physical description of an Entity</rdfs:comment>
+  </owl:Class>  
+  
+   <owl:Class rdf:ID="Employment">
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>Employment</rdfs:label>
+    <rdfs:comment>This class represents the employment or other type of job undertaken by an Entity</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Ethnicity">
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>Ethnicity</rdfs:label>
+    <rdfs:comment>This class represents the ethnicity of an Entity</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Faith">
+    <rdfs:comment>This class represents the religious or spiritual preference or preferences of a Character Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="Being-Trait" />
+    <rdfs:label>Faith</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Gender">
+    <rdfs:comment>This class represents the gender of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>Gender</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://www.aktors.org/ontology/portal#Gender"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Kink">
+    <rdfs:label>Kink</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:comment>This class represents the sexual kinks or fetishes of a Character Entity. This is distinct from and in addition to a Character Entities' sexuality.</rdfs:comment>
+  </owl:Class>
+  
+    <owl:Class rdf:ID="Knowledge">
+    <rdfs:label>Knowledge</rdfs:label>
+    <rdfs:comment>This class represents things known by an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Link">
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>Link</rdfs:label>
+    <rdfs:comment>This class represents links between this and other Entities</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Motivation">
+    <rdfs:label>Motivation</rdfs:label>
+    <rdfs:comment>This class represents the motivation of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Name">
+    <rdfs:label>Name</rdfs:label>
+    <rdfs:comment>This class represents the name or equivilent designation of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="Trait"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Ordering">
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:comment>This class represents an ordering of Entities</rdfs:comment>
+    <rdfs:label>Ordering</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Sexuality">
+    <rdfs:label>Sexuality</rdfs:label>
+    <rdfs:comment>This class represents the sexual preference or preferences of a Character Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Species">
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:comment>This class represents the species of an Entity</rdfs:comment>
+    <rdfs:label>Species</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Stage-Of-Life">
+    <rdfs:comment>This class represents the stage of life of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>Stage of Life</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="#State-Of-Being">
+    <rdfs:comment>This class represents the state of being of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>State of Being</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#State-Of-Consciousness">
+    <rdfs:label>State of Consciousness</rdfs:label>
+    <rdfs:comment>This class represents the state of consciousness of an Entity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#State-Of-Form">
+    <rdfs:comment>This class represents the state of form of an Entity</rdfs:comment>
+    <rdfs:label>State of Form</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+  </owl:Class>
+  
+  
+  
+<!-- Description Classes -->
+  
+  <owl:Class rdf:ID="Build">
+    <rdfs:label>Build</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Description"/>
+    <rdfs:comment>This class represents a physical build type</rdfs:comment>
+  </owl:Class>
+  
+    <owl:Class rdf:ID="Style">
+    <rdfs:subClassOf rdf:resource="Description"/>
+    <rdfs:label>Style</rdfs:label>
+    <rdfs:comment>This class represents a style type</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Colour">
+    <rdfs:label>Colour</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Description"/>
+    <rdfs:comment>This class represents colours</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Type">
+    <rdfs:label>Type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Description"/>
+    <rdfs:comment>This class represents a type</rdfs:comment>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Distinguishing-Mark">
+    <rdfs:subClassOf rdf:resource="#Description"/>
+    <rdfs:comment>This class represents a distinguishing mark</rdfs:comment>
+    <rdfs:label>Distinguishing Mark</rdfs:label>
+  </owl:Class> 
+  
+  <owl:Class rdf:ID="Material">
+    <rdfs:comment>This class represents a type of material</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Description"/>
+    <rdfs:label>Material</rdfs:label>
+  </owl:Class>  
+  
+    <owl:Class rdf:ID="Dimension">
+    <rdfs:comment>This class represents a dimension</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Description"/>
+    <rdfs:label>Dimension</rdfs:label>
+  </owl:Class>
+  
+<!-- Gender Classes -->
+
+  <owl:Class rdf:ID="Male">
+    <rdfs:label>Male</rdfs:label>
+    <rdfs:comment>This class represents the male gender</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="Gender"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Neuter">
+    <rdfs:label>Neuter</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Gender"/>
+    <rdfs:comment>This class represents the neuter gender</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Female">
+    <rdfs:comment>This class represents the female gender</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Gender"/>
+    <rdfs:label>Female</rdfs:label>
+  </owl:Class>
+    
+  <owl:Class rdf:ID="Other">
+    <rdfs:comment>This class represents the 'other' gender</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Gender"/>
+    <rdfs:label>Other</rdfs:label>
+  </owl:Class>
+
+<!-- Sexuality Classes -->
+
+  <owl:Class rdf:ID="To-Same-Gender">
+    <rdfs:subClassOf rdf:resource="Sexuality"/>
+    <rdfs:comment>This class represents the sexual preference or preferences of a Character Entity to other Entities which share the same gender trait. This might not be exclusive.</rdfs:comment>
+    <rdfs:label>To Same Gender</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="To-Other-Gender">
+    <rdfs:subClassOf rdf:resource="#Sexuality"/>
+    <rdfs:comment>This class represents the sexual preference or preferences of a Character Entity to other Entities which have a different gender trait. This might not be exclusive.</rdfs:comment>
+    <rdfs:label>To Other Gender</rdfs:label>
+  </owl:Class>
+  
+  <!-- Stage of Life -->
+  
+ <owl:Class rdf:ID="Adult">
+    <rdfs:subClassOf rdf:resource="#Stage-Of-Life"/>
+    <rdfs:comment>This class represents the adult stage of life of an entity</rdfs:comment>
+    <rdfs:label>Adult</rdfs:label>
+  </owl:Class>
+  
+ <owl:Class rdf:ID="Old">
+    <rdfs:subClassOf rdf:resource="#Stage-Of-Life"/>
+    <rdfs:comment>This class represents the old stage of life of an entity</rdfs:comment>
+    <rdfs:label>Old</rdfs:label>
+  </owl:Class>
+    
+ <owl:Class rdf:ID="Young">
+    <rdfs:subClassOf rdf:resource="#Stage-Of-Life"/>
+    <rdfs:comment>This class represents the young stage of life of an entity</rdfs:comment>
+    <rdfs:label>Young</rdfs:label>
+  </owl:Class>
+  
+ <owl:Class rdf:ID="Virgin">
+    <rdfs:subClassOf rdf:resource="#Stage-Of-Life"/>
+    <rdfs:comment>This class represents the pre-sexually active stage of life of an entity</rdfs:comment>
+    <rdfs:label>Virgin</rdfs:label>
+  </owl:Class>
+  
+ <owl:Class rdf:ID="Child">
+    <rdfs:subClassOf rdf:resource="#Young"/>
+    <rdfs:comment>This class represents the child stage of life of an entity</rdfs:comment>
+    <rdfs:label>Child</rdfs:label>
+  </owl:Class>
+  
+   <owl:Class rdf:ID="Teenager">
+    <rdfs:subClassOf rdf:resource="#Young"/>
+    <rdfs:comment>This class represents the teenage stage of life of an entity</rdfs:comment>
+    <rdfs:label>Teenage</rdfs:label>
+  </owl:Class>
+  
+ <owl:Class rdf:ID="Young-Adult">
+    <rdfs:subClassOf rdf:resource="#Young"/>
+    <rdfs:comment>This class represents the young adult stage of life of an entity</rdfs:comment>
+    <rdfs:label>Young Adult</rdfs:label>
+  </owl:Class>
+
+<!-- State of Being -->
+
+  <owl:Class rdf:ID="Undead">
+    <rdfs:label>Undead</rdfs:label>
+    <rdfs:subClassOf rdf:resource="State-Of-Being"/>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Unprovable"/>
+      <owl:Class rdf:ID="NonExistent"/>
+      <owl:Class rdf:ID="Unknown"/>
+      <owl:Class rdf:ID="Dead"/>
+      <owl:Class rdf:ID="Alive"/>
+      <owl:Class rdf:ID="Inanimate"/>
+    </owl:disjointWith>
+    <rdfs:comment>This class describes an Entity which is undead</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Inanimate">
+    <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Dead"/>
+    	<owl:Class rdf:about="#Undead"/>
+    	<owl:Class rdf:about="#NonExistent"/>
+      	<owl:Class rdf:about="#Alive"/>
+		<owl:Class rdf:about="#Unprovable"/>
+      <owl:Class rdf:about="#Unknown"/>
+    <rdfs:comment>This class describes an Entity which exists but is not, never was or never can be alive</rdfs:comment>
+    <rdfs:label>Inanimate</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Unprovable">
+    <rdfs:comment>This class describes an Entity those state of existance cannot be proved</rdfs:comment>
+    <rdfs:label>Unprovable</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Unknown"/>
+      <owl:Class rdf:about="#NonExistent"/>
+      <owl:Class rdf:about="#Dead"/>
+      <owl:Class rdf:about="#Undead"/>
+      <owl:Class rdf:about="#Inanimate"/>
+      <owl:Class rdf:about="#Alive"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Dead">
+    <rdfs:comment>This class describes an Entity which is dead</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Unknown"/>
+      <owl:Class rdf:about="#NonExistent"/>
+      <owl:Class rdf:about="#Alive"/>
+      <owl:Class rdf:about="#Undead"/>
+      <owl:Class rdf:about="#Inanimate"/>
+    </owl:disjointWith>
+    <rdfs:label>Dead</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Unknown">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Alive"/>
+      <owl:Class rdf:about="#NonExistent"/>
+       <owl:Class rdf:about="#Unprovable"/>
+        <owl:Class rdf:about="#Undead"/>
+         <owl:Class rdf:about="#Inanimate"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Dead"/>
+    <rdfs:comment>This class describes an Entity those state of existance is not unknown but is theoretically provable</rdfs:comment>
+    <rdfs:label>Unknown</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Non-Existent">
+    <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
+    <rdfs:label>Non-Existent</rdfs:label>
+    <rdfs:comment>This class describes an Entity which does not exist</rdfs:comment>
+    <owl:disjointWith rdf:resource="#Undead"/>
+    <owl:disjointWith rdf:resource="#Dead"/>
+    <owl:disjointWith rdf:resource="#Inanimate"/>
+    <owl:disjointWith rdf:resource="#Unknown"/>
+    <owl:disjointWith rdf:resource="#Unprovable"/>
+    <owl:disjointWith rdf:resource="#Alive"/>
+  </owl:Class> 
+  
+  <owl:Class rdf:about="#Alive">
+    <owl:disjointWith rdf:resource="#Unknown"/>
+    <owl:disjointWith rdf:resource="#Inanimate"/>
+    <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
+    <owl:disjointWith rdf:resource="#Unprovable"/>
+    <rdfs:label>Living</rdfs:label>
+    <owl:disjointWith rdf:resource="#Undead"/>
+    <owl:disjointWith rdf:resource="#Dead"/>
+    <rdfs:comment>This class describes an Entity which is alive</rdfs:comment>
+  </owl:Class>
+
+<!-- State of Consciousness -->
+  
+  <owl:Class rdf:ID="Unconscious">
+    <rdfs:label>Unconscious</rdfs:label>
+    <rdfs:comment>This class describes an Entity which is unconscious</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="State-Of-Consciousness"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about=="#Conscious"/>
+      <owl:Class rdf:about=="#Unresponsive"/>
+	  <owl:Class rdf:about=="#Asleep"/>
+      <owl:Class rdf:about=="#Instinctual"/>
+    </owl:disjointWith>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Asleep">
+    <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
+    <rdfs:label>Asleep</rdfs:label>
+    <rdfs:comment>This class describes an Entity which is asleep</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Conscious"/>
+      <owl:Class rdf:about="#Unresponsive"/>
+      <owl:Class rdf:about="#Instinctual"/>
+    </owl:disjointWith>
+  </owl:Class>
+
+  <owl:Class rdf:about="Conscious">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Unresponsive"/>
+	  <owl:Class rdf:about="#Asleep"/>
+      <owl:Class rdf:about="#Instinctual"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
+    <rdfs:comment>This class describes an Entity which is conscious</rdfs:comment>
+    <rdfs:label>Conscious</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="Altered">
+    <rdfs:label>Altered Consciousness</rdfs:label>
+    <rdfs:comment>This class describes an Entity whose consciousness is not in its normal state</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
+  </owl:Class>
+  
+    <owl:Class rdf:about="Ecstatic">
+    <rdfs:label>Ecstatic Consciousness</rdfs:label>
+    <rdfs:comment>This class describes an Entity whose consciousness is ecstatic</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Unresponsive">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Instinctual"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Conscious"/>
+    <rdfs:label>Unresponsive</rdfs:label>
+    <rdfs:comment>This class describes an Entity which is totally unresponsive to external stimuli i.e. coma</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Instinctual">
+    <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
+    <rdfs:comment>This class describes an Entity that is working at a totally instinctual/subconscious level</rdfs:comment>
+    <rdfs:label>Instinctual/Subconscious</rdfs:label>
+    <owl:disjointWith rdf:resource="#Unresponsive"/>
+    <owl:disjointWith rdf:resource="#Conscious"/>
+  </owl:Class>
+  
+  <!-- State of Form -->
+
+  <owl:Class rdf:ID="Corporeal">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Incorporeal"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="State-Of-Form"/>
+    <rdfs:comment>This class describes an Entity which is corporeal</rdfs:comment>
+    <rdfs:label>Corporeal</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Incorporeal">
+    <rdfs:subClassOf rdf:resource="#State-Of-Form"/>
+    <owl:disjointWith rdf:resource="#Corporeal"/>
+    <rdfs:comment>This class describes an Entity which is incorporeal</rdfs:comment>
+    <rdfs:label>Incorporeal</rdfs:label>
+  </owl:Class>
+  
+ <owl:Class rdf:about="#Liquid">
+    <rdfs:subClassOf rdf:resource="#Corporeal"/>
+    <rdfs:comment>This class describes an Entity which is a liquid</rdfs:comment>
+    <rdfs:label>Liquid</rdfs:label>
+  </owl:Class>
+
+ <owl:Class rdf:about="#Solid">
+    <rdfs:subClassOf rdf:resource="#Corporeal"/>
+    <rdfs:comment>This class describes an Entity which is a solid</rdfs:comment>
+    <rdfs:label>Solid</rdfs:label>
+  </owl:Class>
+  
+   <owl:Class rdf:about="#Gas">
+    <rdfs:subClassOf rdf:resource="#Incorporeal"/>
+    <rdfs:comment>This class describes an Entity which is a gas</rdfs:comment>
+    <rdfs:label>Gas</rdfs:label>
+  </owl:Class>
+  
+   <owl:Class rdf:about="#Void">
+    <rdfs:subClassOf rdf:resource="#Incorporeal"/>
+    <rdfs:comment>This class describes an Entity which is a void</rdfs:comment>
+    <rdfs:label>Void</rdfs:label>
+  </owl:Class>
+
+  <!-- Obstacles -->
+  
+  <owl:Class rdf:ID="Physical-Obstacle">
+    <rdfs:comment>This class represents a physical problem or obstacle</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&ome;Physical-Item"/>
+    <rdfs:label>Physical Obstacle</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Abstract-Obstacle">
+    <rdfs:subClassOf rdf:resource="#Being-Trait"/>
+    <rdfs:subClassOf rdf:resource="#Trait"/>
+    <rdfs:label>Abstract Obstacle</rdfs:label>
+    <rdfs:comment>This class represents an abstract problem or obstacle</rdfs:comment>
+  </owl:Class>
+  
+  <!-- Value Classes -->
+ 
+  <owl:Class rdf:ID="AbstractComponent">
+    <rdfs:subClassOf rdf:resource="Value"/>
+    <rdfs:label>Abstract Component</rdfs:label>
+    <rdfs:comment>This class represents a component part of an abstract item</rdfs:comment>
+  </owl:Class> 
+
+  
+  
+  <!-- Properties -->
+  
+  <owl:ObjectProperty rdf:about="#has-trait">
+    <rdfs:range rdf:resource="#Trait"/>
+    <rdfs:comment>This property specifies a general trait which belongs to an Entity</rdfs:comment>
+    <rdfs:label>Has Trait</rdfs:label>
+    <rdfs:domain rdf:resource="&ome;Entity"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="#has-observed-trait">
+    <rdfs:label>Has Observed Trait</rdfs:label>
+    <rdfs:domain rdf:resource="&ome;Entity"/>
+    <rdfs:range rdf:resource="#Trait"/>
+    <rdfs:comment>This property specifies a trait which belongs to an Entity and is known outside the Context in which the Entity exists but not by other Entities within the Context i.e the audience knows</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="#has-projected-trait">
+    <rdfs:label>Has Projected Trait</rdfs:label>
+    <rdfs:domain rdf:resource="&ome;Entity"/>
+    <rdfs:range rdf:resource="#Trait"/>
+    <rdfs:comment>This property specifies a trait which is projected by Entity to other Entities</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="projected-at">
+    <rdfs:label>Projected At</rdfs:label>
+    <rdfs:range rdf:resource="&ome;Entity"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Trait"/>
+          <owl:Class rdf:about="&omb;Profession"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment>This property specifies the Entity or Entities at which the related trait is projected at</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="not-projected-at">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Trait"/>
+          <owl:Class rdf:about="&omb;Profession"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label>Not Projected At</rdfs:label>
+    <rdfs:range rdf:resource="&ome;Entity"/>
+    <rdfs:comment>This property specifies the Entity or Entities at which the related trait is not projected at</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <!-- Age Properties -->
+  
+ <owl:FunctionalProperty rdf:ID="has-age">
+    <rdfs:domain rdf:resource="#Age"/>
+    <rdfs:range rdf:resource="#Value"/>
+    <rdfs:label>Age</rdfs:label>
+    <rdfs:comment>This property specifies the age of the entity</rdfs:comment>
+  </owl:FunctionalProperty>
+ 
+  <owl:FunctionalProperty rdf:ID="has-birthday">
+    <rdfs:comment>This property specifies the date of birth or creation of the entity</rdfs:comment>
+    <rdfs:label>Birthday</rdfs:label>
+    <rdfs:range rdf:resource="&dat;Date"/>
+    <rdfs:domain rdf:resource="#Age"/>
+  </owl:FunctionalProperty>
+  
+  <!-- Faith Properties -->
+  
+    <owl:ObjectProperty rdf:ID="believes">
+    <rdfs:range rdf:resource="&omk;Religion"/>
+    <rdfs:label>Believes</rdfs:label>
+    <rdfs:domain rdf:resource="#Faith"/>
+    <rdfs:comment>This property specifies the religion the entity has faith in.</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <!-- Value Properties -->
+  
+  <owl:ObjectProperty rdf:ID="order_of_magnitude">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:label>Order of Magnitude</rdfs:label>
+    <rdfs:domain rdf:resource="#Value"/>
+    <rdfs:comment>This property specifies the order of magnitude of the value. Useful list: http://chemistry.berkeley.edu/links/weights/powers.html</rdfs:comment>
+  </owl:ObjectProperty>
+    
+  <owl:ObjectProperty rdf:ID="has-value">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:comment>This property specifies a value of the property or entity</rdfs:comment>
+    <rdfs:label>Has Value</rdfs:label>
+    <rdfs:domain rdf:resource="#Value"/>
+  </owl:ObjectProperty>
+  
+   <owl:FunctionalProperty rdf:ID="has-dimension">
+    <rdfs:domain rdf:resource="#Dimension"/>
+    <rdfs:label>Dimension</rdfs:label>
+    <rdfs:comment>This property specifies the dimension</rdfs:comment>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first>X</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first>Y</rdf:first>
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:rest rdf:parseType="Resource">
+                  <rdf:first>width</rdf:first>
+                  <rdf:rest rdf:parseType="Resource">
+                    <rdf:rest rdf:parseType="Resource">
+                      <rdf:first>weight</rdf:first>
+                      <rdf:rest rdf:parseType="Resource">
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>mass</rdf:first>
+                      </rdf:rest>
+                    </rdf:rest>
+                    <rdf:first>height</rdf:first>
+                  </rdf:rest>
+                </rdf:rest>
+                <rdf:first>length</rdf:first>
+              </rdf:rest>
+              <rdf:first>Z</rdf:first>
+            </rdf:rest>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:FunctionalProperty>
+    
+  <owl:FunctionalProperty rdf:ID="has-unit">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Value"/>
+          <owl:Class rdf:about="#Dimension"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment>This property specifies the units for the dimension or value</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&dat;Date-Component"/>
+          <owl:Class rdf:about="&rdfs;Literal"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:label>Unit</rdfs:label>
+  </owl:FunctionalProperty>  
+
+<!-- Motivation Properties -->
+
+  <owl:ObjectProperty rdf:ID="has-motivation-to-avoid">
+    <rdfs:range rdf:resource="&ome;Event"/>
+    <rdfs:domain rdf:resource="#Motivation"/>
+    <rdfs:label>Has Motivation</rdfs:label>
+    <rdfs:comment>This property specifies an event whose occurrence is not wanted</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-motivation">
+    <rdfs:label>Has Motivation</rdfs:label>
+    <rdfs:domain rdf:resource="#Motivation"/>
+    <rdfs:range rdf:resource="&ome;Event"/>
+    <rdfs:comment>This property specifies an event whose occurrence is desired</rdfs:comment>
+  </owl:ObjectProperty> 
+  
+  <owl:FunctionalProperty rdf:ID="has-priority">
+    <rdfs:domain rdf:resource="#Motivation"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first>medium</rdf:first>
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first>low</rdf:first>
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:first>longterm</rdf:first>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+              </rdf:rest>
+            </rdf:rest>
+          </rdf:rest>
+          <rdf:first>high</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:comment>Priority of motivation</rdfs:comment>
+  </owl:FunctionalProperty>
+
+<!-- Knowledge Properties -->
+
+  <owl:ObjectProperty rdf:ID="knows">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&ome;Abstract-Item"/>
+          <owl:Class rdf:about="&omb;Character"/>
+          <owl:Class rdf:about="&loc;Space"/>
+          <owl:Class rdf:about="&ome;Timeline"/>
+          <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Knowledge"/>
+    <rdfs:label>Knows</rdfs:label>
+    <rdfs:comment>This property specifies something known by the character</rdfs:comment>
+  </owl:ObjectProperty>
+
+<!-- Bond Properties -->
+  
+  <owl:ObjectProperty rdf:ID="has-bond">
+    <rdfs:range rdf:resource="&omb;Bond"/>
+    <rdfs:domain rdf:resource="#Link"/>
+    <rdfs:label>Has Bond</rdfs:label>
+    <rdfs:comment>This property specifies a bond which a character has</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <!-- Description Properties -->  
+  
+  <owl:ObjectProperty rdf:ID="has-description">
+    <rdfs:label>Has Description</rdfs:label>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&rdfs;Literal"/>
+          <owl:Class rdf:about="#Description"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment>This property specifies a description of the entity</rdfs:comment>
+    <rdfs:domain rdf:resource="#Description"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="mark-gained">
+    <rdfs:domain rdf:resource="#Distinguishing-Mark"/>
+    <rdfs:comment>This property specifies the event at which the distinguishing mark of the entity was gained</rdfs:comment>
+    <rdfs:label>Mark Gained</rdfs:label>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty>  
+  
+  <owl:ObjectProperty rdf:ID="mark-location">
+    <rdfs:domain rdf:resource="#Distinguishing-Mark"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&ome;Physical-Item"/>
+          <owl:Class rdf:about="&loc;Space"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment>This property specifies the location of a distinguishing mark</rdfs:comment>
+    <rdfs:label>Mark Location</rdfs:label>
+    <owl:inverseOf rdf:resource="&base;has-marking"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-feature">
+    <rdfs:label>Has Feature</rdfs:label>
+    <rdfs:range rdf:resource="&ome;Physical-Item"/>
+    <rdfs:subPropertyOf rdf:resource="#has-description"/>
+    <rdfs:comment>This property specifies a physical feature of the entity</rdfs:comment>
+    <rdfs:domain rdf:resource="#Description"/>
+  </owl:ObjectProperty>
+  
+    <owl:ObjectProperty rdf:ID="mark-location-type">
+    <rdfs:comment>This property specifies the location of a distinguishing mark</rdfs:comment>
+    <rdfs:domain rdf:resource="#Distinguishing-Mark"/>
+    <rdfs:range>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="&ome;Physical-Item"/>
+              <owl:Class rdf:about="&loc;Space"/>
+            </owl:unionOf>
+          </owl:Class>
+    </rdfs:range>
+    <rdfs:label>Mark Location</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <owl:FunctionalProperty rdf:ID="has-locspec-description">
+    <rdfs:domain rdf:resource="#Dimension"/>
+    <rdfs:comment>This property specifies the units for the dimension</rdfs:comment>
+    <rdfs:label>Unit</rdfs:label>
+    <rdfs:range rdf:resource="&omm;spc"/>
+  </owl:FunctionalProperty>  
+  
+  <!-- Employment Properties -->
+  
+  <owl:ObjectProperty rdf:ID="responsible-for-type">
+    <rdfs:range>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="&omb;Group"/>
+              <owl:Class rdf:about="&omb;Character"/>
+              <owl:Class rdf:about="&omb;Profession"/>
+              <owl:Class rdf:about="#Employment"/>
+            </owl:unionOf>
+          </owl:Class>
+    </rdfs:range>
+    <rdfs:comment>This property specifies the types of entities for which the Entity is responsible for</rdfs:comment>
+    <rdfs:domain rdf:resource="#Employment"/>
+    <rdfs:label>Responsible For Type</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="responsible-for">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&omb;Group"/>
+          <owl:Class rdf:about="&omb;Character"/>
+          <owl:Class rdf:about="&omb;Profession"/>
+          <owl:Class rdf:about="#Employment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment>This property specifies the entities for which the Entity is responsible for</rdfs:comment>
+    <rdfs:domain rdf:resource="#Employment"/>
+    <rdfs:label>Responsible For</rdfs:label>
+  </owl:ObjectProperty>
+
+<!-- Sex/Kink Properties -->
+  
+  <owl:ObjectProperty rdf:ID="requires">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&ome;Entity"/>
+          <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Kink"/>
+    <rdfs:label>Requires</rdfs:label>
+    <rdfs:comment>This property specifies a fetish of the Character </rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="likes">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&ome;Entity"/>
+          <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:label>Likes</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#To-Other-Gender"/>
+          <owl:Class rdf:about="#Kink"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment>This property specifies the 'likes' of the Character. Has domain of To-Other-Gender but not To-Same-Gender because same gender implies a match whereas since there are three genders 'other' gender gives you a choice of possibles.</rdfs:comment>
+  </owl:ObjectProperty>
+
+<!-- Name Properties -->
+  
+  <owl:ObjectProperty rdf:ID="has-name">
+    <rdfs:comment>This property specifies the full name of the entity</rdfs:comment>
+    <rdfs:domain rdf:resource="#Name"/>
+    <rdfs:label>Given Name</rdfs:label>
+    <rdfs:range rdf:resource="http://ontomedia.ecs.soton.ac.uk/ontologies/misc/name#Name-Ordering"/>
+  </owl:ObjectProperty>
+  
+  <!-- Profession Properties -->
+  
+  <owl:ObjectProperty rdf:ID="has-profession">
+    <rdfs:comment>This property specifies the profession of an Entity</rdfs:comment>
+    <rdfs:domain rdf:resource="#Employment"/>
+    <rdfs:label>Has Profession</rdfs:label>
+    <rdfs:range rdf:resource="&omb;Profession"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-observed-profession">
+    <rdfs:label>Has Observed Profession</rdfs:label>
+    <rdfs:comment>This property specifies a profession which belongs to an Entity and is known outside the Context in which the Entity exists but not by other Entities within the Context i.e the audience knows</rdfs:comment>
+    <rdfs:range rdf:resource="&omb;Profession"/>
+    <rdfs:domain rdf:resource="#Employment"/>
+  </owl:ObjectProperty>  
+   
+  <owl:ObjectProperty rdf:ID="has-projected-profession">
+    <rdfs:label>Has Projected Profession</rdfs:label>
+    <rdfs:range rdf:resource="&omb;Profession"/>
+    <rdfs:comment>This property specifies a profession which is projected by Entity to other Entities</rdfs:comment>
+    <rdfs:domain rdf:resource="#Employment"/>
+  </owl:ObjectProperty>
+  
+  <!-- Order Properties -->
+
+  <owl:ObjectProperty rdf:ID="has-order">
+    <rdfs:label>Has Order</rdfs:label>
+    <rdfs:domain rdf:resource="#Ordering"/>
+    <rdfs:comment>This property specifies the order that the linked components go in</rdfs:comment>
+    <rdfs:range rdf:resource="&rdf;Seq"/>
+  </owl:ObjectProperty>
+  
+</rdf:RDF>

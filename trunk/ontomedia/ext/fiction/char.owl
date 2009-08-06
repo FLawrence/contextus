@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY loc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/fiction/char#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY foaf "http://xmlns.com/foaf/0.1/#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omb="&omb;"
+ xmlns:loc="&loc;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Fictional Character Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Fictional Character Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+ <owl:imports rdf:resource="http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression"/>
+ <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</owl:Ontology>
+
+<!-- Character Classes -->
+
+<owl:Class rdf:ID="Guest-Character">
+  <rdfs:subClassOf rdf:resource="&omb;Character" />
+  <rdfs:comment>This class represents an character which is not original to the context</rdfs:comment>
+  <rdfs:label>Guest Character</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Original-Character">
+  <rdfs:subClassOf rdf:resource="&omb;Character" />
+  <rdfs:comment>This class represents an character which is original to the context</rdfs:comment>
+  <rdfs:label>Original Character</rdfs:label>
+</owl:Class>
+
+
+<!-- Properties -->
+
+<!-- Character Properties -->
+
+  <owl:ObjectProperty rdf:ID="originating-context">
+    <rdfs:comment>This property represents that the context the guest character was borrowed from. The indicating context may not be the original context, just the one that the character came from (i.e. it may also have borrowed the character).</rdfs:comment>
+    <rdfs:label>Originating Context</rdfs:label> 
+    <rdfs:domain rdf:resource="&base;Guest-Character"/>
+    <rdfs:range rdf:resource="&base;Context"/>
+  </owl:ObjectProperty> 
+
+<!-- Acting -->
+
+  <owl:ObjectProperty rdf:ID="portrayed-by">
+    <rdfs:label>Portrayed By</rdfs:label>
+    <rdfs:comment>This property specifies what the entity or event is being portrayed by</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&ome;is-linked-to" />
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&omb;Character"/>
+            <owl:Class rdf:about="&omb;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&omb;Being"/>
+            <owl:Class rdf:about="&omb;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range>
+    <owl:inverseOf rdf:resource="&omb;portrays"/>
+  </owl:ObjectProperty> 
+
+</rdf:RDF>

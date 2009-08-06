@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media#">
+  <!ENTITY dc          	"http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct          	"http://purl.org/dc/terms/">
+  <!ENTITY ome		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+  <!ENTITY geom		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/geometry#">
+ 
+  <!ENTITY locspec 	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/locspec#">
+]>  
+
+
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:owl="&owl;"
+	 xmlns:xsd="&xsd;"
+	 xml:base="&base;"
+	 xmlns:dc="&dc;"
+	 xmlns:dct="&dct;"
+	 xmlns:locspec="&locspec;">
+
+	 
+  <owl:Ontology rdf:about="&base;">
+    <rdfs:label>OntoMedia Media Representation</rdfs:label>
+    <dc:title xml:lang="en">OntoMedia Media Representation</dc:title>
+    <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+    <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+    <dct:created>2005-05-10</dct:created>
+    <owl:versionInfo>0.1</owl:versionInfo>
+  </owl:Ontology>
+
+  <!-- A default media item -->
+
+  <owl:Class rdf:ID="MediaAtom">
+    <rdfs:subClassOf rdf:resource="#MediaRegion" />
+    <rdfs:label>MonoMedia Item</rdfs:label>
+    <rdfs:comment>This class represents a single monomedia item (such as text or audio)</rdfs:comment>
+  </owl:Class>
+  
+  <!-- MediaRegion -->
+
+  <owl:Class rdf:ID="MediaRegion">
+    <rdfs:label>Media Region</rdfs:label>
+    <rdfs:comment>This class represents a region within a media item. This may be any possible portion of the media (e.g. a frame set or a pixel range)</rdfs:comment>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="has-subregion">
+    <rdfs:label>has subregion</rdfs:label>
+    <rdfs:comment>This property specifies any regions which are within this region</rdfs:comment>
+    <rdfs:domain rdf:resource="#MediaRegion" />
+    <rdfs:range rdf:resource="#RegionPointer" />
+    <owl:inverseOf rdf:resource="#is-subregion-of" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-subregion-of">
+    <rdfs:label>is subregion of</rdfs:label>
+    <rdfs:comment>This property specifies any regions which are within this region</rdfs:comment>
+    <rdfs:domain rdf:resource="#MediaRegion" />
+    <rdfs:range rdf:resource="#RegionPointer" />
+    <owl:inverseOf rdf:resource="#has-subregion" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="relates-to">
+    <rdfs:label>relates to</rdfs:label>
+    <rdfs:comment>This property specifies any related regions. For example, textual versions of audio.</rdfs:comment>
+    <rdfs:domain rdf:resource="#MediaRegion" />
+    <rdfs:range rdf:resource="#MediaRegion" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-shared-source">
+    <rdfs:label>relates to</rdfs:label>
+    <rdfs:comment>This property specifies any related regions which share source material</rdfs:comment>
+    <rdfs:domain rdf:resource="#MediaRegion" />
+    <rdfs:range rdf:resource="#MediaRegion" />
+    <owl:inverseOf rdf:resource="#has-shared-source" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-derivation">
+    <rdfs:label>relates to</rdfs:label>
+    <rdfs:comment>This property specifies related regions where one has been derived from the other.</rdfs:comment>
+    <rdfs:domain rdf:resource="#MediaRegion" />
+    <rdfs:range rdf:resource="#MediaRegion" />
+    <owl:inverseOf rdf:resource="#is-derived-from" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="is-derived-from">
+    <rdfs:label>relates to</rdfs:label>
+    <rdfs:comment>This property specifies related regions where one has been derived from the other.</rdfs:comment>
+    <rdfs:domain rdf:resource="#MediaRegion" />
+    <rdfs:range rdf:resource="#MediaRegion" />
+    <owl:inverseOf rdf:resource="#has-derivation" />
+  </owl:ObjectProperty>
+
+  <!-- RegionPointer -->
+  
+  <owl:Class rdf:ID="RegionPointer">
+    <rdfs:label>RegionPointer</rdfs:label>
+    <rdfs:comment>This class defines a reference to a region, along with any layout or location information.</rdfs:comment>
+  </owl:Class>
+  
+  <owl:ObjectProperty rdf:ID="has-shape">
+    <rdfs:label>has shape</rdfs:label>
+    <rdfs:domain rdf:resource="#RegionPointer" />
+    <rdfs:range rdf:resource="&geom;Shape" />
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-locspec">
+    <rdfs:label>has locspec</rdfs:label>
+    <rdfs:domain rdf:resource="#RegionPointer" />
+    <rdfs:range rdf:resource="#LocSpec" />
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-region">
+    <rdfs:label>has region</rdfs:label>
+    <rdfs:domain rdf:resource="#RegionPointer" />
+    <rdfs:range rdf:resource="#MediaRegion" />
+  </owl:ObjectProperty>
+
+  <!-- LocSpec -->
+  
+  <owl:class rdf:ID="LocSpec">
+    <rdfs:label>LocSpec</rdfs:label>
+    <rdfs:comment>This class represents a location or non-geometric region within a medium</rdfs:comment>
+  </owl:class>
+
+  <owl:DatatypeProperty rdf:ID="uri">
+    <rdfs:label>uri</rdfs:label>
+    <rdfs:domain rdf:resource="#LocSpec" />
+    <rdfs:range rdf:resource="&xsd;anyURI" />
+    <rdfs:comment>This property specifies the URI of the media</rdfs:comment>
+  </owl:DatatypeProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-range">
+      <rdfs:label>has range</rdfs:label>
+      <rdfs:domain rdf:resource="#LocSpec" />
+      <rdfs:range rdf:resource="#Range" />
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="has-area">
+        <rdfs:label>has area</rdfs:label>
+        <rdfs:domain rdf:resource="#LocSpec" />
+        <rdfs:range rdf:resource="#Shape" />
+  </owl:ObjectProperty>
+
+  <!-- Value -->
+  <owl:class rdf:ID="Value">
+    <rdfs:comment>This class provides a simple pairing of a value and a unit</rdfs:comment>
+  </owl:class>
+
+  <owl:DatatypeProperty rdf:ID="value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:domain rdf:resource="#Value" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+    <rdfs:comment>This property specifies a value</rdfs:comment>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:ID="unit">
+    <rdfs:label>unit</rdfs:label>
+    <rdfs:domain rdf:resource="#Value" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+    <rdfs:comment>This property specifies the unit of a value</rdfs:comment>
+  </owl:DatatypeProperty>
+
+  <!-- Range -->
+  
+  <owl:class rdf:ID="Range">
+    <rdfs:comment>This class represents a portion of a medium denoted by a start point and a length</rdfs:comment>
+  </owl:class>
+  
+  <owl:ObjectProperty rdf:ID="offset">
+    <rdfs:label>offset</rdfs:label>
+    <rdfs:domain rdf:resource="#Range" />
+    <rdfs:range rdf:resource="&ome;Value" />
+    <rdfs:comment>This property specifies the offset into a region</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:DatatypeProperty rdf:ID="length">
+    <rdfs:label>length</rdfs:label>
+    <rdfs:domain rdf:resource="#Range" />
+    <rdfs:range rdf:resource="&ome;Value" />
+    <rdfs:comment>This property specifies the length of a range</rdfs:comment>
+  </owl:DatatypeProperty>
+
+
+  <!-- PageRange -->
+  
+  <owl:class rdf:ID="PageRange">
+    <rdfs:subClassOf rdf:resource="#Range" />
+  </owl:class>
+  
+  
+  <!-- CharRange -->
+
+  <owl:class rdf:ID="CharRange">
+    <rdfs:subClassOf rdf:resource="#Range" />
+  </owl:class>
+  
+  <!-- VideoRange -->
+
+  <owl:class rdf:ID="VideoRange">
+    <rdfs:subClassOf rdf:resource="#Range" />
+  </owl:class>
+  
+  <!-- AudioRange -->
+
+  <owl:class rdf:ID="AudioRange">
+    <rdfs:subClassOf rdf:resource="#Range" />
+  </owl:class>
+
+<!-- Links between Media and Semantic Information -->
+
+  <owl:ObjectProperty rdf:ID="is-expression-of">
+    <rdfs:label>has expression</rdfs:label>
+    <rdfs:comment>This property specifies any semantic information contained within this region</rdfs:comment>
+    <rdfs:domain rdf:resource="#MediaRegion" />
+    <rdfs:range rdf:resource="&ome;Expression" />
+  </owl:ObjectProperty>
+
+  <owl:FunctionalProperty rdf:ID="has-expression">
+    <rdfs:label>Occurs</rdfs:label>
+    <rdfs:comment>This property specifies the region of media in when an event occurrence happens</rdfs:comment>
+    <rdfs:range rdf:resource="&ome;Expression"/>
+    <rdfs:domain rdf:resource="#MediaRegion"/>
+  </owl:FunctionalProperty>
+    
+  <owl:FunctionalProperty rdf:ID="start-point">
+    <rdfs:label>Start point in Media</rdfs:label>
+    <rdfs:comment>This property specifies the point in the media at which the event occurrence starts happening</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+  </owl:FunctionalProperty>
+  
+  <owl:ObjectProperty rdf:ID="end-point">
+    <rdfs:label>End Point in Media</rdfs:label>
+    <rdfs:comment>This property specifies the point in the media at which the event occurrence stops happening</rdfs:comment>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="MediaTPQ">
+    <rdfs:label>Media Start Period Limit</rdfs:label>
+    <rdfs:comment>This property specifies the earliest point in the media at which the event occurrence could have happened</rdfs:comment>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+    <rdfs:comment>Terminus Post Quem (Limit After Which): The earliest point that the period the event covers could be said to be happening</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="MediaTAQ">
+    <rdfs:label>Media End Period Limit</rdfs:label>
+    <rdfs:comment>Terminus Ante Quem (Limit Before Which): The latest point that the period the event covers could have happened</rdfs:comment>
+    <rdfs:domain rdf:resource="#Occurrence"/>
+    <rdfs:range rdf:resource="&locspec;LocSpec"/>
+  </owl:ObjectProperty>
+  
+</rdf:RDF>

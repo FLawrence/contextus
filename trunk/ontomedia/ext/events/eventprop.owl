@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY xprop "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/exprop#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/eventprop#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:xprop="&xprop;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Trait Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Expression Property Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Event Properties -->
+
+  <owl:Class rdf:ID="Event-Properties">
+    <rdfs:label>Event Properties</rdfs:label>
+    <rdfs:comment>This class represents additional properties for events</rdfs:comment>
+    <!-- <rdfs:subClassOf rdf:resource="&ome;Content" /> -->
+  </owl:Class>
+
+
+<!-- Event Properties Extensions -->
+
+  <owl:Class rdf:ID="Consent-Properties">
+    <rdfs:label>Expression Properties</rdfs:label>
+    <rdfs:comment>This class represents the consensual nature of the event</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Event-Properties" />
+  </owl:Class>
+
+
+<!-- Consent Classes -->
+
+  <owl:Class rdf:ID="Consent-Given">
+    <rdfs:label>Consent Given</rdfs:label>
+    <rdfs:comment>This class represents the concept of consent being given for an action by the subject to the object</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Consent-Properties" />
+    <owl:disjointWith rdf:resource="#Consent-Implied" />
+    <owl:disjointWith rdf:resource="#Consent-Not-Given" />
+    <owl:disjointWith rdf:resource="#Consent-Unclear" />   
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Consent-Implied">
+    <rdfs:label>Consent Implied</rdfs:label>
+    <rdfs:comment>This class represents the concept of consent being implied for an action by the subject to the object</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Consent-Properties" />
+    <owl:disjointWith rdf:resource="#Consent-Given" />
+    <owl:disjointWith rdf:resource="#Consent-Not-Given" />
+    <owl:disjointWith rdf:resource="#Consent-Unclear" />
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Consent-Not-Given">
+    <rdfs:label>Consent Not Given</rdfs:label>
+    <rdfs:comment>This class represents the concept of consent not being given for an action by the subject to the object</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Consent-Properties" />
+    <owl:disjointWith rdf:resource="#Consent-Given" />
+    <owl:disjointWith rdf:resource="#Consent-Implied" />
+    <owl:disjointWith rdf:resource="#Consent-Unclear" />
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Consent-Unclear">
+    <rdfs:label>Expression Properties</rdfs:label>
+    <rdfs:comment>This class represents the concept of consent being unclear for an action by the subject to the object</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Consent-Properties" />
+    <owl:disjointWith rdf:resource="#Consent-Given" />
+    <owl:disjointWith rdf:resource="#Consent-Implied" />
+    <owl:disjointWith rdf:resource="#Consent-Not-Given" />
+  </owl:Class>     
+
+<!-- Transformation Properties - NOW IN EXPRESSION
+
+  <owl:ObjectProperty rdf:ID="From">
+    <rdfs:label>From</rdfs:label>
+    <rdfs:comment>This property specifies the starting entity of the transformation</rdfs:comment>
+    <rdfs:domain rdf:resource="&ome;Transformation"/>
+    <rdfs:range rdf:resource="&ome;Entity"/>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="To">
+    <rdfs:label>To</rdfs:label>
+    <rdfs:comment>This property specifies the final entity of the transformation</rdfs:comment>
+    <rdfs:domain rdf:resource="&ome;Transformation"/>
+    <rdfs:range rdf:resource="&ome;Entity"/>
+  </owl:ObjectProperty> 
+-->
+  
+</rdf:RDF>  
+  

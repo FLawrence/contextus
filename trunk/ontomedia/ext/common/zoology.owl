@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY omcm "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/critters#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/zoo#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omt="&omt;"
+ xmlns:omcm="&omcm;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>Zoological Extension</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Zoology Ontology</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe animals. NB. This ontology was not created by a biologist so should be superseded as more accurate categorisation is known.</dc:description>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2006-04-05</dct:created>
+ <owl:versionInfo>0.1</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Main Classes -->
+
+<owl:Class rdf:ID="Amphibian">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents an amphibian species</rdfs:comment>
+  <rdfs:label>Amphibian</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Anthropod">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with an anthropod form</rdfs:comment>
+  <rdfs:label>Arthropod</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Avian">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with an avian form</rdfs:comment>
+  <rdfs:label>Avian</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Bovidine">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a bovidine form</rdfs:comment>
+  <rdfs:label>Bovidine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Canine">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a canine form</rdfs:comment>
+  <rdfs:label>Canine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Ceridine">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a ceridine form</rdfs:comment>
+  <rdfs:label>Ceridine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Equine">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <owl:equivalentClass rdf:resource="&omcm;Equine"/>
+  <rdfs:comment>This class represents species with an equine form</rdfs:comment>
+  <rdfs:label>Equine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Feliformoid">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a feliformoid form</rdfs:comment>
+  <rdfs:label>Feliformoid</rdfs:label>
+</owl:Class>
+
+<!-- Hippos are odd because the consensus doesn't seem clear as to which family they belong to-->
+<owl:Class rdf:ID="Hippopotamus">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a hippopotamus form</rdfs:comment>
+  <rdfs:label>Hippopotamus</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Leporoid">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a leporoid form</rdfs:comment>
+  <rdfs:label>Leporoid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Marine">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a marine form</rdfs:comment>
+  <rdfs:label>Marine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Avian">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with an avian form</rdfs:comment>
+  <rdfs:label>Avian</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Mollusk">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a mollusk form</rdfs:comment>
+  <rdfs:label>Mollusk</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Musteloid">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a musteloid form</rdfs:comment>
+  <rdfs:label>Museloid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Primate">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with an primate form</rdfs:comment>
+  <rdfs:label>Primate</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Reptilian">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a reptilian form</rdfs:comment>
+  <rdfs:label>Reptilian</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Suinine">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with a suinine form</rdfs:comment>
+  <rdfs:label>Suinine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Ursine">
+  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
+  <rdfs:comment>This class represents species with an ursine form</rdfs:comment>
+  <rdfs:label>Ursine</rdfs:label>
+</owl:Class>
+
+<!-- Anphibian Classes -->
+
+<owl:Class rdf:ID="Frog">
+  <rdfs:subClassOf rdf:resource="&base;Amphibian" />
+  <rdfs:comment>This class represents species with a frog form</rdfs:comment>
+  <rdfs:label>Frog</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Toad">
+  <rdfs:subClassOf rdf:resource="&base;Amphibian" />
+  <rdfs:comment>This class represents species with a toad form</rdfs:comment>
+  <rdfs:label>Toad</rdfs:label>
+</owl:Class>
+
+<!-- Arthropod Classes -->
+
+<owl:Class rdf:ID="Arachnoid">
+  <rdfs:subClassOf rdf:resource="&base;Arthropod" />
+  <rdfs:comment>This class represents species with an arachnoid form</rdfs:comment>
+  <rdfs:label>Arachnoid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Insectoid">
+  <rdfs:subClassOf rdf:resource="&base;Arthropod" />
+  <rdfs:comment>This class represents species with a insectoid form</rdfs:comment>
+  <rdfs:label>Insectoid</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Trilobite">
+  <rdfs:subClassOf rdf:resource="&base;Arthropod" />
+  <rdfs:comment>This class represents species with a trilobite form</rdfs:comment>
+  <rdfs:label>Trilobite</rdfs:label>
+</owl:Class>
+
+<!-- Arachnoid Classes -->
+
+<owl:Class rdf:ID="Spider">
+  <rdfs:subClassOf rdf:resource="&base;Arachnoid" />
+  <rdfs:comment>This class represents species with a spider form</rdfs:comment>
+  <rdfs:label>Spider</rdfs:label>
+</owl:Class>
+
+<!-- Insectoid Classes -->
+
+<owl:Class rdf:ID="Ant">
+  <rdfs:subClassOf rdf:resource="&base;Insectoid" />
+  <rdfs:comment>This class represents species with an ant form</rdfs:comment>
+  <rdfs:label>Ant</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Butterfly">
+  <rdfs:subClassOf rdf:resource="&base;Insectoid" />
+  <rdfs:comment>This class represents species with a butterfly form</rdfs:comment>
+  <rdfs:label>Butterfly</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Grasshopper">
+  <rdfs:subClassOf rdf:resource="&base;Insectoid" />
+  <rdfs:comment>This class represents species with a grasshopper form</rdfs:comment>
+  <rdfs:label>Grasshopper</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Mayfly">
+  <rdfs:subClassOf rdf:resource="&base;Insectoid" />
+  <rdfs:comment>This class represents species with a mayfly form</rdfs:comment>
+  <rdfs:label>Mayfly</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Mosquito">
+  <rdfs:subClassOf rdf:resource="&base;Insectoid" />
+  <rdfs:comment>This class represents species with a mosquito form</rdfs:comment>
+  <rdfs:label>Mosquito</rdfs:label>
+</owl:Class>
+
+<!-- Avian Class -->
+
+<owl:Class rdf:ID="Bat">
+  <rdfs:subClassOf rdf:resource="&base;Avian" />
+  <rdfs:comment>This class represents species with a bat form</rdfs:comment>
+  <rdfs:label>Bat</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Chicken">
+  <rdfs:subClassOf rdf:resource="&base;Avian" />
+  <rdfs:comment>This class represents species with a chicken form</rdfs:comment>
+  <rdfs:label>Chicken</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Parrot">
+  <rdfs:subClassOf rdf:resource="&base;Avian" />
+  <rdfs:comment>This class represents species with a parrot form</rdfs:comment>
+  <rdfs:label>Parrot</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Raptor">
+  <rdfs:subClassOf rdf:resource="&base;Avian" />
+  <rdfs:comment>This class represents species with a raptor form</rdfs:comment>
+  <rdfs:label>Raptor</rdfs:label>
+</owl:Class>
+
+<!-- Raptor Class -->
+
+<owl:Class rdf:ID="Owl">
+  <rdfs:subClassOf rdf:resource="&base;Raptor" />
+  <rdfs:comment>This class represents species with a owl form</rdfs:comment>
+  <rdfs:label>Owl</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Vulture">
+  <rdfs:subClassOf rdf:resource="&base;Raptor" />
+  <rdfs:comment>This class represents species with a vulture form</rdfs:comment>
+  <rdfs:label>Vulture</rdfs:label>
+</owl:Class>
+
+<!-- Bovidine Classes -->
+
+<owl:Class rdf:ID="Bovine">
+  <rdfs:subClassOf rdf:resource="&base;Bovidine" />
+  <rdfs:comment>This class represents species with a bovine form</rdfs:comment>
+  <rdfs:label>Bovine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Caprinine">
+  <rdfs:subClassOf rdf:resource="&base;Bovidine" />
+  <rdfs:comment>This class represents species with a caprinine form</rdfs:comment>
+  <rdfs:label>Caprinine</rdfs:label>
+</owl:Class>
+
+<!-- Bovine Classes -->
+
+<owl:Class rdf:ID="Buffalo">
+  <rdfs:subClassOf rdf:resource="&base;Bovine" />
+  <rdfs:comment>This class represents species with a buffalo form</rdfs:comment>
+  <rdfs:label>Buffalo</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Cow">
+  <rdfs:subClassOf rdf:resource="&base;Bovine" />
+  <rdfs:comment>This class represents species with a cow form</rdfs:comment>
+  <rdfs:label>Cow</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Ox">
+  <rdfs:subClassOf rdf:resource="&base;Bovine" />
+  <rdfs:comment>This class represents species with a ox form</rdfs:comment>
+  <rdfs:label>Ox</rdfs:label>
+</owl:Class>
+
+<!-- Caprinine Classes -->
+
+<owl:Class rdf:ID="Goat">
+  <rdfs:subClassOf rdf:resource="&base;Caprinine" />
+  <rdfs:comment>This class represents species with a goat form</rdfs:comment>
+  <rdfs:label>Goat</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Sheep">
+  <rdfs:subClassOf rdf:resource="&base;Caprinine" />
+  <rdfs:comment>This class represents species with a sheep form</rdfs:comment>
+  <rdfs:label>Sheep</rdfs:label>
+</owl:Class>
+
+<!-- Canine Classes -->
+
+<owl:Class rdf:ID="Dog">
+  <rdfs:subClassOf rdf:resource="&base;Canine" />
+  <rdfs:comment>This class represents species with a dog form</rdfs:comment>
+  <rdfs:label>Dog</rdfs:label>
+</owl:Class>
+
+<!-- Ceridine Classes -->
+
+<owl:Class rdf:ID="Deer">
+  <rdfs:subClassOf rdf:resource="&base;Ceridine" />
+  <rdfs:comment>This class represents species with a deer form</rdfs:comment>
+  <rdfs:label>Deer</rdfs:label>
+</owl:Class>
+
+<!-- Deer Classes -->
+
+<owl:Class rdf:ID="Roebuck">
+  <rdfs:subClassOf rdf:resource="&base;Deer" />
+  <rdfs:comment>This class represents species with a roebuck form</rdfs:comment>
+  <rdfs:label>Roebuck</rdfs:label>
+</owl:Class>
+
+<!-- Equine Classes -->
+
+<owl:Class rdf:ID="Ass">
+  <rdfs:subClassOf rdf:resource="&base;Equine" />
+  <rdfs:comment>This class represents species with an ass form</rdfs:comment>
+  <rdfs:label>Ass</rdfs:label>
+</owl:Class>
+
+<!-- Feliformoid Classes -->
+
+<owl:Class rdf:ID="Feline">
+  <rdfs:subClassOf rdf:resource="&base;Feliformoid" />
+  <rdfs:comment>This class represents species with a feline form</rdfs:comment>
+  <rdfs:label>Feline</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Hyena">
+  <rdfs:subClassOf rdf:resource="&base;Feliformoid" />
+  <rdfs:comment>This class represents species with a hyena form</rdfs:comment>
+  <rdfs:label>Hyena</rdfs:label>
+</owl:Class>
+
+<!-- Feline Classes -->
+
+<owl:Class rdf:ID="Lion">
+  <rdfs:subClassOf rdf:resource="&base;Feline" />
+  <rdfs:comment>This class represents species with a lion form</rdfs:comment>
+  <rdfs:label>Lion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Tiger">
+  <rdfs:subClassOf rdf:resource="&base;Feline" />
+  <rdfs:comment>This class represents species with a tiger form</rdfs:comment>
+  <rdfs:label>Tiger</rdfs:label>
+</owl:Class>
+
+<!-- Leporoid Classes -->
+
+<owl:Class rdf:ID="Hare">
+  <rdfs:subClassOf rdf:resource="&base;Leporoid" />
+  <rdfs:comment>This class represents species with a hare form</rdfs:comment>
+  <rdfs:label>Hare</rdfs:label>
+</owl:Class>
+
+<!-- Hare Classes -->
+
+<owl:Class rdf:ID="Horned-Hare">
+  <rdfs:subClassOf rdf:resource="&base;Hare" />
+  <rdfs:comment>This class represents species with a horned-hare form</rdfs:comment>
+  <rdfs:label>Horned-Hare</rdfs:label>
+</owl:Class>
+
+<!-- Marine Classes -->
+
+<owl:Class rdf:ID="Cephalopod">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+   <rdfs:subClassOf rdf:resource="&base;Mollusk" />
+  <rdfs:comment>This class represents species with a cephalopod form</rdfs:comment>
+  <rdfs:label>Cephalopod</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Cetecea">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+  <rdfs:comment>This class represents species with a cetecea form</rdfs:comment>
+  <rdfs:label>Cetecea</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Cnidaria">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+  <rdfs:comment>This class represents species with a cnidaria form</rdfs:comment>
+  <rdfs:label>Cnidaria</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Echinoderms">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+  <rdfs:comment>This class represents species with a echinoderms form</rdfs:comment>
+  <rdfs:label>Echinoderms</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Oyster">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+   <rdfs:subClassOf rdf:resource="&base;Mollusk" />
+  <rdfs:comment>This class represents species with a oyster form</rdfs:comment>
+  <rdfs:label>Oyster</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Pinnipeds">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+  <rdfs:comment>This class represents species with a pinnipeds form</rdfs:comment>
+  <rdfs:label>Pinnipeds</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Piscine">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+  <rdfs:comment>This class represents species with a piscine form</rdfs:comment>
+  <rdfs:label>Piscine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Sponge">
+  <rdfs:subClassOf rdf:resource="&base;Marine" />
+  <rdfs:comment>This class represents species with a sponge form</rdfs:comment>
+  <rdfs:label>Sponge</rdfs:label>
+</owl:Class>
+
+<!-- Cetecea Classes -->
+
+<owl:Class rdf:ID="Whale">
+  <rdfs:subClassOf rdf:resource="&base;Cetecea" />
+  <rdfs:comment>This class represents species with a whale form</rdfs:comment>
+  <rdfs:label>Whale</rdfs:label>
+</owl:Class>
+
+<!-- Cnidaria Classes -->
+
+<owl:Class rdf:ID="Anthozoa">
+  <rdfs:subClassOf rdf:resource="&base;Cnidaria" />
+  <rdfs:comment>This class represents species with a anthozoa form</rdfs:comment>
+  <rdfs:label>Anthozoa</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Medusa">
+  <rdfs:subClassOf rdf:resource="&base;Cnidaria" />
+  <rdfs:comment>This class represents species with a medusa form</rdfs:comment>
+  <rdfs:label>Medusa</rdfs:label>
+</owl:Class>
+
+<!-- Anthozoa Classes -->
+
+<owl:Class rdf:ID="Anemone">
+  <rdfs:subClassOf rdf:resource="&base;Anthozoa" />
+  <rdfs:comment>This class represents species with a anemone form</rdfs:comment>
+  <rdfs:label>Anemone</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Polyp">
+  <rdfs:subClassOf rdf:resource="&base;Anthozoa" />
+  <rdfs:comment>This class represents species with a polyp form</rdfs:comment>
+  <rdfs:label>Polyp</rdfs:label>
+</owl:Class>
+
+<!-- Pinnipeds Classes -->
+
+<owl:Class rdf:ID="Seal">
+  <rdfs:subClassOf rdf:resource="&base;Pinnipeds" />
+  <rdfs:comment>This class represents species with a seal form</rdfs:comment>
+  <rdfs:label>Seal</rdfs:label>
+</owl:Class>
+
+<!-- Piscine Classes -->
+
+<owl:Class rdf:ID="Fish">
+  <rdfs:subClassOf rdf:resource="&base;Piscine" />
+  <rdfs:comment>This class represents species with a fish form</rdfs:comment>
+  <rdfs:label>Fish</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Sea-Horse">
+  <rdfs:subClassOf rdf:resource="&base;Sea-Horse" />
+  <rdfs:comment>This class represents species with a sea-horse form</rdfs:comment>
+  <rdfs:label>Sea-Horse</rdfs:label>
+</owl:Class>
+
+<!--- Mollusk Classes -->
+
+<owl:Class rdf:ID="Gastropod">
+  <rdfs:subClassOf rdf:resource="&base;Mollusk" />
+  <rdfs:comment>This class represents species with a gastropod form</rdfs:comment>
+  <rdfs:label>Gastropod</rdfs:label>
+</owl:Class>
+
+<!-- See Cephalopod above -->
+<!-- See Oyster above -->
+
+<!-- Gastropod Classes -->
+
+<owl:Class rdf:ID="Slug">
+  <rdfs:subClassOf rdf:resource="&base;Gastropod" />
+  <rdfs:comment>This class represents species with a slug form</rdfs:comment>
+  <rdfs:label>Slug</rdfs:label>
+</owl:Class>
+
+<!-- Musteloid Classes -->
+
+<owl:Class rdf:ID="Weasel">
+  <rdfs:subClassOf rdf:resource="&base;Musteloid" />
+  <rdfs:comment>This class represents species with a weasel form</rdfs:comment>
+  <rdfs:label>Weasel</rdfs:label>
+</owl:Class>
+
+<!-- Primate Classes -->
+
+<owl:Class rdf:ID="Ape">
+  <rdfs:subClassOf rdf:resource="&base;Primate" />
+  <rdfs:comment>This class represents species with an ape form</rdfs:comment>
+  <rdfs:label>Ape</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Monkey">
+  <rdfs:subClassOf rdf:resource="&base;Primate" />
+  <rdfs:comment>This class represents species with a monkey form</rdfs:comment>
+  <rdfs:label>Monkey</rdfs:label>
+</owl:Class>
+
+<!-- Reptilian Classes -->
+
+<owl:Class rdf:ID="Crocodilian">
+  <rdfs:subClassOf rdf:resource="&base;Reptilian" />
+  <rdfs:comment>This class represents species with a crocodilian form</rdfs:comment>
+  <rdfs:label>Crocodilian</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Lizard">
+  <rdfs:subClassOf rdf:resource="&base;Reptilian" />
+  <rdfs:comment>This class represents species with a lizard form</rdfs:comment>
+  <rdfs:label>Lizard</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Serpentine">
+  <rdfs:subClassOf rdf:resource="&base;Reptilian" />
+  <owl:equivalentClass rdf:resource="&omcm;Serpentine"/>
+  <rdfs:comment>This class represents species with a serpentine form</rdfs:comment>
+  <rdfs:label>Serpentine</rdfs:label>
+</owl:Class>
+
+<!-- Crocodilian Classes -->
+
+<owl:Class rdf:ID="Alligator">
+  <rdfs:subClassOf rdf:resource="&base;Crocodilian" />
+  <rdfs:comment>This class represents species with an alligator form</rdfs:comment>
+  <rdfs:label>Alligator</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Crocodile">
+  <rdfs:subClassOf rdf:resource="&base;Crocodilian" />
+  <rdfs:comment>This class represents species with a crocodile form</rdfs:comment>
+  <rdfs:label>Crocodile</rdfs:label>
+</owl:Class>
+
+<!-- Lizard Classes -->
+
+<owl:Class rdf:ID="Chameleon">
+  <rdfs:subClassOf rdf:resource="&base;Lizard" />
+  <rdfs:comment>This class represents species with a chameleon form</rdfs:comment>
+  <rdfs:label>Chameleon</rdfs:label>
+</owl:Class>
+
+<!-- Serpentine Classes -->
+
+<owl:Class rdf:ID="Snake">
+  <rdfs:subClassOf rdf:resource="&base;Serpentine" />
+  <rdfs:comment>This class represents species with a snake form</rdfs:comment>
+  <rdfs:label>Snake</rdfs:label>
+</owl:Class>
+
+<!-- Suinine Classes -->
+
+<owl:Class rdf:ID="Pig">
+  <rdfs:subClassOf rdf:resource="&base;Suinine" />
+  <rdfs:comment>This class represents species with a pig form</rdfs:comment>
+  <rdfs:label>Pig</rdfs:label>
+</owl:Class>
+
+<!-- Ursine Classes -->
+
+<owl:Class rdf:ID="Bear">
+  <rdfs:subClassOf rdf:resource="&base;Ursine" />
+  <rdfs:comment>This class represents species with a bear form</rdfs:comment>
+  <rdfs:label>Bear</rdfs:label>
+</owl:Class>
+
+
+</rdf:RDF>
+
+
+
+
+

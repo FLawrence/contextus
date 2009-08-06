@@ -1,0 +1,985 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY loc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+<!ENTITY know "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/detail/know#">
+<!ENTITY nom "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/name#">
+<!ENTITY dat "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/date#">
+<!ENTITY omfb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/fiction/char#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY foaf "http://xmlns.com/foaf/0.1/#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:omt="&omt;"
+ xmlns:omfb="&omfb;"
+ xmlns:loc="&loc;"
+ xmlns:know="&know;"
+ xmlns:nom="&nom;"
+ xmlns:dat="&dat;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xmlns:foaf="&foaf;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Being Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Being Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.25</owl:versionInfo>
+ <owl:imports rdf:resource="http://ontomedia.ecs.soton.ac.uk/ontologies/core/expression#"/>
+ <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</owl:Ontology>
+
+<!-- Beings -->
+
+<owl:Class rdf:ID="Being">
+  <owl:equivalentClass rdf:resource="&foaf;Person" />
+  <rdfs:subClassOf rdf:resource="&ome;Entity" />
+  <rdfs:comment>This class represents an Entity with a personality</rdfs:comment>
+  <rdfs:label>Being</rdfs:label>
+</owl:Class>
+
+<!-- Being Classes -->
+
+<owl:Class rdf:ID="Proto-Being">
+  <rdfs:subClassOf rdf:resource="&base;Being" />
+  <rdfs:comment>This class represents something that may develop into a being for cases where the being/item divide isn't clear</rdfs:comment>
+  <rdfs:label>Proto-Being</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Character">
+  <rdfs:subClassOf rdf:resource="&base;Being" />
+  <rdfs:comment>This class represents an fictionalised contruction of an entity with a personality</rdfs:comment>
+  <rdfs:label>Character</rdfs:label>
+</owl:Class>
+
+<!-- Groups -->
+
+<owl:Class rdf:ID="Group">
+  <owl:equivalentClass rdf:resource="&foaf;Group" />
+  <rdfs:subClassOf rdf:resource="&ome;Collection" />
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="&ome;contains" />
+      <owl:allValuesFrom>
+      	<owl:Class>
+      	<owl:unionOf rdf:parseType="Collection">
+        	<owl:Class rdf:about="&base;Being" />
+        	<owl:Class rdf:about="&base;Group" />
+        </owl:unionOf>	
+        </owl:Class>	
+      </owl:allValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>  
+  <rdfs:comment>This class represents a group of beings</rdfs:comment>
+  <rdfs:label>Group</rdfs:label>
+</owl:Class>
+
+<!-- Group Classes -->
+
+<owl:Class rdf:ID="Community">
+  <rdfs:subClassOf rdf:resource="&base;Group" />
+  <rdfs:comment>This class represents a community</rdfs:comment>
+  <rdfs:label>Community</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Organisation">
+  <owl:equivalentClass rdf:resource="&foaf;Organization" />
+  <rdfs:subClassOf rdf:resource="&base;Group" />
+  <rdfs:comment>This class represents an organisation</rdfs:comment>
+  <rdfs:label>Organisation</rdfs:label>
+</owl:Class>
+
+<!-- Community Classes -->
+
+<owl:Class rdf:ID="Household">
+  <rdfs:subClassOf rdf:resource="&base;Community" />
+  <rdfs:comment>This class represents a household</rdfs:comment>
+  <rdfs:label>Household</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Bonded-Group">
+  <rdfs:subClassOf rdf:resource="&base;Community" />
+  <rdfs:comment>This class represents a bonded group</rdfs:comment>
+  <rdfs:label>Bonded Group</rdfs:label>
+</owl:Class>
+
+<!-- Bonded Group Classes -->
+
+<owl:Class rdf:ID="Partnership">
+  <rdfs:subClassOf rdf:resource="&base;Bonded-Group" />
+  <rdfs:comment>This class represents a partnership</rdfs:comment>
+  <rdfs:label>Partnership</rdfs:label>
+</owl:Class>
+
+<!-- Organisation Classes -->
+
+<owl:Class rdf:ID="Company">
+  <rdfs:subClassOf rdf:resource="&base;Organisation" />
+  <rdfs:comment>This class represents a company</rdfs:comment>
+  <rdfs:label>Company</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Government">
+  <rdfs:subClassOf rdf:resource="&base;Organisation" />
+  <rdfs:comment>This class represents a governing group</rdfs:comment>
+  <rdfs:label>Government</rdfs:label>
+</owl:Class>
+
+<!-- Bonds -->
+
+<owl:Class rdf:ID="Bond">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents a bond that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Bond</rdfs:label>
+</owl:Class>
+
+<!-- Bond Classes -->
+
+<owl:Class rdf:ID="Pledge">
+  <rdfs:subClassOf rdf:resource="&base;Bond" />
+  <rdfs:comment>This class represents a promise that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Pledge</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Deal">
+  <rdfs:subClassOf rdf:resource="&base;Bond" />
+  <rdfs:comment>This class represents a deal that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Deal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Enmity">
+  <rdfs:subClassOf rdf:resource="&base;Bond" />
+  <rdfs:comment>This class represents an emnity that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Enmity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Alliance">
+  <rdfs:subClassOf rdf:resource="&base;Bond" />
+  <rdfs:comment>This class represents an alliance that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Alliance</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Family">
+  <rdfs:subClassOf rdf:resource="&base;Bond" />
+  <rdfs:comment>This class represents a family bond that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Family Bond</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Possession">
+  <rdfs:subClassOf rdf:resource="&base;Bond" />
+  <rdfs:comment>This class represents a the bond between two entities where one claims ownership of the other</rdfs:comment>
+  <rdfs:label>Possession</rdfs:label>
+</owl:Class>
+
+<!-- Alliance Classes -->
+
+<owl:Class rdf:ID="Friendship">
+  <rdfs:subClassOf rdf:resource="&base;Alliance" />
+  <rdfs:comment>This class represents an friendship that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Friendship</rdfs:label>
+</owl:Class>
+
+
+<!-- Family Bonds -->
+
+<owl:Class rdf:ID="Blood">
+  <rdfs:subClassOf rdf:resource="&base;Family" />
+  <rdfs:comment>This class represents a blood bond that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Blood Family Bond</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Adopted">
+  <rdfs:subClassOf rdf:resource="&base;Family" />
+  <rdfs:comment>This class represents an adopted bond that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Adopted Family Bond</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Foster">
+  <rdfs:subClassOf rdf:resource="&base;Family" />
+  <rdfs:comment>This class represents a foster bond that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Foster Family Bond</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Step">
+  <rdfs:subClassOf rdf:resource="&base;Family" />
+  <rdfs:comment>This class represents a step bond that exists between beings or groups of beings</rdfs:comment>
+  <rdfs:label>Step Family Bond</rdfs:label>
+</owl:Class>
+
+<!-- Professions -->
+
+<owl:Class rdf:ID="Profession">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents a profession</rdfs:comment>
+  <rdfs:label>Profession</rdfs:label>
+</owl:Class>
+
+<!-- Illnesses, Injuries etc -->
+
+<owl:Class rdf:ID="Mental-Illness">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents a mental illness</rdfs:comment>
+  <rdfs:label>Mental Illness</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Physical-Illness">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents a physical illness</rdfs:comment>
+  <rdfs:label>Physical Illness</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Physical-Injury">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents a physical injury</rdfs:comment>
+  <rdfs:label>Physical Injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Emotional-Crisis">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents a emotional crisis</rdfs:comment>
+  <rdfs:label>Emotional Crisis</rdfs:label>
+</owl:Class>
+
+<!-- Properties -->
+
+<!-- Being Properties -->
+
+  <owl:ObjectProperty rdf:ID="has-emotional-health">
+    <rdfs:label>Emotional Health</rdfs:label>
+    <rdfs:comment>This property specifies the emotional well-being of a being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&base;Emotional-Crisis"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-crisis">
+    <rdfs:subPropertyOf rdf:resource="&base;has-emotional-health" />
+    <rdfs:label>Has Crisis</rdfs:label>
+    <rdfs:comment>This property specifies the emotional crisis of a being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="has-mental-disorder">
+    <rdfs:label>Mental Health</rdfs:label>
+    <rdfs:comment>This property specifies the emotional well-being of a being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&base;Mental-Illness"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-physical-injury">
+    <rdfs:label>Physical Injury</rdfs:label>
+    <rdfs:comment>This property specifies the emotional well-being of a being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&base;Physical-Injury"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="has-physical-illness">
+    <rdfs:label>Physical Illness</rdfs:label>
+    <rdfs:comment>This property specifies the emotional well-being of a being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&base;Physical-Illness"/>
+  </owl:ObjectProperty>  
+
+  <owl:FunctionalProperty rdf:ID="place-of-birth">
+    <rdfs:label>Place of Birth</rdfs:label>
+    <rdfs:comment>This property specifies the place the being was born or created</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&loc;Space"/>
+  </owl:FunctionalProperty> 
+
+  <owl:ObjectProperty rdf:ID="place_of_citizenship">
+    <rdfs:label>Place of Citizenship</rdfs:label>
+    <rdfs:comment>This property specifies the place that the being is a citizan of</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&loc;Space"/>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="speaks">
+    <rdfs:label>Speaks</rdfs:label>
+    <rdfs:comment>This property specifies a language spoken by the being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&know;Language"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="speaks-fluently">
+    <rdfs:subPropertyOf rdf:resource="&base;speaks" />
+    <rdfs:label>Speaks Fluently</rdfs:label>
+    <rdfs:comment>This property specifies a language spoken fluently by the being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&know;Language"/>
+  </owl:ObjectProperty>  
+
+  <owl:ObjectProperty rdf:ID="speaks-basic">
+    <rdfs:subPropertyOf rdf:resource="&base;speaks" />
+    <rdfs:label>Speaks Basic</rdfs:label>
+    <rdfs:comment>This property specifies a language spoken at a basic level by the being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&know;Language"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="speaks-pidgin">
+    <rdfs:subPropertyOf rdf:resource="&base;speaks" />
+    <rdfs:label>Speaks Pidgin</rdfs:label>
+    <rdfs:comment>This property specifies a language almost spoken by the being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&know;Language"/>
+  </owl:ObjectProperty>  
+
+  <owl:ObjectProperty rdf:ID="reads">
+    <rdfs:label>Reads</rdfs:label>
+    <rdfs:comment>This property specifies a language or alphabet read by the being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&know;Alphabet"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="writes">
+    <rdfs:label>Writes</rdfs:label>
+    <rdfs:comment>This property specifies a language or alphabet read by the being</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range rdf:resource="&know;Alphabet"/>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="wears">
+    <rdfs:label>Wears</rdfs:label>
+    <rdfs:comment>This property specifies an item worn by the being</rdfs:comment>
+    <rdfs:domain rdf:resource="&ome;Physical-Item"/>
+    <rdfs:range rdf:resource="&know;Alphabet"/>
+  </owl:ObjectProperty> 
+  
+   <owl:ObjectProperty rdf:ID="wears-type">
+     <rdfs:label>Wears Type</rdfs:label>
+     <rdfs:comment>This property specifies a class of items worn by the being</rdfs:comment>
+     <rdfs:domain rdf:resource="&base;Being"/>
+    <rdfs:range> 
+    <owl:Restriction>
+    <owl:onProperty rdf:resource="&rdf;hasParent" />
+    <owl:allValuesFrom>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </owl:allValuesFrom>
+    </owl:Restriction>
+    </rdfs:range>  
+  </owl:ObjectProperty> 
+  
+  
+ <!-- Family Properties --> 
+
+   <owl:ObjectProperty rdf:ID="is-relation-of">
+     <rdfs:label>Is Relation Of</rdfs:label>
+     <rdfs:comment>This property specifies that the Being is the child of the specified Being</rdfs:comment>
+     <rdfs:domain rdf:resource="&base;Family"/>
+     <rdfs:range rdf:resource="&base;Being"/>
+     <owl:inverseOf rdf:resource="#is-relation-of"/>
+  </owl:ObjectProperty>
+  
+   <owl:ObjectProperty rdf:ID="is-child-of">
+     <rdfs:label>Is Child Of</rdfs:label>
+     <rdfs:comment>This property specifies that the being is the child of the specified being</rdfs:comment>
+     <rdfs:subPropertyOf rdf:resource="&base;is-relation-of"/>
+     <rdfs:domain rdf:resource="&base;Family"/>
+     <rdfs:range rdf:resource="&base;Being"/>
+     <owl:inverseOf rdf:resource="#is-parent-of"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="is-parent-of">
+     <rdfs:label>Is Parent Of</rdfs:label>
+     <rdfs:comment>This property specifies that the being is the parent of the specified being</rdfs:comment>
+     <rdfs:subPropertyOf rdf:resource="&base;is-relation-of"/>
+     <rdfs:domain rdf:resource="&base;Family"/>
+     <rdfs:range rdf:resource="&base;Being"/>
+     <owl:inverseOf rdf:resource="#is-child-of"/> 
+  </owl:ObjectProperty>  
+
+   <owl:ObjectProperty rdf:ID="in-loco-parentis">
+     <rdfs:label>In Loco Parentis</rdfs:label>
+     <rdfs:comment>This property specifies that the being is acting in loco parentis of the specified being</rdfs:comment>
+     <rdfs:subPropertyOf rdf:resource="&base;is-relation-of"/>
+     <rdfs:domain rdf:resource="&base;Family"/>
+     <rdfs:range rdf:resource="&base;Being"/>
+     <owl:inverseOf rdf:resource="#has-loco-parentis"/>  
+  </owl:ObjectProperty> 
+
+   <owl:ObjectProperty rdf:ID="has-loco-parentis">
+     <rdfs:label>Has Loco Parentis</rdfs:label>
+     <rdfs:comment>This property specifies that the specified being acting in loco parentis of the being</rdfs:comment>
+     <rdfs:subPropertyOf rdf:resource="&base;is-relation-of"/>
+     <rdfs:domain rdf:resource="&base;Family"/>
+     <rdfs:range rdf:resource="&base;Being"/>
+     <owl:inverseOf rdf:resource="#in-loco-parentis"/>   
+  </owl:ObjectProperty>
+
+   <owl:ObjectProperty rdf:ID="sibling-of">
+     <rdfs:label>Sibling Of</rdfs:label>
+     <rdfs:comment>This property specifies that the being is a sibling of the specified being</rdfs:comment>
+     <rdfs:subPropertyOf rdf:resource="&base;is-relation-of"/>
+     <rdfs:domain rdf:resource="&base;Family"/>
+     <rdfs:range rdf:resource="&base;Being"/>
+     <owl:inverseOf rdf:resource="#sibling-of"/> 
+  </owl:ObjectProperty>
+
+<!-- Health Properties -->
+
+  <owl:ObjectProperty rdf:ID="rehabilitated">
+    <rdfs:label>Rehabilitated</rdfs:label>
+    <rdfs:comment>This property specifies a rehabilitation event</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Physical-Injury"/>
+          <owl:Class rdf:about="&base;Physical-Illness"/>
+          <owl:Class rdf:about="&base;Mental-Illness"/>          
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="treated">
+    <rdfs:label>Treated</rdfs:label>
+    <rdfs:comment>This property specifies a treatment event</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Physical-Injury"/>
+          <owl:Class rdf:about="&base;Physical-Illness"/>
+          <owl:Class rdf:about="&base;Emotional-Crisis"/>
+          <owl:Class rdf:about="&base;Mental-Illness"/>          
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="recovered">
+    <rdfs:label>Recovered</rdfs:label>
+    <rdfs:comment>This property specifies a recovery event</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Physical-Injury"/>
+          <owl:Class rdf:about="&base;Physical-Illness"/>
+          <owl:Class rdf:about="&base;Emotional-Crisis"/>
+          <owl:Class rdf:about="&base;Mental-Illness"/>          
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="cured">
+    <rdfs:label>Cured</rdfs:label>
+    <rdfs:comment>This property specifies a cure event</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Physical-Injury"/>
+          <owl:Class rdf:about="&base;Physical-Illness"/>
+          <owl:Class rdf:about="&base;Mental-Illness"/>          
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="diagnosed">
+    <rdfs:label>Diagnosed</rdfs:label>
+    <rdfs:comment>This property specifies a diagnosis event</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Physical-Injury"/>
+          <owl:Class rdf:about="&base;Physical-Illness"/>
+          <owl:Class rdf:about="&base;Emotional-Crisis"/>
+          <owl:Class rdf:about="&base;Mental-Illness"/>          
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="entered-remission">
+    <rdfs:label>Entered Remission</rdfs:label>
+    <rdfs:comment>This property specifies an entering remission event</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Physical-Illness"/>
+          <owl:Class rdf:about="&base;Mental-Illness"/>          
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="resolved">
+    <rdfs:label>Resolved</rdfs:label>
+    <rdfs:comment>This property specifies a crisis resolution event</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Emotional-Crisis"/>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+<!-- Group Properties -->
+
+  <owl:ObjectProperty rdf:ID="has-number-of-parts">
+    <rdfs:label>Has Number Of Parts</rdfs:label>
+    <rdfs:comment>This property specifies the number of parts contained by the collection</rdfs:comment>
+    <rdfs:domain rdf:resource="&ome;Collection"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="carries-title">
+    <rdfs:label>Carries Title</rdfs:label>
+    <rdfs:comment>This property specifies a title which can be used by any members of the group</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Profession"/>
+          <owl:Class rdf:about="&base;Group"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&omt;Name"/>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="carries-uniform">
+    <rdfs:label>Carries Uniform</rdfs:label>
+    <rdfs:comment>This property specifies a uniform which is worn by any members of the group</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&base;Profession"/>
+          <owl:Class rdf:about="&base;Group"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&ome;Physical-Item"/>
+  </owl:ObjectProperty>   
+
+   <owl:ObjectProperty rdf:ID="of-type">
+     <rdfs:label>Of Type</rdfs:label>
+     <rdfs:comment>This property specifies a class of items of which the group or collection is made</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&ome;Collection"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range> 
+    <owl:Restriction>
+    <owl:onProperty rdf:resource="&rdf;hasParent" />
+    <owl:allValuesFrom>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&ome;Item"/>
+	    <owl:Class rdf:about="&base;Being"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </owl:allValuesFrom>
+    </owl:Restriction>
+    </rdfs:range>  
+  </owl:ObjectProperty> 
+
+   <owl:ObjectProperty rdf:ID="governs">
+    <rdfs:label>Governs</rdfs:label>
+    <rdfs:comment>This property specifies a class of items of which the group or collection is made</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Government"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+     <owl:inverseOf rdf:resource="#governed-by"/>
+  </owl:ObjectProperty> 
+
+   <owl:ObjectProperty rdf:ID="governed-by">
+    <rdfs:label>Governed By</rdfs:label>
+    <rdfs:comment>This property specifies a class of items of which the group or collection is made</rdfs:comment>
+    <rdfs:domain> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:domain>
+    <rdfs:range rdf:resource="&base;Government"/>
+     <owl:inverseOf rdf:resource="#governs"/>  
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="uses">
+    <rdfs:label>Uses</rdfs:label>
+    <rdfs:comment>This property specifies an entity typically used by the refering entity</rdfs:comment>
+    <rdfs:domain> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&base;Being"/>
+	    <owl:Class rdf:about="&base;Group"/>
+	    <owl:Class rdf:about="&base;Profession"/>
+	    <owl:Class rdf:about="&ome;Context"/>
+        </owl:unionOf>
+    </owl:Class> 		
+    </rdfs:domain>     
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&nom;NameOrdering"/>
+	    <owl:Class rdf:about="&dat;Calendar"/>
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+        </owl:unionOf>
+    </owl:Class>       		
+    </rdfs:range> 
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="used-by">
+    <rdfs:label>Used By</rdfs:label>
+    <rdfs:comment>This property specifies who/what an entity is typically used by</rdfs:comment>
+    <rdfs:domain> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&nom;NameOrdering"/>
+	    <owl:Class rdf:about="&dat;Calendar"/>
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:domain>     
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&base;Being"/>
+	    <owl:Class rdf:about="&base;Group"/>
+	    <owl:Class rdf:about="&base;Profession"/>
+	    <owl:Class rdf:about="&ome;Context"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range> 
+  </owl:ObjectProperty> 
+
+  
+<!-- Profession Properties -->
+
+  <owl:ObjectProperty rdf:ID="works-for">
+    <rdfs:label>Works For</rdfs:label>
+    <rdfs:comment>This property represents the entity being worked for</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Profession"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&base;Being"/>
+	    <owl:Class rdf:about="&base;Profession"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty>  
+
+<!-- Bond Properties -->
+
+
+<!-- Pledges -->
+
+  <owl:ObjectProperty rdf:ID="have-bonded-to">
+    <rdfs:label>Have Bonded To</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity has a bond with the named entity</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&know;Culture"/>
+	    <owl:Class rdf:about="&base;Profession"/>	    
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="have-not-bonded-to">
+    <rdfs:label>Have Not Bonded To</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity does not have a bond with the named entity</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&know;Culture"/>
+	    <owl:Class rdf:about="&base;Profession"/>	    
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="have-done">
+    <rdfs:label>Have Done</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity has done the named thing</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty>   
+  
+  <owl:ObjectProperty rdf:ID="have-not-done">
+    <rdfs:label>Have Not Done</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity has not done the named thing</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty>   
+
+  <owl:ObjectProperty rdf:ID="is-a">
+    <rdfs:label>Is A</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity is the named thing</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range rdf:resource="&ome;Entity"/>
+  </owl:ObjectProperty>   
+  
+  <owl:ObjectProperty rdf:ID="is-not-a">
+    <rdfs:label>Is Not A</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity is not the named thing</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range rdf:resource="&ome;Entity"/>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="will-bond-to">
+    <rdfs:label>Will Bond To</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity will bond with the named entity</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&know;Culture"/>
+	    <owl:Class rdf:about="&base;Profession"/>	    
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="will-not-bond-to">
+    <rdfs:label>Will Not Bond To</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity will not have a bond with the named entity</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&know;Culture"/>
+	    <owl:Class rdf:about="&base;Profession"/>	    
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty> 
+  
+  <owl:ObjectProperty rdf:ID="will-do">
+    <rdfs:label>Will Do</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity will do the named thing</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty>   
+  
+  <owl:ObjectProperty rdf:ID="will-not-do">
+    <rdfs:label>Will Not Do</rdfs:label>
+    <rdfs:comment>This property represents a pledge that the entity will not do the named thing</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range rdf:resource="&ome;Event"/>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="pledge-maker">
+    <rdfs:label>Pledge Maker</rdfs:label>
+    <rdfs:comment>This property the entity making the pledge</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	        
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty>   
+  
+  <owl:ObjectProperty rdf:ID="pledge-reciever">
+    <rdfs:label>Pledged Reciever</rdfs:label>
+    <rdfs:comment>This property represents the reciever of the pledge</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Pledge"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&know;Knowledge"/>
+	    <owl:Class rdf:about="&loc;Space"/>	    
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty> 
+  
+<!-- Deal Properties --> 
+
+  <owl:ObjectProperty rdf:ID="deal-conditions">
+    <rdfs:label>Deal Conditions</rdfs:label>
+    <rdfs:comment>This property specifies the conditions of the deal</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Deal"/>
+    <rdfs:range rdf:resource="&base;Pledge"/>
+  </owl:ObjectProperty>   
+  
+  <owl:ObjectProperty rdf:ID="dealbroker">
+    <rdfs:label>Deal Broker</rdfs:label>
+    <rdfs:comment>This property specifies the broker of the deal</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Deal"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	        
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty> 
+
+  <owl:ObjectProperty rdf:ID="dealmaker">
+    <rdfs:label>Deal Broker</rdfs:label>
+    <rdfs:comment>This property specifies the broker of the deal</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Deal"/>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">          
+	    <owl:Class rdf:about="&base;Group"/>	        
+	    <owl:Class rdf:about="&base;Being"/>
+	</owl:unionOf>    
+    </owl:Class> 
+    </rdfs:range>
+  </owl:ObjectProperty> 
+  
+  
+ <!-- Possession Properties -->
+ 
+   <owl:ObjectProperty rdf:ID="owns">
+     <rdfs:label>Owns</rdfs:label>
+     <rdfs:comment>This property specifies the ownership of an entity</rdfs:comment>
+     <rdfs:domain rdf:resource="&base;Possession"/>
+     <rdfs:range rdf:resource="&ome;Entity"/>
+  </owl:ObjectProperty>
+
+   <owl:ObjectProperty rdf:ID="owned-by">
+     <rdfs:label>Owns</rdfs:label>
+     <rdfs:comment>This property specifies ownership by an entity</rdfs:comment>
+     <rdfs:domain rdf:resource="&base;Possession"/>
+     <rdfs:range rdf:resource="&ome;Entity"/>
+  </owl:ObjectProperty>
+
+<!-- Acting -->
+  
+  <owl:ObjectProperty rdf:ID="portrays">
+    <rdfs:label>Portrays</rdfs:label>
+    <rdfs:comment>This property specifies what entity or event is being portrayed</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&ome;is-linked-to" />
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&base;Being"/>
+            <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&base;Character"/>
+            <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range>
+     <owl:inverseOf rdf:resource="&omfb;portrayed-by"/> 
+  </owl:ObjectProperty>   
+
+  <owl:ObjectProperty rdf:ID="voiced-by">
+    <rdfs:label>Voiced By</rdfs:label>
+    <rdfs:comment>This property specifies what the entity or event is being portrayed by</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;portrays" />
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&base;Being"/>
+            <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&base;Being"/>
+            <owl:Class rdf:about="&base;Group"/>	    
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range>
+     <owl:inverseOf rdf:resource="#voices"/> 
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="voices">
+    <rdfs:label>Voices</rdfs:label>
+    <rdfs:comment>This property specifies what entity or event is being portrayed</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&base;portrays" />
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&base;Being"/>
+            <owl:Class rdf:about="&base;Group"/>	    
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range> 
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+	    <owl:Class rdf:about="&ome;Physical-Item"/>
+	    <owl:Class rdf:about="&base;Being"/>
+            <owl:Class rdf:about="&base;Group"/>	    
+	    <owl:Class rdf:about="&loc;Space"/>
+	    <owl:Class rdf:about="&ome;Event"/>
+        </owl:unionOf>
+    </owl:Class>    		
+    </rdfs:range>
+     <owl:inverseOf rdf:resource="#voiced-by"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>

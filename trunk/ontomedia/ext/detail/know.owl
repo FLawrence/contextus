@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/detail/know#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Knowledge Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Knowledge Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Knowledge Classes -->
+
+<owl:Class rdf:ID="Information">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents information</rdfs:comment>
+  <rdfs:label>Information</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Culture">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents culture</rdfs:comment>
+  <rdfs:label>Culture</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Subject">
+  <rdfs:subClassOf rdf:resource="&ome;Abstract-Item" />
+  <rdfs:comment>This class represents academic subjects</rdfs:comment>
+  <rdfs:label>Subject</rdfs:label>
+</owl:Class>
+
+<!-- Knowledge Types -->
+
+<owl:Class rdf:ID="Theory">
+  <rdfs:subClassOf rdf:resource="&base;Information" />
+  <rdfs:comment>This class represents theories</rdfs:comment>
+  <rdfs:label>Theory</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Fact">
+  <rdfs:subClassOf rdf:resource="&base;Information" />
+  <rdfs:comment>This class represents facts</rdfs:comment>
+  <rdfs:label>Fact</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Memory">
+  <rdfs:subClassOf rdf:resource="&base;Information" />
+  <rdfs:comment>This class represents memories</rdfs:comment>
+  <rdfs:label>Memory</rdfs:label>
+</owl:Class>
+
+<!-- Culture Classes -->
+
+<owl:Class rdf:ID="Language">
+  <rdfs:subClassOf rdf:resource="&base;Culture" />
+  <rdfs:comment>This class represents language</rdfs:comment>
+  <rdfs:label>Language</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Alphabet">
+  <rdfs:subClassOf rdf:resource="&base;Culture" />
+  <rdfs:comment>This class represents an alphabet, syllabry or way of visually representing a language</rdfs:comment>
+  <rdfs:label>Alphabet</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Beliefs">
+  <rdfs:subClassOf rdf:resource="&base;Culture" />
+  <rdfs:comment>This class represents cultural or religious beliefs</rdfs:comment>
+  <rdfs:label>Beliefs</rdfs:label>
+</owl:Class>
+
+<!-- Belief Classes -->
+
+<owl:Class rdf:ID="Religion">
+  <rdfs:subClassOf rdf:resource="&base;Beliefs" />
+  <rdfs:comment>This class represents religious beliefs</rdfs:comment>
+  <rdfs:label>Religion</rdfs:label>
+</owl:Class>
+
+<!-- Subject Classes -->
+
+<owl:Class rdf:ID="Humanities">
+  <rdfs:subClassOf rdf:resource="&base;Subject" />
+  <rdfs:comment>This class represents humanities subjects</rdfs:comment>
+  <rdfs:label>Humanities</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Sciences">
+  <rdfs:subClassOf rdf:resource="&base;Subject" />
+  <rdfs:comment>This class represents science subjects</rdfs:comment>
+  <rdfs:label>Sciences</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="SocialSciences">
+  <rdfs:subClassOf rdf:resource="&base;Subject" />
+  <rdfs:comment>This class represents social science subjects</rdfs:comment>
+  <rdfs:label>Social Sciences</rdfs:label>
+</owl:Class>
+
+<!-- Humanities Classes -->
+
+<owl:Class rdf:ID="Language">
+  <rdfs:subClassOf rdf:resource="&base;Humanities" />
+  <rdfs:comment>This class represents language subjects</rdfs:comment>
+  <rdfs:label>Languages/Linguistics</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Philosophy">
+  <rdfs:subClassOf rdf:resource="&base;Humanities" />
+  <rdfs:comment>This class represents philosophy subjects</rdfs:comment>
+  <rdfs:label>Philosophy</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="ReligiousStudies">
+  <rdfs:subClassOf rdf:resource="&base;Humanities" />
+  <rdfs:comment>This class represents religious subjects</rdfs:comment>
+  <rdfs:label>Religious Studies</rdfs:label>
+</owl:Class>
+
+<!-- Philosophy -->
+
+<owl:Class rdf:ID="Theology">
+  <rdfs:subClassOf rdf:resource="&base;Philosophy" />
+  <rdfs:subClassOf rdf:resource="&base;ReligiousStudies" />
+  <rdfs:comment>This class represents theology subjects</rdfs:comment>
+  <rdfs:label>Theology</rdfs:label>
+</owl:Class>
+
+<!-- Science Classes -->
+
+<owl:Class rdf:ID="EarthSciences">
+  <rdfs:subClassOf rdf:resource="&base;Sciences" />
+  <rdfs:comment>This class represents earth science subjects</rdfs:comment>
+  <rdfs:label>Earth Sciences</rdfs:label>
+</owl:Class>
+
+<!-- Culture Properties -->
+
+<owl:ObjectProperty rdf:ID="symbolises">
+    <rdfs:label>Symbolises</rdfs:label>
+    <rdfs:comment>This property specifies a language symbolised by the alphabet</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Alphabet"/>
+    <rdfs:range rdf:resource="&base;Language"/>
+    <owl:inverseOf rdf:resource="represented-by"/>
+</owl:ObjectProperty>  
+  
+<owl:ObjectProperty rdf:ID="represented-by">
+    <rdfs:label>Represented/Symbolised By</rdfs:label>
+    <rdfs:comment>This property specifies the alphabet, syllabry or other way of visually representing a language</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Language"/>
+    <rdfs:range rdf:resource="&base;Alphabet"/>
+    <owl:inverseOf rdf:resource="symbolises"/>
+</owl:ObjectProperty> 
+
+<!-- Belief Properties -->
+
+<owl:ObjectProperty rdf:ID="believes-in">
+    <rdfs:label>Believes In</rdfs:label>
+    <rdfs:comment>This property specifies things which the entity believes in</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Belief"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="&ome;Abstract-Item"/>
+          <owl:Class rdf:about="&omb;Being"/>
+          <owl:Class rdf:about="&ome;Event"/>
+          <owl:Class rdf:about="&loc;Space"/>
+          <owl:Class rdf:about="&ome;Timeline"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+</owl:ObjectProperty> 
+
+</rdf:RDF>

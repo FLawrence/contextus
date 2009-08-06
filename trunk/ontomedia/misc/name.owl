@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/name#">
+<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xmlns:omt="&omt;" 
+ xmlns:ome="&ome;"
+ xmlns:omb="&omb;" 
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Name Part Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Name-Component Part Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2005-05-11</dct:created>
+ <owl:versionInfo>0.21</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Name-Component -->
+
+<owl:Class rdf:ID="Name-Component">
+  <rdfs:subClassOf rdf:resource="&omt;AbstractComponent" />
+  <rdfs:comment>This class represents the parts of a name</rdfs:comment>
+  <rdfs:label>Name Component</rdfs:label>
+</owl:Class>
+
+<!-- Name-Ordering -->
+
+<owl:Class rdf:ID="Name-Ordering">
+  <rdfs:subClassOf rdf:resource="&omt;Ordering" />
+  <rdfs:comment>This class represents the order of a name</rdfs:comment>
+  <rdfs:label>Name Ordering</rdfs:label>
+</owl:Class>
+
+<!-- Name Component Classes -->
+
+<owl:Class rdf:ID="Title">
+  <rdfs:subClassOf rdf:resource="&base;Name-Component" />
+  <rdfs:comment>This class represents the parts of a name which is the title</rdfs:comment>
+  <rdfs:label>Title</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Patronymic">
+  <rdfs:subClassOf rdf:resource="&base;Name-Component" />
+  <rdfs:comment>This class represents the parts of a name which is the patronymic or equivilent description of lineage</rdfs:comment>
+  <rdfs:label>Patronymic</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Primary-Name">
+  <rdfs:subClassOf rdf:resource="&base;Name-Component" />
+  <rdfs:comment>This class represents the parts of a name which is primarily used i.e first or Christian name</rdfs:comment>
+  <rdfs:label>Primary Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Additional-Name">
+  <rdfs:subClassOf rdf:resource="&base;Name-Component" />
+  <rdfs:comment>This class represents the parts of a name that aren't covered otherwise i.e. middle names</rdfs:comment>
+  <rdfs:label>Additional Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Family-Name">
+  <rdfs:subClassOf rdf:resource="&base;Name-Component" />
+  <rdfs:comment>This class represents the parts of a name which is the Family Name or Surname</rdfs:comment>
+  <rdfs:label>Family Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Qualifier">
+  <rdfs:subClassOf rdf:resource="&base;Name-Component" />
+  <rdfs:comment>This class represents the parts of a name which is acts as a qualifier i.e 'Jr', 'III' or 'the Great'</rdfs:comment>
+  <rdfs:label>Name Qualifier</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Nick">
+  <rdfs:subClassOf rdf:resource="&base;Name-Component" />
+  <rdfs:comment>This class represents the parts of a nick name</rdfs:comment>
+  <rdfs:label>Nickname</rdfs:label>
+</owl:Class>
+
+<!-- Name Ordering Classes -->
+
+<owl:Class rdf:ID="Formal">
+  <rdfs:subClassOf rdf:resource="&base;Name-Ordering" />
+  <rdfs:comment>This class represents the formal form of the name</rdfs:comment>
+  <rdfs:label>Formal Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Professional">
+  <rdfs:subClassOf rdf:resource="&base;Formal" />
+  <rdfs:comment>This class represents the form of the name used for professional reasons i.e. a stage name</rdfs:comment>
+  <rdfs:label>Professional Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Informal">
+  <rdfs:subClassOf rdf:resource="&base;Name-Ordering" />
+  <rdfs:comment>This class represents the informal form of the name</rdfs:comment>
+  <rdfs:label>Every Day Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Familiar">
+  <rdfs:subClassOf rdf:resource="&base;Name-Ordering" />
+  <rdfs:comment>This class represents the familiar form of the name</rdfs:comment>
+  <rdfs:label>Nick Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Full">
+  <rdfs:subClassOf rdf:resource="&base;Name-Ordering" />
+  <rdfs:comment>This class represents the full form of the name for example used on an indentity document</rdfs:comment>
+  <rdfs:label>Full Name</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Birth">
+  <rdfs:subClassOf rdf:resource="&base;Full" />
+  <rdfs:comment>This class represents the name given to the entity at birth which may be changed later for religious, personal or professional reasons</rdfs:comment>
+  <rdfs:label>Birth Name</rdfs:label>
+</owl:Class>
+
+<!-- Name-Component Properties -->
+
+  <owl:ObjectProperty rdf:ID="has-name-component">
+    <rdfs:label>Has Name Component</rdfs:label>
+    <rdfs:comment>This property specifies the name represented by the component</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Name-Component"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:ObjectProperty>  
+
+  
+  
+  <owl:ObjectProperty rdf:ID="has-abrv-component">
+    <rdfs:label>Has Abreviated Name Component</rdfs:label>
+    <rdfs:comment>This property specifies the abreviated version name represented by the component</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Name-Component"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:ObjectProperty> 
+ 
+
+</rdf:RDF>

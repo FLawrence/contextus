@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/trans#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Knowledge Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Knowledge Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) Transformation has been designed to describe the interactions occurring in a transformation event.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2006-04-18</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Transformation Classes -->
+
+
+<owl:Class rdf:ID="Transference">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents an entity being transfered</rdfs:comment>
+  <rdfs:label>Transfer Entity</rdfs:label>
+</owl:Class>
+
+<!--
+
+<owl:Class rdf:ID="AbstractItem">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents an abstract item being transformed</rdfs:comment>
+  <rdfs:label>Transform Abstract Item</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="PhysicalItem">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents an phyisical item being transformed</rdfs:comment>
+  <rdfs:label>Transform Physical Item</rdfs:label>
+</owl:Class>
+-->
+
+<!-- Trait Changes -->
+<!-- 
+<owl:Class rdf:ID="Trait">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents a trait being transformed</rdfs:comment>
+  <rdfs:label>Transform Trait Value</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="StateOfBeing">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents a change in a the state of being trait</rdfs:comment>
+  <rdfs:label>State of Being Change</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="StateOfForm">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents a change in a the state of form trait</rdfs:comment>
+  <rdfs:label>State of Form Change</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="StateOfConsciousness">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents a change in a the state of consciousness trait</rdfs:comment>
+  <rdfs:label>State of Consciousness Change</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Species">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents a change in a the species trait</rdfs:comment>
+  <rdfs:label>Species Change</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Gender">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents a change in a the gender trait</rdfs:comment>
+  <rdfs:label>Gender Change</rdfs:label>
+</owl:Class>
+-->
+
+<!-- Biological Changes -->
+
+<owl:Class rdf:ID="Division">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents an entity dividing or otherwise transforming into multiple entities</rdfs:comment>
+  <rdfs:label>Division/Seperation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Merge">
+  <rdfs:subClassOf rdf:resource="&ome;Transformation" />
+  <rdfs:comment>This class represents multiple entities merging or otherwise transforming into a single entity</rdfs:comment>
+  <rdfs:label>Division/Seperation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Degradation">
+  <rdfs:subClassOf rdf:resource="&base;Division" />
+  <rdfs:comment>This class represents an entity degrading</rdfs:comment>
+  <rdfs:label>Degradation</rdfs:label>
+</owl:Class>
+
+</rdf:RDF>

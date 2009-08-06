@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE owl [
+  <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
+  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/locspec#">
+  <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
+  <!ENTITY dct          "http://purl.org/dc/terms/">
+]>  
+
+
+
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:rdfs="&rdfs;"
+	 xmlns:owl="&owl;"
+	 xmlns:xsd="&xsd;"
+	 xml:base="&base;"
+	 xmlns:dc="&dc;"
+	 xmlns:dct="&dct;">
+
+	 
+  <owl:Ontology rdf:about="&base;">
+    <rdfs:label>OntoMedia LocSpec Ontology</rdfs:label>
+    <dc:title xml:lang="en">OntoMedia LocSpec Ontology</dc:title>
+    <dc:description xml:lang="en">The OntoMedia LocSpec ontology provides a method to specify regions of media items</dc:description>
+    <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+    <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+    <dct:created>2005-07-14</dct:created>
+    <owl:versionInfo>0.1</owl:versionInfo>
+  </owl:Ontology>
+
+  <owl:class rdf:ID="LocSpec">
+    <rdfs:label>LocSpec</rdfs:label>
+    <rdfs:comment>This class represents a location or region within a medium</rdfs:comment>
+  </owl:class>
+
+  <owl:DatatypeProperty rdf:ID="uri">
+    <rdfs:label>uri</rdfs:label>
+    <rdfs:domain rdf:resource="#LocSpec" />
+    <rdfs:range rdf:resource="&xsd;anyURI" />
+    <rdfs:comment>This property specifies the URI of the media</rdfs:comment>
+  </owl:DatatypeProperty>
+
+  <!-- Value -->
+  <owl:class rdf:ID="Value">
+    <rdfs:comment>This class provides a simple pairing of a value and a unit</rdfs:comment>
+  </owl:class>
+
+  <owl:DatatypeProperty rdf:ID="value">
+    <rdfs:label>value</rdfs:label>
+    <rdfs:domain rdf:resource="#Value" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+    <rdfs:comment>This property specifies a value</rdfs:comment>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:ID="unit">
+    <rdfs:label>unit</rdfs:label>
+    <rdfs:domain rdf:resource="#Value" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+    <rdfs:comment>This property specifies the unit of a value</rdfs:comment>
+  </owl:DatatypeProperty>
+
+  <!-- Range -->
+  
+  <owl:class rdf:ID="Range">
+    <rdfs:subClassOf rdf:resource="#LocSpec" />
+    <rdfs:comment>This class represents a portion of a medium denoted by a start point and a length</rdfs:comment>
+  </owl:class>
+  
+  <owl:ObjectProperty rdf:ID="offset">
+    <rdfs:label>offset</rdfs:label>
+    <rdfs:domain rdf:resource="#Range" />
+    <rdfs:range rdf:resource="#Value" />
+    <rdfs:comment>This property specifies the offset into a region</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:DatatypeProperty rdf:ID="length">
+    <rdfs:label>length</rdfs:label>
+    <rdfs:domain rdf:resource="#Range" />
+    <rdfs:range rdf:resource="#Value" />
+    <rdfs:comment>This property specifies the length of a range</rdfs:comment>
+  </owl:DatatypeProperty>
+
+  <!-- CharRange -->
+
+  <owl:class rdf:ID="CharRange">
+    <rdfs:subClassOf rdf:resource="#Range" />
+  </owl:class>
+  
+  <!-- VideoRange -->
+
+  <owl:class rdf:ID="VideoRange">
+    <rdfs:subClassOf rdf:resource="#Range" />
+  </owl:class>
+  
+  <!-- AudioRange -->
+
+  <owl:class rdf:ID="AudioRange">
+    <rdfs:subClassOf rdf:resource="#Range" />
+  </owl:class>
+  
+  <!-- Area -->
+  
+  <owl:class rdf:ID="Area">
+    <rdfs:subClassOf rdf:resource="#LocSpec" />
+  </owl:class>
+  
+  <owl:ObjectProperty rdf:ID="page">
+    <rdfs:label>page</rdfs:label>
+    <rdfs:domain rdf:resource="#Area" />
+    <rdfs:range rdf:resource="#Value" />
+    <rdfs:comment>This property specifies the page to work with</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="startx">
+    <rdfs:label>start x</rdfs:label>
+    <rdfs:domain rdf:resource="#Area" />
+    <rdfs:range rdf:resource="#Value" />
+    <rdfs:comment>This property specifies the start X co-ordinate</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="endx">
+    <rdfs:label>end x</rdfs:label>
+    <rdfs:domain rdf:resource="#Area" />
+    <rdfs:range rdf:resource="#Value" />
+    <rdfs:comment>This property specifies the end X co-ordinate</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="starty">
+    <rdfs:label>start y</rdfs:label>
+    <rdfs:domain rdf:resource="#Area" />
+    <rdfs:range rdf:resource="#Value" />
+    <rdfs:comment>This property specifies the start Y co-ordinate</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="endy">
+    <rdfs:label>end y</rdfs:label>
+    <rdfs:domain rdf:resource="#Area" />
+    <rdfs:range rdf:resource="#Value" />
+    <rdfs:comment>This property specifies the end Y co-ordinate</rdfs:comment>
+  </owl:ObjectProperty>
+  
+</rdf:RDF>

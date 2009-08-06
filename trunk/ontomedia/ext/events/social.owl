@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dct "http://purl.org/dc/terms/">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/social#">
+<!ENTITY omea "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/events/action#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+
+
+<rdf:RDF
+ xmlns:ome="&ome;"
+ xmlns:dc="&dc;"
+ xmlns:dct="&dct;"
+ xmlns:xsd="&xsd;"
+ xmlns:rdf="&rdf;"
+ xmlns:owl="&owl;"
+ xmlns:rdfs="&rdfs;"
+ xml:base="&base;"
+>
+	 	 
+
+<owl:Ontology rdf:about="&base;">
+ <rdfs:label>OntoMedia Knowledge Representation</rdfs:label>
+ <dc:title xml:lang="en">OntoMedia Knowledge Representation</dc:title>
+ <dc:description xml:lang="en">OntoMedia (Ontology for Media) has been designed to describe the interactions occurring in multimedia.</dc:description>
+ <dc:creator>Michael O. Jewell (mailto:moj@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>K Faith Lawrence (mailto:kf03r@ecs.soton.ac.uk)</dc:creator>
+ <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
+ <dct:created>2007-03-29</dct:created>
+ <owl:versionInfo>0.2</owl:versionInfo>
+</owl:Ontology>
+
+<!-- Social Classes -->
+
+<owl:Class rdf:ID="Flirtation">
+  <rdfs:subClassOf rdf:resource="&ome;Social" />
+  <rdfs:subClassOf rdf:resource="&omea;Sex" />
+  <rdfs:comment>This class represents flirting social interactions</rdfs:comment>
+  <rdfs:label>Flirtation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Academic">
+  <rdfs:subClassOf rdf:resource="&ome;Social" />
+  <rdfs:comment>This class represents an academic activity</rdfs:comment>
+  <rdfs:label>Academic</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Legal">
+  <rdfs:subClassOf rdf:resource="&ome;Social" />
+  <rdfs:comment>This class represents an legal activity</rdfs:comment>
+  <rdfs:label>Legal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Political">
+  <rdfs:subClassOf rdf:resource="&ome;Social" />
+  <rdfs:comment>This class represents an political activity</rdfs:comment>
+  <rdfs:label>Political</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:ID="Theological">
+  <rdfs:subClassOf rdf:resource="&ome;Social" />
+  <rdfs:comment>This class represents an theological activity</rdfs:comment>
+  <rdfs:label>Theological</rdfs:label>
+</owl:Class>
+
+<!-- Sex -->
+
+<owl:Class rdf:ID="Proposition">
+  <rdfs:subClassOf rdf:resource="&base;Flirtation" />
+  <rdfs:comment>This class represents flirting with serious intente/making a pass</rdfs:comment>
+  <rdfs:label>Propositioning/Making a Pass</rdfs:label>
+</owl:Class>
+
+</rdf:RDF>
