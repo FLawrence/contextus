@@ -106,12 +106,6 @@
   <rdfs:label>Marine</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:ID="Avian">
-  <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
-  <rdfs:comment>This class represents species with an avian form</rdfs:comment>
-  <rdfs:label>Avian</rdfs:label>
-</owl:Class>
-
 <owl:Class rdf:ID="Mollusk">
   <rdfs:subClassOf rdf:resource="&omcm;Bestial" />
   <rdfs:comment>This class represents species with a mollusk form</rdfs:comment>
