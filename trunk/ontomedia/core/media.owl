@@ -5,13 +5,13 @@
   <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
   <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
-  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media#">
+  <!ENTITY base		"http://contextus.net/ontology/ontomedia/core/media#">
   <!ENTITY dc          	"http://purl.org/dc/elements/1.1/">
   <!ENTITY dct          	"http://purl.org/dc/terms/">
-  <!ENTITY ome		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
-  <!ENTITY geom		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/geometry#">
+  <!ENTITY ome		"http://contextus.net/ontology/ontomedia/core/expression#">
+  <!ENTITY geom		"http://contextus.net/ontology/ontomedia/misc/geometry#">
  
-  <!ENTITY locspec 	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/locspec#">
+  <!ENTITY locspec 	"http://contextus.net/ontology/ontomedia/misc/locspec#">
 ]>  
 
 

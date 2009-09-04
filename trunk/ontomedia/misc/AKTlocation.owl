@@ -11,7 +11,7 @@
   <!ENTITY dct		"http://purl.org/dc/terms/">
   <!ENTITY portal	"http://www.aktors.org/ontology/portal#">   
   <!ENTITY extension	"http://www.aktors.org/ontology/extension#">
-  <!ENTITY ome		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">  
+  <!ENTITY ome		"http://contextus.net/ontology/ontomedia/core/expression#">  
   <!ENTITY base		"http://signage.ecs.soton.ac.uk/ontologies/location#">  
 ]>
 

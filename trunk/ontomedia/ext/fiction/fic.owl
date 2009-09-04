@@ -5,11 +5,11 @@
   <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
   <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
-  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/fiction/fic#">
-  <!ENTITY ome 		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
-  <!ENTITY xprop	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/exprop#">
-  <!ENTITY omb 		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
-  <!ENTITY loc 		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
+  <!ENTITY base		"http://contextus.net/ontology/ontomedia/ext/fiction/fic#">
+  <!ENTITY ome 		"http://contextus.net/ontology/ontomedia/core/expression#">
+  <!ENTITY xprop	"http://contextus.net/ontology/ontomedia/ext/common/exprop#">
+  <!ENTITY omb 		"http://contextus.net/ontology/ontomedia/ext/common/being#">
+  <!ENTITY loc 		"http://contextus.net/ontology/ontomedia/core/space#">
   <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
   <!ENTITY dct          "http://purl.org/dc/terms/">
 ]>  
