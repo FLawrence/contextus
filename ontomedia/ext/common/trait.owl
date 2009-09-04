@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-
 <!DOCTYPE owl [
   <!ENTITY xsd		"http://www.w3.org/2001/XMLSchema#">
   <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -14,9 +13,9 @@
   <!ENTITY omm	      	"http://contextus.net/ontology/ontomedia/core/media#">
   <!ENTITY dat	      	"http://contextus.net/ontology/ontomedia/owl/misc/date#">
   <!ENTITY base	      	"http://contextus.net/ontology/ontomedia/ext/common/trait">
+  <!ENTITY omb 		"http://contextus.net/ontology/ontomedia/ext/common/being#">
+  <!ENTITY nom		"http://contextus.net/ontology/ontomedia/misc/name#">
 ]>  
-
-
 
 <rdf:RDF xmlns:rdf="&rdf;"
 	 xmlns:rdfs="&rdfs;"
@@ -27,15 +26,10 @@
 	 xmlns:omm="&omm;"
 	 xmlns:nom="&nom;"
 	 xmlns:omb="&omb;"
-	 xmlns:loc="&loc;"
 	 xmlns:dat="&dat;"
 	 xml:base="&base;"
 	 xmlns:dc="&dc;"
 	 xmlns:dct="&dct;">
-
-
-<?xml version="1.0"?>
-<rdf:RDF
 
   <owl:Ontology rdf:about="&base;">
     <rdfs:label>OntoMedia Trait Representation</rdfs:label>
@@ -332,12 +326,16 @@
     <rdfs:label>Undead</rdfs:label>
     <rdfs:subClassOf rdf:resource="State-Of-Being"/>
     <owl:disjointWith>
-      <owl:Class rdf:ID="Unprovable"/>
-      <owl:Class rdf:ID="NonExistent"/>
-      <owl:Class rdf:ID="Unknown"/>
-      <owl:Class rdf:ID="Dead"/>
-      <owl:Class rdf:ID="Alive"/>
-      <owl:Class rdf:ID="Inanimate"/>
+     <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:ID="Unprovable"/>
+        <owl:Class rdf:ID="NonExistent"/>
+        <owl:Class rdf:ID="Unknown"/>
+        <owl:Class rdf:ID="Dead"/>
+        <owl:Class rdf:ID="Alive"/>
+        <owl:Class rdf:ID="Inanimate"/>
+      </owl:unionOf>
+     </owl:Class>
     </owl:disjointWith>
     <rdfs:comment>This class describes an Entity which is undead</rdfs:comment>
   </owl:Class>
@@ -345,26 +343,35 @@
   <owl:Class rdf:about="#Inanimate">
     <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#Dead"/>
-    	<owl:Class rdf:about="#Undead"/>
-    	<owl:Class rdf:about="#NonExistent"/>
-      	<owl:Class rdf:about="#Alive"/>
-		<owl:Class rdf:about="#Unprovable"/>
-      <owl:Class rdf:about="#Unknown"/>
-    <rdfs:comment>This class describes an Entity which exists but is not, never was or never can be alive</rdfs:comment>
-    <rdfs:label>Inanimate</rdfs:label>
+     <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+       <owl:Class rdf:about="#Dead"/>
+       <owl:Class rdf:about="#Undead"/>
+       <owl:Class rdf:about="#NonExistent"/>
+       <owl:Class rdf:about="#Alive"/>
+       <owl:Class rdf:about="#Unprovable"/>
+       <owl:Class rdf:about="#Unknown"/>
+     </owl:unionOf>
+    </owl:Class>
+   </owl:disjointWith>
+   <rdfs:comment>This class describes an Entity which exists but is not, never was or never can be alive</rdfs:comment>
+   <rdfs:label>Inanimate</rdfs:label>
   </owl:Class>
 
   <owl:Class rdf:about="#Unprovable">
     <rdfs:comment>This class describes an Entity those state of existance cannot be proved</rdfs:comment>
     <rdfs:label>Unprovable</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:about="#Unknown"/>
-      <owl:Class rdf:about="#NonExistent"/>
-      <owl:Class rdf:about="#Dead"/>
-      <owl:Class rdf:about="#Undead"/>
-      <owl:Class rdf:about="#Inanimate"/>
-      <owl:Class rdf:about="#Alive"/>
+     <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+       <owl:Class rdf:about="#Unknown"/>
+       <owl:Class rdf:about="#NonExistent"/>
+       <owl:Class rdf:about="#Dead"/>
+       <owl:Class rdf:about="#Undead"/>
+       <owl:Class rdf:about="#Inanimate"/>
+       <owl:Class rdf:about="#Alive"/>
+      </owl:unionOf>
+     </owl:Class>
     </owl:disjointWith>
     <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
   </owl:Class>
@@ -373,22 +380,30 @@
     <rdfs:comment>This class describes an Entity which is dead</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#State-Of-Being"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#Unknown"/>
-      <owl:Class rdf:about="#NonExistent"/>
-      <owl:Class rdf:about="#Alive"/>
-      <owl:Class rdf:about="#Undead"/>
-      <owl:Class rdf:about="#Inanimate"/>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+         <owl:Class rdf:about="#Unknown"/>
+         <owl:Class rdf:about="#NonExistent"/>
+         <owl:Class rdf:about="#Alive"/>
+         <owl:Class rdf:about="#Undead"/>
+         <owl:Class rdf:about="#Inanimate"/>
+        </owl:unionOf>
+      </owl:Class>
     </owl:disjointWith>
     <rdfs:label>Dead</rdfs:label>
   </owl:Class>
   
   <owl:Class rdf:about="#Unknown">
     <owl:disjointWith>
-      <owl:Class rdf:about="#Alive"/>
-      <owl:Class rdf:about="#NonExistent"/>
-       <owl:Class rdf:about="#Unprovable"/>
-        <owl:Class rdf:about="#Undead"/>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+         <owl:Class rdf:about="#Alive"/>
+         <owl:Class rdf:about="#NonExistent"/>
+         <owl:Class rdf:about="#Unprovable"/>
+         <owl:Class rdf:about="#Undead"/>
          <owl:Class rdf:about="#Inanimate"/>
+        </owl:unionOf>
+      </owl:Class>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#Dead"/>
     <rdfs:comment>This class describes an Entity those state of existance is not unknown but is theoretically provable</rdfs:comment>
@@ -426,11 +441,15 @@
     <rdfs:comment>This class describes an Entity which is unconscious</rdfs:comment>
     <rdfs:subClassOf rdf:resource="State-Of-Consciousness"/>
     <owl:disjointWith>
-      <owl:Class rdf:about=="#Conscious"/>
-      <owl:Class rdf:about=="#Unresponsive"/>
-	  <owl:Class rdf:about=="#Asleep"/>
-      <owl:Class rdf:about=="#Instinctual"/>
-    </owl:disjointWith>
+     <owl:Class>
+       <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="#Conscious"/>
+        <owl:Class rdf:about="#Unresponsive"/>
+        <owl:Class rdf:about="#Asleep"/>
+        <owl:Class rdf:about="#Instinctual"/>
+       </owl:unionOf>
+     </owl:Class>
+   </owl:disjointWith>
   </owl:Class>
   
   <owl:Class rdf:ID="Asleep">
@@ -438,17 +457,25 @@
     <rdfs:label>Asleep</rdfs:label>
     <rdfs:comment>This class describes an Entity which is asleep</rdfs:comment>
     <owl:disjointWith>
-      <owl:Class rdf:about="#Conscious"/>
-      <owl:Class rdf:about="#Unresponsive"/>
-      <owl:Class rdf:about="#Instinctual"/>
+     <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+       <owl:Class rdf:about="#Conscious"/>
+       <owl:Class rdf:about="#Unresponsive"/>
+       <owl:Class rdf:about="#Instinctual"/>
+      </owl:unionOf>
+     </owl:Class>
     </owl:disjointWith>
   </owl:Class>
 
   <owl:Class rdf:about="Conscious">
     <owl:disjointWith>
+     <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
       <owl:Class rdf:about="#Unresponsive"/>
-	  <owl:Class rdf:about="#Asleep"/>
+      <owl:Class rdf:about="#Asleep"/>
       <owl:Class rdf:about="#Instinctual"/>
+     </owl:unionOf>
+    </owl:Class>
     </owl:disjointWith>
     <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
     <rdfs:comment>This class describes an Entity which is conscious</rdfs:comment>
@@ -746,7 +773,7 @@
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="&ome;Abstract-Item"/>
           <owl:Class rdf:about="&omb;Character"/>
-          <owl:Class rdf:about="&loc;Space"/>
+          <owl:Class rdf:about="&locspec;Space"/>
           <owl:Class rdf:about="&ome;Timeline"/>
           <owl:Class rdf:about="&ome;Event"/>
         </owl:unionOf>
@@ -795,7 +822,7 @@
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="&ome;Physical-Item"/>
-          <owl:Class rdf:about="&loc;Space"/>
+          <owl:Class rdf:about="&locspec;Space"/>
         </owl:unionOf>
       </owl:Class>
     </rdfs:range>
@@ -819,7 +846,7 @@
           <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
               <owl:Class rdf:about="&ome;Physical-Item"/>
-              <owl:Class rdf:about="&loc;Space"/>
+              <owl:Class rdf:about="&locspec;Space"/>
             </owl:unionOf>
           </owl:Class>
     </rdfs:range>

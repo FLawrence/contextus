@@ -91,13 +91,13 @@
 </owl:Class>
 
 <owl:Class rdf:ID="Cellular">
-  <rdfs:subClassOf rdf:resource="&omcm;Biological" />
+  <rdfs:subClassOf rdf:resource="&base;Biological" />
   <rdfs:comment>This class represents species with an cellular form</rdfs:comment>
   <rdfs:label>Cellular</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:ID="Inanima">
-  <rdfs:subClassOf rdf:resource="&omcm;Biological" />
+  <rdfs:subClassOf rdf:resource="&base;Biological" />
   <rdfs:comment>This class represents species with an form resembling an inanimate object</rdfs:comment>
   <rdfs:label>Inanima</rdfs:label>
 </owl:Class>
