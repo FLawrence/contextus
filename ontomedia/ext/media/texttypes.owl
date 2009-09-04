@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE rdf [
-<!ENTITY base	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/texttype#">
+<!ENTITY base	"http://contextus.net/ontology/ontomedia/ext/media/texttype#">
 <!ENTITY xsd	"http://www.w3.org/2001/XMLSchema#">
 <!ENTITY rdf	"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <!ENTITY rdfs	"http://www.w3.org/2000/01/rdf-schema#">
 <!ENTITY dc	"http://purl.org/dc/elements/1.1/">
 <!ENTITY dct	"http://purl.org/dc/terms/">
 <!ENTITY owl	"http://www.w3.org/2002/07/owl#">
-<!ENTITY omti	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/text#">
+<!ENTITY omti	"http://contextus.net/ontology/ontomedia/ext/media/text#">
 ]>
 
 <rdf:RDF xmlns:rdf="&rdf;"

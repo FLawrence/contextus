@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE owl [
-<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
-<!ENTITY loc "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/space#">
-<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY ome "http://contextus.net/ontology/ontomedia/core/expression#">
+<!ENTITY loc "http://contextus.net/ontology/ontomedia/core/space#">
+<!ENTITY omb "http://contextus.net/ontology/ontomedia/ext/common/being#">
 <!ENTITY dc "http://purl.org/dc/elements/1.1/">
 <!ENTITY dct "http://purl.org/dc/terms/">
 <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
-<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/fiction/char#">
+<!ENTITY base "http://contextus.net/ontology/ontomedia/ext/fiction/char#">
 <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <!ENTITY owl "http://www.w3.org/2002/07/owl#">
 <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
@@ -37,7 +37,7 @@
  <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
  <dct:created>2005-05-11</dct:created>
  <owl:versionInfo>0.2</owl:versionInfo>
- <owl:imports rdf:resource="http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression"/>
+ <owl:imports rdf:resource="http://contextus.net/ontology/ontomedia/core/expression"/>
  <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
 </owl:Ontology>
 
@@ -99,3 +99,4 @@
   </owl:ObjectProperty> 
 
 </rdf:RDF>
+

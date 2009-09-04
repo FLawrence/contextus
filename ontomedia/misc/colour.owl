@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE owl [
-<!ENTITY base 	"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/colour#">
-<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
+<!ENTITY base 	"http://contextus.net/ontology/ontomedia/misc/colour#">
+<!ENTITY omt "http://contextus.net/ontology/ontomedia/ext/common/trait#">
 <!ENTITY rdf 	"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <!ENTITY owl 	"http://www.w3.org/2002/07/owl#">
 <!ENTITY rdfs 	"http://www.w3.org/2000/01/rdf-schema#">

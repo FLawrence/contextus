@@ -5,8 +5,8 @@
   <!ENTITY rdf		"http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
   <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
-  <!ENTITY base		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/media/audio#">
-  <!ENTITY omm		"http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media#">
+  <!ENTITY base		"http://contextus.net/ontology/ontomedia/ext/media/audio#">
+  <!ENTITY omm		"http://contextus.net/ontology/ontomedia/core/media#">
   <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
   <!ENTITY dct          "http://purl.org/dc/terms/">
 ]>  
@@ -29,7 +29,7 @@
     <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
     <dct:created>2005-05-10</dct:created>
     <owl:versionInfo>0.1</owl:versionInfo>
-    <owl:imports rdf:resource="http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/media" />
+    <owl:imports rdf:resource="http://contextus.net/ontology/ontomedia/core/media" />
   </owl:Ontology>
 
   <!-- A default audio item -->

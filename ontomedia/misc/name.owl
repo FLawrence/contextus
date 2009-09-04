@@ -3,10 +3,10 @@
 <!ENTITY dc "http://purl.org/dc/elements/1.1/">
 <!ENTITY dct "http://purl.org/dc/terms/">
 <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
-<!ENTITY base "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/misc/name#">
-<!ENTITY omt "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/trait#">
-<!ENTITY ome "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/core/expression#">
-<!ENTITY omb "http://www.r4isstatic.com/linkeddata/ontologies/ontomedia/ext/common/being#">
+<!ENTITY base "http://contextus.net/ontology/ontomedia/misc/name#">
+<!ENTITY omt "http://contextus.net/ontology/ontomedia/ext/common/trait#">
+<!ENTITY ome "http://contextus.net/ontology/ontomedia/core/expression#">
+<!ENTITY omb "http://contextus.net/ontology/ontomedia/ext/common/being#">
 <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <!ENTITY owl "http://www.w3.org/2002/07/owl#">
 <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
@@ -156,3 +156,4 @@
  
 
 </rdf:RDF>
+
