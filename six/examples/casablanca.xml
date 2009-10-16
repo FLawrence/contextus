@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="http://contextus.net/six/script.xsl" ?>
+<sc:script xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sc="http://contextus.net/six/">
+	<sc:info>
+  <dc:title>Casablanca</dc:title>
+	<dc:description>Based on the play EVERYBODY GOES TO RICK'S</dc:description>
+	<dc:creator>Julius J. Epstein</dc:creator>
+  </sc:info>
+
+  <sc:transition type="cut" />
+  <sc:location time="day" pos="ext">A street in the old moorish section</sc:location>
+  <sc:direction>An officer BLOWS his whistle several times.</sc:direction>
+  <sc:direction>There is pandemonium as native guards begin to round up people.</sc:direction>
+  <sc:direction>A police car, full of officers, with SIREN BLARING, screams through the street and stops in the market.</sc:direction>
+  <sc:direction>Some try to escape but are caught by the police and loaded into a police wagon.</sc:direction>
+  <sc:direction>At a street corner TWO POLICEMEN stop a white CIVILIAN and question him.</sc:direction>
+  <sc:dialogue speaker="first policeman">May we see your papers?</sc:dialogue>
+  <sc:dialogue speaker="civilian" paren="nervously">I don't think I have them on me.</sc:dialogue>
+  <sc:dialogue speaker="first policeman">In that case we'll have to ask you to come along.</sc:dialogue>
+  <sc:direction>The civilian pats his pockets.</sc:direction>
+  <sc:dialogue speaker="civilian">Wait. It's just possible that I... Yes, here they are.</sc:dialogue>
+  <sc:direction>He brings out his papers. The second policeman examines them.</sc:direction>
+  <sc:dialogue speaker="second policeman">These papers expired three weeks ago. You'll have to come along.</sc:dialogue>
+  <sc:direction>Suddenly the civilian breaks away and starts to run wildly down the street.</sc:direction>
+  <sc:direction>The policeman SHOUTS "Halt", but the civilian keeps going.</sc:direction>
+  <sc:direction>JAN and ANNINA BRANDEL, a very young and attractive refugee couple from Bulgaria, watch as the civilian passes. They've been thrust by circumstances from a simple country life into an unfamiliar and hectic world.</sc:direction>
+  <sc:direction>A shot RINGS out, and the man falls to the ground. Above him, painted on the wall, is a large poster of Marshal Petain, which reads: "Je tiens mes promesses, meme celles des autres."</sc:direction>
+  <sc:direction>The policeman frantically searches the body, but only finds Free French literature.</sc:direction>
+  <sc:transition type="cut" />
+  <sc:location time="day" pos="ext">Palais de Justice</sc:location>
+  <sc:direction>We see an inscription carved in a marble block along the roofline of the building: "Liberte, Egalite, Fraternite"</sc:direction>
+  <sc:direction>We see the facade, French in architecture, then the high-vaulted entrance which is inscribed "Palais de Justice".</sc:direction>
+  <sc:direction>At the entrance the arrested suspects are led in by the police.</sc:direction>
+</sc:script>

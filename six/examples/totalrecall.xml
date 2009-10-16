@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="http://contextus.net/six/script.xsl" ?>
+<sc:script xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sc="http://contextus.net/six/">
+<sc:info>
+<dc:title>Total Recall</dc:title>
+</sc:info>
+
+<sc:location time="day" pos="int">HILTON - CORRIDOR/SERVICE ELEVATOR - 6TH FL.</sc:location>
+<sc:direction id="act1">Four agents drag Quaid, semi-conscious, to the SERVICE ELEVATOR, Lori follows.  An agent presses the call button.  They wait.</sc:direction>
+<sc:direction>The doors slide open.  Melina stands inside and professionally assassinates the four agents who have their hands full with Quaid.</sc:direction>
+<sc:direction>Lori drops to the floor, swings her legs, and swipes Melina's feet out from under her.  Her gun goes flying.</sc:direction>
+
+<sc:direction>Then Lori kicks Melina in the face and the stomach and then flips her over her head.  They stand and face off, then Melina hits Lori in the face and kicks her in the stomach.</sc:direction>
+
+<sc:direction>Lori blocks Melina's next punch and elbows Melina in the ribs and flips Melina again, then elbows Melina in the face.</sc:direction>
+
+<sc:direction>Quaid squirms groggily over a pile of corpses and wrests a gun from a dead hand.</sc:direction>
+
+<sc:direction>Lori positions herself on top of Melina and pulls her head back.  Lori pulls a knife from an ankle sheath and prepares to plunge it into Melina's throat.</sc:direction>
+
+<sc:direction>PIYUNG!  The knife flies from Lori's hand.</sc:direction>
+
+<sc:direction>Quaid sprawls on the floor, hands cuffed in front of him.  He holds a smoking pistol aimed at Lori.</sc:direction>
+
+<sc:dialogue speaker="Lori">Doug...you wouldn't hurt me, would you, honey?</sc:dialogue>
+
+<sc:direction>She sees his expression.</sc:direction>
+
+<sc:dialogue speaker="Lori" ctd="true">Sweetheart, be reasonable...We're married.</sc:dialogue>
+
+<sc:direction>Lori stealthily reaches behind her back for a concealed gun and pulls it on him.</sc:direction>
+
+<sc:direction>Quaid shoots Lori in the forehead, leaving a clean, small hole between her eyes.</sc:direction>
+
+<sc:dialogue speaker="Quaid" paren="rising, to Melina">Consider that a divorce.</sc:dialogue>
+
+
+</sc:script>
