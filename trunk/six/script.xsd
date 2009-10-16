@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.contextus.net/six/" xmlns="http://www.contextus.net/six/">
+
+<xs:element name="script">
+ <xs:complexType>
+   <xs:sequence>
+    <xs:element name="info" />
+    <xs:element name="transition" />
+    <xs:element name="camera" />
+    <xs:element name="dialogue" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="transition">
+</xs:element>
+
+<xs:element name="camera">
+<xs:attribute name="type" type="xs:string" default="closeup" />
+
+</xs:element>
+
+<xs:element name="dialogue"
+</xs:element>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="http://contextus.net/six/script.xsl" ?>
+<sc:script xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sc="http://contextus.net/six/">
+	<sc:info>
+  <dc:title>Lost Highway</dc:title>
+	<dc:description> A 21st Century Noir Horror Film.  A graphic investigation into parallel identity crises.  A world where time is dangerously out of control.  A terrifying ride down the lost highway.</dc:description>
+	<dc:creator>David Lynch</dc:creator>
+	<dc:date>1995-06-21</dc:date>
+  </sc:info>
+
+	<sc:event type="creditsin" />
+	<sc:location time="night" pos="ext">Two-Lane Highway</sc:location>
+	<sc:direction>We see a clean moving POV illuminated by headlights.  We're floating down an old two-lane highway through a desolate, desert landscape.  This gliding, eerie POV continues as credits roll. when the credits end, the headlights seem to dim and soon we're moving through BLACKNESS.</sc:direction>
+	<sc:transition type="fadeout" />
+	<sc:transition type="fadein" />
+
+	<sc:location time="day" pos="int">The Madison House - Bedroom</sc:location>
+	<sc:direction>in the blackness, a man, FRED, is sitting on a bed smoking a cigarette. we see his back, but with each glow of the cigarette ash, we see his face reflected in a mirror on the wall across from him.  In the darkness, there starts the sound of a motor which draws curtains back across a large picture window just off screen.  As the curtain moves, hard-edged light begins crawling across the room, and we see everything clearly.  Fred is wearing a robe and pajamas, it's early morning.</sc:direction>
+	<sc:camera type="closeup"><sc:target>Fred's face in the mirror</sc:target><sc:direction>Blank expression - face somewhat obscured or distorted by smoke from the cigarette.</sc:direction></sc:camera>
+	<sc:camera type="closeup"><sc:target>Fred's actual face</sc:target><sc:direction>Unshaven, haggard look, eyes seem empty, glazed over.  Fred is 32 years old, with dark hair.</sc:direction></sc:camera>
+	<sc:direction>THE DOORBELL RINGS.  Fred looks up, startled by the noise.  He looks at the digital clock: 5:30 a.m.</sc:direction>
+	<sc:direction>FRED STANDS, goes to an INTERCOM on the wall next to the 
+	mirror.  He pushes a button.</sc:direction>
+	<sc:direction>A VOICE comes over the intercom.</sc:direction>
+	<sc:dialogue speaker="Voice Over Intercom" vo="true">Dick Laurent is dead.</sc:dialogue>
+	<sc:dialogue speaker="Voice Over Intercom" paren="looks upwards" vo="true">Dick Laurent is dead.</sc:dialogue>
+	<sc:direction>Fred leaves the bedroom and goes through the house.  He is on the upstairs level.  He looks through a narrow slot window, but can't see the front door below.  He goes further in the house to a picture window that overlooks the street below.  There is NOBODY there.</sc:direction>
+	<sc:transition type="cut" />
+	<sc:dialogue speaker="Alice" paren="loudly" voiceover="0">For years, parentheticals were used to express emotion, the manner in which a character spoke her lines.  Loudly, passionately, sadly, and so on.  In recent years writers have often used them for brief bits of action.</sc:dialogue> 
+	<sc:dialogue speaker="Bob" ctd="true">For years, parentheticals were used to express emotion, the manner in which a character spoke her lines.  Loudly, passionately, sadly, and so on.  In recent years writers have often used them for brief bits of action.</sc:dialogue> 
+	<sc:dialogue speaker="Alice" os="true">For years, parentheticals were used to express emotion, the manner in which a character spoke her lines.  Loudly, passionately, sadly, and so on.  In recent years writers have often used them for brief bits of action.</sc:dialogue> 
+	<sc:location time="day" pos="ext">The Madison House</sc:location>
+	<sc:direction>We can see Fred standing at the picture window, looking out.</sc:direction>
+
+	<sc:transition type="fadeout" />
+</sc:script>
