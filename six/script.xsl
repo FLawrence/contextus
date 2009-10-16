@@ -1,12 +1,12 @@
 <?xml version='1.0'?>
 <xsl:stylesheet version="1.0" 
-	xmlns:sc="http://contextus.net/six"
+	xmlns:sc="http://contextus.net/six/"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
 <xsl:template match="sc:script">
   <html>
   <head>
-    <link rel='stylesheet' media='screen' href='script.css' type='text/css' />
+    <link rel='stylesheet' media='screen' href='http://contextus.net/six/script.css' type='text/css' />
     <xsl:value-of select="sc:info/dc:title" />
   </head>
   <body>
