@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
-<?xml-stylesheet type="text/xsl" href="http://contextus.net/six/script.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="../script.xsl" ?>
 <sc:script xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:sc="http://contextus.net/six/">
