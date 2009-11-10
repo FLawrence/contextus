@@ -44,7 +44,7 @@
     <rdfs:label>Space</rdfs:label>
     <rdfs:comment>This property is to be used to describe a space</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&ome;Entity"/>
-    <rdfs:subClassOf rdf:resource="&aktloc;Abstract-Space"/>
+    <owl:equivalentClass rdf:resource="&aktloc;Abstract-Space"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Level-Traversing-Space">
