@@ -428,46 +428,46 @@
   <owl:ObjectProperty rdf:ID="adjacent-below">
     <rdfs:subPropertyOf rdf:resource="#adjacent-to"/>
     <rdfs:label>Adjacent Below</rdfs:label>
-    <rdfs:comment>This property is to be used to describe an adjacent Abstract Space which is below the other</rdfs:comment>
+    <rdfs:comment>This property is to be used to describe an adjacent Space which is below the other</rdfs:comment>
     <owl:inverseOf rdf:resource="#adjacent-above" />
-    <rdfs:domain rdf:resource="#&aktloc;Abstract-Space"/>
-    <rdfs:range rdf:resource="&aktloc;Abstract-Space"/>
+    <rdfs:domain rdf:resource="#Space"/>
+    <rdfs:range rdf:resource="#Space"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="adjacent-above">
     <rdfs:subPropertyOf rdf:resource="#adjacent-to"/>
     <rdfs:label>Adjacent Above</rdfs:label>
-    <rdfs:comment>This property is to be used to describe an adjacent Abstract Space which is above the other</rdfs:comment>
+    <rdfs:comment>This property is to be used to describe an adjacent Space which is above the other</rdfs:comment>
     <owl:inverseOf rdf:resource="#adjacent-below" />
-    <rdfs:domain rdf:resource="#&aktloc;Abstract-Space"/>
-    <rdfs:range rdf:resource="&aktloc;Abstract-Space"/>
+    <rdfs:domain rdf:resource="#Space"/>
+    <rdfs:range rdf:resource="#Space"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="orbit-around">
     <rdfs:subPropertyOf rdf:resource="#adjacent-to"/>
     <rdfs:label>Orbit Around</rdfs:label>
-    <rdfs:comment>This property is to be used to describe an adjacent Abstract Space which describes an orbit around the other</rdfs:comment>
+    <rdfs:comment>This property is to be used to describe an adjacent Space which describes an orbit around the other</rdfs:comment>
     <owl:inverseOf rdf:resource="#adjacent-below" />
-    <rdfs:domain rdf:resource="#&aktloc;Abstract-Space"/>
-    <rdfs:range rdf:resource="&aktloc;Abstract-Space"/>
+    <rdfs:domain rdf:resource="#Space"/>
+    <rdfs:range rdf:resource="#Space"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="is-boundary-of">
     <rdfs:subPropertyOf rdf:resource="&aktloc;is-located-in"/>
     <rdfs:label>Is Boundary Of</rdfs:label>
-    <rdfs:comment>This property is to be used to describe an Abstract Space of which the region is the boundary</rdfs:comment>
-    <owl:inverseOf rdf:resource="#has-boundry" />
-    <rdfs:domain rdf:resource="#&aktloc;Abstract-Space"/>
-    <rdfs:range rdf:resource="&aktloc;Abstract-Space"/>
+    <rdfs:comment>This property is to be used to describe an Space of which the region is the boundary</rdfs:comment>
+    <owl:inverseOf rdf:resource="#has-boundary" />
+    <rdfs:domain rdf:resource="#Space"/>
+    <rdfs:range rdf:resource="#Space"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="has-boundary">
     <rdfs:subPropertyOf rdf:resource="&aktloc;is-located-in"/>
     <rdfs:label>Has Boundary</rdfs:label>
-    <rdfs:comment>This property is to be used to describe an Abstract Space which is the boundary of the Abstract Space</rdfs:comment>
-    <owl:inverseOf rdf:resource="#has-boundry" />
-    <rdfs:domain rdf:resource="#&aktloc;Abstract-Space"/>
-    <rdfs:range rdf:resource="&aktloc;Abstract-Space"/>
+    <rdfs:comment>This property is to be used to describe an Space which is the boundary of the Space</rdfs:comment>
+    <owl:inverseOf rdf:resource="#is-boundary-of" />
+    <rdfs:domain rdf:resource="#Space"/>
+    <rdfs:range rdf:resource="#Space"/>
   </owl:ObjectProperty>
 
 </rdf:RDF>
