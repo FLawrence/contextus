@@ -75,16 +75,16 @@ def convert(teifile, namespace):
 		role = None
 
 		# Check to see if we already have an entry
-		if(roleNode.get("about")):
+		if(roleNode != None and roleNode.get("about")):
 			role = extractCURIEorURI(graph, roleNode.get("about"))
 			cast[id] = role
 			graph.add((role, RDF.type, omb['Character']))
 		
-		if(actorNode.get("about")):
+		if(actorNode != None and actorNode.get("about")):
 			actor = extractCURIEorURI(graph, actorNode.get("about"))
 			graph.add((actor, RDF.type, omb['Being']))
 
-		if actor and role:
+		if actor != None and role != None:
 			graph.add((actor, omb['portrays'], role))
 			graph.add((role, omb['portrayed-by'], actor))
 
@@ -99,33 +99,44 @@ def convert(teifile, namespace):
 		for stageItem in stageItems:
 			if stageItem.get("type") == "location":
 				# The RDFa parser doesn't handle the type - so we can grab that here.
-				type = extractCURIEorURI(graph, stageItem.get("typeof"))
-				location = extractCURIEorURI(graph, stageItem.get("about"))
-				graph.add((location, RDF.type, type))
+				if stageItem.get("typeof") and stageItem.get("about"):
+					type = extractCURIEorURI(graph, stageItem.get("typeof"))
+					location = extractCURIEorURI(graph, stageItem.get("about"))
+					graph.add((location, RDF.type, type))
 
 		speechItems = sceneItem.findall('sp')
 
-		# Work out a list of all cast in this scene
-		sceneCast = list()
-		for speechItem in speechItems:
-			id = speechItem.get("who")
-			sceneCast.append(cast[id[1:]])
+		if cast:
+			# Work out a list of all cast in this scene
+			sceneCast = list()
+			for speechItem in speechItems:
+				id = speechItem.get("who")
+				if id:
+					sceneCast.append(cast[id[1:]])
 
 		# Build up the events
 		for speechItem in speechItems:
 			event = ns['event/'+str(eventCount)]
 			eventCount = eventCount + 1
 			graph.add((event, RDF.type, ome['Social']))
-			graph.add((event, oml['is-located-in'], location))
+			if location:
+				graph.add((event, oml['is-located-in'], location))
 				
+
 			id = speechItem.get("who")
-			castUri = cast[id[1:]]
-			graph.add((event, ome['has-subject-entity'], castUri))
-			for castMember in sceneCast:
-				graph.add((event, ome['involves'], castMember))
-				graph.add((castMember, ome['involved-in'], event))
+			if id and cast:
+				castUri = cast[id[1:]]
+				graph.add((event, ome['has-subject-entity'], castUri))
+				for castMember in sceneCast:
+					graph.add((event, ome['involves'], castMember))
+					graph.add((castMember, ome['involved-in'], event))
 
 			refItems = speechItem.findall("l/rs")
+			for refItem in refItems:
+				about = extractCURIEorURI(graph, refItem.get("about"))
+				graph.add((event, ome["refers-to"], about))
+			
+			refItems = speechItem.findall("p/rs")
 			for refItem in refItems:
 				about = extractCURIEorURI(graph, refItem.get("about"))
 				graph.add((event, ome["refers-to"], about))
