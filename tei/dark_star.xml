@@ -107,7 +107,7 @@
 	</div1>
 
 	<div1 n="4" type="scene">
-		<stage type="location"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
+		<stage type="location"><p property="dc:title" about="[ds:Control_Room]" typeof="[loc:Room]">INTERIOR - CONTROL ROOM</p></stage>
 		<camera>CLOSE SHOT of a digital clock, ticking down the seconds.</camera>
 		<sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 			<p>I need a diameter approximation.</p>
@@ -172,7 +172,7 @@
 		   <view>Pinback hits a button on his panel.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">INTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location"><p property="dc:title" about="[ds:Bomb_Bay]" typeof="[loc:Room]">INTERIOR - BOMB BAY</p></stage>
 
      <view>The screen is BLACK for an instant.  Then, two enormous doors begin to open ponderously, revealing the planet rotating below.  A huge BOMB, designated with a giant #19 on its side, lowers slowly out of the ship on a rack.</view>
 
@@ -184,8 +184,7 @@
 		     <p>These bombs are equipped with sophisticated thought and speech mechanisms, to allow them to make executive decisions in the event of a crisis situation.  These judgment centers are controlled by a fail- safe mechanism.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Lock fail safe.</p></sp>
@@ -196,8 +195,7 @@
 					   <p>Fail-safe locked.  Ah, Sergeant Pinback call1ng Bomb #19.  Do you read me, bomb?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
      <view>The bomb is suspended beneath the ship.</view>
 
@@ -207,36 +205,31 @@
 				   <stage type="delivery">When the bomb speaks, it has the prim, fussy voice of a minor civil servant.</stage>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Well, bomb, we have about sixty seconds to drop.  Just wondering if everything is all right.  Have you checked your platinum euridium energy shielding?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
                                    <sp who="#bomb_19"><speaker></speaker>
 					   <p>Energy shielding positive function.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Swell.  Let's synchronize detonation time.  Do you know when you're supposed to go off?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
                                    <sp who="#bomb_19"><speaker></speaker>
 					   <p>Detonation in six minutes, twenty seconds.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>All right, I have detonation time at... Wait a minute, something's wrong with the clock.</p>
@@ -246,22 +239,19 @@
 			      <p>Okay, I have six minutes exactly.  Does that check out down there?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
                                    <sp who="#bomb_19"><speaker></speaker>
 					   <p>Check at six minutes.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Arm yourself, bomb.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
      <view>Several lights blip on along the bomb's side.</view>
 
@@ -269,35 +259,29 @@
 					   <p>Armed.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Well, then, everything sounds fine.  We'll drop you off in thirty-five seconds.  Good luck.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
-
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage> 
                                    <sp who="#bomb_19"><speaker></speaker>
 					   <p>Thanks.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Begin main sequence.  Mark at 10-9-8- 7-6-5-4-3-2-1-drop.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - THE SHIP</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Ship_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - THE SHIP</p></stage>
 
      <view>Bomb #19 falls away from the ship and whizzes down toward the planet below.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Hyperdrive sequence begun.  Hit it, Pinback.</p></sp>
@@ -305,8 +289,7 @@
 				   <view>Pinback hits the hyperdrive switch.  Force fields energize around the men.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - THE SHIP</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Ship_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - THE SHIP</p></stage>
 
      <view>The DARK STAR accelerates into hyperdrive and streaks away through space.</view>
 
@@ -319,8 +302,7 @@
      <view>Behind the ship, there is an intense flare of light as the planet, now a dot of light, explodes.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - OBSERVATION DOME</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Observation_Dome]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - OBSERVATION DOME</p></stage>
 
      <view>The force field around Talby disappears as the ship comes out of hyperdrive.  He rubs his eyes as though awakening, then looks down at his readout panels.</view>
 
@@ -340,8 +322,7 @@
 			      <p>Lieutenant?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
      <view>The men are stretching in their seats.</view>
 
@@ -473,8 +454,7 @@
 				   <view>Boiler presses a button.</view><sound>LOUD COUNTRY MUSIC THEME BEGINS TO PLAY.</sound>
 
 	</div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - DARK STAR (TITLE SEQUENCE)</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Ship_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - DARK STAR (TITLE SEQUENCE)</p></stage>
 
      <view>This sequence includes shots of the DARK STAR drifting through space, past various cosmic wonders, intercut with shots of the men relaxing (Talby staring into space; Boiler trimming his beard; Doolittle playing solitaire; Pinback reading a comic book).
 
@@ -483,7 +463,7 @@
      SEQUENCE ENDS.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Ship_Interior]" typeof="[loc:Space]"><p property="dc:title">
 			     INTERIOR - DARK STAR</p></stage>
 
      <sound>Beep.</sound>
@@ -513,7 +493,7 @@
      <sound>Beep.</sound>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location"  about="[ds:Observation_Dome]" typeof="[loc:Room]"><p property="dc:title">
 			     INTERIOR - OBSERVATION DOME</p></stage>
 
      <view>Talby is still gazing around at the stars.</view>
@@ -613,13 +593,13 @@
 					   <p>I wish I had my board with me now.  Even if I could only polish it once in awhile.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Space]" typeof="[loc:Space]"><p property="dc:title">
 			     EXTERIOR - SPACE</p></stage>
 
      <view>LONG SHOT of the DARK STAR drifting through space.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Kitchen]" typeof="[loc:Room]"><p property="dc:title">
 			     INTERIOR - KITCHEN</p></stage>
 
      <view>Boiler, Pinback, and Doolittle are descending a ladder into the kitchen.</view>
@@ -663,8 +643,7 @@
 					   <p>Who cares?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
      <view>The Control Room is EMPTY.</view><sound>After a moment, there is a repetitive BEEP.</sound>
 
@@ -685,7 +664,7 @@
 			      <p>-- system number E180246.  You can see what a problem this would be if you didn't catch it on time.  Now what you should do is this: First, do not, repeat, do not attempt to adjust the system manually.  Second --</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Computer_Room]" typeof="[loc:Room]"><p property="dc:title">
 			     INTERIOR - COMPUTER ROOM</p></stage>
 
      <view>The room is dim and eerie, banks of dimly flickering lights and the hum of air-cooling machinery.</view>
@@ -709,7 +688,7 @@
 					   <p>Sorry to interrupt your lunch, sir, but I'm in the Computer Room, and I think I've located the malfunction.  The scanner shows it to be some sort of fault in the communications laser, down by the Emergency Air Lock.  Can't pinpoint it exactly, but I'm going down there with a starsuit and try to find it.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Kitchen]" typeof="[loc:Room]"><p property="dc:title">
 			     INTERIOR - KITCHEN</p></stage>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
@@ -734,8 +713,7 @@
 					   <p>What's my first name?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
      <view>CLOSE SHOT - TV SCREEN</view>
 
@@ -749,7 +727,7 @@
      <view>FULL SHOT - CONTROL ROOM.  Lights blink peacefully in the empty room.  HOLD FOR A MOMENT.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Universe]" typeof="[loc:Space]"><p property="dc:title">
 			     EXTERIOR - UNIVERSE</p></stage>
 
      <view>SLOW ZOOM toward a sun system.  The DARK STAR is suspended in frame.  A title pops on briefly:
@@ -757,8 +735,7 @@
      VEIL NEBULA</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
      <view>A GLOWING SCREEN shows a schematic of the planet rotating below.  Boiler stares at it, smiling.</view>
 
@@ -777,14 +754,12 @@
 					   <p>Bomb bay systems operational.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
      <view>BOMB #20 lowers ponderously out of the ship.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Lock fail safe.</p></sp>
@@ -795,14 +770,13 @@
 					   <p>Fail safe in lock.  Four minutes to drop, 22 minutes to detonation.  This is Sergeant Pinback calling Bomb #20.  Do you read me, bomb?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Bomb #20 to Sergeant Pinback.  Roger, I read you, continue.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
 			     INTERIOR - EMERGENCY AIR LOCK</p></stage>
 
      <view>CAMERA SLOWLY PANS DOWN the chromium-steel walls of the Emergency Air Lock to reveal Talby in a starsuit.  He is wearing it only as protection against possible depressurization, and therefore wears no jetpack.  Carrying a tool kit, he is slowly circling the lock.</view>
@@ -818,22 +792,20 @@
 					   <p>Ah, Lieutenant Doolittle?  Sir?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Sh, Talby, don't bother me now.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
 			     INTERIOR - EMERGENCY AIR LOCK</p></stage>
 
                                    <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Ah, well, I think I've found the malfunction, sir.  I'm in the Emergency Air Lock...</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Not now!</p></sp>
@@ -848,42 +820,37 @@
 					   <p>One hundred twenty seconds to drop, bomb, have you checked your platinum euridium energy shielding?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Energy shielding positive function.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Do you remember the detonation time?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
      <sp><speaker>BOMB #2</speaker>
 	     <p>Detonation in twenty minutes.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Right, that synchronizes here.  Okay, bomb, arm yourself.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Armed.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
 			     INTERIOR - EMERGENCY AIR LOCK</p></stage>
 
      <view>Talby stands in front of the laser shaft, trying to reach Doolittle on his helmet radio.</view>
@@ -909,23 +876,19 @@
 					   <p>Communications Laser #17 is now on test.  Under no circumstances enter the path of the beam.  Thank you for observing all safety precautions.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     INTERIOR - CONTROL ROOM</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Everything sounds fine, bomb.  Dropping you off in sixty seconds.  Good luck.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-			     EXTERIOR - BOMB BAY</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
 
      <sp><speaker>BOMB #2</speaker>
 	     <p>Thanks.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Quantum is up thirty-five.</p></sp>
 
@@ -933,7 +896,7 @@
 					   <p>I read the same here.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - EMERGENCY AIR LOCK
      </p></stage>
      <view>Talby crouches by the laser shaft, carefully peering past the red, humming beam.</view>
@@ -962,15 +925,12 @@
 				   <view>Talby stumbles into the beam.  There is a dull EXPLOSION.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY
      </p></stage>
      <view>There is a FLASH on the lower side of Bomb #20, a sudden EXPLOSION.  Lights BLIP FURIOUSLY on the bomb.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Begin main sequence.  Mark at 10-9-8-7-6-5-4-3-2-1-drop.</p></sp>
 
@@ -1017,21 +977,17 @@
 					   <p>Sittin' there.  It's just sittin' there.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
      <view>Bomb #20 hangs underneath the ship, waiting.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - EMERGENCY AIR LOCK
      </p></stage>
      <view>Talby lies unconscious on the floor of the lock.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
      <view>On the men's faces in strained anxiety.</view>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
@@ -1045,16 +1001,12 @@
 					   <p>Bomb, this is Doolittle.  You are not to detonate, repeat, you are not to detonate in the bomb bay.  Disarm yourself.  This is an order.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>I read you, Lieutenant Doolittle, but I am programmed to detonate in fourteen minutes.  Detonation will occur at the programmed time.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Fourteen minutes to detonation.</p></sp>
 
@@ -1069,7 +1021,7 @@
 					   <p>Only one thing to do.  I'll have to ask Commander Powell.  I'll have to ask him what to do.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Freezer_Room]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - FREEZER ROOM
      </p></stage>
      <view>Doolittle climbs down a ladder into the icy-blue, cold Freezer Room.  The walls are covered with frost, and mist hangs in the air.</view>
@@ -1176,9 +1128,7 @@
 					   <p>Ah... it seems to me, Doolittle...  Sorry, I've drawn a blank.  Hold it.  I'll have it again in a minute.  I forget so many things in here, so many things.  Hold on, just a minute, let me think...</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>But you can't explode in the bomb bay.  It's foolish.  You'll kill us all.  There's no reason for it.</p></sp>
 
@@ -1190,16 +1140,12 @@
 					   <p>You won't consider another course of action, for instance just waiting around awhile so we can disarm you?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>No.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>I can tell, the damn thing just doesn't understand.</p></sp>
 
@@ -1207,7 +1153,7 @@
 					   <p>Look, bomb...</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Freezer_Room]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - FREEZER ROOM
      </p></stage>
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
@@ -1241,35 +1187,29 @@
 					   <p>Phenomenology...</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Doolittle!  Doolittle!  Six minutes to detonation!</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Ventral_Airlock]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - VENTRAL AIR LOCK
      </p></stage>
      <view>Wearing his starsuit, complete with jetpack, Doolittle pushes a button.  Above him, the giant lock doors slowly slide open.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Ship_Exterior]" typeof="[loc:Space]"><p property="dc:title">
      EXTERIOR - SHIP
      </p></stage>
      <view>Doolittle slowly rises up out of the ship.  He stops his ascent with his jetpack, turns, and moves down toward the bomb bay.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Doolittle!  Doolittle, what the hell are you doing?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
      <view>Doolittle floats into shot, jets himself up until he is facing massive Bomb #20.</view>
 
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
@@ -1288,9 +1228,7 @@
 					   <p>Fine.  Think about this one, then: how do you know you exist?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>What's he doin'?</p></sp>
 
@@ -1298,9 +1236,7 @@
 					   <p>I think he's talking to it.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Well of course I exist.</p></sp>
 
@@ -1332,15 +1268,13 @@
 					   <p>All right now, here's the big question: how do you know that the evidence your sensory apparatus reveals to you is correct?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - EMERGENCY AIR LOCK
      </p></stage>
      <view>Talby lies unconscious near the burned laser.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>What I'm getting at is this: the only experience that is directly available to you is your sensory data.  And this data is merely a stream of  electrical impulses which stimulate your computing center.  </p></sp>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
@@ -1365,9 +1299,7 @@
 					   <p>Because I must detonate in seventy- five seconds.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>The key!</p></sp>
 
@@ -1396,9 +1328,7 @@
 					   <p>You must have it, you idiot, we can stop the bomb!</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Now, bomb, consider this next question, very carefully.  What is your one purpose in life?</p></sp>
 
@@ -1436,9 +1366,7 @@
 					   <p>True, but since this is so, I have no proof that you are really telling me all this.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
      <view>Pinback is pawing frantically through the control room, searching for the key.  Boiler is apoplectic.</view>
 
                                    <sp who="#boiler"><speaker>BOILER</speaker>
@@ -1456,9 +1384,7 @@
 				   <view>They begin slapping each other hysterically.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     EXTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay_Exterior]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - BOMB BAY</p></stage>
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>That's all beside the point.  The concepts are valid, wherever they originate.</p></sp>
 
@@ -1488,9 +1414,7 @@
 				   <view>THE BOMB RAISES ITSELF BACK INTO THE SHIP.  Doolittle practically collapses with relief.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>It didn't go off.</p></sp>
 
@@ -1504,7 +1428,7 @@
 					   <p>Boiler, we're alive.  My heart.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - EMERGENCY AIR LOCK
      </p></stage>
      <view>Talby slowly climbs to his feet.  He is dazed, groggy.</view>
@@ -1513,25 +1437,21 @@
 					   <p>Doolittle?  Doolittle?  What happened?  Pinback?  Boiler?  Did we blow it up?  Hello?  Hello?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>No bombs today.  No bombs.  Big Boiler's back in business.  No bombs today.</p></sp>
 
 				   <view>Pinback is mumbling unintelligibly.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Room]"><p property="dc:title">
      INTERIOR - EMERGENCY AIR LOCK
      </p></stage>
                                    <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Hello, anybody!  Did we blow up the planet?  Hello, hello!  What's going on?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
      <view>Pinback and Boiler have calmed down.</view>
 
                                    <sp who="#boiler"><speaker>BOILER</speaker>
@@ -1541,7 +1461,7 @@
 					   <p>Doolittle, are you there?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock_Exterior]" typeof="[loc:Space]"><p property="dc:title">
      EXTERIOR - EMERGENCY AIR LOCK
      </p></stage>
      <view>Doolittle is floating outside the Emergency Air Lock door.</view>
@@ -1550,16 +1470,14 @@
 					   <p>I'm coming in now.  I'm down by the Emergency Air Lock.  Too much trouble to come in the Ventral Lock.  Would you blow the seal on the emergency hatch so I can come in?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Oh, sure.</p></sp>
 
 				   <view>He presses a button.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock_Exterior]" typeof="[loc:Space]"><p property="dc:title">
      EXTERIOR - EMERGENCY AIR LOCK
      </p></stage>
      <view>The Emergency Air Lock door EXPLODES AWAY FROM THE SHIP.  Behind it, carried by the burst of escaping air, comes Talby spinning head over heels into deep space.</view>
@@ -1568,23 +1486,19 @@
 					   <p>Hello, Pinback, are you there?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Yeah, Doolittle.  What's up?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Airlock]" typeof="[loc:Space]"><p property="dc:title">
      EXTERIOR - EMERGENCY AIR LOCK
      </p></stage>
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Talby was in the air lock.  You blew him out of the ship.  I'm going after him.  Turn on his helmet radio so I can contact him.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>What was that, I didn't hear...</p></sp>
 
@@ -1592,7 +1506,7 @@
 					   <p>It's Talby.  He's drifting away from the ship without his jetpack.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Space]" typeof="[loc:Space]"><p property="dc:title">
      EXTERIOR - SPACE
      </p></stage>
      <view>Doolittle fires his jetpack, moving off into space after Talby.</view>
@@ -1601,14 +1515,12 @@
 					   <p>Talby, Talby, can you read me?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Can you beat that?  I always knew Talby was weird.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Space]" typeof="[loc:Space]"><p property="dc:title">
      EXTERIOR - SPACE
      </p></stage>
                                    <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
@@ -1620,9 +1532,7 @@
 					   <p>Help, Doolittle, help me!</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>All right, bomb, prepare to receive new orders.  </p></sp>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
@@ -1639,9 +1549,7 @@
 					   <p>Hello, bomb.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - BOMB BAY</p></stage>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>False data can act only as a distraction.  Therefore.  I shall refuse to perceive you.</p></sp>
 
@@ -1657,7 +1565,7 @@
 <p>Bomb?</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
+     <div1 type="scene"><stage type="location" about="[ds:Space]" typeof="[loc:Space]"><p property="dc:title">
      EXTERIOR - SPACE
      </p></stage>
      <view>Talby, spinning, is reflected in Doolittle's face plate.</view>
@@ -1669,23 +1577,17 @@
 					   <p>Calm down, Talby.  I'm coming.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Snap out of it, bomb.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - BOMB BAY</p></stage>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>In the beginning there was darkness, and the darkness was without form and void.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>What the hell?</p></sp>
 
@@ -1693,16 +1595,12 @@
 					   <p>Yoo hoo, bomb...</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - BOMB BAY</p></stage>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>And in addition to the darkness there was also me.  And I moved upon the face of the darkness.</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - CONTROL ROOM
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Control_Room]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
                                    <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Bomb, hey bomb.</p></sp>
 
@@ -1710,9 +1608,7 @@
 					   <p>Hey, bomb...</p></sp>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">
-     INTERIOR - BOMB BAY
-     </p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Bomb_Bay]" typeof="[loc:Room]"><p property="dc:title">INTERIOR - BOMB BAY</p></stage>
                                    <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>And I saw that I was alone.</p></sp>
 
@@ -1725,7 +1621,7 @@
      <view>THE SCREEN GOES WHITE.</view>
 
      </div1>
-     <div1 type="scene"><stage type="location"><p property="dc:title">EXTERIOR - SPACE</p></stage>
+     <div1 type="scene"><stage type="location" about="[ds:Space]" typeof="[loc:Space]"><p property="dc:title">EXTERIOR - SPACE</p></stage>
 
 	     <view>IN DEAD SILENCE, THE WHITE SCREEN FADES DOWN TO SHOW A GIANT WHITE FIREBALL IN SPACE.  THE FIREBALL CONTRACTS TO A HARD CORE, GROWING RED.  THEN</view>
 
