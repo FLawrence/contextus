@@ -21,7 +21,7 @@
 			<role xml:id="talby" property="foaf:name" about="[ds:Talby]">Talby</role>
 		</castItem>
 		<castItem>
-			<actor property="foaf:name" about="[dbpedia:Dan_O'Bannon]">Dan O'Bannon</actor>
+			<actor property="foaf:name" about="[dbpedia:Dan_O%27Bannon]">Dan O&apos;Bannon</actor>
 			<role xml:id="pinback" property="foaf:name" about="[ds:Pinback]">Sgt. Pinback</role>
 		</castItem>
 		<castItem>
