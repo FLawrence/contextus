@@ -173,6 +173,22 @@
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:comment>This property indicates that the expression is potentially another. For example, it may be a possible future version</rdfs:comment>
   </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="refers-to">
+    <rdfs:label>Refers To</rdfs:label>
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <owl:inverseOf rdf:resource="#referenced-by"/>
+    <rdfs:comment>This property indicates that the expression refers to another expression. This may be an event referring to a location, or a character refering to an event, etc.</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="referenced-by">
+    <rdfs:label>Refers To</rdfs:label>
+    <rdfs:range rdf:resource="#Expression"/>
+    <rdfs:domain rdf:resource="#Expression"/>
+    <owl:inverseOf rdf:resource="#refers-to"/>
+    <rdfs:comment>This property indicates that the expression is refered to by another expression.</rdfs:comment>
+  </owl:ObjectProperty>
 
   <!-- Entities -->
  
