@@ -6,24 +6,19 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix ds: <http://contextus.net/resource/dark_star/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix loc: <http://signage.ecs.soton.ac.uk/ontologies/location#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
- <> dc:title "EXTERIOR - BOMB BAY"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "EXTERIOR - DARK STAR (TITLE SEQUENCE)"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "EXTERIOR - EMERGENCY AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+ ds:Ship_Exterior a loc:Space;
+     dc:title "EXTERIOR - DARK STAR (TITLE SEQUENCE)"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
          "EXTERIOR - SHIP"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "EXTERIOR - SPACE"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "EXTERIOR - THE SHIP"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "EXTERIOR - UNIVERSE"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - BOMB BAY"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - COMPUTER ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - CONTROL ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - DARK STAR"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - EMERGENCY AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - FREEZER ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - KITCHEN"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - OBSERVATION DOME"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
-         "INTERIOR - VENTRAL AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+         "EXTERIOR - THE SHIP"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Universe a loc:Space;
+     dc:title "EXTERIOR - UNIVERSE"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Ventral_Airlock a loc:Room;
+     dc:title "INTERIOR - VENTRAL AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
  ds:Adam_Beckenbaugh a _9:Being;
      _9:portrays ds:Bomb_20;
@@ -61,6 +56,9 @@
      _9:portrays ds:Talby;
      foaf:name "Dre Pahich"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
+ ds:Airlock_Exterior a loc:Space;
+     dc:title "EXTERIOR - EMERGENCY AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
  <http://contextus.net/resource/dark_star/event/1> a _8:Social;
      _8:has-subject-entity ds:Narrator;
      _8:involves ds:Narrator;
@@ -68,101 +66,124 @@
 
  <http://contextus.net/resource/dark_star/event/149> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/148>;
-     _8:precedes <http://contextus.net/resource/dark_star/event/150>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/150>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/157> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/156>;
-     _8:precedes <http://contextus.net/resource/dark_star/event/158>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/158>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
+
+ ds:Computer_Room a loc:Room;
+     dc:title "INTERIOR - COMPUTER ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Ship_Interior a loc:Space;
+     dc:title "INTERIOR - DARK STAR"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
  <http://contextus.net/resource/dark_star/event/123> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/122>;
      _8:has-subject-entity ds:Mission_Control;
      _8:involves ds:Mission_Control;
-     _8:precedes <http://contextus.net/resource/dark_star/event/124>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/124>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/132> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/131>;
      _8:has-subject-entity ds:Mission_Control;
      _8:involves ds:Mission_Control;
-     _8:precedes <http://contextus.net/resource/dark_star/event/133>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/133>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/139> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/138>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/140>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/140>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/142> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/141>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/143>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/143>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/143> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/142>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/144>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/144>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/147> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/146>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/148>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/148>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/148> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/147>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/149>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/149>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/150> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/149>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/151>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/151>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/151> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/150>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/152>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/152>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/156> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/155>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/157>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/157>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/179> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/178>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/180>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/180>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/212> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/211>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/213>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/213>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/225> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/224>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/226>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/226>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/226> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/225>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/227>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/227>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/289> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/288>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/290>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/290>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/29> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/28>;
@@ -174,187 +195,218 @@
      _8:follows <http://contextus.net/resource/dark_star/event/289>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler;
-     _8:precedes <http://contextus.net/resource/dark_star/event/291>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/291>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/291> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/290>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/292>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/292>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/294> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/293>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/295>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/295>;
+     loc:is-located-in ds:Airlock_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/295> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/294>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/296>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/296>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/296> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/295>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/297>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/297>;
+     loc:is-located-in ds:Airlock_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/297> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/296>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/298>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/298>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/298> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/297>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/299>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/299>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/301> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/300>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/302>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/302>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/302> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/301>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler;
-     _8:precedes <http://contextus.net/resource/dark_star/event/303>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/303>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/316> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/315>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/317>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/317>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/317> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/316>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/318>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/318>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/32> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/31>;
      _8:has-subject-entity ds:Bomb_19;
      _8:involves ds:Bomb_19;
-     _8:precedes <http://contextus.net/resource/dark_star/event/33>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/33>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/320> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/319>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/321>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/321>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/323> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/322>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/324>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/324>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/324> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/323>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20;
-     _8:precedes <http://contextus.net/resource/dark_star/event/325>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/325>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/33> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/32>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/34>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/34>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/34> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/33>;
      _8:has-subject-entity ds:Bomb_19;
      _8:involves ds:Bomb_19;
-     _8:precedes <http://contextus.net/resource/dark_star/event/35>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/35>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/35> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/34>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/36>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/36>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/36> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/35>;
      _8:has-subject-entity ds:Bomb_19;
      _8:involves ds:Bomb_19;
-     _8:precedes <http://contextus.net/resource/dark_star/event/37>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/37>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/37> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/36>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/38>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/38>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/38> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/37>;
      _8:has-subject-entity ds:Bomb_19;
      _8:involves ds:Bomb_19;
-     _8:precedes <http://contextus.net/resource/dark_star/event/39>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/39>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/39> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/38>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/40>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/40>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/40> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/39>;
      _8:has-subject-entity ds:Bomb_19;
      _8:involves ds:Bomb_19;
-     _8:precedes <http://contextus.net/resource/dark_star/event/41>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/41>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/41> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/40>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/42>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/42>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/42> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/41>;
      _8:has-subject-entity ds:Bomb_19;
      _8:involves ds:Bomb_19;
-     _8:precedes <http://contextus.net/resource/dark_star/event/43>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/43>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/43> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/42>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/44>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/44>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/44> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/43>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/45>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/45>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/45> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/44>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/46>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/46>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/81> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/80>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/82>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/82>;
+     loc:is-located-in ds:Ship_Interior. 
 
  <http://contextus.net/resource/dark_star/event/82> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/81>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/83>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/83>;
+     loc:is-located-in ds:Ship_Interior. 
 
  <http://contextus.net/resource/dark_star/event/83> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/82>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/84>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/84>;
+     loc:is-located-in ds:Ship_Interior. 
 
  ds:Narrator a _9:Character;
      _8:involved-in <http://contextus.net/resource/dark_star/event/1>,
@@ -366,371 +418,424 @@
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/101>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/101>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/101> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/100>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/102>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/102>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/102> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/101>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/103>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/103>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/103> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/102>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/104>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/104>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/104> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/103>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/105>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/105>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/105> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/104>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/106>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/106>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/106> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/105>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/107>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/107>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/107> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/106>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/108>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/108>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/108> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/107>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/109>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/109>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/109> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/108>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/110>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/110>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/110> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/109>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/111>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/111>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/124> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/123>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/125>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/125>;
+     loc:is-located-in ds:Computer_Room. 
 
  <http://contextus.net/resource/dark_star/event/125> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/124>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/126>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/126>;
+     loc:is-located-in ds:Computer_Room. 
 
  <http://contextus.net/resource/dark_star/event/126> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/125>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/127>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/127>;
+     loc:is-located-in ds:Computer_Room. 
 
  <http://contextus.net/resource/dark_star/event/127> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/126>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Boiler,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/128>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/128>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/128> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/127>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/129>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/129>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/129> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/128>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Boiler,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/130>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/130>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/130> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/129>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/131>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/131>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/131> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/130>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Boiler,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/132>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/132>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/137> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/136>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/138>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/138>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/138> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/137>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/139>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/139>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/140> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/139>;
      _8:has-subject-entity ds:Computer;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/141>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/141>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/141> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/140>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/142>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/142>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/152> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/151>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/153>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/153>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/153> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/152>;
      _8:has-subject-entity ds:Computer;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/154>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/154>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/154> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/153>;
      _8:has-subject-entity ds:Computer;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/155>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/155>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/155> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/154>;
      _8:has-subject-entity ds:Computer;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/156>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/156>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/158> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/157>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/159>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/159>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/159> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/158>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Boiler,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/160>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/160>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/160> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/159>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/161>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/161>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/161> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/160>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/162>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/162>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/162> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/161>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/163>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/163>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/163> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/162>;
      _8:has-subject-entity ds:Computer;
      _8:involves ds:Computer,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/164>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/164>;
+     loc:is-located-in ds:Airlock. 
 
  <http://contextus.net/resource/dark_star/event/176> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/175>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/177>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/177>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/177> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/176>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/178>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/178>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/178> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/177>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/179>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/179>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/183> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/182>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/184>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/184>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/184> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/183>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/185>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/185>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/185> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/184>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/186>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/186>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/186> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/185>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/187>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/187>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/187> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/186>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/188>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/188>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/188> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/187>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/189>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/189>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/189> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/188>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/190>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/190>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/190> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/189>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/191>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/191>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/191> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/190>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/192>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/192>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/192> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/191>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/193>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/193>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/193> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/192>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/194>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/194>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/194> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/193>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/195>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/195>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/195> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/194>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/196>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/196>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/196> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/195>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/197>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/197>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/197> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/196>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/198>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/198>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/198> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/197>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/199>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/199>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/199> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/198>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/200>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/200>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/2> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/1>;
@@ -744,623 +849,712 @@
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/201>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/201>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/201> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/200>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/202>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/202>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/202> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/201>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/203>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/203>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/203> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/202>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/204>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/204>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/204> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/203>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/205>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/205>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/205> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/204>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/206>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/206>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/206> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/205>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/207>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/207>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/207> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/206>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/208>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/208>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/208> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/207>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/209>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/209>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/209> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/208>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/210>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/210>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/210> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/209>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/211>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/211>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/211> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/210>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/212>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/212>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/213> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/212>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/214>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/214>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/214> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/213>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/215>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/215>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/215> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/214>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/216>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/216>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/216> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/215>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/217>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/217>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/217> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/216>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/218>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/218>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/218> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/217>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/219>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/219>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/219> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/218>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/220>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/220>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/220> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/219>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/221>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/221>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/221> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/220>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/222>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/222>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/222> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/221>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/223>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/223>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/223> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/222>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/224>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/224>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/224> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/223>;
      _8:has-subject-entity ds:Powell;
      _8:involves ds:Doolittle,
          ds:Powell;
-     _8:precedes <http://contextus.net/resource/dark_star/event/225>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/225>;
+     loc:is-located-in ds:Freezer_Room. 
 
  <http://contextus.net/resource/dark_star/event/227> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/226>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/228>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/228>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/228> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/227>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/229>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/229>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/229> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/228>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/230>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/230>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/230> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/229>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/231>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/231>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/231> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/230>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/232>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/232>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/232> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/231>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/233>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/233>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/233> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/232>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/234>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/234>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/234> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/233>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/235>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/235>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/235> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/234>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/236>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/236>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/236> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/235>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/237>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/237>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/237> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/236>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/238>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/238>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/238> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/237>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/239>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/239>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/239> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/238>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/240>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/240>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/240> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/239>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/241>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/241>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/241> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/240>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/242>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/242>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/242> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/241>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/243>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/243>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/243> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/242>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/244>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/244>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/244> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/243>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/245>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/245>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/245> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/244>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/246>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/246>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/246> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/245>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/247>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/247>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/247> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/246>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/248>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/248>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/248> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/247>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/249>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/249>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/249> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/248>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/250>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/250>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/250> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/249>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/251>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/251>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/251> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/250>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/252>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/252>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/252> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/251>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/253>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/253>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/253> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/252>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/254>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/254>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/254> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/253>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/255>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/255>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/255> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/254>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/256>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/256>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/256> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/255>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/257>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/257>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/257> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/256>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/258>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/258>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/258> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/257>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/259>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/259>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/259> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/258>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/260>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/260>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/260> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/259>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/261>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/261>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/261> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/260>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/262>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/262>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/262> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/261>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/263>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/263>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/263> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/262>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/264>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/264>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/264> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/263>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/265>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/265>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/265> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/264>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/266>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/266>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/266> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/265>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/267>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/267>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/267> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/266>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/268>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/268>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/268> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/267>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/269>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/269>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/269> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/268>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/270>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/270>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/270> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/269>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/271>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/271>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/271> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/270>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/272>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/272>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/272> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/271>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/273>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/273>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/273> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/272>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/274>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/274>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/274> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/273>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/275>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/275>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/275> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/274>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/276>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/276>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/276> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/275>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/277>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/277>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/277> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/276>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/278>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/278>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/278> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/277>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/279>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/279>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/279> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/278>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/280>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/280>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/280> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/279>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/281>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/281>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/281> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/280>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/282>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/282>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/282> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/281>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/283>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/283>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/283> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/282>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/284>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/284>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/284> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/283>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Doolittle;
-     _8:precedes <http://contextus.net/resource/dark_star/event/285>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/285>;
+     loc:is-located-in ds:Bomb_Bay_Exterior. 
 
  <http://contextus.net/resource/dark_star/event/285> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/284>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/286>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/286>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/286> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/285>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/287>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/287>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/287> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/286>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/288>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/288>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/288> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/287>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/289>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/289>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/292> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/291>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/293>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/293>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/293> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/292>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/294>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/294>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/299> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/298>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/300>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/300>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/3> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/2>;
@@ -1374,147 +1568,168 @@
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/31>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/31>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/300> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/299>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/301>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/301>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/303> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/302>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/304>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/304>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/304> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/303>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/305>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/305>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/305> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/304>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/306>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/306>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/306> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/305>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/307>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/307>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/307> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/306>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/308>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/308>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/308> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/307>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/309>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/309>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/309> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/308>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/310>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/310>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/31> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/30>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/32>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/32>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/310> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/309>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/311>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/311>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/311> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/310>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/312>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/312>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/312> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/311>;
      _8:has-subject-entity ds:Bomb_20;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/313>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/313>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/313> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/312>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Bomb_20,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/314>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/314>;
+     loc:is-located-in ds:Bomb_Bay. 
 
  <http://contextus.net/resource/dark_star/event/314> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/313>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/315>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/315>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/315> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/314>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/316>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/316>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/318> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/317>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/319>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/319>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/319> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/318>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/320>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/320>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/321> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/320>;
      _8:has-subject-entity ds:Boiler;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/322>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/322>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/322> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/321>;
      _8:has-subject-entity ds:Pinback;
      _8:involves ds:Boiler,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/323>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/323>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/348> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/347>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Powell,
-         ds:Talby. 
+         ds:Talby;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/4> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/3>;
@@ -1556,42 +1771,48 @@
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/85>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/85>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/85> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/84>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/86>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/86>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/86> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/85>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/87>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/87>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/87> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/86>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/88>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/88>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/88> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/87>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/89>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/89>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/89> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/88>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/90>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/90>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/9> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/8>;
@@ -1605,70 +1826,80 @@
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/91>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/91>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/91> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/90>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/92>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/92>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/92> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/91>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/93>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/93>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/93> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/92>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/94>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/94>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/94> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/93>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/95>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/95>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/95> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/94>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/96>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/96>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/96> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/95>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/97>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/97>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/97> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/96>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/98>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/98>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/98> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/97>;
      _8:has-subject-entity ds:Doolittle;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/99>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/99>;
+     loc:is-located-in ds:Observation_Dome. 
 
  <http://contextus.net/resource/dark_star/event/99> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/98>;
      _8:has-subject-entity ds:Talby;
      _8:involves ds:Doolittle,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/100>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/100>;
+     loc:is-located-in ds:Observation_Dome. 
 
  ds:Mission_Control a _9:Character;
      _8:involved-in <http://contextus.net/resource/dark_star/event/123>,
@@ -1682,7 +1913,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/112>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/112>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/112> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/111>;
@@ -1690,7 +1922,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/113>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/113>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/113> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/112>;
@@ -1698,7 +1931,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/114>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/114>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/114> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/113>;
@@ -1706,7 +1940,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/115>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/115>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/115> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/114>;
@@ -1714,7 +1949,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/116>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/116>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/116> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/115>;
@@ -1722,7 +1958,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/117>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/117>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/117> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/116>;
@@ -1730,7 +1967,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/118>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/118>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/118> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/117>;
@@ -1738,7 +1976,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/119>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/119>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/119> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/118>;
@@ -1746,7 +1985,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/120>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/120>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/120> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/119>;
@@ -1754,7 +1994,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/121>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/121>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/121> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/120>;
@@ -1762,7 +2003,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/122>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/122>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/122> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/121>;
@@ -1770,7 +2012,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/123>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/123>;
+     loc:is-located-in ds:Kitchen. 
 
  <http://contextus.net/resource/dark_star/event/133> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/132>;
@@ -1778,7 +2021,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/134>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/134>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/134> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/133>;
@@ -1786,7 +2030,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/135>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/135>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/135> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/134>;
@@ -1794,7 +2039,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/136>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/136>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/136> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/135>;
@@ -1802,7 +2048,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/137>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/137>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/144> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/143>;
@@ -1810,7 +2057,8 @@
      _8:involves ds:Doolittle,
          ds:Pinback,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/145>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/145>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/145> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/144>;
@@ -1818,7 +2066,8 @@
      _8:involves ds:Doolittle,
          ds:Pinback,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/146>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/146>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/146> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/145>;
@@ -1826,7 +2075,8 @@
      _8:involves ds:Doolittle,
          ds:Pinback,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/147>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/147>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/164> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/163>;
@@ -1834,7 +2084,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/165>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/165>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/165> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/164>;
@@ -1842,7 +2093,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/166>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/166>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/166> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/165>;
@@ -1850,7 +2102,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/167>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/167>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/167> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/166>;
@@ -1858,7 +2111,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/168>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/168>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/168> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/167>;
@@ -1866,7 +2120,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/169>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/169>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/169> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/168>;
@@ -1874,7 +2129,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/170>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/170>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/170> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/169>;
@@ -1882,7 +2138,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/171>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/171>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/171> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/170>;
@@ -1890,7 +2147,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/172>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/172>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/172> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/171>;
@@ -1898,7 +2156,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/173>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/173>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/173> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/172>;
@@ -1906,7 +2165,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/174>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/174>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/174> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/173>;
@@ -1914,7 +2174,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/175>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/175>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/175> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/174>;
@@ -1922,7 +2183,8 @@
      _8:involves ds:Boiler,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/176>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/176>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/180> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/179>;
@@ -1930,7 +2192,8 @@
      _8:involves ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/181>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/181>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/181> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/180>;
@@ -1938,7 +2201,8 @@
      _8:involves ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/182>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/182>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/182> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/181>;
@@ -1946,7 +2210,8 @@
      _8:involves ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/183>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/183>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/325> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/324>;
@@ -1954,7 +2219,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/326>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/326>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/326> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/325>;
@@ -1962,7 +2228,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/327>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/327>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/327> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/326>;
@@ -1970,7 +2237,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/328>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/328>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/328> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/327>;
@@ -1978,7 +2246,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/329>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/329>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/329> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/328>;
@@ -1986,7 +2255,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/330>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/330>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/330> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/329>;
@@ -1994,7 +2264,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/331>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/331>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/331> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/330>;
@@ -2002,7 +2273,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/332>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/332>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/332> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/331>;
@@ -2010,7 +2282,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/333>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/333>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/333> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/332>;
@@ -2018,7 +2291,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/334>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/334>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/334> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/333>;
@@ -2026,7 +2300,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/335>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/335>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/335> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/334>;
@@ -2034,7 +2309,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/336>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/336>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/336> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/335>;
@@ -2042,7 +2318,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/337>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/337>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/337> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/336>;
@@ -2050,7 +2327,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/338>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/338>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/338> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/337>;
@@ -2058,7 +2336,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/339>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/339>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/339> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/338>;
@@ -2066,7 +2345,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/340>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/340>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/340> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/339>;
@@ -2074,7 +2354,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/341>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/341>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/341> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/340>;
@@ -2082,7 +2363,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/342>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/342>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/342> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/341>;
@@ -2090,7 +2372,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/343>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/343>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/343> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/342>;
@@ -2098,7 +2381,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/344>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/344>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/344> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/343>;
@@ -2106,7 +2390,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/345>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/345>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/345> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/344>;
@@ -2114,7 +2399,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/346>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/346>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/346> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/345>;
@@ -2122,7 +2408,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/347>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/347>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/347> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/346>;
@@ -2130,7 +2417,8 @@
      _8:involves ds:Doolittle,
          ds:Powell,
          ds:Talby;
-     _8:precedes <http://contextus.net/resource/dark_star/event/348>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/348>;
+     loc:is-located-in ds:Space. 
 
  <http://contextus.net/resource/dark_star/event/10> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/9>;
@@ -2310,7 +2598,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/47>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/47>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/47> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/46>;
@@ -2319,7 +2608,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/48>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/48>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/48> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/47>;
@@ -2328,7 +2618,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/49>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/49>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/49> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/48>;
@@ -2337,7 +2628,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/50>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/50>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/50> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/49>;
@@ -2346,7 +2638,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/51>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/51>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/51> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/50>;
@@ -2355,7 +2648,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/52>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/52>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/52> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/51>;
@@ -2364,7 +2658,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/53>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/53>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/53> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/52>;
@@ -2373,7 +2668,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/54>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/54>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/54> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/53>;
@@ -2382,7 +2678,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/55>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/55>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/55> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/54>;
@@ -2391,7 +2688,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/56>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/56>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/56> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/55>;
@@ -2400,7 +2698,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/57>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/57>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/57> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/56>;
@@ -2409,7 +2708,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/58>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/58>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/58> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/57>;
@@ -2418,7 +2718,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/59>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/59>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/59> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/58>;
@@ -2427,7 +2728,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/60>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/60>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/60> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/59>;
@@ -2436,7 +2738,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/61>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/61>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/61> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/60>;
@@ -2445,7 +2748,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/62>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/62>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/62> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/61>;
@@ -2454,7 +2758,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/63>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/63>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/63> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/62>;
@@ -2463,7 +2768,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/64>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/64>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/64> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/63>;
@@ -2472,7 +2778,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/65>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/65>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/65> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/64>;
@@ -2481,7 +2788,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/66>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/66>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/66> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/65>;
@@ -2490,7 +2798,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/67>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/67>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/67> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/66>;
@@ -2499,7 +2808,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/68>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/68>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/68> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/67>;
@@ -2508,7 +2818,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/69>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/69>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/69> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/68>;
@@ -2517,7 +2828,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/70>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/70>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/70> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/69>;
@@ -2526,7 +2838,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/71>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/71>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/71> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/70>;
@@ -2535,7 +2848,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/72>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/72>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/72> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/71>;
@@ -2544,7 +2858,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/73>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/73>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/73> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/72>;
@@ -2553,7 +2868,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/74>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/74>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/74> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/73>;
@@ -2562,7 +2878,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/75>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/75>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/75> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/74>;
@@ -2571,7 +2888,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/76>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/76>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/76> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/75>;
@@ -2580,7 +2898,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/77>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/77>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/77> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/76>;
@@ -2589,7 +2908,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/78>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/78>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/78> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/77>;
@@ -2598,7 +2918,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/79>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/79>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/79> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/78>;
@@ -2607,7 +2928,8 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/80>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/80>;
+     loc:is-located-in ds:Control_Room. 
 
  <http://contextus.net/resource/dark_star/event/80> a _8:Social;
      _8:follows <http://contextus.net/resource/dark_star/event/79>;
@@ -2616,7 +2938,11 @@
          ds:Computer,
          ds:Doolittle,
          ds:Pinback;
-     _8:precedes <http://contextus.net/resource/dark_star/event/81>. 
+     _8:precedes <http://contextus.net/resource/dark_star/event/81>;
+     loc:is-located-in ds:Control_Room. 
+
+ ds:Bomb_Bay a loc:Room;
+     dc:title "INTERIOR - BOMB BAY"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
  ds:Bomb_19 a _9:Character;
      _8:involved-in <http://contextus.net/resource/dark_star/event/32>,
@@ -2627,6 +2953,26 @@
          <http://contextus.net/resource/dark_star/event/42>;
      _9:portrayed-by ds:Alan_Sheretz;
      foaf:name "Bomb #19"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Airlock a loc:Room,
+         loc:Space;
+     dc:title "EXTERIOR - EMERGENCY AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - EMERGENCY AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Kitchen a loc:Room;
+     dc:title "INTERIOR - KITCHEN"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Observation_Dome a loc:Room;
+     dc:title "INTERIOR - OBSERVATION DOME"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Space a loc:Space;
+     dc:title "EXTERIOR - SPACE"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Freezer_Room a loc:Room;
+     dc:title "INTERIOR - FREEZER ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Bomb_Bay_Exterior a loc:Space;
+     dc:title "EXTERIOR - BOMB BAY"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
  ds:Computer a _9:Character;
      _8:involved-in <http://contextus.net/resource/dark_star/event/140>,
@@ -2814,6 +3160,9 @@
          <http://contextus.net/resource/dark_star/event/324>;
      _9:portrayed-by ds:Adam_Beckenbaugh;
      foaf:name "Bomb #20"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Control_Room a loc:Room;
+     dc:title "INTERIOR - CONTROL ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
  ds:Talby a _9:Character;
      _8:involved-in <http://contextus.net/resource/dark_star/event/10>,
