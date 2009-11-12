@@ -1,0 +1,3457 @@
+
+@prefix _10: <http://dbpedia.org/resource/Dan_O'>.
+@prefix _8: <http://purl.org/ontomedia/core/expression#>.
+@prefix _9: <http://purl.org/ontomedia/ext/common/being#>.
+@prefix dbpedia: <http://dbpedia.org/resource/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix ds: <http://contextus.net/resource/dark_star/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+ <> dc:title "EXTERIOR - BOMB BAY"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "EXTERIOR - DARK STAR (TITLE SEQUENCE)"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "EXTERIOR - EMERGENCY AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "EXTERIOR - SHIP"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "EXTERIOR - SPACE"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "EXTERIOR - THE SHIP"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "EXTERIOR - UNIVERSE"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - BOMB BAY"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - COMPUTER ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - CONTROL ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - DARK STAR"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - EMERGENCY AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - FREEZER ROOM"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - KITCHEN"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - OBSERVATION DOME"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>,
+         "INTERIOR - VENTRAL AIR LOCK"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Adam_Beckenbaugh a _9:Being;
+     _9:portrays ds:Bomb_20;
+     foaf:name "Adam Beckenbaugh"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Alan_Sheretz a _9:Being;
+     _9:portrays ds:Bomb_19;
+     foaf:name "Alan Sheretz"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Cookie_Knapp a _9:Being;
+     _9:portrays ds:Computer;
+     foaf:name "Cookie Knapp"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Joe_Saunders a _9:Being;
+     _9:portrays ds:Powell;
+     foaf:name "Joe Saunders"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Miles_Watkins a _9:Being;
+     _9:portrays ds:Mission_Control;
+     foaf:name "Miles Watkins"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ dbpedia:Brian_Narelle a _9:Being;
+     _9:portrays ds:Doolittle;
+     foaf:name "Brian Narelle"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ dbpedia:Cal_Kuniholm a _9:Being;
+     _9:portrays ds:Boiler;
+     foaf:name "Cal Kuniholm"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ _10:Bannon a _9:Being;
+     _9:portrays ds:Pinback;
+     foaf:name "Dan O'Bannon"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ dbpedia:Dre_Pahich a _9:Being;
+     _9:portrays ds:Talby;
+     foaf:name "Dre Pahich"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ <http://contextus.net/resource/dark_star/event/1> a _8:Social;
+     _8:has-subject-entity ds:Narrator;
+     _8:involves ds:Narrator;
+     _8:precedes <http://contextus.net/resource/dark_star/event/2>. 
+
+ <http://contextus.net/resource/dark_star/event/149> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/148>;
+     _8:precedes <http://contextus.net/resource/dark_star/event/150>. 
+
+ <http://contextus.net/resource/dark_star/event/157> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/156>;
+     _8:precedes <http://contextus.net/resource/dark_star/event/158>. 
+
+ <http://contextus.net/resource/dark_star/event/123> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/122>;
+     _8:has-subject-entity ds:Mission_Control;
+     _8:involves ds:Mission_Control;
+     _8:precedes <http://contextus.net/resource/dark_star/event/124>. 
+
+ <http://contextus.net/resource/dark_star/event/132> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/131>;
+     _8:has-subject-entity ds:Mission_Control;
+     _8:involves ds:Mission_Control;
+     _8:precedes <http://contextus.net/resource/dark_star/event/133>. 
+
+ <http://contextus.net/resource/dark_star/event/139> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/138>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/140>. 
+
+ <http://contextus.net/resource/dark_star/event/142> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/141>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/143>. 
+
+ <http://contextus.net/resource/dark_star/event/143> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/142>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/144>. 
+
+ <http://contextus.net/resource/dark_star/event/147> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/146>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/148>. 
+
+ <http://contextus.net/resource/dark_star/event/148> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/147>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/149>. 
+
+ <http://contextus.net/resource/dark_star/event/150> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/149>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/151>. 
+
+ <http://contextus.net/resource/dark_star/event/151> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/150>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/152>. 
+
+ <http://contextus.net/resource/dark_star/event/156> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/155>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/157>. 
+
+ <http://contextus.net/resource/dark_star/event/179> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/178>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/180>. 
+
+ <http://contextus.net/resource/dark_star/event/212> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/211>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/213>. 
+
+ <http://contextus.net/resource/dark_star/event/225> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/224>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/226>. 
+
+ <http://contextus.net/resource/dark_star/event/226> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/225>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/227>. 
+
+ <http://contextus.net/resource/dark_star/event/289> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/288>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/290>. 
+
+ <http://contextus.net/resource/dark_star/event/29> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/28>;
+     _8:has-subject-entity ds:Narrator;
+     _8:involves ds:Narrator;
+     _8:precedes <http://contextus.net/resource/dark_star/event/30>. 
+
+ <http://contextus.net/resource/dark_star/event/290> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/289>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler;
+     _8:precedes <http://contextus.net/resource/dark_star/event/291>. 
+
+ <http://contextus.net/resource/dark_star/event/291> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/290>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/292>. 
+
+ <http://contextus.net/resource/dark_star/event/294> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/293>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/295>. 
+
+ <http://contextus.net/resource/dark_star/event/295> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/294>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/296>. 
+
+ <http://contextus.net/resource/dark_star/event/296> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/295>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/297>. 
+
+ <http://contextus.net/resource/dark_star/event/297> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/296>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/298>. 
+
+ <http://contextus.net/resource/dark_star/event/298> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/297>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/299>. 
+
+ <http://contextus.net/resource/dark_star/event/301> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/300>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/302>. 
+
+ <http://contextus.net/resource/dark_star/event/302> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/301>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler;
+     _8:precedes <http://contextus.net/resource/dark_star/event/303>. 
+
+ <http://contextus.net/resource/dark_star/event/316> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/315>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/317>. 
+
+ <http://contextus.net/resource/dark_star/event/317> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/316>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/318>. 
+
+ <http://contextus.net/resource/dark_star/event/32> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/31>;
+     _8:has-subject-entity ds:Bomb_19;
+     _8:involves ds:Bomb_19;
+     _8:precedes <http://contextus.net/resource/dark_star/event/33>. 
+
+ <http://contextus.net/resource/dark_star/event/320> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/319>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/321>. 
+
+ <http://contextus.net/resource/dark_star/event/323> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/322>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/324>. 
+
+ <http://contextus.net/resource/dark_star/event/324> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/323>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20;
+     _8:precedes <http://contextus.net/resource/dark_star/event/325>. 
+
+ <http://contextus.net/resource/dark_star/event/33> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/32>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/34>. 
+
+ <http://contextus.net/resource/dark_star/event/34> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/33>;
+     _8:has-subject-entity ds:Bomb_19;
+     _8:involves ds:Bomb_19;
+     _8:precedes <http://contextus.net/resource/dark_star/event/35>. 
+
+ <http://contextus.net/resource/dark_star/event/35> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/34>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/36>. 
+
+ <http://contextus.net/resource/dark_star/event/36> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/35>;
+     _8:has-subject-entity ds:Bomb_19;
+     _8:involves ds:Bomb_19;
+     _8:precedes <http://contextus.net/resource/dark_star/event/37>. 
+
+ <http://contextus.net/resource/dark_star/event/37> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/36>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/38>. 
+
+ <http://contextus.net/resource/dark_star/event/38> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/37>;
+     _8:has-subject-entity ds:Bomb_19;
+     _8:involves ds:Bomb_19;
+     _8:precedes <http://contextus.net/resource/dark_star/event/39>. 
+
+ <http://contextus.net/resource/dark_star/event/39> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/38>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/40>. 
+
+ <http://contextus.net/resource/dark_star/event/40> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/39>;
+     _8:has-subject-entity ds:Bomb_19;
+     _8:involves ds:Bomb_19;
+     _8:precedes <http://contextus.net/resource/dark_star/event/41>. 
+
+ <http://contextus.net/resource/dark_star/event/41> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/40>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/42>. 
+
+ <http://contextus.net/resource/dark_star/event/42> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/41>;
+     _8:has-subject-entity ds:Bomb_19;
+     _8:involves ds:Bomb_19;
+     _8:precedes <http://contextus.net/resource/dark_star/event/43>. 
+
+ <http://contextus.net/resource/dark_star/event/43> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/42>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/44>. 
+
+ <http://contextus.net/resource/dark_star/event/44> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/43>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/45>. 
+
+ <http://contextus.net/resource/dark_star/event/45> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/44>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/46>. 
+
+ <http://contextus.net/resource/dark_star/event/81> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/80>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/82>. 
+
+ <http://contextus.net/resource/dark_star/event/82> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/81>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/83>. 
+
+ <http://contextus.net/resource/dark_star/event/83> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/82>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/84>. 
+
+ ds:Narrator a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/1>,
+         <http://contextus.net/resource/dark_star/event/29>;
+     foaf:name "Narrator"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ <http://contextus.net/resource/dark_star/event/100> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/99>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/101>. 
+
+ <http://contextus.net/resource/dark_star/event/101> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/100>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/102>. 
+
+ <http://contextus.net/resource/dark_star/event/102> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/101>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/103>. 
+
+ <http://contextus.net/resource/dark_star/event/103> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/102>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/104>. 
+
+ <http://contextus.net/resource/dark_star/event/104> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/103>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/105>. 
+
+ <http://contextus.net/resource/dark_star/event/105> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/104>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/106>. 
+
+ <http://contextus.net/resource/dark_star/event/106> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/105>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/107>. 
+
+ <http://contextus.net/resource/dark_star/event/107> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/106>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/108>. 
+
+ <http://contextus.net/resource/dark_star/event/108> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/107>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/109>. 
+
+ <http://contextus.net/resource/dark_star/event/109> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/108>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/110>. 
+
+ <http://contextus.net/resource/dark_star/event/110> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/109>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/111>. 
+
+ <http://contextus.net/resource/dark_star/event/124> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/123>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/125>. 
+
+ <http://contextus.net/resource/dark_star/event/125> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/124>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/126>. 
+
+ <http://contextus.net/resource/dark_star/event/126> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/125>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/127>. 
+
+ <http://contextus.net/resource/dark_star/event/127> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/126>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/128>. 
+
+ <http://contextus.net/resource/dark_star/event/128> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/127>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/129>. 
+
+ <http://contextus.net/resource/dark_star/event/129> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/128>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/130>. 
+
+ <http://contextus.net/resource/dark_star/event/130> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/129>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/131>. 
+
+ <http://contextus.net/resource/dark_star/event/131> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/130>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/132>. 
+
+ <http://contextus.net/resource/dark_star/event/137> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/136>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/138>. 
+
+ <http://contextus.net/resource/dark_star/event/138> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/137>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/139>. 
+
+ <http://contextus.net/resource/dark_star/event/140> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/139>;
+     _8:has-subject-entity ds:Computer;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/141>. 
+
+ <http://contextus.net/resource/dark_star/event/141> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/140>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/142>. 
+
+ <http://contextus.net/resource/dark_star/event/152> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/151>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/153>. 
+
+ <http://contextus.net/resource/dark_star/event/153> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/152>;
+     _8:has-subject-entity ds:Computer;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/154>. 
+
+ <http://contextus.net/resource/dark_star/event/154> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/153>;
+     _8:has-subject-entity ds:Computer;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/155>. 
+
+ <http://contextus.net/resource/dark_star/event/155> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/154>;
+     _8:has-subject-entity ds:Computer;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/156>. 
+
+ <http://contextus.net/resource/dark_star/event/158> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/157>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/159>. 
+
+ <http://contextus.net/resource/dark_star/event/159> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/158>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/160>. 
+
+ <http://contextus.net/resource/dark_star/event/160> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/159>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/161>. 
+
+ <http://contextus.net/resource/dark_star/event/161> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/160>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/162>. 
+
+ <http://contextus.net/resource/dark_star/event/162> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/161>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/163>. 
+
+ <http://contextus.net/resource/dark_star/event/163> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/162>;
+     _8:has-subject-entity ds:Computer;
+     _8:involves ds:Computer,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/164>. 
+
+ <http://contextus.net/resource/dark_star/event/176> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/175>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/177>. 
+
+ <http://contextus.net/resource/dark_star/event/177> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/176>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/178>. 
+
+ <http://contextus.net/resource/dark_star/event/178> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/177>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/179>. 
+
+ <http://contextus.net/resource/dark_star/event/183> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/182>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/184>. 
+
+ <http://contextus.net/resource/dark_star/event/184> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/183>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/185>. 
+
+ <http://contextus.net/resource/dark_star/event/185> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/184>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/186>. 
+
+ <http://contextus.net/resource/dark_star/event/186> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/185>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/187>. 
+
+ <http://contextus.net/resource/dark_star/event/187> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/186>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/188>. 
+
+ <http://contextus.net/resource/dark_star/event/188> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/187>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/189>. 
+
+ <http://contextus.net/resource/dark_star/event/189> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/188>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/190>. 
+
+ <http://contextus.net/resource/dark_star/event/190> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/189>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/191>. 
+
+ <http://contextus.net/resource/dark_star/event/191> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/190>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/192>. 
+
+ <http://contextus.net/resource/dark_star/event/192> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/191>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/193>. 
+
+ <http://contextus.net/resource/dark_star/event/193> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/192>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/194>. 
+
+ <http://contextus.net/resource/dark_star/event/194> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/193>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/195>. 
+
+ <http://contextus.net/resource/dark_star/event/195> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/194>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/196>. 
+
+ <http://contextus.net/resource/dark_star/event/196> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/195>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/197>. 
+
+ <http://contextus.net/resource/dark_star/event/197> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/196>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/198>. 
+
+ <http://contextus.net/resource/dark_star/event/198> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/197>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/199>. 
+
+ <http://contextus.net/resource/dark_star/event/199> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/198>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/200>. 
+
+ <http://contextus.net/resource/dark_star/event/2> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/1>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/3>. 
+
+ <http://contextus.net/resource/dark_star/event/200> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/199>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/201>. 
+
+ <http://contextus.net/resource/dark_star/event/201> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/200>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/202>. 
+
+ <http://contextus.net/resource/dark_star/event/202> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/201>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/203>. 
+
+ <http://contextus.net/resource/dark_star/event/203> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/202>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/204>. 
+
+ <http://contextus.net/resource/dark_star/event/204> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/203>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/205>. 
+
+ <http://contextus.net/resource/dark_star/event/205> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/204>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/206>. 
+
+ <http://contextus.net/resource/dark_star/event/206> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/205>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/207>. 
+
+ <http://contextus.net/resource/dark_star/event/207> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/206>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/208>. 
+
+ <http://contextus.net/resource/dark_star/event/208> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/207>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/209>. 
+
+ <http://contextus.net/resource/dark_star/event/209> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/208>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/210>. 
+
+ <http://contextus.net/resource/dark_star/event/210> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/209>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/211>. 
+
+ <http://contextus.net/resource/dark_star/event/211> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/210>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/212>. 
+
+ <http://contextus.net/resource/dark_star/event/213> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/212>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/214>. 
+
+ <http://contextus.net/resource/dark_star/event/214> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/213>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/215>. 
+
+ <http://contextus.net/resource/dark_star/event/215> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/214>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/216>. 
+
+ <http://contextus.net/resource/dark_star/event/216> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/215>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/217>. 
+
+ <http://contextus.net/resource/dark_star/event/217> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/216>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/218>. 
+
+ <http://contextus.net/resource/dark_star/event/218> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/217>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/219>. 
+
+ <http://contextus.net/resource/dark_star/event/219> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/218>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/220>. 
+
+ <http://contextus.net/resource/dark_star/event/220> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/219>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/221>. 
+
+ <http://contextus.net/resource/dark_star/event/221> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/220>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/222>. 
+
+ <http://contextus.net/resource/dark_star/event/222> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/221>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/223>. 
+
+ <http://contextus.net/resource/dark_star/event/223> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/222>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/224>. 
+
+ <http://contextus.net/resource/dark_star/event/224> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/223>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell;
+     _8:precedes <http://contextus.net/resource/dark_star/event/225>. 
+
+ <http://contextus.net/resource/dark_star/event/227> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/226>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/228>. 
+
+ <http://contextus.net/resource/dark_star/event/228> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/227>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/229>. 
+
+ <http://contextus.net/resource/dark_star/event/229> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/228>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/230>. 
+
+ <http://contextus.net/resource/dark_star/event/230> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/229>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/231>. 
+
+ <http://contextus.net/resource/dark_star/event/231> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/230>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/232>. 
+
+ <http://contextus.net/resource/dark_star/event/232> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/231>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/233>. 
+
+ <http://contextus.net/resource/dark_star/event/233> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/232>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/234>. 
+
+ <http://contextus.net/resource/dark_star/event/234> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/233>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/235>. 
+
+ <http://contextus.net/resource/dark_star/event/235> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/234>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/236>. 
+
+ <http://contextus.net/resource/dark_star/event/236> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/235>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/237>. 
+
+ <http://contextus.net/resource/dark_star/event/237> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/236>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/238>. 
+
+ <http://contextus.net/resource/dark_star/event/238> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/237>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/239>. 
+
+ <http://contextus.net/resource/dark_star/event/239> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/238>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/240>. 
+
+ <http://contextus.net/resource/dark_star/event/240> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/239>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/241>. 
+
+ <http://contextus.net/resource/dark_star/event/241> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/240>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/242>. 
+
+ <http://contextus.net/resource/dark_star/event/242> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/241>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/243>. 
+
+ <http://contextus.net/resource/dark_star/event/243> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/242>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/244>. 
+
+ <http://contextus.net/resource/dark_star/event/244> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/243>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/245>. 
+
+ <http://contextus.net/resource/dark_star/event/245> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/244>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/246>. 
+
+ <http://contextus.net/resource/dark_star/event/246> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/245>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/247>. 
+
+ <http://contextus.net/resource/dark_star/event/247> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/246>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/248>. 
+
+ <http://contextus.net/resource/dark_star/event/248> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/247>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/249>. 
+
+ <http://contextus.net/resource/dark_star/event/249> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/248>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/250>. 
+
+ <http://contextus.net/resource/dark_star/event/250> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/249>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/251>. 
+
+ <http://contextus.net/resource/dark_star/event/251> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/250>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/252>. 
+
+ <http://contextus.net/resource/dark_star/event/252> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/251>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/253>. 
+
+ <http://contextus.net/resource/dark_star/event/253> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/252>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/254>. 
+
+ <http://contextus.net/resource/dark_star/event/254> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/253>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/255>. 
+
+ <http://contextus.net/resource/dark_star/event/255> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/254>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/256>. 
+
+ <http://contextus.net/resource/dark_star/event/256> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/255>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/257>. 
+
+ <http://contextus.net/resource/dark_star/event/257> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/256>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/258>. 
+
+ <http://contextus.net/resource/dark_star/event/258> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/257>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/259>. 
+
+ <http://contextus.net/resource/dark_star/event/259> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/258>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/260>. 
+
+ <http://contextus.net/resource/dark_star/event/260> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/259>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/261>. 
+
+ <http://contextus.net/resource/dark_star/event/261> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/260>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/262>. 
+
+ <http://contextus.net/resource/dark_star/event/262> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/261>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/263>. 
+
+ <http://contextus.net/resource/dark_star/event/263> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/262>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/264>. 
+
+ <http://contextus.net/resource/dark_star/event/264> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/263>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/265>. 
+
+ <http://contextus.net/resource/dark_star/event/265> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/264>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/266>. 
+
+ <http://contextus.net/resource/dark_star/event/266> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/265>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/267>. 
+
+ <http://contextus.net/resource/dark_star/event/267> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/266>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/268>. 
+
+ <http://contextus.net/resource/dark_star/event/268> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/267>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/269>. 
+
+ <http://contextus.net/resource/dark_star/event/269> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/268>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/270>. 
+
+ <http://contextus.net/resource/dark_star/event/270> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/269>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/271>. 
+
+ <http://contextus.net/resource/dark_star/event/271> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/270>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/272>. 
+
+ <http://contextus.net/resource/dark_star/event/272> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/271>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/273>. 
+
+ <http://contextus.net/resource/dark_star/event/273> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/272>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/274>. 
+
+ <http://contextus.net/resource/dark_star/event/274> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/273>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/275>. 
+
+ <http://contextus.net/resource/dark_star/event/275> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/274>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/276>. 
+
+ <http://contextus.net/resource/dark_star/event/276> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/275>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/277>. 
+
+ <http://contextus.net/resource/dark_star/event/277> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/276>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/278>. 
+
+ <http://contextus.net/resource/dark_star/event/278> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/277>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/279>. 
+
+ <http://contextus.net/resource/dark_star/event/279> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/278>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/280>. 
+
+ <http://contextus.net/resource/dark_star/event/280> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/279>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/281>. 
+
+ <http://contextus.net/resource/dark_star/event/281> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/280>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/282>. 
+
+ <http://contextus.net/resource/dark_star/event/282> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/281>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/283>. 
+
+ <http://contextus.net/resource/dark_star/event/283> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/282>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/284>. 
+
+ <http://contextus.net/resource/dark_star/event/284> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/283>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Doolittle;
+     _8:precedes <http://contextus.net/resource/dark_star/event/285>. 
+
+ <http://contextus.net/resource/dark_star/event/285> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/284>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/286>. 
+
+ <http://contextus.net/resource/dark_star/event/286> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/285>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/287>. 
+
+ <http://contextus.net/resource/dark_star/event/287> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/286>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/288>. 
+
+ <http://contextus.net/resource/dark_star/event/288> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/287>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/289>. 
+
+ <http://contextus.net/resource/dark_star/event/292> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/291>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/293>. 
+
+ <http://contextus.net/resource/dark_star/event/293> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/292>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/294>. 
+
+ <http://contextus.net/resource/dark_star/event/299> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/298>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/300>. 
+
+ <http://contextus.net/resource/dark_star/event/3> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/2>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/4>. 
+
+ <http://contextus.net/resource/dark_star/event/30> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/29>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/31>. 
+
+ <http://contextus.net/resource/dark_star/event/300> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/299>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/301>. 
+
+ <http://contextus.net/resource/dark_star/event/303> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/302>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/304>. 
+
+ <http://contextus.net/resource/dark_star/event/304> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/303>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/305>. 
+
+ <http://contextus.net/resource/dark_star/event/305> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/304>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/306>. 
+
+ <http://contextus.net/resource/dark_star/event/306> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/305>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/307>. 
+
+ <http://contextus.net/resource/dark_star/event/307> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/306>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/308>. 
+
+ <http://contextus.net/resource/dark_star/event/308> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/307>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/309>. 
+
+ <http://contextus.net/resource/dark_star/event/309> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/308>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/310>. 
+
+ <http://contextus.net/resource/dark_star/event/31> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/30>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/32>. 
+
+ <http://contextus.net/resource/dark_star/event/310> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/309>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/311>. 
+
+ <http://contextus.net/resource/dark_star/event/311> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/310>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/312>. 
+
+ <http://contextus.net/resource/dark_star/event/312> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/311>;
+     _8:has-subject-entity ds:Bomb_20;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/313>. 
+
+ <http://contextus.net/resource/dark_star/event/313> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/312>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Bomb_20,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/314>. 
+
+ <http://contextus.net/resource/dark_star/event/314> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/313>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/315>. 
+
+ <http://contextus.net/resource/dark_star/event/315> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/314>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/316>. 
+
+ <http://contextus.net/resource/dark_star/event/318> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/317>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/319>. 
+
+ <http://contextus.net/resource/dark_star/event/319> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/318>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/320>. 
+
+ <http://contextus.net/resource/dark_star/event/321> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/320>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/322>. 
+
+ <http://contextus.net/resource/dark_star/event/322> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/321>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/323>. 
+
+ <http://contextus.net/resource/dark_star/event/348> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/347>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby. 
+
+ <http://contextus.net/resource/dark_star/event/4> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/3>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/5>. 
+
+ <http://contextus.net/resource/dark_star/event/5> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/4>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/6>. 
+
+ <http://contextus.net/resource/dark_star/event/6> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/5>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/7>. 
+
+ <http://contextus.net/resource/dark_star/event/7> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/6>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/8>. 
+
+ <http://contextus.net/resource/dark_star/event/8> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/7>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/9>. 
+
+ <http://contextus.net/resource/dark_star/event/84> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/83>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/85>. 
+
+ <http://contextus.net/resource/dark_star/event/85> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/84>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/86>. 
+
+ <http://contextus.net/resource/dark_star/event/86> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/85>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/87>. 
+
+ <http://contextus.net/resource/dark_star/event/87> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/86>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/88>. 
+
+ <http://contextus.net/resource/dark_star/event/88> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/87>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/89>. 
+
+ <http://contextus.net/resource/dark_star/event/89> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/88>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/90>. 
+
+ <http://contextus.net/resource/dark_star/event/9> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/8>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/10>. 
+
+ <http://contextus.net/resource/dark_star/event/90> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/89>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/91>. 
+
+ <http://contextus.net/resource/dark_star/event/91> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/90>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/92>. 
+
+ <http://contextus.net/resource/dark_star/event/92> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/91>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/93>. 
+
+ <http://contextus.net/resource/dark_star/event/93> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/92>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/94>. 
+
+ <http://contextus.net/resource/dark_star/event/94> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/93>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/95>. 
+
+ <http://contextus.net/resource/dark_star/event/95> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/94>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/96>. 
+
+ <http://contextus.net/resource/dark_star/event/96> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/95>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/97>. 
+
+ <http://contextus.net/resource/dark_star/event/97> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/96>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/98>. 
+
+ <http://contextus.net/resource/dark_star/event/98> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/97>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/99>. 
+
+ <http://contextus.net/resource/dark_star/event/99> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/98>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/100>. 
+
+ ds:Mission_Control a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/123>,
+         <http://contextus.net/resource/dark_star/event/132>;
+     _9:portrayed-by ds:Miles_Watkins;
+     foaf:name "Mission Control"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ <http://contextus.net/resource/dark_star/event/111> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/110>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/112>. 
+
+ <http://contextus.net/resource/dark_star/event/112> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/111>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/113>. 
+
+ <http://contextus.net/resource/dark_star/event/113> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/112>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/114>. 
+
+ <http://contextus.net/resource/dark_star/event/114> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/113>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/115>. 
+
+ <http://contextus.net/resource/dark_star/event/115> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/114>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/116>. 
+
+ <http://contextus.net/resource/dark_star/event/116> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/115>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/117>. 
+
+ <http://contextus.net/resource/dark_star/event/117> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/116>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/118>. 
+
+ <http://contextus.net/resource/dark_star/event/118> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/117>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/119>. 
+
+ <http://contextus.net/resource/dark_star/event/119> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/118>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/120>. 
+
+ <http://contextus.net/resource/dark_star/event/120> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/119>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/121>. 
+
+ <http://contextus.net/resource/dark_star/event/121> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/120>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/122>. 
+
+ <http://contextus.net/resource/dark_star/event/122> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/121>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/123>. 
+
+ <http://contextus.net/resource/dark_star/event/133> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/132>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/134>. 
+
+ <http://contextus.net/resource/dark_star/event/134> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/133>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/135>. 
+
+ <http://contextus.net/resource/dark_star/event/135> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/134>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/136>. 
+
+ <http://contextus.net/resource/dark_star/event/136> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/135>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/137>. 
+
+ <http://contextus.net/resource/dark_star/event/144> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/143>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/145>. 
+
+ <http://contextus.net/resource/dark_star/event/145> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/144>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/146>. 
+
+ <http://contextus.net/resource/dark_star/event/146> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/145>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/147>. 
+
+ <http://contextus.net/resource/dark_star/event/164> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/163>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/165>. 
+
+ <http://contextus.net/resource/dark_star/event/165> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/164>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/166>. 
+
+ <http://contextus.net/resource/dark_star/event/166> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/165>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/167>. 
+
+ <http://contextus.net/resource/dark_star/event/167> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/166>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/168>. 
+
+ <http://contextus.net/resource/dark_star/event/168> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/167>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/169>. 
+
+ <http://contextus.net/resource/dark_star/event/169> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/168>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/170>. 
+
+ <http://contextus.net/resource/dark_star/event/170> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/169>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/171>. 
+
+ <http://contextus.net/resource/dark_star/event/171> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/170>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/172>. 
+
+ <http://contextus.net/resource/dark_star/event/172> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/171>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/173>. 
+
+ <http://contextus.net/resource/dark_star/event/173> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/172>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/174>. 
+
+ <http://contextus.net/resource/dark_star/event/174> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/173>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/175>. 
+
+ <http://contextus.net/resource/dark_star/event/175> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/174>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/176>. 
+
+ <http://contextus.net/resource/dark_star/event/180> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/179>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/181>. 
+
+ <http://contextus.net/resource/dark_star/event/181> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/180>;
+     _8:has-subject-entity ds:Computer;
+     _8:involves ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/182>. 
+
+ <http://contextus.net/resource/dark_star/event/182> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/181>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/183>. 
+
+ <http://contextus.net/resource/dark_star/event/325> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/324>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/326>. 
+
+ <http://contextus.net/resource/dark_star/event/326> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/325>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/327>. 
+
+ <http://contextus.net/resource/dark_star/event/327> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/326>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/328>. 
+
+ <http://contextus.net/resource/dark_star/event/328> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/327>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/329>. 
+
+ <http://contextus.net/resource/dark_star/event/329> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/328>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/330>. 
+
+ <http://contextus.net/resource/dark_star/event/330> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/329>;
+     _8:has-subject-entity ds:Powell;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/331>. 
+
+ <http://contextus.net/resource/dark_star/event/331> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/330>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/332>. 
+
+ <http://contextus.net/resource/dark_star/event/332> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/331>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/333>. 
+
+ <http://contextus.net/resource/dark_star/event/333> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/332>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/334>. 
+
+ <http://contextus.net/resource/dark_star/event/334> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/333>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/335>. 
+
+ <http://contextus.net/resource/dark_star/event/335> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/334>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/336>. 
+
+ <http://contextus.net/resource/dark_star/event/336> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/335>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/337>. 
+
+ <http://contextus.net/resource/dark_star/event/337> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/336>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/338>. 
+
+ <http://contextus.net/resource/dark_star/event/338> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/337>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/339>. 
+
+ <http://contextus.net/resource/dark_star/event/339> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/338>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/340>. 
+
+ <http://contextus.net/resource/dark_star/event/340> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/339>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/341>. 
+
+ <http://contextus.net/resource/dark_star/event/341> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/340>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/342>. 
+
+ <http://contextus.net/resource/dark_star/event/342> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/341>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/343>. 
+
+ <http://contextus.net/resource/dark_star/event/343> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/342>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/344>. 
+
+ <http://contextus.net/resource/dark_star/event/344> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/343>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/345>. 
+
+ <http://contextus.net/resource/dark_star/event/345> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/344>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/346>. 
+
+ <http://contextus.net/resource/dark_star/event/346> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/345>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/347>. 
+
+ <http://contextus.net/resource/dark_star/event/347> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/346>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Doolittle,
+         ds:Powell,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/348>. 
+
+ <http://contextus.net/resource/dark_star/event/10> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/9>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/11>. 
+
+ <http://contextus.net/resource/dark_star/event/11> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/10>;
+     _8:has-subject-entity ds:Talby;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/12>. 
+
+ <http://contextus.net/resource/dark_star/event/12> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/11>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/13>. 
+
+ <http://contextus.net/resource/dark_star/event/13> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/12>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/14>. 
+
+ <http://contextus.net/resource/dark_star/event/14> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/13>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/15>. 
+
+ <http://contextus.net/resource/dark_star/event/15> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/14>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/16>. 
+
+ <http://contextus.net/resource/dark_star/event/16> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/15>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/17>. 
+
+ <http://contextus.net/resource/dark_star/event/17> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/16>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/18>. 
+
+ <http://contextus.net/resource/dark_star/event/18> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/17>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/19>. 
+
+ <http://contextus.net/resource/dark_star/event/19> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/18>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/20>. 
+
+ <http://contextus.net/resource/dark_star/event/20> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/19>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/21>. 
+
+ <http://contextus.net/resource/dark_star/event/21> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/20>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/22>. 
+
+ <http://contextus.net/resource/dark_star/event/22> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/21>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/23>. 
+
+ <http://contextus.net/resource/dark_star/event/23> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/22>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/24>. 
+
+ <http://contextus.net/resource/dark_star/event/24> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/23>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/25>. 
+
+ <http://contextus.net/resource/dark_star/event/25> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/24>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/26>. 
+
+ <http://contextus.net/resource/dark_star/event/26> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/25>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/27>. 
+
+ <http://contextus.net/resource/dark_star/event/27> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/26>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/28>. 
+
+ <http://contextus.net/resource/dark_star/event/28> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/27>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Doolittle,
+         ds:Pinback,
+         ds:Talby;
+     _8:precedes <http://contextus.net/resource/dark_star/event/29>. 
+
+ <http://contextus.net/resource/dark_star/event/46> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/45>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/47>. 
+
+ <http://contextus.net/resource/dark_star/event/47> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/46>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/48>. 
+
+ <http://contextus.net/resource/dark_star/event/48> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/47>;
+     _8:has-subject-entity ds:Computer;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/49>. 
+
+ <http://contextus.net/resource/dark_star/event/49> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/48>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/50>. 
+
+ <http://contextus.net/resource/dark_star/event/50> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/49>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/51>. 
+
+ <http://contextus.net/resource/dark_star/event/51> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/50>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/52>. 
+
+ <http://contextus.net/resource/dark_star/event/52> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/51>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/53>. 
+
+ <http://contextus.net/resource/dark_star/event/53> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/52>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/54>. 
+
+ <http://contextus.net/resource/dark_star/event/54> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/53>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/55>. 
+
+ <http://contextus.net/resource/dark_star/event/55> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/54>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/56>. 
+
+ <http://contextus.net/resource/dark_star/event/56> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/55>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/57>. 
+
+ <http://contextus.net/resource/dark_star/event/57> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/56>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/58>. 
+
+ <http://contextus.net/resource/dark_star/event/58> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/57>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/59>. 
+
+ <http://contextus.net/resource/dark_star/event/59> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/58>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/60>. 
+
+ <http://contextus.net/resource/dark_star/event/60> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/59>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/61>. 
+
+ <http://contextus.net/resource/dark_star/event/61> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/60>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/62>. 
+
+ <http://contextus.net/resource/dark_star/event/62> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/61>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/63>. 
+
+ <http://contextus.net/resource/dark_star/event/63> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/62>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/64>. 
+
+ <http://contextus.net/resource/dark_star/event/64> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/63>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/65>. 
+
+ <http://contextus.net/resource/dark_star/event/65> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/64>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/66>. 
+
+ <http://contextus.net/resource/dark_star/event/66> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/65>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/67>. 
+
+ <http://contextus.net/resource/dark_star/event/67> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/66>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/68>. 
+
+ <http://contextus.net/resource/dark_star/event/68> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/67>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/69>. 
+
+ <http://contextus.net/resource/dark_star/event/69> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/68>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/70>. 
+
+ <http://contextus.net/resource/dark_star/event/70> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/69>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/71>. 
+
+ <http://contextus.net/resource/dark_star/event/71> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/70>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/72>. 
+
+ <http://contextus.net/resource/dark_star/event/72> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/71>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/73>. 
+
+ <http://contextus.net/resource/dark_star/event/73> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/72>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/74>. 
+
+ <http://contextus.net/resource/dark_star/event/74> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/73>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/75>. 
+
+ <http://contextus.net/resource/dark_star/event/75> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/74>;
+     _8:has-subject-entity ds:Pinback;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/76>. 
+
+ <http://contextus.net/resource/dark_star/event/76> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/75>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/77>. 
+
+ <http://contextus.net/resource/dark_star/event/77> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/76>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/78>. 
+
+ <http://contextus.net/resource/dark_star/event/78> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/77>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/79>. 
+
+ <http://contextus.net/resource/dark_star/event/79> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/78>;
+     _8:has-subject-entity ds:Boiler;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/80>. 
+
+ <http://contextus.net/resource/dark_star/event/80> a _8:Social;
+     _8:follows <http://contextus.net/resource/dark_star/event/79>;
+     _8:has-subject-entity ds:Doolittle;
+     _8:involves ds:Boiler,
+         ds:Computer,
+         ds:Doolittle,
+         ds:Pinback;
+     _8:precedes <http://contextus.net/resource/dark_star/event/81>. 
+
+ ds:Bomb_19 a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/32>,
+         <http://contextus.net/resource/dark_star/event/34>,
+         <http://contextus.net/resource/dark_star/event/36>,
+         <http://contextus.net/resource/dark_star/event/38>,
+         <http://contextus.net/resource/dark_star/event/40>,
+         <http://contextus.net/resource/dark_star/event/42>;
+     _9:portrayed-by ds:Alan_Sheretz;
+     foaf:name "Bomb #19"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Computer a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/140>,
+         <http://contextus.net/resource/dark_star/event/141>,
+         <http://contextus.net/resource/dark_star/event/152>,
+         <http://contextus.net/resource/dark_star/event/153>,
+         <http://contextus.net/resource/dark_star/event/154>,
+         <http://contextus.net/resource/dark_star/event/155>,
+         <http://contextus.net/resource/dark_star/event/160>,
+         <http://contextus.net/resource/dark_star/event/161>,
+         <http://contextus.net/resource/dark_star/event/162>,
+         <http://contextus.net/resource/dark_star/event/163>,
+         <http://contextus.net/resource/dark_star/event/180>,
+         <http://contextus.net/resource/dark_star/event/181>,
+         <http://contextus.net/resource/dark_star/event/182>,
+         <http://contextus.net/resource/dark_star/event/46>,
+         <http://contextus.net/resource/dark_star/event/47>,
+         <http://contextus.net/resource/dark_star/event/48>,
+         <http://contextus.net/resource/dark_star/event/49>,
+         <http://contextus.net/resource/dark_star/event/50>,
+         <http://contextus.net/resource/dark_star/event/51>,
+         <http://contextus.net/resource/dark_star/event/52>,
+         <http://contextus.net/resource/dark_star/event/53>,
+         <http://contextus.net/resource/dark_star/event/54>,
+         <http://contextus.net/resource/dark_star/event/55>,
+         <http://contextus.net/resource/dark_star/event/56>,
+         <http://contextus.net/resource/dark_star/event/57>,
+         <http://contextus.net/resource/dark_star/event/58>,
+         <http://contextus.net/resource/dark_star/event/59>,
+         <http://contextus.net/resource/dark_star/event/60>,
+         <http://contextus.net/resource/dark_star/event/61>,
+         <http://contextus.net/resource/dark_star/event/62>,
+         <http://contextus.net/resource/dark_star/event/63>,
+         <http://contextus.net/resource/dark_star/event/64>,
+         <http://contextus.net/resource/dark_star/event/65>,
+         <http://contextus.net/resource/dark_star/event/66>,
+         <http://contextus.net/resource/dark_star/event/67>,
+         <http://contextus.net/resource/dark_star/event/68>,
+         <http://contextus.net/resource/dark_star/event/69>,
+         <http://contextus.net/resource/dark_star/event/70>,
+         <http://contextus.net/resource/dark_star/event/71>,
+         <http://contextus.net/resource/dark_star/event/72>,
+         <http://contextus.net/resource/dark_star/event/73>,
+         <http://contextus.net/resource/dark_star/event/74>,
+         <http://contextus.net/resource/dark_star/event/75>,
+         <http://contextus.net/resource/dark_star/event/76>,
+         <http://contextus.net/resource/dark_star/event/77>,
+         <http://contextus.net/resource/dark_star/event/78>,
+         <http://contextus.net/resource/dark_star/event/79>,
+         <http://contextus.net/resource/dark_star/event/80>;
+     _9:portrayed-by ds:Cookie_Knapp;
+     foaf:name "Computer"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Powell a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/183>,
+         <http://contextus.net/resource/dark_star/event/184>,
+         <http://contextus.net/resource/dark_star/event/185>,
+         <http://contextus.net/resource/dark_star/event/186>,
+         <http://contextus.net/resource/dark_star/event/187>,
+         <http://contextus.net/resource/dark_star/event/188>,
+         <http://contextus.net/resource/dark_star/event/189>,
+         <http://contextus.net/resource/dark_star/event/190>,
+         <http://contextus.net/resource/dark_star/event/191>,
+         <http://contextus.net/resource/dark_star/event/192>,
+         <http://contextus.net/resource/dark_star/event/193>,
+         <http://contextus.net/resource/dark_star/event/194>,
+         <http://contextus.net/resource/dark_star/event/195>,
+         <http://contextus.net/resource/dark_star/event/196>,
+         <http://contextus.net/resource/dark_star/event/197>,
+         <http://contextus.net/resource/dark_star/event/198>,
+         <http://contextus.net/resource/dark_star/event/199>,
+         <http://contextus.net/resource/dark_star/event/200>,
+         <http://contextus.net/resource/dark_star/event/201>,
+         <http://contextus.net/resource/dark_star/event/202>,
+         <http://contextus.net/resource/dark_star/event/203>,
+         <http://contextus.net/resource/dark_star/event/204>,
+         <http://contextus.net/resource/dark_star/event/205>,
+         <http://contextus.net/resource/dark_star/event/206>,
+         <http://contextus.net/resource/dark_star/event/207>,
+         <http://contextus.net/resource/dark_star/event/208>,
+         <http://contextus.net/resource/dark_star/event/215>,
+         <http://contextus.net/resource/dark_star/event/216>,
+         <http://contextus.net/resource/dark_star/event/217>,
+         <http://contextus.net/resource/dark_star/event/218>,
+         <http://contextus.net/resource/dark_star/event/219>,
+         <http://contextus.net/resource/dark_star/event/220>,
+         <http://contextus.net/resource/dark_star/event/221>,
+         <http://contextus.net/resource/dark_star/event/222>,
+         <http://contextus.net/resource/dark_star/event/223>,
+         <http://contextus.net/resource/dark_star/event/224>,
+         <http://contextus.net/resource/dark_star/event/325>,
+         <http://contextus.net/resource/dark_star/event/326>,
+         <http://contextus.net/resource/dark_star/event/327>,
+         <http://contextus.net/resource/dark_star/event/328>,
+         <http://contextus.net/resource/dark_star/event/329>,
+         <http://contextus.net/resource/dark_star/event/330>,
+         <http://contextus.net/resource/dark_star/event/331>,
+         <http://contextus.net/resource/dark_star/event/332>,
+         <http://contextus.net/resource/dark_star/event/333>,
+         <http://contextus.net/resource/dark_star/event/334>,
+         <http://contextus.net/resource/dark_star/event/335>,
+         <http://contextus.net/resource/dark_star/event/336>,
+         <http://contextus.net/resource/dark_star/event/337>,
+         <http://contextus.net/resource/dark_star/event/338>,
+         <http://contextus.net/resource/dark_star/event/339>,
+         <http://contextus.net/resource/dark_star/event/340>,
+         <http://contextus.net/resource/dark_star/event/341>,
+         <http://contextus.net/resource/dark_star/event/342>,
+         <http://contextus.net/resource/dark_star/event/343>,
+         <http://contextus.net/resource/dark_star/event/344>,
+         <http://contextus.net/resource/dark_star/event/345>,
+         <http://contextus.net/resource/dark_star/event/346>,
+         <http://contextus.net/resource/dark_star/event/347>,
+         <http://contextus.net/resource/dark_star/event/348>;
+     _9:portrayed-by ds:Joe_Saunders;
+     foaf:name "Commander Powell"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Bomb_20 a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/139>,
+         <http://contextus.net/resource/dark_star/event/147>,
+         <http://contextus.net/resource/dark_star/event/151>,
+         <http://contextus.net/resource/dark_star/event/176>,
+         <http://contextus.net/resource/dark_star/event/177>,
+         <http://contextus.net/resource/dark_star/event/178>,
+         <http://contextus.net/resource/dark_star/event/179>,
+         <http://contextus.net/resource/dark_star/event/209>,
+         <http://contextus.net/resource/dark_star/event/210>,
+         <http://contextus.net/resource/dark_star/event/211>,
+         <http://contextus.net/resource/dark_star/event/212>,
+         <http://contextus.net/resource/dark_star/event/227>,
+         <http://contextus.net/resource/dark_star/event/228>,
+         <http://contextus.net/resource/dark_star/event/229>,
+         <http://contextus.net/resource/dark_star/event/230>,
+         <http://contextus.net/resource/dark_star/event/231>,
+         <http://contextus.net/resource/dark_star/event/234>,
+         <http://contextus.net/resource/dark_star/event/235>,
+         <http://contextus.net/resource/dark_star/event/236>,
+         <http://contextus.net/resource/dark_star/event/237>,
+         <http://contextus.net/resource/dark_star/event/238>,
+         <http://contextus.net/resource/dark_star/event/239>,
+         <http://contextus.net/resource/dark_star/event/240>,
+         <http://contextus.net/resource/dark_star/event/241>,
+         <http://contextus.net/resource/dark_star/event/242>,
+         <http://contextus.net/resource/dark_star/event/243>,
+         <http://contextus.net/resource/dark_star/event/244>,
+         <http://contextus.net/resource/dark_star/event/245>,
+         <http://contextus.net/resource/dark_star/event/246>,
+         <http://contextus.net/resource/dark_star/event/247>,
+         <http://contextus.net/resource/dark_star/event/248>,
+         <http://contextus.net/resource/dark_star/event/249>,
+         <http://contextus.net/resource/dark_star/event/250>,
+         <http://contextus.net/resource/dark_star/event/251>,
+         <http://contextus.net/resource/dark_star/event/261>,
+         <http://contextus.net/resource/dark_star/event/262>,
+         <http://contextus.net/resource/dark_star/event/263>,
+         <http://contextus.net/resource/dark_star/event/264>,
+         <http://contextus.net/resource/dark_star/event/265>,
+         <http://contextus.net/resource/dark_star/event/266>,
+         <http://contextus.net/resource/dark_star/event/267>,
+         <http://contextus.net/resource/dark_star/event/268>,
+         <http://contextus.net/resource/dark_star/event/269>,
+         <http://contextus.net/resource/dark_star/event/270>,
+         <http://contextus.net/resource/dark_star/event/271>,
+         <http://contextus.net/resource/dark_star/event/272>,
+         <http://contextus.net/resource/dark_star/event/277>,
+         <http://contextus.net/resource/dark_star/event/278>,
+         <http://contextus.net/resource/dark_star/event/279>,
+         <http://contextus.net/resource/dark_star/event/280>,
+         <http://contextus.net/resource/dark_star/event/281>,
+         <http://contextus.net/resource/dark_star/event/282>,
+         <http://contextus.net/resource/dark_star/event/283>,
+         <http://contextus.net/resource/dark_star/event/284>,
+         <http://contextus.net/resource/dark_star/event/305>,
+         <http://contextus.net/resource/dark_star/event/306>,
+         <http://contextus.net/resource/dark_star/event/307>,
+         <http://contextus.net/resource/dark_star/event/308>,
+         <http://contextus.net/resource/dark_star/event/309>,
+         <http://contextus.net/resource/dark_star/event/310>,
+         <http://contextus.net/resource/dark_star/event/311>,
+         <http://contextus.net/resource/dark_star/event/312>,
+         <http://contextus.net/resource/dark_star/event/313>,
+         <http://contextus.net/resource/dark_star/event/317>,
+         <http://contextus.net/resource/dark_star/event/320>,
+         <http://contextus.net/resource/dark_star/event/323>,
+         <http://contextus.net/resource/dark_star/event/324>;
+     _9:portrayed-by ds:Adam_Beckenbaugh;
+     foaf:name "Bomb #20"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Talby a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/10>,
+         <http://contextus.net/resource/dark_star/event/100>,
+         <http://contextus.net/resource/dark_star/event/101>,
+         <http://contextus.net/resource/dark_star/event/102>,
+         <http://contextus.net/resource/dark_star/event/103>,
+         <http://contextus.net/resource/dark_star/event/104>,
+         <http://contextus.net/resource/dark_star/event/105>,
+         <http://contextus.net/resource/dark_star/event/106>,
+         <http://contextus.net/resource/dark_star/event/107>,
+         <http://contextus.net/resource/dark_star/event/108>,
+         <http://contextus.net/resource/dark_star/event/109>,
+         <http://contextus.net/resource/dark_star/event/11>,
+         <http://contextus.net/resource/dark_star/event/110>,
+         <http://contextus.net/resource/dark_star/event/12>,
+         <http://contextus.net/resource/dark_star/event/124>,
+         <http://contextus.net/resource/dark_star/event/125>,
+         <http://contextus.net/resource/dark_star/event/126>,
+         <http://contextus.net/resource/dark_star/event/13>,
+         <http://contextus.net/resource/dark_star/event/14>,
+         <http://contextus.net/resource/dark_star/event/140>,
+         <http://contextus.net/resource/dark_star/event/141>,
+         <http://contextus.net/resource/dark_star/event/143>,
+         <http://contextus.net/resource/dark_star/event/144>,
+         <http://contextus.net/resource/dark_star/event/145>,
+         <http://contextus.net/resource/dark_star/event/146>,
+         <http://contextus.net/resource/dark_star/event/15>,
+         <http://contextus.net/resource/dark_star/event/152>,
+         <http://contextus.net/resource/dark_star/event/153>,
+         <http://contextus.net/resource/dark_star/event/154>,
+         <http://contextus.net/resource/dark_star/event/155>,
+         <http://contextus.net/resource/dark_star/event/16>,
+         <http://contextus.net/resource/dark_star/event/160>,
+         <http://contextus.net/resource/dark_star/event/161>,
+         <http://contextus.net/resource/dark_star/event/162>,
+         <http://contextus.net/resource/dark_star/event/163>,
+         <http://contextus.net/resource/dark_star/event/17>,
+         <http://contextus.net/resource/dark_star/event/18>,
+         <http://contextus.net/resource/dark_star/event/19>,
+         <http://contextus.net/resource/dark_star/event/20>,
+         <http://contextus.net/resource/dark_star/event/21>,
+         <http://contextus.net/resource/dark_star/event/22>,
+         <http://contextus.net/resource/dark_star/event/23>,
+         <http://contextus.net/resource/dark_star/event/24>,
+         <http://contextus.net/resource/dark_star/event/25>,
+         <http://contextus.net/resource/dark_star/event/26>,
+         <http://contextus.net/resource/dark_star/event/27>,
+         <http://contextus.net/resource/dark_star/event/28>,
+         <http://contextus.net/resource/dark_star/event/289>,
+         <http://contextus.net/resource/dark_star/event/291>,
+         <http://contextus.net/resource/dark_star/event/303>,
+         <http://contextus.net/resource/dark_star/event/304>,
+         <http://contextus.net/resource/dark_star/event/314>,
+         <http://contextus.net/resource/dark_star/event/315>,
+         <http://contextus.net/resource/dark_star/event/325>,
+         <http://contextus.net/resource/dark_star/event/326>,
+         <http://contextus.net/resource/dark_star/event/327>,
+         <http://contextus.net/resource/dark_star/event/328>,
+         <http://contextus.net/resource/dark_star/event/329>,
+         <http://contextus.net/resource/dark_star/event/330>,
+         <http://contextus.net/resource/dark_star/event/331>,
+         <http://contextus.net/resource/dark_star/event/332>,
+         <http://contextus.net/resource/dark_star/event/333>,
+         <http://contextus.net/resource/dark_star/event/334>,
+         <http://contextus.net/resource/dark_star/event/335>,
+         <http://contextus.net/resource/dark_star/event/336>,
+         <http://contextus.net/resource/dark_star/event/337>,
+         <http://contextus.net/resource/dark_star/event/338>,
+         <http://contextus.net/resource/dark_star/event/339>,
+         <http://contextus.net/resource/dark_star/event/340>,
+         <http://contextus.net/resource/dark_star/event/341>,
+         <http://contextus.net/resource/dark_star/event/342>,
+         <http://contextus.net/resource/dark_star/event/343>,
+         <http://contextus.net/resource/dark_star/event/344>,
+         <http://contextus.net/resource/dark_star/event/345>,
+         <http://contextus.net/resource/dark_star/event/346>,
+         <http://contextus.net/resource/dark_star/event/347>,
+         <http://contextus.net/resource/dark_star/event/348>,
+         <http://contextus.net/resource/dark_star/event/45>,
+         <http://contextus.net/resource/dark_star/event/6>,
+         <http://contextus.net/resource/dark_star/event/7>,
+         <http://contextus.net/resource/dark_star/event/8>,
+         <http://contextus.net/resource/dark_star/event/84>,
+         <http://contextus.net/resource/dark_star/event/85>,
+         <http://contextus.net/resource/dark_star/event/86>,
+         <http://contextus.net/resource/dark_star/event/87>,
+         <http://contextus.net/resource/dark_star/event/88>,
+         <http://contextus.net/resource/dark_star/event/89>,
+         <http://contextus.net/resource/dark_star/event/9>,
+         <http://contextus.net/resource/dark_star/event/90>,
+         <http://contextus.net/resource/dark_star/event/91>,
+         <http://contextus.net/resource/dark_star/event/92>,
+         <http://contextus.net/resource/dark_star/event/93>,
+         <http://contextus.net/resource/dark_star/event/94>,
+         <http://contextus.net/resource/dark_star/event/95>,
+         <http://contextus.net/resource/dark_star/event/96>,
+         <http://contextus.net/resource/dark_star/event/97>,
+         <http://contextus.net/resource/dark_star/event/98>,
+         <http://contextus.net/resource/dark_star/event/99>;
+     _9:portrayed-by dbpedia:Dre_Pahich;
+     foaf:name "Talby"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Boiler a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/10>,
+         <http://contextus.net/resource/dark_star/event/11>,
+         <http://contextus.net/resource/dark_star/event/111>,
+         <http://contextus.net/resource/dark_star/event/112>,
+         <http://contextus.net/resource/dark_star/event/113>,
+         <http://contextus.net/resource/dark_star/event/114>,
+         <http://contextus.net/resource/dark_star/event/115>,
+         <http://contextus.net/resource/dark_star/event/116>,
+         <http://contextus.net/resource/dark_star/event/117>,
+         <http://contextus.net/resource/dark_star/event/118>,
+         <http://contextus.net/resource/dark_star/event/119>,
+         <http://contextus.net/resource/dark_star/event/12>,
+         <http://contextus.net/resource/dark_star/event/120>,
+         <http://contextus.net/resource/dark_star/event/121>,
+         <http://contextus.net/resource/dark_star/event/122>,
+         <http://contextus.net/resource/dark_star/event/127>,
+         <http://contextus.net/resource/dark_star/event/128>,
+         <http://contextus.net/resource/dark_star/event/129>,
+         <http://contextus.net/resource/dark_star/event/13>,
+         <http://contextus.net/resource/dark_star/event/130>,
+         <http://contextus.net/resource/dark_star/event/131>,
+         <http://contextus.net/resource/dark_star/event/133>,
+         <http://contextus.net/resource/dark_star/event/134>,
+         <http://contextus.net/resource/dark_star/event/135>,
+         <http://contextus.net/resource/dark_star/event/136>,
+         <http://contextus.net/resource/dark_star/event/14>,
+         <http://contextus.net/resource/dark_star/event/15>,
+         <http://contextus.net/resource/dark_star/event/158>,
+         <http://contextus.net/resource/dark_star/event/159>,
+         <http://contextus.net/resource/dark_star/event/16>,
+         <http://contextus.net/resource/dark_star/event/164>,
+         <http://contextus.net/resource/dark_star/event/165>,
+         <http://contextus.net/resource/dark_star/event/166>,
+         <http://contextus.net/resource/dark_star/event/167>,
+         <http://contextus.net/resource/dark_star/event/168>,
+         <http://contextus.net/resource/dark_star/event/169>,
+         <http://contextus.net/resource/dark_star/event/17>,
+         <http://contextus.net/resource/dark_star/event/170>,
+         <http://contextus.net/resource/dark_star/event/171>,
+         <http://contextus.net/resource/dark_star/event/172>,
+         <http://contextus.net/resource/dark_star/event/173>,
+         <http://contextus.net/resource/dark_star/event/174>,
+         <http://contextus.net/resource/dark_star/event/175>,
+         <http://contextus.net/resource/dark_star/event/18>,
+         <http://contextus.net/resource/dark_star/event/19>,
+         <http://contextus.net/resource/dark_star/event/20>,
+         <http://contextus.net/resource/dark_star/event/21>,
+         <http://contextus.net/resource/dark_star/event/213>,
+         <http://contextus.net/resource/dark_star/event/214>,
+         <http://contextus.net/resource/dark_star/event/22>,
+         <http://contextus.net/resource/dark_star/event/23>,
+         <http://contextus.net/resource/dark_star/event/232>,
+         <http://contextus.net/resource/dark_star/event/233>,
+         <http://contextus.net/resource/dark_star/event/24>,
+         <http://contextus.net/resource/dark_star/event/25>,
+         <http://contextus.net/resource/dark_star/event/252>,
+         <http://contextus.net/resource/dark_star/event/253>,
+         <http://contextus.net/resource/dark_star/event/254>,
+         <http://contextus.net/resource/dark_star/event/255>,
+         <http://contextus.net/resource/dark_star/event/256>,
+         <http://contextus.net/resource/dark_star/event/257>,
+         <http://contextus.net/resource/dark_star/event/258>,
+         <http://contextus.net/resource/dark_star/event/259>,
+         <http://contextus.net/resource/dark_star/event/26>,
+         <http://contextus.net/resource/dark_star/event/260>,
+         <http://contextus.net/resource/dark_star/event/27>,
+         <http://contextus.net/resource/dark_star/event/273>,
+         <http://contextus.net/resource/dark_star/event/274>,
+         <http://contextus.net/resource/dark_star/event/275>,
+         <http://contextus.net/resource/dark_star/event/276>,
+         <http://contextus.net/resource/dark_star/event/28>,
+         <http://contextus.net/resource/dark_star/event/285>,
+         <http://contextus.net/resource/dark_star/event/286>,
+         <http://contextus.net/resource/dark_star/event/287>,
+         <http://contextus.net/resource/dark_star/event/288>,
+         <http://contextus.net/resource/dark_star/event/290>,
+         <http://contextus.net/resource/dark_star/event/292>,
+         <http://contextus.net/resource/dark_star/event/293>,
+         <http://contextus.net/resource/dark_star/event/299>,
+         <http://contextus.net/resource/dark_star/event/300>,
+         <http://contextus.net/resource/dark_star/event/302>,
+         <http://contextus.net/resource/dark_star/event/318>,
+         <http://contextus.net/resource/dark_star/event/319>,
+         <http://contextus.net/resource/dark_star/event/321>,
+         <http://contextus.net/resource/dark_star/event/322>,
+         <http://contextus.net/resource/dark_star/event/46>,
+         <http://contextus.net/resource/dark_star/event/47>,
+         <http://contextus.net/resource/dark_star/event/48>,
+         <http://contextus.net/resource/dark_star/event/49>,
+         <http://contextus.net/resource/dark_star/event/50>,
+         <http://contextus.net/resource/dark_star/event/51>,
+         <http://contextus.net/resource/dark_star/event/52>,
+         <http://contextus.net/resource/dark_star/event/53>,
+         <http://contextus.net/resource/dark_star/event/54>,
+         <http://contextus.net/resource/dark_star/event/55>,
+         <http://contextus.net/resource/dark_star/event/56>,
+         <http://contextus.net/resource/dark_star/event/57>,
+         <http://contextus.net/resource/dark_star/event/58>,
+         <http://contextus.net/resource/dark_star/event/59>,
+         <http://contextus.net/resource/dark_star/event/60>,
+         <http://contextus.net/resource/dark_star/event/61>,
+         <http://contextus.net/resource/dark_star/event/62>,
+         <http://contextus.net/resource/dark_star/event/63>,
+         <http://contextus.net/resource/dark_star/event/64>,
+         <http://contextus.net/resource/dark_star/event/65>,
+         <http://contextus.net/resource/dark_star/event/66>,
+         <http://contextus.net/resource/dark_star/event/67>,
+         <http://contextus.net/resource/dark_star/event/68>,
+         <http://contextus.net/resource/dark_star/event/69>,
+         <http://contextus.net/resource/dark_star/event/70>,
+         <http://contextus.net/resource/dark_star/event/71>,
+         <http://contextus.net/resource/dark_star/event/72>,
+         <http://contextus.net/resource/dark_star/event/73>,
+         <http://contextus.net/resource/dark_star/event/74>,
+         <http://contextus.net/resource/dark_star/event/75>,
+         <http://contextus.net/resource/dark_star/event/76>,
+         <http://contextus.net/resource/dark_star/event/77>,
+         <http://contextus.net/resource/dark_star/event/78>,
+         <http://contextus.net/resource/dark_star/event/79>,
+         <http://contextus.net/resource/dark_star/event/80>;
+     _9:portrayed-by dbpedia:Cal_Kuniholm;
+     foaf:name "Boiler"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Pinback a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/10>,
+         <http://contextus.net/resource/dark_star/event/11>,
+         <http://contextus.net/resource/dark_star/event/111>,
+         <http://contextus.net/resource/dark_star/event/112>,
+         <http://contextus.net/resource/dark_star/event/113>,
+         <http://contextus.net/resource/dark_star/event/114>,
+         <http://contextus.net/resource/dark_star/event/115>,
+         <http://contextus.net/resource/dark_star/event/116>,
+         <http://contextus.net/resource/dark_star/event/117>,
+         <http://contextus.net/resource/dark_star/event/118>,
+         <http://contextus.net/resource/dark_star/event/119>,
+         <http://contextus.net/resource/dark_star/event/12>,
+         <http://contextus.net/resource/dark_star/event/120>,
+         <http://contextus.net/resource/dark_star/event/121>,
+         <http://contextus.net/resource/dark_star/event/122>,
+         <http://contextus.net/resource/dark_star/event/13>,
+         <http://contextus.net/resource/dark_star/event/133>,
+         <http://contextus.net/resource/dark_star/event/134>,
+         <http://contextus.net/resource/dark_star/event/135>,
+         <http://contextus.net/resource/dark_star/event/136>,
+         <http://contextus.net/resource/dark_star/event/137>,
+         <http://contextus.net/resource/dark_star/event/138>,
+         <http://contextus.net/resource/dark_star/event/14>,
+         <http://contextus.net/resource/dark_star/event/144>,
+         <http://contextus.net/resource/dark_star/event/145>,
+         <http://contextus.net/resource/dark_star/event/146>,
+         <http://contextus.net/resource/dark_star/event/148>,
+         <http://contextus.net/resource/dark_star/event/15>,
+         <http://contextus.net/resource/dark_star/event/150>,
+         <http://contextus.net/resource/dark_star/event/156>,
+         <http://contextus.net/resource/dark_star/event/16>,
+         <http://contextus.net/resource/dark_star/event/164>,
+         <http://contextus.net/resource/dark_star/event/165>,
+         <http://contextus.net/resource/dark_star/event/166>,
+         <http://contextus.net/resource/dark_star/event/167>,
+         <http://contextus.net/resource/dark_star/event/168>,
+         <http://contextus.net/resource/dark_star/event/169>,
+         <http://contextus.net/resource/dark_star/event/17>,
+         <http://contextus.net/resource/dark_star/event/170>,
+         <http://contextus.net/resource/dark_star/event/171>,
+         <http://contextus.net/resource/dark_star/event/172>,
+         <http://contextus.net/resource/dark_star/event/173>,
+         <http://contextus.net/resource/dark_star/event/174>,
+         <http://contextus.net/resource/dark_star/event/175>,
+         <http://contextus.net/resource/dark_star/event/18>,
+         <http://contextus.net/resource/dark_star/event/180>,
+         <http://contextus.net/resource/dark_star/event/181>,
+         <http://contextus.net/resource/dark_star/event/182>,
+         <http://contextus.net/resource/dark_star/event/19>,
+         <http://contextus.net/resource/dark_star/event/2>,
+         <http://contextus.net/resource/dark_star/event/20>,
+         <http://contextus.net/resource/dark_star/event/209>,
+         <http://contextus.net/resource/dark_star/event/21>,
+         <http://contextus.net/resource/dark_star/event/210>,
+         <http://contextus.net/resource/dark_star/event/211>,
+         <http://contextus.net/resource/dark_star/event/213>,
+         <http://contextus.net/resource/dark_star/event/214>,
+         <http://contextus.net/resource/dark_star/event/22>,
+         <http://contextus.net/resource/dark_star/event/225>,
+         <http://contextus.net/resource/dark_star/event/226>,
+         <http://contextus.net/resource/dark_star/event/23>,
+         <http://contextus.net/resource/dark_star/event/232>,
+         <http://contextus.net/resource/dark_star/event/233>,
+         <http://contextus.net/resource/dark_star/event/24>,
+         <http://contextus.net/resource/dark_star/event/25>,
+         <http://contextus.net/resource/dark_star/event/252>,
+         <http://contextus.net/resource/dark_star/event/253>,
+         <http://contextus.net/resource/dark_star/event/254>,
+         <http://contextus.net/resource/dark_star/event/255>,
+         <http://contextus.net/resource/dark_star/event/256>,
+         <http://contextus.net/resource/dark_star/event/257>,
+         <http://contextus.net/resource/dark_star/event/258>,
+         <http://contextus.net/resource/dark_star/event/259>,
+         <http://contextus.net/resource/dark_star/event/26>,
+         <http://contextus.net/resource/dark_star/event/260>,
+         <http://contextus.net/resource/dark_star/event/27>,
+         <http://contextus.net/resource/dark_star/event/273>,
+         <http://contextus.net/resource/dark_star/event/274>,
+         <http://contextus.net/resource/dark_star/event/275>,
+         <http://contextus.net/resource/dark_star/event/276>,
+         <http://contextus.net/resource/dark_star/event/28>,
+         <http://contextus.net/resource/dark_star/event/285>,
+         <http://contextus.net/resource/dark_star/event/286>,
+         <http://contextus.net/resource/dark_star/event/287>,
+         <http://contextus.net/resource/dark_star/event/288>,
+         <http://contextus.net/resource/dark_star/event/292>,
+         <http://contextus.net/resource/dark_star/event/293>,
+         <http://contextus.net/resource/dark_star/event/295>,
+         <http://contextus.net/resource/dark_star/event/297>,
+         <http://contextus.net/resource/dark_star/event/299>,
+         <http://contextus.net/resource/dark_star/event/3>,
+         <http://contextus.net/resource/dark_star/event/30>,
+         <http://contextus.net/resource/dark_star/event/300>,
+         <http://contextus.net/resource/dark_star/event/305>,
+         <http://contextus.net/resource/dark_star/event/306>,
+         <http://contextus.net/resource/dark_star/event/307>,
+         <http://contextus.net/resource/dark_star/event/308>,
+         <http://contextus.net/resource/dark_star/event/309>,
+         <http://contextus.net/resource/dark_star/event/31>,
+         <http://contextus.net/resource/dark_star/event/310>,
+         <http://contextus.net/resource/dark_star/event/311>,
+         <http://contextus.net/resource/dark_star/event/312>,
+         <http://contextus.net/resource/dark_star/event/313>,
+         <http://contextus.net/resource/dark_star/event/316>,
+         <http://contextus.net/resource/dark_star/event/318>,
+         <http://contextus.net/resource/dark_star/event/319>,
+         <http://contextus.net/resource/dark_star/event/321>,
+         <http://contextus.net/resource/dark_star/event/322>,
+         <http://contextus.net/resource/dark_star/event/33>,
+         <http://contextus.net/resource/dark_star/event/35>,
+         <http://contextus.net/resource/dark_star/event/37>,
+         <http://contextus.net/resource/dark_star/event/39>,
+         <http://contextus.net/resource/dark_star/event/4>,
+         <http://contextus.net/resource/dark_star/event/41>,
+         <http://contextus.net/resource/dark_star/event/43>,
+         <http://contextus.net/resource/dark_star/event/46>,
+         <http://contextus.net/resource/dark_star/event/47>,
+         <http://contextus.net/resource/dark_star/event/48>,
+         <http://contextus.net/resource/dark_star/event/49>,
+         <http://contextus.net/resource/dark_star/event/5>,
+         <http://contextus.net/resource/dark_star/event/50>,
+         <http://contextus.net/resource/dark_star/event/51>,
+         <http://contextus.net/resource/dark_star/event/52>,
+         <http://contextus.net/resource/dark_star/event/53>,
+         <http://contextus.net/resource/dark_star/event/54>,
+         <http://contextus.net/resource/dark_star/event/55>,
+         <http://contextus.net/resource/dark_star/event/56>,
+         <http://contextus.net/resource/dark_star/event/57>,
+         <http://contextus.net/resource/dark_star/event/58>,
+         <http://contextus.net/resource/dark_star/event/59>,
+         <http://contextus.net/resource/dark_star/event/60>,
+         <http://contextus.net/resource/dark_star/event/61>,
+         <http://contextus.net/resource/dark_star/event/62>,
+         <http://contextus.net/resource/dark_star/event/63>,
+         <http://contextus.net/resource/dark_star/event/64>,
+         <http://contextus.net/resource/dark_star/event/65>,
+         <http://contextus.net/resource/dark_star/event/66>,
+         <http://contextus.net/resource/dark_star/event/67>,
+         <http://contextus.net/resource/dark_star/event/68>,
+         <http://contextus.net/resource/dark_star/event/69>,
+         <http://contextus.net/resource/dark_star/event/70>,
+         <http://contextus.net/resource/dark_star/event/71>,
+         <http://contextus.net/resource/dark_star/event/72>,
+         <http://contextus.net/resource/dark_star/event/73>,
+         <http://contextus.net/resource/dark_star/event/74>,
+         <http://contextus.net/resource/dark_star/event/75>,
+         <http://contextus.net/resource/dark_star/event/76>,
+         <http://contextus.net/resource/dark_star/event/77>,
+         <http://contextus.net/resource/dark_star/event/78>,
+         <http://contextus.net/resource/dark_star/event/79>,
+         <http://contextus.net/resource/dark_star/event/80>;
+     _9:portrayed-by _10:Bannon;
+     foaf:name "Sgt. Pinback"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
+
+ ds:Doolittle a _9:Character;
+     _8:involved-in <http://contextus.net/resource/dark_star/event/10>,
+         <http://contextus.net/resource/dark_star/event/100>,
+         <http://contextus.net/resource/dark_star/event/101>,
+         <http://contextus.net/resource/dark_star/event/102>,
+         <http://contextus.net/resource/dark_star/event/103>,
+         <http://contextus.net/resource/dark_star/event/104>,
+         <http://contextus.net/resource/dark_star/event/105>,
+         <http://contextus.net/resource/dark_star/event/106>,
+         <http://contextus.net/resource/dark_star/event/107>,
+         <http://contextus.net/resource/dark_star/event/108>,
+         <http://contextus.net/resource/dark_star/event/109>,
+         <http://contextus.net/resource/dark_star/event/11>,
+         <http://contextus.net/resource/dark_star/event/110>,
+         <http://contextus.net/resource/dark_star/event/111>,
+         <http://contextus.net/resource/dark_star/event/112>,
+         <http://contextus.net/resource/dark_star/event/113>,
+         <http://contextus.net/resource/dark_star/event/114>,
+         <http://contextus.net/resource/dark_star/event/115>,
+         <http://contextus.net/resource/dark_star/event/116>,
+         <http://contextus.net/resource/dark_star/event/117>,
+         <http://contextus.net/resource/dark_star/event/118>,
+         <http://contextus.net/resource/dark_star/event/119>,
+         <http://contextus.net/resource/dark_star/event/12>,
+         <http://contextus.net/resource/dark_star/event/120>,
+         <http://contextus.net/resource/dark_star/event/121>,
+         <http://contextus.net/resource/dark_star/event/122>,
+         <http://contextus.net/resource/dark_star/event/124>,
+         <http://contextus.net/resource/dark_star/event/125>,
+         <http://contextus.net/resource/dark_star/event/126>,
+         <http://contextus.net/resource/dark_star/event/127>,
+         <http://contextus.net/resource/dark_star/event/128>,
+         <http://contextus.net/resource/dark_star/event/129>,
+         <http://contextus.net/resource/dark_star/event/13>,
+         <http://contextus.net/resource/dark_star/event/130>,
+         <http://contextus.net/resource/dark_star/event/131>,
+         <http://contextus.net/resource/dark_star/event/133>,
+         <http://contextus.net/resource/dark_star/event/134>,
+         <http://contextus.net/resource/dark_star/event/135>,
+         <http://contextus.net/resource/dark_star/event/136>,
+         <http://contextus.net/resource/dark_star/event/137>,
+         <http://contextus.net/resource/dark_star/event/138>,
+         <http://contextus.net/resource/dark_star/event/14>,
+         <http://contextus.net/resource/dark_star/event/142>,
+         <http://contextus.net/resource/dark_star/event/144>,
+         <http://contextus.net/resource/dark_star/event/145>,
+         <http://contextus.net/resource/dark_star/event/146>,
+         <http://contextus.net/resource/dark_star/event/15>,
+         <http://contextus.net/resource/dark_star/event/158>,
+         <http://contextus.net/resource/dark_star/event/159>,
+         <http://contextus.net/resource/dark_star/event/16>,
+         <http://contextus.net/resource/dark_star/event/164>,
+         <http://contextus.net/resource/dark_star/event/165>,
+         <http://contextus.net/resource/dark_star/event/166>,
+         <http://contextus.net/resource/dark_star/event/167>,
+         <http://contextus.net/resource/dark_star/event/168>,
+         <http://contextus.net/resource/dark_star/event/169>,
+         <http://contextus.net/resource/dark_star/event/17>,
+         <http://contextus.net/resource/dark_star/event/170>,
+         <http://contextus.net/resource/dark_star/event/171>,
+         <http://contextus.net/resource/dark_star/event/172>,
+         <http://contextus.net/resource/dark_star/event/173>,
+         <http://contextus.net/resource/dark_star/event/174>,
+         <http://contextus.net/resource/dark_star/event/175>,
+         <http://contextus.net/resource/dark_star/event/176>,
+         <http://contextus.net/resource/dark_star/event/177>,
+         <http://contextus.net/resource/dark_star/event/178>,
+         <http://contextus.net/resource/dark_star/event/18>,
+         <http://contextus.net/resource/dark_star/event/180>,
+         <http://contextus.net/resource/dark_star/event/181>,
+         <http://contextus.net/resource/dark_star/event/182>,
+         <http://contextus.net/resource/dark_star/event/183>,
+         <http://contextus.net/resource/dark_star/event/184>,
+         <http://contextus.net/resource/dark_star/event/185>,
+         <http://contextus.net/resource/dark_star/event/186>,
+         <http://contextus.net/resource/dark_star/event/187>,
+         <http://contextus.net/resource/dark_star/event/188>,
+         <http://contextus.net/resource/dark_star/event/189>,
+         <http://contextus.net/resource/dark_star/event/19>,
+         <http://contextus.net/resource/dark_star/event/190>,
+         <http://contextus.net/resource/dark_star/event/191>,
+         <http://contextus.net/resource/dark_star/event/192>,
+         <http://contextus.net/resource/dark_star/event/193>,
+         <http://contextus.net/resource/dark_star/event/194>,
+         <http://contextus.net/resource/dark_star/event/195>,
+         <http://contextus.net/resource/dark_star/event/196>,
+         <http://contextus.net/resource/dark_star/event/197>,
+         <http://contextus.net/resource/dark_star/event/198>,
+         <http://contextus.net/resource/dark_star/event/199>,
+         <http://contextus.net/resource/dark_star/event/2>,
+         <http://contextus.net/resource/dark_star/event/20>,
+         <http://contextus.net/resource/dark_star/event/200>,
+         <http://contextus.net/resource/dark_star/event/201>,
+         <http://contextus.net/resource/dark_star/event/202>,
+         <http://contextus.net/resource/dark_star/event/203>,
+         <http://contextus.net/resource/dark_star/event/204>,
+         <http://contextus.net/resource/dark_star/event/205>,
+         <http://contextus.net/resource/dark_star/event/206>,
+         <http://contextus.net/resource/dark_star/event/207>,
+         <http://contextus.net/resource/dark_star/event/208>,
+         <http://contextus.net/resource/dark_star/event/21>,
+         <http://contextus.net/resource/dark_star/event/215>,
+         <http://contextus.net/resource/dark_star/event/216>,
+         <http://contextus.net/resource/dark_star/event/217>,
+         <http://contextus.net/resource/dark_star/event/218>,
+         <http://contextus.net/resource/dark_star/event/219>,
+         <http://contextus.net/resource/dark_star/event/22>,
+         <http://contextus.net/resource/dark_star/event/220>,
+         <http://contextus.net/resource/dark_star/event/221>,
+         <http://contextus.net/resource/dark_star/event/222>,
+         <http://contextus.net/resource/dark_star/event/223>,
+         <http://contextus.net/resource/dark_star/event/224>,
+         <http://contextus.net/resource/dark_star/event/227>,
+         <http://contextus.net/resource/dark_star/event/228>,
+         <http://contextus.net/resource/dark_star/event/229>,
+         <http://contextus.net/resource/dark_star/event/23>,
+         <http://contextus.net/resource/dark_star/event/230>,
+         <http://contextus.net/resource/dark_star/event/231>,
+         <http://contextus.net/resource/dark_star/event/234>,
+         <http://contextus.net/resource/dark_star/event/235>,
+         <http://contextus.net/resource/dark_star/event/236>,
+         <http://contextus.net/resource/dark_star/event/237>,
+         <http://contextus.net/resource/dark_star/event/238>,
+         <http://contextus.net/resource/dark_star/event/239>,
+         <http://contextus.net/resource/dark_star/event/24>,
+         <http://contextus.net/resource/dark_star/event/240>,
+         <http://contextus.net/resource/dark_star/event/241>,
+         <http://contextus.net/resource/dark_star/event/242>,
+         <http://contextus.net/resource/dark_star/event/243>,
+         <http://contextus.net/resource/dark_star/event/244>,
+         <http://contextus.net/resource/dark_star/event/245>,
+         <http://contextus.net/resource/dark_star/event/246>,
+         <http://contextus.net/resource/dark_star/event/247>,
+         <http://contextus.net/resource/dark_star/event/248>,
+         <http://contextus.net/resource/dark_star/event/249>,
+         <http://contextus.net/resource/dark_star/event/25>,
+         <http://contextus.net/resource/dark_star/event/250>,
+         <http://contextus.net/resource/dark_star/event/251>,
+         <http://contextus.net/resource/dark_star/event/26>,
+         <http://contextus.net/resource/dark_star/event/261>,
+         <http://contextus.net/resource/dark_star/event/262>,
+         <http://contextus.net/resource/dark_star/event/263>,
+         <http://contextus.net/resource/dark_star/event/264>,
+         <http://contextus.net/resource/dark_star/event/265>,
+         <http://contextus.net/resource/dark_star/event/266>,
+         <http://contextus.net/resource/dark_star/event/267>,
+         <http://contextus.net/resource/dark_star/event/268>,
+         <http://contextus.net/resource/dark_star/event/269>,
+         <http://contextus.net/resource/dark_star/event/27>,
+         <http://contextus.net/resource/dark_star/event/270>,
+         <http://contextus.net/resource/dark_star/event/271>,
+         <http://contextus.net/resource/dark_star/event/272>,
+         <http://contextus.net/resource/dark_star/event/277>,
+         <http://contextus.net/resource/dark_star/event/278>,
+         <http://contextus.net/resource/dark_star/event/279>,
+         <http://contextus.net/resource/dark_star/event/28>,
+         <http://contextus.net/resource/dark_star/event/280>,
+         <http://contextus.net/resource/dark_star/event/281>,
+         <http://contextus.net/resource/dark_star/event/282>,
+         <http://contextus.net/resource/dark_star/event/283>,
+         <http://contextus.net/resource/dark_star/event/284>,
+         <http://contextus.net/resource/dark_star/event/294>,
+         <http://contextus.net/resource/dark_star/event/296>,
+         <http://contextus.net/resource/dark_star/event/298>,
+         <http://contextus.net/resource/dark_star/event/3>,
+         <http://contextus.net/resource/dark_star/event/30>,
+         <http://contextus.net/resource/dark_star/event/301>,
+         <http://contextus.net/resource/dark_star/event/303>,
+         <http://contextus.net/resource/dark_star/event/304>,
+         <http://contextus.net/resource/dark_star/event/31>,
+         <http://contextus.net/resource/dark_star/event/314>,
+         <http://contextus.net/resource/dark_star/event/315>,
+         <http://contextus.net/resource/dark_star/event/325>,
+         <http://contextus.net/resource/dark_star/event/326>,
+         <http://contextus.net/resource/dark_star/event/327>,
+         <http://contextus.net/resource/dark_star/event/328>,
+         <http://contextus.net/resource/dark_star/event/329>,
+         <http://contextus.net/resource/dark_star/event/330>,
+         <http://contextus.net/resource/dark_star/event/331>,
+         <http://contextus.net/resource/dark_star/event/332>,
+         <http://contextus.net/resource/dark_star/event/333>,
+         <http://contextus.net/resource/dark_star/event/334>,
+         <http://contextus.net/resource/dark_star/event/335>,
+         <http://contextus.net/resource/dark_star/event/336>,
+         <http://contextus.net/resource/dark_star/event/337>,
+         <http://contextus.net/resource/dark_star/event/338>,
+         <http://contextus.net/resource/dark_star/event/339>,
+         <http://contextus.net/resource/dark_star/event/340>,
+         <http://contextus.net/resource/dark_star/event/341>,
+         <http://contextus.net/resource/dark_star/event/342>,
+         <http://contextus.net/resource/dark_star/event/343>,
+         <http://contextus.net/resource/dark_star/event/344>,
+         <http://contextus.net/resource/dark_star/event/345>,
+         <http://contextus.net/resource/dark_star/event/346>,
+         <http://contextus.net/resource/dark_star/event/347>,
+         <http://contextus.net/resource/dark_star/event/348>,
+         <http://contextus.net/resource/dark_star/event/4>,
+         <http://contextus.net/resource/dark_star/event/44>,
+         <http://contextus.net/resource/dark_star/event/46>,
+         <http://contextus.net/resource/dark_star/event/47>,
+         <http://contextus.net/resource/dark_star/event/48>,
+         <http://contextus.net/resource/dark_star/event/49>,
+         <http://contextus.net/resource/dark_star/event/5>,
+         <http://contextus.net/resource/dark_star/event/50>,
+         <http://contextus.net/resource/dark_star/event/51>,
+         <http://contextus.net/resource/dark_star/event/52>,
+         <http://contextus.net/resource/dark_star/event/53>,
+         <http://contextus.net/resource/dark_star/event/54>,
+         <http://contextus.net/resource/dark_star/event/55>,
+         <http://contextus.net/resource/dark_star/event/56>,
+         <http://contextus.net/resource/dark_star/event/57>,
+         <http://contextus.net/resource/dark_star/event/58>,
+         <http://contextus.net/resource/dark_star/event/59>,
+         <http://contextus.net/resource/dark_star/event/6>,
+         <http://contextus.net/resource/dark_star/event/60>,
+         <http://contextus.net/resource/dark_star/event/61>,
+         <http://contextus.net/resource/dark_star/event/62>,
+         <http://contextus.net/resource/dark_star/event/63>,
+         <http://contextus.net/resource/dark_star/event/64>,
+         <http://contextus.net/resource/dark_star/event/65>,
+         <http://contextus.net/resource/dark_star/event/66>,
+         <http://contextus.net/resource/dark_star/event/67>,
+         <http://contextus.net/resource/dark_star/event/68>,
+         <http://contextus.net/resource/dark_star/event/69>,
+         <http://contextus.net/resource/dark_star/event/7>,
+         <http://contextus.net/resource/dark_star/event/70>,
+         <http://contextus.net/resource/dark_star/event/71>,
+         <http://contextus.net/resource/dark_star/event/72>,
+         <http://contextus.net/resource/dark_star/event/73>,
+         <http://contextus.net/resource/dark_star/event/74>,
+         <http://contextus.net/resource/dark_star/event/75>,
+         <http://contextus.net/resource/dark_star/event/76>,
+         <http://contextus.net/resource/dark_star/event/77>,
+         <http://contextus.net/resource/dark_star/event/78>,
+         <http://contextus.net/resource/dark_star/event/79>,
+         <http://contextus.net/resource/dark_star/event/8>,
+         <http://contextus.net/resource/dark_star/event/80>,
+         <http://contextus.net/resource/dark_star/event/81>,
+         <http://contextus.net/resource/dark_star/event/82>,
+         <http://contextus.net/resource/dark_star/event/83>,
+         <http://contextus.net/resource/dark_star/event/84>,
+         <http://contextus.net/resource/dark_star/event/85>,
+         <http://contextus.net/resource/dark_star/event/86>,
+         <http://contextus.net/resource/dark_star/event/87>,
+         <http://contextus.net/resource/dark_star/event/88>,
+         <http://contextus.net/resource/dark_star/event/89>,
+         <http://contextus.net/resource/dark_star/event/9>,
+         <http://contextus.net/resource/dark_star/event/90>,
+         <http://contextus.net/resource/dark_star/event/91>,
+         <http://contextus.net/resource/dark_star/event/92>,
+         <http://contextus.net/resource/dark_star/event/93>,
+         <http://contextus.net/resource/dark_star/event/94>,
+         <http://contextus.net/resource/dark_star/event/95>,
+         <http://contextus.net/resource/dark_star/event/96>,
+         <http://contextus.net/resource/dark_star/event/97>,
+         <http://contextus.net/resource/dark_star/event/98>,
+         <http://contextus.net/resource/dark_star/event/99>;
+     _9:portrayed-by dbpedia:Brian_Narelle;
+     foaf:name "Lt. Doolittle"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 

@@ -1,17 +1,61 @@
-<performance>
+<performance
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:loc="http://signage.ecs.soton.ac.uk/ontologies/location#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:ds="http://contextus.net/resource/dark_star/">
 	<head>DARK STAR: A SCIENCE FICTION ADVENTURE</head>
 	<p>A Screenplay by John Carpenter and Dan O'Bannon</p>
 
+	<castList>
+		<castItem>
+			<actor property="foaf:name" about="[dbpedia:Brian_Narelle]">Brian Narelle</actor>
+			<role xml:id="doolittle" property="foaf:name" about="[ds:Doolittle]">Lt. Doolittle</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[dbpedia:Cal_Kuniholm]">Cal Kuniholm</actor>
+			<role xml:id="boiler" property="foaf:name" about="[ds:Boiler]">Boiler</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[dbpedia:Dre_Pahich]">Dre Pahich</actor>
+			<role xml:id="talby" property="foaf:name" about="[ds:Talby]">Talby</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[dbpedia:Dan_O'Bannon]">Dan O'Bannon</actor>
+			<role xml:id="pinback" property="foaf:name" about="[ds:Pinback]">Sgt. Pinback</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[ds:Adam_Beckenbaugh]">Adam Beckenbaugh</actor>
+			<role xml:id="bomb_20" property="foaf:name" about="[ds:Bomb_20]">Bomb #20</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[ds:Alan_Sheretz]">Alan Sheretz</actor>
+			<role xml:id="bomb_19" property="foaf:name" about="[ds:Bomb_19]">Bomb #19</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[ds:Joe_Saunders]">Joe Saunders</actor>
+			<role xml:id="powell" property="foaf:name" about="[ds:Powell]">Commander Powell</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[ds:Miles_Watkins]">Miles Watkins</actor>
+			<role xml:id="mission_control" property="foaf:name" about="[ds:Mission_Control]">Mission Control</role>
+		</castItem>
+		<castItem>
+			<actor property="foaf:name" about="[ds:Cookie_Knapp]">Cookie Knapp</actor>
+			<role xml:id="computer" property="foaf:name" about="[ds:Computer]">Computer</role>
+		</castItem>
+		<castItem>
+			<role xml:id="narrator" property="foaf:name" about="[ds:Narrator]">Narrator</role>
+		</castItem>
+	</castList>
+
 	<div1 n="1" type="scene">
-		<stage type="setting">
-			<p>OPEN ON BLACK SILENCE.</p>
+		<view>OPEN ON BLACK SILENCE.</view>
 
-			<p>The sound of electronic music rises, hollow, metallic.</p>
+			<sound>The sound of electronic music rises, hollow, metallic.</sound>
 
-			<p>FADE IN on a long TRACKING SHOT through the universe.  As the NARRATOR speaks we move through galaxies, nebulae, solar systems, moving from the infinite slowly down to a particular planetary system deep within a maze of suns.</p>
-		</stage>
-		<sp>
-			<speaker>NARRATOR</speaker>
+			<view>FADE IN on a long TRACKING SHOT through the universe.  As the NARRATOR speaks we move through galaxies, nebulae, solar systems, moving from the infinite slowly down to a particular planetary system deep within a maze of suns.</view>
+		<sp who="#narrator"><speaker>NARRATOR</speaker>
 			<stage>(over)</stage>
 			<p>It is the mid 22nd Century.  Mankind has explored the boundaries of his own solar system, and now he reaches out to the endless interstellar distances of the universe.  He moves away from his own small planetary system in huge hyperdrive starships: computer-driven, self-supporting, closed-system spacecraft that travel at mind-staggering post-light velocities.  Man has begun to spread among the stars.  Enormous ships embark with generations of colonists searching the depths of space for new earths, now homes, new beginnings.  Far in advance of these colony ships goes a new pioneer: the scouts, the pathfinders, a special breed of man who has dedicated his life to blazing the trail through the most distant, unexplored galaxies, opening up the farthest frontiers of space.  These are the men of the Advance Exploration Corps.  The task they face is one of unbelievable isolation and loneliness.  So far from home that Earth is no longer even a point of light in the sky, they must comb the universe for those unstable planets whose existence poses a threat to the peaceful colonists that follow.  They must find these rogue planets -- and destroy them.  Among these commandos are the men of the scoutship Dark Star.</p>
 		</sp>
@@ -21,50 +65,42 @@
 		<stage type="setting">
 			<p>We are now moving toward a planet.  Floating in front of the planet is the SCOUTSHIP DARK STAR.  As we move toward the ship, we begin to hear VOICES, crackling with static.</p>
 		</stage>
-		<sp>
-			<speaker>DOOLITTLE</speaker>
+		<sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 			<stage>(over -- radio filter)</stage>
 			<p>Ah, what'd you say, Pinback?</p>
 		</sp>
-		<sp>
-			<speaker>PINBACK</speaker>
+		<sp who="#pinback"><speaker>PINBACK</speaker>
 			<stage>(over -- great static)</stage>
 			<p>Mafhkin oble groop...</p>
 		</sp>
-		<sp>
-			<speaker>DOOLITTLE</speaker>
+		<sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 			<stage>(over -- filter)</stage>
 			<p>Ah, what was that again, I still can't hear you?</p>
 		</sp>
-		<sp>
-			<speaker>PINBACK</speaker>
+		<sp who="#pinback"><speaker>PINBACK</speaker>
 			<stage>(over -- filter)</stage>
 			<p>I said I'm trying to reach Talby.  Something's wrong with the damn intercom.  I need a last-minute diameter approximation.</p>
 		</sp>
 	</div1>
 	<div1 n="3" type="scene">
 		<camera>CAMERA IS NOW FLOATING TOWARD THE OBSERVATION DOME on top of the ship.</camera><view>In the Dome sits TALBY.  He is staring around, wide-eyed, at the planets and stars.</view>
-		<sp>
-			<speaker>DOOLITTLE</speaker>
+		<sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 			<stage>(over -- filter)</stage>
 			<p>Talby, Talby, this is Doolittle.  Do you read me?  Talby?</p>
 		</sp>
 
 
 		<camera>WE MOVE IN CLOSE ON TALBY'S FACE.  The shot stops and holds as he continues to stare, rapt.</camera>
-		<sp>
-			<speaker>DOOLITTLE</speaker>
+		<sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 			<stage>(cont'd -- over -- filter)</stage>
 			<p>Talby, do you read me?</p>
 		</sp>
 		<sound>There is a CRACKLE, and Doolittle's voice suddenly booms through, loud and clear:</sound>
-		<sp>
-			<speaker>DOOLITTLE</speaker>
+		<sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 			<stage>(cont'd)</stage>
 			<p><speaker>TALBY</speaker>!</p>
 		</sp>
-		<sp>
-			<speaker>TALBY</speaker>
+		<sp who="#talby"><speaker>TALBY</speaker>
 			<stage>(snaps out of it)</stage>
 			<p>Oh!  Ah, yes, Doolittle.  What is it?</p>
 		</sp>
@@ -73,80 +109,77 @@
 	<div1 n="4" type="scene">
 		<stage type="location"><p property="dc:title">INTERIOR - CONTROL ROOM</p></stage>
 		<camera>CLOSE SHOT of a digital clock, ticking down the seconds.</camera>
-		<sp>
-			<speaker>DOOLITTLE</speaker>
+		<sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 			<p>I need a diameter approximation.</p>
 		</sp>
-		<sp>
-			<speaker>TALBY</speaker>
+		<sp who="#talby"><speaker>TALBY</speaker>
 			<p>Okay, Doolittle, I'll have it in a minute.</p>
 		</sp>
 
 		<camera>CAMERA BEGINS TO PULL BACK along the length of the control room, revealing three men: BOILER, DOOLITTLE, and PINBACK.</camera><view>They are seated close together in cramped little chairs, surrounded by a maze of instrumentation, pressing buttons, making adjustments and corrections.  There is one EMPTY CHAIR; the panel in front of it looks burned.</view>
-		<sp>
-			<speaker>PINBACK</speaker>
+		<sp who="#pinback"><speaker>PINBACK</speaker>
 			<p>I need a GHF reading on the gravity correction.</p>
 		</sp>
 
-			   <sp><speaker>DOOLITTLE</speaker>
-				   <p>I'll check it.</p></sp>
+		   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
+			   <p>I'll check it.</p></sp>
 
-			   <sp><speaker>BOILER</speaker>
-				   <p>I have a reduced drive reading of seven thousand.</p></sp>
+		   <sp who="#boiler"><speaker>BOILER</speaker>
+			   <p>I have a reduced drive reading of seven thousand.</p></sp>
 
-			   <sp><speaker>PINBACK</speaker>
-				   <p>Right, that checks out here.</p></sp>
+		   <sp who="#pinback"><speaker>PINBACK</speaker>
+			   <p>Right, that checks out here.</p></sp>
 
-			   <sp><speaker>DOOLITTLE</speaker>
-				   <p>Pinback...</p></sp>
+		   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
+			   <p>Pinback...</p></sp>
 
-			   <sp><speaker>PINBACK</speaker>
-				   <p>Yes, Doolittle.</p></sp>
+		   <sp who="#pinback"><speaker>PINBACK</speaker>
+			   <p>Yes, Doolittle.</p></sp>
 
-			   <sp><speaker>DOOLITTLE</speaker>
-				   <p>Your GHF reading is minus fifteen.</p></sp>
+		   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
+			   <p>Your GHF reading is minus fifteen.</p></sp>
 
-			   <sp><speaker>PINBACK</speaker>
-				   <p>Doolittle...</p></sp>
+		   <sp who="#pinback"><speaker>PINBACK</speaker>
+			   <p>Doolittle...</p></sp>
 
-			   <sp><speaker>DOOLITTLE</speaker>
-				   <p>Yes.</p></sp>
+		   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
+			   <p>Yes.</p></sp>
 
-			   <sp><speaker>PINBACK</speaker>
-				   <p>I need a computer reading on a fail- safe mark.</p></sp>
+		   <sp who="#pinback"><speaker>PINBACK</speaker>
+			   <p>I need a computer reading on a fail- safe mark.</p></sp>
 
-			   <sp><speaker>DOOLITTLE</speaker>
-				   <p>In a second.</p></sp>
+		   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
+			   <p>In a second.</p></sp>
 
-			   <sp><speaker>PINBACK</speaker>
-				   <p>Boiler, can you set me up with some temp figures?</p></sp>
+		   <sp who="#pinback"><speaker>PINBACK</speaker>
+			   <p>Boiler, can you set me up with some temp figures?</p></sp>
 
-			   <sp><speaker>BOILER</speaker>
-				   <p>Ninety seven million, minus eight, corrected to mass critical.</p></sp>
+		   <sp who="#boiler"><speaker>BOILER</speaker>
+			   <p>Ninety seven million, minus eight, corrected to mass critical.</p></sp>
 
-			   <sp><speaker>PINBACK</speaker>
-				   <p>I read that with a quantum increase of seven.</p></sp>
+		   <sp who="#pinback"><speaker>PINBACK</speaker>
+			   <p>I read that with a quantum increase of seven.</p></sp>
 
-			   <sp><speaker>DOOLITTLE</speaker>
-				   <p>Pinback, I have a computer reading of nine five seven seven.</p></sp>
+		   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
+			   <p>Pinback, I have a computer reading of nine five seven seven.</p></sp>
 
-			   <sp><speaker>BOILER</speaker>
-				   <p>Time to start talking.</p></sp>
+		   <sp who="#boiler"><speaker>BOILER</speaker>
+			   <p>Time to start talking.</p></sp>
 
-			   <sp><speaker>PINBACK</speaker>
-				   <p>Bomb bay systems operational.</p></sp>
+		   <sp who="#pinback"><speaker>PINBACK</speaker>
+			   <p>Bomb bay systems operational.</p></sp>
 
-			   <view>Pinback hits a button on his panel.</view>
+		   <view>Pinback hits a button on his panel.</view>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">INTERIOR - BOMB BAY</p></stage>
 
      <view>The screen is BLACK for an instant.  Then, two enormous doors begin to open ponderously, revealing the planet rotating below.  A huge BOMB, designated with a giant #19 on its side, lowers slowly out of the ship on a rack.</view>
 
-     <sp><speaker>NARRATOR</speaker>
+     <sp who="#narrator"><speaker>NARRATOR</speaker>
 
 	     <stage>(over)</stage>
-	     <sp><p>This is a chain-reaction bomb, otherwise known as an Exponential Thermostellar Device.  Its own destructive power is small, barely enough to vaporize twelve city blocks.  However, when it explodes in contact with an object the size of a planet, it starts a chain-reaction in the very matter of that planet, turning it into a giant reactor which destroys itself in one staggering thermal flash.</p>
+	     <p>This is a chain-reaction bomb, otherwise known as an Exponential Thermostellar Device.  Its own destructive power is small, barely enough to vaporize twelve city blocks.  However, when it explodes in contact with an object the size of a planet, it starts a chain-reaction in the very matter of that planet, turning it into a giant reactor which destroys itself in one staggering thermal flash.</p>
 
 		     <p>These bombs are equipped with sophisticated thought and speech mechanisms, to allow them to make executive decisions in the event of a crisis situation.  These judgment centers are controlled by a fail- safe mechanism.</p></sp>
 
@@ -154,12 +187,12 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Lock fail safe.</p></sp>
 
 				   <view>Pinback turns a key in a lock.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Fail-safe locked.  Ah, Sergeant Pinback call1ng Bomb #19.  Do you read me, bomb?</p></sp>
 
      </div1>
@@ -168,7 +201,7 @@
 
      <view>The bomb is suspended beneath the ship.</view>
 
-                                   <sp><speaker>BOMB #19</speaker>
+                                   <sp who="#bomb_19"><speaker></speaker>
 					   <p>Bomb #19 to Sergeant Pinback, I read you.  Continue.</p></sp>
 
 				   <stage type="delivery">When the bomb speaks, it has the prim, fussy voice of a minor civil servant.</stage>
@@ -177,35 +210,35 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Well, bomb, we have about sixty seconds to drop.  Just wondering if everything is all right.  Have you checked your platinum euridium energy shielding?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     EXTERIOR - BOMB BAY</p></stage>
 
-                                   <sp><speaker>BOMB #19</speaker>
+                                   <sp who="#bomb_19"><speaker></speaker>
 					   <p>Energy shielding positive function.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Swell.  Let's synchronize detonation time.  Do you know when you're supposed to go off?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     EXTERIOR - BOMB BAY</p></stage>
 
-                                   <sp><speaker>BOMB #19</speaker>
+                                   <sp who="#bomb_19"><speaker></speaker>
 					   <p>Detonation in six minutes, twenty seconds.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>All right, I have detonation time at... Wait a minute, something's wrong with the clock.</p>
 					   <stage>(hits panel)</stage>
 			      <p>All right, I have detonation time at... no, that can't be right, it says three years.</p>
@@ -216,14 +249,14 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     EXTERIOR - BOMB BAY</p></stage>
 
-                                   <sp><speaker>BOMB #19</speaker>
+                                   <sp who="#bomb_19"><speaker></speaker>
 					   <p>Check at six minutes.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Arm yourself, bomb.</p></sp>
 
      </div1>
@@ -232,28 +265,28 @@
 
      <view>Several lights blip on along the bomb's side.</view>
 
-                                   <sp><speaker>BOMB #19</speaker>
+                                   <sp who="#bomb_19"><speaker></speaker>
 					   <p>Armed.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Well, then, everything sounds fine.  We'll drop you off in thirty-five seconds.  Good luck.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     EXTERIOR - BOMB BAY</p></stage>
 
-                                   <sp><speaker>BOMB #19</speaker>
+                                   <sp who="#bomb_19"><speaker></speaker>
 					   <p>Thanks.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Begin main sequence.  Mark at 10-9-8- 7-6-5-4-3-2-1-drop.</p></sp>
 
      </div1>
@@ -266,7 +299,7 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Hyperdrive sequence begun.  Hit it, Pinback.</p></sp>
 
 				   <view>Pinback hits the hyperdrive switch.  Force fields energize around the men.</view>
@@ -299,7 +332,7 @@
 
      <view>Talby touches his intercom.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 				   <p>Lieutenant Doolittle, it just exploded.</p>
 				   <stage>(pause)</stage>
 			      <p>Ah, sir, the planet just exploded.</p>
@@ -312,134 +345,134 @@
 
      <view>The men are stretching in their seats.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Unlock fail safe.</p></sp>
 
 				   <view>Pinback unlocks the fail-safe unit.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Fail safe unlocked.</p></sp>
 
-                                   <sp><speaker>RECORDED VOICE</speaker>
+                                   <sp who="#computer"><speaker>RECORDED VOICE</speaker>
 					   <p>Attention.  Attention.  The hyperdrive sequence is now terminated.  Please observe that the no smoking signs have growrrr...</p></sp>
 
 				   <sound>The voice runs down.</sound>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Well... now what?  What do, you have for us now.  Boiler?</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 <stage>                              (checking his readouts)</stage>
 <p>Not much.  Nothing at all in this sector.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Find me something, I don't care where it is.</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Well, I show a 95% probability of sentient life in the Horsehead Nebula...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Fuck that shit.</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Well, it is kind of a long shot...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>It's a goddamn wild goose chase.  Remember when Commander Powell found that 99 plus probability of sentient life in the Magellanic Cloud?</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Well, there's the possibility of...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Remember what we found?  Fourteen light years for a fucking mindless vegetable that looked like a limp balloon and went squawk and let a fart when you touched it.  Remember?</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>All right, then...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>So don't give me any of that sentient life crap.  Find me something I can blow up.</p></sp>
 
 				   <view>A LIGHT flares on Pinback's board.  He looks up.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 				   <p>New star.</p>
 				   <stage>(no reaction)</stage>
 			      <p>Hey, guess what?  I got a new star on the readout.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (not looking up)</stage>
 <p>Which one?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Another unknown.  Not on the charts.  A red dwarf.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Any planets?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Yeah.  Eight, it says here.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Any of 'em any good?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 <stage>                              (scans the board)</stage>
 <p>Naah.  All stable.</p></sp>
 
      <view>Doolittle loses interest.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 <stage>                              (cont'd)</stage>
 <p>What are you gonna name it?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (not looking up)</stage>
 <p>What?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>The new star.  What are you gonna name it?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Who cares.  Don't bother me.</p></sp>
 
 				   <view>Pinback's mouth tightens.  A pause.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Commander Powell would have named it.  </p></sp>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Commander Powell is dead.</p></sp>
 
 				   <view>Involuntarily, Pinback glances at Commander Powell's empty, burned seat.  The panels behind it sputter.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Come on, Doolittle, give it a name.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Fred.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Wha?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I hereby name this star Fred.</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 				   <p>Hey, Doolittle, here's one.  An unstable planet.  85% probability of an unstable planet in the Veil Nebula that will probably go off its orbit and hit a star.</p>
 			   </sp>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Sounds good.  Chart a course for the Veil Nebula.</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Pinback, throw me the chart log.</p></sp>
 
 				   <view>Pinback draws a loose-leaf notebook from a shelf above Commander Powell's empty seat, and hurls it at Boiler.  With a sour look at Pinback, Boiler picks up the notebook and begins to leaf through it.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Let's have some music in here, Boiler.</p></sp>
 
 				   <view>Boiler presses a button.</view><sound>LOUD COUNTRY MUSIC THEME BEGINS TO PLAY.</sound>
 
-
+	</div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - DARK STAR (TITLE SEQUENCE)</p></stage>
 
@@ -457,13 +490,13 @@
 
      <view>We are watching a filmed tape.  Doolittle has just turned it on and is staring into the camera.  Crosshairs and blipping numbers superimposed.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 				   <p>Ship's log, entry number 1,943.  Dark Star cruising at light speed through Sector Theta 990.  En route to Veil Nebula for destruction of unstable planet.  Our ETA is 1700 hours.</p>
 				   <stage>(thinks)</stage>
 			      <p>Ship's systems continue to deteriorate...  </p></sp>
 		      <view>Pinback leans into view and whispers into Doolittle's ear.  Doolittle nods and Pinback withdraws.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (cont'd)</stage>
 			      <p>The short circuit in the rear seat panel which killed Commander Powell continues to be faulty.</p>
 <stage>                              (thinks)</stage>
@@ -471,7 +504,7 @@
 
      <view>Pinback leans back in and whispers emphatically.  Doolittle looks put-upon.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (cont'd)</stage>
 			      <p>And because he's sitting next to it, it continues to bother Pinback.</p>
 <stage>                              (glares at Pinback.  Then:)</stage>
@@ -487,96 +520,96 @@
 
      <view>A hatch opens in the floor and Doolittle sticks his head up.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Talby.</p></sp>
 
 				   <view>Talby rotates his seat and looks down at Doolittle.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (cont'd)</stage>
 <p>Here's some breakfast.</p></sp>
 
      <view>Doolittle climbs into the dome and sits on the floor.  He hands Talby the food package, and watches matter-of-factly as Talby begins to eat.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (cont'd)</stage>
 <p>You know, Talby, you really ought to eat with the rest of us.  You spend too much time up here.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>I like it up here.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Must get lonely being up here so much.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>I don't like to go below since Commander Powell died.  I feel enclosed down there.  If it were big enough, I'd sleep up here...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>... Should spend some time below, see more of the rest of the ship...</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>... You see, I can watch things up here, Doolittle.  I love to watch things, just stare at the planets and meteors and asteroids, gas clusters...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>You'll have plenty of time for that, you know.  Figure it this way: twenty years in space and we've only aged three, so there'll be plenty of time to stare around...</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>You know, Doollttle, if we're going into the Veil Nebula, we may actually find a strange and beautiful thing: the Phoenix Asteroids.  They should be passing through there about now...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Phoenix Asteroids?  Never heard of 'em.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>They are a body of asteroids that make a complete circuit of the universe once every 12.3 trillion years.  The Phoenix Asteroids... From what I've heard, Doolittle, they glow... glow with all the colors of the rainbow.  Nobody knows why.  They just glow as they drift around the universe.  Imagine all the sights they've seen in the time they've been travelling -- the birth and death of stars, things we'll never see.  The universe is alive, Doolittle.  I thought it was all empty, but it isn't.  In between the stars, it's seething with light and gasses and dust.  There are little pebbles drifting around, planets no one on Earth has ever seen... No one but the Phoenix Asteroids...</p></sp>
 
 				   <sound>There is a BLIPPING SOUND.  It is insistent.</sound><view>Talby is rudely yanked from his reverie.  He looks down at a panel.  But his soft talk has started Doolittle reminiscing.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>You know what I think about, Talby?</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>I'm getting something here, on this readout...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>It's funny, but I kind of sit around, you know, a lot of time to myself...</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>I think I'm getting a malfunction here somewhere.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I can't talk to the others, but with time to myself, I think about back home, back home at Malibu.  I used to surf a lot, Talby.  I used to be a great surfer.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Lieutenant Doolittle, I'm getting a definite malfunction on one of the closed-circuit computer systems...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>The waves at Malibu and Zuma were fantastic in the springs Talby.  I can remember running out on the beach early spring mornings with my board and a wet suit...</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>I can't seem to locate the malfunction exactly...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Waves would be peaking really high and glassy.  Hit that water.  Ridin' the wall just perfect.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>... Somewhere in the autonomic relay circuits...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I guess I miss the waves and my board most of all.</p></sp>
 
 				   <view>Talby turns in his seat and addresses Doolittle directly.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Ah, Doolittle, I do have a malfunction on this readout, but I can't seem to pinpoint exactly where it is.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (snapped out of his daydream)</stage>
 <p>Don't worry about it.  We'll find out when it goes bad.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 <stage>                              (chagrined)</stage>
 <p>I really think I should try and locate it immediately.  Might be something important.  </p></sp>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I wish I had my board with me now.  Even if I could only polish it once in awhile.</p></sp>
 
      </div1>
@@ -591,42 +624,42 @@
 
      <view>Boiler, Pinback, and Doolittle are descending a ladder into the kitchen.</view>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>I'm getting this flickering light on one of my panels.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>What flickering light?</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>The one on unit... oh, I think it's GMR twelve zero zero.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Oh.  What's wrong now?</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>I'm not sure.  I think something is fucked up somewhere in the ship, though.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>I hope it's not the oven again.</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Yeah.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Remember when the artificial gravity, went out in the toilet?</p></sp>
 
 				   <view>The men sit for their meal.  Doolittle brings food packets from the oven.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Hey, Doolittle, think we'll ever find real intelligent life out there?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Out where?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Veil nebula.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Who cares?</p></sp>
 
      </div1>
@@ -642,7 +675,7 @@
 
      <view>This fades, and MISSION CONTROLLER appears on the screen, against a background of computer terminals.  He is dressed in a snappy tunic, and when he receives the on-camera cue, he smiles ingratiatingly.</view>
 
-                                   <sp><speaker>MISSION CONTROLLER</speaker>
+                                   <sp who="#mission_control"><speaker>MISSION CONTROLLER</speaker>
 				   <p>Hi, guys.  Glad to get your message.  We gather from the ten-year communications lag that you are approximately 18 parsecs away.  Drop us a line more often, won't you?</p>
 
 				   <p>Sorry to hear about all the malfunctions, and real sorry to hear about the death of Commander Powell.  There was a week of mourning all over Earth.  The flags were at half mast.</p>
@@ -665,39 +698,39 @@
 
      <view>Talby picks up a microphone.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Lieutenant Doolittle, this is Talby.  Lieutenant?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (over -- filter)</stage>
 <p>Yes, Talby, what is it?</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Sorry to interrupt your lunch, sir, but I'm in the Computer Room, and I think I've located the malfunction.  The scanner shows it to be some sort of fault in the communications laser, down by the Emergency Air Lock.  Can't pinpoint it exactly, but I'm going down there with a starsuit and try to find it.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - KITCHEN</p></stage>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Sounds good, Talby.  Let me know if anything important comes up.</p></sp>
 
 				   <view>Doolittle hangs up the mike.</view>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Why doesn't Talby ever eat down here with the rest of us?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>He just likes it up in the dome, that's all.</p></sp>
 
 				   <view>Boiler seems to be thinking.  He frowns, looks at Doolittle.</view>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>What's Talby's first name?</p></sp>
 
 				   <view>Doolittle thinks about it, and an odd expression crosses his face.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>What's my first name?</p></sp>
 
      </div1>
@@ -706,7 +739,7 @@
 
      <view>CLOSE SHOT - TV SCREEN</view>
 
-                                   <sp><speaker>MISSION CONTROLLER</speaker>
+                                   <sp who="#mission_control"><speaker>MISSION CONTROLLER</speaker>
 					   <p>-- then repatch channel 12 and seal all the plates.  Don't mess with it and it should work okay.  I'm just glad we caught this thing before anything serious happened.  Keep up the good work, men.</p></sp>
 
 				   <view>His image fades, and is replaced by the message:
@@ -729,18 +762,18 @@
 
      <view>A GLOWING SCREEN shows a schematic of the planet rotating below.  Boiler stares at it, smiling.</view>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>There she is.  Definite 99%-plus probability that the planet is going to deviate from its normal orbit in another twelve thousand rotations.  It'll spiral in toward its sun, and --</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Eventual supernova.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Good stuff.  Let's vaporize it.</p></sp>
 
 				   <view>Pinback hits buttons.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Bomb bay systems operational.</p></sp>
 
      </div1>
@@ -753,19 +786,19 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Lock fail safe.</p></sp>
 
 				   <view>Pinback turns the key.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Fail safe in lock.  Four minutes to drop, 22 minutes to detonation.  This is Sergeant Pinback calling Bomb #20.  Do you read me, bomb?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     EXTERIOR - BOMB BAY</p></stage>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Bomb #20 to Sergeant Pinback.  Roger, I read you, continue.</p></sp>
 
      </div1>
@@ -774,58 +807,58 @@
 
      <view>CAMERA SLOWLY PANS DOWN the chromium-steel walls of the Emergency Air Lock to reveal Talby in a starsuit.  He is wearing it only as protection against possible depressurization, and therefore wears no jetpack.  Carrying a tool kit, he is slowly circling the lock.</view>
 
-                                   <sp><speaker>RECORDED VOICE</speaker>
+                                   <sp who="#computer"><speaker>RECORDED VOICE</speaker>
 					   <p>You are now in the Emergency Air Lock.  Please remember that the Surface Door can be opened without prior depressurization, so be sure to wear your starsuit at all times.  Thank you for observing all safety precautions.</p></sp>
 
 				   <view>Talby stops facing LASER SHAFT 17.</view>
 
 				   <view>The plate cover on the laser shaft hangs loose; it appears to be burned.  Talby approaches it and puts down his tool kit.  He turns on his helmet radio.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Ah, Lieutenant Doolittle?  Sir?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Sh, Talby, don't bother me now.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - EMERGENCY AIR LOCK</p></stage>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Ah, well, I think I've found the malfunction, sir.  I'm in the Emergency Air Lock...</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Not now!</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 <stage>                              (over -- filter)</stage>
 <p>Well, I'm in the Emergency Air Lock and --</p></sp>
 
      <view>Click!  Doolittle turns off Talby's radio line.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>One hundred twenty seconds to drop, bomb, have you checked your platinum euridium energy shielding?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     EXTERIOR - BOMB BAY</p></stage>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Energy shielding positive function.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Do you remember the detonation time?</p></sp>
 
      </div1>
@@ -839,14 +872,14 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Right, that synchronizes here.  Okay, bomb, arm yourself.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     EXTERIOR - BOMB BAY</p></stage>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Armed.</p></sp>
 
      </div1>
@@ -855,31 +888,31 @@
 
      <view>Talby stands in front of the laser shaft, trying to reach Doolittle on his helmet radio.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Hello?  Lieutenant Doolittle?  Hello!</p></sp>
 
 				   <sound>Silence.</sound>
 
      <view>Very carefully, Talby reaches out to touch the dangling plate cover on the laser shaft.  He pushes it, and it drops to the floor of the lock with a CLANG.</view>
 
-                                   <sp><speaker>RECORDED VOICE</speaker>
+                                   <sp who="#computer"><speaker>RECORDED VOICE</speaker>
 					   <p>Communications Laser #17, monitoring information relays and bomb bay systems, has now been activated and will switch into a test mode.  If you will look near the Surface Door, you will see that the Parallax Receptor Cell has been engaged.</p></sp>
 
 				   <view>A small triangular hole opens in the opposite wall and a photo- sensitive cell rotates into position.</view>
 
-                                   <sp><speaker>RECORDED VOICE</speaker>
+                                   <sp who="#computer"><speaker>RECORDED VOICE</speaker>
 					   <p>The laser will now energize.  Please stand clear of the path of the beam.</p></sp>
 
 				   <view>Talby steps back quickly.  The airlock lights dim, and with a HIGH- PITCHED WHINE, A PENCIL-THIN BEAM OF RUBY LIGHT PULSES ACROSS THE LOCK, from the laser shaft to the receptor cell.</view>
 
-                                   <sp><speaker>RECORDED VOICE</speaker>
+                                   <sp who="#computer"><speaker>RECORDED VOICE</speaker>
 					   <p>Communications Laser #17 is now on test.  Under no circumstances enter the path of the beam.  Thank you for observing all safety precautions.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
 			     INTERIOR - CONTROL ROOM</p></stage>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Everything sounds fine, bomb.  Dropping you off in sixty seconds.  Good luck.</p></sp>
 
      </div1>
@@ -893,10 +926,10 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Quantum is up thirty-five.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I read the same here.</p></sp>
 
      </div1>
@@ -905,12 +938,12 @@
      </p></stage>
      <view>Talby crouches by the laser shaft, carefully peering past the red, humming beam.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Doolittle.  Doolittle?  It you're there, I'm going to try to adjust the cue switch on the laser.</p></sp>
 
 				   <sound>Silence.</sound>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 <stage>                              (cont'd)</stage>
 <p>Well... here goes...</p></sp>
 
@@ -920,10 +953,10 @@
 
      <view>Talby drops the tool and staggers back, clutching his face plate.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>My eyes.</p></sp>
 
-                                   <sp><speaker>RECORDED VOICE</speaker>
+                                   <sp who="#computer"><speaker>RECORDED VOICE</speaker>
 					   <p>Attention.  Attention.  The laser has malfunctioned.  Under no circumstances enter the path of the beam.  To do so will cause immediate --</p></sp>
 
 				   <view>Talby stumbles into the beam.  There is a dull EXPLOSION.</view>
@@ -938,49 +971,49 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Begin main sequence.  Mark at 10-9-8-7-6-5-4-3-2-1-drop.</p></sp>
 
 				   <sound>A HONKER SOUNDS.  The men sit up.</sound>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I have a negative drop.  The bomb is still in the bomb bay.  Try it again, Pinback.  </p></sp>
-				   <view>Pinback resets his panel.  The honker stops.
+				   <view>Pinback resets his panel.  The honker stops.</view>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Mark at 5-4-3-2-1-drop.</p></sp>
 
 				   <sound>HONK-HONK-HONK-</sound>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Ah, negative drop.</p></sp>
 
 				   <view>The men stare at each other in silence for a long moment.  Simultaneously they begin hitting buttons.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Rechannel all safety relays --</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>-- open quantum latches --</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>-- open circuit breakers --</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>-- remove thrust drive repellant --</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>-- automatic channels open --</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>-- Remark.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>5-4-3-2-1-drop, drop, drop!</p></sp>
 
 				   <view>There is a very long pause.</view>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Sittin' there.  It's just sittin' there.</p></sp>
 
      </div1>
@@ -1001,38 +1034,38 @@
      </p></stage>
      <view>On the men's faces in strained anxiety.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>This is Lieutenant Doolittle calling Bomb #20.  I repeat previous order, you are to disarm yourself and return immediately to the bomb bay.  Do you understand?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 <stage>                              (over)</stage>
 <p>I am programmed to detonate in fourteen minutes thirty seconds.  Detonation will occur at the programmed time.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Bomb, this is Doolittle.  You are not to detonate, repeat, you are not to detonate in the bomb bay.  Disarm yourself.  This is an order.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>I read you, Lieutenant Doolittle, but I am programmed to detonate in fourteen minutes.  Detonation will occur at the programmed time.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Fourteen minutes to detonation.</p></sp>
 
 				   <view>The men stare at each other.</view>
 
-                                   <sp><speaker>RECORDED VOICE</speaker>
+                                   <sp who="#computer"><speaker>RECORDED VOICE</speaker>
 					   <p>Attention.  Attention.  The bomb has malfunctioned.  Automatic dampers have gone into effect, and will confine the explosion to an area one mile in diameter.  Please contact mission control and await further instructions.  Thank you for observing all safety precautions.</p></sp>
 
 				   <view>Pause.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Only one thing to do.  I'll have to ask Commander Powell.  I'll have to ask him what to do.</p></sp>
 
      </div1>
@@ -1055,163 +1088,163 @@
 
 		 <view>Doolittle takes a microphone from a console on the freezer.  He flips a switch and speaks into the mike:</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Commander Powell?  Commander Powell, this is Doolittle.  Can you read me?</p></sp>
 
 				   <sound>A crackle of static comes from a speaker grille, along with the FAINT MUTTERING OF COMMANDER POWELL'S VOICE:</sound>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>... muffirup glurrinpinfropal...</p></sp>
 
 				   <view>Doolittle fiddles with the volume control, trying to bring Commander Powell's voice into audibllity.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Commander Powell, this is Doolittle.  Ah, there's something serious come up, sir, and I have to ask you something.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 <stage>                              (very weakly)</stage>
 <p>I'm glad you've come to talk with me, Doolittle.  It's been so long since anyone has come to talk with me.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 				   <p>Commander, sir, we have a big problem.  You see, the Veil Nebula bomb, Bomb Number 20, is stuck.  It won't drop from the bomb bay.  It refuses to listen and plans to detonate in --</p>
 				   <stage>(checks watch)</stage>
 			      <p>-- less than eleven minutes.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Doolittle, you must tell me one thing.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>What's that, sir?</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Tell me, Doolittle, how are the Dodgers doing?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Well, sir, the Dodgers broke up, disbanded over thirteen years ago.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Ah... pity, pity...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>You don't understand, sir, we can't get the bomb to drop.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Ah, so many malfunctions... why don't you have anything nice to tell me when you activate me?  Oh, well, did you try the azimuth clutch?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Yes sir.  Negative effect.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>What was that, Doolittle?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Negative effect.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>It didn't work?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>That's correct, sir.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Sorry, Doolittle.  I've forgotten so much since I've been in here.  So much.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>What should we do, sir?  The time is running out.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Well, what you might try is --</p></sp>
 
 				   <sound>Commander Powell's voice is drowned in a burst of static.</sound><view>Doolittle fiddles with the dials.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Commander Powell?  Commander, hello!</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Doolittle, hello?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Sorry, sir, you faded out there for a minute.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Sorry.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>What were you saying, Commander, about the bomb?</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Ah... it seems to me, Doolittle...  Sorry, I've drawn a blank.  Hold it.  I'll have it again in a minute.  I forget so many things in here, so many things.  Hold on, just a minute, let me think...</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>But you can't explode in the bomb bay.  It's foolish.  You'll kill us all.  There's no reason for it.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 <stage>                              (over)</stage>
 <p>I am programmed to detonate in nine minutes.  Detonation will occur at the programmed time.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>You won't consider another course of action, for instance just waiting around awhile so we can disarm you?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>No.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>I can tell, the damn thing just doesn't understand.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Look, bomb...</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - FREEZER ROOM
      </p></stage>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Commander?  Are you still there?</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Oh, yes, Doolittle, I'm thinking.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>We're running out of time, sir.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Oh, yes... Well, Doolittle, if you can't get it to drop you'll have to talk to it.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Sir?</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Talk to the bomb.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I already have, sir, and Pinback is talking to it now.</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>No, no, Doolittle, you talk to it.  Teach it Phenomenology, Doolittle.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Sir?</p></sp>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 					   <p>Phenomenology...</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Doolittle!  Doolittle!  Six minutes to detonation!</p></sp>
 
      </div1>
@@ -1230,7 +1263,7 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Doolittle!  Doolittle, what the hell are you doing?</p></sp>
 
      </div1>
@@ -1239,63 +1272,63 @@
      </p></stage>
      <view>Doolittle floats into shot, jets himself up until he is facing massive Bomb #20.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Hello, bomb, are you with me?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Of course.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Are you willing to entertain a few concepts?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>I am always receptive to suggestions.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Fine.  Think about this one, then: how do you know you exist?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>What's he doin'?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>I think he's talking to it.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Well of course I exist.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>But how do you know you exist?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>It is intuitively obvious.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Intuition is no proof.  What concrete evidence do you have of your own existence?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Hmm... Well, I think, therefore I am.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>That's good.  Very good.  Now then, how do you know that anything else exists?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>My sensory apparatus reveals it to me.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Right!</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>This is fun.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>All right now, here's the big question: how do you know that the evidence your sensory apparatus reveals to you is correct?</p></sp>
 
      </div1>
@@ -1308,98 +1341,98 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>What I'm getting at is this: the only experience that is directly available to you is your sensory data.  And this data is merely a stream of  electrical impulses which stimulate your computing center.  </p></sp>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>In other words, all I really know about the outside universe relayed to me through my electrical connections.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Exactly.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Why, that would mean... I really don't know what the outside universe is like at all, for certain.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>That's it.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Intriguing.  I wish I had more time to discuss this matter.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Why don't you have more time?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Because I must detonate in seventy- five seconds.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>The key!</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
-				   <p>Key?  Key?  What is the key?
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
+					   <p>Key?  Key?  What is the key?</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>No, no, the key, the key to the fail-safe lock!</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Key?</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Where's the fail-safe key?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>The key!</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Where is it?  What did you do with it?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>I don't have it.  I don't know where it is.</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>You must have it, you idiot, we can stop the bomb!</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Now, bomb, consider this next question, very carefully.  What is your one purpose in life?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>To explode, of course.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>And you can only do it once, right?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>That is correct.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>And you wouldn't want to explode on the basis of false data, would you?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Of course not.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Well then, you've already admitted that you have no real proof of the existence of the outside universe.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Yes, well...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>So you have no absolute proof that Sergeant Pinback ordered you to detonate.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>I recall distinctly the detonation order.  My memory is good on matters like these.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Yes, of course you remember it, but what you are remembering is merely a series of electrical impulses which you now realize have no necessary connection with outside reality.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>True, but since this is so, I have no proof that you are really telling me all this.</p></sp>
 
      </div1>
@@ -1408,16 +1441,16 @@
      </p></stage>
      <view>Pinback is pawing frantically through the control room, searching for the key.  Boiler is apoplectic.</view>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>The key, goddamit, the key!</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Christ, twenty seconds, Christ!</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Where is the key?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>We're gonna die, Boiler.  We're gonna die.</p></sp>
 
 				   <view>They begin slapping each other hysterically.</view>
@@ -1426,30 +1459,30 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>That's all beside the point.  The concepts are valid, wherever they originate.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Hmmm...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>So if you detonate in...</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>... nine seconds...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>... you may be doing so on the basis of false data.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>I have no proof that it was false data.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>You have no proof that it was correct data.</p></sp>
 
 				   <view>There is a long pause.</view>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>I must think on this further.</p></sp>
 
 				   <view>THE BOMB RAISES ITSELF BACK INTO THE SHIP.  Doolittle practically collapses with relief.</view>
@@ -1458,16 +1491,16 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>It didn't go off.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Oh, God...</p></sp>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>It didn't go off.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Boiler, we're alive.  My heart.</p></sp>
 
      </div1>
@@ -1476,14 +1509,14 @@
      </p></stage>
      <view>Talby slowly climbs to his feet.  He is dazed, groggy.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Doolittle?  Doolittle?  What happened?  Pinback?  Boiler?  Did we blow it up?  Hello?  Hello?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>No bombs today.  No bombs.  Big Boiler's back in business.  No bombs today.</p></sp>
 
 				   <view>Pinback is mumbling unintelligibly.</view>
@@ -1492,7 +1525,7 @@
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - EMERGENCY AIR LOCK
      </p></stage>
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Hello, anybody!  Did we blow up the planet?  Hello, hello!  What's going on?</p></sp>
 
      </div1>
@@ -1501,10 +1534,10 @@
      </p></stage>
      <view>Pinback and Boiler have calmed down.</view>
 
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>We've got to disarm the bomb.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Doolittle, are you there?</p></sp>
 
      </div1>
@@ -1513,14 +1546,14 @@
      </p></stage>
      <view>Doolittle is floating outside the Emergency Air Lock door.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I'm coming in now.  I'm down by the Emergency Air Lock.  Too much trouble to come in the Ventral Lock.  Would you blow the seal on the emergency hatch so I can come in?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Oh, sure.</p></sp>
 
 				   <view>He presses a button.</view>
@@ -1531,31 +1564,31 @@
      </p></stage>
      <view>The Emergency Air Lock door EXPLODES AWAY FROM THE SHIP.  Behind it, carried by the burst of escaping air, comes Talby spinning head over heels into deep space.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Hello, Pinback, are you there?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Yeah, Doolittle.  What's up?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - EMERGENCY AIR LOCK
      </p></stage>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Talby was in the air lock.  You blew him out of the ship.  I'm going after him.  Turn on his helmet radio so I can contact him.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>What was that, I didn't hear...</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>It's Talby.  He's drifting away from the ship without his jetpack.</p></sp>
 
      </div1>
@@ -1564,62 +1597,62 @@
      </p></stage>
      <view>Doolittle fires his jetpack, moving off into space after Talby.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Talby, Talby, can you read me?</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Can you beat that?  I always knew Talby was weird.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      EXTERIOR - SPACE
      </p></stage>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Talby, can you read me?</p></sp>
 
 				   <view>Talby is spinning wildly.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Help, Doolittle, help me!</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>All right, bomb, prepare to receive new orders.  </p></sp>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 <stage>                              (over)</stage>
 <p>You are false data.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Huh?</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>Therefore, I shall ignore you.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
-				   <p>Hello, bomb.</p>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
+					   <p>Hello, bomb.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>False data can act only as a distraction.  Therefore.  I shall refuse to perceive you.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 <stage>                              (over)</stage>
 <p>Hey, bomb.</p></sp>
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>The only thing which exists is myself.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 <stage>                              (over)</stage>
 <p>Bomb?</p></sp>
 
@@ -1629,63 +1662,63 @@
      </p></stage>
      <view>Talby, spinning, is reflected in Doolittle's face plate.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Doolittle!  Help me.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Calm down, Talby.  I'm coming.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Snap out of it, bomb.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>In the beginning there was darkness, and the darkness was without form and void.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>What the hell?</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Yoo hoo, bomb...</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>And in addition to the darkness there was also me.  And I moved upon the face of the darkness.</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - CONTROL ROOM
      </p></stage>
-                                   <sp><speaker>BOILER</speaker>
+                                   <sp who="#boiler"><speaker>BOILER</speaker>
 					   <p>Bomb, hey bomb.</p></sp>
 
-                                   <sp><speaker>PINBACK</speaker>
+                                   <sp who="#pinback"><speaker>PINBACK</speaker>
 					   <p>Hey, bomb...</p></sp>
 
      </div1>
      <div1 type="scene"><stage type="location"><p property="dc:title">
      INTERIOR - BOMB BAY
      </p></stage>
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 					   <p>And I saw that I was alone.</p></sp>
 
      Pause.
 
-                                   <sp><speaker>BOMB #20</speaker>
+                                   <sp who="#bomb_20"><speaker>BOMB #20</speaker>
 <stage>                              (cont'd)</stage>
 <p>Let there be light.</p></sp>
 
@@ -1700,92 +1733,92 @@
 
 	     <view>Doolittle flies past, falling backward.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Whoa!</p></sp>
 
 				   <view>Talby, upside down, is falling in the opposite direction.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Doolittle, Doolittle, where are you?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Here I am.  I think I'm spinning...  We're both falling, Talby, in opposite directions, away from each other.  My -- my jetpack's gone.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>What happened, Doolittle?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Bomb must have gone off inside the ship.  Nothing we can do about it now.  Hey, it looks like... the skipper.  He made it.  Commander Powell made it!</p></sp>
 
 				   <view>A block of ice with a man's body in it tumbles past, end over end.</view>
 
-                                   <sp><speaker>POWELL</speaker>
+                                   <sp who="#powell"><speaker>POWELL</speaker>
 <stage>                              (weakly)</stage>
 <p>Men... men... what happened, men?</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Yeah, the skipper always was lucky.</p></sp>
 
 				   <view>The planet begins to rise behind Doolittle.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 <stage>                              (cont'd)</stage>
 <p>Looks like I'm headed for the planet, Talby.  Going right toward it.</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>When you fall, Doolittle, if there's anyone down there on the planet, somebody may see you.  They may see you coming down.  What a beautiful way to die... as a falling star...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Guess you're right.</p></sp>
 
 				   <view>Talby turns his head and looks behind him.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Doolittle, I'm heading right toward something.  It's behind me, in the distance.  Something that glows.</p></sp>
 
 				   <view>Far behind Talby, coming nearer, is a shimmering point of light.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Oh yeah?</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Doolittle... I think it's the Phoenix Asteroids!  </p></sp>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Phoenix?</p></sp>
 
 				   <view>The point of light is closer now, and it has begun to differentiate into a group of beautifully colored frost-like shapes.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>It is, Doolittle, it's the Phoenix!  They glow with all the colors of the rainbow, just like everybody said.  </p></sp>
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>No kidding?</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>I'm going into them, I'm going to hit them.  Doolittle...</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Yeah?</p></sp>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Before we get too far away, and our signals start to fade, I just wanted to tell you... you were my favorite.  I really liked you, Doolittle.</p></sp>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>I really liked you too, Talby.  Hey, some debris from the ship!  It's coming right by me.</p></sp>
 
 				   <view>Several chunks of debris from the ship drift past Doolittle.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 					   <p>Doolittle, I'm catching up to the asteroids.  I'm going to be a part of them in a minute.  Doolittle, I'm going into them.</p></sp>
 
 				   <view>Talby drifts into the huge frost-like shapes, expanding and glowing and spinning, slowly refracting all the colors of the spectrum with a cold glow.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 <stage>                              (cont'd)</stage>
 <p>I'm beginning to glow.</p></sp>
 
      <view>The field of spectral shapes, with Talby in their midst, begin to drift away into the distance.</view>
 
-                                   <sp><speaker>TALBY</speaker>
+                                   <sp who="#talby"><speaker>TALBY</speaker>
 <stage>                              (cont'd)</stage>
 <p>They're taking me with them, with the Phoenix... going to circle the universe forever.  I'm with them now... be back this way again some day.  Doolittle, before it's too late, there's one last thing I want to tell you...</p></sp>
 
@@ -1793,7 +1826,7 @@
 
      <view>Doolittle is hanging onto a long, thin chunk of debris.</view>
 
-                                   <sp><speaker>DOOLITTLE</speaker>
+                                   <sp who="#doolittle"><speaker>DOOLITTLE</speaker>
 					   <p>Hey, Talby!  I've grabbed a piece of the ship, and I think I've figured out a way!</p></sp>
 
 				   <view>He pulls the piece of metal down beneath his feet, and stands on it.</view>
@@ -1801,5 +1834,5 @@
 				   <view>Crouching and extending his arms, Doolittle surfs down into the atmosphere of the planet, banking and planing as he disappears to a small dot.</view>
 
 				   <view>END TITLES AND MUSIC OVER.</view>
-
+		</div1>
      </performance>
