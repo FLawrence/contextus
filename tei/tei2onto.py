@@ -148,7 +148,7 @@ def convert(teifile, namespace):
 
 			prior_event = event
 
-	print graph.serialize(format='n3')
+	print graph.serialize(format='xml')
 
 def main(argv):
 	try:

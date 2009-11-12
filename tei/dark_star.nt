@@ -1,5 +1,3 @@
-
-@prefix _10: <http://dbpedia.org/resource/Dan_O'>.
 @prefix _8: <http://purl.org/ontomedia/core/expression#>.
 @prefix _9: <http://purl.org/ontomedia/ext/common/being#>.
 @prefix dbpedia: <http://dbpedia.org/resource/>.
@@ -48,7 +46,7 @@
      _9:portrays ds:Boiler;
      foaf:name "Cal Kuniholm"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
- _10:Bannon a _9:Being;
+ dbpedia:Dan_O%27Bannon a _9:Being;
      _9:portrays ds:Pinback;
      foaf:name "Dan O'Bannon"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>. 
 
