@@ -1,0 +1,61 @@
+This directory contains simple tools for making graphs of
+reader-directed narratives, such as the "Choose Your Own Adventure"
+books, and the Jackson/Livingstone "Fighting Fantasy" books.
+
+The primary tool is "convert.py", which reads data from standard
+input, and writes to standard output. The output format is suitable
+for running through graphviz tools (specifically, dot), and a sample
+Makefile is provided to do exactly that. Samples (based on some of the
+Fighting Fantasy series) are also included.
+
+The input file format is very simple, and consists of a set of
+paragraph definitions, followed by a set of group definitions.
+
+A paragraph definition is:
+
+<id> <type-and-markup> <list-of-subsequent-nodes>
+
+where <id> is a number (typically the paragraph number), optionally
+followed by an equals sign and a label. If the label contains spaces,
+it must be surrounded by quotation marks: "
+
+The <type-and-markup> consists of a single letter, indicating the type
+of paragraph:
+
+	d	A simple "straight through" paragraph, or one involving a
+		decision from the reader, or one involving a deterministic
+		view of state (i.e. "do you have a ring of fire?")
+	l	A test of luck, or other randomised test
+	c	Combat
+
+In addition, an indicator of the "goodness" or "badness" of the
+paragraph outcome can be given by use of one or two pluses or minuses
+appended to the type letter.
+
+The <list-of-subsequent-nodes> is a space-separated list of paragraph
+ids that this one leads to.
+
+For example, the paragraph:
+
+35 As you enter the house, you trip on the doorstep and sprain your
+ankle. Lose 1 strength point. There is a door in the back wall, and a
+chest of drawers in the corner. If you would like to open the door,
+turn to 370. If you would like to ransack the chest of drawers, turn
+to 64.
+
+would become:
+
+35 d- 370 64
+
+A group definition is:
+
+[<group-name>=<list-of-paragraphs-and-groups>]
+
+where <group-name> is simply the name (and label) of the group, and
+the list contains paragraph numbers, and group names enclosed in
+square brackets. Order is not important.
+
+For example:
+
+[House=35 [Back Room] 64]
+[Back Room=370]
