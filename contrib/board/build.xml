@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="board" basedir=".">
+
+	<property file="build.properties" />
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+
+	<target name="compile">
+		<mkdir dir="build" />
+		
+		<mxmlc file="${project.class}" output="build/${project.swf}" compiler.as3="${compiler.as3}" compiler.optimize="true" compiler.strict="${compiler.strict}" actionscript-file-encoding="${compiler.encoding}" keep-generated-actionscript="${compiler.keep-generated-as}" incremental="true" benchmark="${compiler.benchmark}" debug="true" use-network="${compiler.use-network}" warnings="${compiler.warnings}" fork="true">
+			<!--		<source-path path-element="ext" />
+			<compiler.include-libraries dir="." append="true">
+				<include name="lib/*.swc" />
+			</compiler.include-libraries>
+			<compiler.include-libraries dir="." append="true">
+					<include name="assets/*.swc" />
+				</compiler.include-libraries> -->
+			
+		</mxmlc>
+	</target>
+	
+	<condition property="launch.executable" value="cmd" else="open">
+		<os family="windows" />
+	</condition>
+
+	<condition property="launch.argline" value="/c start " else="">
+		<os family="windows" />
+	</condition>
+	
+	<target name="launch">
+		<exec executable="${launch.executable}" dir="." resolveexecutable="true">
+			<arg line="build/board.swf" />
+		</exec>
+	</target>
+	
+	<target name="compile-and-launch" depends="compile,launch" />
+</project>
+
