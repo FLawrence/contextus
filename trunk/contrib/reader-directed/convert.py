@@ -2,7 +2,7 @@
 
 import sys
 
-from node import Node, Graph, ParseException
+from node import Graph, ParseException, parse_node
 
 nodes = {}
 graphs = {}
@@ -20,8 +20,9 @@ for line in sys.stdin:
 			graphs[g.id] = g
 			sys.stderr.write("Read graph " + str(g) + "\n")
 		else:
-			n = Node(line.strip())
+			n = parse_node(line.strip())
 			nodes[n.id] = n
+			sys.stderr.write("Read node " + str(n) + "\n")
 	except ParseException, ex:
 		sys.stderr.write("%s at line %s\n" % (ex, i))
 
@@ -45,6 +46,10 @@ for i, g in graphs.iteritems():
 
 nodes_remaining = set(nodes.keys())
 
+# Split nodes if necessary
+for g in gcandidates:
+	graphs[g].split_nodes()
+
 print """digraph foo {
 size="7,100!";
 page="7.75,11";
@@ -53,17 +58,14 @@ node [shape=diamond,style=filled,fillcolor=white];
 
 """
 
-# Process the node data: first, print the nodes and graphs themselves
+# Process the node data: print the graphs first, then any stragglers
 for g in gcandidates:
 	sys.stderr.write("Outputting top-level graph " + str(g) + "\n")
-	print graphs[g].dot(nodes, graphs, nodes_remaining)
+	print graphs[g].dot(nodes_remaining)
 for n in nodes_remaining:
 	print nodes[n].dot()
+	print nodes[n].dot_arcs()[0]
 
 print
-
-# Second, print the node connections
-for n in nodes.itervalues():
-	print n.dot_arcs()
 	
 print "}"
