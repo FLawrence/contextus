@@ -141,7 +141,7 @@
 141 d 68 375
 142 d--
 143 d 306 157
-144 c 303
+144="Hag" c 303
 145="Mrs Pipe" d 293 24
 146 d 220 388
 147 d+ 338 105
@@ -256,7 +256,7 @@
 256 d 320 369
 257 d 385 70
 258 d 318 47
-259 d 228 4 365
+259="Tower Entrance" d 228 4 365
 260 d 222
 261 d 74
 262 d 375
@@ -300,7 +300,7 @@
 300 d- 347 137
 301 d 214 185
 302 d 240 345
-303 d 104 
+303 d++ 104 
 304 d 148
 305 d- 189 382
 306 d+ 74
@@ -353,7 +353,7 @@
 353 d 181 389 304
 354 d 316 307
 355 d 74
-356 c 28
+356="Giant Rats" c 28
 357 c 71 282
 358 d 346 108 56
 359 d+ 91
@@ -428,7 +428,7 @@
 
 [Marketplace=148 287 [Lyre Player] [Cannonball Game] 52 200 [Clairvoyant]]
 [Lyre Player=3 37]
-[Cannonball Game=398]
+[Cannonball Game=398 378]
 [Clairvoyant=394 368]
 
 [Bridge Street=117 [Derelict House] [Bridge]]
@@ -454,3 +454,41 @@
 [Goblin=72 208]
 [Candlemaker=241 63]
 [Silversmith=213 248 42 85 135 229 23 146 388 220 343]
+
+[Tower Street=127 [Street Fight] 348 [Burglars] 30]
+[Street Fight=177 51 325]
+[Burglars=251 330 269]
+
+[Stable Street=246 98 363 48 [Sewers] 205 372 [Serpent Queen] 333 [Vagabonds] 76 [Smith] [Fugitive] 222 [Public Gardens]]
+[Sewers=321 [Sewers North] [Sewers South] 104 174]
+[Serpent Queen=131 67 6 179 195 61 53 268 350 39 32 249 295 79 172 16 328 88]
+[Vagabonds=44 18 225 102 397]
+[Sewers North=356 28 265 390 82 59 144 303]
+[Sewers South=118 166 2 272 377 92]
+[Smith=25 323 395 169 46]
+[Fugitive=115 274 90 187 341 260 199]
+[Public Gardens=370 14 191 237]
+
+[Mill Street=133 [Barrow Boy] [Tattooist] [Troll Guards]]
+[Barrow Boy=160 211 242]
+[Tattooist=182 354 279 316]
+[Troll Guards=307 11 358 56 346 108 299 156 290 219 393 335 150 239 73 367 110]
+
+[Outside=[Wandering Monster] 217 [Tower Entrance]]
+[Wandering Monster=201 138 312 283]
+
+[Tower Entrance=259 365 339 4 35 305 382]
+[Tower=[Hall] [First Floor] 77 [Second Floor] [Third Floor Landing] [Third Floor] [Fourth Floor Landing] [Fourth Floor] [Fifth Floor Landing] [Fifth Floor] [Roof] 277]
+[Hall=228 125 189 374]
+[First Floor=288 21]
+[Second Floor=292 254 210]
+[Third Floor Landing=310]
+[Third Floor=263 153 281 391 142 235]
+[Fourth Floor Landing=65 231]
+[Fourth Floor=[Black Door] [White Door]]
+[Black Door=96 257 385 203 244 9 129 337 400 70]
+#[White Door=319 352 193]
+[White Door=319 352 193 286 163 106]
+[Fifth Floor Landing=301 214 185 158 379 197]
+[Fifth Floor=122 361 297]
+[Roof=207 314 94 234]
