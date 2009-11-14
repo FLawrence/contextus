@@ -281,12 +281,11 @@ class Graph(object):
 				pass
 		# Draw the subgraphs in this graph
 		for g in self.graphs:
-			rv += "%s\n" % (g.dot(nodes_remaining, depth+1, drawn),)
+			text, outside = g.dot(nodes_remaining, depth+1, drawn)
+			oarcs += outside
+			rv += text + "\n"
 		rv += "}\n"
-		rv += "# Arcs outside this group:\n"
-		rv += oarcs
-		rv += "# - done\n"
-		return rv
+		return (rv, oarcs)
 
 	def all_nodes(self):
 		rv = []

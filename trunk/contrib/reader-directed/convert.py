@@ -59,12 +59,16 @@ node [shape=diamond,style=filled,fillcolor=white];
 """
 
 # Process the node data: print the graphs first, then any stragglers
+oarcs = ""
 for g in gcandidates:
 	sys.stderr.write("Outputting top-level graph " + str(g) + "\n")
-	print graphs[g].dot(nodes_remaining)
+	text, outside = graphs[g].dot(nodes_remaining)
+	oarcs += outside
+	print text
 for n in nodes_remaining:
 	print nodes[n].dot()
 	print nodes[n].dot_arcs()[0]
+print oarcs
 
 print
 	
