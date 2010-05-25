@@ -231,11 +231,11 @@
     <rdfs:comment>A piece of media.</rdfs:comment>
 </owl:Class>
 
-<owl:ObjectProperty rdf:ID="sub_region">
-    <rdfs:label>sub_region</rdfs:label>
-    <rdfs:comment>A Media Region contained within this region.</rdfs:comment>
-    <rdfs:domain rdf:resource="#MediaRegion" />
-    <rdfs:range rdf:resource="#MediaRegion" />
+<owl:ObjectProperty rdf:ID="event">
+	<rdfs:label>event</rdfs:label>
+	<rdfs:comment>An event depicted by this region.</rdfs:comment>
+	<rdfs:domain rdf:resource="#MediaRegion" />
+	<rdfs:range rdf:resource="#Event" />
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:ID="content">
@@ -243,29 +243,6 @@
     <rdfs:comment>The content of this region.</rdfs:comment>
     <rdfs:domain rdf:resource="#MediaRegion" />
     <rdfs:range rdf:resource="&foaf;Document" />
-</owl:ObjectProperty>
-
-<!-- NarrativeGroup -->
-
-<owl:Class rdf:ID="NarrativeGroup">
-    <rdfs:label>Narrative Group</rdfs:label>
-    <rdfs:comment>A group of Events that make up a piece of narrative.</rdfs:comment>
-</owl:Class>
-
-<owl:ObjectProperty rdf:ID="event">
-    <rdfs:label>event</rdfs:label>
-    <rdfs:comment>An Event seen as part of this group.</rdfs:comment>
-    <rdfs:domain rdf:resource="#NarrativeGroup" />
-    <rdfs:range rdf:resource="#MediaRegion" />
-    <owl:inverseOf rdf:resource="#narrative_group" />
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:ID="region">
-    <rdfs:label>region</rdfs:label>
-    <rdfs:comment>A Media Region containing this group.</rdfs:comment>
-    <rdfs:domain rdf:resource="#NarrativeGroup" />
-    <rdfs:range rdf:resource="#MediaRegion" />
-    <owl:inverseOf rdf:resource="#narrative_group" />
 </owl:ObjectProperty>
 
 </rdf:RDF>
