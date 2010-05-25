@@ -1,0 +1,376 @@
+@prefix om: 	<http://contextus.net/ontology/ontomedia#>.
+@prefix event: 	<http://purl.org/NET/c4dm/event.owl#>.
+@prefix timeline: <http://purl.org/NET/c4dm/timeline.owl#>.
+@prefix foaf: 	<http://xmlns.com/foaf/0.1/>.
+@prefix geonames: <http://www.geonames.org/ontology#>.
+@prefix whoc:   <http://contextus.net/who/character/>.
+@prefix whol:   <http://contextus.net/who/location/>.
+@prefix whoi:   <http://contextus.net/who/item/>.
+@prefix bbcpo:	<http://purl.org/ontology/po/>.
+@prefix : 	<http://contextus.net/who/s4e1/>.
+#FIXME: do we gain anything from having whol, whoc etc. as opposed to a single resource. they're all going to have to be loaded in anyway. and are we going to have whot just for the whoniverse timeline?
+
+# MEDIA
+
+:DW_S4E1_ScriptDoc a foaf:Document.
+#FIXME: foaf:primaryTopic po:pid "b009w049";
+#FIXME: om:source <http://www.thewriterstale.com/pdfs/Doctor%20Who%204%20Ep.1%20-%20Shooting%20Script%20-%20Yellow%20-%2016.10.07.pdf> 
+
+:DW_S4E1_Script a om:MediaRegion;
+	content DW_S4E1_ScriptDoc;
+	sub_region :scene01;
+	sub_region :scene02;
+	sub_region :scene03;
+	sub_region :scene04;
+	sub_region :scene05;
+	sub_region :scene06;
+	sub_region :scene07;
+	sub_region :scene08;
+	sub_region :scene09;
+	sub_region :scene10;
+	sub_region :scene11;
+	sub_region :scene12;
+	sub_region :scene13;
+	sub_region :scene14;
+	sub_region :scene15;
+	sub_region :scene16;
+	sub_region :scene17;
+	sub_region :scene18;
+	sub_region :scene19;
+	sub_region :scene10;
+	sub_region :scene21;
+	sub_region :scene22;
+	sub_region :scene23;
+	sub_region :scene24;
+	sub_region :scene25;
+	sub_region :scene26;
+	sub_region :scene27;
+	sub_region :scene28;
+	sub_region :scene29;
+#FIXME [...]
+	sub_region :scene121;
+	sub_region :scene122;
+	sub_region :scene123;
+	sub_region :scene124;
+	sub_region :scene125;
+	sub_region :scene126;
+	sub_region :scene127;
+	sub_region :scene128.
+
+#FIXME: dvd here as foaf:document
+
+#FIXME: dvdvideo here with sub_regions as per dvd chapters. requires finding out the timecode of the chapters etc.
+
+#FIXME: dvd cast list linking actors to characters
+
+#FIXME: something declaring equivalence of media (not just primaryTopic) of dvd to broadcast episode
+
+# PEOPLE
+
+whoc:doctor a om:Character;
+    foaf:name "The Doctor".
+
+whoc:donna_noble a om:Character;
+    foaf:name "Donna Noble".
+
+:security_guard1 a om:Character;
+    foaf:name "Security Guard 1". #should this be a name or a label?
+
+:security_guard2 a om:Character;
+    foaf:name "Security Guard 2". #should this be a name or a label?
+
+:foster_guard1 a om:Character;
+    foaf:name "Security Guard 1". #should this be a name or a label?
+
+:foster_guard2 a om:Character;
+    foaf:name "Security Guard 2". #should this be a name or a label?
+
+:foster a om:Character;
+    foaf:name "Miss Foster".
+
+:penny_carter a om:Character;
+    foaf:name "Penny Carter".
+
+:projectionist a om:Character;
+    foaf:name "Projectionist". #should this be a name or a label?
+
+:craig a om:Character;
+    foaf:name "Craig".
+
+:claire a om:Character;
+    foaf:name "Claire".
+    
+:stacey_campbell a om:Character;
+    foaf:name "Stacey Campbell".
+
+:roger_davey a om:Character;
+    foaf:name "Roger Davey".
+
+:adipose1 a om:Character;
+    foaf:name "Adipose". #should this be a name or a label?
+
+whoc:sylvia_noble a om:Character;
+    foaf:name "Sylvia Noble".
+    
+whoc:wilf_noble a om:Character;
+    foaf:name "Wilf Noble".
+
+whoc:rose_tyler a om:Character;
+    foaf:name "Rose Tyler".
+
+whoc:martha_jones a om:Character;
+    foaf:name "Martha Jones".
+
+:suzette a om:Character;
+    foaf:name "Suzette".
+
+:plump_man a om:Character;
+    foaf:name "A Man (Plump)". #should this be a name or a label?
+
+:plump_woman a om:Character;
+    foaf:name "A Woman (Plump)". #should this be a name or a label?
+
+# LOCATIONS
+
+whol:tardis a om:Space.
+whol:noble_house a om:Space.
+
+:adipose_industries a om:Space.
+:adipose_industries_foyer a om:Space.
+:adipose_industries_basement a om:Space.
+:adipose_industries_cinema a om:Space.
+:adipose_industries_projection_booth a om:Space.
+:adipose_industries_sales_cubicles a om:Space.
+:rogers_house a om:Space.
+:staceys_house a om:Space.
+:staceys_bathroom a om:Space.
+:fosters_office a om:Space.
+whol:hilltop a om:Space.
+:adipose_industries_storeroom a om:Space.
+:adipose_industries_ladies_toilets a om:Space.
+:adipose_industries_ladies_toilets_cubicles a om:Space.
+:church a om:Space.
+:adipose_industries_rooftop a om:Space.
+:wine_bar a om:Space.
+:wine_bar_surroundings a om:Space.
+:adipose_industries_surroundings a om:Space.
+
+#FIXME: state heirarchy of locations, ie. adipose_industries_projection_booth is inside adipose_industries_cinema is inside adipose_industries
+
+# ITEMS
+
+:AdiposePendant a rdfs:Class;
+    rdfs:label "Adipose Pendant";
+    rdfs:subClassOf om:PhysicalItem.
+
+whoi:tardis a om:PhysicalItem.
+whoi:psychic_paper a om:PhysicalItem.
+whoi:sonic_screwdriver a om:PhysicalItem.
+
+:id_pass a om:PhysicalItem.
+:adipose_product a om:PhysicalItem.
+:pendant1 a :AdiposePendant.
+:pendant2 a :AdiposePendant.
+:pendant3 a :AdiposePendant.
+:papers1 a om:PhysicalItem.
+:papers2 a om:PhysicalItem.
+:window_cleaners_cradle a om:PhysicalItem.
+:fosters_comm_device a om:PhysicalItem.
+:doctors_gizmo a om:PhysicalItem.
+:sylvias_car a om:PhysicalItem.
+:sylvias_car_keys a om:PhysicalItem.
+:gun1 a om:PhysicalItem.
+:gun2 a om:PhysicalItem.
+:fosters_sonic_pen a om:PhysicalItem.
+:adipose_nursery_ship a om:PhysicalItem.
+:bin a om:PhysicalItem.
+:story a om:Timeline.
+
+# GROUPS
+
+:journalists a foaf:Group.
+:salespeople a foaf:Group.
+:collection_squad a foaf:Group.
+:adipose a foaf:Group.
+:wednesday_girls a foaf:Group.
+:pill_takers a foaf:Group.
+:bystanders a foaf:Group.
+:adiposian_first_family a foaf:Group.
+
+# TIMELINES
+
+:day1 	a om:timeline.
+:night1 a om:timeline.
+:day2 	a om:timeline.
+:night2 a om:timeline.
+
+#FIXME: need to make night1 follow day1
+#FIXME: need to place in whoniverse timeline, ie. 2008
+
+# EVENTS FROM SCRIPT SCENES
+
+# note - events and occurances should auto-name themselves. 
+# ie. you could autogenerate 
+# donna_noble_isnt_in_noble_house_event
+# script_occurance01_on_day1 
+
+# note - i've left off all the "a type" triples 'cos so far they're all inferrable from the properties used and it makes it much more concise. This may or may not be a mistake, but if creating this from a tool, no doubt you'd be explicit.
+
+:scene02 om:event :event01.
+
+:donna_in_house { whoc:donna_noble om:location whol:noble_house. }
+
+:occurrence01 timeline:timeline :day1.
+
+:event01 om:retracts :donna_in_house;
+	event:time :occurrence01.
+	
+
+
+:scene03 om:event :event02.
+
+:doctor_in_tardis { whoc:doctor om:location whol:tardis. }
+
+:occurrence02 timeline:timeline :day1.
+
+:event02 om:retracts :doctor_in_tardis;
+	event:time :occurrence02.
+
+
+
+:scene08 om:event :event 03.
+
+:donna_in_foyer { whoc:donna_noble om:location :adipose_industries_foyer. }
+
+:occurrence03 timeline:timeline :day1;
+	om:follows :occurrence01.
+
+:event03 om:asserts :donna_in_foyer;
+	event:time :occurrence03.
+
+
+
+:scene09 om:event :event04.
+
+:doctor_in_basement { whoc:doctor om:location :adipose_industries_basement. }
+
+:occurrence04 timeline:timeline :day1;
+    om:follows :occurrence02.
+
+:event04 om:asserts :doctor_in_basement;
+	event:factor whoi:sonic_screwdriver;
+	event:time :occurrence04.
+
+#FIXME: foaf:role is not in foaf spec
+#FIXME: need a human readable label for :health_and_safety
+
+:scene10 om:event :event05.
+
+:donna_is_health_and_safety { whoc:donna_noble foaf:role :health_and_safety. }
+:guard_believes_donna_is_health_and_safety { :security_guard1 om:believes :donna_is_health_and_safety. }
+:donna_in_cinema { whoc:donna_noble om:location :adipose_industries_cinema. }
+
+:occurrence05 timeline:timeline :day1;
+	om:follows :occurrence03.
+
+:event05 om:retracts :donna_in_foyer;
+	om:asserts :guard_believes_donna_is_health_and_safety;
+	om:asserts :donna_in_cinema;
+	event:factor :id_pass;
+	event:time :occurrence05.
+
+
+
+:scene11 om:event :event06.
+
+:doctor_is_health_and_safety { whoc:doctor foaf:role :health_and_safety; foaf:name "John Smith". }
+:guard_believes_doctor_is_health_and_safety { :security_guard2 om:believes :doctor_is_health_and_safety. }
+
+:occurrence04 timeline:timeline :day1;
+	om:follows :occurrence06.
+
+:event06 om:asserts :guard_believes_doctor_is_health_and_safety; 	
+	event:factor whoi:psychic_paper;
+	event:time :occurrence06.
+
+
+
+:scene13 om:event :event07;
+    om:event :event08;
+    !!!!!!!!!.
+
+:donna_is_a_journalist { :journalists foaf:member whoc:donna_noble. }
+:journalists_watch_miss_foster_presentation { 
+    :journalists om:location adipose_industries_cinema. 
+    :miss_foster om:location adipose_industries_cinema.
+    #FIXME: :miss_foster foaf:currentProject :pill. (ok this kinda works, but its not going to go so far)
+    #FIXME: its a presentation? miss foster is doing it? to the journalists? is any of this important? should each event have a human readable label that would say presentation? or would that be too mediarep specific, and its the occurrence that has the description?
+}
+
+:occurrence07 timeline :day1;
+    om:follows :occurrence05.
+
+:event07 om:asserts :journalists_watch_miss_foster_presentation;
+    event:time :occurrence07.
+
+
+:journalists_believes_pill_reduces_fat { :journalists om:believes :pill_reduces_fat }
+#FIXME: need a human readable label for :pill_reduces_fat
+
+:occurrence08 timeline:timeline :day1;
+    om:follows :occurrence07.
+
+:event08 om:asserts :journalists_believes_pill_reduces_fat;
+    event:agent :miss_foster;
+    event:time :occurrence08.
+#FIXME: so is this how we're going to denote the reason for the believing?
+
+
+:doctor_in_projection_booth { 
+    whoc:doctor om:location :adipose_industries_projection_booth.
+    projectionist om:believes :doctor_is_health_and_safety.
+}
+
+:occurrence09 timeline:timeline :day1;
+    om:follows :occurence06;
+    om:precedes :occurrence08.
+
+:event09 om:asserts :doctor_in_projection_booth;
+    event:factor :psychic_paper;
+    event:time :occurrence09.
+
+:doctor_believes_pill_reduces_fat { whoc:doctor om:believes :pill_reduces_fat. }
+
+:event10 om:asserts :doctor_believes_pill_reduces_fat;
+    event:agent :miss_foster;
+    event:time :occurrence08.
+#FIXME: This uses the same occurrence, semantically true but philisophically/linguistically wrong. Follow along: An occurrence is a subclass of instant. So using an instant with undefined 'at' property is the same thing as using the occurrence. ie. instant is not a property of occurrence so you cannot use to tag two occurrences to the same time.
+
+
+:penny_interacts_with_miss_foster { :miss_foster foaf:knows :penny_carter }
+#FIXME: and miss foster thinks penny is an enemy?
+
+:occurrence11 timeline:timeline :day1;
+    om:follows :occurrence08
+
+event11 om:asserts :penny_interacts_with_miss_foster;
+    event:time :occurrence11.
+
+
+:journalists_believe_million_customers { :journalists om:believes :million_adipose_customers }
+#FIXME: again, human readable label for statement
+# Or is this a viewer/world fact. If nobody was watching, could we state this?
+
+:occurrence12 timeline:timeline :day1;
+    om:follows :occurrence11.
+
+:event12 om:asserts :journalists_believe_million_customers
+    event:agent :miss_foster;
+    event:time  :occurrence11.
+
+
+############## aaaaaaaaaaaaaand on.
+
+# EVENTS FROM DVD VIDEO CHAPTERS
+
+# ...match up chapters to events, would add in any events that are in video but not script if there were any.
