@@ -155,7 +155,6 @@ whol:hilltop a om:Space.
 :wine_bar_surroundings a om:Space.
 :adipose_industries_surroundings a om:Space.
 
-
 :wine_bar geonames:neighbours :wine_bar_surroundings.
 :adipose_industries geonames:neighbours :adipose_industries_surroundings.
 :adipose_industries_foyer geonames:parentFeature :adipose_industries.
@@ -167,10 +166,10 @@ whol:hilltop a om:Space.
 :adipose_industries_ladies_toilets geonames:parentFeature :adipose_industries.
 :adipose_industries_ladies_toilets_cubicles geonames:parentFeature :adipose_industries_ladies_toilets.
 :adipose_industries_rooftop geonames:parentFeature :adipose_industries.
-
+:fosters_office geonames:parentFeature :adipose_industries.
 :staceys_bathroom geonames:parentFeature :staceys_house.
 
-#FIXME: state heirarchy of locations, ie. adipose_industries_projection_booth is inside adipose_industries_cinema is inside adipose_industries
+:noble_house geonames:nearby :hilltop.
 
 # ITEMS
 
