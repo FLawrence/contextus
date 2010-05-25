@@ -155,6 +155,21 @@ whol:hilltop a om:Space.
 :wine_bar_surroundings a om:Space.
 :adipose_industries_surroundings a om:Space.
 
+
+:wine_bar geonames:neighbours :wine_bar_surroundings.
+:adipose_industries geonames:neighbours :adipose_industries_surroundings.
+:adipose_industries_foyer geonames:parentFeature :adipose_industries.
+:adipose_industries_basement geonames:parentFeature :adipose_industries.
+:adipose_industries_cinema geonames:parentFeature :adipose_industries.
+:adipose_industries_projection_booth geonames:parentFeature :adipose_industries_cinema.
+:adipose_industries_storeroom geonames:parentFeature :adipose_industries_basement.
+:adipose_industries_sales_cubicles geonames:parentFeature :adipose_industries.
+:adipose_industries_ladies_toilets geonames:parentFeature :adipose_industries.
+:adipose_industries_ladies_toilets_cubicles geonames:parentFeature :adipose_industries_ladies_toilets.
+:adipose_industries_rooftop geonames:parentFeature :adipose_industries.
+
+:staceys_bathroom geonames:parentFeature :staceys_house.
+
 #FIXME: state heirarchy of locations, ie. adipose_industries_projection_booth is inside adipose_industries_cinema is inside adipose_industries
 
 # ITEMS
@@ -196,6 +211,9 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :pill_takers a foaf:Group.
 :bystanders a foaf:Group.
 :adiposian_first_family a foaf:Group.
+
+:health_and_safety a foaf:Group;
+    rdfs:label "Health and Safety".
 
 # TIMELINES
 
@@ -248,8 +266,6 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :event03 om:asserts :donna_in_foyer;
 	event:time :occurrence03.
 
-
-
 :scene09 om:event :event04.
 
 :doctor_in_basement { whoc:doctor om:location :adipose_industries_basement. }
@@ -261,12 +277,9 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 	event:factor whoi:sonic_screwdriver;
 	event:time :occurrence04.
 
-#FIXME: foaf:role is not in foaf spec
-#FIXME: need a human readable label for :health_and_safety
-
 :scene10 om:event :event05.
-
-:donna_is_health_and_safety { whoc:donna_noble foaf:role :health_and_safety. }
+    
+:donna_is_health_and_safety {  :health_and_safety foaf:member whoc:donna_noble. }
 :guard_believes_donna_is_health_and_safety { :security_guard1 om:believes :donna_is_health_and_safety. }
 :donna_in_cinema { whoc:donna_noble om:location :adipose_industries_cinema. }
 
@@ -283,7 +296,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 :scene11 om:event :event06.
 
-:doctor_is_health_and_safety { whoc:doctor foaf:role :health_and_safety; foaf:name "John Smith". }
+:doctor_is_health_and_safety { :health_and_safety foaf:member whoc:doctor. :whoc:doctor foaf:name "John Smith". }
 :guard_believes_doctor_is_health_and_safety { :security_guard2 om:believes :doctor_is_health_and_safety. }
 
 :occurrence04 timeline:timeline :day1;
@@ -314,8 +327,9 @@ whoi:sonic_screwdriver a om:PhysicalItem.
     event:time :occurrence07.
 
 
-:journalists_believes_pill_reduces_fat { :journalists om:believes :pill_reduces_fat }
-#FIXME: need a human readable label for :pill_reduces_fat
+:journalists_believes_pill_reduces_fat { 
+    :journalists om:believes :pill_reduces_fat.
+}
 
 :occurrence08 timeline:timeline :day1;
     om:follows :occurrence07.
