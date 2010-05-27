@@ -92,6 +92,13 @@
     <rdfs:range rdf:resource="#Assertion" />
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:ID="causes">
+    <rdfs:label>causes</rdfs:label>
+    <rdfs:comment>An event that this event causes.</rdfs:comment>
+    <rdfs:domain rdf:resource="&event;Event"/>
+    <rdfs:range rdf:resource="&event;Event" />
+</owl:ObjectProperty>
+
 <!-- Assertion -->
 
 <owl:Class rdf:ID="Assertion">
@@ -135,6 +142,13 @@
     <rdfs:label>believes</rdfs:label>
     <rdfs:comment>A reference to a named graph of statements that this being believes.</rdfs:comment>
     <rdfs:domain rdf:resource="&foaf;Being"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="wants">
+    <rdfs:label>wants</rdfs:label>
+    <rdfs:comment>A reference to an Event which the being wishes to occur.</rdfs:comment>
+    <rdfs:domain rdf:resource="&foaf;Being"/>
+    <rdfs:range rdf:resource="&event;Event" />
 </owl:ObjectProperty>
 
 <!-- Being -->
