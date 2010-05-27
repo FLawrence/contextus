@@ -309,7 +309,10 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 :scene13 om:event :event07;
     om:event :event08;
-    !!!!!!!!!.
+    om:event :event09;
+    om:event :event10;
+    om:event :event11;
+    om:event :event12.
 
 :donna_is_a_journalist { :journalists foaf:member whoc:donna_noble. }
 :journalists_watch_miss_foster_presentation { 
