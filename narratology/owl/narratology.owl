@@ -141,13 +141,13 @@
 <owl:ObjectProperty rdf:ID="believes">
     <rdfs:label>believes</rdfs:label>
     <rdfs:comment>A reference to a named graph of statements that this being believes.</rdfs:comment>
-    <rdfs:domain rdf:resource="&foaf;Being"/>
+    <rdfs:domain rdf:resource="&foaf;Agent"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:ID="wants">
     <rdfs:label>wants</rdfs:label>
     <rdfs:comment>A reference to an Event which the being wishes to occur.</rdfs:comment>
-    <rdfs:domain rdf:resource="&foaf;Being"/>
+    <rdfs:domain rdf:resource="&foaf;Agent"/>
     <rdfs:range rdf:resource="&event;Event" />
 </owl:ObjectProperty>
 
