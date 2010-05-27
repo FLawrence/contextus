@@ -74,16 +74,16 @@ whoc:donna_noble a om:Character;
     foaf:name "Donna Noble".
 
 :security_guard1 a om:Character;
-    foaf:name "Security Guard 1". #should this be a name or a label?
+    foaf:name "Security Guard 1". 
 
 :security_guard2 a om:Character;
-    foaf:name "Security Guard 2". #should this be a name or a label?
+    foaf:name "Security Guard 2". 
 
 :foster_guard1 a om:Character;
-    foaf:name "Security Guard 1". #should this be a name or a label?
+    foaf:name "Security Guard 1". 
 
 :foster_guard2 a om:Character;
-    foaf:name "Security Guard 2". #should this be a name or a label?
+    foaf:name "Security Guard 2". 
 
 :foster a om:Character;
     foaf:name "Miss Foster".
@@ -92,7 +92,7 @@ whoc:donna_noble a om:Character;
     foaf:name "Penny Carter".
 
 :projectionist a om:Character;
-    foaf:name "Projectionist". #should this be a name or a label?
+    foaf:name "Projectionist". 
 
 :craig a om:Character;
     foaf:name "Craig".
@@ -107,7 +107,7 @@ whoc:donna_noble a om:Character;
     foaf:name "Roger Davey".
 
 :adipose1 a om:Character;
-    foaf:name "Adipose". #should this be a name or a label?
+    foaf:name "Adipose". 
 
 whoc:sylvia_noble a om:Character;
     foaf:name "Sylvia Noble".
@@ -125,10 +125,10 @@ whoc:martha_jones a om:Character;
     foaf:name "Suzette".
 
 :plump_man a om:Character;
-    foaf:name "A Man (Plump)". #should this be a name or a label?
+    foaf:name "A Man (Plump)". 
 
 :plump_woman a om:Character;
-    foaf:name "A Woman (Plump)". #should this be a name or a label?
+    foaf:name "A Woman (Plump)". 
 
 # LOCATIONS
 
@@ -200,9 +200,14 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :bin a om:PhysicalItem.
 :story a om:Timeline.
 
+:adiposeindustries_customer a om:Character;
+    om:has :pill.
+
 # GROUPS
 
 :journalists a foaf:Group.
+
+:adiposeindustries_staff a foaf:Group.
 :salespeople a foaf:Group.
 :collection_squad a foaf:Group.
 :adipose a foaf:Group.
@@ -210,9 +215,25 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :pill_takers a foaf:Group.
 :bystanders a foaf:Group.
 :adiposian_first_family a foaf:Group.
-
 :health_and_safety a foaf:Group;
     rdfs:label "Health and Safety".
+:adiposeindustries_customers a om:Group;
+    om:part_instance :adiposeindustries_customer.
+
+
+# GROUP MEMBERSHIPS
+
+:adiposeindustries_staff foaf:member :miss_foster.
+:adiposeindustries_staff foaf:member :projectionist.
+:adiposeindustries_staff foaf:member :foster_guard1.
+:adiposeindustries_staff foaf:member :foster_guard2.
+:adiposeindustries_staff foaf:member :security_guard1.
+:adiposeindustries_staff foaf:member :security_guard2.
+:adiposeindustries_staff foaf:member :collection_squad.
+:salespeople foaf:member :craig.
+:salespeople foaf:member :claire.
+:adiposeindustries_staff foaf:member :salespeople.
+:adiposeindustries_staff foaf:member :health_and_safety.
 
 # TIMELINES
 
@@ -237,7 +258,8 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 :donna_in_house { whoc:donna_noble om:location whol:noble_house. }
 
-:occurrence01 timeline:timeline :day1.
+:occurrence01 timeline:timeline :day1
+    rdfs:comment "DONNA steps out of her front door. Smart, head held high; she's on a mission.";
 
 :event01 om:retracts :donna_in_house;
 	event:time :occurrence01.
@@ -249,27 +271,30 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :doctor_in_tardis { whoc:doctor om:location whol:tardis. }
 
 :occurrence02 timeline:timeline :day1.
+    rdfs:comment "THE DOCTOR steps out of the TARDIS. Sets off. On a mission.";
 
 :event02 om:retracts :doctor_in_tardis;
 	event:time :occurrence02.
 
-
-
-:scene08 om:event :event 03.
+:scene06 om:event :event03.
+:scene08 om:event :event03.
 
 :donna_in_foyer { whoc:donna_noble om:location :adipose_industries_foyer. }
 
 :occurrence03 timeline:timeline :day1;
+    rdfs:comment "DONNA stops in the street, looks up... A TOWER BLOCK looming above. Cool, sleek, stylish, the London HQ of Adipose Industries. Deep breath, Donna heads towards it. DONNA walks through the revolving doors.";
 	om:follows :occurrence01.
 
 :event03 om:asserts :donna_in_foyer;
 	event:time :occurrence03.
 
+:scene07 om:event :event04.
 :scene09 om:event :event04.
 
 :doctor_in_basement { whoc:doctor om:location :adipose_industries_basement. }
 
 :occurrence04 timeline:timeline :day1;
+    rdfs:comment "THE DOCTOR stops in the street, looks up... THE TOWER BLOCK looming above, Adipose Industries. But this is the opposite side to Donna's, the back. Deep breath, the Doctor heads towards it. THE DOCTOR's down a flight of steps, sonicking a basement door - PRAC EXPLOSION on the lock, and he slips inside.";
     om:follows :occurrence02.
 
 :event04 om:asserts :doctor_in_basement;
@@ -283,6 +308,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :donna_in_cinema { whoc:donna_noble om:location :adipose_industries_cinema. }
 
 :occurrence05 timeline:timeline :day1;
+    rdfs:comment "Posh foyer. DONNA shows her ID pass to the SECURITY GUARD. DONNA Donna Noble, Health and Safety.";
 	om:follows :occurrence03.
 
 :event05 om:retracts :donna_in_foyer;
@@ -298,7 +324,8 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :doctor_is_health_and_safety { :health_and_safety foaf:member whoc:doctor. :whoc:doctor foaf:name "John Smith". }
 :guard_believes_doctor_is_health_and_safety { :security_guard2 om:believes :doctor_is_health_and_safety. }
 
-:occurrence04 timeline:timeline :day1;
+:occurrence06 timeline:timeline :day1;
+    rdfs:comment "
 	om:follows :occurrence06.
 
 :event06 om:asserts :guard_believes_doctor_is_health_and_safety; 	
@@ -313,38 +340,40 @@ whoi:sonic_screwdriver a om:PhysicalItem.
     om:event :event10;
     om:event :event11;
     om:event :event12.
+    
+
+:event_presentation om:asserts { :adiposeindustries_staff foaf:make :pill. };
+    om:asserts :pill_reduces_fat.
 
 :donna_is_a_journalist { :journalists foaf:member whoc:donna_noble. }
-:journalists_watch_miss_foster_presentation { 
+:journalists_at_presentation { 
     :journalists om:location adipose_industries_cinema. 
     :miss_foster om:location adipose_industries_cinema.
-    #FIXME: :miss_foster foaf:currentProject :pill. (ok this kinda works, but its not going to go so far)
-    #FIXME: its a presentation? miss foster is doing it? to the journalists? is any of this important? should each event have a human readable label that would say presentation? or would that be too mediarep specific, and its the occurrence that has the description?
 }
 
 :occurrence07 timeline :day1;
-    om:follows :occurrence05.
+    om:follows :occurrence05;
+    rdfs:comment "Part of the Tower Block HQ, with Adipose Industries logos on the walls. Slogan: The Fat Just Walks Away. The logo is on screen, as MISS FOSTER steps forward, at the front. She's 40s, handsome, strong. She addresses the audience, 40 PEOPLE or so, scattered about, taking notes - they're JOURNALISTS; this is a Press Launch.".
 
 :event07 om:asserts :journalists_watch_miss_foster_presentation;
     event:time :occurrence07.
-
 
 :journalists_believes_pill_reduces_fat { 
     :journalists om:believes :pill_reduces_fat.
 }
 
 :occurrence08 timeline:timeline :day1;
+    rdfs:comment "MISS FOSTER Adipose Industries. The twenty-first century way to lose weight. No exercise, no diet, no pain. Just lifelong freedom, from fat, the Holy Grail of the modern age. And here it is! Holds it up, an ordinary red & white capsule. MISS FOSTER (CONT'D) You just take one capsule. One capsule, once a day, for three weeks. And the fat, as they say... ON SCREEN, GRAPHIC, the logo does a little spin, the jingle sings: The Fat Just Walks Awaaaaay!";
     om:follows :occurrence07.
 
-:event08 om:asserts :journalists_believes_pill_reduces_fat;
+:event08 om:asserts { :miss_foster om:wants :journalists_believes_pill_reduces_fat};
     event:agent :miss_foster;
+    event:factor :event_presentation; # Note what we did here - presentation is an event, but we're not using it in the occurrence sense.
     event:time :occurrence08.
-#FIXME: so is this how we're going to denote the reason for the believing?
-
 
 :doctor_in_projection_booth { 
     whoc:doctor om:location :adipose_industries_projection_booth.
-    projectionist om:believes :doctor_is_health_and_safety.
+    :projectionist om:location :adipose_industries_projection_booth.
 }
 
 :occurrence09 timeline:timeline :day1;
@@ -353,37 +382,40 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 :event09 om:asserts :doctor_in_projection_booth;
     event:factor :psychic_paper;
+    event:requires { projectionist om:believes { :doctor foaf:member :adiposeindustries_staff .} } ;
     event:time :occurrence09.
 
 :doctor_believes_pill_reduces_fat { whoc:doctor om:believes :pill_reduces_fat. }
 
 :event10 om:asserts :doctor_believes_pill_reduces_fat;
     event:agent :miss_foster;
+    event:factor :presentation;
     event:time :occurrence08.
-#FIXME: This uses the same occurrence, semantically true but philisophically/linguistically wrong. Follow along: An occurrence is a subclass of instant. So using an instant with undefined 'at' property is the same thing as using the occurrence. ie. instant is not a property of occurrence so you cannot use to tag two occurrences to the same time.
 
-
-:penny_interacts_with_miss_foster { :miss_foster foaf:knows :penny_carter }
-#FIXME: and miss foster thinks penny is an enemy?
+:penny_interacts_with_miss_foster {
+    :miss_foster foaf:antagonistOf :penny_carter 
+    :penny_carter foaf:enemyOf :miss_foster}
 
 :occurrence11 timeline:timeline :day1;
     om:follows :occurrence08
 
 event11 om:asserts :penny_interacts_with_miss_foster;
     event:time :occurrence11.
+#factor:journalist_exchange? #factor:pennys_research?
 
+:million_adipose_customers { 
+    :adiposeindustries_customers om:number_of_parts "1000000"^^xsd:integer.
+}
 
 :journalists_believe_million_customers { :journalists om:believes :million_adipose_customers }
-#FIXME: again, human readable label for statement
-# Or is this a viewer/world fact. If nobody was watching, could we state this?
 
 :occurrence12 timeline:timeline :day1;
     om:follows :occurrence11.
 
 :event12 om:asserts :journalists_believe_million_customers
     event:agent :miss_foster;
+    factor: presentation;
     event:time  :occurrence11.
-
 
 ############## aaaaaaaaaaaaaand on.
 
