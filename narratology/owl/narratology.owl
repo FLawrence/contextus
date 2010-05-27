@@ -99,6 +99,14 @@
     <rdfs:range rdf:resource="&event;Event" />
 </owl:ObjectProperty>
 
+
+<owl:ObjectProperty rdf:ID="requires">
+    <rdfs:label>causes</rdfs:label>
+    <rdfs:comment>An assertion required for this event to occur.</rdfs:comment>
+    <rdfs:domain rdf:resource="&event;Event"/>
+    <rdfs:range rdf:resource="#Assertion" />
+</owl:ObjectProperty>
+
 <!-- Assertion -->
 
 <owl:Class rdf:ID="Assertion">
@@ -137,6 +145,13 @@
 <!-- ===================== -->
 <!-- Beings and Characters -->
 <!-- ===================== -->
+
+<owl:ObjectProperty rdf:ID="has">
+    <rdfs:label>has</rdfs:label>
+    <rdfs:comment>A thing owned or possessed by this being.</rdfs:comment>
+    <rdfs:domain rdf:resource="&foaf;Agent"/>
+    <rdfs:range rdf:resource="&owl;Thing" />
+</owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:ID="believes">
     <rdfs:label>believes</rdfs:label>
@@ -258,5 +273,47 @@
     <rdfs:domain rdf:resource="#MediaRegion" />
     <rdfs:range rdf:resource="&foaf;Document" />
 </owl:ObjectProperty>
+
+<!-- Collection -->
+
+<owl:Class rdf:ID="Collection">
+    <rdfs:comment>Represents a collection of things</rdfs:comment>
+    <rdfs:label>Collection</rdfs:label>
+</owl:Class>  
+
+<owl:ObjectProperty rdf:ID="number_of_parts">
+    <rdfs:label>number_of_parts</rdfs:label>
+    <rdfs:comment>This property specifies the number of parts contained by the collection</rdfs:comment>
+    <rdfs:domain rdf:resource="&base;Collection"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+</owl:ObjectProperty> 
+
+<owl:ObjectProperty rdf:ID="max_number_of_parts">
+    <rdfs:label>max_number_of_parts</rdfs:label>
+    <rdfs:comment>Specifies the maximum number of parts that can be contained by the collection</rdfs:comment>
+    <rdfs:domain rdf:resource="#Collection"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+</owl:ObjectProperty> 
+
+<owl:ObjectProperty rdf:ID="min_number_of_parts">
+    <rdfs:label>min_number_of_parts</rdfs:label>
+    <rdfs:comment>Specifies the minimum number of parts that can be contained by the collection</rdfs:comment>
+    <rdfs:domain rdf:resource="#Collection"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+</owl:ObjectProperty> 
+
+<owl:ObjectProperty rdf:ID="part_instance">
+    <rdfs:label>part_instance</rdfs:label>
+    <rdfs:comment>Specifies the template object which makes up the components of this collection</rdfs:comment>
+    <rdfs:domain rdf:resource="#Collection" />
+    <rdfs:domain rdf:resource="&owl;Thing" />
+</owl:ObjectPropery>
+
+<!-- Group -->
+
+<owl:Class rdf:ID="Group">
+    <rdfs:subClassOf rdf:resource="&foaf;Group" />
+    <rdfs:subClassOf rdf:resource="#Collection" />
+</owl:Class>
 
 </rdf:RDF>
