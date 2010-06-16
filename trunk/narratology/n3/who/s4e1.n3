@@ -3,6 +3,7 @@
 @prefix timeline: <http://purl.org/NET/c4dm/timeline.owl#>.
 @prefix foaf: 	<http://xmlns.com/foaf/0.1/>.
 @prefix geonames: <http://www.geonames.org/ontology#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix whoc:   <http://contextus.net/who/character/>.
 @prefix whol:   <http://contextus.net/who/location/>.
 @prefix whoi:   <http://contextus.net/who/item/>.
@@ -17,45 +18,45 @@
 #FIXME: om:source <http://www.thewriterstale.com/pdfs/Doctor%20Who%204%20Ep.1%20-%20Shooting%20Script%20-%20Yellow%20-%2016.10.07.pdf> 
 
 :DW_S4E1_Script a om:MediaRegion;
-	content DW_S4E1_ScriptDoc;
-	sub_region :scene01;
-	sub_region :scene02;
-	sub_region :scene03;
-	sub_region :scene04;
-	sub_region :scene05;
-	sub_region :scene06;
-	sub_region :scene07;
-	sub_region :scene08;
-	sub_region :scene09;
-	sub_region :scene10;
-	sub_region :scene11;
-	sub_region :scene12;
-	sub_region :scene13;
-	sub_region :scene14;
-	sub_region :scene15;
-	sub_region :scene16;
-	sub_region :scene17;
-	sub_region :scene18;
-	sub_region :scene19;
-	sub_region :scene10;
-	sub_region :scene21;
-	sub_region :scene22;
-	sub_region :scene23;
-	sub_region :scene24;
-	sub_region :scene25;
-	sub_region :scene26;
-	sub_region :scene27;
-	sub_region :scene28;
-	sub_region :scene29;
+	om:content :DW_S4E1_ScriptDoc;
+	om:sub_region :scene01;
+	om:sub_region :scene02;
+	om:sub_region :scene03;
+	om:sub_region :scene04;
+	om:sub_region :scene05;
+	om:sub_region :scene06;
+	om:sub_region :scene07;
+	om:sub_region :scene08;
+	om:sub_region :scene09;
+	om:sub_region :scene10;
+	om:sub_region :scene11;
+	om:sub_region :scene12;
+	om:sub_region :scene13;
+	om:sub_region :scene14;
+	om:sub_region :scene15;
+	om:sub_region :scene16;
+	om:sub_region :scene17;
+	om:sub_region :scene18;
+	om:sub_region :scene19;
+	om:sub_region :scene10;
+	om:sub_region :scene21;
+	om:sub_region :scene22;
+	om:sub_region :scene23;
+	om:sub_region :scene24;
+	om:sub_region :scene25;
+	om:sub_region :scene26;
+	om:sub_region :scene27;
+	om:sub_region :scene28;
+	om:sub_region :scene29;
 #FIXME [...]
-	sub_region :scene121;
-	sub_region :scene122;
-	sub_region :scene123;
-	sub_region :scene124;
-	sub_region :scene125;
-	sub_region :scene126;
-	sub_region :scene127;
-	sub_region :scene128.
+	om:sub_region :scene121;
+	om:sub_region :scene122;
+	om:sub_region :scene123;
+	om:sub_region :scene124;
+	om:sub_region :scene125;
+	om:sub_region :scene126;
+	om:sub_region :scene127;
+	om:sub_region :scene128.
 
 #FIXME: dvd here as foaf:document
 
@@ -258,8 +259,8 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 :donna_in_house { whoc:donna_noble om:location whol:noble_house. }
 
-:occurrence01 timeline:timeline :day1
-    rdfs:comment "DONNA steps out of her front door. Smart, head held high; she's on a mission.";
+:occurrence01 timeline:timeline :day1;
+    rdfs:comment "DONNA steps out of her front door. Smart, head held high; she's on a mission.".
 
 :event01 om:retracts :donna_in_house;
 	event:time :occurrence01.
@@ -271,7 +272,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :doctor_in_tardis { whoc:doctor om:location whol:tardis. }
 
 :occurrence02 timeline:timeline :day1.
-    rdfs:comment "THE DOCTOR steps out of the TARDIS. Sets off. On a mission.";
+    rdfs:comment "THE DOCTOR steps out of the TARDIS. Sets off. On a mission.".
 
 :event02 om:retracts :doctor_in_tardis;
 	event:time :occurrence02.
@@ -325,7 +326,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :guard_believes_doctor_is_health_and_safety { :security_guard2 om:believes :doctor_is_health_and_safety. }
 
 :occurrence06 timeline:timeline :day1;
-    rdfs:comment "
+    rdfs:comment "'Backstage' corridor, all concrete and pipes. THE DOCTOR passes a SECURITY GUARD, shows the psychic paper. THE DOCTOR John Smith, Health and Safety.";
 	om:follows :occurrence06.
 
 :event06 om:asserts :guard_believes_doctor_is_health_and_safety; 	
@@ -377,6 +378,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 }
 
 :occurrence09 timeline:timeline :day1;
+    rdfs:comment "THE DOCTOR at the window, a FILM PROJECTOR whirring away, manned by a BLOKE. The Doctor shows him the psychic paper, keeping his eye on Miss Foster. THE DOCTOR Health and Safety. Film department.";
     om:follows :occurence06;
     om:precedes :occurrence08.
 
@@ -393,15 +395,17 @@ whoi:sonic_screwdriver a om:PhysicalItem.
     event:time :occurrence08.
 
 :penny_interacts_with_miss_foster {
-    :miss_foster foaf:antagonistOf :penny_carter 
-    :penny_carter foaf:enemyOf :miss_foster}
+    :miss_foster foaf:antagonistOf :penny_carter. 
+    :penny_carter foaf:enemyOf :miss_foster.
+}
 
 :occurrence11 timeline:timeline :day1;
-    om:follows :occurrence08
+    rdfs:comment "PENNY Excuse me, Miss Foster, if I could..? I'm Penny Carter, Science Correspondent for the Observer MISS FOSTER Oh yes. You've written quite a bit about us already. PENNY And I'm not about to stop. But there's a thousand diet pills on the market, and a thousand conmen stealing people's money. How do we know the fat isn't going straight into your bank account? MISS FOSTER Penny. If cynicism burnt up calories, we'd all be thin as rakes. But if you want the science, then I can oblige...";
+    om:follows :occurrence08.
 
 event11 om:asserts :penny_interacts_with_miss_foster;
     event:time :occurrence11.
-#factor:journalist_exchange? #factor:pennys_research?
+    #factor:pennys_research? #this could tie into her taking papers later.
 
 :million_adipose_customers { 
     :adiposeindustries_customers om:number_of_parts "1000000"^^xsd:integer.
@@ -410,6 +414,7 @@ event11 om:asserts :penny_interacts_with_miss_foster;
 :journalists_believe_million_customers { :journalists om:believes :million_adipose_customers }
 
 :occurrence12 timeline:timeline :day1;
+    rdfs:comment "PENNY But can I ask, how many people have taken the pills, to date? MISS FOSTER We've already got one million customers within the Greater London area alone. But from next week, we start rolling out, nationwide. The future starts here. And Britain will be thin!";
     om:follows :occurrence11.
 
 :event12 om:asserts :journalists_believe_million_customers
