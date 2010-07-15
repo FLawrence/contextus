@@ -4,50 +4,78 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>Seamstress</title>
 		<link type="text/css" href="css/base.css" rel="stylesheet" />	
+		<link type="text/css" href="css/table.css" rel="stylesheet" />	
 		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.2.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/sparql.js"></script>
-		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.2.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="js/seamstress.js"></script>
+        <script type="text/javascript" src="js/finder.js"></script>
 
         <script type="text/javascript">
+			function initToolbar() {
+				$('#story_new').button({
+					text: false, 
+					icons: {
+						primary: 'ui-icon-document'
+					}
+				});
+				$('#story_open').button({
+					text: false, 
+					icons: {
+						primary: "ui-icon-folder-open"
+					}
+				}).click(function() { $("#find_dialog").dialog('open'); });
+			}
 
-            function handleFindDialogOpen(event, ui) {
-               $("#find_form :text").keyup(handleFindDialogKeyPress);
-            }
-
-            function handleFindDialogKeyPress() {
-                findObjects($("#find_uri").val(), $("#find_keywords").val());
-            }
-
-            $(function() { 
-                $("#tabs").tabs();
-                $("#find_dialog").dialog({
-                    width: 480,
-                    open: handleFindDialogOpen
-                });
+            $(function() {
+				$("#finder_error").hide();
+				initFinder($("#find_dialog"));
+				initToolbar();
             });
         </script>  
 	</head>
 	<body>
-        <div id="tabs">
-            <ul>
-                <li><a href="#tabs-1">Stories</a></li>
-                <li><a href="#tabs-2">Events</a></li>
-            </ul>
-            <div id="tabs-1">
-                <p>Bla bla</p>
-            </div>
-            <div id="tabs-2">
-                <p>Bloo bloo</p>
-            </div>
-        </div>
 
-        <div id="find_dialog" title="Story Finder">
+		<div>
+			<span id="toolbar" class="ui-widget-header ui-corner-all">
+				<button id="story_new">New Story</button>
+				<button id="story_open">Open Story</button>
+			</span>
+		</div>
+
+		<div>
+			<input type="text" size="64" id="create_uri" name="uri" /><br />
+			<input type="text" size="64" id="create_label" name="label" /><br />
+			<input type="text" size="64" id="create_comment" name="comment" /><br />
+		</div>
+		
+
+        <div id="find_dialog" title="Open Story">
+			<div class="ui-widget" id="finder_error">
+	    		<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+					<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+					Unable to retrieve stories at this time.</p>
+				</div>
+			</div>
             <form id="find_form">
-                <input type="text" size="64" value="uri" name="uri" id="find_uri" /><br />
-                <input type="text" size="64" value="keywords" name="keywords" id="find_keywords" /><br />
+                <input type="text" size="64" class="default_text" value="URI" title='URI' name="uri" id="find_uri" /><br />
+                <input type="text" size="64" class="default_text" value="Keywords" title='Keywords' name="keywords" id="find_keywords" /><br />
             </form>
+			<table class="display" id="find_results">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>URI</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
         </div>
 	</body>
 </html>

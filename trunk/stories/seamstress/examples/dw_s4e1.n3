@@ -1,0 +1,11 @@
+@prefix stories: <http://purl.org/ontology/stories/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://contextus.net/story/doctor_who/s4e1> a stories:Story;
+    rdfs:label "Partners in Crime";
+    rdfs:comment "Season 4 Episode 1: Partners in Crime".
+    
+<http://contextus.net/story/doctor_who/s4e2> a stories:Story;
+    rdfs:label "The Fires of Pompeii";
+    rdfs:comment "Season 4 Episode 2: The Fires of Pompeii".
