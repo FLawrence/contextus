@@ -13,12 +13,11 @@
         <script type="text/javascript">
 
             function handleFindDialogOpen(event, ui) {
-               $("#find_form :text").keypress(handleFindDialogKeyPress);
+               $("#find_form :text").keyup(handleFindDialogKeyPress);
             }
 
             function handleFindDialogKeyPress() {
-                findObjects($("#find_form[name=uri]").val(), $("#find_form[name=keywords]").val);
-                alert("Hey");
+                findObjects($("#find_uri").val(), $("#find_keywords").val());
             }
 
             $(function() { 
@@ -46,8 +45,8 @@
 
         <div id="find_dialog" title="Story Finder">
             <form id="find_form">
-                <input type="text" size="64" value="uri" name="uri" /><br />
-                <input type="text" size="64" value="keywords" name="keywords" /><br />
+                <input type="text" size="64" value="uri" name="uri" id="find_uri" /><br />
+                <input type="text" size="64" value="keywords" name="keywords" id="find_keywords" /><br />
             </form>
         </div>
 	</body>
