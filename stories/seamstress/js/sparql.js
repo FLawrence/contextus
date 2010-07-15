@@ -304,7 +304,7 @@ SPARQL.Query = function(service, priority) {
 		this._doCallback(arg.callback, 'failure', xhr /* just pass through the connection response object */);
 	};
 	this._querySuccess = function(xhr, arg) {
-        //alert(xhr.responseText);
+         //alert(xhr.responseText);
 		SPARQL.statistics.successes++;
 		_service._markDone(this);
 		this._doCallback(arg.callback, 'success', arg.transformer(

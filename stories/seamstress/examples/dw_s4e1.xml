@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:stories="http://purl.org/ontology/stories/">
+  <rdf:Description rdf:about="http://contextus.net/story/doctor_who/s4e1">
+    <rdf:type rdf:resource="http://purl.org/ontology/stories/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contextus.net/story/doctor_who/s4e1">
+    <rdfs:label>Partners in Crime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://contextus.net/story/doctor_who/s4e1">
+    <rdfs:comment>Season 4 Episode 1: Partners in Crime</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
