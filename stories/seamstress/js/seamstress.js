@@ -5,7 +5,7 @@ function findObjects(uri, keywords)
 {
     var query = sparqler.createQuery();
     query.query("SELECT * WHERE {?s ?p ?o} LIMIT 10", {
-        failure: function() { alert("boo"); },
+        failure: function(xhr) { alert(xhr); },
         success: function(json) { alert("woo"); }
     });    
 }
