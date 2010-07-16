@@ -51,7 +51,7 @@
    <rdfs:label xml:lang="en">event</rdfs:label>
    <rdfs:comment xml:lang="en">An ordered list of Events within this story.</rdfs:comment>
    <rdfs:domain rdf:resource="&base;Story" />
-   <rdfs:range rdf:resource="&event;EventList" />
+   <rdfs:range rdf:resource="&base;EventList" />
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="&base;contextualises">
