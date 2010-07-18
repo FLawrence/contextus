@@ -1,0 +1,23 @@
+This program requires a standard (recent) python and pygame.
+
+It looks for characters.csv and events.csv in the current directory,
+and attempts to find a "reasonable" layout for a timeline, showing the
+common events for characters.
+
+characters.csv defines character names and URIs in the first two columns.
+events.csv defines the event label in the first column, and the character names involved in that event in subsequent columns.
+
+Drawing parameters are in the "header" of the Renderer class.
+
+The algorithm is a local-search style process, attempting to minimise
+firstly the number of non-event nodes lying between event-nodes at
+each time-step, and secondly a combination of the number of
+character-line crossings and a measure of the denseness of such
+crossings. At each step, all possible moves (see below) are tested in
+random order, and the first non-disimproving move is made.
+
+Moves fall into two categories: a swap of adjacent characters in a
+given event, and the insertion of a character somewhere else in the
+order for an event (aka a single rotation of a subsequence of
+characters for that event). The types of event used are alternated in
+batches.
