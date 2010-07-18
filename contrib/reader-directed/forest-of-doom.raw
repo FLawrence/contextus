@@ -95,7 +95,7 @@
 95 d 173 368
 96 c 62
 97 d 328 118
-98 l-- 1
+98="Back to\nthe start" l--
 99 d 209 349
 100 d 339
 101 d+ 25
@@ -112,7 +112,7 @@
 112 d 103
 113 d 324 149
 114 d 350 123
-115 d 382 277
+115="East/West\njunction" d 382 277
 116 d+ 314
 117 c 232
 118 c 174
@@ -228,7 +228,7 @@
 228 d 255
 229 l 165 45
 230 d 137 290 358
-231 c 224 332
+231="Death Hawks" c 224 332
 232 d++ 263 358
 233 d 17 238
 234 d 382
@@ -262,7 +262,7 @@
 262 d 337
 263 d 126 358
 264 d 367 189 282
-265 c 356
+265="Forest Giant" c 356
 266 l 354 129
 267 d 196 25
 268 d 119
@@ -398,3 +398,43 @@
 398 d 320 193
 399 d--
 400 d++
+
+[Ogre's Cave=230 137 10 290 55 313 385 168 313 117 240 232 263 126 22 365 169 338 85 9 176]
+[Ogre's Trap=40 218 358]
+[Tree House=195 352 207 156 302]
+[Hillmen=90 210 348 43 50]
+[Old Witch's Cottage=38 315 42 342 158 11 47 353 26 91]
+[Hollow Tree=275 179]
+[Treeman=277 114 123 234 27 350]
+[Quin=209 28 266 52 129 78 354]
+[Sting Worm Hole=125 15 217 262]
+[Poisonous Tree=37 336 21 108]
+[Trapped Thief=253 344 36]
+[Shape Changer=187 286 203 6 373 308]
+[Orc Camp=29 383]
+[Bear=241 219]
+[Cave Troll=196 376 74 310 101 39 287 267]
+[Empty Hut=294 175 106 372 48]
+[Boulder Beast=84 146]
+[River Bridge=339 299 65 75]
+[Killer Bees=92 100 7 23]
+[Pygmies=309 197 77 24 377 53 205]
+[Tangleweed=138 64 159]
+[Centaur=142 251 366 260 63 127 178]
+[Friar=191 184 243 166 33]
+[Magic Lamp=265 356 395 34 154 370]
+[Death Hawks=231 224]
+[Wyvern=57 35 132 258 167 305 133 374]
+[Bandits=360 104 311 279 246]
+[Outside the Forest=300 329 72 124 [Crossroads]]
+[Crossroads=109 252 331]
+[East Path=281]
+[West Path=238]
+[The Well=233 359 17 172 89 256]
+[Underground=295 30 225 122 135 296 [West Tunnel] [East Tunnel]]
+[West Tunnel=[Gremlins (South)] [Gremlins (North)] [West Junction]]
+[West Junction=121 61 284 93]
+[East Tunnel=151 [Gremlin Chief]]
+[Gremlins (North)=81 4 49 371]
+[Gremlins (South)=229 45 165 242 270]
+[Gremlin Chief=71 273]
