@@ -1,0 +1,502 @@
+@prefix stories: <http://purl.org/ontology/stories/> .
+@prefix dw: <http://contextus.net/stories/dw/s1e9/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix olo:     <http://purl.org/ontology/olo/core#> .
+
+<http://www.bbc.co.uk/b0074ds9#programme> stories:tells dw:s1e9.
+
+dw:s1e9 a stories:Story;
+    stories:events dw:s1e9_events.
+    
+dw:s1e9_events a stories:EventList;
+    stories:slot [
+        olo:index 1;
+        stories:item dw:s1e9_ev1
+    ];
+    stories:slot [
+        olo:index 2;
+        stories:item dw:s1e9_ev2
+    ];
+    stories:slot [
+        olo:index 3;
+        stories:item dw:s1e9_ev3
+    ];
+    stories:slot [
+        olo:index 4;
+        stories:item dw:s1e9_ev4
+    ];
+    stories:slot [
+        olo:index 5;
+        stories:item dw:s1e9_ev5
+    ];
+    stories:slot [
+        olo:index 6;
+        stories:item dw:s1e9_ev6
+    ];
+    stories:slot [
+        olo:index 7;
+        stories:item dw:s1e9_ev7
+    ];
+    stories:slot [
+        olo:index 8;
+        stories:item dw:s1e9_ev8
+    ];
+    stories:slot [
+        olo:index 9;
+        stories:item dw:s1e9_ev9
+    ];
+    stories:slot [
+        olo:index 10;
+        stories:item dw:s1e9_ev10
+    ];
+    stories:slot [
+        olo:index 11;
+        stories:item dw:s1e9_ev11
+    ];
+    stories:slot [
+        olo:index 12;
+        stories:item dw:s1e9_ev12
+    ];
+    stories:slot [
+        olo:index 13;
+        stories:item dw:s1e9_ev13
+    ];
+    stories:slot [
+        olo:index 14;
+        stories:item dw:s1e9_ev14
+    ];
+    stories:slot [
+        olo:index 15;
+        stories:item dw:s1e9_ev15
+    ];
+    stories:slot [
+        olo:index 16;
+        stories:item dw:s1e9_ev16
+    ];
+    stories:slot [
+        olo:index 17;
+        stories:item dw:s1e9_ev17
+    ];
+    stories:slot [
+        olo:index 18;
+        stories:item dw:s1e9_ev18
+    ];
+    stories:slot [
+        olo:index 19;
+        stories:item dw:s1e9_ev19
+    ];
+    stories:slot [
+        olo:index 20;
+        stories:item dw:s1e9_ev20
+    ];
+    stories:slot [
+        olo:index 21;
+        stories:item dw:s1e9_ev21
+    ];
+    stories:slot [
+        olo:index 22;
+        stories:item dw:s1e9_ev22
+    ];
+    stories:slot [
+        olo:index 23;
+        stories:item dw:s1e9_ev23
+    ];
+    stories:slot [
+        olo:index 24;
+        stories:item dw:s1e9_ev24
+    ];
+    stories:slot [
+        olo:index 25;
+        stories:item dw:s1e9_ev25
+    ];
+    stories:slot [
+        olo:index 26;
+        stories:item dw:s1e9_ev26
+    ];
+    stories:slot [
+        olo:index 27;
+        stories:item dw:s1e9_ev27
+    ];
+    stories:slot [
+        olo:index 28;
+        stories:item dw:s1e9_ev28
+    ];
+    stories:slot [
+        olo:index 29;
+        stories:item dw:s1e9_ev29
+    ];
+    stories:slot [
+        olo:index 30;
+        stories:item dw:s1e9_ev30
+    ];
+    stories:slot [
+        olo:index 31;
+        stories:item dw:s1e9_ev31
+    ];
+    stories:slot [
+        olo:index 32;
+        stories:item dw:s1e9_ev32
+    ];
+    stories:slot [
+        olo:index 33;
+        stories:item dw:s1e9_ev33
+    ];
+    stories:slot [
+        olo:index 34;
+        stories:item dw:s1e9_ev34
+    ];
+    stories:slot [
+        olo:index 35;
+        stories:item dw:s1e9_ev35
+    ];
+    stories:slot [
+        olo:index 36;
+        stories:item dw:s1e9_ev36
+    ];
+    stories:slot [
+        olo:index 37;
+        stories:item dw:s1e9_ev37
+    ];
+    stories:slot [
+        olo:index 38;
+        stories:item dw:s1e9_ev38
+    ];
+    stories:slot [
+        olo:index 39;
+        stories:item dw:s1e9_ev39
+    ];
+    stories:slot [
+        olo:index 40;
+        stories:item dw:s1e9_ev40
+    ];
+    stories:slot [
+        olo:index 41;
+        stories:item dw:s1e9_ev41
+    ];
+    stories:slot [
+        olo:index 42;
+        stories:item dw:s1e9_ev42
+    ];
+    stories:slot [
+        olo:index 43;
+        stories:item dw:s1e9_ev43
+    ];
+    stories:slot [
+        olo:index 44;
+        stories:item dw:s1e9_ev44
+    ];
+    stories:slot [
+        olo:index 45;
+        stories:item dw:s1e9_ev45
+    ];
+    stories:slot [
+        olo:index 46;
+        stories:item dw:s1e9_ev46
+    ];
+    stories:slot [
+        olo:index 47;
+        stories:item dw:s1e9_ev47
+    ];
+    stories:slot [
+        olo:index 48;
+        stories:item dw:s1e9_ev48
+    ];
+    stories:slot [
+        olo:index 49;
+        stories:item dw:s1e9_ev49
+    ];
+    stories:slot [
+        olo:index 50;
+        stories:item dw:s1e9_ev50
+    ];
+    stories:slot [
+        olo:index 51;
+        stories:item dw:s1e9_ev51
+    ];
+    stories:slot [
+        olo:index 52;
+        stories:item dw:s1e9_ev52
+    ];
+    stories:slot [
+        olo:index 53;
+        stories:item dw:s1e9_ev53
+    ].
+
+
+dw:s1e9_ev1 a event:Event;
+    event:place dw:space;
+    stories:involves dw:tardis.
+
+dw:s1e9_ev2 a event:Event;
+    event:place dw:tardis;
+    event:agent dw:doctor;
+    event:agent dw:rose_tyler.
+
+dw:s1e9_ev3 a event:Event;
+    event:place dw:time_vortex;
+    stories:involves dw:mauve_object.
+    
+dw:s1e9_ev4 a event:Event;
+    event:place dw:tardis;
+    event:agent dw:doctor;
+    event:agent dw:rose_tyler.
+    
+dw:s1e9_ev5 a event:Event;
+    event:place dw:space;
+    stories:involves dw:mauve_object;
+    stories:involves dw:tardis.
+
+# Credits
+    
+dw:s1e9_ev6 a event:Event;
+    event:place dw:london_alleyway;
+    event:agent dw:doctor;
+    event:agent dw:rose_tyler;
+    event:agent dw:the_child;
+    stories:involves dw:tardis;
+    stories:involves dw:psychic_paper;
+    stories:involves dw:sonic_screwdriver.
+    
+dw:s1e9_ev7 a event:Event;
+    event:place dw:darkened_corridor;
+    event:agent dw:waiter;
+    event:agent dw:doctor.
+
+dw:s1e9_ev8 a event:Event;
+    event:place dw:drinking_den;
+    event:agent dw:nightclub_singer;
+    event:agent dw:doctor. # Audience?
+    
+dw:s1e9_ev9 a event:Event;
+    event:place dw:london_alleyway;
+    event:agent dw:the_child;
+    event:agent dw:rose_tyler.
+    
+dw:s1e9_ev10 a event:Event;
+    event:place dw:drinking_den;
+    event:agent dw:doctor. # Audience?
+    
+dw:s1e9_ev11 a event:Event;
+    event:place dw:london_alleyway;
+    event:agent dw:the_child;
+    event:agent dw:rose_tyler.
+    
+dw:s1e9_ev12 a event:Event;
+    event:place dw:drinking_den;
+    event:agent dw:doctor. #Audience + ref to Hitler
+    
+    
+dw:s1e9_ev13 a event:Event;
+    event:place dw:london_alleyway;
+    event:agent dw:the_child;
+    event:agent dw:rose_tyler;
+    stories:involves dw:barrage_balloon.
+    
+dw:s1e9_ev14 a event:Event;
+    event:place dw:sky;
+    event:agent dw:rose_tyler;
+    stories:involves dw:barrage_balloon.
+    
+dw:s1e9_ev15 a event:Event;
+    event:place dw:london_alleyway;
+    stories:involves dw:tardis;
+    stories:involves dw:sonic_screwdriver;
+    event:agent dw:doctor;
+    event:agent dw:nancy;
+    event:agent dw:the_child.
+
+
+# House scene
+
+dw:s1e9_ev16 a event:Event;
+    event:place dw:garden;
+    event:agent dw:mr_lloyd;
+    event:agent dw:mrs_lloyd;
+    event:agent dw:doctor;
+    event:agent dw:nancy.
+    
+dw:s1e9_ev17 a event:Event;
+    event:place dw:kitchen;
+    event:agent dw:nancy.
+    
+# Back with Jack
+
+dw:s1e9_ev18 a event:Event;
+    event:place dw:sky;
+    event:agent dw:rose_tyler.
+    
+dw:s1e9_ev19 a event:Event;
+    event:place dw:balcony;
+    event:agent dw:officer;
+    event:agent dw:algy;
+    event:agent dw:jack_harkness;
+    event:agent dw:rose_tyler;
+    stories:involves dw:barrage_balloon.
+
+# House
+
+dw:s1e9_ev20 a event:Event;
+    event:place dw:kitchen;
+    event:agent dw:nancy.
+    
+dw:s1e9_ev21 a event:Event;
+    event:place dw:hallway;
+    event:agent dw:nancy.
+    
+dw:s1e9_ev22 a event:Event;
+    event:place dw:street;
+    event:agent dw:nancy.
+    
+dw:s1e9_ev23 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:nancy;
+    event:agent dw:jim. # group of children
+    
+# Back with Jack
+    
+dw:s1e9_ev24 a event:Event;
+    event:place dw:sky;
+    event:agent dw:jack_harkness;
+    event:agent dw:rose_tyler;
+    stories:involves dw:rose_phone.
+    
+dw:s1e9_ev25 a event:Event;
+    event:place dw:jacks_cockpit;
+    event:agent dw:computer;
+    event:agent dw:jack_harkness.
+    
+dw:s1e9_ev26 a event:Event;
+    event:place dw:sky;
+    event:agent dw:jack_harkness;
+    event:agent dw:rose_tyler.
+    
+dw:s1e9_ev27 a event:Event;
+    event:place dw:jacks_cockpit;
+    event:agent dw:jack_harkness;
+    event:agent dw:rose_tyler.
+
+# House 
+
+dw:s1e9_ev28 a event:Event;
+    event:place dw:street;
+    event:agent dw:child; # hm
+    event:agent dw:the_child.
+dw:s1e9_ev29 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:ernie;
+    event:agent dw:nancy;
+    event:agent dw:alf;
+    event:agent dw:jim;
+    event:agent dw:doctor;
+    event:agent dw:the_child.
+dw:s1e9_ev30 a event:Event;
+    event:place dw:hallway;
+    event:agent dw:doctor;
+    event:agent dw:nancy;
+    event:agent dw:the_child.
+dw:s1e9_ev31 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:nancy;
+    event:agent dw:little_girl.
+dw:s1e9_ev32 a event:Event;
+    event:place dw:hallway;
+    event:agent dw:the_child;
+    event:agent dw:doctor.
+dw:s1e9_ev33 a event:Event;
+    event:place dw:street;
+    event:agent dw:doctor.
+    
+dw:s1e9_ev34 a event:Event;
+    event:place dw:jacks_cockpit;
+    event:agent dw:rose_tyler;
+    event:agent dw:jack_harkness;
+    stories:involves dw:psychic_paper;
+    stories:involves dw:nanogenes.
+    
+dw:s1e9_ev35 a event:Event;
+    event:place dw:outside_bigben;
+    event:agent dw:rose_tyler;
+    event:agent dw:jack_harkness.
+    
+dw:s1e9_ev36 a event:Event;
+    event:place dw:wasteland;
+    event:agent dw:nancy;
+    event:agent dw:doctor.
+    
+dw:s1e9_ev37 a event:Event;
+    event:place dw:outside_bigben;
+    event:agent dw:jack_harkness;
+    event:agent dw:rose_tyler.
+    
+dw:s1e9_ev38 a event:Event;
+    event:place dw:wasteland;
+    event:agent dw:nancy;
+    event:agent dw:doctor;
+    event:agent dw:the_child.
+    
+dw:s1e9_ev39 a event:Event;
+    event:place dw:abandoned_hospital;
+    event:agent dw:doctor.
+dw:s1e9_ev40 a event:Event;
+    event:place dw:hospital_ward;
+    event:agent dw:doctor.
+dw:s1e9_ev41 a event:Event;
+    event:place dw:hospital_corridor;
+    event:agent dw:doctor.
+dw:s1e9_ev42 a event:Event;
+    event:place dw:hospital_ward_2;
+    event:agent dw:dr_constantine;
+    event:agent dw:doctor;
+    event:agent dw:jack_harkness;
+    event:agent dw:rose_tyler.
+dw:s1e9_ev43 a event:Event;
+    event:place dw:hospital_corridor;
+    event:agent dw:jack_harkness;
+    event:agent dw:rose_tyler;
+    event:agent dw:doctor.
+    
+dw:s1e9_ev44 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:the_child;
+    event:agent dw:nancy.
+dw:s1e9_ev45 a event:Event;
+    event:place dw:hospital_ward_2;
+    event:agent dw:jack_harkness;
+    event:agent dw:doctor;
+    event:agent dw:rose_tyler.
+dw:s1e9_ev46 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:the_child;
+    event:agent dw:nancy.
+dw:s1e9_ev47 a event:Event;
+    event:place dw:hospital_ward_2;
+    event:agent dw:rose_tyler;
+    event:agent dw:jack_harkness;
+    event:agent dw:doctor.
+dw:s1e9_ev48 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:nancy;
+    event:agent dw:the_child.
+dw:s1e9_ev49 a event:Event;
+    event:place dw:hospital_ward_2;
+    event:agent dw:rose_tyler;
+    event:agent dw:jack_harkness;
+    event:agent dw:doctor.
+dw:s1e9_ev50 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:nancy;
+    event:agent dw:the_child.
+dw:s1e9_ev51 a event:Event;
+    event:place dw:hospital_ward_2;
+    event:agent dw:rose_tyler;
+    event:agent dw:jack_harkness;
+    event:agent dw:doctor.
+dw:s1e9_ev52 a event:Event;
+    event:place dw:dining_room;
+    event:agent dw:nancy;
+    event:agent dw:the_child.
+dw:s1e9_ev53 a event:Event;
+    event:place dw:hospital_ward_2;
+    event:agent dw:rose_tyler;
+    event:agent dw:jack_harkness;
+    event:agent dw:doctor.
