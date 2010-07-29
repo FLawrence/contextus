@@ -225,7 +225,7 @@ dw:s1e9_events a stories:EventList;
 
 dw:s1e9_ev1 a event:Event;
     event:place dw:space;
-    stories:involves dw:tardis.
+    event:factor dw:tardis.
 
 dw:s1e9_ev2 a event:Event;
     event:place dw:tardis;
@@ -234,7 +234,7 @@ dw:s1e9_ev2 a event:Event;
 
 dw:s1e9_ev3 a event:Event;
     event:place dw:time_vortex;
-    stories:involves dw:mauve_object.
+    event:factor dw:mauve_object.
     
 dw:s1e9_ev4 a event:Event;
     event:place dw:tardis;
@@ -243,8 +243,8 @@ dw:s1e9_ev4 a event:Event;
     
 dw:s1e9_ev5 a event:Event;
     event:place dw:space;
-    stories:involves dw:mauve_object;
-    stories:involves dw:tardis.
+    event:factor dw:mauve_object;
+    event:factor dw:tardis.
 
 # Credits
     
@@ -253,9 +253,9 @@ dw:s1e9_ev6 a event:Event;
     event:agent dw:doctor;
     event:agent dw:rose_tyler;
     event:agent dw:the_child;
-    stories:involves dw:tardis;
-    stories:involves dw:psychic_paper;
-    stories:involves dw:sonic_screwdriver.
+    event:factor dw:tardis;
+    event:factor dw:psychic_paper;
+    event:factor dw:sonic_screwdriver.
     
 dw:s1e9_ev7 a event:Event;
     event:place dw:darkened_corridor;
@@ -290,17 +290,17 @@ dw:s1e9_ev13 a event:Event;
     event:place dw:london_alleyway;
     event:agent dw:the_child;
     event:agent dw:rose_tyler;
-    stories:involves dw:barrage_balloon.
+    event:factor dw:barrage_balloon.
     
 dw:s1e9_ev14 a event:Event;
     event:place dw:sky;
     event:agent dw:rose_tyler;
-    stories:involves dw:barrage_balloon.
+    event:factor dw:barrage_balloon.
     
 dw:s1e9_ev15 a event:Event;
     event:place dw:london_alleyway;
-    stories:involves dw:tardis;
-    stories:involves dw:sonic_screwdriver;
+    event:factor dw:tardis;
+    event:factor dw:sonic_screwdriver;
     event:agent dw:doctor;
     event:agent dw:nancy;
     event:agent dw:the_child.
@@ -331,7 +331,7 @@ dw:s1e9_ev19 a event:Event;
     event:agent dw:algy;
     event:agent dw:jack_harkness;
     event:agent dw:rose_tyler;
-    stories:involves dw:barrage_balloon.
+    event:factor dw:barrage_balloon.
 
 # House
 
@@ -358,7 +358,7 @@ dw:s1e9_ev24 a event:Event;
     event:place dw:sky;
     event:agent dw:jack_harkness;
     event:agent dw:rose_tyler;
-    stories:involves dw:rose_phone.
+    event:factor dw:rose_phone.
     
 dw:s1e9_ev25 a event:Event;
     event:place dw:jacks_cockpit;
@@ -410,8 +410,8 @@ dw:s1e9_ev34 a event:Event;
     event:place dw:jacks_cockpit;
     event:agent dw:rose_tyler;
     event:agent dw:jack_harkness;
-    stories:involves dw:psychic_paper;
-    stories:involves dw:nanogenes.
+    event:factor dw:psychic_paper;
+    event:factor dw:nanogenes.
     
 dw:s1e9_ev35 a event:Event;
     event:place dw:outside_bigben;
