@@ -1,520 +1,577 @@
 @prefix stories: <http://purl.org/ontology/stories/> .
-@prefix dw: <http://contextus.net/stories/dw/s1e9/> .
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
 @prefix olo:     <http://purl.org/ontology/olo/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix : <http://contextus.net/stories/dw/s1e9/>.
 
-:rationing { :s1e9_ev20 dcterms:subject <http://dbpedia.org/resource/Category:Rationing_and_licensing> . }
-:world_war_ii { :s1e9_ev12 dcterms:subject <http://dbpedia.org/resource/Category:World_War_II> . }
+@prefix : <http://contextus.net/who/s01e09/>.
+@prefix whoc:       <http://contextus.net/who/character/>.
+@prefix whol:       <http://contextus.net/who/location/>.
+@prefix whoi:       <http://contextus.net/who/item/>.
+
+:rationing { :s01e09_ev20 dcterms:subject <http://dbpedia.org/resource/Category:Rationing_and_licensing> . }
+:world_war_ii { :s01e09_ev12 dcterms:subject <http://dbpedia.org/resource/Category:World_War_II> . }
 
 {
 
-<http://www.bbc.co.uk/b0074ds9#programme> stories:tells :s1e9.
+<http://www.bbc.co.uk/programmes/b0074ds9#programme> stories:tells :s01e09.
 
-:s1e9 a stories:Story;
+:s01e09 a stories:Story;
 	dcterms:subject <http://dbpedia.org/resource/Category:World_War_II>;
-    stories:events :s1e9_events.
+    stories:events :s01e09_events.
     
-:s1e9_events a stories:EventList;
+:s01e09_events a stories:EventList;
     stories:slot [
         olo:index 1;
-        stories:item :s1e9_ev1
+        stories:item :s01e09_ev1
     ];
     stories:slot [
         olo:index 2;
-        stories:item :s1e9_ev2
+        stories:item :s01e09_ev2
     ];
     stories:slot [
         olo:index 3;
-        stories:item :s1e9_ev3
+        stories:item :s01e09_ev3
     ];
     stories:slot [
         olo:index 4;
-        stories:item :s1e9_ev4
+        stories:item :s01e09_ev4
     ];
     stories:slot [
         olo:index 5;
-        stories:item :s1e9_ev5
+        stories:item :s01e09_ev5
     ];
     stories:slot [
         olo:index 6;
-        stories:item :s1e9_ev6
+        stories:item :s01e09_ev6
     ];
     stories:slot [
         olo:index 7;
-        stories:item :s1e9_ev7
+        stories:item :s01e09_ev7
     ];
     stories:slot [
         olo:index 8;
-        stories:item :s1e9_ev8
+        stories:item :s01e09_ev8
     ];
     stories:slot [
         olo:index 9;
-        stories:item :s1e9_ev9
+        stories:item :s01e09_ev9
     ];
     stories:slot [
         olo:index 10;
-        stories:item :s1e9_ev10
+        stories:item :s01e09_ev10
     ];
     stories:slot [
         olo:index 11;
-        stories:item :s1e9_ev11
+        stories:item :s01e09_ev11
     ];
     stories:slot [
         olo:index 12;
-        stories:item :s1e9_ev12
+        stories:item :s01e09_ev12
     ];
     stories:slot [
         olo:index 13;
-        stories:item :s1e9_ev13
+        stories:item :s01e09_ev13
     ];
     stories:slot [
         olo:index 14;
-        stories:item :s1e9_ev14
+        stories:item :s01e09_ev14
     ];
     stories:slot [
         olo:index 15;
-        stories:item :s1e9_ev15
+        stories:item :s01e09_ev15
     ];
     stories:slot [
         olo:index 16;
-        stories:item :s1e9_ev16
+        stories:item :s01e09_ev16
     ];
     stories:slot [
         olo:index 17;
-        stories:item :s1e9_ev17
+        stories:item :s01e09_ev17
     ];
     stories:slot [
         olo:index 18;
-        stories:item :s1e9_ev18
+        stories:item :s01e09_ev18
     ];
     stories:slot [
         olo:index 19;
-        stories:item :s1e9_ev19
+        stories:item :s01e09_ev19
     ];
     stories:slot [
         olo:index 20;
-        stories:item :s1e9_ev20
+        stories:item :s01e09_ev20
     ];
     stories:slot [
         olo:index 21;
-        stories:item :s1e9_ev21
+        stories:item :s01e09_ev21
     ];
     stories:slot [
         olo:index 22;
-        stories:item :s1e9_ev22
+        stories:item :s01e09_ev22
     ];
     stories:slot [
         olo:index 23;
-        stories:item :s1e9_ev23
+        stories:item :s01e09_ev23
     ];
     stories:slot [
         olo:index 24;
-        stories:item :s1e9_ev24
+        stories:item :s01e09_ev24
     ];
     stories:slot [
         olo:index 25;
-        stories:item :s1e9_ev25
+        stories:item :s01e09_ev25
     ];
     stories:slot [
         olo:index 26;
-        stories:item :s1e9_ev26
+        stories:item :s01e09_ev26
     ];
     stories:slot [
         olo:index 27;
-        stories:item :s1e9_ev27
+        stories:item :s01e09_ev27
     ];
     stories:slot [
         olo:index 28;
-        stories:item :s1e9_ev28
+        stories:item :s01e09_ev28
     ];
     stories:slot [
         olo:index 29;
-        stories:item :s1e9_ev29
+        stories:item :s01e09_ev29
     ];
     stories:slot [
         olo:index 30;
-        stories:item :s1e9_ev30
+        stories:item :s01e09_ev30
     ];
     stories:slot [
         olo:index 31;
-        stories:item :s1e9_ev31
+        stories:item :s01e09_ev31
     ];
     stories:slot [
         olo:index 32;
-        stories:item :s1e9_ev32
+        stories:item :s01e09_ev32
     ];
     stories:slot [
         olo:index 33;
-        stories:item :s1e9_ev33
+        stories:item :s01e09_ev33
     ];
     stories:slot [
         olo:index 34;
-        stories:item :s1e9_ev34
+        stories:item :s01e09_ev34
     ];
     stories:slot [
         olo:index 35;
-        stories:item :s1e9_ev35
+        stories:item :s01e09_ev35
     ];
     stories:slot [
         olo:index 36;
-        stories:item :s1e9_ev36
+        stories:item :s01e09_ev36
     ];
     stories:slot [
         olo:index 37;
-        stories:item :s1e9_ev37
+        stories:item :s01e09_ev37
     ];
     stories:slot [
         olo:index 38;
-        stories:item :s1e9_ev38
+        stories:item :s01e09_ev38
     ];
     stories:slot [
         olo:index 39;
-        stories:item :s1e9_ev39
+        stories:item :s01e09_ev39
     ];
     stories:slot [
         olo:index 40;
-        stories:item :s1e9_ev40
+        stories:item :s01e09_ev40
     ];
     stories:slot [
         olo:index 41;
-        stories:item :s1e9_ev41
+        stories:item :s01e09_ev41
     ];
     stories:slot [
         olo:index 42;
-        stories:item :s1e9_ev42
+        stories:item :s01e09_ev42
     ];
     stories:slot [
         olo:index 43;
-        stories:item :s1e9_ev43
+        stories:item :s01e09_ev43
     ];
     stories:slot [
         olo:index 44;
-        stories:item :s1e9_ev44
+        stories:item :s01e09_ev44
     ];
     stories:slot [
         olo:index 45;
-        stories:item :s1e9_ev45
+        stories:item :s01e09_ev45
     ];
     stories:slot [
         olo:index 46;
-        stories:item :s1e9_ev46
+        stories:item :s01e09_ev46
     ];
     stories:slot [
         olo:index 47;
-        stories:item :s1e9_ev47
+        stories:item :s01e09_ev47
     ];
     stories:slot [
         olo:index 48;
-        stories:item :s1e9_ev48
+        stories:item :s01e09_ev48
     ];
     stories:slot [
         olo:index 49;
-        stories:item :s1e9_ev49
+        stories:item :s01e09_ev49
     ];
     stories:slot [
         olo:index 50;
-        stories:item :s1e9_ev50
+        stories:item :s01e09_ev50
     ];
     stories:slot [
         olo:index 51;
-        stories:item :s1e9_ev51
+        stories:item :s01e09_ev51
     ];
     stories:slot [
         olo:index 52;
-        stories:item :s1e9_ev52
+        stories:item :s01e09_ev52
     ];
     stories:slot [
         olo:index 53;
-        stories:item :s1e9_ev53
+        stories:item :s01e09_ev53
     ].
 
 
-:s1e9_ev1 a event:Event;
-    event:place :space;
-    event:factor :tardis.
 
-:s1e9_ev2 a event:Event;
-    event:place :tardis;
-    event:agent :doctor;
-    event:agent :rose_tyler.
 
-:s1e9_ev3 a event:Event;
-    event:place :time_vortex;
-    event:factor :mauve_object.
+:s01e09_ev1 a event:Event;
+    event:place whol:space;
+    event:factor whoi:tardis;
+    event:time [ tl:before :s01e09_ev2 ].
+
+:s01e09_ev2 a event:Event;
+    event:place whol:tardis;
+    event:agent whoc:doctor;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev1; tl:before :s01e09_ev3 ].
+
+:s01e09_ev3 a event:Event;
+    event:place whol:time_vortex;
+    event:factor whoi:mauve_object;
+    event:time [ tl:after :s01e09_ev2; tl:before :s01e09_ev4 ].
     
-:s1e9_ev4 a event:Event;
-    event:place :tardis;
-    event:agent :doctor;
-    event:agent :rose_tyler.
+:s01e09_ev4 a event:Event;
+    event:place whol:tardis;
+    event:agent whoc:doctor;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev3; tl:before :s01e09_ev5 ].
     
-:s1e9_ev5 a event:Event;
-    event:place :space;
-    event:factor :mauve_object;
-    event:factor :tardis.
+:s01e09_ev5 a event:Event;
+    event:place whol:space;
+    event:factor whoi:mauve_object;
+    event:factor whoi:tardis;
+    event:time [ tl:after :s01e09_ev4; tl:before :s01e09_ev6 ].
 
 # Credits
     
-:s1e9_ev6 a event:Event;
-    event:place :london_alleyway;
-    event:agent :doctor;
-    event:agent :rose_tyler;
-    event:agent :the_child;
-    event:factor :tardis;
-    event:factor :psychic_paper;
-    event:factor :sonic_screwdriver.
+:s01e09_ev6 a event:Event;
+    event:place whol:london_alleyway;
+    event:agent whoc:doctor;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:the_child;
+    event:factor whoi:tardis;
+    event:factor whoi:psychic_paper;
+    event:factor whoi:sonic_screwdriver;
+    event:time [ tl:after :s01e09_ev5; tl:before :s01e09_ev7 ].
     
-:s1e9_ev7 a event:Event;
-    event:place :darkened_corridor;
-    event:agent :waiter;
-    event:agent :doctor.
+:s01e09_ev7 a event:Event;
+    event:place whol:darkened_corridor;
+    event:agent whoc:waiter;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev6; tl:before :s01e09_ev8 ].
 
-:s1e9_ev8 a event:Event;
-    event:place :drinking_den;
-    event:agent :nightclub_singer;
-    event:agent :doctor. # Audience?
+:s01e09_ev8 a event:Event;
+    event:place whol:drinking_den;
+    event:agent whoc:nightclub_singer;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev7; tl:before :s01e09_ev9 ]. # Audience?
     
-:s1e9_ev9 a event:Event;
-    event:place :london_alleyway;
-    event:agent :the_child;
-    event:agent :rose_tyler.
+:s01e09_ev9 a event:Event;
+    event:place whol:london_alleyway;
+    event:agent whoc:the_child;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev8; tl:before :s01e09_ev10 ].
     
-:s1e9_ev10 a event:Event;
-    event:place :drinking_den;
-    event:agent :doctor. # Audience?
+:s01e09_ev10 a event:Event;
+    event:place whol:drinking_den;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev9; tl:before :s01e09_ev11 ]. # Audience?
     
-:s1e9_ev11 a event:Event;
-    event:place :london_alleyway;
-    event:agent :the_child;
-    event:agent :rose_tyler.
+:s01e09_ev11 a event:Event;
+    event:place whol:london_alleyway;
+    event:agent whoc:the_child;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev10; tl:before :s01e09_ev12 ].
 
-:s1e9_int12 a stories:Interpretation;
-	stories:interprets :s1e9_ev12;
-	stories:asserts :world_war_ii. 
+:s01e09_int12 a stories:Interpretation;
+	stories:interprets :s01e09_ev12;
+	stories:asserts :world_war_ii.
     
-:s1e9_ev12 a event:Event;
-    event:place :drinking_den;
-    event:agent :doctor. #Audience
+:s01e09_ev12 a event:Event;
+    event:place whol:drinking_den;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev11; tl:before :s01e09_ev13 ]. #Audience
     
-:s1e9_ev13 a event:Event;
-    event:place :london_alleyway;
-    event:agent :the_child;
-    event:agent :rose_tyler;
-    event:factor :barrage_balloon.
+:s01e09_ev13 a event:Event;
+    event:place whol:london_alleyway;
+    event:agent whoc:the_child;
+    event:agent whoc:rose_tyler;
+    event:factor whoi:barrage_balloon;
+    event:time [ tl:after :s01e09_ev12; tl:before :s01e09_ev14 ].
     
-:s1e9_ev14 a event:Event;
-    event:place :sky;
-    event:agent :rose_tyler;
-    event:factor :barrage_balloon.
+:s01e09_ev14 a event:Event;
+    event:place whol:sky;
+    event:agent whoc:rose_tyler;
+    event:factor whoi:barrage_balloon;
+    event:time [ tl:after :s01e09_ev13; tl:before :s01e09_ev15 ].
     
-:s1e9_ev15 a event:Event;
-    event:place :london_alleyway;
-    event:factor :tardis;
-    event:factor :sonic_screwdriver;
-    event:agent :doctor;
-    event:agent :nancy;
-    event:agent :the_child.
-
+:s01e09_ev15 a event:Event;
+    event:place whol:london_alleyway;
+    event:factor whoi:tardis;
+    event:factor whoi:sonic_screwdriver;
+    event:agent whoc:doctor;
+    event:agent whoc:nancy;
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev14; tl:before :s01e09_ev16 ].
 
 # House scene
 
-:s1e9_ev16 a event:Event;
-    event:place :garden;
-    event:agent :mr_lloyd;
-    event:agent :mrs_lloyd;
-    event:agent :doctor;
-    event:agent :nancy.
+:s01e09_ev16 a event:Event;
+    event:place whol:garden;
+    event:agent whoc:mr_lloyd;
+    event:agent whoc:mrs_lloyd;
+    event:agent whoc:doctor;
+    event:agent whoc:nancy;
+    event:time [ tl:after :s01e09_ev15; tl:before :s01e09_ev17 ].
     
-:s1e9_ev17 a event:Event;
-    event:place :kitchen;
-    event:agent :nancy.
+:s01e09_ev17 a event:Event;
+    event:place whol:kitchen;
+    event:agent whoc:nancy;
+    event:time [ tl:after :s01e09_ev16; tl:before :s01e09_ev18 ].
     
 # Back with Jack
 
-:s1e9_ev18 a event:Event;
-    event:place :sky;
-    event:agent :rose_tyler.
+:s01e09_ev18 a event:Event;
+    event:place whol:sky;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev17; tl:before :s01e09_ev19 ].
     
-:s1e9_ev19 a event:Event;
-    event:place :balcony;
-    event:agent :officer;
-    event:agent :algy;
-    event:agent :jack_harkness;
-    event:agent :rose_tyler;
-    event:factor :barrage_balloon.
+:s01e09_ev19 a event:Event;
+    event:place whol:balcony;
+    event:agent whoc:officer;
+    event:agent whoc:algy;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:rose_tyler;
+    event:factor whoi:barrage_balloon;
+    event:time [ tl:after :s01e09_ev18; tl:before :s01e09_ev20 ].
 
 # House
 
 
-:s1e9_int20 a stories:Interpretation;
-	stories:interprets :s1e9_ev20;
-	stories:asserts :rationing. 
+:s01e09_int20 a stories:Interpretation;
+	stories:interprets :s01e09_ev20;
+	stories:asserts :rationing.
 
-:s1e9_ev20 a event:Event;
-    event:place :kitchen;
-    event:agent :nancy.
+:s01e09_ev20 a event:Event;
+    event:place whol:kitchen;
+    event:agent whoc:nancy;
+    event:time [ tl:after :s01e09_ev19; tl:before :s01e09_ev21 ].
     
-:s1e9_ev21 a event:Event;
-    event:place :hallway;
-    event:agent :nancy.
+:s01e09_ev21 a event:Event;
+    event:place whol:hallway;
+    event:agent whoc:nancy;
+    event:time [ tl:after :s01e09_ev20; tl:before :s01e09_ev22 ].
     
-:s1e9_ev22 a event:Event;
-    event:place :street;
-    event:agent :nancy.
+:s01e09_ev22 a event:Event;
+    event:place whol:street;
+    event:agent whoc:nancy;
+    event:time [ tl:after :s01e09_ev21; tl:before :s01e09_ev23 ].
     
-:s1e9_ev23 a event:Event;
-    event:place :dining_room;
-    event:agent :nancy;
-    event:agent :jim. # group of children
+:s01e09_ev23 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:nancy;
+    event:agent whoc:jim;
+    event:time [ tl:after :s01e09_ev22; tl:before :s01e09_ev24 ]. # group of children
     
 # Back with Jack
     
-:s1e9_ev24 a event:Event;
-    event:place :sky;
-    event:agent :jack_harkness;
-    event:agent :rose_tyler;
-    event:factor :rose_phone.
+:s01e09_ev24 a event:Event;
+    event:place whol:sky;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:rose_tyler;
+    event:factor whoi:rose_phone;
+    event:time [ tl:after :s01e09_ev23; tl:before :s01e09_ev25 ].
     
-:s1e9_ev25 a event:Event;
-    event:place :jacks_cockpit;
-    event:agent :computer;
-    event:agent :jack_harkness.
+:s01e09_ev25 a event:Event;
+    event:place whol:jacks_cockpit;
+    event:agent whoc:computer;
+    event:agent whoc:jack_harkness;
+    event:time [ tl:after :s01e09_ev24; tl:before :s01e09_ev26 ].
     
-:s1e9_ev26 a event:Event;
-    event:place :sky;
-    event:agent :jack_harkness;
-    event:agent :rose_tyler.
+:s01e09_ev26 a event:Event;
+    event:place whol:sky;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev25; tl:before :s01e09_ev27 ].
     
-:s1e9_ev27 a event:Event;
-    event:place :jacks_cockpit;
-    event:agent :jack_harkness;
-    event:agent :rose_tyler.
+:s01e09_ev27 a event:Event;
+    event:place whol:jacks_cockpit;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev26; tl:before :s01e09_ev28 ].
 
 # House 
 
-:s1e9_ev28 a event:Event;
-    event:place :street;
-    event:agent :child; # hm
-    event:agent :the_child.
-:s1e9_ev29 a event:Event;
-    event:place :dining_room;
-    event:agent :ernie;
-    event:agent :nancy;
-    event:agent :alf;
-    event:agent :jim;
-    event:agent :doctor;
-    event:agent :the_child.
-:s1e9_ev30 a event:Event;
-    event:place :hallway;
-    event:agent :doctor;
-    event:agent :nancy;
-    event:agent :the_child.
-:s1e9_ev31 a event:Event;
-    event:place :dining_room;
-    event:agent :nancy;
-    event:agent :little_girl.
-:s1e9_ev32 a event:Event;
-    event:place :hallway;
-    event:agent :the_child;
-    event:agent :doctor.
-:s1e9_ev33 a event:Event;
-    event:place :street;
-    event:agent :doctor.
+:s01e09_ev28 a event:Event;
+    event:place whol:street;
+    event:agent whoc:child; # hm
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev27; tl:before :s01e09_ev29 ].
+:s01e09_ev29 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:ernie;
+    event:agent whoc:nancy;
+    event:agent whoc:alf;
+    event:agent whoc:jim;
+    event:agent whoc:doctor;
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev28; tl:before :s01e09_ev30 ].
+:s01e09_ev30 a event:Event;
+    event:place whol:hallway;
+    event:agent whoc:doctor;
+    event:agent whoc:nancy;
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev29; tl:before :s01e09_ev31 ].
+:s01e09_ev31 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:nancy;
+    event:agent whoc:little_girl;
+    event:time [ tl:after :s01e09_ev30; tl:before :s01e09_ev32 ].
+:s01e09_ev32 a event:Event;
+    event:place whol:hallway;
+    event:agent whoc:the_child;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev31; tl:before :s01e09_ev33 ].
+:s01e09_ev33 a event:Event;
+    event:place whol:street;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev32; tl:before :s01e09_ev34 ].
     
-:s1e9_ev34 a event:Event;
-    event:place :jacks_cockpit;
-    event:agent :rose_tyler;
-    event:agent :jack_harkness;
-    event:factor :psychic_paper;
-    event:factor :nanogenes.
+:s01e09_ev34 a event:Event;
+    event:place whol:jacks_cockpit;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:jack_harkness;
+    event:factor whoi:psychic_paper;
+    event:factor whoi:nanogenes;
+    event:time [ tl:after :s01e09_ev33; tl:before :s01e09_ev35 ].
     
-:s1e9_ev35 a event:Event;
-    event:place :outside_bigben;
-    event:agent :rose_tyler;
-    event:agent :jack_harkness.
+:s01e09_ev35 a event:Event;
+    event:place whol:outside_bigben;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:jack_harkness;
+    event:time [ tl:after :s01e09_ev34; tl:before :s01e09_ev36 ].
     
-:s1e9_ev36 a event:Event;
-    event:place :wasteland;
-    event:agent :nancy;
-    event:agent :doctor.
+:s01e09_ev36 a event:Event;
+    event:place whol:wasteland;
+    event:agent whoc:nancy;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev35; tl:before :s01e09_ev37 ].
     
-:s1e9_ev37 a event:Event;
-    event:place :outside_bigben;
-    event:agent :jack_harkness;
-    event:agent :rose_tyler.
+:s01e09_ev37 a event:Event;
+    event:place whol:outside_bigben;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev36; tl:before :s01e09_ev38 ].
     
-:s1e9_ev38 a event:Event;
-    event:place :wasteland;
-    event:agent :nancy;
-    event:agent :doctor;
-    event:agent :the_child.
+:s01e09_ev38 a event:Event;
+    event:place whol:wasteland;
+    event:agent whoc:nancy;
+    event:agent whoc:doctor;
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev37; tl:before :s01e09_ev39 ].
     
-:s1e9_ev39 a event:Event;
-    event:place :abandoned_hospital;
-    event:agent :doctor.
-:s1e9_ev40 a event:Event;
-    event:place :hospital_ward;
-    event:agent :doctor.
-:s1e9_ev41 a event:Event;
-    event:place :hospital_corridor;
-    event:agent :doctor.
-:s1e9_ev42 a event:Event;
-    event:place :hospital_ward_2;
-    event:agent :dr_constantine;
-    event:agent :doctor;
-    event:agent :jack_harkness;
-    event:agent :rose_tyler.
-:s1e9_ev43 a event:Event;
-    event:place :hospital_corridor;
-    event:agent :jack_harkness;
-    event:agent :rose_tyler;
-    event:agent :doctor.
+:s01e09_ev39 a event:Event;
+    event:place whol:abandoned_hospital;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev38; tl:before :s01e09_ev40 ].
+:s01e09_ev40 a event:Event;
+    event:place whol:hospital_ward;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev39; tl:before :s01e09_ev41 ].
+:s01e09_ev41 a event:Event;
+    event:place whol:hospital_corridor;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev40; tl:before :s01e09_ev42 ].
+:s01e09_ev42 a event:Event;
+    event:place whol:hospital_ward_2;
+    event:agent whoc:dr_constantine;
+    event:agent whoc:doctor;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev41; tl:before :s01e09_ev43 ].
+:s01e09_ev43 a event:Event;
+    event:place whol:hospital_corridor;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev42; tl:before :s01e09_ev44 ].
     
-:s1e9_ev44 a event:Event;
-    event:place :dining_room;
-    event:agent :the_child;
-    event:agent :nancy.
-:s1e9_ev45 a event:Event;
-    event:place :hospital_ward_2;
-    event:agent :jack_harkness;
-    event:agent :doctor;
-    event:agent :rose_tyler.
-:s1e9_ev46 a event:Event;
-    event:place :dining_room;
-    event:agent :the_child;
-    event:agent :nancy.
-:s1e9_ev47 a event:Event;
-    event:place :hospital_ward_2;
-    event:agent :rose_tyler;
-    event:agent :jack_harkness;
-    event:agent :doctor.
-:s1e9_ev48 a event:Event;
-    event:place :dining_room;
-    event:agent :nancy;
-    event:agent :the_child.
-:s1e9_ev49 a event:Event;
-    event:place :hospital_ward_2;
-    event:agent :rose_tyler;
-    event:agent :jack_harkness;
-    event:agent :doctor.
-:s1e9_ev50 a event:Event;
-    event:place :dining_room;
-    event:agent :nancy;
-    event:agent :the_child.
-:s1e9_ev51 a event:Event;
-    event:place :hospital_ward_2;
-    event:agent :rose_tyler;
-    event:agent :jack_harkness;
-    event:agent :doctor.
-:s1e9_ev52 a event:Event;
-    event:place :dining_room;
-    event:agent :nancy;
-    event:agent :the_child.
-:s1e9_ev53 a event:Event;
-    event:place :hospital_ward_2;
-    event:agent :rose_tyler;
-    event:agent :jack_harkness;
-    event:agent :doctor.
+:s01e09_ev44 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:the_child;
+    event:agent whoc:nancy;
+    event:time [ tl:after :s01e09_ev43; tl:before :s01e09_ev45 ].
+:s01e09_ev45 a event:Event;
+    event:place whol:hospital_ward_2;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:doctor;
+    event:agent whoc:rose_tyler;
+    event:time [ tl:after :s01e09_ev44; tl:before :s01e09_ev46 ].
+:s01e09_ev46 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:the_child;
+    event:agent whoc:nancy;
+    event:time [ tl:after :s01e09_ev45; tl:before :s01e09_ev47 ].
+:s01e09_ev47 a event:Event;
+    event:place whol:hospital_ward_2;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev46; tl:before :s01e09_ev48 ].
+:s01e09_ev48 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:nancy;
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev47; tl:before :s01e09_ev49 ].
+:s01e09_ev49 a event:Event;
+    event:place whol:hospital_ward_2;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev48; tl:before :s01e09_ev50 ].
+:s01e09_ev50 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:nancy;
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev49; tl:before :s01e09_ev51 ].
+:s01e09_ev51 a event:Event;
+    event:place whol:hospital_ward_2;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev50; tl:before :s01e09_ev52 ].
+:s01e09_ev52 a event:Event;
+    event:place whol:dining_room;
+    event:agent whoc:nancy;
+    event:agent whoc:the_child;
+    event:time [ tl:after :s01e09_ev51; tl:before :s01e09_ev53 ].
+:s01e09_ev53 a event:Event;
+    event:place whol:hospital_ward_2;
+    event:agent whoc:rose_tyler;
+    event:agent whoc:jack_harkness;
+    event:agent whoc:doctor;
+    event:time [ tl:after :s01e09_ev52 ].
 
 }
