@@ -562,7 +562,7 @@
     event:agent whoc:the_child;
     event:agent whoc:dr_constantine;
     event:agent whoc:mrs_harcourt;
-    event:factor whois:nanogenes;
+    event:factor whoi:nanogenes;
     event:time [ tl:after :s01e10_ev47; tl:before :s01e10_ev49 ].
     
 :s01e10_ev49 a event:Event;
