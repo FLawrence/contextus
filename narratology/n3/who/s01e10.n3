@@ -1,0 +1,20 @@
+prefix stories: <http://purl.org/ontology/stories/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix olo:     <http://purl.org/ontology/olo/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix : <http://contextus.net/who/s1e10/>.
+@prefix whoc:       <http://contextus.net/who/character/>.
+@prefix whol:       <http://contextus.net/who/location/>.
+@prefix whoi:       <http://contextus.net/who/item/>.
+
+{
+
+<http://www.bbc.co.uk/programmes/b0074dsp#programme> stories:tells :s1e10.
+
+:s1e10 a stories:Story;
+	dcterms:subject <http://dbpedia.org/resource/Category:World_War_II>;
+    stories:events :s1e10_events.
+    
+
+
