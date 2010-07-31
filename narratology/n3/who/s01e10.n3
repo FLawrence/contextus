@@ -1,4 +1,4 @@
-prefix stories: <http://purl.org/ontology/stories/> .
+@prefix stories: <http://purl.org/ontology/stories/> .
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
 @prefix olo:     <http://purl.org/ontology/olo/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
