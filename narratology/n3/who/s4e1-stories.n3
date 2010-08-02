@@ -1,0 +1,1132 @@
+@prefix stories: <http://purl.org/ontology/stories/> .
+#FIXME: what is final url? host at purl.org?
+#@prefix portrayal:	<http://contextus.net/storyportrayal#>.
+#FIXME: make this ontology. This is used for story assertions that relate cast to characters, realworld-location-in-era-x to story:place
+@prefix motivation:	<http://contextus.net/agentmotivation#>.
+#FIXME.New: make this ontology, extends FOAF. Combine with provenance.
+#FIXME.Old: make this ontology. This is used for story assertions that allow basic plot logic to be expressed. Essentially this is more precise expression of what 'factor' and 'agent' means combined with cause-and-effect mechanics such as 'believes', 'facilitates', 'requires' etc.
+@prefix provenance:	<http://openprovenance.org/ontology#>.
+@prefix event: 	    <http://purl.org/NET/c4dm/event.owl#>.
+@prefix timeline:   <http://purl.org/NET/c4dm/timeline.owl#>.
+@prefix programmes:	<http://purl.org/ontology/po/>.
+@prefix olo:     	<http://purl.org/ontology/olo/core#> .
+@prefix dcterms: 	<http://purl.org/dc/terms/> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/>.
+@prefix geonames:   <http://www.geonames.org/ontology#>.
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix whoc:       <http://contextus.net/who/character/>.
+@prefix whol:       <http://contextus.net/who/location/>.
+@prefix whoi:       <http://contextus.net/who/item/>.
+@prefix whop:		<http://contextus.net/who/portrayal/>
+@prefix : 	        <http://contextus.net/who/s4e1/>.
+
+### PEOPLE
+
+whoc:doctor a foaf:Agent;
+    foaf:name "The Doctor".
+
+whoc:donna_noble a foaf:Person;
+    foaf:name "Donna Noble".
+
+:security_guard1 a foaf:Person;
+    foaf:name "Security Guard 1". 
+
+:security_guard2 a foaf:Person;
+    foaf:name "Security Guard 2". 
+
+:foster_guard1 a foaf:Person;
+    foaf:name "Security Guard 1". 
+
+:foster_guard2 a foaf:Person;
+    foaf:name "Security Guard 2". 
+
+:foster a foaf:Agent;
+    foaf:name "Miss Foster".
+
+:penny_carter a foaf:Person;
+    foaf:name "Penny Carter".
+
+:projectionist a foaf:Person;
+    foaf:name "Projectionist". 
+
+:craig a foaf:Person;
+    foaf:name "Craig".
+
+:claire a foaf:Person;
+    foaf:name "Claire".
+    
+:stacey_campbell a foaf:Person;
+    foaf:name "Stacey Campbell".
+
+:roger_davey a foaf:Person;
+    foaf:name "Roger Davey".
+
+:adipose1 a foaf:Agent;
+    foaf:name "Adipose". 
+
+whoc:sylvia_noble a foaf:Person;
+    foaf:name "Sylvia Noble".
+    
+whoc:wilf_noble a foaf:Person;
+    foaf:name "Wilf Noble".
+
+whoc:rose_tyler a foaf:Person;
+    foaf:name "Rose Tyler".
+
+whoc:martha_jones a foaf:Person;
+    foaf:name "Martha Jones".
+
+:suzette a foaf:Person;
+    foaf:name "Suzette".
+
+:plump_man a foaf:Person;
+    foaf:name "A Man (Plump)". 
+
+:plump_woman a foaf:Person;
+    foaf:name "A Woman (Plump)". 
+
+# GROUPS
+
+:journalists a foaf:Group.
+
+:adiposeindustries_staff a foaf:Group.
+:salespeople a foaf:Group.
+:collection_squad a foaf:Group.
+:adipose a foaf:Group.
+:wednesday_girls a foaf:Group.
+:pill_takers a foaf:Group.
+:bystanders a foaf:Group.
+:adiposian_first_family a foaf:Group.
+:health_and_safety a foaf:Group;
+    rdfs:label "Health and Safety".
+:adiposeindustries_customers a foaf:Group;
+
+# GROUP MEMBERSHIPS
+
+:adiposeindustries_staff foaf:member :miss_foster.
+:adiposeindustries_staff foaf:member :projectionist.
+:adiposeindustries_staff foaf:member :foster_guard1.
+:adiposeindustries_staff foaf:member :foster_guard2.
+:adiposeindustries_staff foaf:member :security_guard1.
+:adiposeindustries_staff foaf:member :security_guard2.
+:adiposeindustries_staff foaf:member :collection_squad.
+:salespeople foaf:member :craig.
+:salespeople foaf:member :claire.
+:adiposeindustries_staff foaf:member :salespeople.
+:adiposeindustries_staff foaf:member :health_and_safety.
+
+#FIXME 	these are stateful, so should really be reasoned in and revoked out (ie. stacey dies)
+#		but, is there value in then having event:agent adipose_customers, if that group only exists if you're including assertions 
+:adiposeindustries_customers foaf:member :roger_davey;
+:adiposeindustries_customers foaf:member :suzette;
+:adiposeindustries_customers foaf:member :plump_man;
+:adiposeindustries_customers foaf:member :plump_woman;
+
+#FIXME we had concept of a group individual instance and quanities, ie. adipose customer has pills and a pendant; there are 1,000,000 customers -> assertions
+
+### LOCATIONS
+
+whol:tardis a geonames:Feature.
+whol:noble_house a geonames:Feature.
+
+:adipose_industries a geonames:Feature.
+:adipose_industries_foyer a geonames:Feature.
+:adipose_industries_basement a geonames:Feature.
+:adipose_industries_cinema a geonames:Feature.
+:adipose_industries_projection_booth a geonames:Feature.
+:adipose_industries_sales_cubicles a geonames:Feature.
+:rogers_house a geonames:Feature.
+:staceys_house a geonames:Feature.
+:staceys_bathroom a geonames:Feature.
+:fosters_office a geonames:Feature.
+:suburbia a geonames:Feature.
+whol:hilltop a geonames:Feature.
+:adipose_industries_storeroom a geonames:Feature.
+:adipose_industries_ladies_toilets a geonames:Feature.
+:adipose_industries_ladies_toilets_cubicles a geonames:Feature.
+:adipose_industries_cradle a geonames:Feature.
+:church a geonames:Feature.
+:adipose_industries_rooftop a geonames:Feature.
+:wine_bar a geonames:Feature.
+:wine_bar_surroundings a geonames:Feature.
+:adipose_industries_surroundings a geonames:Feature.
+
+:wine_bar geonames:neighbours :wine_bar_surroundings.
+:adipose_industries geonames:neighbours :adipose_industries_surroundings.
+:adipose_industries_foyer geonames:parentFeature :adipose_industries.
+:adipose_industries_basement geonames:parentFeature :adipose_industries.
+:adipose_industries_cinema geonames:parentFeature :adipose_industries.
+:adipose_industries_projection_booth geonames:parentFeature :adipose_industries_cinema.
+:adipose_industries_storeroom geonames:parentFeature :adipose_industries_basement.
+:adipose_industries_sales_cubicles geonames:parentFeature :adipose_industries.
+:adipose_industries_ladies_toilets geonames:parentFeature :adipose_industries.
+:adipose_industries_ladies_toilets_cubicles geonames:parentFeature :adipose_industries_ladies_toilets.
+:adipose_industries_rooftop geonames:parentFeature :adipose_industries.
+:adipose_industries_cradle geonames:parentFeature :adipose_indsutries.
+:fosters_office geonames:parentFeature :adipose_industries.
+:staceys_bathroom geonames:parentFeature :staceys_house.
+
+:staceys_house geonames:parentFeature :suburbia.
+:rogers_house geonames:parentFeature :suburbia.
+
+:noble_house geonames:nearby :hilltop.
+
+### ITEMS
+
+#FIXME: Still OntoMedia
+
+:AdiposePendant a rdfs:Class;
+    rdfs:label "Adipose Pendant";
+    rdfs:subClassOf om:PhysicalItem.
+#FIXME and same for pill?
+
+whoi:tardis a om:PhysicalItem.
+whoi:psychic_paper a om:PhysicalItem.
+whoi:sonic_screwdriver a om:PhysicalItem.
+
+:id_pass a om:PhysicalItem.
+:adipose_product a om:PhysicalItem.
+:pendant1 a :AdiposePendant.
+:pendant2 a :AdiposePendant.
+:pendant3 a :AdiposePendant.
+:papers1 a om:PhysicalItem.
+:papers2 a om:PhysicalItem.
+:window_cleaners_cradle a om:PhysicalItem.
+:fosters_comm_device a om:PhysicalItem.
+:doctors_gizmo a om:PhysicalItem.
+:sylvias_car a om:PhysicalItem.
+:sylvias_car_keys a om:PhysicalItem.
+:gun1 a om:PhysicalItem.
+:gun2 a om:PhysicalItem.
+:fosters_capsule a om:PhysicalItem.
+:fosters_sonic_pen a om:PhysicalItem.
+:inducer a om:PhysicalItem.
+:adipose_nursery_ship a om:PhysicalItem.
+:bin a om:PhysicalItem.
+
+# FIXME: where does pill come from
+:adiposeindustries_customer a foaf:Person;
+    om:has :pill.
+
+### TIMELINES
+
+#FIXME: Still OntoMedia. Work out and annotate time throughout
+
+:day1 	a om:timeline.
+:night1 a om:timeline.
+:day2 	a om:timeline.
+:night2 a om:timeline.
+
+#FIXME: need to make night1 follow day1
+#FIXME: need to place in whoniverse timeline, ie. 2008
+
+### HIGH-LEVEL EVENTS
+#	Think DVD-Chapters
+#	Agent, Factor, Location inferred from sub_events
+
+:adipose_industries_exposition a event:Event
+	rdfs:label "The Doctor and Donna both investigate Adipose Industries";
+	event:sub_event :building_entry;
+	event:sub_event :presentation;
+	event:sub_event :cubicles;
+	event:sub_event :doctor_and_roger.
+	
+:parthenogenesis_single a event:Event
+	rdfs:label "Donna visits Stacey, an Adipose Industries Customer. Something dramatic happens to Stacey";
+	event:sub_event :stacey_and_donna;
+	event:sub_event :partho_activated;
+	event:sub_event :stacey_partho;
+	event:sub_event :donna_investigates.
+
+:parthenogenesis_investigations a event:Event
+	rdfs:label "Stacey's parthenogenesis is investigated by all parties";
+	event:sub_event :doctor_and_roger;
+	event:sub_event :collection_squad_sent;
+	event:sub_event :doctor_investigates;
+	event:sub_event :collection_squad_collects;
+	event:sub_event :foster_investigates;
+	event:sub_event :donna_meets_parents;
+	event:sub_event :doctor_investigates_pendant;
+	event:sub_event :doctor_to_storeroom;
+	event:sub_event :donna_to_cubicles;
+	event:sub_event :donna_cubicles;
+	event:sub_event :foster_investigates_cubicles;
+	event:sub_event :noble_family_prepare_for_evening;
+	event:sub_event :doctor_storeroom;
+	event:sub_event :doctor_starts_snooping;
+	event:sub_event :pennys_capture.
+	
+:team_doctor_and_donna
+	rdfs:label "On the trail of Miss Foster, the Doctor and Donna meet and escape capture";
+	event:sub_event :doctor_donna_meet;
+	event:sub_event :doctor_donna_escape;
+	event:sub_event :fosters_chase
+	event:sub_event :doctor_rescues_donna;
+	event:sub_event :penny_released;
+	event:sub_event :foster_and_doctor_reveal_indentities;
+	event:sub_event :premature_labour_triggered
+	event:sub_event :penny_recaptured;
+	event:sub_event :foster_acts;
+	event:sub_event :doctor_hacking;
+	event:sub_event :guards_stunned.
+
+:parthenogenesis_all
+	rdfs:label "Miss Foster brings forward her plans: full parthenogenesis, now";
+	event:sub_event :parthenogenesis;
+	event:sub_event :adipose_collection;
+	event:sub_event :foster_acts2;
+	event:sub_event :doctor_hacking2.
+	
+:adipose_arrive
+	rdfs:label "The Adiposians arrive, collect their young, and dispose of Miss Foster";
+	event:sub_event :nursery_arrives;
+	event:sub_event :adiposians_communicate;
+	event:sub_event :adipose_collection;
+	event:sub_event :fosters_collection.
+	
+:donna_is_new_assistant
+	rdfs:label "Action over, Donna leaves with Doctor as new assistant";
+	event:sub_event :wilf_night;
+	event:sub_event :nursery_leaves;
+	event:sub_event :doctor_reports_crime;
+	event:sub_event :penny_finally_escapes;
+	event:sub_event :assistant_discussion;
+	event:sub_event :departure.
+
+
+### PLOT-LEVEL EVENTS
+#	Think programme precis written out, and then make each sentence an event.
+
+# Scenes 2-12
+:building_entry a event:Event;
+	rdfs:label "Doctor and Donna independently enter the building";
+    event:agent whoc:donna_noble;
+    event:agent whoc:doctor;
+    event:place	whol:tardis;
+    event:place whol:noble_house;
+    event:place :adipose_industries_foyer;
+    event:factor whoi:sonic_screwdriver;
+    event:factor whoi:psychic_paper.
+
+# Scene 13
+:presentation a event:Event;
+	rdfs:label "Journalists watch presentation at Adipose Industries";
+    event:agent :journalists;
+    event:agent :foster;
+    event:agent whoc:donna_noble;
+    event:agent whoc:doctor;
+	event:place :adipose_industries_cinema;
+    event:factor whoi:psychic_paper;
+    event:factor :adipose_product.
+
+# Scene 14
+:cubicles a event:Event;
+	rdfs:label "Doctor and Donna indepedently access Adipose Industries customer information";
+    event:agent :craig;
+    event:agent :claire;
+    event:agent :salespeople;
+    event:agent whoc:donna_noble;
+    event:agent whoc:doctor;
+	event:place :adipose_industries_sales_cubicles;
+    event:factor whoi:psychic_paper.
+
+# Scenes 15, 17, 21, 22, 29 
+:stacey_and_donna a event:Event;
+	rdfs:label "Donna visits an Adipose Industries customer called Stacy and something unexpected happens";
+    event:agent :stacey_campbell;
+    event:agent whoc:donna_noble;
+    event:agent :adipose1;
+	event:place :staceys_house;
+    event:factor :pendant1.
+
+#ÊScene 30
+:partho_activated a event:Event;
+	rdfs:label "Miss Foster activates full parthenogenesis";
+    event:agent :miss_foster;
+	event:place :adipose_industries;
+    event:factor :fosters_comm_device;
+    event:factor :fosters_capsule.
+
+# Scene 31
+:stacey_partho a event:Event;
+	rdfs:label "Stacey undergoes full parthenogenesis";
+    event:agent :stacey_campbell;
+    event:agent :adipose;
+	event:place :staceys_bathroom.
+
+# Scene 32, 36, 39, 41
+:donna_investigates a event:Event;
+	rdfs:label "Donna investigates Stacey's absense";
+    event:agent whoc:donna_noble;
+    event:agent :adipose;
+	event:place :staceys_house.
+
+# Scene 16, 18, 19, 20, 24
+:doctor_and_roger a event:Event;
+	rdfs:label "Doctor visits an Adipose Industries customer called Roger";
+    event:agent :roger_davey;
+    event:agent whoc:doctor;
+	event:place :rogers_house;
+    event:factor whoi:psychic_paper;
+    event:factor whoi:sonic_screwdriver;
+    event:factor :doctors_gizmo.
+
+# Scene 23, 26
+:collection_squad_sent a event:Event;
+	rdfs:label "Miss Foster sees unscheduled parthenogenesis alert and sends out the collection squad";
+    event:agent :foster;
+    event:factor :fosters_comm_device;
+	event:place :fosters_office.
+
+# Scene 24,28,34,37,40
+:doctor_investigates a event:Event;
+	rdfs:label "Doctor sees alarm and runs around the streets trying to track down the source of the alarm";
+    event:agent whoc:doctor;
+    event:agent :collection_squad;
+	event:place :suburbia;
+    event:factor :doctors_gizmo.
+
+# Scene 27, 33, 35, 38, 39, 40
+:collection_squad_collects a event:Event;
+	rdfs:label "Collection squad leave Adipose Industries, successfully find and capture the Adipose escaping onto the streets";
+    event:agent :collection_squad;
+    event:agent :adipose;
+	event:place :adipose_industries;
+	event:place :suburbia.
+	
+# Scene 42, 43
+:foster_investigates a event:Event;
+	rdfs:label "Miss Foster reviews CCTV footage and identifies the infiltrator to her guards";
+    event:agent :foster;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+    event:agent whoc:donna_noble;
+    event:agent whoc:doctor;
+    event:agent :penny_carter;
+	event:place :fosters_office.
+
+# Scene 44, 45, 46
+:donna_meets_parents a event:Event;
+	rdfs:label "Donna arrives back at home, mum nagging, and opens her heart to her grandfather";
+    event:agent whoc:donna_noble;
+    event:agent whoc:sylvia_noble;
+    event:agent whoc:wilf_noble;
+	event:place :noble_house;
+	event:place :hilltop.
+
+# Scene 47
+:doctor_investigates_pendant a event:Event;
+	rdfs:label "The Doctor uses the equipment of the Tardis to investigate the workings of the capsule";
+    event:agent whoc:doctor;
+	event:place whol:tardis;
+    event:factor :capsule.
+
+# Scene 49, 50, 52, 54
+:doctor_to_storeroom a event:Event;
+	rdfs:label "The Doctor transports the Tardis near Adipose Industries, enters, and hides himself away"; 
+    event:agent whoc:doctor;
+	event:place :adipose_industries_surroundings;
+	event:place :adipose_industries_basement;
+    event:factor whoi:sonic_screwdriver.
+
+# Scene 48, 50, 51, 53, 55
+:donna_to_cubicles a event:Event;
+	rdfs:label "Donna borrows her Mum's car, drives to Adipose, enters, and hides herself away";
+    event:agent whoc:donna_noble;
+    event:place :noble_house;
+	event:place :adipose_industries_surroundings;
+	event:place :adipose_industries_foyer;
+	event:place :adipose_industries_ladies_toilets;
+	event:factor :sylvias_car.
+
+# Scene 58
+:donna_cubicles a event:Event;
+	rdfs:label "Donna hiddes in the toilet cubicles for the day";
+    event:agent whoc:donna_noble;
+	event:place :adipose_industries_ladies_toilets_cubicles.
+
+# Scene 56, 60, 62
+:foster_investigates_cubicles a event:Event;
+	rdfs:label "Miss Foster investigates the cubicles with her guards, now armed. Finds not Donna, but Penny";
+    event:agent :foster;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+    event:agent :penny_carter;
+    event:agent whoc:donna_noble;
+	event:place :adipose_industries_ladies_toilets;
+    event:factor :gun1. #rather factor genericguns? guards-have-guns assertion?
+
+# Scene 58, 59, 60
+:noble_family_prepare_for_evening a event:Event;
+	rdfs:label "Sylvia phones Donna: wants car to see friends, one of whom is on Adipose pills";
+    event:agent whoc:sylvia_noble;
+    event:agent whoc:wilf_noble;
+    event:agent whoc:donna_noble;
+	event:place noble_house;
+	event:place adipose_industries_ladies_toilets_cubicles.
+	#factor phone?
+
+:doctor_storeroom a event:Event;
+	rdfs:label "The Doctor hides in the storeroom for the day";
+	event:agent whoc:doctor;
+	event:place :adipose_industries_storeroom.
+
+# Scene 57, 61, 63
+:doctor_starts_snooping a event:Event;
+	rdfs:label "The Doctor explores Adipose Industries, and uses the window cleaner's cradle to view Miss Foster's office.";
+    event:agent whoc:doctor;
+    event:place adipose_industries_storeroom;
+    event:place adipose_industries_rooftop;
+    event:place adipose_industries_cradle;
+    event:factor whoi:sonic_screwdriver.
+
+# Scene 64, 65, 66, 67, 75, 80, 82
+:pennys_capture a event:Event;
+	rdfs:label "Penny, captured, is interrogated by Miss Foster. Miss Foster reveals her plans and introduces an Adipose. Penny is left there";
+    event:agent :penny_carter;
+    event:agent :foster;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+    event:agent :adipose;
+	event:place :fosters_office;
+    event:factor
+
+# Scene 67
+:doctor_donna_meet a event:Event;
+	rdfs:label "The Doctor watches Penny's interrogation, hidden outside. Donna watches also, hidden inside. They notice each other, and then are noticed by Miss Foster, who orders the guards onto them.";
+    event:agent whoc:donna_noble;
+    event:agent whoc:doctor;
+    event:agent :penny_carter;
+    event:agent :foster;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+	event:place :fosters_office.
+	
+
+# Scene 68, 69, 71, 72, 74
+:doctor_donna_escape a event:Event;
+	rdfs:label "The Doctor and Donna flee, join up, and chased by the guards escape to the rooftop. Sonic'ing the access door shut, they try to escape using the window cleaner's cradle.";
+    event:agent whoc:donna_noble;
+    event:agent whoc:doctor;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+    event:factor whoi:sonic_screwdriver;
+    event:place :adipose_industries;
+    event:place :adipose_industries_rooftop;
+    event:place :adipose_industries_cradle;
+	event:factor whoi:sonic_screwdriver.
+
+# Scene 70, 71, 73, 74, 76, 81
+:fosters_chase a event:Event;
+	rdfs:label "The guards shoot the sonic'd shut office door and pursue Donna and the Doctor. At the access door to the rooftop, it is Miss Foster's sonic pen that open's the sonic'd shut door and makes the cradle freefall." 
+    event:agent whoc:donna_noble;
+    event:agent whoc:doctor;
+    event:agent :foster;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+	event:place :adipose_industries;
+	event:place :adipose_industries_rooftop;
+    event:place :adipose_industries_cradle;
+    event:factor :fosters_sonic_pen.
+
+# Scene 76, 77, 78, 79, 80, 82
+:doctor_rescues_donna a event:Event;
+	rdfs:label "Miss Foster tries to cut the now stuck cradle's cables. Donna hangs perilously. The Doctor manages to sonic her pen from her, and uses it to release the window she deadlocked. They escape."
+    event:agent whoc:doctor;
+    event:agent whoc:donna_noble;
+	event:place :adipose_industries_cradle;
+	event:place :adipose_industries_rooftop;
+	event:place :fosters_office;
+    event:factor whoi:sonic_screwdriver;
+    event:factor :fosters_sonic_pen.
+
+# Scene 82
+:penny_released a event:Event;
+	rdfs:label "The Doctor releases Penny's bound hands";
+	event:agent whoc:doctor;
+	event:agent :penny_carter;
+	event:place :fosters_office;
+	event:factor whoi:sonic_screwdriver.
+
+# Scene 83
+:foster_and_doctor_reveal_indentities a event:Event;
+	rdfs:label "The Doctor and Miss Foster exchange identities and warnings. Miss Foster orders the Guards to shoot. Doctor and Donna Escape"
+	event:agent whoc:doctor;
+	event:agent whoc:donna_noble;
+    event:agent :foster;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+    event:place :adipose_industries_sales_cubicles;
+    event:factor whoi:sonic_screwdriver;
+    event:factor :fosters_sonic_pen;
+    event:factor :gun1;
+    event:factor :gun2.
+    
+# Scene 83
+:premature_labour_triggered a event:Event;
+	rdfs:label "Miss Foster advances her plans: Premature Labour";
+	event:agent whoc:doctor;
+    event:agent :foster;
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+    event:place :adipose_industries_sales_cubicles;
+    event:factor :fosters_comm_device.
+
+# Scene 84
+:penny_recaptured a event:Event;
+	rdfs:label "Miss Foster finds Penny leaving with evidence. Penny is tied up, as before.";
+	event:agent :penny_carter;
+	event:agent :miss_foster;
+	event:agent :foster_guard1;
+	event:agent :foster_guard2;
+	event:place :fosters_office.
+
+# Scene 86, 90, 98
+:foster_acts a event:Event;
+	rdfs:label "Miss Foster reveals a giant computer wall, activates the Inducer, and waits for the Adipose"; 
+    event:agent :penny_carter;
+    event:agent :foster;
+	event:place :fosters_office;
+    event:factor :inducer.
+    
+# Scene 85, 87, 89, 100, 103
+:doctor_hacking a event:Event;
+	rdfs:label "The Doctor uses Miss Foster's pen to access a giant computer wall. He controls the building's security system and attempts to halt the Inducer";
+    event:agent whoc:donna;
+    event:agent whoc:doctor;
+	event:place :adipose_industries_storeroom;
+    event:factor whoi:sonic_screwdriver;
+    event:factor :inducer;
+    event:factor :pendant1.
+    
+# Scene 86, 88
+:guards_stunned a event:Event;
+	rdfs:label "The guards are neutralised by an electrified door";
+    event:agent :foster_guard1;
+    event:agent :foster_guard2;
+	event:place :adipose_industries_basement;
+    event:factor :inducer.
+
+# Scene 91-97, 101, 102, 106, 107, 109, 110
+:parthenogenesis a event:Event;
+	rdfs:label "parthenogenesis starts across the million Adipose customers";
+    event:agent :wednesday_girls;
+    event:agent whoc:sylvia_noble;
+    event:agent :roger_davey;
+	event:agent :suzette;
+	event:agent :plump_man;
+	event:agent :plump_woman;
+	event:agent :adiposeindustries_customers; # FIXME: Should this be in the world of assertions?
+	event:agent :adipose;
+	event:place :wine_bar;
+	event:place :wine_bar_surroundings;
+	event:place :rogers_house;
+    event:factor :inducer.
+
+# Scene 99, 117
+:adipose_collection a event:Event;
+	rdfs:label "The Adipose march towards Adipose Industries and rejoice at the sign of a space ship";
+    event:agent :bystanders;
+    event:agent :adipose;
+    event:place :adipose_industries_surroundings;
+    event:factor :adipose_nursery_ship.
+
+# Scene 104, 111
+:foster_acts2 a event:Event;
+	rdfs:label "Miss Foster attempts to neutralise the Doctor's hacking of the Inducer";
+    event:agent :penny_carter;
+    event:agent :foster;
+    event:place :fosters_office;
+    event:factor :inducer.
+    
+# Scene 105, 108
+:doctor_hacking2 a event:Event;
+	rdfs:label "The Doctor uses the extra Pendant Donna still has from Stacey to finally stop the Inducer";
+    event:agent whoc:donna;
+    event:agent whoc:doctor;
+    event:place :adipose_industries_storeroom;
+    event:factor :inducer;
+    event:factor :pendant2.
+    
+# Scene 113, 114, 115, 116
+:nursery_arrives a event:Event;
+	rdfs:label "The Adipose nursery space ship arrives over London and halts above Adipose Industries";
+    event:agent :suzette;
+    event:agent whoc:sylvia_noble;
+    event:agent :wednesday_girls;
+    event:agent :bystanders;
+    event:agent whoc:wilf_noble;
+    event:place :adipose_industries_surroundings;
+    event:factor :adipose_nursery_ship.
+    
+# Scene 115, 128
+:wilf_night a event:Event;
+	rdfs:label "Wilf is unaware of the UFO. With telescope pointing the other way, he sees the Tardis, the Doctor and Donna";
+    event:agent whoc:wilf_noble;
+    event:agent whoc:doctor;
+    event:agent whoc:donna_noble;
+    event:place :hilltop;
+    event:factor whoi:tardis.
+    
+# Scene 118, 120
+:adiposians_communicate a event:Event;
+	rdfs:label "The Adipose First Family attempt to communicate with Miss Foster. The Doctor reads the message";
+    event:agent :adiposian_first_family;
+    event:agent whoc:doctor;
+    event:agent whoc:donna_noble;
+    event:place :adipose_industries_storeroom;
+    event:factor :inducer.
+
+# Scene 119, 122
+:adipose_collection a event:Event;
+	rdfs:label "The Adipose enter levitation beams and rise towards the nursery ship".
+    event:agent :adipose;
+    event:place :adipose_industries_surroundings;
+    event:factor :adipose_nursery_ship.
+    
+# Scene 121, 122
+:fosters_collection a event:Event;
+	rdfs:label "Miss Foster triumphantly watches the Adipose being collected. Defying the Doctor, she enters the beam herself, only for it to release her to her death."
+    event:agent :foster;
+    event:agent whoc:doctor;
+    event:agent whoc:donna_noble;
+	event:place :adipose_industries_rooftop;
+    event:factor adipose_nursery_ship.
+
+# Scene 123
+:nursery_leaves a event:Event;
+	rdfs:label "The Adipose nursery ship leaves Earth"
+    event:agent :adipose;
+    event:factor :adipose_nursery_ship.
+
+# Scene 124
+:doctor_reports_crime a event:Event;
+	rdfs:label "The Doctor reports the Adiposian crime to the Shadow Proclamation";
+    event:agent whoc:doctor;
+	event:place :adipose_industries_surroundings;
+    event:factor whoi:sonic_screwdriver;
+    event:factor :doctors_gizmo.
+
+# Scene 124
+:penny_finally_escapes a event:Event;
+	rdfs:label "Penny finally escapes, now mad after witnessing it all. She is still tied to chair.";
+	event:agent :penny_carter;
+	event:agent whoc:doctor;
+	event:agent whoc:donna_noble;
+	event:place adipose_industries_surroundings.
+
+# Scene 125
+:assistant_discussion a event:Event;
+	rdfs:label "Donna and The Doctor discuss her being his assistant. Donna has changed her mind since last time, and is prepared";
+    event:agent whoc:doctor;
+    event:agent whoc:donna_noble;
+	event:place adipose_industries_surroundings;
+    event:factor whoi:tardis;
+    event:factor :sylvias_car.
+
+# Scene 127, 128
+:departure a event:Event;
+	rdfs:label "The Doctor and Donna leave Adipose Industries in the Tardis. He asks her where she wants to go...";
+    event:agent whoc:doctor;
+    event:agent whoc:donna_noble;
+	event:place :adipose_industries_surroundings;
+	event:place :hilltop;
+    event:factor whoi:tardis.
+
+### INTERPRETATIONS FROM SCRIPT
+
+#	Think a full marked-up transmogrification of programme's script into our story world.
+#	Each interpretation is a scene, and breaks down the "this event has agent, factor, location" with machine-reasonable precision.
+#	Note that there may be many script scenes for each 'plot level event', or vice-versa, and that long scenes may require further breaking down to model the plot development (ie. assertions and the script excert they correspond to).
+
+:scriptScene01 a stories:Interpretation;
+	rdfs:label "Script - Scene 1";
+	rdfs:comment "OMITTED";
+	rdfs:resource <path/to/encodedscript/#scene1>;
+	stories:source :script.
+
+:donna_in_noble_house { whoc:donna_noble geonames:locatedIn whol:noble_house. }
+
+:scriptScene02 a stories:Interpretation;
+	rdfs:label "Script - Scene 2";
+	rdfs:comment "DONNA steps out of her front door. Smart, head held high; she's on a mission.";
+	rdfs:resource <path/to/encodedscript/#scene2>;
+	stories:interprets :building_entry;
+	stories:retracts :donna_in_noble_house;
+	stories:source :script.
+
+:doctor_in_tardis { whoc:doctor geonames:locatedIn whol:tardis. }
+
+:scriptScene03 a stories:Interpretation;
+	rdfs:label "Script - Scene 3";
+	rdfs:comment "THE DOCTOR steps out of the TARDIS. Sets off. On a mission.";
+	rdfs:resource <path/to/encodedscript/#sceneX>;
+	stories:interprets :building_entry;
+	stories:retracts :doctor_in_tardis;
+	stories:source :script.
+
+:scriptScene04 a stories:Interpretation;
+	rdfs:label "Script - Scene 4";
+	rdfs:comment "DONNA walking along, left to right, through COMMUTERS.";
+	stories:interprets :building_entry;
+	stories:source :script.
+
+:scriptScene05 a stories:Interpretation;
+	rdfs:label "Script - Scene 5";
+	rdfs:comment "THE DOCTOR walks along, right to left, through COMMUTERS.";
+	stories:interprets :building_entry;
+	stories:source :script.
+
+:donna_in_adipose_industries_surroundings { whoc:donna_noble geonames:locatedIn :adipose_industries_surroundings. }
+
+:scriptScene06 a stories:Interpretation;
+	rdfs:label "Script - Scene 6";
+	rdfs:comment "DONNA stops in the street, looks up... A TOWER BLOCK looming above. Cool, sleek, stylish, the London HQ of Adipose Industries. Deep breath, Donna heads towards it."
+	stories:interprets :building_entry;
+	stories:asserts :donna_in_adipose_industries_surroundings;
+	stories:source :script.
+
+:doctor_in_adipose_industries_surroundings { whoc:doctor geonames:locatedIn :adipose_industries_surroundings. }
+	
+:scriptScene07 a stories:Interpretation;
+	rdfs:label "Script - Scene 7";
+	rdfs:comment "THE DOCTOR stops in the street, looks up... THE TOWER BLOCK looming above, Adipose Industries. But this is the opposite side to Donna's, the back. Deep breath, the Doctor heads towards it.";
+	stories:interprets :building_entry;
+	stories:asserts :doctor_in_adipose_industries_surroundings;
+	stories:source :script.
+
+:scriptScene08 a stories:Interpretation;
+	rdfs:label "Script - Scene 8";
+	rdfs:comment "DONNA walks through the revolving doors.";
+	stories:interprets :building_entry;
+	stories:source :script.
+
+:doctor_in_adipose_industries_basement { whoc:doctor geonames:locatedIn :adipose_industries_basement. }
+:sonic_screwdriver_facilitates_doctor_in_adipose_industries_basement {whoi:sonic_screwdriver logic:facilitates :doctor_in_basement}
+
+:scriptScene09 a stories:Interpretation;
+	rdfs:label "Script - Scene 9";
+	rdfs:comment "THE DOCTOR's down a flight of steps, sonicking a basement door - PRAC EXPLOSION on the lock, and he slips inside.";
+	stories:interprets :building_entry;
+	stories:asserts :doctor_in_basement;
+	stories:asserts :sonic_screwdriver_facilitates_doctor_in_adipose_industries_basement;
+	stories:source :script.
+
+
+:donna_noble_in_adipose_industries_foyer { whoc:donna_noble geonames:locatedIn :adipose_industries_foyer. }
+:donna_noble_is_health_and_safety { :health_and_safety foaf:member whoc:donna_noble. }
+:guard_believes_donna_noble_is_health_and_safety { :security_guard1 logic:believes :donna_is_health_and_safety. }
+:id_pass_facilitates_guard_believes_donna_noble_is_health_and_safety { :id_pass logic:facilitates :guard_believes_donna_noble_is_health_and_safety. }
+
+# FIXME: Need to say something like...
+# guard_facilitates_donna_in_adipose_industries_because_member_of_adipose_staff_permits_foafagent_in_adipose_industries
+# ...expressed with the story logic ontology. 
+# staff *permits* entry? entry *requires* staff? latter more generic (idea of dependencies) but not quite as natural english.
+
+# FIXME: Also should aim to get a balance between named graphs and in-line tripes. only need to be named if they're going to be re-used? or if all auto-generated from tool does it matter?
+
+:scriptScene10 a stories:Interpretation;
+	rdfs:label "Script - Scene 10";
+	rdfs:comment "Posh foyer. DONNA shows her ID pass to the SECURITY GUARD. DONNA: 'Donna Noble, Health and Safety.'";
+	stories:interprets :building_entry;
+	stories:asserts :donna_in_foyer;
+	stories:asserts :donna_is_health_and_safety;
+	stories:asserts :guard_believes_donna_is_health_and_safety;
+	stories:asserts :id_pass_facilitates_guard_believes_donna_noble_is_health_and_safety;
+	stories:source :script.
+
+	
+:doctor_is_health_and_safety { :health_and_safety foaf:member whoc:doctor. :whoc:doctor foaf:name "John Smith". }
+:psychic_paper_facilitates_guard_believes_doctor_is_health_and_safety { whoi:psychic_paper logic:facilitates [:security_guard2 logic:believes :doctor_is_health_and_safety.] };
+
+:scriptScene11 a stories:Interpretation;
+	rdfs:label "Script - Scene 11";
+	rdfs:comment "'Backstage' corridor, all concrete and pipes. THE DOCTOR passes a SECURITY GUARD, shows the psychic paper. THE DOCTOR: 'John Smith, Health and Safety.'";
+	stories:interprets :building_entry;
+	stories:asserts :doctor_is_health_and_safety;
+	stories:asserts :guard_believes_doctor_is_health_and_safety;
+    stories:asserts :psychic_paper_facilitates_guard_believes_doctor_is_health_and_safety;
+    stories:source :script.
+    
+:scriptScene12 a stories:Interpretation;
+	rdfs:label "Script - Scene 12";
+	rdfs:comment "Two lift doors, next to each other. DONNA gets into the left-hand lift, heading up, doors close. At the same time - The doors on the right-hand lift open - it's come up from the basement - and THE DOCTOR steps out, heads off, curious."
+	stories:source :script.
+
+:scriptScene13part1 a stories:Interpretation;
+	rdfs:label "Script - Scene 13; Part 1 of 5";
+    rdfs:comment "Part of the Tower Block HQ, with Adipose Industries logos on the walls. Slogan: The Fat Just Walks Away. The logo is on screen, as MISS FOSTER steps forward, at the front. She's 40s, handsome, strong. She addresses the audience, 40 PEOPLE or so, scattered about, taking notes - they're JOURNALISTS; this is a Press Launch.".
+	stories:interprets :presentation;
+	#journalists watch miss foster presentation
+	stories:source script.
+
+:scriptScene13part2 a stories:Interpretation;
+	rdfs:label "Script - Scene 13; Part 2 of 5";
+	rdfs:comment "MISS FOSTER: 'Adipose Industries. The twenty-first century way to lose weight. No exercise, no diet, no pain. Just lifelong freedom, from fat, the Holy Grail of the modern age. And here it is! Holds it up, an ordinary red & white capsule. MISS FOSTER (CONT'D) You just take one capsule. One capsule, once a day, for three weeks. And the fat, as they say...' ON SCREEN, GRAPHIC, the logo does a little spin, the jingle sings: The Fat Just Walks Awaaaaay!";
+	stories:interprets :presentation;
+	#journalists believe pill reduces fat
+	stories:source script.
+
+:scriptScene13part3 a stories:Interpretation;
+	rdfs:label "Script - Scene 13; Part 3 of 5";
+	rdfs:comment "CUT TO DONNA, in amongst the audience, as a WOMAN near to her pipes up - PENNY CARTER, late 20's, sharp.PENNY Excuse me, Miss Foster, if I could..? I'm Penny Carter, Science Correspondent for the Observer MISS FOSTER Oh yes. You've written quite a bit about us already. PENNY And I'm not about to stop. But there's a thousand diet pills on the market, and a thousand conmen stealing people's money. How do we know the fat isn't going straight into your bank account? MISS FOSTER Penny. If cynicism burnt up calories, we'd all be thin as rakes. But if you want the science, then I can oblige...";
+	stories:interprets :presentation;
+	#donna watches miss foster presentation
+	#penny and miss foster are antagonists
+	stories:source script. 
+
+:scriptScene13part4 a stories:Interpretation;
+	rdfs:label "Script - Scene 13; Part 4 of 5";
+	rdfs:comment "She nods up to the PROJECTION BOOTH. The projected beam of light flickers, changes. The next reel starts up, GRAPHICS showing a pill, and a layout of the Human body, with arrows going from the pill, to the body, then flowing round the bloodstream. VOICEOVER The Adipose Capsule is composed of a synthesised mobilising lipase, bound to a large protein molecule. The mobilising lipase breaks up the triglycerides stored in the adipose cells, which then enter the bloodstream... [etc.] But during this, on Donna, watching, suspicious. And then PAN UP to see behind her, THE DOCTOR, in the PROJECTION BOOTH WINDOW. (Not seeing Donna, just watching the screen.) CUT TO INT. PROJECTION BOOTH, THE DOCTOR at the window, a FILM PROJECTOR whirring away, manned by a BLOKE. The Doctor shows him the psychic paper, keeping his eye on Miss Foster. THE DOCTOR: 'Health and Safety. Film department.'";
+	stories:interprets :presentation;
+	#doctor watches miss foster presentation
+	#doctor fools projectionist
+	stories:source script.    
+
+:scriptScene13part5 a stories:Interpretation;
+	rdfs:label "Script - Scene 13; Part 5 of 5";
+    rdfs:comment "CUT TO CINEMA, film over, logo back on screen, as MISS FOSTER steps forward again. CUT BETWEEN THE DOCTOR & DONNA watching, separately. MISS FOSTER: '100% legal, 100% effective.' PENNY: 'But can I ask, how many people have taken the pills, to date?' MISS FOSTER: 'We've already got one million customers within the Greater London area alone. But from next week, we start rolling out, nationwide. The future starts here. And Britain will be thin!'";
+	stories:interprets :presentation;
+	#there are 1,000,000 adipose customers, each with their pills
+	stories:source script.  
+
+#[etc....]
+
+# FIXME: No way of ordering interpretations in sequence. ie scene1 < scene2 < scene 3. Would the :script do this somehow, or the :canonicalStory similar to consituent event?
+# This is could be esp. important as auto-injest would come from scripts, so stories as interpretations with no events could happen?
+# And somehow we need to group script scenes into the script -> done by source, but not ordered. -> perhaps source has location within media
+
+### STORIES
+
+# CANONICAL STORY
+
+:canonicalStory a stories:story;
+	stories:events :canonicalStoryEvents;
+	stories:contextualises :programmeProduction;
+	stories:contextualises :scriptScene01;
+	stories:contextualises :scriptScene02;
+	stories:contextualises :scriptScene03;
+	stories:contextualises :scriptScene04;
+	stories:contextualises :scriptScene05;
+	# [etc....]
+	.
+
+:canonicalStoryEvents a stories:EventList;
+	stories:slot [
+		olo:index 1;
+		stories:item :building_entry
+		];
+	stories:slot [
+		olo:index 2;
+		stories:item :presentation
+		];
+	stories:slot [
+		olo:index 2;
+		stories:item :cubicles
+		];
+	stories:slot [
+		olo:index 3;
+		stories:item :stacey_and_donna
+		];
+	stories:slot [
+		olo:index 4;
+		stories:item :partho_activated
+		];
+	stories:slot [
+		olo:index 5;
+		stories:item :stacey_partho
+		];
+	stories:slot [
+		olo:index 6;
+		stories:item :donna_investigates
+		];
+	stories:slot [
+		olo:index 7;
+		stories:item :doctor_and_roger
+		];
+	stories:slot [
+		olo:index 8;
+		stories:item :collection_squad_sent
+		];
+	stories:slot [
+		olo:index 9;
+		stories:item :doctor_investigates
+		];
+	stories:slot [
+		olo:index 10;
+		stories:item :collection_squad_collects
+		];
+	stories:slot [
+		olo:index 11;
+		stories:item :foster_investigates
+		];
+	stories:slot [
+		olo:index 12;
+		stories:item :donna_meets_parents
+		];
+	stories:slot [
+		olo:index 13;
+		stories:item :doctor_investigates_pendant
+		];
+	stories:slot [
+		olo:index 14;
+		stories:item :doctor_to_storeroom
+		];
+	stories:slot [
+		olo:index 15;
+		stories:item :donna_to_cubicles
+		];
+	stories:slot [
+		olo:index 16;
+		stories:item :donna_cubicles
+		];
+	stories:slot [
+		olo:index 17;
+		stories:item :foster_investigates_cubicles
+		];
+	stories:slot [
+		olo:index 18;
+		stories:item :noble_family_prepare_for_evening
+		];
+	stories:slot [
+		olo:index 19;
+		stories:item :doctor_storeroom
+		];		
+	stories:slot [
+		olo:index 20;
+		stories:item :doctor_starts_snooping
+		];		
+	stories:slot [
+		olo:index 21;
+		stories:item :pennys_capture
+		];		
+	stories:slot [
+		olo:index 22;
+		stories:item :doctor_donna_meet
+		];
+	stories:slot [
+		olo:index 23;
+		stories:item :doctor_donna_escape
+		];
+	stories:slot [
+		olo:index 24;
+		stories:item :fosters_chase
+		];
+	stories:slot [
+		olo:index 25
+		stories:item :doctor_rescues_donna
+		];
+	stories:slot [
+		olo:index 26;
+		stories:item :penny_released
+		];
+	stories:slot [
+		olo:index 27;
+		stories:item :foster_and_doctor_reveal_indentities
+		];
+	stories:slot [
+		olo:index 28;
+		stories:item :premature_labour_triggered
+		];
+	stories:slot [
+		olo:index 29;
+		stories:item :penny_recaptured
+		];
+	stories:slot [
+		olo:index 30;
+		stories:item :foster_acts
+		];
+	stories:slot [
+		olo:index 31;
+		stories:item :doctor_hacking
+		];
+	stories:slot [
+		olo:index 32;
+		stories:item :guards_stunned
+		];
+	stories:slot [
+		olo:index 33;
+		stories:item :parthenogenesis
+		];
+	stories:slot [
+		olo:index 34;
+		stories:item :adipose_collection
+		];
+	stories:slot [
+		olo:index 35;
+		stories:item :foster_acts2
+		];
+	stories:slot [
+		olo:index 36;
+		stories:item :doctor_hacking2
+		];
+	stories:slot [
+		olo:index 37;
+		stories:item :nursery_arrives
+		];
+	stories:slot [
+		olo:index 38;
+		stories:item :wilf_night
+		];
+	stories:slot [
+		olo:index 39;
+		stories:item :adiposians_communicate
+		];
+	stories:slot [
+		olo:index 40;
+		stories:item :adipose_collection
+		];
+	stories:slot [
+		olo:index 41;
+		stories:item :fosters_collection
+		];
+	stories:slot [
+		olo:index 42;
+		stories:item :nursery_leaves
+		];
+	stories:slot [
+		olo:index 43;
+		stories:item :doctor_reports_crime
+		];
+	stories:slot [
+		olo:index 44;
+		stories:item :penny_finally_escapes
+		];
+	stories:slot [
+		olo:index 45;
+		stories:item :assistant_discussion
+		];
+	stories:slot [
+		olo:index 46;
+		stories:item :departure
+		];
+
+# MEDIA REPRESENTATIONS
+
+<http://www.bbc.co.uk/programmes/b009w049#programme> stories:tells :canonicalStory.
+
+:cast {
+	whoc:doctor portrayal:actor whop:david_tennant.
+	whoc:donna_noble portrayal:actor whop:catherine_tate.
+	# [etc.....]
+	}
+#FIXME: For BBC stuff, the programmes ontology can handle this
+
+:crew {
+	# writer
+	# [etc.....]
+	}
+
+:programmeProduction a stories:interpretation;
+	rdfs:label "Production info for the TV programme: writer, cast, etc.";
+	stories:interprets <http://www.bbc.co.uk/programmes/b009w049#programme>;
+	stories:asserts :cast;
+	stories:asserts :crew;
+	stories:source <http://www.imdb.com/title/tt1159991/>.
+
+:script a foaf:Document;
+    foaf:primaryTopic <http://www.bbc.co.uk/programmes/b009w049#programme>;
+    foaf:page <http://www.thewriterstale.com/scr.html>;
+	rdf:resource <http://www.thewriterstale.com/pdfs/Doctor%20Who%204%20Ep.1%20-%20Shooting%20Script%20-%20Yellow%20-%2016.10.07.pdf>;
+	stories:tells :canonicalStory.
+#FIXME: group script scenes into script
