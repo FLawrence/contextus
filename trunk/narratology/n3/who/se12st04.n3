@@ -1,0 +1,187 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stories: <http://purl.org/ontology/stories/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix olo:     <http://purl.org/ontology/olo/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#>.
+
+@prefix : <http://contextus.net/who/GOTD/>.
+@prefix whoc:       <http://contextus.net/who/character/>.
+@prefix whol:       <http://contextus.net/who/location/>.
+@prefix whoi:       <http://contextus.net/who/item/>.
+
+{
+:GOTD a stories:Story;
+	stories:sub_story :GOTD_ep1;
+	stories:sub_story :GOTD_ep2;
+	stories:sub_story :GOTD_ep3;
+	stories:sub_story :GOTD_ep4;
+	stories:sub_story :GOTD_ep5;
+	stories:sub_story :GOTD_ep6;
+	stories:events :GOTD_events.
+
+:GOTD_ep1 a stories:Story;
+	stories:events :GOTD_ep1_events.
+
+:GOTD_ep2 a stories:Story;
+	stories:events :GOTD_ep2_events.
+
+:GOTD_ep3 a stories:Story;
+	stories:events :GOTD_ep3_events.
+
+:GOTD_ep3 a stories:Story;
+	stories:events :GOTD_ep3_events.
+
+:GOTD_ep4 a stories:Story;
+	stories:events :GOTD_ep4_events.
+
+:GOTD_ep5 a stories:Story;
+	stories:events :GOTD_ep5_events.
+
+:GOTD_ep6 a stories:Story;
+	stories:events :GOTD_ep6_events.
+
+# <!-- Asserts that the various programmes tell stories - NOTE THAT WE NEED PIDS FOR ARCHIVE SERIES/EPISODES-->
+<http://www.bbc.co.uk/programmes/subseries_pid#programme> stories:tells :GOTD.
+<http://www.bbc.co.uk/programmes/episode1_pid#programme> stories:tells :GOTD_ep1.
+<http://www.bbc.co.uk/programmes/episode2_pid#programme> stories:tells :GOTD_ep2.
+<http://www.bbc.co.uk/programmes/episode3_pid#programme> stories:tells :GOTD_ep3.
+<http://www.bbc.co.uk/programmes/episode4_pid#programme> stories:tells :GOTD_ep4.
+<http://www.bbc.co.uk/programmes/episode5_pid#programme> stories:tells :GOTD_ep5.
+<http://www.bbc.co.uk/programmes/episode6_pid#programme> stories:tells :GOTD_ep6.
+
+	
+# <!-- Defines the events we are interested in (just major plot events for now) -->
+
+:The_Mission a event:Event;
+	event:place whol:Skaro;
+	event:agent whoc:Timelords;
+	event:agent whoc:Fourth_Doctor;
+	event:time [ tl:before :The_First_Dalek ];
+	rdfs:label "The Doctor's transmat journey is interrupted and he finds himself in desolate wilderness. The Time Lords are responsible and they have a mission for the Doctor: travel back in time and prevent the Daleks from being created. It was to be this action that would prove to be the initial catalyst for the Last Great Time War.".
+	
+:The_First_Dalek a event:Event;
+	event:place whol:Skaro;
+	event:agent whoc:Sarah_Jane_Smith;
+	event:agent whoc:Davros;
+	event:agent whoc:Daleks;
+	event:time [ tl:after :The_Mission; tl:before :Interrogation ];
+	rdfs:label "Separated from the Doctor and Harry, Sarah has been left alone to wander the dangerous wastelands of Skaro. Stumbling across a ruined building, she secretly observes the crippled scientist Davros testing the weaponry of a prototype Dalek.".
+	
+:Interrogation a event:Event;
+	event:place whol:Skaro;
+	event:agent whoc:Sarah_Jane_Smith;
+	event:agent whoc:Davros;
+	event:agent whoc:Harry_Sullivan;
+	event:agent whoc:Fourth_Doctor;
+	event:time [ tl:after :The_First_Dalek; tl:before :Up_Above_The_Gods ];
+	rdfs:label "In the Kaled bunker on Skaro, Davros demands that the Doctor reveal to him the details of all Dalek defeats in the future. If the Doctor refuses, Davros will torture Sarah and Harry.".
+	
+:Up_Above_The_Gods a event:Event;
+	event:place whol:Skaro;
+	event:agent whoc:Davros;
+	event:agent whoc:Fourth_Doctor;
+	event:time [ tl:after :Interrogation; tl:before :Do_I_Have_The_Right ];
+	rdfs:label "Left alone with Davros, the Doctor poses a theoretical dilemma to the crippled Kaled scientist...".
+	
+:Do_I_Have_The_Right a event:Event;
+	event:place whol:Skaro;
+	event:agent whoc:Fourth_Doctor;
+	event:agent whoc:Sarah_Jane_Smith;
+	event:agent whoc:Harry_Sullivan;
+	event:time [ tl:after :Up_Above_The_Gods; tl:before :Revolution_of_the_Daleks ];
+	rdfs:label "In the Kaled Bunker on Skaro, the Doctor prepares to fulfil his mission for the Time Lords by destroying the embryonic Dalek creatures created by Davros. But, at the crucial moment, the Doctor doubts his actions...".
+
+:Revolution_of_the_Daleks a event:Event;
+	event:place whol:Skaro;
+	event:agent whoc:Davros;
+	event:agent whoc:Daleks;
+	event:time [ tl:after :Do_I_Have_The_Right; tl:before :Something_Good ];
+	rdfs:label "Davros has brought about the destruction of his own race the Kaleds and has used his Daleks to massacre the Thals. Apparently victorious, Davros has not anticipated that his own creations might turn on even him...".
+
+:Something_Good a event:Event;
+	event:place whol:Skaro;
+	event:agent whoc:Fourth_Doctor;
+	event:agent whoc:Sarah_Jane_Smith;
+	event:agent whoc:Harry_Sullivan;
+	event:time [ tl:after :Revolution_of_the_Daleks; ];
+	rdfs:label "Despite the Doctor's efforts, the Daleks have survived. The Doctor tells Sarah and Harry  that although he has only set the Daleks' development back by a thousand years, he still believes that something good will come from them.".
+
+# <!-- Defines the placement and order of events within the Stories -->
+
+:GOTD_events a stories:EventList;
+	stories:slot [
+		olo:index 1;
+		stories:item :The_Mission
+		];
+	
+	stories:slot [
+		olo:index 2;
+		stories:item :The_First_Dalek
+		];
+	
+	stories:slot [
+		olo:index 3;
+		stories:item :Interrogation
+		];
+		
+	stories:slot [
+		olo:index 4;
+		stories:item :Up_Above_The_Gods
+		];
+	
+	stories:slot [
+		olo:index 5;
+		stories:item :Do_I_Have_The_Right
+		];
+		
+	stories:slot [
+		olo:index 6;
+		stories:item :Revolution_of_the_Daleks
+		];
+	
+	stories:slot [
+		olo:index 7;
+		stories:item :Something_Good
+		].
+		
+:GOTD_ep1_events a stories:EventList;
+	stories:slot [
+		olo:index 1;
+		stories:item :The_Mission
+		];
+	
+	stories:slot [
+		olo:index 2;
+		stories:item :The_First_Dalek
+		].
+
+:GOTD_ep4_events a stories:EventList;
+	stories:slot [
+		olo:index 1;
+		stories:item :Interrogation
+		].
+		
+:GOTD_ep5_events a stories:EventList;
+	stories:slot [
+		olo:index 1;
+		stories:item :Up_Above_The_Gods
+		].
+
+:GOTD_ep6_events a stories:EventList;
+	stories:slot [
+		olo:index 1;
+		stories:item :Do_I_Have_The_Right
+		];
+	
+	stories:slot [
+		olo:index 2;
+		stories:item :Revolution_of_the_Daleks
+		];
+	
+	stories:slot [
+		olo:index 3;
+		stories:item :Something_Good
+		].
+
+}	
