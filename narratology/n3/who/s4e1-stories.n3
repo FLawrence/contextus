@@ -276,6 +276,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 	event:sub_event :adipose_collection;
 	event:sub_event :foster_acts2;
 	event:sub_event :doctor_hacking2.
+	event:sub_event :donna_produces_capsule;
 	
 :adipose_arrive
 	rdfs:label "The Adiposians arrive, collect their young, and dispose of Miss Foster";
@@ -641,6 +642,13 @@ whoi:sonic_screwdriver a om:PhysicalItem.
     
 # Scene 105, 108
 :doctor_hacking2 a event:Event;
+	rdfs:label "The Doctor hacks at the Inducer, but cannot overcome Miss Foster's double strength move";
+    event:agent whoc:donna;
+    event:agent whoc:doctor;
+    event:place :adipose_industries_storeroom;
+    event:factor :inducer.
+
+:donna_produces_capsule a event:Event;
 	rdfs:label "The Doctor uses the extra Pendant Donna still has from Stacey to finally stop the Inducer";
     event:agent whoc:donna;
     event:agent whoc:doctor;
@@ -1403,292 +1411,233 @@ Donna crouches below the glass in the door. Listens.";
 	#
 	stories:source :script. 
 
-:scriptScene a stories:Interpretation;
-	rdfs:label "Script - Scene ";
-    rdfs:comment "";
-	stories:interprets :;
+:scriptScene83 a stories:Interpretation;
+	rdfs:label "Script - Scene 83";
+    rdfs:comment "THE DOCTOR & DONNA burst through, from one end - Stop dead. As MISS FOSTER strides through from the other end of the room, both SECURITY GUARDS hoisting up guns. A standoff; good distance between the two parties. MISS FOSTER Well, then. At last. THE DOCTOR Evening. DONNA Hello. THE DOCTOR Nice to meet you. I'm the Doctor. DONNA And I'm Donna. MISS FOSTER Partners in crime. MISS FOSTER (CONT'D) And evidently offworlders, judging by your sonic technology. THE DOCTOR Oh! I've still got - (holds up) Your sonic pen. Nice! Sleek, it's kind of... DONNA Definitely sleek. I like it. sleek. THE DOCTOR And if you were to sign your real name, that would be..? MISS FOSTER Matron Cofelia, of the Five-Straighten Classabindi Nursery Fleet, Intergalactic Class. THE DOCTOR A wet nurse. Using Humans as surrogates. MISS FOSTER I've been employed by the Adiposian First Family, to foster a new generation, after their breeding planet was lost. THE DOCTOR What d'you mean, lost, how d'you lose a planet? MISS FOSTER The politics are none of my concern. I'm just here to take care of the children, on behalf of the parents. DONNA What, like an outer space Supernanny? MISS FOSTER If you like. DONNA So those little things, they're made out of fat, yeah? But that woman last night, Stacy Campbell, there was nothing left of her. MISS FOSTER In a crisis, the Adipose can convert bone and hair and internal organs. Though it does make them a little bit sick, the poor things. DONNA What about poor Stacy?! THE DOCTOR Seeding a Level Five planet is against galactic law. MISS FOSTER Are you threatening me? THE DOCTOR I'm trying to help you, Matron. This is your one chance. Because if you don't call this off... then I'll have to stop you. MISS FOSTER I hardly think you can stop bullets. Both Guards raise guns, the click of safety catches. THE DOCTOR Oh, but hold on, one more thing! Before dying! D'you know what happens if you hold two identical sonic devices against each other? MISS FOSTER No. THE DOCTOR Nor me. Let's find out! And with a huge grin, he holds SONIC PEN against SONIC SCREWDRIVER, whirrs! CAMERA SHAKE, whole room VIBRATING! Miss Foster & Guards clutch their ears, in pain - Guards dropping guns - Donna holding her ears, screeching, ow! PRAC FX: GLASS WINDOW SHATTERS! The Doctor holding on, juddering, actually loving this! Miss Foster falls to her knees, in agony - Donna gives the Doctor a shove - DONNA Come on! Noise stops dead, as the Doctor & Donna leg it out - Miss Foster recovering, furious. On WRISTWATCH-COMMS: MISS FOSTER Tell the Adiposians, cover has been broken, I'm advancing the birthplan. We're going into premature labour. And she strides out, Guards following -";
+	stories:interprets :foster_and_doctor_reveal_indentities;
 	#
 	stories:source :script. 
 
-:scriptScene a stories:Interpretation;
+:scriptScene84 a stories:Interpretation;
+	rdfs:label "Script - Scene 84";
+    rdfs:comment "PENNY's doing her job, ransacking through files, arms piled high with papers and folders - PENNY Adipose... cellular bosification... - runs for the door, with what she's found - stops dead. MISS FOSTER & GUARDS striding in. MISS FOSTER Tie her up! PENNY Oh you're kidding me -";
+	stories:interprets :penny_recaptured;
+	#
+	stories:source :script. 
+
+:scriptScene85 a stories:Interpretation;
+	rdfs:label "Script - Scene 85";
+    rdfs:comment "THE DOCTOR & DONNA run along - the Doctor running to his STOREROOM from sc.54, yanks open the door, starts throwing out mops, buckets, etc. Donna stands back, bemused. DONNA Well, that's one solution. Hide in a cupboard. I like it. THE DOCTOR I've been hacking into this thing all day, cos the Matron's got a computer core running through the centre of the building, triple- deadlocked, but now I've got this - (the sonic pen) - I can get into it - And he's heaving at the ENTIRE BACK WALL of the storeroom - Which creaks and pulls away, like A HIDDEN DOOR - Behind it, floor to ceiling: a COMPUTER WALL. Very distinct design, all golden curves and lights.";
+	stories:interprets :doctor_hacking;
+	#
+	stories:source :script. 
+
+:scriptScene86 a stories:Interpretation;
+	rdfs:label "Script - Scene 86";
+    rdfs:comment "PENNY tied up again, as MISS FOSTER stands back, the two SECURITY GUARDS sliding back the wall behind her chair - revealing an IDENTICAL COMPUTER WALL to the storeroom's. As Miss Foster goes to it, starts pressing buttons - PENNY What does that thing do? MISS FOSTER It's the Inducer. We'd planned to seed millions, but if that man's an alien and he's alerted the Shadow Proclamation, then the first one million Humans will have to do - (to the Guards) Find him, and the woman. Don't waste time, just kill them. The Guards run out -";
+	stories:interprets :penny_recaptured;
+	stories:interprets :premature_labour_triggered;
+	#
+	stories:source :script. 
+
+:scriptScene87 a stories:Interpretation;
+	rdfs:label "Script - Scene 87";
+    rdfs:comment "THE DOCTOR on the floor, rewiring the COMPUTER WALL, DONNA beside him. He gives her a handful of wires, and keeps using those wires throughout this & sc.89, as they talk - THE DOCTOR She's wired up this whole building. And we need a bit of privacy -";
+	stories:interprets :doctor_hacking;
+	#
+	stories:source :script. 
+
+:scriptScene88 a stories:Interpretation;
+	rdfs:label "Script - Scene 88";
+    rdfs:comment "The 2 SECURITY GUARDS charging along, with guns - they slam through a set of Fire Doors - FX: ARCS OF ELECTRICITY all around the doorframe, zapping the GUARDS - they fall to the ground, unconscious -";
+	stories:interprets :guards_stunned;
+	#
+	stories:source :script. 
+
+:scriptScene89 a stories:Interpretation;
 	rdfs:label "Script - Scene ";
-    rdfs:comment "";
-	stories:interprets :;
+    rdfs:comment "THE DOCTOR fiddling with two wires - FX: tiny ARC OF ELECTRICITY, same as sc.88. THE DOCTOR Just enough to stun them! But why's she wired up a tower block,  what's it all for..? Then he keeps working, intent. And in the pause, DONNA's looking at him. Properly, now. Then, quiet & smiling (though he keeps working, she keeps handing him wires): Pause. DONNA You look older. THE DOCTOR Thanks. DONNA Still on your own? THE DOCTOR Yeah. Well, no, I had this friend, Martha, she was called, Martha Jones, she was brilliant. And I destroyed half her life. But she's fine, she's good. She's gone. DONNA What about Rose? THE DOCTOR ...still lost. (pause, then gentler) I thought you were gonna travel the world. DONNA Easier said than done. It's like, I had that one day with you, and I was gonna change, I was gonna do so much. Then I woke up the next morning, and it's the same old life. Like you were never there. And I tried, I did try, I went to Egypt, I was gonna go barefoot and everything. But then it's all bus trips and guide books and don't- drink-the-water, two weeks later you're back home, it's nothing like being with you. I must've been mad, turning down that offer. THE DOCTOR What offer? DONNA To come with you. THE DOCTOR ...you're coming with me..? DONNA Ohh, yes please! THE DOCTOR ...right. COMPUTER WALL starts bleeping, more lights ILLUMINATING! DONNA What's it doing now? THE DOCTOR She's started the programme!";
+	stories:interprets :doctor_hacking;
+	#
+	stories:source :script. 
+
+:scriptScene90 a stories:Interpretation;
+	rdfs:label "Script - Scene 90";
+    rdfs:comment "MISS FOSTER slams a final lever, crosses to the window, to look out at the night. PENNY still tied to the chair. MISS FOSTER Mark the date, Miss Carter. Happy birthday. One million birthdays.";
+	stories:interprets :penny_recaptured;
+	stories:interprets :premature_labour_triggered;
+	#
+	stories:source :script. 
+
+:scriptScene91 a stories:Interpretation;
+	rdfs:label "Script - Scene 91";
+    rdfs:comment "Smart, but not posh, like a Yates's Lodge. SYLVIA's out with the GIRLS - 5 women, her age, all dressed up for a night out, on the white wine. Brassy SUZETTE holding court - SUZETTE - I swear, that Adipose treatment, it's fabulous, just look at my chin! And it's very good for back fat, I'm down two sizes! SYLVIA It's like a miracle! And all of that from one little pill? SUZETTE And I've been eating like normal - She stops. Holds her stomach. Feels something. SYLVIA You all right, love..? SUZETTE Yeah, I'm just... Funny sort of feeling, like it's... THROW FOCUS, far behind her, at a separate table, a PLUMP MAN on date with a LADY. But he stands. Feels his stomach. Something wrong. The woman saying, 'What is it..? CUT BACK TO SUZETTTE, just standing and turning to go - SUZETTE (CONT'D) Just... pop to the loo... SYLVIA Oh my God, Suzette! SUZETTE What..? She turns, trying to see - because under her clothes, on her back, something is starting to move...";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene92 a stories:Interpretation;
+	rdfs:label "Script - Scene 92";
+    rdfs:comment "LIVING ROOM, ROGER just standing, feeling a bit odd. Puzzled. Looks down at his shirt... A BUMP on his side is moving, squirming...";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene93 a stories:Interpretation;
+	rdfs:label "Script - Scene 93";
+    rdfs:comment "SUZETTE trying to look at her back - SYLVIA going to her, the OTHER WOMEN staring, and other CUSTOMERS - SUZETTE What is it, what is it, get it out, get it off me - ! Sylvia pulls the collar of Suzette's blouse down -FX: a LITTLE ADIPOSE waving! Sylvia screams!! Then turns - cos there's another scream - It's the LADY, cos the PLUMP MAN has got SHAPES, squirming underneath his clothes..! He's staring, horrified! WHIP PAN over to - A YOUNG WOMAN (also a bit plump) at the bar, feeling her stomach, ohh no..."; 
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene94 a stories:Interpretation;
+	rdfs:label "Script - Scene 94";
+    rdfs:comment "ROGER now lying on the floor, scared, as he rolls up his shirt... FX: revealing an ADIPOSE, which jumps off his stomach and runs away!"; 
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script.
+	
+:scriptScene95 a stories:Interpretation;
+	rdfs:label "Script - Scene 95";
+    rdfs:comment "FX: THE ADIPOSE dives through the cat-flap, gone!";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene96 a stories:Interpretation;
+	rdfs:label "Script - Scene 96";
+    rdfs:comment "FX: LOW ANGLE as SUZETTE'S ADIPOSE scuttles across the floor - PEOPLE standing back, terrified - SUZETTE panicking in b/g, with the GIRLS, but SYLVIA's walking to the door, open-mouthed, following the Adipose...";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene97 a stories:Interpretation;
+	rdfs:label "Script - Scene 97";
+    rdfs:comment "SYLVIA walks into the doorway, stunned... It's a busy street, with pubs & restaurants and takeaways. But as Sylvia looks around, WHIP PAN her POV - A FAT MAN, kneeling on the floor, wrestling with his clothes, scared, his GIRLFRIEND panicking. Whip pan - CUT TO A BLACK CAB, screeching to a halt - CUT TO A CAR, slewing across the road, braking - CUT TO THE DRIVER of another car, stopped in the middle of the street, getting out of his car to just boggle - CUT TO a WOMAN, screaming, pointing, at - FX: THIRTY ADIPOSE marching down the middle of the road! Sylvia just staring, in horror.";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene98 a stories:Interpretation;
+	rdfs:label "Script - Scene 98";
+    rdfs:comment "PROFILE MISS FOSTER, at the window. MISS FOSTER Come to me, children. Come to me.";
+	stories:interprets :adipose_collection;
+	#
+	stories:source :script. 
+
+:scriptScene99 a stories:Interpretation;
+	rdfs:label "Script - Scene ";
+    rdfs:comment "FX: WIDE SHOT. THE MARCH OF THE ADIPOSE. Hundreds of little shapes marching in unison down the road. BYSTANDERS staring, pointing, screaming, keeping well back.";
+	stories:interprets :adipose_collection;
+	#
+	stories:source :script. 
+
+:scriptScene100 a stories:Interpretation;
+	rdfs:label "Script - Scene 100";
+    rdfs:comment "THE DOCTOR, frantic with the wires - DONNA helping - fast - THE DOCTOR - so far, they're just losing weight, but the Matron's gone up to Emergency Parthenogensis - DONNA And that's when they convert - THE DOCTOR - skeletons, organs, everything - a million people are gonna die!";
+	stories:interprets :parthenogenesis;
+	stories:interprets :doctor_hacking2;
+	#
+	stories:source :script. 
+
+:scriptScene101 a stories:Interpretation;
+	rdfs:label "Script - Scene 101";
+    rdfs:comment "SYLVIA running back in - Because SUZETTE is now on the floor, the GIRLS panicking- LOTS OF BUMPS are now writhing under Suzette's clothes - The PLUMP MAN's still standing, but horrified, his clothes all still moving and flexing with bumps - The YOUNG WOMAN at the bar's the same, scared, trying to press down the moving bumps in her clothes -";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene102 a stories:Interpretation;
+	rdfs:label "Script - Scene 102";
+    rdfs:comment "ROGER on the floor, rolling on to his side, trying to see - LOTS OF BUMPS moving under the back of his shirt -";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene103 a stories:Interpretation;
+	rdfs:label "Script - Scene 103";
+    rdfs:comment "THE DOCTOR still fighting - DONNA at his side - THE DOCTOR - gotta cancel the signal - - and he takes out his GOLD CAPSULE & PENDANT, wrapping a wire around it, connecting it to the computer- THE DOCTOR (CONT'D) This contains the primary signal, if I can switch it off, the fat goes back to being just fat -";
+	stories:interprets :doctor_hacking2;
+	#
+	stories:source :script. 
+
+:scriptScene104 a stories:Interpretation;
+	rdfs:label "Script - Scene 104";
+    rdfs:comment "MISS FOSTER at the COMPUTER WALL - slams a lever - ! MISS FOSTER Nice try. Double strength!";
+	stories:interprets :foster_acts2;
+	#
+	stories:source :script. 
+
+:scriptScene105 a stories:Interpretation;
+	rdfs:label "Script - Scene 105";
+    rdfs:comment "ALARMS BLEEP - bad news, THE DOCTOR still with the GOLD CAPSULE and wiring - THE DOCTOR No, she's doubled it, I need - On his feet - runs a few yards down the corridor, desperate - THE DOCTOR (CONT'D) - haven't got time - !! - stops, runs back, grabs wiring - so fast, now - THE DOCTOR (CONT'D) - it's too far - can't override it - they're all gonna die - !";
+	stories:interprets :doctor_hacking2;
+	#
+	stories:source :script. 
+
+:scriptScene106 a stories:Interpretation;
+	rdfs:label "Script - Scene 106";
+    rdfs:comment "SUZETTE, on the floor, panicking, as her clothes heave - ";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene107 a stories:Interpretation;
+	rdfs:label "Script - Scene 107";
+    rdfs:comment "CU on ROGER, wailing, helpless, so scared, as his back writhes, under his shirt. About to separate, any second...";
+	stories:interprets :parthenogenesis;
+	#
+	stories:source :script. 
+
+:scriptScene108 a stories:Interpretation;
+	rdfs:label "Script - Scene 108";
+    rdfs:comment "CU DONNA, now fixed, quiet, as THE DOCTOR works, frantic - DONNA Is there anything I can do? THE DOCTOR - sorry, this is way beyond you, Donna - gotta double the base pulse - I can't - !! DONNA Doctor, tell me, what do you need? THE DOCTOR I need a second capsule, to boost the override, but I've only got the one - I can't save them - ! He keeps working, as Donna calmly reaches into her pocket... And Donna holds up... HER GOLD CAPSULE & PENDANT. The Doctor looks at her. She looks at him. The moment suspended. Just magic. He smiles. She smiles. Then back to normal, as he grabs the SECOND CAPSULE off her, jams it into the wiring - And the whole COMPUTER BANK goes dead!";
+	stories:interprets :donna_produces_capsule;
+	#
+	stories:source :script. 
+
+:scriptScene109 a stories:Interpretation;
+	rdfs:label "Script - Scene 109";
+    rdfs:comment "SUZETTE on the floor, SYLVIA & GIRLS crowding round her - But Suzette's suddenly still. SUZETTE It's stopped. They've gone... She's patting her clothes, incredulous. No bumps. CUT TO PLUMP MAN in b/g, laughing, overjoyed! It's stopped! CUT TO YOUNG WOMAN. Joy!";
+	stories:interprets :parthenogenesis;
+	stories:interprets :donna_produces_capsule;
+	#
+	stories:source :script. 
+
+:scriptScene110 a stories:Interpretation;
+	rdfs:label "Script - Scene 110";
+    rdfs:comment "ROGER on the floor, but suddenly calm. Lifts his head up. Pats his clothes. All flat. Nothing. It's stopped! He starts to laugh, out of shock, but oh, the relief!";
+	stories:interprets :parthenogenesis;
+	stories:interprets :donna_produces_capsule;
+	#
+	stories:source :script. 
+
+:scriptScene111 a stories:Interpretation;
+	rdfs:label "Script - Scene 111";
+    rdfs:comment "MISS FOSTER slamming levers on the COMPUTER WALL, but it's dead, no lights. PENNY still tied to the chair. PENNY What's happened? MISS FOSTER I think the Doctor happened. But we've still given birth to ten thousand Adipose. And the Nursery is coming.";
+	stories:interprets :foster_acts2;
+	stories:interprets :adipose_collection;
+	#
+	stories:source :script. 
+
+:scriptScene112 a stories:Interpretation;
+	rdfs:label "Script - Scene 112";
+    rdfs:comment "THE DOCTOR & DONNA, as the room starts to rumble. Shudder. Both looking up: DONNA What the hell is that..? THE DOCTOR They're babies. They need a Nursery.";
+	stories:interprets :adipose_collection;
 	#
 	stories:source :script. 
 
 
-77	INT. STAIRWELL - NIGHT 2 
-78	EXT. SIDE OF BUILDING - NIGHT 2 
-CUT TO:
-CUT TO:
-CUT TO:
-79	INT. STAIRWELL - NIGHT 2 
-CUT TO:
-80	INT. MISS FOSTER'S OFFICE - NIGHT 2 
-CUT TO:
-81	INT. STAIRWELL - NIGHT 2 
-CUT TO:
-INT. MISS FOSTER'S OFFICE - NIGHT 2
-82
-CUT TO: 83	INT. SALES CUBICLES - NIGHT 2	83
-THE DOCTOR & DONNA burst through, from one end -
-Stop dead. As MISS FOSTER strides through from the other end of the room, both SECURITY GUARDS hoisting up guns. A
-standoff;
-good distance between the two parties.
-MISS FOSTER Well, then. At last.
-THE DOCTOR DONNA THE DOCTOR
-Evening. Hello. Nice to meet you. I'm the Doctor.
-DONNA And I'm Donna.
-MISS FOSTER Partners in crime.
-MISS FOSTER (CONT'D) And evidently offworlders, judging
-by your sonic technology.
-Page 37. 83
-THE DOCTOR Oh! I've still got -
-(holds up) Your sonic pen. Nice! Sleek, it's kind of...
-DONNA Definitely sleek.
-I like it. sleek.
-THE DOCTOR And if you were to sign your real
-name, that would be..?
-MISS FOSTER Matron Cofelia, of the Five-
-Straighten Classabindi Nursery Fleet, Intergalactic Class.
-THE DOCTOR A wet nurse. Using Humans as
-surrogates.
-MISS FOSTER I've been employed by the Adiposian
-First Family, to foster a new generation, after their breeding planet was lost.
-THE DOCTOR What d'you mean, lost, how d'you
-lose a planet?
-MISS FOSTER The politics are none of my concern.
-I'm just here to take care of the children, on behalf of the parents.
-DONNA What, like an outer space
-Supernanny?
-MISS FOSTER If you like.
-DONNA So those little things,
-they're But that Campbell,
-made out of fat, yeah? woman last night, Stacy there was nothing left of her.
-MISS FOSTER In a crisis, the Adipose can convert
-bone and hair and internal organs. Though it does make them a little bit sick, the poor things.
-DONNA What about poor Stacy?!
-THE DOCTOR Seeding a Level Five planet is
-against galactic law.
-MISS FOSTER Are you threatening me?
-THE DOCTOR I'm trying to help you, Matron.
-This is your one chance. Because if you don't call this off... then I'll have to stop you.
-MISS FOSTER I hardly think you can stop bullets.
-Both Guards raise guns, the click of safety catches.
-THE DOCTOR Oh, but hold on, one more thing!
-Before dying! D'you know what happens if you hold two identical sonic devices against each other?
-Page 38. 83
-No.
-MISS FOSTER
-THE DOCTOR Nor me. Let's find out!
-And with a huge grin, he holds SONIC PEN against SONIC SCREWDRIVER, whirrs!
-CAMERA SHAKE, whole room VIBRATING! Miss Foster & Guards clutch their ears, in pain - Guards dropping guns -
-Donna holding her ears, screeching, ow! PRAC FX: GLASS WINDOW SHATTERS! The Doctor holding on, juddering, actually loving this! Miss Foster falls to her knees, in agony - Donna gives the Doctor a shove -
-DONNA
-Come on! Noise stops dead, as the Doctor & Donna leg it out - Miss Foster recovering, furious. On WRISTWATCH-COMMS:
-MISS FOSTER Tell the Adiposians, cover has been broken, I'm advancing the birthplan. We're going into premature labour. And she strides out, Guards following -
-84	INT. MISS FOSTER'S OFFICE - NIGHT 2
-84
-PENNY's doing her job, ransacking through files, arms piled high with papers and folders -
-PENNY Adipose... cellular bosification...
-- runs for the door, with what she's found - stops dead. MISS FOSTER & GUARDS striding in.
-MISS FOSTER
-Tie her up! Oh you're kidding me -
-PENNY
-CUT TO: 85	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 85
-THE DOCTOR & DONNA run along - the Doctor running to his
-STOREROOM out mops,
-from sc.54, yanks open the door, starts throwing buckets, etc. Donna stands back, bemused.
-DONNA Well, that's one solution. Hide
-in a cupboard. I like it.
-THE DOCTOR I've been hacking into this thing
-all day, cos the Matron's got a computer core running through the centre of the building, triple- deadlocked, but now I've got this -
-(the sonic pen) - I can get into it -
-And he's heaving at the ENTIRE BACK WALL of the storeroom - Which creaks and pulls away, like A HIDDEN DOOR -
-Behind it, floor to ceiling: a COMPUTER WALL. Very distinct design, all golden curves and lights.
-INT. MISS FOSTER'S OFFICE - NIGHT 2
-PENNY tied up again, as MISS FOSTER stands back, the two SECURITY GUARDS sliding back the wall behind her chair - revealing an IDENTICAL COMPUTER WALL to the storeroom's.
-As Miss Foster goes to it, starts pressing buttons -
-PENNY What does that thing do?
-MISS FOSTER It's the Inducer. We'd planned to
-seed millions, but if that man's an alien and he's alerted the Shadow Proclamation, then the first one million Humans will have to do -
-(to the Guards) Find him, and the woman. Don't waste time, just kill them.
-The Guards run out -
-86
-CUT TO: 87	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 87
-THE DOCTOR on the floor, rewiring the COMPUTER WALL, DONNA beside him. He gives her a handful of wires, and keeps using those wires throughout this & sc.89, as they talk -
-THE DOCTOR She's wired up this whole building.
-And we need a bit of privacy -
-CUT TO: 88	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR #2 - NIGHT 288
-The 2 SECURITY GUARDS charging along, with guns - they slam through a set of Fire Doors -
-FX: ARCS OF ELECTRICITY all around the doorframe, zapping the GUARDS - they fall to the ground, unconscious -
-CUT TO: 89	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 89
-THE DOCTOR fiddling with two wires - FX: tiny ARC OF ELECTRICITY, same as
-THE DOCTOR Just enough to stun them!
-why's she wired up a tower what's it all for..?
-sc.88.
-But block,
 
-Then he keeps working, intent. And in the pause, DONNA's looking at him. Properly, now. Then, quiet & smiling (though he keeps working, she keeps handing him wires):
-89
-Pause.
-DONNA You look older.
-Thanks.
-THE DOCTOR
-DONNA Still on your own?
-THE DOCTOR Yeah. Well, no, I had this friend,
-Martha, she was called, Martha Jones, she was brilliant. And I destroyed half her life. But she's fine, she's good. She's gone.
-DONNA What about Rose?
-THE DOCTOR ...still lost.
-(pause, then gentler) I thought you were gonna travel the world.
-DONNA Easier said than done. It's like,
-I had that one day with you, and I was gonna change, I was gonna do so much. Then I woke up the next morning, and it's the same old life. Like you were never there. And I tried, I did try, I went to Egypt, I was gonna go barefoot and everything. But then it's all bus trips and guide books and don't- drink-the-water, two weeks later you're back home, it's nothing like being with you. I must've been mad, turning down that offer.
-What offer?
-THE DOCTOR
-DONNA To come with you.
-THE DOCTOR ...you're coming with me..?
-DONNA Ohh, yes please!
-THE DOCTOR
-...right. COMPUTER WALL starts bleeping, more lights ILLUMINATING!
-DONNA What's it doing now?
-THE DOCTOR She's started the programme!
-Page 42. 89
-CUT TO: 90	INT. MISS FOSTER'S OFFICE - NIGHT 2	90
-MISS FOSTER slams a final lever, crosses to the window, to look out at the night. PENNY still tied to the chair.
-MISS FOSTER Mark the date, Miss Carter. Happy
-birthday. One million birthdays.
-CUT TO: 91	INT. WINE BAR - NIGHT 2	91
-Smart, but not posh, like a Yates's Lodge. SYLVIA's out with the GIRLS - 5 women, her age, all dressed up for a night out, on the white wine. Brassy SUZETTE holding court -
-SUZETTE - I swear, that Adipose treatment,
-it's fabulous, just look at my chin! And it's very good for back fat, I'm down two sizes!
-SYLVIA It's like a miracle! And all of
-that from one little pill?
-SUZETTE And I've been eating like normal -
-She stops. Holds her stomach. Feels something.
-SYLVIA You all right, love..?
-SUZETTE Yeah, I'm just... Funny sort of
-feeling, like it's...
-THROW FOCUS, far behind her, at a separate table, a PLUMP MAN on date with a LADY. But he stands. Feels his stomach. Something wrong. The woman saying, 'What is it..?
-CUT BACK TO SUZETTTE, just standing and turning to go -
-SUZETTE (CONT'D) Just... pop to the loo...
-SYLVIA Oh my God, Suzette!
-Page 43. 91
-What..?
-SUZETTE
-She turns, trying to see - because under her clothes, on her back, something is starting to move...
-CUT TO: 92	INT. ROGER'S HOUSE - NIGHT 2	92
-LIVING ROOM, ROGER just standing, feeling a bit odd. Puzzled. Looks down at his shirt...
-A BUMP on his side is moving, squirming...
-CUT TO: 93	INT. WINE BAR - NIGHT 2	93
-SUZETTE trying to look at her back - SYLVIA going to her, the OTHER WOMEN staring, and other CUSTOMERS -
-SUZETTE What is it, what is it, get it
-out, get it off me - !
-Sylvia pulls the collar of Suzette's blouse down -
-FX: a LITTLE ADIPOSE waving!
-Sylvia screams!! Then turns - cos there's another scream -
-It's the LADY, cos the PLUMP MAN has got SHAPES, squirming underneath his clothes..! He's staring, horrified!
-WHIP PAN over to -
-A YOUNG WOMAN (also a bit plump) at the bar, feeling her stomach, ohh no...
-CUT TO: 94	INT. ROGER'S HOUSE - NIGHT 2	94
-ROGER now lying on the floor, scared, as he rolls up his shirt...
-FX: revealing an ADIPOSE, which jumps off his stomach and runs away!
-CUT TO:
-95	INT. ROGER'S KITCHEN - NIGHT 2 FX: THE ADIPOSE dives through the cat-flap, gone!
-96	INT. WINE BAR - NIGHT 2
-CUT TO:
-95
-96
-FX: LOW ANGLE as SUZETTE'S ADIPOSE scuttles across the floor - PEOPLE standing back, terrified -
-SUZETTE panicking in b/g, with the GIRLS, but SYLVIA's walking to the door, open-mouthed, following the Adipose...
-CUT TO: 97	EXT. WINE BAR - NIGHT 2	97
-SYLVIA walks into the doorway, stunned...
-It's a busy street, with pubs & restaurants and takeaways. But as Sylvia looks around, WHIP PAN her POV -
-A FAT MAN, kneeling on the floor, wrestling with clothes, scared, his GIRLFRIEND panicking. Whip
-CUT TO A BLACK CAB, screeching to a halt -
-CUT TO A CAR, slewing across the road, braking -
-his pan -
-CUT TO THE DRIVER of another car, stopped in the the street, getting out of his car to just boggle -
-middle of
-CUT TO a WOMAN, screaming, pointing, at - FX: THIRTY ADIPOSE marching down the middle of the road! Sylvia just staring, in horror.
-CUT TO: 98	INT. MISS FOSTER'S OFFICE - NIGHT 2	98
-PROFILE MISS FOSTER, at the window.
-MISS FOSTER Come to me, children. Come to me.
-CUT TO: 99	EXT. STREET - NIGHT 2	99
-FX: WIDE SHOT. THE MARCH OF THE ADIPOSE. Hundreds of little shapes marching in unison down the road. BYSTANDERS staring, pointing, screaming, keeping well back.
-CUT TO:
-100	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 100 THE DOCTOR, frantic with the wires - DONNA helping - fast -
-THE DOCTOR - so far, they're just losing
-weight, but the Matron's gone up to Emergency Parthenogensis -
-DONNA And that's when they convert -
-THE DOCTOR - skeletons, organs, everything -
-a million people are gonna die!
-CUT TO: 101	INT. WINE BAR - NIGHT 2	101
-SYLVIA running back in -
-Because SUZETTE is now on the floor, the GIRLS panicking- LOTS OF BUMPS are now writhing under Suzette's clothes -
-The PLUMP MAN's still standing, but horrified, his clothes all still moving and flexing with bumps -
-The YOUNG WOMAN at the bar's the same, scared, trying to press down the moving bumps in her clothes -
-CUT TO: 102	INT. ROGER'S HOUSE - NIGHT 2	102
-ROGER on the floor, rolling on to his side, trying to see - LOTS OF BUMPS moving under the back of his shirt -
-CUT TO: 103	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 103
-THE DOCTOR still fighting - DONNA at his side -
-THE DOCTOR - gotta cancel the signal -
-- and he takes out his GOLD CAPSULE & PENDANT, wrapping a wire around it, connecting it to the computer-
-THE DOCTOR (CONT'D) This contains the primary signal,
-if I can switch it off, the fat goes back to being just fat -
-CUT TO:
-104	INT. MISS FOSTER'S OFFICE - NIGHT 2 MISS FOSTER at the COMPUTER WALL - slams a lever - !
-MISS FOSTER Nice try. Double strength!
-104
-CUT TO: 105	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 105
-ALARMS BLEEP - bad news, THE DOCTOR still with the GOLD CAPSULE and wiring -
-THE DOCTOR No, she's doubled it, I need -
-On his feet - runs a few yards down the corridor, desperate -
-THE DOCTOR (CONT'D) - haven't got time - !!
-- stops, runs back, grabs wiring - so fast, now -
-THE DOCTOR (CONT'D) - it's too far - can't override it -
-they're all gonna die - !
-CUT TO: 106	INT. WINE BAR - NIGHT 2	106
-SUZETTE, on the floor, panicking, as her clothes heave - CUT TO:
-107	INT. ROGER'S HOUSE - NIGHT 2	107
-CU on ROGER, wailing, helpless, so scared, as his back writhes, under his shirt. About to separate, any second...
-CUT TO: 108	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 108
-CU DONNA,
-now fixed, quiet, as THE DOCTOR works, frantic -
-DONNA Is there anything I can do?
-THE DOCTOR - sorry, this is way beyond you,
-Donna - gotta double the base pulse - I can't - !!
-DONNA Doctor, tell me, what do you need?
-108 CONTINUED:
-THE DOCTOR I need a second capsule, to boost
-the override, but I've only got the one - I can't save them - !
-Page 47. 108
-He keeps working, as Donna calmly reaches into her pocket... And Donna holds up... HER GOLD CAPSULE & PENDANT. The Doctor looks at her.
-She looks at him.
-The moment suspended. Just magic.
-He smiles.
-She smiles.
-Then back to normal, as he grabs the SECOND CAPSULE off her, jams it into the wiring -
-And the whole COMPUTER BANK goes dead!
-CUT TO: 109	INT. WINE BAR - NIGHT 2	109
-SUZETTE on the floor, SYLVIA & GIRLS crowding round her - But Suzette's suddenly still.
-SUZETTE It's stopped. They've gone...
-She's patting her clothes, incredulous. No bumps. CUT TO PLUMP MAN in b/g, laughing, overjoyed! It's stopped! CUT TO YOUNG WOMAN. Joy!
+
 CUT TO: 110	INT. ROGER'S HOUSE - NIGHT 2	110
-ROGER on the floor, but suddenly calm. Lifts his head up. Pats his clothes. All flat. Nothing. It's stopped!
-He starts to laugh, out of shock, but oh, the relief! CUT TO:
+ CUT TO:
 111	INT. MISS FOSTER'S OFFICE - NIGHT 2	111
-MISS FOSTER slamming levers on the COMPUTER WALL, but it's dead, no lights. PENNY still tied to the chair.
+
 111 CONTINUED:
-PENNY What's happened?
-MISS FOSTER I think the Doctor happened. But
-we've still given birth to ten thousand Adipose. And the Nursery is coming.
+
 Page 48. 111
 CUT TO: 112	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 112
-THE DOCTOR & DONNA, as the room starts to rumble. Shudder. Both looking up:
-DONNA What the hell is that..?
-THE DOCTOR They're babies. They need a
-Nursery.
 CUT TO: 113	INT. WINE BAR - NIGHT 2	113
 SUZETTE sitting, exhausted, THE GIRLS all tending to her -
 SUZETTE ...it just went, it just stopped...
