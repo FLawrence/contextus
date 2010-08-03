@@ -5,7 +5,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix tl: <http://purl.org/NET/c4dm/timeline.owl#>.
 
-@prefix : <http://contextus.net/who/GOTD/>.
+@prefix : <http://contextus.net/who/se12st04/>.
 @prefix whoc:       <http://contextus.net/who/character/>.
 @prefix whol:       <http://contextus.net/who/location/>.
 @prefix whoi:       <http://contextus.net/who/item/>.
