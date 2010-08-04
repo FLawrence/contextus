@@ -13,11 +13,12 @@
 @prefix dcterms: 	<http://purl.org/dc/terms/> .
 @prefix foaf:       <http://xmlns.com/foaf/0.1/>.
 @prefix geonames:   <http://www.geonames.org/ontology#>.
+@prefix itemOntologyPlaceholder: <http://contextus.net/itemOntologyPlaceholder/>.
 @prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix whoc:       <http://contextus.net/who/character/>.
 @prefix whol:       <http://contextus.net/who/location/>.
 @prefix whoi:       <http://contextus.net/who/item/>.
-@prefix whop:		<http://contextus.net/who/portrayal/>
+@prefix whop:		<http://contextus.net/who/portrayal/>.
 @prefix : 	        <http://contextus.net/who/s4e1/>.
 
 ### PEOPLE
@@ -99,7 +100,7 @@ whoc:martha_jones a foaf:Person;
 :adiposian_first_family a foaf:Group.
 :health_and_safety a foaf:Group;
     rdfs:label "Health and Safety".
-:adiposeindustries_customers a foaf:Group;
+:adiposeindustries_customers a foaf:Group.
 
 # GROUP MEMBERSHIPS
 
@@ -117,10 +118,10 @@ whoc:martha_jones a foaf:Person;
 
 #FIXME 	these are stateful, so should really be reasoned in and revoked out (ie. stacey dies)
 #		but, is there value in then having event:agent adipose_customers, if that group only exists if you're including assertions 
-:adiposeindustries_customers foaf:member :roger_davey;
-:adiposeindustries_customers foaf:member :suzette;
-:adiposeindustries_customers foaf:member :plump_man;
-:adiposeindustries_customers foaf:member :plump_woman;
+:adiposeindustries_customers foaf:member :roger_davey.
+:adiposeindustries_customers foaf:member :suzette.
+:adiposeindustries_customers foaf:member :plump_man.
+:adiposeindustries_customers foaf:member :plump_woman.
 
 #FIXME we had concept of a group individual instance and quanities, ie. adipose customer has pills and a pendant; there are 1,000,000 customers -> assertions
 
@@ -173,72 +174,63 @@ whol:hilltop a geonames:Feature.
 
 ### ITEMS
 
-#FIXME: Still OntoMedia
-
 :AdiposePendant a rdfs:Class;
     rdfs:label "Adipose Pendant";
-    rdfs:subClassOf om:PhysicalItem.
+    rdfs:subClassOf itemOntologyPlaceholder:item.
 #FIXME and same for pill?
 
-whoi:tardis a om:PhysicalItem.
-whoi:psychic_paper a om:PhysicalItem.
-whoi:sonic_screwdriver a om:PhysicalItem.
+whoi:tardis a itemOntologyPlaceholder:item.
+whoi:psychic_paper a itemOntologyPlaceholder:item.
+whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 
-:id_pass a om:PhysicalItem.
-:adipose_product a om:PhysicalItem.
+:id_pass a itemOntologyPlaceholder:item.
+:adipose_product a itemOntologyPlaceholder:item.
 :pendant1 a :AdiposePendant.
 :pendant2 a :AdiposePendant.
 :pendant3 a :AdiposePendant.
-:papers1 a om:PhysicalItem.
-:papers2 a om:PhysicalItem.
-:window_cleaners_cradle a om:PhysicalItem.
-:fosters_comm_device a om:PhysicalItem.
-:doctors_gizmo a om:PhysicalItem.
-:sylvias_car a om:PhysicalItem.
-:sylvias_car_keys a om:PhysicalItem.
-:gun1 a om:PhysicalItem.
-:gun2 a om:PhysicalItem.
-:fosters_capsule a om:PhysicalItem.
-:fosters_sonic_pen a om:PhysicalItem.
-:inducer a om:PhysicalItem.
-:adipose_nursery_ship a om:PhysicalItem.
-:bin a om:PhysicalItem.
+:papers1 a itemOntologyPlaceholder:item.
+:papers2 a itemOntologyPlaceholder:item.
+:window_cleaners_cradle a itemOntologyPlaceholder:item.
+:fosters_comm_device a itemOntologyPlaceholder:item.
+:doctors_gizmo a itemOntologyPlaceholder:item.
+:sylvias_car a itemOntologyPlaceholder:item.
+:sylvias_car_keys a itemOntologyPlaceholder:item.
+:gun1 a itemOntologyPlaceholder:item.
+:gun2 a itemOntologyPlaceholder:item.
+:fosters_capsule a itemOntologyPlaceholder:item.
+:fosters_sonic_pen a itemOntologyPlaceholder:item.
+:inducer a itemOntologyPlaceholder:item.
+:adipose_nursery_ship a itemOntologyPlaceholder:item.
+:bin a itemOntologyPlaceholder:item.
 
 # FIXME: where does pill come from
-:adiposeindustries_customer a foaf:Person;
-    om:has :pill.
+# FIXME: this need to be a kind of class declaration 
+:adiposeindustries_customer a foaf:Person.
+#    om:has :pill.
 
 ### TIMELINES
 
-#FIXME: Still OntoMedia. Work out and annotate time throughout
-
-:day1 	a om:timeline.
-:night1 a om:timeline.
-:day2 	a om:timeline.
-:night2 a om:timeline.
-
-#FIXME: need to make night1 follow day1
-#FIXME: need to place in whoniverse timeline, ie. 2008
+#FIXME: Do time!
 
 ### HIGH-LEVEL EVENTS
 #	Think DVD-Chapters
 #	Agent, Factor, Location inferred from sub_events
 
-:adipose_industries_exposition a event:Event
+:adipose_industries_exposition a event:Event;
 	rdfs:label "The Doctor and Donna both investigate Adipose Industries";
 	event:sub_event :building_entry;
 	event:sub_event :presentation;
 	event:sub_event :cubicles;
 	event:sub_event :doctor_and_roger.
 	
-:parthenogenesis_single a event:Event
+:parthenogenesis_single a event:Event;
 	rdfs:label "Donna visits Stacey, an Adipose Industries Customer. Something dramatic happens to Stacey";
 	event:sub_event :stacey_and_donna;
 	event:sub_event :partho_activated;
 	event:sub_event :stacey_partho;
 	event:sub_event :donna_investigates.
 
-:parthenogenesis_investigations a event:Event
+:parthenogenesis_investigations a event:Event;
 	rdfs:label "Stacey's parthenogenesis is investigated by all parties";
 	event:sub_event :doctor_and_roger;
 	event:sub_event :collection_squad_sent;
@@ -256,36 +248,36 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 	event:sub_event :doctor_snooping;
 	event:sub_event :pennys_capture.
 	
-:team_doctor_and_donna
+:team_doctor_and_donna a event:Event;
 	rdfs:label "On the trail of Miss Foster, the Doctor and Donna meet and escape capture";
 	event:sub_event :doctor_donna_meet;
 	event:sub_event :doctor_donna_escape;
-	event:sub_event :fosters_chase
+	event:sub_event :fosters_chase;
 	event:sub_event :doctor_rescues_donna;
 	event:sub_event :penny_released;
 	event:sub_event :foster_and_doctor_reveal_indentities;
-	event:sub_event :premature_labour_triggered
+	event:sub_event :premature_labour_triggered;
 	event:sub_event :penny_recaptured;
 	event:sub_event :foster_acts;
 	event:sub_event :doctor_hacking;
 	event:sub_event :guards_stunned.
 
-:parthenogenesis_all
+:parthenogenesis_all a event:Event;
 	rdfs:label "Miss Foster brings forward her plans: full parthenogenesis, now";
 	event:sub_event :parthenogenesis;
 	event:sub_event :adipose_collection;
 	event:sub_event :foster_acts2;
-	event:sub_event :doctor_hacking2.
-	event:sub_event :donna_produces_capsule;
+	event:sub_event :doctor_hacking2;
+	event:sub_event :donna_produces_capsule.
 	
-:adipose_arrive
+:adipose_arrive a event:Event;
 	rdfs:label "The Adiposians arrive, collect their young, and dispose of Miss Foster";
 	event:sub_event :nursery_arrives;
 	event:sub_event :adiposians_communicate;
 	event:sub_event :adipose_collection;
 	event:sub_event :fosters_collection.
 	
-:donna_is_new_assistant
+:donna_is_new_assistant a event:Event;
 	rdfs:label "Action over, Donna leaves with Doctor as new assistant";
 	event:sub_event :wilf_night;
 	event:sub_event :nursery_leaves;
@@ -463,8 +455,8 @@ whoi:sonic_screwdriver a om:PhysicalItem.
     event:agent whoc:sylvia_noble;
     event:agent whoc:wilf_noble;
     event:agent whoc:donna_noble;
-	event:place noble_house;
-	event:place adipose_industries_ladies_toilets_cubicles.
+	event:place :noble_house;
+	event:place :adipose_industries_ladies_toilets_cubicles.
 	#factor phone?
 
 :doctor_storeroom a event:Event;
@@ -476,9 +468,9 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 :doctor_snooping a event:Event;
 	rdfs:label "The Doctor explores Adipose Industries, and uses the window cleaner's cradle to view Miss Foster's office.";
     event:agent whoc:doctor;
-    event:place adipose_industries_storeroom;
-    event:place adipose_industries_rooftop;
-    event:place adipose_industries_cradle;
+    event:place :adipose_industries_storeroom;
+    event:place :adipose_industries_rooftop;
+    event:place :adipose_industries_cradle;
     event:factor whoi:sonic_screwdriver.
 
 # Scene 64, 65, 66, 67, 75, 80, 82
@@ -489,8 +481,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
     event:agent :foster_guard1;
     event:agent :foster_guard2;
     event:agent :adipose;
-	event:place :fosters_office;
-    event:factor
+	event:place :fosters_office.
 
 # Scene 67
 :doctor_donna_meet a event:Event;
@@ -519,7 +510,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 # Scene 70, 71, 73, 74, 76, 81
 :fosters_chase a event:Event;
-	rdfs:label "The guards shoot the sonic'd shut office door and pursue Donna and the Doctor. At the access door to the rooftop, it is Miss Foster's sonic pen that open's the sonic'd shut door and makes the cradle freefall." 
+	rdfs:label "The guards shoot the sonic'd shut office door and pursue Donna and the Doctor. At the access door to the rooftop, it is Miss Foster's sonic pen that open's the sonic'd shut door and makes the cradle freefall.";
     event:agent whoc:donna_noble;
     event:agent whoc:doctor;
     event:agent :foster;
@@ -532,7 +523,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 # Scene 76, 77, 78, 79, 80, 82
 :doctor_rescues_donna a event:Event;
-	rdfs:label "Miss Foster tries to cut the now stuck cradle's cables. Donna hangs perilously. The Doctor manages to sonic her pen from her, and uses it to release the window she deadlocked. They escape."
+	rdfs:label "Miss Foster tries to cut the now stuck cradle's cables. Donna hangs perilously. The Doctor manages to sonic her pen from her, and uses it to release the window she deadlocked. They escape.";
     event:agent whoc:doctor;
     event:agent whoc:donna_noble;
 	event:place :adipose_industries_cradle;
@@ -551,7 +542,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 # Scene 83
 :foster_and_doctor_reveal_indentities a event:Event;
-	rdfs:label "The Doctor and Miss Foster exchange identities and warnings. Miss Foster orders the Guards to shoot. Doctor and Donna Escape"
+	rdfs:label "The Doctor and Miss Foster exchange identities and warnings. Miss Foster orders the Guards to shoot. Doctor and Donna Escape";
 	event:agent whoc:doctor;
 	event:agent whoc:donna_noble;
     event:agent :foster;
@@ -687,23 +678,23 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 # Scene 119, 122
 :adipose_collection a event:Event;
-	rdfs:label "The Adipose enter levitation beams and rise towards the nursery ship".
+	rdfs:label "The Adipose enter levitation beams and rise towards the nursery ship";
     event:agent :adipose;
     event:place :adipose_industries_surroundings;
     event:factor :adipose_nursery_ship.
     
 # Scene 121, 122
 :fosters_collection a event:Event;
-	rdfs:label "Miss Foster triumphantly watches the Adipose being collected. Defying the Doctor, she enters the beam herself, only for it to release her to her death."
+	rdfs:label "Miss Foster triumphantly watches the Adipose being collected. Defying the Doctor, she enters the beam herself, only for it to release her to her death.";
     event:agent :foster;
     event:agent whoc:doctor;
     event:agent whoc:donna_noble;
 	event:place :adipose_industries_rooftop;
-    event:factor adipose_nursery_ship.
+    event:factor :adipose_nursery_ship.
 
 # Scene 123
 :nursery_leaves a event:Event;
-	rdfs:label "The Adipose nursery ship leaves Earth"
+	rdfs:label "The Adipose nursery ship leaves Earth";
     event:agent :adipose;
     event:factor :adipose_nursery_ship.
 
@@ -721,14 +712,14 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 	event:agent :penny_carter;
 	event:agent whoc:doctor;
 	event:agent whoc:donna_noble;
-	event:place adipose_industries_surroundings.
+	event:place :adipose_industries_surroundings.
 
 # Scene 125
 :assistant_discussion a event:Event;
 	rdfs:label "Donna and The Doctor discuss her being his assistant. Donna has changed her mind since last time, and is prepared";
     event:agent whoc:doctor;
     event:agent whoc:donna_noble;
-	event:place adipose_industries_surroundings;
+	event:place :adipose_industries_surroundings;
     event:factor whoi:tardis;
     event:factor :sylvias_car.
 
@@ -789,7 +780,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 :scriptScene06 a stories:Interpretation;
 	rdfs:label "Script - Scene 6";
-	rdfs:comment "DONNA stops in the street, looks up... A TOWER BLOCK looming above. Cool, sleek, stylish, the London HQ of Adipose Industries. Deep breath, Donna heads towards it."
+	rdfs:comment "DONNA stops in the street, looks up... A TOWER BLOCK looming above. Cool, sleek, stylish, the London HQ of Adipose Industries. Deep breath, Donna heads towards it.";
 	stories:interprets :building_entry;
 	stories:asserts :donna_in_adipose_industries_surroundings;
 	stories:source :script.
@@ -810,7 +801,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 	stories:source :script.
 
 :doctor_in_adipose_industries_basement { whoc:doctor geonames:locatedIn :adipose_industries_basement. }
-:sonic_screwdriver_facilitates_doctor_in_adipose_industries_basement {whoi:sonic_screwdriver logic:facilitates :doctor_in_basement}
+#:sonic_screwdriver_facilitates_doctor_in_adipose_industries_basement { whoi:sonic_screwdriver logic:facilitates :doctor_in_basement}
 
 :scriptScene09 a stories:Interpretation;
 	rdfs:label "Script - Scene 9";
@@ -821,10 +812,10 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 	stories:source :script.
 
 
-:donna_noble_in_adipose_industries_foyer { whoc:donna_noble geonames:locatedIn :adipose_industries_foyer. }
-:donna_noble_is_health_and_safety { :health_and_safety foaf:member whoc:donna_noble. }
-:guard_believes_donna_noble_is_health_and_safety { :security_guard1 logic:believes :donna_is_health_and_safety. }
-:id_pass_facilitates_guard_believes_donna_noble_is_health_and_safety { :id_pass logic:facilitates :guard_believes_donna_noble_is_health_and_safety. }
+#:donna_noble_in_adipose_industries_foyer { whoc:donna_noble geonames:locatedIn :adipose_industries_foyer. }
+#:donna_noble_is_health_and_safety { :health_and_safety foaf:member whoc:donna_noble. }
+#:guard_believes_donna_noble_is_health_and_safety { :security_guard1 logic:believes :donna_is_health_and_safety. }
+#:id_pass_facilitates_guard_believes_donna_noble_is_health_and_safety { :id_pass logic:facilitates :guard_believes_donna_noble_is_health_and_safety. }
 
 # FIXME: Need to say something like...
 # guard_facilitates_donna_in_adipose_industries_because_member_of_adipose_staff_permits_foafagent_in_adipose_industries
@@ -844,8 +835,8 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 	stories:source :script.
 
 	
-:doctor_is_health_and_safety { :health_and_safety foaf:member whoc:doctor. :whoc:doctor foaf:name "John Smith". }
-:psychic_paper_facilitates_guard_believes_doctor_is_health_and_safety { whoi:psychic_paper logic:facilitates [:security_guard2 logic:believes :doctor_is_health_and_safety.] };
+#:doctor_is_health_and_safety { :health_and_safety foaf:member whoc:doctor. :whoc:doctor foaf:name "John Smith". }
+#:psychic_paper_facilitates_guard_believes_doctor_is_health_and_safety { whoi:psychic_paper logic:facilitates [:security_guard2 logic:believes :doctor_is_health_and_safety.] };
 
 :scriptScene11 a stories:Interpretation;
 	rdfs:label "Script - Scene 11";
@@ -858,12 +849,12 @@ whoi:sonic_screwdriver a om:PhysicalItem.
     
 :scriptScene12 a stories:Interpretation;
 	rdfs:label "Script - Scene 12";
-	rdfs:comment "Two lift doors, next to each other. DONNA gets into the left-hand lift, heading up, doors close. At the same time - The doors on the right-hand lift open - it's come up from the basement - and THE DOCTOR steps out, heads off, curious."
+	rdfs:comment "Two lift doors, next to each other. DONNA gets into the left-hand lift, heading up, doors close. At the same time - The doors on the right-hand lift open - it's come up from the basement - and THE DOCTOR steps out, heads off, curious.";
 	stories:source :script.
 
 :scriptScene13part1 a stories:Interpretation;
 	rdfs:label "Script - Scene 13; Part 1 of 5";
-    rdfs:comment "Part of the Tower Block HQ, with Adipose Industries logos on the walls. Slogan: The Fat Just Walks Away. The logo is on screen, as MISS FOSTER steps forward, at the front. She's 40s, handsome, strong. She addresses the audience, 40 PEOPLE or so, scattered about, taking notes - they're JOURNALISTS; this is a Press Launch.".
+    rdfs:comment "Part of the Tower Block HQ, with Adipose Industries logos on the walls. Slogan: The Fat Just Walks Away. The logo is on screen, as MISS FOSTER steps forward, at the front. She's 40s, handsome, strong. She addresses the audience, 40 PEOPLE or so, scattered about, taking notes - they're JOURNALISTS; this is a Press Launch.";
 	stories:interprets :presentation;
 	#journalists watch miss foster presentation
 	stories:source :script.
@@ -900,8 +891,7 @@ whoi:sonic_screwdriver a om:PhysicalItem.
 
 :scriptScene14 a stories:Interpretation;
 	rdfs:label "Script - Scene 14";
-    rdfs:comment "The sales floor. Divided into those American-style cubicles, as functional as possible, like Keanu Reeves's office in The Matrix. Just a desk, a computer, a phone. TRACKING along, passing one SALESPERSON after another, all on headsets, all cold-calling the spiel. 'Good morning, I represent Adipose Industries...' 'Good morning, I represent Adipose Industries...' 'Good morning, I represent...' etc. TRACKING TO FIND DONNA, walking in - on edge, cautious, armed with a clipboard - she grabs a spare chair, pulls it over to a CUBICLE, where CRAIG, 20, is at work, on headset. DONNA Donna Noble, Health and Safety, don't mind me. CRAIG That's a three week course of pills for the special price of 45 pounds... CUT TO the opposite side of the room, THE DOCTOR entering - cautious, on edge - he grabs a spare chair, slides it across to CLAIRE'S cubicle. She's 20, on headset. THE DOCTOR John Smith, Health and Safety, don't mind me. CLAIRE ...we can deliver within three working days, registered post... CUT TO Donna & Craig. He's on his headset, with the spiel; he's got a script, and a sample Adipose Industries box at his side - a small white cardboard box, full of 21 pills in packets, information leaflets, etc. CRAIG ...the box comes with 21 days' worth of pills, a full information pack, and our special free gift, an Adipose Industries pendant... But Donna's taking the pendant out of the box. Simple gold chain with a gold representation of an Adipose capsule. CUT TO the Doctor & Claire. CLAIRE ...it's made of 18 carat gold, and it's yours for free... No, we don't give away pens. Sorry. No, I can't make an exception, no. He's already taken the pendant, holds it up, examines it. CU on the gold Adipose capsule. CUT TO Donna & Craig. He's now taking off his headset, to look at her properly, as she puts the pendant in her pocket.
-DONNA I'll just keep this for testing. And I just need a list of your customers, can you print it off? CRAIG S'pose so. DONNA Where's the printer..? CRAIG Just over there, by the door. WIDE SHOT, as she pops her head up over the partition. The only face visible among the rows of cubicles. DONNA Which door, that door? CRAIG OOV That's the one. DONNA Lovely. She pops back down, gone - and in that second - THE DOCTOR pops his head up, far across the room. THE DOCTOR And that's the printer, over there? CLAIRE OOV By the door, yeah. THE DOCTOR Brilliant! And he pops back down - as Donna pops back up, looking towards the printer. DONNA Does it need a code? Last place I worked, the printer needed a code. CRAIG OOV No, I can do that from here. And she pops back down - as the Doctor pops back up, looking round. THE DOCTOR Has it got paper? CLAIRE OOV Yeah, Jimbo keeps it stocked. But the Doctor gives an 'oops!' and ducks down, seeing - MISS FOSTER striding in. With 2 SECURITY GUARDS, her permanent escort. She goes to the centre, claps her hands. MISS FOSTER Everyone! Excuse me! If I could have your attention! Heads pop up all around the cubicles, some standing, some eyes over the partitions. Donna stands up... As the Doctor slowly stands up... Miss Foster takes a single step forward, just in time to completely mask the Doctor from Donna's POV, and vice versa. MISS FOSTER (CONT'D) On average, you're each selling forty Adipose packs per day. It's not enough! I want one hundred sales, per person, per day, and if not, you'll be replaced. Cos if anyone's good at trimming the fat, it's me. Now back to it! All heads duck down, Donna sinking back down as - Miss Foster clears Donna's previous POV, revealing the Doctor, just ducking back down into the cubicle. To Claire: THE DOCTOR Anyway! If you could just print that off, thanks. CUT TO Donna & Craig. DONNA Print off the list, and I'll get out of your way. CU CURSOR clicking on PRINT. CUT TO PRINTER, churning out PAPERS. Yellow sheets. DONNA (CONT'D) Lovely, thanks, see you. WIDE SHOT, as she stands, hurries over to the printer - The Doctor pops up for a micro-second, about to go - THE DOCTOR Thanks then - before he can look in Donna's direction, he's pulled back down again! By Claire, holding out a piece of paper. THE DOCTOR (CONT'D) What's that? CLAIRE My telephone number. THE DOCTOR ...what for? CLAIRE (foxy) Health and Safety. You be health. I'll be safety. CUT TO Donna, at the printer. She grabs all the papers, heads for the door - And as she swings it open, foreground, and disappears through the door - in background, the Doctor stands - THE DOCTOR ...that contravenes paragraph 5 subsection C, sorry, thanks, bye - And he hurries away, going across to the printer. No papers, nothing. Eh?! He lifts the photocopier lid, checks all round, no sign of them. Damn. CUT TO CLAIRE, as the Doctor reappears. Big smile. THE DOCTOR (CONT'D) Me again!";
+    rdfs:comment "The sales floor. Divided into those American-style cubicles, as functional as possible, like Keanu Reeves's office in The Matrix. Just a desk, a computer, a phone. TRACKING along, passing one SALESPERSON after another, all on headsets, all cold-calling the spiel. 'Good morning, I represent Adipose Industries...' 'Good morning, I represent Adipose Industries...' 'Good morning, I represent...' etc. TRACKING TO FIND DONNA, walking in - on edge, cautious, armed with a clipboard - she grabs a spare chair, pulls it over to a CUBICLE, where CRAIG, 20, is at work, on headset. DONNA Donna Noble, Health and Safety, don't mind me. CRAIG That's a three week course of pills for the special price of 45 pounds... CUT TO the opposite side of the room, THE DOCTOR entering - cautious, on edge - he grabs a spare chair, slides it across to CLAIRE'S cubicle. She's 20, on headset. THE DOCTOR John Smith, Health and Safety, don't mind me. CLAIRE ...we can deliver within three working days, registered post... CUT TO Donna & Craig. He's on his headset, with the spiel; he's got a script, and a sample Adipose Industries box at his side - a small white cardboard box, full of 21 pills in packets, information leaflets, etc. CRAIG ...the box comes with 21 days' worth of pills, a full information pack, and our special free gift, an Adipose Industries pendant... But Donna's taking the pendant out of the box. Simple gold chain with a gold representation of an Adipose capsule. CUT TO the Doctor & Claire. CLAIRE ...it's made of 18 carat gold, and it's yours for free... No, we don't give away pens. Sorry. No, I can't make an exception, no. He's already taken the pendant, holds it up, examines it. CU on the gold Adipose capsule. CUT TO Donna & Craig. He's now taking off his headset, to look at her properly, as she puts the pendant in her pocket. DONNA I'll just keep this for testing. And I just need a list of your customers, can you print it off? CRAIG S'pose so. DONNA Where's the printer..? CRAIG Just over there, by the door. WIDE SHOT, as she pops her head up over the partition. The only face visible among the rows of cubicles. DONNA Which door, that door? CRAIG OOV That's the one. DONNA Lovely. She pops back down, gone - and in that second - THE DOCTOR pops his head up, far across the room. THE DOCTOR And that's the printer, over there? CLAIRE OOV By the door, yeah. THE DOCTOR Brilliant! And he pops back down - as Donna pops back up, looking towards the printer. DONNA Does it need a code? Last place I worked, the printer needed a code. CRAIG OOV No, I can do that from here. And she pops back down - as the Doctor pops back up, looking round. THE DOCTOR Has it got paper? CLAIRE OOV Yeah, Jimbo keeps it stocked. But the Doctor gives an 'oops!' and ducks down, seeing - MISS FOSTER striding in. With 2 SECURITY GUARDS, her permanent escort. She goes to the centre, claps her hands. MISS FOSTER Everyone! Excuse me! If I could have your attention! Heads pop up all around the cubicles, some standing, some eyes over the partitions. Donna stands up... As the Doctor slowly stands up... Miss Foster takes a single step forward, just in time to completely mask the Doctor from Donna's POV, and vice versa. MISS FOSTER (CONT'D) On average, you're each selling forty Adipose packs per day. It's not enough! I want one hundred sales, per person, per day, and if not, you'll be replaced. Cos if anyone's good at trimming the fat, it's me. Now back to it! All heads duck down, Donna sinking back down as - Miss Foster clears Donna's previous POV, revealing the Doctor, just ducking back down into the cubicle. To Claire: THE DOCTOR Anyway! If you could just print that off, thanks. CUT TO Donna & Craig. DONNA Print off the list, and I'll get out of your way. CU CURSOR clicking on PRINT. CUT TO PRINTER, churning out PAPERS. Yellow sheets. DONNA (CONT'D) Lovely, thanks, see you. WIDE SHOT, as she stands, hurries over to the printer - The Doctor pops up for a micro-second, about to go - THE DOCTOR Thanks then - before he can look in Donna's direction, he's pulled back down again! By Claire, holding out a piece of paper. THE DOCTOR (CONT'D) What's that? CLAIRE My telephone number. THE DOCTOR ...what for? CLAIRE (foxy) Health and Safety. You be health. I'll be safety. CUT TO Donna, at the printer. She grabs all the papers, heads for the door - And as she swings it open, foreground, and disappears through the door - in background, the Doctor stands - THE DOCTOR ...that contravenes paragraph 5 subsection C, sorry, thanks, bye - And he hurries away, going across to the printer. No papers, nothing. Eh?! He lifts the photocopier lid, checks all round, no sign of them. Damn. CUT TO CLAIRE, as the Doctor reappears. Big smile. THE DOCTOR (CONT'D) Me again!";
 	stories:interprets :cubicles;
 	#donna is helped because she is believed to be adipose staff
 	#doctor is helped because he is believed to be health and safety
@@ -1173,7 +1163,7 @@ DONNA I'll just keep this for testing. And I just need a list of your customers,
 	
 :scriptScene52 a stories:Interpretation;
 	rdfs:label "Script - Scene 52";
-    rdfs:comment "THE DOCTOR sonics the lock, PRAC EXPLOSION, in he goes;
+    rdfs:comment "THE DOCTOR sonics the lock, PRAC EXPLOSION, in he goes";
 	stories:interprets :doctor_to_storeroom;
 	#
 	stories:source :script. 	
@@ -1227,14 +1217,13 @@ DONNA I'll just keep this for testing. And I just need a list of your customers,
 	rdfs:label "Script - Scene 58";
     rdfs:comment "DONNA still in the cubicle. She stands, aching, ooh. Then unlocks the bolt, steps out, the toilet empty - Then her mobile rings! She panics - - hurries back into the stall, locks the door, getting out her mobile, whispering - DONNA Not now!";
 	stories:interprets :donna_cubicles;
-	stories:interprets :noble_family_prepare_for_evening
+	stories:interprets :noble_family_prepare_for_evening;
 	#
 	stories:source :script. 
 
 :scriptScene59 a stories:Interpretation;
 	rdfs:label "Script - Scene 59";
-    rdfs:comment "SYLVIA on the phone, WILF in his coat in b/g, armed with TELESCOPE & THERMOS, about to head off.
-SYLVIA I need the car, where are you?!";
+    rdfs:comment "SYLVIA on the phone, WILF in his coat in b/g, armed with TELESCOPE & THERMOS, about to head off. SYLVIA I need the car, where are you?!";
 	stories:interprets :noble_family_prepare_for_evening;
 	#
 	stories:source :script. 
@@ -1285,8 +1274,7 @@ SYLVIA I need the car, where are you?!";
 
 :scriptScene66 a stories:Interpretation;
 	rdfs:label "Script - Scene 66";
-    rdfs:comment "Secretaries' area, dark. DONNA creeps towards MISS FOSTER'S OFFICE - it's got glass interior walls, but with blinds drawn, though there's still a glass panel in the door.
-Donna crouches below the glass in the door. Listens.";
+    rdfs:comment "Secretaries' area, dark. DONNA creeps towards MISS FOSTER'S OFFICE - it's got glass interior walls, but with blinds drawn, though there's still a glass panel in the door. Donna crouches below the glass in the door. Listens.";
 	stories:interprets :pennys_capture;
 	stories:interprets :doctor_donna_meet;
 	#
@@ -1346,9 +1334,7 @@ Donna crouches below the glass in the door. Listens.";
 
 :scriptScene74 a stories:Interpretation;
 	rdfs:label "Script - Scene 74";
-    rdfs:comment "BLAM! - THE ACCESS DOOR flies open - MISS FOSTER strides out, the 2 GUARDS following, but - The roof's empty. The cradle's gone, the lowering-mechanism clearly at work. CUT TO WIDE SHOT, SIDE OF BUILDING, the CRADLE descending with THE DOCTOR & DONNA on board. CUT TO ROOFTOP, Miss Foster smiling - MISS FOSTER Oh, I don't think so - She aims her SONIC PEN - PRAC EXPLOSION on the ROOFTOP WINCH CONTROLS - FX: THE DOCTOR & DONNA & CRADLE plummeting down, TOWER BLOCK FLOORS RACING past them - Donna screaming - ! CU ROOFTOP WINCHES spinning like crazy! PRAC SPARKS! FX: CU THE DOCTOR, with FLOORS RACING PAST behind him, holding out the sonic, whirring furiously - FX: CU PRAC EXPLOSION on the right hand CRADLE WINCH (with FLOORS RACING PAST B/G) - WIDER on the CRADLE, halfway down the building, jerking to a sudden halt - the Doctor & Donna jolted, recovering - CUT TO THE DOCTOR, sonicking the nearest window - THE DOCTOR - hold on - we can get in through the window - CUT TO THE ROOFTOP, Miss Foster looking over the edge, on her wristwatch comms - MISS FOSTER Deadlock the building! CUT TO THE CRADLE, a clunk! of locks, the Doctor sonicking - THE DOCTOR Can't get it open! DONNA Well then, smash it! And she's got a spanner from a workman's toolkit inside the cradle, slams the window - CUT TO INSIDE THE BUILDING, the Doctor & Donna hammering at the glass - but it's security glass, doesn't give - CUT TO ROOFTOP, Miss Foster now calmly walking over to the left-hand-side (her right-hand-side) ROOFTOP WINCH. Holds the PEN against the cable - PRAC FX: the METAL CABLE burning, sparks flying out, like an oxyacetylene torch - the cable fraying - CUT TO the CRADLE, both looking up, horrified - DONNA (CONT'D) She's cutting the cable!!!! CUT TO ROOFTOP, CU CABLE - PRAC FX, it SNAPS!! FX, STUNT!, WIDE SHOT - the CRADLE tips, the LEFT HAND SIDE falling, the broken cable whipping downwards, the RIGHT HAND SIDE still connected, staying where it is, so the whole shebang falls down from the left - ie, the horizontal platform tipping to vertical - THE DOCTOR & DONNA tumbling towards the left, Donna already on the left (ie, camera left) - CU the falling Doctor flailing out, to reach for - FX: DONNA tumbling over the edge, screaming - ! THE DOCTOR slams into the left-hand wall of the cradle - the cradle now vertical, and swinging a little - but it remains connected on the right-hand-side, so the left-hand- wall has become the floor - The Doctor whipping his head over the side, to see - THE DOCTOR Donna - ?! FX: DONNA hanging on, about 10 feet below, the GROUND far below her - she's clinging to the hanging left-hand-side cable. (There's, say, a spar of metal, formerly part of the winch, fixed to the cable, and Donna's actually holding on to that; she could never hold on to cable alone.) DONNA Doctor - ! THE DOCTOR Hold on! DONNA I am!! He grabs the cable, tries to heave it up - FX: DONNA dangling - but not moving up - It's impossible - but the Doctor looks up, realising what Miss Foster will do next - CUT TO ROOFTOP, Miss Foster now walking casually over to the opposite ROOFTOP WINCH - PEN glowing, whirring - FX: TOP SHOT of the Doctor (with DONNA hanging far below him) as he leans out of the cradle, LOOKING UP, and pointing his sonic screwdriver up, whirring - CUT TO ROOFTOP - FX: SMALL EXPLOSION on the PEN - CU, Miss Foster drops it - FX: SONIC PEN falling down, down, floors racing past b/g - CUT TO the Doctor, leaning out, hand out - CU his hand, he catches the pen! And starts to sonic-pen the window nearest to him - THE DOCTOR That's better! FX: DONNA dangling - DONNA I'm gonna fall!! Doctaaaa - ! 
-
-";
+    rdfs:comment "BLAM! - THE ACCESS DOOR flies open - MISS FOSTER strides out, the 2 GUARDS following, but - The roof's empty. The cradle's gone, the lowering-mechanism clearly at work. CUT TO WIDE SHOT, SIDE OF BUILDING, the CRADLE descending with THE DOCTOR & DONNA on board. CUT TO ROOFTOP, Miss Foster smiling - MISS FOSTER Oh, I don't think so - She aims her SONIC PEN - PRAC EXPLOSION on the ROOFTOP WINCH CONTROLS - FX: THE DOCTOR & DONNA & CRADLE plummeting down, TOWER BLOCK FLOORS RACING past them - Donna screaming - ! CU ROOFTOP WINCHES spinning like crazy! PRAC SPARKS! FX: CU THE DOCTOR, with FLOORS RACING PAST behind him, holding out the sonic, whirring furiously - FX: CU PRAC EXPLOSION on the right hand CRADLE WINCH (with FLOORS RACING PAST B/G) - WIDER on the CRADLE, halfway down the building, jerking to a sudden halt - the Doctor & Donna jolted, recovering - CUT TO THE DOCTOR, sonicking the nearest window - THE DOCTOR - hold on - we can get in through the window - CUT TO THE ROOFTOP, Miss Foster looking over the edge, on her wristwatch comms - MISS FOSTER Deadlock the building! CUT TO THE CRADLE, a clunk! of locks, the Doctor sonicking - THE DOCTOR Can't get it open! DONNA Well then, smash it! And she's got a spanner from a workman's toolkit inside the cradle, slams the window - CUT TO INSIDE THE BUILDING, the Doctor & Donna hammering at the glass - but it's security glass, doesn't give - CUT TO ROOFTOP, Miss Foster now calmly walking over to the left-hand-side (her right-hand-side) ROOFTOP WINCH. Holds the PEN against the cable - PRAC FX: the METAL CABLE burning, sparks flying out, like an oxyacetylene torch - the cable fraying - CUT TO the CRADLE, both looking up, horrified - DONNA (CONT'D) She's cutting the cable!!!! CUT TO ROOFTOP, CU CABLE - PRAC FX, it SNAPS!! FX, STUNT!, WIDE SHOT - the CRADLE tips, the LEFT HAND SIDE falling, the broken cable whipping downwards, the RIGHT HAND SIDE still connected, staying where it is, so the whole shebang falls down from the left - ie, the horizontal platform tipping to vertical - THE DOCTOR & DONNA tumbling towards the left, Donna already on the left (ie, camera left) - CU the falling Doctor flailing out, to reach for - FX: DONNA tumbling over the edge, screaming - ! THE DOCTOR slams into the left-hand wall of the cradle - the cradle now vertical, and swinging a little - but it remains connected on the right-hand-side, so the left-hand- wall has become the floor - The Doctor whipping his head over the side, to see - THE DOCTOR Donna - ?! FX: DONNA hanging on, about 10 feet below, the GROUND far below her - she's clinging to the hanging left-hand-side cable. (There's, say, a spar of metal, formerly part of the winch, fixed to the cable, and Donna's actually holding on to that; she could never hold on to cable alone.) DONNA Doctor - ! THE DOCTOR Hold on! DONNA I am!! He grabs the cable, tries to heave it up - FX: DONNA dangling - but not moving up - It's impossible - but the Doctor looks up, realising what Miss Foster will do next - CUT TO ROOFTOP, Miss Foster now walking casually over to the opposite ROOFTOP WINCH - PEN glowing, whirring - FX: TOP SHOT of the Doctor (with DONNA hanging far below him) as he leans out of the cradle, LOOKING UP, and pointing his sonic screwdriver up, whirring - CUT TO ROOFTOP - FX: SMALL EXPLOSION on the PEN - CU, Miss Foster drops it - FX: SONIC PEN falling down, down, floors racing past b/g - CUT TO the Doctor, leaning out, hand out - CU his hand, he catches the pen! And starts to sonic-pen the window nearest to him - THE DOCTOR That's better! FX: DONNA dangling - DONNA I'm gonna fall!! Doctaaaa - !";
 	stories:interprets :fosters_chase;
 	#
 	stories:source :script. 
@@ -1991,7 +1977,7 @@ Donna crouches below the glass in the door. Listens.";
 		stories:item :fosters_chase
 		];
 	stories:slot [
-		olo:index 25
+		olo:index 25;
 		stories:item :doctor_rescues_donna
 		];
 	stories:slot [
@@ -2077,15 +2063,15 @@ Donna crouches below the glass in the door. Listens.";
 	stories:slot [
 		olo:index 46;
 		stories:item :departure
-		];
+		].
 
 # MEDIA REPRESENTATIONS
 
 <http://www.bbc.co.uk/programmes/b009w049#programme> stories:tells :canonicalStory.
 
 :cast {
-	whoc:doctor portrayal:actor whop:david_tennant.
-	whoc:donna_noble portrayal:actor whop:catherine_tate.
+#	whoc:doctor portrayal:actor whop:david_tennant.
+#	whoc:donna_noble portrayal:actor whop:catherine_tate.
 	# [etc.....]
 	}
 #FIXME: For BBC stuff, the programmes ontology can handle this
@@ -2105,6 +2091,6 @@ Donna crouches below the glass in the door. Listens.";
 :script a foaf:Document;
     foaf:primaryTopic <http://www.bbc.co.uk/programmes/b009w049#programme>;
     foaf:page <http://www.thewriterstale.com/scr.html>;
-	rdf:resource <http://www.thewriterstale.com/pdfs/Doctor%20Who%204%20Ep.1%20-%20Shooting%20Script%20-%20Yellow%20-%2016.10.07.pdf>;
+#	rdf:resource <http://www.thewriterstale.com/pdfs/Doctor%20Who%204%20Ep.1%20-%20Shooting%20Script%20-%20Yellow%20-%2016.10.07.pdf>;
 	stories:tells :canonicalStory.
 #FIXME: group script scenes into script
