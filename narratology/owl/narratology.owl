@@ -316,4 +316,17 @@
     <rdfs:subClassOf rdf:resource="#Collection" />
 </owl:Class>
 
+<!-- Story -->
+
+<owl:Class rdf:ID="Story">
+    
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="occurrences">
+    <rdfs:label>occurrences</rdfs:label>
+    <rdfs:comment>Represents a selection of occurrences that make up a story.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Story" />
+    <rdfs:domain rdf:resouces="&rdfs;Seq" />
+</owl:ObjectProperty>
+
 </rdf:RDF>
