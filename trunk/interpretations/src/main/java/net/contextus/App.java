@@ -43,6 +43,7 @@ public class App
 		}
 
 		dumpAll(Node.createURI("http://contextus.net/"), graphset);
+		graphset.write(System.out, "TRIG", "http://contextus.net/");
     }
 
 	public static void dumpAll(Node graph, NamedGraphSet graphSet)
