@@ -1627,235 +1627,127 @@ Donna crouches below the glass in the door. Listens.";
 	#
 	stories:source :script. 
 
+:scriptScene113 a stories:Interpretation;
+	rdfs:label "Script - Scene 113";
+    rdfs:comment "SUZETTE sitting, exhausted, THE GIRLS all tending to her - SUZETTE ...it just went, it just stopped... The place starts to rumble. Shudder. Small CAMERA SHAKE. SYLVIA What on earth is it now - ?! And she runs back to the door - ";
+	stories:interprets :adipose_collection;
+	#
+	stories:source :script. 
 
+:scriptScene114 a stories:Interpretation;
+	rdfs:label "Script - Scene 114";
+    rdfs:comment "SYLVIA runs out. Stops dead. Looking up. Then SUZETTE, and the GIRLS, and the PLUMP MAN & LADY join her, all aghast - PEOPLE all around, looking up at the sky. The deep, low rumble shuddering away... HIGH WIDE SHOT of the STREET - still in chaos, with cars having braked all over the place - EVERYONE staring up... FX: A HUGE SPACESHIP gliding overhead! Close Encounters- style, a black disc with BRIGHT LIGHTS UNDERNEATH. On Sylvia, and the others, all open-mouthed... ";
+	stories:interprets :adipose_collection;
+	#
+	stories:source :script. 
 
+:scriptScene115 a stories:Interpretation;
+	rdfs:label "Script - Scene 115";
+    rdfs:comment "WILF is sitting there with his TELESCOPE, and a CUPPA. Earphones on - only a CD Walkman, playing Gene Pitney. Wilf's the happiest man in the world. FX: BEHIND HIM, the SPACESHIP gliding over LONDON, way off in the distance. His telescope's pointing the other way. He's got no idea.";
+	stories:interprets :wilf_night;
+	stories:interprets :nursery_arrives;
+	#
+	stories:source :script. 
 
-CUT TO: 110	INT. ROGER'S HOUSE - NIGHT 2	110
- CUT TO:
-111	INT. MISS FOSTER'S OFFICE - NIGHT 2	111
+:scriptScene116 a stories:Interpretation;
+	rdfs:label "Script - Scene 116";
+    rdfs:comment "PROFILE, MISS FOSTER at the window, looking up. Smiling. PENNY What's that noise? What is it?? MISS FOSTER My lift home. And she strides out - PENNY You can't just leave me here! But she does!";
+	stories:interprets :penny_recaptured;
+	stories:interprets :adipose_collection;
+	#
+	stories:source :script. 
 
-111 CONTINUED:
+:scriptScene117 a stories:Interpretation;
+	rdfs:label "Script - Scene 117";
+    rdfs:comment "FX: LOW ANGLE, looking up at the SPACESHIP, gliding to a halt like a vast halo above the Tower Block. FX: LOW ANGLE, an ADIPOSE waving up at the SPACESHIP.";
+	stories:interprets :nursery_arrives;
+	#
+	stories:source :script. 
 
-Page 48. 111
-CUT TO: 112	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 112
-CUT TO: 113	INT. WINE BAR - NIGHT 2	113
-SUZETTE sitting, exhausted, THE GIRLS all tending to her -
-SUZETTE ...it just went, it just stopped...
-The place starts to rumble. Shudder. Small CAMERA SHAKE.
-SYLVIA What on earth is it now - ?!
-And she runs back to the door -
-CUT TO: 114	EXT. WINE BAR - NIGHT 2	114
-SYLVIA runs out. Stops dead. Looking up. Then SUZETTE, and the GIRLS, and the PLUMP MAN & LADY join her, all aghast -
-PEOPLE all around, looking up at the sky. The deep, low rumble shuddering away...
-HIGH WIDE SHOT of the STREET - still in chaos, with cars having braked all over the place - EVERYONE staring up...
-FX: A HUGE SPACESHIP gliding overhead! Close Encounters- style, a black disc with BRIGHT LIGHTS UNDERNEATH.
-On Sylvia, and the others, all open-mouthed...
-CUT TO:
-115	EXT. HILLSIDE - NIGHT 2
-WILF is sitting there with his TELESCOPE, and a CUPPA. Earphones on - only a CD Walkman, playing Gene Pitney. Wilf's the happiest man in the world.
-FX: BEHIND HIM, the SPACESHIP gliding over LONDON, way off in the distance.
-His telescope's pointing the other way. He's got no idea. CUT TO:
-115 * *
-116	INT. MISS FOSTER'S OFFICE - NIGHT 2	116 PROFILE, MISS FOSTER at the window, looking up. Smiling.
-PENNY What's that noise? What is it??
-MISS FOSTER My lift home.
-And she strides out -
-PENNY You can't just leave me here!
-But she does!
-CUT TO: 117	EXT. ADIPOSE INDUSTRIES - NIGHT 2	117
-FX: LOW ANGLE, looking up at the SPACESHIP, gliding to a halt like a vast halo above the Tower Block.
-FX: LOW ANGLE, an ADIPOSE waving up at the SPACESHIP. CUT TO:
-118	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 118
-The rumbling, shaking, stops. THE DOCTOR still packing wires back into the COMPUTER WALL, DONNA helping -
-DONNA When you say Nursery, you don't
-mean a creche in Notting Hill?
-THE DOCTOR Nursery Ship - ohh, wait a minute -
-One screen on the Wall has blinked into life. Strange alien script scrolling across - the Doctor fascinated.
-DONNA Hadn't we better go and stop them?
-118 CONTINUED:
-THE DOCTOR Hold on, hold on... Instructions
-from the Adiposian First Family...
-119	EXT. ADIPOSE INDUSTRIES - NIGHT 2
-Page 50. 118
-MISS FOSTER strides out. Stands there. Triumphant. Addresses the crowd, like Eva Peron.
-MISS FOSTER Children! Oh my children, behold!
-I am taking you home! FX: REVEAL that the streets outside the building are now
-full of HUNDREDS OF ADIPOSE - all going 'yaaay!', happy!
-MISS FOSTER (CONT'D) Far across the galaxy, your new
-mummies and daddies are waiting. And you will fly!
-And she gestures upwards, arms wide, head back, exultant.
-FX: WHAM! LOW ANGLE BUILDING, as STRONG, WIDE, BLUISH BEAMS OF LIGHT shaft down from the SPACESHIP.
-MISS FOSTER (CONT'D) Up you go, babies. Up you go!
-FX: A BUNCH OF ADIPOSE in a BEAM OF LIGHT, and one by one, they begin to rise up, gently, into the air, wheee!
-FX: WIDE SHOT, STREET, THE HUNDREDS OF ADIPOSE now in bluish BEAMS OF LIGHT, as they ALL begin to lift up, up...
-On MISS FOSTER, exultant:
-MISS FOSTER (CONT'D) That's it! Fly away home!
-CUT TO: 120	INT. ADIPOSE IND., DOWNSTAIRS CORRIDOR/STOREROOM - NIGHT 2 120
-THE DOCTOR still reading the screen -
-THE DOCTOR - she wired up the building, to
-convert it into a Levitation Post. Ohh, but we're not the ones in trouble now, she is -
-And he's running, Donna following -
-121	EXT. ADIPOSE INDUSTRIES - NIGHT 2	121
-Adipose all gone; MISS FOSTER steps forward, into the strong PRAC LIGHT from above. Deep breath, looking up...
-MISS FOSTER Take me. The children need me!
-CUT TO: 121A INT. MISS FOSTER'S OFFICE - NIGHT	121A
-PENNY, still tied up, now illuminated by the PRAC LIGHT from outside.
-But now she's open-mouthed, staring out of the window, can't believe what she's seeing...
-CUT TO: 122	EXT. ADIPOSE INDUSTRIES, ROOFTOP - NIGHT 2	122
-THE DOCTOR & DONNA burst out - And stop.
-Awestruck; the light of the BEAMS reflecting off them, gently; all rather beautiful, as they look out...
-FX: the sky full of ADIPOSE, the air glowing with BEAM- LIGHT, as 100s of the little dot-sized creatures rise up...
-The Doctor & Donna smiling.
-DONNA What you gonna do, then? Blow
-them up?
-THE DOCTOR They're just children. Can't help
-where they came from.
-DONNA Makes a change from last time.
-That Martha must've done you good.
-THE She did. Yeah, (beat, then She fancied me.
-DOCTOR she did. cheeky)
-DONNA Oh, Mad Martha, that one. Blind
-Martha. Charity Martha. FX: CLOSER on one rising ADIPOSE; it gives a little wave. Donna waves back. Then stops.
-DONNA (CONT'D) I'm waving at fat.
-THE DOCTOR Actually, as a diet plan, it sort
-of worked... There she is - !
-FX: A DISTANCE AWAY - IE, away from the roof, over the street, MISS FOSTER is rising up, gently, in the same levitation beam.
-Around her, the LAST ADIPOSE rise up through shot, disappearing up, gone.
-The Doctor runs forward, urgent - Donna following -
-THE DOCTOR (CONT'D) Matron Cofelia, listen to me - !
-Page 52. 122
-MID-SHOT, Miss Foster stops, suspended in the air (IE, NON- FX, shot against night sky; she's haloed and backlit by PRAC LIGHT). Calling across the night:
-MISS FOSTER I don't think so, Doctor. And if
-I never see you again, it'll be -
-THE DOCTOR - oh why does no one ever listen?!
-I'm trying to help! Just... get across to the roof, can you shift the levitation beam?
-MISS FOSTER What, so you can arrest me?
-THE DOCTOR Just listen!! I saw the Adiposian
-instructions! They know it's a crime, breeding on Earth, so what's
-the one thing they want of? Their accomplice!
-MISS FOSTER I'm far more than that,
-to all these children.
-to get rid
-I'm nanny,
-THE DOCTOR Exactly! Mum and Dad have got the
-kids, they don't need the nanny any more!
-MID-SHOT, 
-on Miss Foster... as the LIGHT SNAPS OFF! Darkness. She looks left and right, held in the air for a second like a cartoon coyote. Then -
-FX: WIDE SHOT as Miss Foster falls, plummets, screaming, out of the bottom of frame -
-Donna turns to the Doctor, flinches, with the OOV crunch! The Doctor puts his arm around her. So sorry. Then both look up, hearing the whine of engines...
-CUT TO:
-123	FX SHOT - ABOVE THE EARTH
-FX: A WINDOW crammed full of ADIPOSE. Mewling. They look sad. A little wave from one of them, bye bye.
-FX: PULLING OUT, the WINDOW set in the SPACESHIP, and the Ship hurtles away, into space, away from Earth, gone...
-123
-CUT TO: 124	EXT. ADIPOSE INDUSTRIES - NIGHT 2	124
-THE DOCTOR & DONNA stroll out. Exhausted. Calm. Way off in the distance, there are signs of the disruption - POLICE BARRIERS, FLASHING LIGHTS. An AMBULANCE and PARAMEDICS closer to the building (hiding the remains of Miss Foster).
-The Doctor looks at the SONIC PEN, decides naah, chucks it away, gets out the SONIC SCREWDRIVER, jams it into his GIZMO, points the whole thing up -
-FX: a SMALL BLUE PULSE OF LIGHT flies up, into the sky...
-DONNA What's that?
-THE DOCTOR Sending a statement to the Shadow
-Proclamation. Reporting the Adiposian crime. Suppose the children will be taken into care. I hate being official, brrr.
-PENNY appears. Staggering. She is still tied to her chair, having to hold it behind her. Wild-eyed and furious:
-PENNY You two! You're just... mad!
-D'you hear me?? Mad! I'm gonna report you! For madness!
-She runs off towards the distant
-POLICE, like a lunatic. DONNA Some people just can't take it. THE DOCTOR Nope.
+:scriptScene118 a stories:Interpretation;
+	rdfs:label "Script - Scene 118";
+    rdfs:comment "The rumbling, shaking, stops. THE DOCTOR still packing wires back into the COMPUTER WALL, DONNA helping - DONNA When you say Nursery, you don't mean a creche in Notting Hill? THE DOCTOR Nursery Ship - ohh, wait a minute - One screen on the Wall has blinked into life. Strange alien script scrolling across - the Doctor fascinated. DONNA Hadn't we better go and stop them? THE DOCTOR Hold on, hold on... Instructions from the Adiposian First Family...";
+	stories:interprets :nursery_arrives;
+	stories:interprets :adiposians_communicate;
+	#
+	stories:source :script. 
 
-DONNA And some people can! So, then.
-Tardis! Come on! She grabs his hand, yanks him out of shot - !
-125	EXT. CITY STREET - NIGHT 2
-The street from sc.50, DONNA running in, realising that her car is near the TARDIS, though a fair distance between them. THE DOCTOR is the definition of dubious.
-DONNA That's my car! That's like destiny!
-And I've been ready for this, I packed ages ago, just in case -
-125
-And she's opening the boot, hauling out a suitcase, another, a carpet bag, a valise, a trolley-thing, two plastic bags -
-She shoves them at the Doctor, piling them up in his arms -
-DONNA (CONT'D) - cos I thought, hot weather, cold
-weather, no weather, he goes anywhere, I've gotta be prepared -
-THE DOCTOR You've got a hatbox.
-DONNA Planet of the Hats, I'm ready!
-She swings the boot shut, slam - !
-JUMP CUT TO DONNA dumping her armfuls of stuff by the Tardis, THE DOCTOR standing back, still weighed down with luggage; so she's in the Tardis doorway, with him facing her, the opposite of the end of 3.X.
-DONNA (CONT'D) - I don't need injections, do I?
-Y'know, like when you go to Cambodia, is there any of that? Cos my friend Veena went to Bahrain, and... you're not saying very much.
-THE DOCTOR No, but it's just... It's a funny
-old life, in the Tardis, it's not...
-DONNA (quiet, crestfallen)
-You don't want me.
-THE DOCTOR I'm not saying that.
-DONNA But you asked me.
-(silence) Would you rather be on your own?
-THE DOCTOR ...no. Actually, no.
-(dumps luggage) But the last time, with Martha, like I said, it got complicated. And it was all my fault. I mean...
-(sighs) I just want a mate.
-DONNA You just want TO MATE??!
-THE DOCTOR I just want A mate!
-DONNA You're not mating with me, sunshine!
-THE DOCTOR A mate, I want, a! Mate!
-DONNA Just as well! I'm not having any
-of that nonsense, you're a skinny streak of nothing. Alien nothing.
-THE DOCTOR There we are, then. Okay!
-Page 55. 125
-I can come?
-DONNA
-THE DOCTOR Yeah. Course you can, yeah.
-(smiles) I'd love it.
-She runs towards him, overjoyed -
-DONNA Ohhhh, that's just - !
-(no, diverts!) Car keys!
-What?
-THE DOCTOR
-DONNA I've got my mother's car keys!
-Back in a tick!
-gone. The Doctor stands there for a second, CUT TO:
-And she's looking at the luggage, wondering, what the hell..? But then crucially, he smiles. Starts picking up the bags.
-126 OMITTED 127	INT. TARDIS - NIGHT 2
-DONNA pokes her head around the half-open door.
-DONNA Off we go then!
-THE DOCTOR by the console, plus luggage. As Donna walks up the ramp to join him:
-THE DOCTOR Here it is! The Tardis! Bigger
-on the inside than it is on the -
-DONNA - oh I know all that bit, frankly
-you could turn the heating up.
-THE DOCTOR So! You've got the whole wide
-universe. Where d'you want to go?
-DONNA I know exactly the place.
-THE DOCTOR
-126 127
-Which is..? Two and a half miles, that way.
-DONNA
-CUT TO: 128	EXT. HILLSIDE - NIGHT 2	128 WIDE SHOT, WILF on his lonely mount.	*
-He's pottering about with the TELESCOPE. Happy. A sip of tea. Gene Pitney still on the earphones.
-Then he looks through the eyepiece, focusing it...
-Stops. Eh?! Looks up, without the telescope. But..?
-Looks back through the eyepiece.
-And then he's all excited!
-FX: WILF'S POV. The night sky, with a LITTLE BLUE BOX	* spinning across the sky.
-He calls off, as though she might come running -
-WILF	* But... Donna! Donna! It's the
-flying blue box!!
+:scriptScene119 a stories:Interpretation;
+	rdfs:label "Script - Scene 119";
+    rdfs:comment "MISS FOSTER strides out. Stands there. Triumphant. Addresses the crowd, like Eva Peron. MISS FOSTER Children! Oh my children, behold! I am taking you home! FX: REVEAL that the streets outside the building are now full of HUNDREDS OF ADIPOSE - all going 'yaaay!', happy! MISS FOSTER (CONT'D) Far across the galaxy, your new mummies and daddies are waiting. And you will fly! And she gestures upwards, arms wide, head back, exultant. FX: WHAM! LOW ANGLE BUILDING, as STRONG, WIDE, BLUISH BEAMS OF LIGHT shaft down from the SPACESHIP. MISS FOSTER (CONT'D) Up you go, babies. Up you go! FX: A BUNCH OF ADIPOSE in a BEAM OF LIGHT, and one by one, they begin to rise up, gently, into the air, wheee! FX: WIDE SHOT, STREET, THE HUNDREDS OF ADIPOSE now in bluish BEAMS OF LIGHT, as they ALL begin to lift up, up... On MISS FOSTER, exultant: MISS FOSTER (CONT'D) That's it! Fly away home! ";
+	stories:interprets :adipose_collection;
+	#
+	stories:source :script. 
 
-Looks back through the eyepiece, tightens the focus. Stunned. Whispers.
-Page 57. 128
-*
-Whaaaat...?
-WILF (CONT'D)
-FX: HIS POV: CLOSER on the TARDIS. DONNA standing in the doorway. Waving at him! Behind her, THE DOCTOR, and he gives a little wave, too.
-WILF (CONT'D)	* But that's... Donna? That's him!	*
-And he abandons the telescope. Waves up at the sky! With a great big yahoo!
-FX (SHOT 128.1 cont.), the TARDIS spins away into space.
-HIGH SHOT: on WILF, on his little hillside, in the middle	* of the night, waving up at the sky and whooping with joy.
-END OF EPISODE 4.1
+:scriptScene120 a stories:Interpretation;
+	rdfs:label "Script - Scene 120";
+    rdfs:comment "THE DOCTOR still reading the screen - THE DOCTOR - she wired up the building, to convert it into a Levitation Post. Ohh, but we're not the ones in trouble now, she is - And he's running, Donna following -";
+	stories:interprets :adiposians_communicate;
+	#
+	stories:source :script. 
 
+:scriptScene121 a stories:Interpretation;
+	rdfs:label "Script - Scene 121";
+    rdfs:comment "Adipose all gone; MISS FOSTER steps forward, into the strong PRAC LIGHT from above. Deep breath, looking up... MISS FOSTER Take me. The children need me!";
+	stories:interprets :fosters_collection;
+	#
+	stories:source :script. 
 
+:scriptScene121A a stories:Interpretation;
+	rdfs:label "Script - Scene 121A";
+    rdfs:comment "PENNY, still tied up, now illuminated by the PRAC LIGHT from outside. But now she's open-mouthed, staring out of the window, can't believe what she's seeing...";
+	stories:interprets :adipose_collection;
+	stories:interprets :penny_recaptured;	
+	#
+	stories:source :script. 
 
+:scriptScene122 a stories:Interpretation;
+	rdfs:label "Script - Scene 122";
+    rdfs:comment "THE DOCTOR & DONNA burst out - And stop. Awestruck; the light of the BEAMS reflecting off them, gently; all rather beautiful, as they look out... FX: the sky full of ADIPOSE, the air glowing with BEAM- LIGHT, as 100s of the little dot-sized creatures rise up... The Doctor & Donna smiling. DONNA What you gonna do, then? Blow them up? THE DOCTOR They're just children. Can't help where they came from. DONNA Makes a change from last time. That Martha must've done you good. THE She did. Yeah, (beat, then She fancied me. DOCTOR she did. cheeky) DONNA Oh, Mad Martha, that one. Blind Martha. Charity Martha. FX: CLOSER on one rising ADIPOSE; it gives a little wave. Donna waves back. Then stops. DONNA (CONT'D) I'm waving at fat. THE DOCTOR Actually, as a diet plan, it sort of worked... There she is - ! FX: A DISTANCE AWAY - IE, away from the roof, over the street, MISS FOSTER is rising up, gently, in the same levitation beam. Around her, the LAST ADIPOSE rise up through shot, disappearing up, gone. The Doctor runs forward, urgent - Donna following - THE DOCTOR (CONT'D) Matron Cofelia, listen to me - ! MID-SHOT, Miss Foster stops, suspended in the air (IE, NON- FX, shot against night sky; she's haloed and backlit by PRAC LIGHT). Calling across the night: MISS FOSTER I don't think so, Doctor. And if I never see you again, it'll be - THE DOCTOR - oh why does no one ever listen?! I'm trying to help! Just... get across to the roof, can you shift the levitation beam? MISS FOSTER What, so you can arrest me? THE DOCTOR Just listen!! I saw the Adiposian instructions! They know it's a crime, breeding on Earth, so what's the one thing they want to get rid of? Their accomplice! MISS FOSTER I'm far more than that, I'm nanny, to all these children. THE DOCTOR Exactly! Mum and Dad have got the kids, they don't need the nanny any more! MID-SHOT, on Miss Foster... as the LIGHT SNAPS OFF! Darkness. She looks left and right, held in the air for a second like a cartoon coyote. Then - FX: WIDE SHOT as Miss Foster falls, plummets, screaming, out of the bottom of frame - Donna turns to the Doctor, flinches, with the OOV crunch! The Doctor puts his arm around her. So sorry. Then both look up, hearing the whine of engines...";
+	stories:interprets :fosters_collection;
+	#
+	stories:source :script. 
 
+:scriptScene123 a stories:Interpretation;
+	rdfs:label "Script - Scene 123";
+    rdfs:comment "FX: A WINDOW crammed full of ADIPOSE. Mewling. They look sad. A little wave from one of them, bye bye. FX: PULLING OUT, the WINDOW set in the SPACESHIP, and the Ship hurtles away, into space, away from Earth, gone..."; 	
+    stories:interprets :nursery_leaves;
+	#
+	stories:source :script. 
 
+:scriptScene124 a stories:Interpretation;
+	rdfs:label "Script - Scene 124";
+    rdfs:comment "THE DOCTOR & DONNA stroll out. Exhausted. Calm. Way off in the distance, there are signs of the disruption - POLICE BARRIERS, FLASHING LIGHTS. An AMBULANCE and PARAMEDICS closer to the building (hiding the remains of Miss Foster). The Doctor looks at the SONIC PEN, decides naah, chucks it away, gets out the SONIC SCREWDRIVER, jams it into his GIZMO, points the whole thing up - FX: a SMALL BLUE PULSE OF LIGHT flies up, into the sky... DONNA What's that? THE DOCTOR Sending a statement to the Shadow Proclamation. Reporting the Adiposian crime. Suppose the children will be taken into care. I hate being official, brrr. PENNY appears. Staggering. She is still tied to her chair, having to hold it behind her. Wild-eyed and furious: PENNY You two! You're just... mad! D'you hear me?? Mad! I'm gonna report you! For madness! She runs off towards the distant POLICE, like a lunatic. DONNA Some people just can't take it. THE DOCTOR Nope. DONNA And some people can! So, then. Tardis! Come on! She grabs his hand, yanks him out of shot - !";
+	stories:interprets :doctor_reports_crime;
+	stories:interprets :penny_finally_escapes;
+	#
+	stories:source :script. 
+	
+:scriptScene125 a stories:Interpretation;
+	rdfs:label "Script - Scene 125";
+    rdfs:comment "The street from sc.50, DONNA running in, realising that her car is near the TARDIS, though a fair distance between them. THE DOCTOR is the definition of dubious. DONNA That's my car! That's like destiny! And I've been ready for this, I packed ages ago, just in case - And she's opening the boot, hauling out a suitcase, another, a carpet bag, a valise, a trolley-thing, two plastic bags - She shoves them at the Doctor, piling them up in his arms - DONNA (CONT'D) - cos I thought, hot weather, cold weather, no weather, he goes anywhere, I've gotta be prepared - THE DOCTOR You've got a hatbox. DONNA Planet of the Hats, I'm ready! She swings the boot shut, slam - ! JUMP CUT TO DONNA dumping her armfuls of stuff by the Tardis, THE DOCTOR standing back, still weighed down with luggage; so she's in the Tardis doorway, with him facing her, the opposite of the end of 3.X. DONNA (CONT'D) - I don't need injections, do I? Y'know, like when you go to Cambodia, is there any of that? Cos my friend Veena went to Bahrain, and... you're not saying very much. THE DOCTOR No, but it's just... It's a funny old life, in the Tardis, it's not... DONNA (quiet, crestfallen) You don't want me. THE DOCTOR I'm not saying that. DONNA But you asked me. (silence) Would you rather be on your own? THE DOCTOR ...no. Actually, no. (dumps luggage) But the last time, with Martha, like I said, it got complicated. And it was all my fault. I mean... (sighs) I just want a mate. DONNA You just want TO MATE??! THE DOCTOR I just want A mate! DONNA You're not mating with me, sunshine! THE DOCTOR A mate, I want, a! Mate! DONNA Just as well! I'm not having any of that nonsense, you're a skinny streak of nothing. Alien nothing. THE DOCTOR There we are, then. DONNA Okay! I can come? THE DOCTOR Yeah. Course you can, yeah. (smiles) I'd love it. She runs towards him, overjoyed - DONNA Ohhhh, that's just - ! (no, diverts!) Car keys! THE DOCTOR What? DONNA I've got my mother's car keys! Back in a tick! And she's gone. The Doctor stands there for a second, looking at the luggage, wondering, what the hell..? But then crucially, he smiles. Starts picking up the bags.";
+	stories:interprets :assistant_discussion;
+	#
+	stories:source :script. 
 
+:scriptScene126 a stories:Interpretation;
+	rdfs:label "Script - Scene 126";
+    rdfs:comment "OMITTED";
+	stories:source :script. 
 
-
-
-#[etc....]
+:scriptScene127 a stories:Interpretation;
+	rdfs:label "Script - Scene 127";
+    rdfs:comment "DONNA pokes her head around the half-open door. DONNA Off we go then! THE DOCTOR by the console, plus luggage. As Donna walks up the ramp to join him: THE DOCTOR Here it is! The Tardis! Bigger on the inside than it is on the - DONNA - oh I know all that bit, frankly you could turn the heating up. THE DOCTOR So! You've got the whole wide universe. Where d'you want to go? DONNA I know exactly the place. THE DOCTOR Which is..? DONNA Two and a half miles, that way."; 
+   	stories:interprets :departure;
+	#
+	stories:source :script. 
+	
+:scriptScene128 a stories:Interpretation;
+	rdfs:label "Script - Scene 128";
+    rdfs:comment "WILF on his lonely mount.	He's pottering about with the TELESCOPE. Happy. A sip of tea. Gene Pitney still on the earphones. Then he looks through the eyepiece, focusing it... Stops. Eh?! Looks up, without the telescope. But..? Looks back through the eyepiece. And then he's all excited! FX: WILF'S POV. The night sky, with a LITTLE BLUE BOX	spinning across the sky. He calls off, as though she might come running - WILF	But... Donna! Donna! It's the flying blue box!! Looks back through the eyepiece, tightens the focus. Stunned. Whispers. WILF (CONT'D)  Whaaaat...? FX: HIS POV: CLOSER on the TARDIS. DONNA standing in the doorway. Waving at him! Behind her, THE DOCTOR, and he gives a little wave, too. WILF (CONT'D) But that's... Donna? That's him! And he abandons the telescope. Waves up at the sky! With a great big yahoo! FX (SHOT 128.1 cont.), the TARDIS spins away into space. HIGH SHOT: on WILF, on his little hillside, in the middle of the night, waving up at the sky and whooping with joy.";
+	stories:interprets :departure;
+	#
+	stories:source :script. 
 
 # FIXME: No way of ordering interpretations in sequence. ie scene1 < scene2 < scene 3. Would the :script do this somehow, or the :canonicalStory similar to consituent event?
 # This is could be esp. important as auto-injest would come from scripts, so stories as interpretations with no events could happen?
