@@ -1,0 +1,35 @@
+@prefix stories: <http://purl.org/ontology/stories/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#>.
+@prefix dc:     <http://purl.org/dc/elements/1.1/> .
+
+@prefix : <http://contextus.net/interpretations/> .
+
+:mj_facts {
+	:e1 event:place :red_lion;
+	event:agent <http://www.thecollectedmike.com/#me>;
+	event:agent <http://mmt.me.uk/foaf.rdf#mischa>;
+	event:factor :beer.
+}
+
+:mt_facts {
+	:e1 event:place :hobbit;
+	event:agent <http://www.thecollectedmike.com/#me>;
+	event:agent <http://mmt.me.uk/foaf.rdf#mischa>;
+	event:factor :cider.
+}
+
+{
+
+:e1 a event:Event.
+
+:mj_int a stories:Interpretation;
+	stories:interprets :e1;
+	dc:creator <http://www.thecollectedmike.com/#me>;
+	stories:asserts :mj_facts.
+
+:mt_int a stories:Interpretation;
+	stories:interprets :e1;
+	dc:creator <http://mmt.me.uk/foaf.rdf#mischa>;
+	stories:asserts :mt_facts.
+}
