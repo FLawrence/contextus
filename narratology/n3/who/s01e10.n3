@@ -240,7 +240,7 @@
     event:agent whoc:rose_tyler;
     event:agent whoc:jack_harkness;
     event:agent whoc:gas_mask_people;
-    event:time [ tl:before :s01e10_ev2 ].
+    event:time [ tl:after :s01e09_ev1; tl:before :s01e10_ev2 ].
 
 :s01e10_ev2 a event:Event;
     event:place whol:dining_room;

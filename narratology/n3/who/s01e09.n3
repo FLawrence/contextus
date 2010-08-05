@@ -573,6 +573,6 @@
     event:agent whoc:rose_tyler;
     event:agent whoc:jack_harkness;
     event:agent whoc:doctor;
-    event:time [ tl:after :s01e09_ev52 ].
+    event:time [ tl:after :s01e09_ev52, tl:before :s01e10_ev1 ].
 
 }
