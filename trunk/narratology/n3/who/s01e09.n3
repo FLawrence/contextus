@@ -12,7 +12,7 @@
 :rationing { :s01e09_ev20 dcterms:subject <http://dbpedia.org/resource/Category:Rationing_and_licensing> . }
 :world_war_ii { :s01e09_ev12 dcterms:subject <http://dbpedia.org/resource/Category:World_War_II> . }
 
-{
+<http://contextus.net/who/s01e09/> {
 
 <http://www.bbc.co.uk/programmes/b0074ds9#programme> stories:tells :s01e09.
 
@@ -573,6 +573,6 @@
     event:agent whoc:rose_tyler;
     event:agent whoc:jack_harkness;
     event:agent whoc:doctor;
-    event:time [ tl:after :s01e09_ev52, tl:before :s01e10_ev1 ].
+    event:time [ tl:after :s01e09_ev52; tl:before :s01e10_ev1 ].
 
 }

@@ -9,7 +9,7 @@
 @prefix whol:       <http://contextus.net/who/location/>.
 @prefix whoi:       <http://contextus.net/who/item/>.
 
-{
+<http://contextus.net/who/s01e10/> {
 
 <http://www.bbc.co.uk/programmes/b0074dsp#programme> stories:tells :s01e10.
 
