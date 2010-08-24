@@ -206,7 +206,7 @@
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[rj:Verona._A_public_place.]" type="location">Verona. A public place.</stage>
-<lb ed="F1" n="3"/><stage type="entrance" about="[ome:involves sam. gre. cap.]">Enter <rs type="person" about="[sam.]">SAMPSON</rs> and <rs type="person" about="[gre.]">GREGORY</rs>, <lb ed="F1" n="4"/>of the house of <rs type="person" about="[cap.]">Capulet</rs>, armed with swords and bucklers.</stage>
+<lb ed="F1" n="3"/><stage type="entrance" about="[ sam. gre. cap.]">Enter <rs type="person" about="[sam.]">SAMPSON</rs> and <rs type="person" about="[gre.]">GREGORY</rs>, <lb ed="F1" n="4"/>of the house of <rs type="person" about="[cap.]">Capulet</rs>, armed with swords and bucklers.</stage>
 
 <lb ed="G"/><lb ed="F1" n="5"/><sp who="#sam."><speaker>Sam.</speaker><p><rs type="person" about="[gre.]">Gregory</rs>, o' my word, we'll not
 <lb ed="G"/>carry coals.
@@ -322,13 +322,13 @@
 <lb ed="G"/>thy <lb ed="F1" n="60"/>swashing blow.
 They fight.
 
-<stage type="entrance" about="[ome:involves ben.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs>.</stage>
+<stage type="entrance" about="[ ben.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="61"/></p></sp><sp who="#ben."><speaker>Ben.</speaker><p>Part, fools!
 <lb ed="G"/>Put up your swords; you know not <lb ed="F1" n="62"/>what you do.
 Beats down their swords. 
 
-<lb ed="F1" n="63"/><stage type="entrance" about="[ome:involves tyb.]">Enter <rs type="person" about="[tyb.]">TYBALT</rs>.</stage>
+<lb ed="F1" n="63"/><stage type="entrance" about="[ tyb.]">Enter <rs type="person" about="[tyb.]">TYBALT</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="64"/></p></sp><sp who="#tyb."><speaker>Tyb.</speaker><l>What, art thou drawn among these heartless <lb ed="F1" n="65"/>hinds?
 <lb ed="G"/></l><l>Turn thee, <rs type="person" about="[ben.]">Benvolio</rs>, look upon thy death.
@@ -346,7 +346,7 @@ They fight.
 <lb ed="G" n="80"/><lb ed="F1" n="72"/></l></sp><sp who="#first-cit."><speaker>First Cit.</speaker><p>Clubs, bills, and partisans!
 <lb ed="G"/> strike! beat them down!
 <lb ed="G"/><lb ed="F1" n="73"/></p><p>Down with the <rs type="person" about="[cap.]">Capulet</rs>s! down with the <rs type="person" about="[mon.]">Montague</rs>s!
-<lb ed="F1" n="74"/><stage type="entrance" about="[ome:involves cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs> in his gown, and LADY
+<lb ed="F1" n="74"/><stage type="entrance" about="[ cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs> in his gown, and LADY
 CAPULET.</stage>
 
 <lb ed="G"/><lb ed="F1" n="75"/></p></sp><sp who="#cap."><speaker>Cap.</speaker><l>What noise is this?   Give me my long sword, ho!
@@ -355,12 +355,12 @@ CAPULET.</stage>
 
 <lb ed="G"/><lb ed="F1" n="77"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>My sword, I say!   Old <rs type="person" about="[mon.]">Montague</rs> is come,
 <lb ed="G"/><lb ed="F1" n="78"/></l><l>And flourishes his blade in spite of me.
-<lb ed="F1" n="79"/><stage type="entrance" about="[ome:involves mon. la.-mon.]">Enter <rs type="person" about="[mon.]">MONTAGUE</rs> and <rs type="person" about="[la.-mon.]">LADY MONTAGUE</rs>.</stage>
+<lb ed="F1" n="79"/><stage type="entrance" about="[ mon. la.-mon.]">Enter <rs type="person" about="[mon.]">MONTAGUE</rs> and <rs type="person" about="[la.-mon.]">LADY MONTAGUE</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="80"/></l></sp><sp who="#mon."><speaker>Mon.</speaker><l>Thou villain <rs type="person" about="[cap.]">Capulet</rs>,--Hold me not, let me go.
 
 <lb ed="G"/><lb ed="F1" n="81"/></l></sp><sp who="#la.-mon."><speaker>La. Mon.</speaker><l>Thou shalt not stir a foot to seek a foe.
-<lb ed="F1" n="82"/><stage type="entrance" about="[ome:involves atts.]">Enter PRINCE, with <rs type="person" about="[atts.]">Attendants.</rs> </stage>
+<lb ed="F1" n="82"/><stage type="entrance" about="[ atts.]">Enter PRINCE, with <rs type="person" about="[atts.]">Attendants.</rs> </stage>
 
 <lb ed="G"/><lb ed="F1" n="83"/></l></sp><sp who="#prin."><speaker>Prin.</speaker><l>Rebellious subjects, enemies to peace,
 <lb ed="G"/><lb ed="F1" n="84"/></l><l>Profaners of this neighbour-stained steel,--
@@ -386,7 +386,7 @@ CAPULET.</stage>
 <lb ed="G" n="109"/><lb ed="F1" n="104"/></l><l>To old Free-town, our common judgement-place.
 <lb ed="G"/><lb ed="F1" n="105"/></l><l>Once more, on pain of death, all men depart.
 
-<stage type="exit" about="[ome:involves !( mon. la.-mon. ben.)]">Exeunt all but <rs type="person" about="[mon.]">Montague</rs>, <rs type="person" about="[la.-mon.]">Lady Montague</rs>, and <rs type="person" about="[ben.]">Benvolio</rs>.</stage>
+<stage type="exit" about="[ !( mon. la.-mon. ben.)]">Exeunt all but <rs type="person" about="[mon.]">Montague</rs>, <rs type="person" about="[la.-mon.]">Lady Montague</rs>, and <rs type="person" about="[ben.]">Benvolio</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="106"/></l></sp><sp who="#mon."><speaker>Mon.</speaker><l>Who set this ancient quarrel new abroach?
 <lb ed="G"/><lb ed="F1" n="107"/></l><l>Speak, nephew, were you by when it began?
 
@@ -445,13 +445,13 @@ CAPULET.</stage>
 <lb ed="G"/><lb ed="F1" n="155"/></l><l>Or dedicate his beauty to the sun.
 <lb ed="G" n="160"/><lb ed="F1" n="156"/></l><l>Could we but learn from whence his sorrows grow,
 <lb ed="G"/><lb ed="F1" n="157"/></l><l>We would as willingly give cure as know.
-<lb ed="F1" n="158"/><stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<lb ed="F1" n="158"/><stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="159"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l>See, where he comes: so please you, step aside;
 <lb ed="G"/><lb ed="F1" n="160"/></l><l>I'll know his grievance, or be much denied.
 <lb ed="G"/><lb ed="F1" n="161"/></l></sp><sp who="#mon."><speaker>Mon.</speaker><l> I would thou wert so happy by thy stay,
 <lb ed="G"/><lb ed="F1" n="162"/></l><l>To hear true shrift.   Come, madam, let's away.
-<stage type="exit" about="[ome:involves mon.]">Exeunt <rs type="person" about="[mon.]">Montague</rs> and Lady. </stage>
+<stage type="exit" about="[ mon.]">Exeunt <rs type="person" about="[mon.]">Montague</rs> and Lady. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="163"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l>Good morrow, cousin.
@@ -572,12 +572,12 @@ CAPULET.</stage>
 <lb ed="G"/><lb ed="F1" n="245"/></l><l>Farewell: thou canst not teach me to forget.
 
 <lb ed="G"/><lb ed="F1" n="246"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l>I'll pay that doctrine, or else die in debt.
-<stage about="[ome:involves-all]" type="exit">Exeunt. </stage>
+<stage about="[-all]" type="exit">Exeunt. </stage>
 </l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[rj:A_street.]" type="location">A street.</stage>
-<lb ed="F1" n="247"/><stage type="entrance" about="[ome:involves cap. par. serv.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[par.]">PARIS</rs>, and <rs type="person" about="[serv.]">Servant</rs>. </stage>
+<lb ed="F1" n="247"/><stage type="entrance" about="[ cap. par. serv.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[par.]">PARIS</rs>, and <rs type="person" about="[serv.]">Servant</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="248"/><sp who="#cap."><speaker>Cap.</speaker><l>But <rs type="person" about="[mon.]">Montague</rs> is bound as well as I,
 <lb ed="G"/><lb ed="F1" n="249"/></l><l>In penalty alike; and 'tis not hard, I think,
@@ -622,7 +622,7 @@ To Serv., giving a paper. Go, sirrah, trudge about
 <lb ed="G"/><lb ed="F1" n="283"/></l><l>Whose names are written there, and to them say,
 <lb ed="G"/><lb ed="F1" n="284"/></l><l>My house and welcome on their pleasure stay.
 
-<stage type="exit" about="[ome:involves cap. par.]">Exeunt <rs type="person" about="[cap.]">Capulet</rs> and <rs type="person" about="[par.]">Paris</rs>.</stage>
+<stage type="exit" about="[ cap. par.]">Exeunt <rs type="person" about="[cap.]">Capulet</rs> and <rs type="person" about="[par.]">Paris</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="285"/></l></sp><sp who="#serv."><speaker>Serv.</speaker><p>Find them out whose names are written
@@ -633,7 +633,7 @@ To Serv., giving a paper. Go, sirrah, trudge about
 <lb ed="G"/>those persons whose names are here writ, and
 <lb ed="G"/>can never find <lb ed="F1" n="290"/>what names the writing person
 <lb ed="G"/>hath here writ. I must to <lb ed="F1" n="291"/>the learned.--In good time.
-<lb ed="F1" n="292"/><stage type="entrance" about="[ome:involves ben. rom.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs> and <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<lb ed="F1" n="292"/><stage type="entrance" about="[ ben. rom.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs> and <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="293"/></p></sp><sp who="#ben."><speaker>Ben.</speaker><l>Tut, man, one fire burns out another's burning,
 <lb ed="G"/><lb ed="F1" n="294"/></l><l>One pain is lessen'd by another's anguish;
@@ -697,7 +697,7 @@ To Serv., giving a paper. Go, sirrah, trudge about
 <lb ed="G"/>you be not of the house of <lb ed="F1" n="329"/><rs type="person" about="[mon.]">Montague</rs>s, I pray,
 <lb ed="G"/>come and crush a cup of wine.   Rest <lb ed="F1" n="330"/>you
 <lb ed="G"/>merry!
-<stage type="exit" about="[ome:involves serv.]">Exit.</stage>
+<stage type="exit" about="[ serv.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="331"/></p></sp><sp who="#ben."><speaker>Ben.</speaker><l>At this same ancient feast of <rs type="person" about="[cap.]">Capulet</rs>'s
@@ -724,19 +724,19 @@ To Serv., giving a paper. Go, sirrah, trudge about
 <lb ed="G"/><lb ed="F1" n="349"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>I'll go along, no such sight to be shown,
 <lb ed="G"/><lb ed="F1" n="350"/></l><l>But to rejoice in splendour of mine own.
 
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[rj:A_room_in_Capulet's_house.]" type="location">A room in <rs type="person" about="[cap.]">Capulet</rs>'s house.</stage>
-<lb ed="F1" n="351"/><stage type="entrance" about="[ome:involves la.-cap. nurse.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>. </stage>
+<lb ed="F1" n="351"/><stage type="entrance" about="[ la.-cap. nurse.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="352"/><sp who="#la.-cap."><speaker>La. Cap.</speaker><l><rs type="person" about="[nurse.]">Nurse</rs>, where's my daughter? call her forth to me.
 
 <lb ed="G"/><lb ed="F1" n="353"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Now, by my maidenhead, at twelve year old.
 <lb ed="G"/><lb ed="F1" n="354"/></l><l>I bade her come. What, lamb! what, ladybird!
 <lb ed="G"/></l><l>God forbid!   <lb ed="F1" n="355"/>Where's this girl?     What, <rs type="person" about="[jul.]">Juliet</rs>!
-<lb ed="F1" n="356"/><stage type="entrance" about="[ome:involves jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
+<lb ed="F1" n="356"/><stage type="entrance" about="[ jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="357"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>How now! who calls?
 
@@ -860,7 +860,7 @@ To Serv., giving a paper. Go, sirrah, trudge about
 <lb ed="G"/><lb ed="F1" n="443"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>I'll look to like, if looking liking move:
 <lb ed="G"/><lb ed="F1" n="444"/></l><l>But no more deep will I endart mine eye
 <lb ed="G"/><lb ed="F1" n="445"/></l><l>Than your consent gives strength to make it fly.
-<lb ed="F1" n="446"/><stage type="entrance" about="[ome:involves serv.]">Enter a <rs type="person" about="[serv.]">Servant</rs>.</stage>
+<lb ed="F1" n="446"/><stage type="entrance" about="[ serv.]">Enter a <rs type="person" about="[serv.]">Servant</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="447"/></l></sp><sp who="#serv."><speaker>Serv.</speaker><p>Madam, the guests are come, supper
 <lb ed="G"/>served up, you <lb ed="F1" n="448"/>called, my young lady asked
@@ -868,16 +868,16 @@ To Serv., giving a paper. Go, sirrah, trudge about
 <lb ed="G"/>thing in extremity. I must hence to wait; I
 <lb ed="G"/><lb ed="F1" n="450"/>beseech you, follow straight.
 
-<lb ed="G"/><lb ed="F1" n="451"/></p></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>We follow thee. <stage type="exit" about="[ome:involves serv.]">Exit <rs type="person" about="[serv.]">Servant</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="451"/></p></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>We follow thee. <stage type="exit" about="[ serv.]">Exit <rs type="person" about="[serv.]">Servant</rs>.</stage>
 <lb ed="G"/></l><l><rs type="person" about="[jul.]">Juliet</rs>, the county stays.
 
 <lb ed="G"/><lb ed="F1" n="452"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Go, girl, seek happy nights to happy days.
-<lb ed="F1" n="453"/><stage about="[ome:involves-all]" type="exit">Exeunt. </stage>
+<lb ed="F1" n="453"/><stage about="[-all]" type="exit">Exeunt. </stage>
 </l></sp></div2>
 <div2 type="scene" n="4" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[rj:A_street.]" type="location">A street.</stage>
-<lb ed="F1" n="454"/><stage type="entrance" about="[ome:involves rom. mer. ben. mask.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>, <rs type="person" about="[mer.]">MERCUTIO</rs>, <rs type="person" about="[ben.]">BENVOLIO</rs>, with five or six <lb ed="F1" n="455"/><rs type="person" about="[mask.]">Maskers</rs>, Torch-bearers, and others.</stage>
+<lb ed="F1" n="454"/><stage type="entrance" about="[ rom. mer. ben. mask.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>, <rs type="person" about="[mer.]">MERCUTIO</rs>, <rs type="person" about="[ben.]">BENVOLIO</rs>, with five or six <lb ed="F1" n="455"/><rs type="person" about="[mask.]">Maskers</rs>, Torch-bearers, and others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="456"/><sp who="#rom."><speaker>Rom.</speaker><l>What, shall this speech be spoke for our excuse?
 <lb ed="G"/><lb ed="F1" n="457"/></l><l>Or shall we on without apology?
@@ -1027,7 +1027,7 @@ To Serv., giving a paper. Go, sirrah, trudge about
 
 <lb ed="G"/><lb ed="F1" n="565"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l>Strike, drum.
 <lb ed="F1" n="566"/><lb ed="F1" n="567"/>
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="5" org="uniform" sample="complete">
 <head>SCENE V</head>
@@ -1059,7 +1059,7 @@ ytoo, 'tis a foul thing.
 <lb ed="G"/>too. Cheerly, boys; <lb ed="F1" n="581"/>be brisk awhile, and the
 <lb ed="G"/>longer liver take all.
 <lb ed="F1" n="582"/>
-<lb ed="F1" n="583"/><stage type="entrance" about="[ome:involves cap. jul. mask.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, with <rs type="person" about="[jul.]">JULIET</rs> and others of his house, meeting the Guests and <lb ed="F1" n="584"/><rs type="person" about="[mask.]">Maskers</rs>. </stage>
+<lb ed="F1" n="583"/><stage type="entrance" about="[ cap. jul. mask.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, with <rs type="person" about="[jul.]">JULIET</rs> and others of his house, meeting the Guests and <lb ed="F1" n="584"/><rs type="person" about="[mask.]">Maskers</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="585"/></p></sp><sp who="#cap."><speaker>Cap.</speaker><l>Welcome, gentlemen! <lb ed="F1" n="586"/>ladies that have their toes
 <lb ed="G"/><lb ed="F1" n="587"/></l><l>Unplagued with corns will have a bout with you.
@@ -1165,7 +1165,7 @@ Music plays, and they dance.
 <lb ed="G"/><lb ed="F1" n="668"/></l><l>I will withdraw: but this intrusion shall
 <lb ed="G"/><lb ed="F1" n="669"/></l><l>Now seeming sweet convert to bitter gall.
 
-<stage type="exit" about="[ome:involves tyb.]">Exit.</stage>
+<stage type="exit" about="[ tyb.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="670"/></l></sp><sp who="#rom."><speaker>Rom.</speaker>To <rs type="person" about="[jul.]">Juliet</rs><l>If I profane with my unworthiest hand
@@ -1223,7 +1223,7 @@ Music plays, and they dance.
 <lb ed="G"/><lb ed="F1" n="708"/></l><l>Ah, sirrah, by my fay, it waxes late:
 <lb ed="G"/><lb ed="F1" n="709"/></l><l>I'll to my rest.
 
-<stage type="exit" about="[ome:involves !( jul. nurse.)]">Exeunt all but <rs type="person" about="[jul.]">Juliet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<stage type="exit" about="[ !( jul. nurse.)]">Exeunt all but <rs type="person" about="[jul.]">Juliet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 
 <lb ed="G" n="130"/><lb ed="F1" n="710"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Come hither, nurse.   <lb ed="F1" n="711"/>What is yond gentleman?
@@ -1260,7 +1260,7 @@ Music plays, and they dance.
 <lb ed="G"/><lb ed="F1" n="729"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Anon, anon!
 <lb ed="G"/><lb ed="F1" n="730"/></l><l>Come, let's away; the strangers all are gone.
 
-<lb ed="F1" n="731"/><stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<lb ed="F1" n="731"/><stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp>
 </div2>
 </div1>
@@ -1269,7 +1269,7 @@ Music plays, and they dance.
 <head>ACT II</head>
 <div2 type="scene" n="prologue" org="uniform" sample="complete">
 <head>PROLOGUE</head>
-<lb ed="F1" n="732"/><stage type="entrance" about="[ome:involves chorus.]">Enter <rs type="person" about="[chorus.]">Chorus</rs>.</stage>
+<lb ed="F1" n="732"/><stage type="entrance" about="[ chorus.]">Enter <rs type="person" about="[chorus.]">Chorus</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="733"/><l>Now old desire doth in his death-bed lie,
 <lb ed="G"/><lb ed="F1" n="734"/></l><l>And young affection gapes to be his heir:
 <lb ed="G"/><lb ed="F1" n="735"/></l><l>That fair for which love groan'd for and would die,
@@ -1285,18 +1285,18 @@ Music plays, and they dance.
 <lb ed="G"/><lb ed="F1" n="745"/></l><l>But passion lends them power, time means, to meet,
 <lb ed="G"/><lb ed="F1" n="746"/></l><l>Tempering extremities with extreme sweet.
 
-<stage type="exit" about="[ome:involves]">Exit.</stage>
+<stage type="exit" about="[]">Exit.</stage>
 </l></div2>
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[rj:A_lane_by_the_wall_of_Capulet's_orchard.]" type="location">A lane by the wall of <rs type="person" about="[cap.]">Capulet</rs>'s orchard.</stage>
-<lb ed="F1" n="747"/><stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<lb ed="F1" n="747"/><stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="748"/><sp who="#rom."><speaker>Rom.</speaker><l>Can I go forward when my heart is here?
 <lb ed="G"/><lb ed="F1" n="749"/></l><l>Turn back, dull earth, and find thy centre out.
 
 He climbs the wall, and leaps down within it.
-<lb ed="F1" n="750"/><stage type="entrance" about="[ome:involves ben. mer.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs> and <rs type="person" about="[mer.]">MERCUTIO</rs>. </stage>
+<lb ed="F1" n="750"/><stage type="entrance" about="[ ben. mer.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs> and <rs type="person" about="[mer.]">MERCUTIO</rs>. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="751"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l><rs type="person" about="[rom.]">Romeo</rs>! my cousin <rs type="person" about="[rom.]">Romeo</rs>!
@@ -1348,12 +1348,12 @@ He climbs the wall, and leaps down within it.
 <lb ed="G"/><lb ed="F1" n="792"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l>Go, then; for 'tis in vain
 <lb ed="G"/><lb ed="F1" n="793"/></l><l>To seek him here that means not to be found.
 
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[rj:Capulet's_orchard.]" type="location"><rs type="person" about="[cap.]">Capulet</rs>'s orchard.</stage>
-<stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="794"/><sp who="#rom."><speaker>Rom.</speaker><l>He jests at scars that never felt a wound.
 
@@ -1537,13 +1537,13 @@ He climbs the wall, and leaps down within it.
 <lb ed="G"/><lb ed="F1" n="938"/><lb ed="F1" n="939"/></l><l>Anon, good nurse!   Sweet <rs type="person" about="[mon.]">Montague</rs>, be true.
 <lb ed="G"/><lb ed="F1" n="940"/></l><l>Stay but a little, I will come again.
 
-<stage type="exit" about="[ome:involves jul.]">Exit, above.</stage>
+<stage type="exit" about="[ jul.]">Exit, above.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="941"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>O blessed, blessed   night! I am afeard,
 <lb ed="G" n="140"/><lb ed="F1" n="942"/></l><l>Being in night, all this is but a dream,
 <lb ed="G"/><lb ed="F1" n="943"/></l><l>Too flattering-sweet to be substantial.
-<stage type="entrance" about="[ome:involves jul.]">Re-enter <rs type="person" about="[jul.]">JULIET</rs>, above.</stage>
+<stage type="entrance" about="[ jul.]">Re-enter <rs type="person" about="[jul.]">JULIET</rs>, above.</stage>
 
 <lb ed="G"/><lb ed="F1" n="944"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Three words, dear <rs type="person" about="[rom.]">Romeo</rs>, <lb ed="F1" n="945"/>and good night indeed.
 <lb ed="G"/><lb ed="F1" n="946"/></l><l>If that thy bent of love be honourable,
@@ -1569,7 +1569,7 @@ He climbs the wall, and leaps down within it.
 
 <lb ed="G"/><lb ed="F1" n="959"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>A thousand times good night!
 
-<stage type="exit" about="[ome:involves jul.]">Exit, above.</stage>
+<stage type="exit" about="[ jul.]">Exit, above.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="960"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>A thousand times the worse, to want thy light.
@@ -1577,7 +1577,7 @@ He climbs the wall, and leaps down within it.
 <lb ed="G"/><lb ed="F1" n="962"/></l><l>But love from love, toward school with heavy looks.
 Retiring. 
 
-<lb ed="F1" n="963"/><stage type="entrance" about="[ome:involves jul.]">Re-enter <rs type="person" about="[jul.]">JULIET</rs>, above.</stage>
+<lb ed="F1" n="963"/><stage type="entrance" about="[ jul.]">Re-enter <rs type="person" about="[jul.]">JULIET</rs>, above.</stage>
 
 <lb ed="G"/><lb ed="F1" n="964"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Hist! <rs type="person" about="[rom.]">Romeo</rs>, hist! O, for a falconer's voice,
 <lb ed="G" n="160"/><lb ed="F1" n="965"/></l><l>To lure this tassel-gentle back again!
@@ -1624,7 +1624,7 @@ Retiring.
 <lb ed="G"/><lb ed="F1" n="994"/></l><l>Good night, good night! <lb ed="F1" n="995"/>parting is such sweet sorrow,
 <lb ed="G"/><lb ed="F1" n="996"/></l><l>That I shall say good night till it be morrow.
 
-<stage type="exit" about="[ome:involves jul.]">Exit above.</stage>
+<stage type="exit" about="[ jul.]">Exit above.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="997"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>Sleep dwell upon thine eyes, peace in thy breast!
@@ -1632,12 +1632,12 @@ Retiring.
 <lb ed="F1" n="999"/><lb ed="F1" n="1000"/><lb ed="F1" n="1001"/><lb ed="G" n="189"/><lb ed="F1" n="1002"/><lb ed="F1" n="1003"/></l><l>Hence will I to my ghostly father's cell.
 <lb ed="G"/><lb ed="F1" n="1004"/></l><l>His help to crave, and my dear hap to tell.
 
-<stage type="exit" about="[ome:involves rom.]">Exit.</stage>
+<stage type="exit" about="[ rom.]">Exit.</stage>
 </l></sp></div2>
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[rj:Friar_Laurence's_cell.]" type="location"><rs type="person" about="[fri.-l.]">Friar Laurence</rs>'s cell.</stage>
-<lb ed="F1" n="1005"/><stage type="entrance" about="[ome:involves fri.-l.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>, with a basket.</stage>
+<lb ed="F1" n="1005"/><stage type="entrance" about="[ fri.-l.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>, with a basket.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1006"/><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>The grey-eyed morn smiles on the frowning night,
 <lb ed="G"/><lb ed="F1" n="1007"/></l><l>Chequering the eastern clouds with streaks of light,
@@ -1669,7 +1669,7 @@ Retiring.
 <lb ed="G"/><lb ed="F1" n="1034"/></l><l>In man as well as herbs, grace and rude will;
 <lb ed="G"/><lb ed="F1" n="1035"/></l><l>And where the worser is predominant,
 <lb ed="G"/><lb ed="F1" n="1036"/></l><l>Full soon the canker death eats up that plant.
-<stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1037"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>Good morrow, father.
 
@@ -1755,12 +1755,12 @@ Retiring.
 <lb ed="G"/><lb ed="F1" n="1102"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>O, let us hence; I stand on sudden haste.
 
 <lb ed="G"/><lb ed="F1" n="1103"/></l></sp><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>Wisely and slow; they stumble that run fast.
-<lb ed="F1" n="1104"/><stage about="[ome:involves-all]" type="exit">Exeunt. </stage>
+<lb ed="F1" n="1104"/><stage about="[-all]" type="exit">Exeunt. </stage>
 </l></sp></div2>
 <div2 type="scene" n="4" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[rj:A_street.]" type="location">A street.</stage>
-<lb ed="F1" n="1105"/><stage type="entrance" about="[ome:involves ben. mer.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs> and <rs type="person" about="[mer.]">MERCUTIO</rs>. </stage>
+<lb ed="F1" n="1105"/><stage type="entrance" about="[ ben. mer.]">Enter <rs type="person" about="[ben.]">BENVOLIO</rs> and <rs type="person" about="[mer.]">MERCUTIO</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1106"/><sp who="#mer."><speaker>Mer.</speaker><l>Where the devil should this <rs type="person" about="[rom.]">Romeo</rs> be?
 <lb ed="G"/></l><l>Came he <lb ed="F1" n="1107"/>not home to-night?
@@ -1814,7 +1814,7 @@ Retiring.
 <lb ed="G"/>so much on the new form, that they <lb ed="F1" n="1138"/>cannot
 <lb ed="G"/>sit at ease on the old bench? O, their bones,
 <lb ed="G"/>their <lb ed="F1" n="1139"/>bones!
-<lb ed="F1" n="1140"/><stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<lb ed="F1" n="1140"/><stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1141"/></p></sp><sp who="#ben."><speaker>Ben.</speaker><p>Here comes <rs type="person" about="[rom.]">Romeo</rs>, here comes <rs type="person" about="[rom.]">Romeo</rs>.
 
@@ -1921,7 +1921,7 @@ Retiring.
 <lb ed="F1" n="1200"/>
 
 <lb ed="G"/><lb ed="F1" n="1201"/></p></sp><sp who="#rom."><speaker>Rom.</speaker><p>Here's goodly gear!
-<stage type="entrance" about="[ome:involves nurse. pet.]">Enter <rs type="person" about="[nurse.]">Nurse</rs> and <rs type="person" about="[pet.]">PETER</rs>.</stage>
+<stage type="entrance" about="[ nurse. pet.]">Enter <rs type="person" about="[nurse.]">Nurse</rs> and <rs type="person" about="[pet.]">PETER</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1202"/></p></sp><sp who="#mer."><speaker>Mer.</speaker><p>A sail, a sail!
 
@@ -1994,7 +1994,7 @@ Sings.
 singing
 <lb ed="G" n="151"/></p><p>'lady, lady, lady.'
 
-<lb ed="F1" n="1242"/><stage type="exit" about="[ome:involves mer. ben.]">Exeunt <rs type="person" about="[mer.]">Mercutio</rs> and <rs type="person" about="[ben.]">Benvolio</rs>.</stage>
+<lb ed="F1" n="1242"/><stage type="exit" about="[ mer. ben.]">Exeunt <rs type="person" about="[mer.]">Mercutio</rs> and <rs type="person" about="[ben.]">Benvolio</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1243"/></p></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><p>Marry, farewell! I pray you, sir,
@@ -2097,19 +2097,19 @@ singing
 
 <lb ed="G"/><lb ed="F1" n="1306"/></p></sp><sp who="#rom."><speaker>Rom.</speaker><p>Commend me to thy lady.
 
-<lb ed="G"/><lb ed="F1" n="1307"/></p></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><p>Ay, a thousand times. <stage type="exit" about="[ome:involves rom.]">Exit <rs type="person" about="[rom.]">Romeo</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="1307"/></p></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><p>Ay, a thousand times. <stage type="exit" about="[ rom.]">Exit <rs type="person" about="[rom.]">Romeo</rs>.</stage>
 <lb ed="G" n="230"/><rs type="person" about="[pet.]">Peter</rs>!
 
 <lb ed="G"/><lb ed="F1" n="1308"/></p></sp><sp who="#pet."><speaker>Pet.</speaker><p>Anon!
 
 <lb ed="G"/><lb ed="F1" n="1309"/></p></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><p><rs type="person" about="[pet.]">Peter</rs>, take my fan, and go before,
 <lb ed="G"/>and apace.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </p></sp></div2>
 <div2 type="scene" n="5" org="uniform" sample="complete">
 <head>SCENE V</head>
 <stage about="[rj:Capulet's_orchard.]" type="location"><rs type="person" about="[cap.]">Capulet</rs>'s orchard.</stage>
-<lb ed="F1" n="1310"/><stage type="entrance" about="[ome:involves jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
+<lb ed="F1" n="1310"/><stage type="entrance" about="[ jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1311"/><sp who="#jul."><speaker>Jul.</speaker><l>The clock struck nine when I did send the nurse;
 <lb ed="G"/><lb ed="F1" n="1312"/></l><l>In half an hour she promised to return.
@@ -2129,12 +2129,12 @@ singing
 <lb ed="G"/></l><l>But old folks, <lb ed="F1" n="1326"/>many feign as they were dead;
 <lb ed="G"/><lb ed="F1" n="1327"/></l><l>Unwieldy, slow, heavy and pale as lead.
 <lb ed="G"/><lb ed="F1" n="1328"/><lb ed="F1" n="1329"/></l><l>O God, she comes!
-<stage type="entrance" about="[ome:involves nurse. pet.]">Enter <rs type="person" about="[nurse.]">Nurse</rs> and <rs type="person" about="[pet.]">PETER</rs>.</stage>
+<stage type="entrance" about="[ nurse. pet.]">Enter <rs type="person" about="[nurse.]">Nurse</rs> and <rs type="person" about="[pet.]">PETER</rs>.</stage>
 <lb ed="G"/></l><l>O honey nurse, what news?
 <lb ed="G"/><lb ed="F1" n="1330"/></l><l>Hast thou met with him ?   Send thy man away.
 
 <lb ed="G"/><lb ed="F1" n="1331"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l><rs type="person" about="[pet.]">Peter</rs>, stay at the gate.
-<stage type="exit" about="[ome:involves pet.]">Exit <rs type="person" about="[pet.]">Peter</rs>.</stage>
+<stage type="exit" about="[ pet.]">Exit <rs type="person" about="[pet.]">Peter</rs>.</stage>
 
 
 <lb ed="G" n="21"/><lb ed="F1" n="1332"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Now, good sweet nurse,--<lb ed="F1" n="1333"/>O Lord, why look'st thou sad?
@@ -2215,12 +2215,12 @@ singing
 <lb ed="G" n="79"/><lb ed="F1" n="1390"/></l><l>Go; I'll to dinner; hie you to the cell.
 
 <lb ed="G"/><lb ed="F1" n="1391"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Hie to high fortune! Honest nurse, farewell.
-<stage about="[ome:involves-all]" type="exit">Exeunt</stage>
+<stage about="[-all]" type="exit">Exeunt</stage>
 </l></sp></div2>
 <div2 type="scene" n="6" org="uniform" sample="complete">
 <head>SCENE VI</head>
 <stage about="[rj:Friar_Laurence's_cell.]" type="location"><rs type="person" about="[fri.-l.]">Friar Laurence</rs>'s cell.</stage>
-<lb ed="F1" n="1392"/><stage type="entrance" about="[ome:involves fri.-l. rom.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs> and <rs type="person" about="[rom.]">ROMEO</rs>. </stage>
+<lb ed="F1" n="1392"/><stage type="entrance" about="[ fri.-l. rom.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs> and <rs type="person" about="[rom.]">ROMEO</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1393"/><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>So smile the heavens, upon this holy act,
 <lb ed="G"/><lb ed="F1" n="1394"/></l><l>That after hours with sorrow chide us not!
@@ -2239,7 +2239,7 @@ singing
 <lb ed="G"/><lb ed="F1" n="1405"/></l><l>And in the taste confounds the appetite:
 <lb ed="G"/><lb ed="F1" n="1406"/></l><l>Therefore love moderately; long love doth so;
 <lb ed="G"/><lb ed="F1" n="1407"/></l><l>Too swift arrives as tardy as too slow.
-<lb ed="F1" n="1408"/><stage type="entrance" about="[ome:involves jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
+<lb ed="F1" n="1408"/><stage type="entrance" about="[ jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="1409"/></l><l>Here comes the lady: O, so light a foot
 <lb ed="G"/><lb ed="F1" n="1410"/></l><l>Will ne'er wear out the everlasting flint:
 <lb ed="G"/><lb ed="F1" n="1411"/></l><l>A lover may bestride the gossamer
@@ -2269,7 +2269,7 @@ singing
 <lb ed="G"/><lb ed="F1" n="1429"/></l><l>For, by your leaves, you shall not stay alone
 <lb ed="G"/><lb ed="F1" n="1430"/></l><l>Till holy church incorporate two in one.
 
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp>
 </div2>
       </div1>
@@ -2279,7 +2279,7 @@ singing
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[rj:A_public_place.]" type="location">A public place.</stage>
-<lb ed="F1" n="1431"/><stage type="entrance" about="[ome:involves mer. ben. serv.]">Enter <rs type="person" about="[mer.]">MERCUTIO</rs>, <rs type="person" about="[ben.]">BENVOLIO</rs>, Page and <rs type="person" about="[serv.]">Servant</rs>s.</stage>
+<lb ed="F1" n="1431"/><stage type="entrance" about="[ mer. ben. serv.]">Enter <rs type="person" about="[mer.]">MERCUTIO</rs>, <rs type="person" about="[ben.]">BENVOLIO</rs>, Page and <rs type="person" about="[serv.]">Servant</rs>s.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1432"/><sp who="#ben."><speaker>Ben.</speaker><l>I pray thee, good <rs type="person" about="[mer.]">Mercutio</rs>, let's retire:
 <lb ed="G"/><lb ed="F1" n="1433"/></l><l>The day is hot, the <rs type="person" about="[cap.]">Capulet</rs>s abroad,
@@ -2331,7 +2331,7 @@ singing
 <lb ed="G"/><lb ed="F1" n="1466"/></p></sp><sp who="#ben."><speaker>Ben.</speaker><p>By my head, here come the <rs type="person" about="[cap.]">Capulet</rs>s.
 
 <lb ed="G"/><lb ed="F1" n="1467"/></p></sp><sp who="#mer."><speaker>Mer.</speaker><p>By my heel, I care not.
-<stage type="entrance" about="[ome:involves tyb.]">Enter <rs type="person" about="[tyb.]">TYBALT</rs> and others.</stage>
+<stage type="entrance" about="[ tyb.]">Enter <rs type="person" about="[tyb.]">TYBALT</rs> and others.</stage>
 
 <lb ed="G" n="40"/><lb ed="F1" n="1468"/></p></sp><sp who="#tyb."><speaker>Tyb.</speaker><l>Follow me close, for I will speak to them.
 <lb ed="G"/><lb ed="F1" n="1469"/></l><l>Gentlemen, good den: a word with one of you.
@@ -2361,7 +2361,7 @@ singing
 
 <lb ed="G"/><lb ed="F1" n="1485"/></l></sp><sp who="#mer."><speaker>Mer.</speaker><l>Men's eyes were made to look, and let them gaze;
 <lb ed="G"/><lb ed="F1" n="1486"/></l><l>I will not budge for no man's pleasure, I.
-<lb ed="F1" n="1487"/><stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<lb ed="F1" n="1487"/><stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1488"/></l></sp><sp who="#tyb."><speaker>Tyb.</speaker><l>Well, peace be with you, sir: here comes my man.
 
@@ -2426,7 +2426,7 @@ and flies with his followers.
 
 <lb ed="G"/><lb ed="F1" n="1527"/></l></sp><sp who="#mer."><speaker>Mer.</speaker><l>Ay, ay, a scratch, a scratch; marry, 'tis enough.
 <lb ed="G"/><lb ed="F1" n="1528"/></l><l>Where is my page?   Go, villain, fetch a surgeon.
-<stage type="exit" about="[ome:involves mer.]">Exit Page. </stage>
+<stage type="exit" about="[ mer.]">Exit Page. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1529"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>Courage, man; the hurt cannot be much.
 
@@ -2447,7 +2447,7 @@ and flies with his followers.
 <lb ed="G"/><lb ed="F1" n="1540"/></l><l>Or I shall faint. A plague o' both your houses!
 <lb ed="G"/><lb ed="F1" n="1541"/></l><l>They have made worms' meat of me: I have it,
 <lb ed="G"/><lb ed="F1" n="1542"/></l><l>And soundly too: your houses!
-<stage type="exit" about="[ome:involves mer. ben.]">Exeunt <rs type="person" about="[mer.]">Mercutio</rs> and <rs type="person" about="[ben.]">Benvolio</rs>.</stage>
+<stage type="exit" about="[ mer. ben.]">Exeunt <rs type="person" about="[mer.]">Mercutio</rs> and <rs type="person" about="[ben.]">Benvolio</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1543"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>This gentleman, the prince's near ally,
 <lb ed="G"/><lb ed="F1" n="1544"/></l><l>My very friend, hath got his mortal hurt
@@ -2456,7 +2456,7 @@ and flies with his followers.
 <lb ed="G"/><lb ed="F1" n="1547"/></l><l>Hath been my kinsman! O sweet <rs type="person" about="[jul.]">Juliet</rs>,
 <lb ed="G"/><lb ed="F1" n="1548"/></l><l>Thy beauty hath made me effeminate
 <lb ed="G" n="120"/><lb ed="F1" n="1549"/></l><l>And in my temper soften'd valour's steel!
-<lb ed="F1" n="1550"/><stage type="entrance" about="[ome:involves ben.]">Re-enter <rs type="person" about="[ben.]">BENVOLIO</rs>.</stage>
+<lb ed="F1" n="1550"/><stage type="entrance" about="[ ben.]">Re-enter <rs type="person" about="[ben.]">BENVOLIO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1551"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l>O <rs type="person" about="[rom.]">Romeo</rs>, <rs type="person" about="[rom.]">Romeo</rs>, brave <rs type="person" about="[mer.]">Mercutio</rs>'s dead!
 <lb ed="G"/><lb ed="F1" n="1552"/></l><l>That gallant spirit hath aspired the clouds,
@@ -2471,7 +2471,7 @@ and flies with his followers.
 <lb ed="G"/><lb ed="F1" n="1558"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>Alive, in triumph! and <rs type="person" about="[mer.]">Mercutio</rs> slain!
 <lb ed="G"/><lb ed="F1" n="1559"/></l><l>Away to heaven, respective lenity,
 <lb ed="G"/><lb ed="F1" n="1560"/></l><l>And fire-eyed fury be my conduct now!
-<stage type="entrance" about="[ome:involves tyb.]">Re-enter <rs type="person" about="[tyb.]">TYBALT</rs>.</stage>
+<stage type="entrance" about="[ tyb.]">Re-enter <rs type="person" about="[tyb.]">TYBALT</rs>.</stage>
 <lb ed="G" n="130"/><lb ed="F1" n="1561"/></l><l>Now, <rs type="person" about="[tyb.]">Tybalt</rs>, take the villain back again,
 <lb ed="G"/><lb ed="F1" n="1562"/></l><l>That late thou gavest me; for <rs type="person" about="[mer.]">Mercutio</rs>'s soul
 <lb ed="G"/><lb ed="F1" n="1563"/></l><l>Is but a little way above our heads,
@@ -2495,7 +2495,7 @@ and flies with his followers.
 
 <lb ed="G"/><lb ed="F1" n="1575"/></l></sp><sp who="#ben."><speaker>Ben.</speaker><l>Why dost thou stay?
 
-<lb ed="F1" n="1576"/><stage type="exit" about="[ome:involves rom.]">Exit <rs type="person" about="[rom.]">Romeo</rs>.</stage>
+<lb ed="F1" n="1576"/><stage type="exit" about="[ rom.]">Exit <rs type="person" about="[rom.]">Romeo</rs>.</stage>
 
 <lb ed="F1" n="1577"/>
 
@@ -2506,7 +2506,7 @@ and flies with his followers.
 
 <lb ed="G"/><lb ed="F1" n="1581"/></l></sp><sp who="#first-cit."><speaker>First Cit.</speaker><l>Up, sir, go with me;
 <lb ed="G"/><lb ed="F1" n="1582"/></l><l>I charge thee in the prince's name, obey.
-<lb ed="F1" n="1583"/><stage type="entrance" about="[ome:involves mon. cap.]">Enter Prince, attended; <rs type="person" about="[mon.]">MONTAGUE</rs>, <rs type="person" about="[cap.]">CAPULET</rs>, their <lb ed="F1" n="1584"/>Wives, and others.</stage>
+<lb ed="F1" n="1583"/><stage type="entrance" about="[ mon. cap.]">Enter Prince, attended; <rs type="person" about="[mon.]">MONTAGUE</rs>, <rs type="person" about="[cap.]">CAPULET</rs>, their <lb ed="F1" n="1584"/>Wives, and others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1585"/></l></sp><sp who="#prin."><speaker>Prin.</speaker><l>Where are the vile beginners of this fray?
 
@@ -2575,12 +2575,12 @@ and flies with his followers.
 <lb ed="G" n="201"/><lb ed="F1" n="1641"/></l><l>Bear hence this body, and attend our will:
 <lb ed="G"/><lb ed="F1" n="1642"/></l><l>Mercy but murders, pardoning those that kill.
 
-<lb ed="F1" n="1643"/><stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<lb ed="F1" n="1643"/><stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[rj:Capulet's_orchard.]" type="location"><rs type="person" about="[cap.]">Capulet</rs>'s orchard.</stage>
-<lb ed="F1" n="1644"/><stage type="entrance" about="[ome:involves jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
+<lb ed="F1" n="1644"/><stage type="entrance" about="[ jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1645"/><sp who="#jul."><speaker>Jul.</speaker><l>Gallop apace, you fiery-footed steeds,
 <lb ed="G"/><lb ed="F1" n="1646"/></l><l>Towards Phoebus' lodging: such a waggoner
@@ -2615,7 +2615,7 @@ and flies with his followers.
 <lb ed="G"/><lb ed="F1" n="1675"/></l><l>And may not wear them. O, here comes my nurse,
 <lb ed="G"/><lb ed="F1" n="1676"/><lb ed="F1" n="1677"/></l><l>And she brings news; and every tongue that speaks
 <lb ed="G"/><lb ed="F1" n="1678"/></l><l>But <rs type="person" about="[rom.]">Romeo</rs>'s name speaks heavenly eloquence.
-<stage type="entrance" about="[ome:involves nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>, with cords.</stage>
+<stage type="entrance" about="[ nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>, with cords.</stage>
 <lb ed="G"/><lb ed="F1" n="1679"/></l><l>Now, nurse, what news?   What hast thou there? <lb ed="F1" n="1680"/>the cords
 <lb ed="G"/></l><l>That <rs type="person" about="[rom.]">Romeo</rs> did thee fetch?
 
@@ -2756,17 +2756,17 @@ Throws them down.
 <lb ed="G"/><lb ed="F1" n="1796"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>O, find him! give this ring to my true knight,
 <lb ed="G"/><lb ed="F1" n="1797"/></l><l>And bid him come to take his last farewell.
 
-<lb ed="F1" n="1798"/><stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<lb ed="F1" n="1798"/><stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[rj:Friar_Laurence's_cell.]" type="location"><rs type="person" about="[fri.-l.]">Friar Laurence</rs>'s cell.</stage>
-<lb ed="F1" n="1799"/><stage type="entrance" about="[ome:involves fri.-l.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>.</stage>
+<lb ed="F1" n="1799"/><stage type="entrance" about="[ fri.-l.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1800"/><sp who="#fri.-l."><speaker>Fri. L.</speaker><l><rs type="person" about="[rom.]">Romeo</rs>, come forth; <lb ed="F1" n="1801"/>come forth, thou fearful man:
 <lb ed="G"/><lb ed="F1" n="1802"/></l><l>Affliction is enamour'd of thy parts,
 <lb ed="G"/><lb ed="F1" n="1803"/></l><l>And thou art wedded to calamity.
-<stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1804"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>Father, what news! <lb ed="F1" n="1805"/>what is the prince's doom?
 <lb ed="G"/><lb ed="F1" n="1806"/></l><l>What sorrow craves acquaintance at my hand,
@@ -2882,7 +2882,7 @@ tear thy hair,
 <lb ed="G"/><lb ed="F1" n="1894"/></l><l>I come from Lady <rs type="person" about="[jul.]">Juliet</rs>.
 
 <lb ed="G" n="80"/><lb ed="F1" n="1895"/></l></sp><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>Welcome, then.
-<stage type="entrance" about="[ome:involves nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<stage type="entrance" about="[ nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1896"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>O holy friar, O, tell me, holy friar,
 <lb ed="G"/><lb ed="F1" n="1897"/></l><l>Where is my lady's lord, where's <rs type="person" about="[rom.]">Romeo</rs>?
@@ -2984,7 +2984,7 @@ Drawing his sword,
 <lb ed="G"/><lb ed="F1" n="1980"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Here, sir, a ring she bid me give you, sir:
 <lb ed="G"/><lb ed="F1" n="1981"/></l><l>Hie you, make haste, for it grows very late.
 
-<stage type="exit" about="[ome:involves nurse.]">Exit.</stage>
+<stage type="exit" about="[ nurse.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1982"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>How well my comfort is revived by this!
@@ -3000,14 +3000,14 @@ Drawing his sword,
 <lb ed="G"/><lb ed="F1" n="1991"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>But that a joy past joy calls out on me,
 <lb ed="G"/><lb ed="F1" n="1992"/></l><l>It were grief, so brief to part with thee:
 <lb ed="G"/><lb ed="F1" n="1993"/></l><l>Farewell.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 
 </l></sp></div2>
 <div2 type="scene" n="4" org="uniform" sample="complete">
 <head>SCENE IV</head>
 
 <stage about="[rj:A_room_in_Capulet's_house.]" type="location">A room in <rs type="person" about="[cap.]">Capulet</rs>'s house.</stage>
-<lb ed="F1" n="1994"/><stage type="entrance" about="[ome:involves cap. la.-cap. par.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>, and <rs type="person" about="[par.]">PARIS</rs>.</stage>
+<lb ed="F1" n="1994"/><stage type="entrance" about="[ cap. la.-cap. par.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>, and <rs type="person" about="[par.]">PARIS</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1995"/><sp who="#cap."><speaker>Cap.</speaker><l>Things have fall'n out, sir, so unluckily,
 <lb ed="G"/><lb ed="F1" n="1996"/></l><l>That we have had no time to move our daughter:
@@ -3053,12 +3053,12 @@ Drawing his sword,
 <lb ed="G"/><lb ed="F1" n="2030"/></l><l>Afore me! it is so very late,
 <lb ed="G"/></l><l>That we may call it early by and by.
 <lb ed="G"/><lb ed="F1" n="2031"/></l><l>Good night.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="5" org="uniform" sample="complete">
 <head>SCENE V</head>
 <stage about="[rj:Capulet's_orchard.]" type="location"><rs type="person" about="[cap.]">Capulet</rs>'s orchard.</stage>
-<lb ed="F1" n="2032"/><stage type="entrance" about="[ome:involves rom. jul.]">Enter <rs type="person" about="[rom.]">ROMEO</rs> and <rs type="person" about="[jul.]">JULIET</rs> above, at the window.</stage>
+<lb ed="F1" n="2032"/><stage type="entrance" about="[ rom. jul.]">Enter <rs type="person" about="[rom.]">ROMEO</rs> and <rs type="person" about="[jul.]">JULIET</rs> above, at the window.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2033"/><sp who="#jul."><speaker>Jul.</speaker><l>Wilt thou be gone? it is not yet near day:
 <lb ed="G"/><lb ed="F1" n="2034"/></l><l>It was the nightingale, and not the lark,
@@ -3101,7 +3101,7 @@ Drawing his sword,
 <lb ed="G"/><lb ed="F1" n="2067"/></l><l>O, now be gone; more light and light it grows.
 
 <lb ed="G"/><lb ed="F1" n="2068"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>More light and light; more dark and dark our woes!
-<lb ed="F1" n="2069"/><stage type="entrance" about="[ome:involves nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>, to the chamber.</stage>
+<lb ed="F1" n="2069"/><stage type="entrance" about="[ nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>, to the chamber.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2070"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Madam
 
@@ -3109,7 +3109,7 @@ Drawing his sword,
 
 <lb ed="G"/><lb ed="F1" n="2072"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Your lady mother is coming to your chamber:
 <lb ed="G"/><lb ed="F1" n="2073"/></l><l>The day is broke; be wary, look about.
-<stage type="exit" about="[ome:involves nurse.]">Exit.</stage>
+<stage type="exit" about="[ nurse.]">Exit.</stage>
 
 
 <lb ed="G" n="41"/><lb ed="F1" n="2074"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Then, window, let day in, and let life out.
@@ -3141,7 +3141,7 @@ He goeth down.
 <lb ed="G"/><lb ed="F1" n="2091"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>And trust me, love, in my eye so do you:
 <lb ed="G"/><lb ed="F1" n="2092"/></l><l>Dry sorrow drinks our blood. Adieu, adieu!
 
-<stage type="exit" about="[ome:involves rom.]">Exit.</stage>
+<stage type="exit" about="[ rom.]">Exit.</stage>
 
 
 <lb ed="G" n="60"/><lb ed="F1" n="2093"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>O fortune, fortune! all men call thee fickle:
@@ -3156,7 +3156,7 @@ He goeth down.
 <lb ed="G"/><lb ed="F1" n="2100"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Who is't that calls? is it my lady mother?
 <lb ed="G"/><lb ed="F1" n="2101"/></l><l>Is she not down so late, or up so early?
 <lb ed="G"/><lb ed="F1" n="2102"/></l><l>What unaccustom'd cause procures her hither?
-<stage type="entrance" about="[ome:involves la.-cap.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>.</stage>
+<stage type="entrance" about="[ la.-cap.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2103"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>Why, how now, <rs type="person" about="[jul.]">Juliet</rs>!
 
@@ -3239,7 +3239,7 @@ He goeth down.
 
 <lb ed="G"/><lb ed="F1" n="2162"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>Here comes your father; tell him so yourself,
 <lb ed="G"/><lb ed="F1" n="2163"/></l><l>And see how he will take it at your hands.
-<lb ed="F1" n="2164"/><stage type="entrance" about="[ome:involves cap. nurse.]">Enter <rs type="person" about="[cap.]">CAPULET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<lb ed="F1" n="2164"/><stage type="entrance" about="[ cap. nurse.]">Enter <rs type="person" about="[cap.]">CAPULET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2165"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>When the sun sets, the air doth drizzle dew;
 <lb ed="G"/><lb ed="F1" n="2166"/></l><l>But for the sunset of my brother's son
@@ -3332,7 +3332,7 @@ He goeth down.
 <lb ed="G"/><lb ed="F1" n="2240"/></l><l>For, by my soul, I'll ne'er acknowledge thee,
 <lb ed="G"/><lb ed="F1" n="2241"/></l><l>Nor what is mine shall never do thee good:
 <lb ed="G"/><lb ed="F1" n="2242"/></l><l>Trust to't, bethink you; I'll not be forsworn.
-<stage type="exit" about="[ome:involves cap.]">Exit. </stage>
+<stage type="exit" about="[ cap.]">Exit. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2243"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Is there no pity sitting in the clouds,
@@ -3345,7 +3345,7 @@ He goeth down.
 <lb ed="G"/><lb ed="F1" n="2249"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>Talk not to me, for I'll not speak a word:
 <lb ed="G"/><lb ed="F1" n="2250"/></l><l>Do as thou wilt, for I have done with thee.
 
-<stage type="exit" about="[ome:involves la.-cap.]">Exit.</stage>
+<stage type="exit" about="[ la.-cap.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2251"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>O God!--<lb ed="F1" n="2252"/>O nurse, how shall this be prevented?
@@ -3388,7 +3388,7 @@ He goeth down.
 <lb ed="G"/><lb ed="F1" n="2283"/></l><l>To make confession and to be absolved.
 
 <lb ed="G"/><lb ed="F1" n="2284"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Marry, I will; and this is wisely done.
-<stage type="exit" about="[ome:involves nurse.]">Exit. </stage>
+<stage type="exit" about="[ nurse.]">Exit. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2285"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Ancient damnation!   O most wicked fiend!
@@ -3400,7 +3400,7 @@ He goeth down.
 <lb ed="G" n="241"/><lb ed="F1" n="2291"/></l><l>I'll to the friar, to know his remedy:
 <lb ed="G"/><lb ed="F1" n="2292"/></l><l>If all else fail, myself have power to die.
 
-<stage type="exit" about="[ome:involves jul.]">Exit.</stage>
+<stage type="exit" about="[ jul.]">Exit.</stage>
 </l></sp>
 </div2>
       </div1>
@@ -3410,7 +3410,7 @@ He goeth down.
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[rj:Friar_Laurence's_cell.]" type="location"><rs type="person" about="[fri.-l.]">Friar Laurence</rs>'s cell.</stage>
-<lb ed="F1" n="2293"/><stage type="entrance" about="[ome:involves fri.-l. par.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs> and <rs type="person" about="[par.]">PARIS</rs>. </stage>
+<lb ed="F1" n="2293"/><stage type="entrance" about="[ fri.-l. par.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs> and <rs type="person" about="[par.]">PARIS</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2294"/><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>On Thursday, sir? the time is very short.
 
@@ -3433,7 +3433,7 @@ He goeth down.
 
 <lb ed="G"/><lb ed="F1" n="2309"/></l></sp><sp who="#fri.-l."><speaker>Fri. L.</speaker>Aside<l>I would I knew not why it should be slow'd.
 <lb ed="G"/><lb ed="F1" n="2310"/></l><l>Look, sir, here comes the lady towards my cell.
-<lb ed="F1" n="2311"/><stage type="entrance" about="[ome:involves jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
+<lb ed="F1" n="2311"/><stage type="entrance" about="[ jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2312"/></l></sp><sp who="#par."><speaker>Par.</speaker><l>Happily met, my lady and my wife!
 
@@ -3481,7 +3481,7 @@ He goeth down.
 <lb ed="G"/><lb ed="F1" n="2337"/></l><l><rs type="person" about="[jul.]">Juliet</rs>, on Thursday early will I rouse ye:
 <lb ed="G"/><lb ed="F1" n="2338"/></l><l>Till then, adieu; and keep this holy kiss.
 
-<stage type="exit" about="[ome:involves par.]">Exit.</stage>
+<stage type="exit" about="[ par.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2339"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>O, shut the door and when thou hast done so,
@@ -3575,14 +3575,14 @@ He goeth down.
 
 <lb ed="G"/><lb ed="F1" n="2420"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Love give me strength <lb ed="F1" n="2421"/>and strength shall help afford.
 <lb ed="G"/><lb ed="F1" n="2422"/></l><l>Farewell, dear father!
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[rj:Hall_in_Capulet's_house.]" type="location">Hall in <rs type="person" about="[cap.]">Capulet</rs>'s house.</stage>
-<lb ed="F1" n="2423"/><stage type="entrance" about="[ome:involves cap. la.-cap. nurse.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>, <rs type="person" about="[nurse.]">Nurse</rs>, and <lb ed="F1" n="2424"/>two Servingmen.</stage>
+<lb ed="F1" n="2423"/><stage type="entrance" about="[ cap. la.-cap. nurse.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>, <rs type="person" about="[nurse.]">Nurse</rs>, and <lb ed="F1" n="2424"/>two Servingmen.</stage>
 
-<lb ed="G"/><lb ed="F1" n="2425"/><sp who="#cap."><speaker>Cap.</speaker><l>So many guests invite as here are writ. <stage type="exit" about="[ome:involves first-serv.]">Exit <rs type="person" about="[first-serv.]">First Servant</rs>. </stage>
+<lb ed="G"/><lb ed="F1" n="2425"/><sp who="#cap."><speaker>Cap.</speaker><l>So many guests invite as here are writ. <stage type="exit" about="[ first-serv.]">Exit <rs type="person" about="[first-serv.]">First Servant</rs>. </stage>
 <lb ed="G"/><lb ed="F1" n="2426"/></l><l>Sirrah, go hire me twenty cunning cooks.
 
 <lb ed="G"/><lb ed="F1" n="2427"/></l></sp><sp who="#sec.-serv."><speaker>Sec. Serv.</speaker><l>You shall have none ill, sir; for
@@ -3594,7 +3594,7 @@ He goeth down.
 <lb ed="G"/>cannot lick his <lb ed="F1" n="2431"/>own fingers: therefore he that
 <lb ed="G"/>cannot lick his fingers <lb ed="F1" n="2432"/>goes not with me.
 
-<lb ed="G"/><lb ed="F1" n="2433"/></p></sp><sp who="#cap."><speaker>Cap.</speaker><l>Go, be gone. <stage type="exit" about="[ome:involves serv.]">Exit Sec. <rs type="person" about="[serv.]">Servant</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="2433"/></p></sp><sp who="#cap."><speaker>Cap.</speaker><l>Go, be gone. <stage type="exit" about="[ serv.]">Exit Sec. <rs type="person" about="[serv.]">Servant</rs>.</stage>
 <lb ed="G"/></l><l>We shall be much unfurnish'd for this <lb ed="F1" n="2434"/>time.
 <lb ed="G"/></l><l>What, is my daughter gone to <rs type="person" about="[fri.-l.]">Friar Laurence</rs>?
 
@@ -3605,7 +3605,7 @@ He goeth down.
 <lb ed="F1" n="2438"/>
 
 <lb ed="G"/><lb ed="F1" n="2439"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>See where she comes from shrift <lb ed="F1" n="2440"/>with merry look.
-<stage type="entrance" about="[ome:involves jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
+<stage type="entrance" about="[ jul.]">Enter <rs type="person" about="[jul.]">JULIET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2441"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>How now, my headstrong! <lb ed="F1" n="2442"/>where have you been gadding?
 
@@ -3637,7 +3637,7 @@ He goeth down.
 
 <lb ed="G"/><lb ed="F1" n="2463"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>Good nurse, go with her: <lb ed="F1" n="2464"/>we'll to church to-morrow.
 
-<lb ed="F1" n="2465"/><stage type="exit" about="[ome:involves jul. nurse.]">Exeunt <rs type="person" about="[jul.]">Juliet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<lb ed="F1" n="2465"/><stage type="exit" about="[ jul. nurse.]">Exeunt <rs type="person" about="[jul.]">Juliet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2466"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>We shall be short in our provision:
@@ -3656,14 +3656,14 @@ He goeth down.
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[rj:Juliet's_chamber.]" type="location"><rs type="person" about="[jul.]">Juliet</rs>'s chamber.</stage>
-<lb ed="F1" n="2478"/><stage type="entrance" about="[ome:involves jul. nurse.]">Enter <rs type="person" about="[jul.]">JULIET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<lb ed="F1" n="2478"/><stage type="entrance" about="[ jul. nurse.]">Enter <rs type="person" about="[jul.]">JULIET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2479"/><sp who="#jul."><speaker>Jul.</speaker><l>Ay, those attires are best; but, gentle nurse,
 <lb ed="G"/><lb ed="F1" n="2480"/></l><l>I pray thee, leave me to myself to-night;
 <lb ed="G"/><lb ed="F1" n="2481"/></l><l>For I have need of many orisons
 <lb ed="G"/><lb ed="F1" n="2482"/></l><l>To move the heavens to smile upon my state,
 <lb ed="G"/><lb ed="F1" n="2483"/></l><l>Which, well thou know'st, is cross and full of sin.
-<lb ed="F1" n="2484"/><stage type="entrance" about="[ome:involves la.-cap.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>.</stage>
+<lb ed="F1" n="2484"/><stage type="entrance" about="[ la.-cap.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2485"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>What, are you busy, ho? need you my help?
 
@@ -3677,7 +3677,7 @@ He goeth down.
 <lb ed="G"/><lb ed="F1" n="2492"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>Good night:
 <lb ed="G"/><lb ed="F1" n="2493"/></l><l>Get thee to bed, and rest; for thou hast need.
 
-<stage type="exit" about="[ome:involves la.-cap. nurse.]">Exeunt <rs type="person" about="[la.-cap.]">Lady Capulet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<stage type="exit" about="[ la.-cap. nurse.]">Exeunt <rs type="person" about="[la.-cap.]">Lady Capulet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2494"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Farewell!   <lb ed="F1" n="2495"/>God knows when we shall meet again.
@@ -3731,12 +3731,12 @@ Laying down her dagger.
 <div2 type="scene" n="4" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[rj:Hall_in_Capulet's_house.]" type="location">Hall in <rs type="person" about="[cap.]">Capulet</rs>'s house.</stage>
-<stage type="entrance" about="[ome:involves la.-cap. nurse.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>. </stage>
+<stage type="entrance" about="[ la.-cap. nurse.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs> and <rs type="person" about="[nurse.]">Nurse</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2540"/><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>Hold, <lb ed="F1" n="2541"/>take these keys, and fetch more spices, nurse.
 
 <lb ed="G"/><lb ed="F1" n="2542"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>They call for dates and quinces in the pastry.
-<lb ed="F1" n="2543"/><stage type="entrance" about="[ome:involves cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>.</stage>
+<lb ed="F1" n="2543"/><stage type="entrance" about="[ cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2544"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>Come, stir, stir, stir! <lb ed="F1" n="2545"/>the second cock hath crow'd,
 <lb ed="G"/><lb ed="F1" n="2546"/></l><l>The curfew-bell hath rung, 'tis three o'clock:
@@ -3753,7 +3753,7 @@ Laying down her dagger.
 <lb ed="G"/><lb ed="F1" n="2554"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>Ay, you have been a mouse-hunt in your time;
 <lb ed="G"/><lb ed="F1" n="2555"/></l><l>But I will watch you from such watching now.
 
-<lb ed="F1" n="2556"/><stage type="exit" about="[ome:involves la.-cap. nurse.]">Exeunt <rs type="person" about="[la.-cap.]">Lady Capulet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<lb ed="F1" n="2556"/><stage type="exit" about="[ la.-cap. nurse.]">Exeunt <rs type="person" about="[la.-cap.]">Lady Capulet</rs> and <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2557"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>A jealous-hood, a jealous-hood!
@@ -3765,13 +3765,13 @@ Laying down her dagger.
 
 <lb ed="G"/><lb ed="F1" n="2560"/></l></sp><sp who="#first-serv."><speaker>First Serv.</speaker><l>Things for the cook, sir; but I know not what.
 
-<lb ed="G"/><lb ed="F1" n="2561"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>Make haste, make haste. <stage type="exit" about="[ome:involves cap.]">Exit First Serv. </stage>
+<lb ed="G"/><lb ed="F1" n="2561"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>Make haste, make haste. <stage type="exit" about="[ cap.]">Exit First Serv. </stage>
 <lb ed="G"/></l><l>Sirrah, fetch drier logs:
 <lb ed="G"/><lb ed="F1" n="2562"/></l><l>Call <rs type="person" about="[pet.]">Peter</rs>, he will show thee where they are.
 
 <lb ed="G"/><lb ed="F1" n="2563"/></l></sp><sp who="#first-serv."><speaker>Sec. Serv.</speaker><l>I have a head, sir, that will find out logs,
 <lb ed="G"/><lb ed="F1" n="2564"/></l><l>And never trouble <rs type="person" about="[pet.]">Peter</rs> for the matter.
-<stage type="exit" about="[ome:involves first-serv.]">Exit.</stage>
+<stage type="exit" about="[ first-serv.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2565"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>Mass, and well said; a merry whoreson, ha!
@@ -3782,17 +3782,17 @@ Laying down her dagger.
 Music within.
 
 <lb ed="G"/><lb ed="F1" n="2570"/></l><l><rs type="person" about="[nurse.]">Nurse</rs>! Wife! What, ho! What, nurse, I say!
-<lb ed="F1" n="2571"/><stage type="entrance" about="[ome:involves nurse.]">Re-enter <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<lb ed="F1" n="2571"/><stage type="entrance" about="[ nurse.]">Re-enter <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="2572"/></l><l>Go waken <rs type="person" about="[jul.]">Juliet</rs>, go and trim her up;
 <lb ed="G"/><lb ed="F1" n="2573"/></l><l>I'll go and chat with <rs type="person" about="[par.]">Paris</rs>: hie, make haste,
 <lb ed="G"/><lb ed="F1" n="2574"/></l><l>Make haste; the bridegroom he is come already:
 <lb ed="G"/><lb ed="F1" n="2575"/></l><l>Make haste, I say.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="5" org="uniform" sample="complete">
 <head>SCENE V</head>
 <stage about="[rj:Juliet's_chamber.]" type="location"><rs type="person" about="[jul.]">Juliet</rs>'s chamber.</stage>
-<stage type="entrance" about="[ome:involves nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
+<stage type="entrance" about="[ nurse.]">Enter <rs type="person" about="[nurse.]">Nurse</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2576"/><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Mistress! what, mistress! <rs type="person" about="[jul.]">Juliet</rs>! fast, I warrant her, she:
 <lb ed="G"/><lb ed="F1" n="2577"/></l><l>Why, lamb! why, lady! fie, you slug-a-bed!
@@ -3811,7 +3811,7 @@ Undraws the curtains.
 <lb ed="G"/><lb ed="F1" n="2589"/></l><l>Alas, alas!   Help, help! my lady's dead!
 <lb ed="G"/><lb ed="F1" n="2590"/></l><l>O, well-a-day, that ever I was born!
 <lb ed="G"/><lb ed="F1" n="2591"/></l><l>Some aqua vita, ho!   My lord! my lady!
-<stage type="entrance" about="[ome:involves la.-cap.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>.</stage>
+<stage type="entrance" about="[ la.-cap.]">Enter <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2592"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>What noise is here?
 
@@ -3824,7 +3824,7 @@ Undraws the curtains.
 <lb ed="G"/><lb ed="F1" n="2596"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>O me, O me! My child, my only life,
 <lb ed="G" n="20"/><lb ed="F1" n="2597"/></l><l>Revive, look up, or I will die with thee!
 <lb ed="G"/><lb ed="F1" n="2598"/></l><l>Help, help! Call help.
-<lb ed="F1" n="2599"/><stage type="entrance" about="[ome:involves cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>.</stage>
+<lb ed="F1" n="2599"/><stage type="entrance" about="[ cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2600"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>For shame, bring <rs type="person" about="[jul.]">Juliet</rs> forth; her lord is come.
 
@@ -3844,7 +3844,7 @@ Undraws the curtains.
 
 <lb ed="G"/><lb ed="F1" n="2610"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>Death, that hath ta'en her hence to make me wail,
 <lb ed="G"/><lb ed="F1" n="2611"/></l><l>Ties up my tongue, and will not let me speak.
-<lb ed="F1" n="2612"/><stage type="entrance" about="[ome:involves fri.-l. par.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs> and <rs type="person" about="[par.]">PARIS</rs>, with Musicians.</stage>
+<lb ed="F1" n="2612"/><stage type="entrance" about="[ fri.-l. par.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs> and <rs type="person" about="[par.]">PARIS</rs>, with Musicians.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2613"/></l></sp><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>Come, is the bride ready to go to church?
 
@@ -3918,7 +3918,7 @@ Undraws the curtains.
 <lb ed="G"/><lb ed="F1" n="2673"/></l><l>To follow this fair corse unto her grave:
 <lb ed="G"/><lb ed="F1" n="2674"/></l><l>The heavens do lour upon you for some ill;
 <lb ed="G"/><lb ed="F1" n="2675"/></l><l>Move them   no more by crossing their high will.
-<stage type="exit" about="[ome:involves cap. la.-cap.]">Exeunt <rs type="person" about="[cap.]">Capulet</rs>, <rs type="person" about="[la.-cap.]">Lady Capulet</rs>, </stage>
+<stage type="exit" about="[ cap. la.-cap.]">Exeunt <rs type="person" about="[cap.]">Capulet</rs>, <rs type="person" about="[la.-cap.]">Lady Capulet</rs>, </stage>
 
 <lb ed="G"/></l><l><rs type="person" about="[par.]">Paris</rs>, and Friar.
 
@@ -3928,12 +3928,12 @@ and be gone.
 <lb ed="G"/><lb ed="F1" n="2677"/></l></sp><sp who="#nurse."><speaker><rs type="person" about="[nurse.]">Nurse</rs>.</speaker><l>Honest good fellows, ah, put up, put up;
 <lb ed="G"/><lb ed="F1" n="2678"/></l><l>For, well you know, this is a pitiful case.
 
-<stage type="exit" about="[ome:involves nurse.]">Exit.</stage>
+<stage type="exit" about="[ nurse.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2679"/></l></sp><sp who="#first-mus."><speaker>First Mus.</speaker><p>Ay, by my troth, the case may
 <lb ed="G"/>be amended.
-<lb ed="F1" n="2680"/><stage type="entrance" about="[ome:involves pet.]">Enter <rs type="person" about="[pet.]">PETER</rs>.</stage>
+<lb ed="F1" n="2680"/><stage type="entrance" about="[ pet.]">Enter <rs type="person" about="[pet.]">PETER</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2681"/></p></sp><sp who="#pet."><speaker>Pet.</speaker><p>Musicians,  O, musicians, <lb ed="F1" n="2682"/>'Heart's
 <lb ed="G"/>ease, Heart's ease:' <lb ed="F1" n="2683"/>O, an you will have me
@@ -4001,7 +4001,7 @@ and be gone.
 <lb ed="G"/>gold for sounding:
 <lb ed="G"/><lb ed="F1" n="2717"/>'Then music with her silver sound
 <lb ed="G"/>With speedy help <lb ed="F1" n="2718"/>doth lend redress.'
-<stage type="exit" about="[ome:involves pet.]">Exit.</stage>
+<stage type="exit" about="[ pet.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2719"/></p></sp><sp who="#first-mus."><speaker>First Mus.</speaker><p>What a pestilent knave is this
@@ -4010,7 +4010,7 @@ and be gone.
 <lb ed="G"/><lb ed="F1" n="2720"/></p></sp><sp who="#sec.-mus."><speaker>Sec. Mus.</speaker><p>Hang him, Jack!   Come, we'll
 <lb ed="G"/>in here; tarry for <lb ed="F1" n="2721"/>the mourners, and stay
 <lb ed="G"/>dinner.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </p></sp>
 </div2>
       </div1>
@@ -4020,7 +4020,7 @@ and be gone.
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[rj:Mantua._A_street.]" type="location">Mantua. A street.</stage>
-<lb ed="F1" n="2722"/><stage type="entrance" about="[ome:involves rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
+<lb ed="F1" n="2722"/><stage type="entrance" about="[ rom.]">Enter <rs type="person" about="[rom.]">ROMEO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2723"/><sp who="#rom."><speaker>Rom.</speaker><l>If I may trust the flattering truth of sleep,
 <lb ed="G"/><lb ed="F1" n="2724"/></l><l>My dreams presage some joyful news at hand:
@@ -4033,7 +4033,7 @@ and be gone.
 <lb ed="G"/><lb ed="F1" n="2731"/></l><l>That I revived, and was an emperor.
 <lb ed="G" n="10"/><lb ed="F1" n="2732"/></l><l>Ah me! how sweet is love itself possess'd,
 <lb ed="G"/><lb ed="F1" n="2733"/></l><l>Where but love's shadows are so rich in joy!
-<lb ed="F1" n="2734"/><stage type="entrance" about="[ome:involves bal.]">Enter <rs type="person" about="[bal.]">BALTHASAR</rs>, booted.</stage>
+<lb ed="F1" n="2734"/><stage type="entrance" about="[ bal.]">Enter <rs type="person" about="[bal.]">BALTHASAR</rs>, booted.</stage>
 <lb ed="G"/><lb ed="F1" n="2735"/></l><l>News from Verona!--How now, <rs type="person" about="[bal.]">Balthasar</rs>!
 <lb ed="G"/><lb ed="F1" n="2736"/></l><l>Dost thou not bring me letters from the friar?
 <lb ed="G"/><lb ed="F1" n="2737"/></l><l>How doth my lady? Is my father well?
@@ -4065,7 +4065,7 @@ and be gone.
 
 <lb ed="G"/><lb ed="F1" n="2759"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>No matter: get thee gone,
 <lb ed="G"/><lb ed="F1" n="2760"/></l><l>And hire those horses; I'll be with thee straight.
-<stage type="exit" about="[ome:involves bal.]">Exit <rs type="person" about="[bal.]">Balthasar</rs>. </stage>
+<stage type="exit" about="[ bal.]">Exit <rs type="person" about="[bal.]">Balthasar</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2761"/></l><l>Well, <rs type="person" about="[jul.]">Juliet</rs>, I will lie with thee to-night.
 <lb ed="G"/><lb ed="F1" n="2762"/></l><l>Let's see for means: O mischief, thou art swift
@@ -4131,15 +4131,15 @@ and be gone.
 <lb ed="G"/><lb ed="F1" n="2815"/></l><l>Come, cordial and not poison, go with me
 <lb ed="G"/><lb ed="F1" n="2816"/></l><l>To <rs type="person" about="[jul.]">Juliet</rs>'s grave; for there must I use thee.
 
-<lb ed="F1" n="2817"/><stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<lb ed="F1" n="2817"/><stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[rj:Friar_Laurence's_cell.]" type="location"><rs type="person" about="[fri.-l.]">Friar Laurence</rs>'s cell.</stage>
-<lb ed="F1" n="2818"/><stage type="entrance" about="[ome:involves fri.-j.]">Enter <rs type="person" about="[fri.-j.]">FRIAR JOHN</rs>.</stage>
+<lb ed="F1" n="2818"/><stage type="entrance" about="[ fri.-j.]">Enter <rs type="person" about="[fri.-j.]">FRIAR JOHN</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2819"/><sp who="#fri.-j."><speaker>Fri. J.</speaker><l>Holy Franciscan friar! brother, ho!
-<lb ed="F1" n="2820"/><stage type="entrance" about="[ome:involves fri.-l.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>.</stage>
+<lb ed="F1" n="2820"/><stage type="entrance" about="[ fri.-l.]">Enter <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2821"/></l></sp><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>This same should be the voice of <rs type="person" about="[fri.-j.]">Friar John</rs>.
 <lb ed="G"/><lb ed="F1" n="2822"/></l><l>Welcome from Mantua: what says <rs type="person" about="[rom.]">Romeo</rs>?
@@ -4169,7 +4169,7 @@ and be gone.
 
 <lb ed="G"/><lb ed="F1" n="2842"/></l></sp><sp who="#fri.-j."><speaker>Fri. J.</speaker><l>Brother, I'll go and bring it thee,
 
-<stage type="exit" about="[ome:involves fri.-j.]">Exit.</stage>
+<stage type="exit" about="[ fri.-j.]">Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2843"/></l></sp><sp who="#fri.-l."><speaker>Fri. L.</speaker><l>Now must I to the monument alone;
@@ -4179,12 +4179,12 @@ and be gone.
 <lb ed="G"/><lb ed="F1" n="2847"/></l><l>But I will write again to Mantua,
 <lb ed="G" n="29"/><lb ed="F1" n="2848"/></l><l>And keep her at my cell till <rs type="person" about="[rom.]">Romeo</rs> come;
 <lb ed="G"/><lb ed="F1" n="2849"/></l><l>Poor living corse, closed in a dead man's tomb!
-<lb ed="F1" n="2850"/><stage type="exit" about="[ome:involves fri.-l.]">Exit. </stage>
+<lb ed="F1" n="2850"/><stage type="exit" about="[ fri.-l.]">Exit. </stage>
 </l></sp></div2>
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[rj:A_churchyard;_in_it_a_tomb_belonging_to_the_Capulets.]" type="location">A churchyard; in it a tomb belonging to the <rs type="person" about="[cap.]">Capulet</rs>s.</stage>
-<lb ed="F1" n="2851"/><stage type="entrance" about="[ome:involves par.]">Enter <rs type="person" about="[par.]">PARIS</rs>, and his Page bearing flowers  and a torch. </stage>
+<lb ed="F1" n="2851"/><stage type="entrance" about="[ par.]">Enter <rs type="person" about="[par.]">PARIS</rs>, and his Page bearing flowers  and a torch. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2852"/><sp who="#par."><speaker>Par.</speaker><l>Give me thy torch, boy: hence, and stand aloof:
@@ -4215,7 +4215,7 @@ Retires.
 <lb ed="G" n="20"/><lb ed="F1" n="2872"/></l><l>To cross my obsequies and true love's rite?
 <lb ed="G"/><lb ed="F1" n="2873"/></l><l>What, with a torch! muffle me, night, awhile.
 Retires.
-<lb ed="F1" n="2874"/><stage type="entrance" about="[ome:involves rom. bal.]">Enter <rs type="person" about="[rom.]">ROMEO</rs> and <rs type="person" about="[bal.]">BALTHASAR</rs>, with a torch, mattock, &amp;c.</stage>
+<lb ed="F1" n="2874"/><stage type="entrance" about="[ rom. bal.]">Enter <rs type="person" about="[rom.]">ROMEO</rs> and <rs type="person" about="[bal.]">BALTHASAR</rs>, with a torch, mattock, &amp;c.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2875"/></l></sp><sp who="#rom."><speaker>Rom.</speaker><l>Give me that mattock and the wrenching iron.
 <lb ed="G"/><lb ed="F1" n="2876"/></l><l>Hold, take this letter: early in the morning
@@ -4286,7 +4286,7 @@ They fight.
 
 
 <lb ed="G"/><lb ed="F1" n="2924"/></l></sp><sp who="#page."><speaker>Page.</speaker><l>O Lord, they fight!   I will go call the watch.
-<stage type="exit" about="[ome:involves page.]">Exit. </stage>
+<stage type="exit" about="[ page.]">Exit. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2925"/></l></sp><sp who="#par."><speaker>Par.</speaker><l>O, I am slain! Falls.
@@ -4417,7 +4417,7 @@ Noise within.
 <lb ed="G"/></l><l>I dare no longer stay.
 
 <lb ed="G"/><lb ed="F1" n="3023"/></l></sp><sp who="#jul."><speaker>Jul.</speaker><l>Go, get thee hence, for I will not away.
-<stage type="exit" about="[ome:involves jul.]">Exit Fri. L. </stage>
+<stage type="exit" about="[ jul.]">Exit Fri. L. </stage>
 <lb ed="G" n="161"/><lb ed="F1" n="3024"/></l><l>What's here? a cup, closed in my true love's hand?
 <lb ed="G"/><lb ed="F1" n="3025"/></l><l>Poison, I see, hath been his timeless end:
 <lb ed="G"/><lb ed="F1" n="3026"/></l><l>O churl! drunk all, and left no friendly drop
@@ -4434,7 +4434,7 @@ Kisses him.
 Snatching <rs type="person" about="[rom.]">Romeo</rs>'s dagger.
 <lb ed="G" n="170"/><lb ed="F1" n="3035"/></l><l>This is thy sheath Stabs herself ; there rust, and let me die.
 Falls on <rs type="person" about="[rom.]">Romeo</rs>'s body, and dies.
-<stage type="entrance" about="[ome:involves par.]">Enter Watch, with the Page of <rs type="person" about="[par.]">PARIS</rs>.</stage>
+<stage type="entrance" about="[ par.]">Enter Watch, with the Page of <rs type="person" about="[par.]">PARIS</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="3036"/></l></sp><sp who="#page."><speaker>Page.</speaker><p>This is the place; <lb ed="F1" n="3037"/>there, where the
 <lb ed="G"/> torch doth burn.
@@ -4449,23 +4449,23 @@ Falls on <rs type="person" about="[rom.]">Romeo</rs>'s body, and dies.
 <lb ed="G"/><lb ed="F1" n="3046"/></l><l>We see the ground whereon these woes do lie;
 <lb ed="G"/><lb ed="F1" n="3047"/></l><l>But the true ground of all these piteous woes
 <lb ed="G" n="181"/><lb ed="F1" n="3048"/></l><l>We cannot without circumstance descry.
-<lb ed="F1" n="3049"/><stage type="entrance" about="[ome:involves bal.]">Re-enter some of the Watch, with <rs type="person" about="[bal.]">BALTHASAR</rs>.</stage>
+<lb ed="F1" n="3049"/><stage type="entrance" about="[ bal.]">Re-enter some of the Watch, with <rs type="person" about="[bal.]">BALTHASAR</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="3050"/></l></sp><sp who="#sec.-watch."><speaker>Sec. Watch.</speaker><l>Here's <rs type="person" about="[rom.]">Romeo</rs>'s man; <lb ed="F1" n="3051"/>we found him in the churchyard.
 
 <lb ed="G"/><lb ed="F1" n="3052"/></l></sp><sp who="#first-watch."><speaker>First Watch.</speaker><l>Hold him in safety, till the prince come hither.
-<lb ed="F1" n="3053"/><stage type="entrance" about="[ome:involves fri.-l.]">Re-enter others of the Watch, with <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>.</stage>
+<lb ed="F1" n="3053"/><stage type="entrance" about="[ fri.-l.]">Re-enter others of the Watch, with <rs type="person" about="[fri.-l.]">FRIAR LAURENCE</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="3054"/></l></sp><sp who="#third-watch."><speaker>Third Watch.</speaker><l>Here is a friar, that trembles, sighs, and weeps:
 <lb ed="G"/><lb ed="F1" n="3055"/></l><l>We took this mattock and this spade from him,
 <lb ed="G"/><lb ed="F1" n="3056"/></l><l>As he was coming from this churchyard side.
 
 <lb ed="G"/><lb ed="F1" n="3057"/></l></sp><sp who="#first-watch."><speaker>First Watch.</speaker><l>A great suspicion: stay the friar too.
-<lb ed="F1" n="3058"/><stage type="entrance" about="[ome:involves atts.]">Enter the PRINCE and <rs type="person" about="[atts.]">Attendants.</rs> </stage>
+<lb ed="F1" n="3058"/><stage type="entrance" about="[ atts.]">Enter the PRINCE and <rs type="person" about="[atts.]">Attendants.</rs> </stage>
 
 <lb ed="G"/><lb ed="F1" n="3059"/></l></sp><sp who="#prin."><speaker>Prin.</speaker><l>What misadventure is so early up,
 <lb ed="G"/><lb ed="F1" n="3060"/></l><l>That calls our person from our morning's rest?
-<lb ed="F1" n="3061"/><stage type="entrance" about="[ome:involves cap. la.-cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>, and others.</stage>
+<lb ed="F1" n="3061"/><stage type="entrance" about="[ cap. la.-cap.]">Enter <rs type="person" about="[cap.]">CAPULET</rs>, <rs type="person" about="[la.-cap.]">LADY CAPULET</rs>, and others.</stage>
 
 <lb ed="G" n="190"/><lb ed="F1" n="3062"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>What should it be, that they so shriek abroad?
 
@@ -4492,7 +4492,7 @@ Falls on <rs type="person" about="[rom.]">Romeo</rs>'s body, and dies.
 
 <lb ed="G"/><lb ed="F1" n="3080"/></l></sp><sp who="#la.-cap."><speaker>La. Cap.</speaker><l>O me! this sight of death is as a bell,
 <lb ed="G"/><lb ed="F1" n="3081"/></l><l>That warns my old age to a sepulchre.
-<lb ed="F1" n="3082"/><stage type="entrance" about="[ome:involves mon.]">Enter <rs type="person" about="[mon.]">MONTAGUE</rs> and others.</stage>
+<lb ed="F1" n="3082"/><stage type="entrance" about="[ mon.]">Enter <rs type="person" about="[mon.]">MONTAGUE</rs> and others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="3083"/></l></sp><sp who="#prin."><speaker>Prin.</speaker><l>Come, <rs type="person" about="[mon.]">Montague</rs>; for thou art early up,
 <lb ed="G"/><lb ed="F1" n="3084"/></l><l>To see thy son and heir more early down.
@@ -4613,7 +4613,7 @@ Falls on <rs type="person" about="[rom.]">Romeo</rs>'s body, and dies.
 <lb ed="G"/><lb ed="F1" n="3184"/></l><l>For never was a story of more woe
 <lb ed="G" n="310"/><lb ed="F1" n="3185"/></l><l>Than this of <rs type="person" about="[jul.]">Juliet</rs> and her <rs type="person" about="[rom.]">Romeo</rs>.
 
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+<stage about="[-all]" type="exit">Exeunt.</stage>
 </l></sp>
 </div2>
       </div1>
