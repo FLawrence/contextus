@@ -191,7 +191,7 @@
 <div2 n="1" type="scene" org="uniform" sample="complete"> 
 <head>SCENE I</head>
 <stage about="[ham:Elsinore._A_platform_before_the_castle._FRANCISCO_at_his_post.]" type="location">Elsinore. A platform before the castle. <rs type="person" about="[fran.]">FRANCISCO</rs> at his post.</stage>
-<lb n="3" ed="F1"/><stage type="entrance" about="[ome:involves ber.]"> Enter to him <rs type="person" about="[ber.]">BERNARDO</rs>. </stage>
+<lb n="3" ed="F1"/><stage type="entrance" about="[ ber.]"> Enter to him <rs type="person" about="[ber.]">BERNARDO</rs>. </stage>
 
 <lb ed="G"/><sp who="#ber."><speaker><rs type="person" about="[ber.]">Ber.</rs></speaker><lb n="4" ed="F1"/><l>Who's there?
 
@@ -219,7 +219,7 @@
 <lb ed="G"/></l><l>The rivals of my watch, bid them make haste.
 <lb n="18" ed="F1"/>
 <lb ed="G"/></l></sp><sp who="#fran."><speaker>Fran.</speaker><lb n="19" ed="F1"/><l>I think I hear them.   Stand, ho! Who's there?
-<stage type="entrance" about="[ome:involves hor. mar.]"> Enter <rs type="person" about="[hor.]">HORATIO</rs> and <rs type="person" about="[mar.]">MARCELLUS</rs>. </stage>
+<stage type="entrance" about="[ hor. mar.]"> Enter <rs type="person" about="[hor.]">HORATIO</rs> and <rs type="person" about="[mar.]">MARCELLUS</rs>. </stage>
 
 <lb ed="G"/></l></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="20" ed="F1"/><l>Friends to this ground.
 
@@ -233,7 +233,7 @@
 <lb ed="G"/></l></sp><sp who="#fran."><speaker>Fran.</speaker><lb n="24" ed="F1"/><l><rs type="person" about="[ber.]">Bernardo</rs> has my place.
 <lb ed="G"/></l><l>Give you good night.
 
-<lb n="25" ed="F1"/><stage type="exit" about="[ome:involves fran.]">Exit.</stage>
+<lb n="25" ed="F1"/><stage type="exit" about="[ fran.]">Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#mar."><speaker><rs type="person" about="[mar.]">Mar.</rs></speaker><lb n="26" ed="F1"/><l>Holla! <rs type="person" about="[ber.]">Bernardo</rs>!
 
@@ -298,7 +298,7 @@
 <lb n="50" ed="G"/></l></sp><sp who="#ber."><speaker><rs type="person" about="[ber.]">Ber.</rs></speaker><lb n="64" ed="F1"/><l>See, it stalks away!   
 
 <lb ed="G"/></l></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="65" ed="F1"/><l>Stay! speak, speak!   I charge thee, speak!
-<lb n="66" ed="F1"/><stage type="exit" about="[ome:involves hor.]">Exit Ghost. </stage>
+<lb n="66" ed="F1"/><stage type="exit" about="[ hor.]">Exit Ghost. </stage>
 
 <lb ed="G"/></l></sp><sp who="#mar."><speaker><rs type="person" about="[mar.]">Mar.</rs></speaker><lb n="67" ed="F1"/><l>'Tis gone, and will not answer.
 
@@ -417,7 +417,7 @@ Cock crows.
 
 <lb ed="G"/></l></sp><sp who="#mar."><speaker><rs type="person" about="[mar.]">Mar.</rs></speaker><lb n="141" ed="F1"/><l>'Tis gone!
 
-<stage type="exit" about="[ome:involves mar.]">Exit Ghost.</stage>
+<stage type="exit" about="[ mar.]">Exit Ghost.</stage>
 
 <lb ed="G"/><lb n="142" ed="F1"/></l><l>We do it wrong, being so majestical,
 <lb ed="G"/><lb n="143" ed="F1"/></l><l>To offer it the show of violence;
@@ -457,14 +457,14 @@ Cock crows.
 
 <lb ed="G"/></l></sp><sp who="#mar."><speaker><rs type="person" about="[mar.]">Mar.</rs></speaker><lb n="173" ed="F1"/><l>Let's do't, I pray; and I this morning know
 <lb ed="G"/><lb n="174" ed="F1"/></l><l>Where we shall find him most conveniently.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2> 
 
 <div2 n="2" type="scene" org="uniform" sample="complete"> 
 <head>SCENE II</head><lb n="175" ed="F1"/>
 <stage about="[ham:A_room_of_state_in_the_castle.]" type="location">A room of state in the castle.</stage>
 
-<lb n="176" ed="F1"/><stage type="entrance" about="[ome:involves ham. pol. laer. volt. cor.]">Enter the KING, QUEEN, <lb n="177" ed="F1"/><rs type="person" about="[ham.]">HAMLET</rs>, <rs type="person" about="[pol.]">POLONIUS</rs>,
+<lb n="176" ed="F1"/><stage type="entrance" about="[ ham. pol. laer. volt. cor.]">Enter the KING, QUEEN, <lb n="177" ed="F1"/><rs type="person" about="[ham.]">HAMLET</rs>, <rs type="person" about="[pol.]">POLONIUS</rs>,
        <rs type="person" about="[laer.]">LAERTES</rs>, <rs type="person" about="[volt.]">VOLTIMAND</rs>, <rs type="person" about="[cor.]">CORNELIUS</rs>, <lb n="178" ed="F1"/>Lords,
        and Attendants.</stage> 
 
@@ -512,7 +512,7 @@ Cock crows.
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="220" ed="F1"/><l>We doubt it nothing: heartily farewell.
 
-<lb n="221" ed="F1"/><stage type="exit" about="[ome:involves volt. cor.]">Exeunt <rs type="person" about="[volt.]">Voltimand</rs> and <rs type="person" about="[cor.]">Cornelius</rs>. </stage>
+<lb n="221" ed="F1"/><stage type="exit" about="[ volt. cor.]">Exeunt <rs type="person" about="[volt.]">Voltimand</rs> and <rs type="person" about="[cor.]">Cornelius</rs>. </stage>
 
 <lb ed="G"/><lb n="222" ed="F1"/></l><l>And now, <rs type="person" about="[laer.]">Laertes</rs>, what's the news with you?
 <lb ed="G"/><lb n="223" ed="F1"/></l><l>You told us of some suit; what is't, <rs type="person" about="[laer.]">Laertes</rs>?
@@ -620,7 +620,7 @@ Cock crows.
 <lb ed="G"/><lb n="310" ed="F1"/></l><l>And the king's rouse the heavens shall bruit again,
 <lb ed="G"/><lb n="311" ed="F1"/></l><l>Re-speaking earthly thunder. Come away.
 
-<lb n="312" ed="F1"/><stage type="exit" about="[ome:involves !( ham.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
+<lb n="312" ed="F1"/><stage type="exit" about="[ !( ham.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="313" ed="F1"/><l>O, that this too too solid flesh would melt,
 <lb n="130" ed="G"/><lb n="314" ed="F1"/></l><l>Thaw and resolve itself into a dew!        
@@ -654,7 +654,7 @@ Cock crows.
 <lb ed="G"/><lb n="342" ed="F1"/></l><l>It is not nor it cannot come to good:
 <lb ed="G"/><lb n="343" ed="F1"/></l><l>But break, my heart; for I must hold my tongue.
 
-<lb n="344" ed="F1"/><stage type="entrance" about="[ome:involves hor. mar. ber.]">Enter <rs type="person" about="[hor.]">HORATIO</rs>, <rs type="person" about="[mar.]">MARCELLUS</rs>, and <rs type="person" about="[ber.]">BERNARDO</rs>.</stage>
+<lb n="344" ed="F1"/><stage type="entrance" about="[ hor. mar. ber.]">Enter <rs type="person" about="[hor.]">HORATIO</rs>, <rs type="person" about="[mar.]">MARCELLUS</rs>, and <rs type="person" about="[ber.]">BERNARDO</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="345" ed="F1"/><l>Hail to your lordship!
 
@@ -821,19 +821,19 @@ Cock crows.
 <lb ed="G"/></l></sp><sp who="#all."><speaker><rs type="person" about="[all.]">All</rs>.</speaker><lb n="454" ed="F1"/><l>Our duty to your honour.
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="455" ed="F1"/><l>Your loves, as mine to you: farewell.
-<stage type="exit" about="[ome:involves !( ham.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
+<stage type="exit" about="[ !( ham.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
 <lb ed="G"/><lb n="456" ed="F1"/></l><l>My father's spirit in arms! all is not well;
 <lb ed="G"/><lb n="457" ed="F1"/></l><l>I doubt some foul play: would the night were come!
 <lb ed="G"/><lb n="458" ed="F1"/></l><l>Till then sit still, my soul: foul deeds will rise,
 <lb ed="G"/><lb n="459" ed="F1"/></l><l>Though all the earth o'erwhelm them, to men's eyes.
 
-<stage type="exit" about="[ome:involves ham.]">Exit. </stage></l></sp>
+<stage type="exit" about="[ ham.]">Exit. </stage></l></sp>
 </div2> 
 
 <div2 n="3" type="scene" org="uniform" sample="complete"> 
 <head>SCENE III</head><lb n="460" ed="F1"/>
 <stage about="[ham:A_room_in_Polonius'_house.]" type="location">A room in <rs type="person" about="[pol.]">Polonius</rs>' house.</stage>
-<lb n="461" ed="F1"/><stage type="entrance" about="[ome:involves laer. oph.]"> Enter <rs type="person" about="[laer.]">LAERTES</rs> and <rs type="person" about="[oph.]">OPHELIA</rs>.  </stage>
+<lb n="461" ed="F1"/><stage type="entrance" about="[ laer. oph.]"> Enter <rs type="person" about="[laer.]">LAERTES</rs> and <rs type="person" about="[oph.]">OPHELIA</rs>.  </stage>
 
 <lb ed="G"/><sp who="#laer."><speaker>Laer.</speaker><lb n="462" ed="F1"/><l>My necessaries are embark'd: farewell:
 <lb ed="G"/><lb n="463" ed="F1"/></l><l>And, sister, as the winds give benefit
@@ -898,7 +898,7 @@ Cock crows.
 <lb n="51" ed="G"/></l></sp><sp who="#laer."><speaker>Laer.</speaker><lb n="515" ed="F1"/><l>O, fear me not. 
 <lb ed="G"/><lb n="516" ed="F1"/><lb n="517" ed="F1"/></l><l>I stay too long: but here my father comes.
 
-<stage type="entrance" about="[ome:involves pol.]">Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
+<stage type="entrance" about="[ pol.]">Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
 
 <lb ed="G"/><lb n="518" ed="F1"/></l><l>A double blessing is a double grace;
 <lb ed="G"/><lb n="519" ed="F1"/></l><l>Occasion smiles upon a second leave.
@@ -942,7 +942,7 @@ Cock crows.
 <lb ed="G"/></l></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="551" ed="F1"/><l>'Tis in my memory locked,
 <lb ed="G"/><lb n="552" ed="F1"/></l><l>And you yourself shall keep the key of it.
 
-<lb ed="G"/></l></sp><sp who="#laer."><speaker>Laer.</speaker><lb n="553" ed="F1"/><l>Farewell.  <stage type="exit" about="[ome:involves laer.]">Exit.</stage>
+<lb ed="G"/></l></sp><sp who="#laer."><speaker>Laer.</speaker><lb n="553" ed="F1"/><l>Farewell.  <stage type="exit" about="[ laer.]">Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="554" ed="F1"/><l>What is't, <rs type="person" about="[oph.]">Ophelia</rs>, he hath said to you?
 
@@ -1004,12 +1004,12 @@ Cock crows.
 <lb ed="G"/><lb n="601" ed="F1"/></l><l>Look to't, I charge you: come your ways.
 
 <lb ed="G"/></l></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="602" ed="F1"/><l>I shall obey, my lord.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2> 
 <div2 n="4" type="scene" org="uniform" sample="complete"> 
 <head>SCENE IV</head>
 <stage about="[ham:The_platform.]" type="location">The platform.</stage>
-<lb n="603" ed="F1"/><stage type="entrance" about="[ome:involves ham. hor. mar.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>, <rs type="person" about="[hor.]">HORATIO</rs>, and <rs type="person" about="[mar.]">MARCELLUS</rs>.</stage>
+<lb n="603" ed="F1"/><stage type="entrance" about="[ ham. hor. mar.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>, <rs type="person" about="[hor.]">HORATIO</rs>, and <rs type="person" about="[mar.]">MARCELLUS</rs>.</stage>
 
 <lb ed="G"/><sp who="#ham."><speaker>Ham.</speaker><lb n="604" ed="F1"/><l>The air bites shrewdly; it is very cold.
 
@@ -1135,7 +1135,7 @@ Cock crows.
 <lb ed="G"/><lb n="671" ed="F1"/></l><l>Still am I call'd. Unhand me, gentlemen.
 <lb ed="G"/><lb n="672" ed="F1"/></l><l>By heaven, I'll make a ghost of him that lets me!
 <lb ed="G"/><lb n="673" ed="F1"/></l><l>I say, away!   Go on; I'll follow thee.
-<lb n="674" ed="F1"/><stage type="exit" about="[ome:involves ham.]">Exeunt Ghost and <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
+<lb n="674" ed="F1"/><stage type="exit" about="[ ham.]">Exeunt Ghost and <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="675" ed="F1"/><l>He waxes desperate with imagination.
 
@@ -1148,13 +1148,13 @@ Cock crows.
 <lb ed="G"/></l></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="679" ed="F1"/><l>Heaven will direct it.
 
 <lb ed="G"/></l></sp><sp who="#mar."><speaker><rs type="person" about="[mar.]">Mar.</rs></speaker><lb n="680" ed="F1"/><l>Nay, let's follow him.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2> 
 <div2 n="5" type="scene" org="uniform" sample="complete"> 
 <head>SCENE V</head>
 
 <stage about="[ham:Another_part_of_the_platform.]" type="location">Another part of the platform.</stage>
-<lb n="681" ed="F1"/><stage type="entrance" about="[ome:involves ham.]">          Enter GHOST and <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
+<lb n="681" ed="F1"/><stage type="entrance" about="[ ham.]">          Enter GHOST and <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
 
 <lb ed="G"/><sp who="#ham."><speaker>Ham.</speaker><lb n="682" ed="F1"/><l>Where wilt thou lead me? speak; I'll go no further.
 
@@ -1270,7 +1270,7 @@ Cock crows.
 <lb ed="G"/><lb n="774" ed="F1"/></l><l>The glow-worm shows the matin to be near,
 <lb n="90" ed="G"/><lb n="775" ed="F1"/></l><l>And 'gins to pale his uneffectual fire:      
 <lb ed="G"/><lb n="776" ed="F1"/></l><l>Adieu, adieu! <rs type="person" about="[ham.]">Hamlet</rs>, remember me.
-<stage type="exit" about="[ome:involves ghost.]">Exit.</stage>
+<stage type="exit" about="[ ghost.]">Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="777" ed="F1"/><l>O all you host of heaven! O earth! what else?
 <lb ed="G"/><lb n="778" ed="F1"/></l><l>And shall I couple hell?   O, fie!   Hold, hold, my heart;
@@ -1307,7 +1307,7 @@ Cock crows.
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="803" ed="F1"/><l>Hillo, ho, ho, boy! come, bird, come.
 
-<stage type="entrance" about="[ome:involves hor. mar.]"> Enter <rs type="person" about="[hor.]">HORATIO</rs> and <rs type="person" about="[mar.]">MARCELLUS</rs>. </stage>
+<stage type="entrance" about="[ hor. mar.]"> Enter <rs type="person" about="[hor.]">HORATIO</rs> and <rs type="person" about="[mar.]">MARCELLUS</rs>. </stage>
 
 <lb ed="G"/></l></sp><sp who="#mar."><speaker><rs type="person" about="[mar.]">Mar.</rs></speaker><lb n="804" ed="F1"/><l>How is't, my noble lord?
 
@@ -1431,7 +1431,7 @@ Cock crows.
 <lb ed="G"/><lb n="885" ed="F1"/></l><l>The time is out of joint: O cursed spite,
 <lb n="190" ed="G"/><lb n="886" ed="F1"/></l><l>That ever I was born to set it right!     
 <lb ed="G"/><lb n="887" ed="F1"/></l><l>Nay, come, let's go together.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">[Exeunt.</stage></l></sp>
 </div2> 
 </div1> 
 
@@ -1440,7 +1440,7 @@ Cock crows.
 <div2 n="1" type="scene" org="uniform" sample="complete"> 
 <head>SCENE I</head>
 <stage about="[ham:A_room_in_Polonius'_house.]" type="location">A room in <rs type="person" about="[pol.]">Polonius</rs>' house.</stage>
-<lb n="889" ed="F1"/><stage type="entrance" about="[ome:involves pol. rey.]"> Enter <rs type="person" about="[pol.]">POLONIUS</rs> and <rs type="person" about="[rey.]">REYNALDO</rs>.  </stage>
+<lb n="889" ed="F1"/><stage type="entrance" about="[ pol. rey.]"> Enter <rs type="person" about="[pol.]">POLONIUS</rs> and <rs type="person" about="[rey.]">REYNALDO</rs>.  </stage>
 
 <lb ed="G"/><sp who="#pol."><speaker>Pol.</speaker><lb n="890" ed="F1"/><l>Give him this money and these notes, <rs type="person" about="[rey.]">Reynaldo</rs>.
 
@@ -1550,8 +1550,8 @@ Cock crows.
 <lb ed="G"/></l></sp><sp who="#rey."><speaker>Rey.</speaker><lb n="967" ed="F1"/><l>Well, my lord.
 <lb n="968" ed="F1"/>
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="969" ed="F1"/><l>Farewell!
-<stage type="exit" about="[ome:involves rey.]">Exit <rs type="person" about="[rey.]">Reynaldo</rs>.</stage>
-<stage type="entrance" about="[ome:involves oph.]">                Enter <rs type="person" about="[oph.]">OPHELIA</rs>.</stage>
+<stage type="exit" about="[ rey.]">Exit <rs type="person" about="[rey.]">Reynaldo</rs>.</stage>
+<stage type="entrance" about="[ oph.]">                Enter <rs type="person" about="[oph.]">OPHELIA</rs>.</stage>
 <lb ed="G"/><lb n="970" ed="F1"/></l><l> How now, <rs type="person" about="[oph.]">Ophelia</rs>! what's the matter?
 
 <lb ed="G"/></l></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="971" ed="F1"/><l>O, my lord, my lord, I have been so affrighted!
@@ -1611,12 +1611,12 @@ Cock crows.
 <lb ed="G"/><lb n="1015" ed="F1"/></l><l>To lack discretion.   Come, go we to the king:
 <lb ed="G"/><lb n="1016" ed="F1"/></l><l>This must be known; which, being kept close, might move
 <lb ed="G"/><lb n="1017" ed="F1"/></l><l>More grief to hide than hate to utter love.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2> 
 <div2 n="2" type="scene" org="uniform" sample="complete"> 
 <head>SCENE II</head><lb n="1018" ed="F1"/>
 <stage about="[ham:A_room_in_the_castle.]" type="location">A room in the castle.</stage>
-<lb n="1019" ed="F1"/><stage type="entrance" about="[ome:involves ros. guil.]">Enter KING, QUEEN, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, <lb n="1020" ed="F1"/><rs type="person" about="[guil.]">GUILDENSTERN</rs>,
+<lb n="1019" ed="F1"/><stage type="entrance" about="[ ros. guil.]">Enter KING, QUEEN, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, <lb n="1020" ed="F1"/><rs type="person" about="[guil.]">GUILDENSTERN</rs>,
 <lb ed="G"/>and Attendants.</stage>
 
 <lb ed="G"/><sp who="#king."><speaker>King.</speaker><lb n="1021" ed="F1"/><l>Welcome, dear <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>!
@@ -1669,8 +1669,8 @@ Cock crows.
 
 <lb ed="G"/></l></sp><sp who="#queen."><speaker>Queen.</speaker><lb n="1062" ed="F1"/><l>Ay, amen!
 
-<stage type="exit" about="[ome:involves ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs>, <rs type="person" about="[guil.]">Guildenstern</rs>, and some Attendants.</stage>
-<lb n="1063" ed="F1"/><stage type="entrance" about="[ome:involves pol.]">                Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
+<stage type="exit" about="[ ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs>, <rs type="person" about="[guil.]">Guildenstern</rs>, and some Attendants.</stage>
+<lb n="1063" ed="F1"/><stage type="entrance" about="[ pol.]">                Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
 
 <lb n="40" ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1064" ed="F1"/><l>The ambassadors from Norway, my good lord, 
 <lb ed="G"/><lb n="1065" ed="F1"/></l><l>Are joyfully return'd.
@@ -1690,7 +1690,7 @@ Cock crows.
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1075" ed="F1"/><l>Give first admittance to the ambassadors;
 <lb ed="G"/><lb n="1076" ed="F1"/></l><l>My news shall be the fruit to that great feast.
 
-<lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="1077" ed="F1"/><l>Thyself do grace to them, and bring them in.   <stage type="exit" about="[ome:involves pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>. </stage>
+<lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="1077" ed="F1"/><l>Thyself do grace to them, and bring them in.   <stage type="exit" about="[ pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>. </stage>
 <lb ed="G"/><lb n="1078" ed="F1"/></l><l>He tells me, my dear <rs type="person" about="[queen.]">Gertrude</rs>, he hath found
 <lb ed="G"/><lb n="1079" ed="F1"/></l><l>The head and source of all your son's distemper.
 
@@ -1698,7 +1698,7 @@ Cock crows.
 <lb ed="G"/><lb n="1081" ed="F1"/></l><l>His father's death, and our o'erhasty marriage.
 <lb n="1082" ed="F1"/>
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="1083" ed="F1"/><l>Well, we shall sift him.
-<stage type="entrance" about="[ome:involves pol. volt. cor.]">Re-enter <rs type="person" about="[pol.]">POLONIUS</rs>, with <rs type="person" about="[volt.]">VOLTIMAND</rs> and <rs type="person" about="[cor.]">CORNELIUS</rs>.</stage>
+<stage type="entrance" about="[ pol. volt. cor.]">Re-enter <rs type="person" about="[pol.]">POLONIUS</rs>, with <rs type="person" about="[volt.]">VOLTIMAND</rs> and <rs type="person" about="[cor.]">CORNELIUS</rs>.</stage>
 </l>
 <l>Welcome, my good friends!
 <lb ed="G"/><lb n="1084" ed="F1"/></l><l>Say, <rs type="person" about="[volt.]">Voltimand</rs>, what from our brother Norway?
@@ -1732,7 +1732,7 @@ Cock crows.
 <lb ed="G"/><lb n="1109" ed="F1"/></l><l>Meantime we thank you for your well-took labor:
 <lb ed="G"/><lb n="1110" ed="F1"/></l><l>Go to your rest; at night we'll feast together:
 <lb ed="G"/><lb n="1111" ed="F1"/></l><l>Most welcome home!
-<stage type="exit" about="[ome:involves volt. cor.]">Exeunt <rs type="person" about="[volt.]">Voltimand</rs> and <rs type="person" about="[cor.]">Cornelius</rs>.</stage>
+<stage type="exit" about="[ volt. cor.]">Exeunt <rs type="person" about="[volt.]">Voltimand</rs> and <rs type="person" about="[cor.]">Cornelius</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1112" ed="F1"/><l>This business is well ended.
 <lb ed="G"/><lb n="1113" ed="F1"/></l><l>My liege, and madam, to expostulate
@@ -1858,8 +1858,8 @@ Cock crows.
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1206" ed="F1"/><l>Away, I do beseech you, both away:
 <lb ed="G"/><lb n="1207" ed="F1"/></l><l>I'll board him presently.
 
-<stage about="[ome:involves-all]" type="exit">Exeunt King, Queen, and Attendants.</stage>
-<stage type="entrance" about="[ome:involves ham.]">            Enter <rs type="person" about="[ham.]">HAMLET</rs>, reading.</stage>
+<stage about="[-all]" type="exit">Exeunt King, Queen, and Attendants.</stage>
+<stage type="entrance" about="[ ham.]">            Enter <rs type="person" about="[ham.]">HAMLET</rs>, reading.</stage>
 
 <lb n="1208" ed="F1"/></l><l n="170">O, give me leave:   
 <lb ed="G"/></l><p>How does my good Lord <rs type="person" about="[ham.]">Hamlet</rs>?
@@ -1941,13 +1941,13 @@ Cock crows.
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1262" ed="F1"/><p>These tedious old fools!
 
-<stage type="entrance" about="[ome:involves ros. guil.]">Enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
+<stage type="entrance" about="[ ros. guil.]">Enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1263" ed="F1"/><p>You go to seek the Lord <rs type="person" about="[ham.]">Hamlet</rs>;
 <lb ed="G"/> there <lb n="1264" ed="F1"/>he is.
 <lb n="1265" ed="F1"/>
 <lb ed="G"/></p></sp><sp who="#ros."><speaker><rs type="person" about="[ros.]">Ros.</rs></speaker>  [To <rs type="person" about="[pol.]">Polonius</rs>] <lb/><lb n="1266" ed="F1"/><p>God save you, sir!
-<stage type="exit" about="[ome:involves pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>.</stage>
+<stage type="exit" about="[ pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#guil."><speaker><rs type="person" about="[guil.]">Guil.</rs></speaker><lb n="1267" ed="F1"/><p>My honored lord!
 
@@ -2182,7 +2182,7 @@ Cock crows.
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1425" ed="F1"/><p>I am but mad north-north-west:
 <lb ed="G"/>when the <lb n="1426" ed="F1"/>wind is southerly I know a hawk 
 <lb ed="G"/>from a handsaw. 
-<lb n="1427" ed="F1"/><stage type="entrance" about="[ome:involves pol.]">              Re-enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
+<lb n="1427" ed="F1"/><stage type="entrance" about="[ pol.]">              Re-enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1428" ed="F1"/><p>Well be with you, gentlemen!
 
@@ -2247,7 +2247,7 @@ Cock crows.
 <lb ed="G"/>the first row of the <lb n="1464" ed="F1"/>pious chanson will show 
 <lb ed="G"/>you more; for look, where my <lb n="1465" ed="F1"/>abridgement comes.
 
-<lb n="1466" ed="F1"/><stage type="entrance" about="[ome:involves first-play.]">          Enter four or five <rs type="person" about="[first-play.]">Players</rs>.</stage>
+<lb n="1466" ed="F1"/><stage type="entrance" about="[ first-play.]">          Enter four or five <rs type="person" about="[first-play.]">Players</rs>.</stage>
 
 <lb ed="G"/><lb n="1467" ed="F1"/></p><p>You are welcome, masters; welcome all. I am
 <lb ed="G"/>glad to see <lb n="1468" ed="F1"/>thee well.   Welcome, good friends.
@@ -2404,7 +2404,7 @@ Cock crows.
 <lb n="559" ed="G"/></p></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1575" ed="F1"/><p>Come, sirs.    
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1576" ed="F1"/><p>Follow him, friends: we'll hear a
-<lb ed="G"/>play to-morrow.  <stage type="exit" about="[ome:involves pol. first-play.]">[Exit <rs type="person" about="[pol.]">Polonius</rs> with all the <rs type="person" about="[first-play.]">Players</rs> but the First.]</stage> 
+<lb ed="G"/>play to-morrow.  <stage type="exit" about="[ pol. first-play.]">[Exit <rs type="person" about="[pol.]">Polonius</rs> with all the <rs type="person" about="[first-play.]">Players</rs> but the First.]</stage> 
 <lb n="1577" ed="F1"/>Dost thou hear me, old
 <lb ed="G"/>friend; can you play the <lb n="1578" ed="F1"/>Murder of Gonzago? 
 
@@ -2418,14 +2418,14 @@ Cock crows.
 <lb n="569" ed="G"/></p></sp><sp who="#first-play."><speaker>First Play.</speaker><lb n="1583" ed="F1"/><p>Ay, my lord.                 
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1584" ed="F1"/><p>Very well. Follow that lord; and
-<lb ed="G"/>look you <lb n="1585" ed="F1"/>mock him not. <stage type="exit" about="[ome:involves ham.]">[Exit First Player.]</stage>
+<lb ed="G"/>look you <lb n="1585" ed="F1"/>mock him not. <stage type="exit" about="[ ham.]">[Exit First Player.]</stage>
 <lb ed="G"/>My good friends, I'll leave you till night:  <lb n="1586" ed="F1"/>you
 <lb ed="G"/>are welcome to Elsinore. 
 
 <lb ed="G"/></p></sp><sp who="#ros."><speaker><rs type="person" about="[ros.]">Ros.</rs></speaker><lb n="1587" ed="F1"/><p>Good my lord!
 <lb n="1588" ed="F1"/>
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1589" ed="F1"/><p>Ay, so, God be wi' ye;
-<stage type="exit" about="[ome:involves ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.]</stage></p>
+<stage type="exit" about="[ ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.]</stage></p>
 <l> Now I am alone.
 <lb ed="G"/><lb n="1590" ed="F1"/></l><l>O, what a rogue and peasant slave am I!
 <lb ed="G"/><lb n="1591" ed="F1"/></l><l>Is it not monstrous that this player here,
@@ -2486,7 +2486,7 @@ Cock crows.
 <lb ed="G"/><lb n="1643" ed="F1"/></l><l>Abuses me to damn me: I'll have grounds
 <lb ed="G"/><lb n="1644" ed="F1"/></l><l>More relative than this: the play's the thing
 <lb ed="G"/><lb n="1645" ed="F1"/></l><l>Wherein I'll catch the conscience of the king.
-<stage type="exit" about="[ome:involves ham.]">[Exit.</stage></l></sp>
+<stage type="exit" about="[ ham.]">[Exit.</stage></l></sp>
 </div2> 
 </div1> 
 
@@ -2495,7 +2495,7 @@ Cock crows.
 <div2 n="1" type="scene" org="uniform" sample="complete"> 
 <head>SCENE I</head>
 <stage about="[ham:A_room_in_the_castle.]" type="location">A room in the castle.</stage>
-<lb n="1646" ed="F1"/><stage type="entrance" about="[ome:involves pol. oph. ros. guil.]">  Enter KING, QUEEN, <rs type="person" about="[pol.]">POLONIUS</rs>, <rs type="person" about="[oph.]">OPHELIA</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and <lb n="1647" ed="F1"/><rs type="person" about="[guil.]">GUILDENSTERN</rs>. </stage>
+<lb n="1646" ed="F1"/><stage type="entrance" about="[ pol. oph. ros. guil.]">  Enter KING, QUEEN, <rs type="person" about="[pol.]">POLONIUS</rs>, <rs type="person" about="[oph.]">OPHELIA</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and <lb n="1647" ed="F1"/><rs type="person" about="[guil.]">GUILDENSTERN</rs>. </stage>
 
 <lb ed="G"/><sp who="#king."><speaker>King.</speaker><lb n="1648" ed="F1"/><l>And can you, by no drift of circumstance,
 <lb ed="G"/><lb n="1649" ed="F1"/></l><l>Get from him why he puts on this confusion,
@@ -2539,7 +2539,7 @@ Cock crows.
 <lb ed="G"/></l><l>And drive his purpose on <lb n="1676" ed="F1"/>to these delights.
 
 <lb ed="G"/></l></sp><sp who="#ros."><speaker><rs type="person" about="[ros.]">Ros.</rs></speaker><lb n="1677" ed="F1"/><l>We shall, my lord.
-<stage type="exit" about="[ome:involves guil.]">Exeunt Rosencranlz and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
+<stage type="exit" about="[ guil.]">Exeunt Rosencranlz and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="1678" ed="F1"/><l>Sweet <rs type="person" about="[queen.]">Gertrude</rs>, leave us too;
 <lb ed="G"/><lb n="1679" ed="F1"/></l><l>For we have closely sent for <rs type="person" about="[ham.]">Hamlet</rs> hither,
@@ -2559,7 +2559,7 @@ Cock crows.
 <lb ed="G"/><lb n="1691" ed="F1"/></l><l>Will bring him to his wonted way again,
 <lb ed="G"/><lb n="1692" ed="F1"/></l><l>To both your honours.
 
-<lb ed="G"/></l></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="1693" ed="F1"/><l>Madam, I wish it may.  <stage type="exit" about="[ome:involves oph.]">[Exit Queen.</stage>
+<lb ed="G"/></l></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="1693" ed="F1"/><l>Madam, I wish it may.  <stage type="exit" about="[ oph.]">[Exit Queen.</stage>
 
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1694" ed="F1"/><l><rs type="person" about="[oph.]">Ophelia</rs>, walk you here.   Gracious, so please you,
 <lb ed="G"/><lb n="1695" ed="F1"/></l><l>We will bestow ourselves. [To <rs type="person" about="[oph.]">Ophelia</rs>] Read on this book;
@@ -2577,9 +2577,9 @@ Cock crows.
 <lb ed="G"/><lb n="1706" ed="F1"/></l><l>O heavy burthen!
 
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1707" ed="F1"/><l>I hear him coming: let's withdraw, my lord.
-<lb n="1708" ed="F1"/><stage type="exit" about="[ome:involves pol.]">Exeunt King and <rs type="person" about="[pol.]">Polonius</rs>. </stage>
+<lb n="1708" ed="F1"/><stage type="exit" about="[ pol.]">Exeunt King and <rs type="person" about="[pol.]">Polonius</rs>. </stage>
 
-<lb n="1709" ed="F1"/><stage type="entrance" about="[ome:involves ham.]">                Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
+<lb n="1709" ed="F1"/><stage type="entrance" about="[ ham.]">                Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1710" ed="F1"/><l>To be, or not to be: that is the question:
 <lb ed="G"/><lb n="1711" ed="F1"/></l><l>Whether 'tis nobler in the mind to suffer
@@ -2706,7 +2706,7 @@ Cock crows.
 <lb ed="G"/>made me mad. <lb n="1803" ed="F1"/>I say, we will have no more 
 <lb ed="G"/>marriages: those that are <lb n="1804" ed="F1"/>married already, all 
 <lb ed="G"/>but one, shall live; the rest shall keep <lb n="1805" ed="F1"/>as they 
-<lb ed="G"/>are. To a nunnery, go.                    <stage type="exit" about="[ome:involves ham.]">[Exit.</stage>
+<lb ed="G"/>are. To a nunnery, go.                    <stage type="exit" about="[ ham.]">[Exit.</stage>
 
 <lb ed="G"/></p></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="1806" ed="F1"/><l>O, what a noble mind is here o'er- thrown!
 <lb ed="G"/><lb n="1807" ed="F1"/></l><l>The courtier's, soldier's, scholar's, eye, tongue, sword;
@@ -2720,7 +2720,7 @@ Cock crows.
 <lb ed="G"/><lb n="1815" ed="F1"/></l><l>That unmatch'd form and feature of blown youth
 <lb ed="G"/><lb n="1816" ed="F1"/></l><l>Blasted with ecstasy: O, woe is me,
 <lb ed="G"/><lb n="1817" ed="F1"/></l><l>To have seen what I have seen, see what I see!
-<lb n="1818" ed="F1"/><stage type="entrance" about="[ome:involves pol.]">         Re-enter KING and <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
+<lb n="1818" ed="F1"/><stage type="entrance" about="[ pol.]">         Re-enter KING and <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
 
 <lb n="170" ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="1819" ed="F1"/><l>Love! his affections do not that way tend; 
 <lb ed="G"/><lb n="1820" ed="F1"/></l><l>Nor what he spake, though it lack'd form a little,
@@ -2752,14 +2752,14 @@ Cock crows.
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="1845" ed="F1"/><l>It shall be so:
 <lb ed="G"/><lb n="1846" ed="F1"/></l><l>Madness in great ones must not unwatch'd go.
-<lb n="1847" ed="F1"/><stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></l></sp>
+<lb n="1847" ed="F1"/><stage about="[-all]" type="exit">[Exeunt.</stage></l></sp>
 </div2> 
 
 
 <div2 n="2" type="scene" org="uniform" sample="complete"> 
  <head>SCENE II</head>
 <stage about="[ham:A_hall_in_the_castle.]" type="location">A hall in the castle.</stage>
-<lb n="1848" ed="F1"/><stage type="entrance" about="[ome:involves ham. first-play.]"> Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[first-play.]">Players</rs>.</stage>
+<lb n="1848" ed="F1"/><stage type="entrance" about="[ ham. first-play.]"> Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[first-play.]">Players</rs>.</stage>
 
 <lb ed="G"/><sp who="#ham."><speaker>Ham.</speaker><lb n="1849" ed="F1"/><p>Speak the speech, I pray you, as I
 <lb ed="G"/>pronounced <lb n="1850" ed="F1"/>it to you, trippingly on the
@@ -2817,22 +2817,22 @@ Cock crows.
 <lb n="1891" ed="F1"/><lb ed="G"/>of the play be then to be considered: 
 <lb ed="G"/>that's villanous, and <lb n="1892" ed="F1"/>shows a most pitiful ambition
 <lb ed="G"/>in the fool that uses <lb n="1893" ed="F1"/>it. Go, make you 
-<lb ed="G"/>ready.                           <stage type="exit" about="[ome:involves first-play.]">[Exeunt <rs type="person" about="[first-play.]">Players</rs>.</stage>
-<lb n="1894" ed="F1"/><stage type="entrance" about="[ome:involves pol. ros. guil.]">    Enter <rs type="person" about="[pol.]">POLONIUS</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
+<lb ed="G"/>ready.                           <stage type="exit" about="[ first-play.]">[Exeunt <rs type="person" about="[first-play.]">Players</rs>.</stage>
+<lb n="1894" ed="F1"/><stage type="entrance" about="[ pol. ros. guil.]">    Enter <rs type="person" about="[pol.]">POLONIUS</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
 
 <lb ed="G"/><lb n="1895" ed="F1"/></p><p>How now, my lord! <lb n="1896" ed="F1"/>will the king hear this
 <lb ed="G"/>piece of work? 
 
 <lb ed="G"/></p></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="1897" ed="F1"/><p>And the queen too, and that presently.
 
-<lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1898" ed="F1"/><p>Bid the players make haste. <stage type="exit" about="[ome:involves pol.]">[Exit  <rs type="person" about="[pol.]">Polonius</rs>.</stage> 
+<lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1898" ed="F1"/><p>Bid the players make haste. <stage type="exit" about="[ pol.]">[Exit  <rs type="person" about="[pol.]">Polonius</rs>.</stage> 
 <lb n="1899" ed="F1"/><lb ed="G"/>Will you two help to hasten them?
 
 <lb ed="G"/></p></sp><sp who="#ros.-and-guil."><speaker><rs type="person" about="[ros.]">Ros.</rs> and <rs type="person" about="[guil.]">Guil.</rs></speaker><lb n="1900" ed="F1"/><p>We will, my lord.
-<stage type="exit" about="[ome:involves ros. guil.]">[Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
+<stage type="exit" about="[ ros. guil.]">[Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
 <lb n="1901" ed="F1"/>
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="1902" ed="F1"/><p>What ho! <rs type="person" about="[hor.]">Horatio</rs>!
-<stage type="entrance" about="[ome:involves hor.]">                Enter <rs type="person" about="[hor.]">HORATIO</rs>.</stage>
+<stage type="entrance" about="[ hor.]">                Enter <rs type="person" about="[hor.]">HORATIO</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="1903" ed="F1"/><p>Here, sweet lord, at your service.
 
@@ -2882,7 +2882,7 @@ Cock crows.
 <lb ed="G"/><lb n="1947" ed="F1"/></l><l>Get you a place.
 
 Danish march. A flourish.
-<stage type="entrance" about="[ome:involves pol. oph. ros. guil.]"> Enter KING, QUEEN, <rs type="person" about="[pol.]">POLONIUS</rs>, <rs type="person" about="[oph.]">OPHELIA</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, <rs type="person" about="[guil.]">GUILDENSTERN</rs>, and others.</stage>
+<stage type="entrance" about="[ pol. oph. ros. guil.]"> Enter KING, QUEEN, <rs type="person" about="[pol.]">POLONIUS</rs>, <rs type="person" about="[oph.]">OPHELIA</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, <rs type="person" about="[guil.]">GUILDENSTERN</rs>, and others.</stage>
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="1948" ed="F1"/><p>How fares our cousin <rs type="person" about="[ham.]">Hamlet</rs>?
 
@@ -2977,7 +2977,7 @@ away.  The Poisoner wooes the <lb n="2001" ed="F1"/>Queen with
 gifts: she seems loath and unwilling awhile, 
 <lb n="2002" ed="F1"/>but in the end accepts his love.</stage>
 
- <stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+ <stage about="[-all]" type="exit">Exeunt.</stage>
 
 <lb ed="G"/></p></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="2003" ed="F1"/><p>What means this, my lord?
 
@@ -2987,7 +2987,7 @@ gifts: she seems loath and unwilling awhile,
 <lb ed="G"/></p></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="2006" ed="F1"/><p>Belike this show imports the argument 
 <lb n="150" ed="G"/>of the <lb n="2007" ed="F1"/>play.
 
-<stage type="entrance" about="[ome:involves pro.]">Enter <rs type="person" about="[pro.]">Prologue</rs>.</stage>
+<stage type="entrance" about="[ pro.]">Enter <rs type="person" about="[pro.]">Prologue</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2008" ed="F1"/><p>We shall know by this fellow: the
 <lb ed="G"/>players <lb n="2009" ed="F1"/>cannot keep counsel; they'll tell all. 
@@ -3005,7 +3005,7 @@ gifts: she seems loath and unwilling awhile,
 <lb n="160" ed="G"/><lb n="2018" ed="F1"/></l><l>Here stooping to your clemency,
 <lb ed="G"/><lb n="2019" ed="F1"/></l><l>We beg your hearing patiently.
 
-<stage type="exit" about="[ome:involves pro.]">Exit.</stage>
+<stage type="exit" about="[ pro.]">Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2020" ed="F1"/><p>Is this a prologue, or the posy of a ring? 
 
@@ -3013,7 +3013,7 @@ gifts: she seems loath and unwilling awhile,
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2022" ed="F1"/><p>As woman's love.   
 
-<lb n="2023" ed="F1"/><stage type="entrance" about="[ome:involves first-play.]">Enter two <rs type="person" about="[first-play.]">Players</rs>, King and Queen.</stage>
+<lb n="2023" ed="F1"/><stage type="entrance" about="[ first-play.]">Enter two <rs type="person" about="[first-play.]">Players</rs>, King and Queen.</stage>
 
 <lb ed="G"/></p></sp><sp who="#p.-king."><speaker>P. King.</speaker><lb n="2024" ed="F1"/><l>Full thirty times hath Phoebus' cart gone round  
 <lb ed="G"/><lb n="2025" ed="F1"/></l><l>Neptune's salt wash and Tellus' orbed ground,
@@ -3101,7 +3101,7 @@ gifts: she seems loath and unwilling awhile,
 
 <lb ed="G"/></l></sp><sp who="#p.-queen."><speaker>P. Queen.</speaker><lb n="2095" ed="F1"/><l>           Sleep rock thy brain;
 <lb ed="G"/><lb n="2096" ed="F1"/></l><l>And never come mischance between us twain!
-<stage type="exit" about="[ome:involves p.-queen.]">[Exit. </stage>
+<stage type="exit" about="[ p.-queen.]">[Exit. </stage>
 
 <lb n="239" ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2097" ed="F1"/><p>Madam, how like you this play?
 
@@ -3172,7 +3172,7 @@ gifts: she seems loath and unwilling awhile,
 <lb n="280" ed="G"/></p></sp><sp who="#king."><speaker>King.</speaker><lb n="2140" ed="F1"/><p>Give me some light: away!
 
 <lb ed="G"/></p></sp><sp who="#all."><speaker><rs type="person" about="[all.]">All</rs>.</speaker><lb n="2141" ed="F1"/><p>Lights, lights, lights!
-<lb n="2142" ed="F1"/><stage type="exit" about="[ome:involves !( ham. hor.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs> and <rs type="person" about="[hor.]">Horatio</rs>.</stage>
+<lb n="2142" ed="F1"/><stage type="exit" about="[ !( ham. hor.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs> and <rs type="person" about="[hor.]">Horatio</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker>
 	    <lg type="song" org="uniform" sample="complete">
@@ -3214,7 +3214,7 @@ gifts: she seems loath and unwilling awhile,
 	      <lb n="2166" ed="F1"/></l><l>Why, then, belike, he likes it not, perdy.
 	    </l></lg>
 <lb ed="G"/><lb n="2167" ed="F1"/><p>Come, some music!
-<stage type="entrance" about="[ome:involves ros. guil.]">Re-enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
+<stage type="entrance" about="[ ros. guil.]">Re-enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#guil."><speaker><rs type="person" about="[guil.]">Guil.</rs></speaker><lb n="2168" ed="F1"/><p>Good my lord, vouchsafe me a word with you. 
 
@@ -3294,7 +3294,7 @@ gifts: she seems loath and unwilling awhile,
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2213" ed="F1"/><p>Ay, sir, but 'While the grass grows,'
 <lb n="359" ed="G"/>���the proverb is <lb n="2214" ed="F1"/>somewhat musty.
 
-<lb n="2215" ed="F1"/><stage type="entrance" about="[ome:involves first-play.]">Re-enter <rs type="person" about="[first-play.]">Players</rs> with recorders.</stage>
+<lb n="2215" ed="F1"/><stage type="entrance" about="[ first-play.]">Re-enter <rs type="person" about="[first-play.]">Players</rs> with recorders.</stage>
 
 <lb ed="G"/><lb n="2216" ed="F1"/></p><p>O, the recorders! let me see one.  To withdraw
 <lb ed="G"/>with you:���why <lb n="2217" ed="F1"/>do you go about to recover 
@@ -3337,7 +3337,7 @@ gifts: she seems loath and unwilling awhile,
 <lb ed="G"/>Call me what instrument you will, <lb n="2242" ed="F1"/>though you
 <lb ed="G"/>can fret me, yet you cannot play upon me. 
 
-<stage type="entrance" about="[ome:involves pol.]">               Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
+<stage type="entrance" about="[ pol.]">               Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
 
 <lb n="390" ed="G"/></p><p>God <lb n="2243" ed="F1"/>bless you, sir!                           
 <lb n="2244" ed="F1"/>
@@ -3363,8 +3363,8 @@ gifts: she seems loath and unwilling awhile,
 
 <lb ed="G"/></p></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="2257" ed="F1"/><p>I will say so.
 
-<lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2258" ed="F1"/><p>By and by is easily said.  <stage type="exit" about="[ome:involves pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>.]</stage> Leave me, friends.
-<stage type="exit" about="[ome:involves !( ham.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
+<lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2258" ed="F1"/><p>By and by is easily said.  <stage type="exit" about="[ pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>.]</stage> Leave me, friends.
+<stage type="exit" about="[ !( ham.)]">Exeunt all but <rs type="person" about="[ham.]">Hamlet</rs>.</stage>
 <lb ed="G"/><lb n="2259" ed="F1"/></p><l>'Tis now the very witching time of night,
 <lb ed="G"/><lb n="2260" ed="F1"/></l><l>When churchyards yawn and hell itself breathes out
 <lb ed="G"/><lb n="2261" ed="F1"/></l><l>Contagion to this world: now could I drink hot blood,
@@ -3377,7 +3377,7 @@ gifts: she seems loath and unwilling awhile,
 <lb ed="G"/><lb n="2268" ed="F1"/></l><l>My tongue and soul in this be hypocrites;
 <lb ed="G"/><lb n="2269" ed="F1"/></l><l>How in my words soever she be shent,
 <lb ed="G"/><lb n="2270" ed="F1"/></l><l>To give them seals never, my soul, consent!
-<stage type="exit" about="[ome:involves ham.]">Exit.</stage></l></sp>
+<stage type="exit" about="[ ham.]">Exit.</stage></l></sp>
 </div2> 
 
 
@@ -3385,7 +3385,7 @@ gifts: she seems loath and unwilling awhile,
 <div2 n="3" type="scene" org="uniform" sample="complete"> 
 <head>SCENE III</head>
 <stage about="[ham:A_room_in_the_castle.]" type="location">A room in the castle.</stage>
-<lb n="2271" ed="F1"/><stage type="entrance" about="[ome:involves ros. guil.]"> Enter KING, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and <rs type="person" about="[guil.]">GUILDENSTERN</rs>. </stage>
+<lb n="2271" ed="F1"/><stage type="entrance" about="[ ros. guil.]"> Enter KING, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and <rs type="person" about="[guil.]">GUILDENSTERN</rs>. </stage>
 
 <lb ed="G"/><sp who="#king."><speaker>King.</speaker><lb n="2272" ed="F1"/><l>I like him not, nor stands it safe with us
 <lb ed="G"/><lb n="2273" ed="F1"/></l><l>To let his madness range.   Therefore prepare you;
@@ -3419,8 +3419,8 @@ gifts: she seems loath and unwilling awhile,
 <lb ed="G"/><lb n="2299" ed="F1"/></l><l>Which now goes too free-footed.
 
 <lb ed="G"/></l></sp><sp who="#ros. guil."><speaker><rs type="person" about="[ros.]">Ros.</rs> and <rs type="person" about="[guil.]">Guil.</rs></speaker><lb n="2300" ed="F1"/><l>                  We will haste us.
-<stage type="exit" about="[ome:involves ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
-<lb n="2301" ed="F1"/><stage type="entrance" about="[ome:involves pol.]">                Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
+<stage type="exit" about="[ ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
+<lb n="2301" ed="F1"/><stage type="entrance" about="[ pol.]">                Enter <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#pol."><speaker>Pol.</speaker><lb n="2302" ed="F1"/><l>My lord, he's going to his mother's closet: 
 <lb ed="G"/><lb n="2303" ed="F1"/></l><l>Behind the arras I'll convey myself,
@@ -3433,7 +3433,7 @@ gifts: she seems loath and unwilling awhile,
 <lb ed="G"/><lb n="2310" ed="F1"/></l><l>And tell you what I know.
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="2311" ed="F1"/><l>Thanks, dear my lord.
-<stage type="exit" about="[ome:involves pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>.</stage>
+<stage type="exit" about="[ pol.]">Exit <rs type="person" about="[pol.]">Polonius</rs>.</stage>
 <lb ed="G"/><lb n="2312" ed="F1"/></l><l>O, my offence is rank, it smells to heaven;
 <lb ed="G"/><lb n="2313" ed="F1"/></l><l>It hath the primal eldest curse upon't,
 <lb ed="G"/><lb n="2314" ed="F1"/></l><l>A brother's murder. Pray can I not,
@@ -3473,7 +3473,7 @@ gifts: she seems loath and unwilling awhile,
 <lb ed="G"/><lb n="2348" ed="F1"/></l><l><rs type="person" about="[all.]">All</rs> may be well.
 
 Retires and kneels.
-<lb n="2349" ed="F1"/><stage type="entrance" about="[ome:involves ham.]">                Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
+<lb n="2349" ed="F1"/><stage type="entrance" about="[ ham.]">                Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2350" ed="F1"/><l>Now might I do it pat, now he is praying;
 <lb ed="G"/><lb n="2351" ed="F1"/></l><l>And now I'll do't.   And so he goes to heaven;
@@ -3500,12 +3500,12 @@ Retires and kneels.
 <lb ed="G"/><lb n="2370" ed="F1"/></l><l>As hell, whereto it goes.   My mother stays:
 <lb ed="G"/><lb n="2371" ed="F1"/></l><l>This physic but prolongs thy sickly days.
 
-<stage type="exit" about="[ome:involves ham.]">Exit.</stage>
+<stage type="exit" about="[ ham.]">Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker>    [Rising] <lb n="2372" ed="F1"/><l>My words fly up, my thoughts remain below:
 <lb ed="G"/><lb n="2373" ed="F1"/></l><l>Words without thoughts never to heaven go.
 
-<stage type="exit" about="[ome:involves king.]">[Exit.</stage></l></sp>
+<stage type="exit" about="[ king.]">[Exit.</stage></l></sp>
 </div2> 
 
 
@@ -3513,7 +3513,7 @@ Retires and kneels.
 <div2 n="4" type="scene" org="uniform" sample="complete"> 
 <head>SCENE IV</head>
 <stage about="[ham:The_Queen's_closet.]" type="location">The Queen's closet.</stage>
-<lb n="2374" ed="F1"/><stage type="entrance" about="[ome:involves pol.]">         Enter QUEEN and <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
+<lb n="2374" ed="F1"/><stage type="entrance" about="[ pol.]">         Enter QUEEN and <rs type="person" about="[pol.]">POLONIUS</rs>.</stage>
 
 <lb ed="G"/><sp who="#pol."><speaker>Pol.</speaker><lb n="2375" ed="F1"/><l>He will come straight. <lb n="2376" ed="F1"/>Look you lay home to him:
 <lb ed="G"/><lb n="2377" ed="F1"/></l><l>Tell him his pranks have been too broad to bear with,
@@ -3527,7 +3527,7 @@ Retires and kneels.
 <lb ed="G"/></l><l>Fear me not: <lb n="2383" ed="F1"/>withdraw, I hear him coming.
 
 [<rs type="person" about="[pol.]">Polonius</rs> hides behind the arras
-<lb n="2384" ed="F1"/><stage type="entrance" about="[ome:involves ham.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
+<lb n="2384" ed="F1"/><stage type="entrance" about="[ ham.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2385" ed="F1"/><l>Now, mother, what's the matter?
 
@@ -3722,7 +3722,7 @@ Retires and kneels.
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2517" ed="F1"/><l>Why, look you there look, how it steals away!
 <lb ed="G"/><lb n="2518" ed="F1"/></l><l>My father, in his habit as he lived!
 <lb ed="G"/><lb n="2519" ed="F1"/></l><l>Look, where he goes, even now, out at the portal!
-<stage type="exit" about="[ome:involves ham.]">Exit Ghost. </stage>
+<stage type="exit" about="[ ham.]">Exit Ghost. </stage>
 
 <lb ed="G"/></l></sp><sp who="#queen."><speaker>Queen.</speaker><lb n="2520" ed="F1"/><l>This is the very coinage of your brain:
 <lb ed="G"/><lb n="2521" ed="F1"/></l><l>This bodiless creation ecstasy
@@ -3818,7 +3818,7 @@ Retires and kneels.
 <lb ed="G"/><lb n="2582" ed="F1"/></l><l>Who was in life a foolish prating knave.
 <lb ed="G"/><lb n="2583" ed="F1"/></l><l>Come, sir, to draw toward an end with you.
 <lb ed="G"/><lb n="2584" ed="F1"/></l><l>Good night, mother.
-<lb n="2585" ed="F1"/><stage type="exit" about="[ome:involves ham. pol.]">Exeunt severally; <rs type="person" about="[ham.]">Hamlet</rs> dragging in <rs type="person" about="[pol.]">Polonius</rs>.</stage></l></sp>
+<lb n="2585" ed="F1"/><stage type="exit" about="[ ham. pol.]">Exeunt severally; <rs type="person" about="[ham.]">Hamlet</rs> dragging in <rs type="person" about="[pol.]">Polonius</rs>.</stage></l></sp>
 </div2> 
 </div1> 
 
@@ -3827,7 +3827,7 @@ Retires and kneels.
 <div2 n="1" type="scene" org="uniform" sample="complete">
  <head>SCENE I</head>
 <stage about="[ham:A_room_in_the_castle.]" type="location">A room in the castle.</stage>
-<lb n="2586" ed="F1"/><stage type="entrance" about="[ome:involves ros.]">Enter KING, QUEEN, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and
+<lb n="2586" ed="F1"/><stage type="entrance" about="[ ros.]">Enter KING, QUEEN, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, and
                      GUILDENSTERN.</stage>
 
 <lb ed="G"/><sp who="#king."><speaker>King.</speaker><lb n="2587" ed="F1"/><l>There's matter in these sighs, <lb n="2588" ed="F1"/>these profound heaves:
@@ -3835,7 +3835,7 @@ Retires and kneels.
 <lb ed="G"/><lb n="2590" ed="F1"/></l><l>Where is your son?
 
 <lb ed="G"/></l></sp><sp who="#queen."><speaker>Queen.</speaker><l>Bestow this place on us a little while.
-<stage type="exit" about="[ome:involves ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
+<stage type="exit" about="[ ros. guil.]">Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
 <lb ed="G"/><lb n="2591" ed="F1"/></l><l>Ah, mine own lord, what have I seen to-night!
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="2592" ed="F1"/><l>What, <rs type="person" about="[queen.]">Gertrude</rs>?   How does <rs type="person" about="[ham.]">Hamlet</rs>?
@@ -3870,13 +3870,13 @@ Retires and kneels.
 <lb n="30" ed="G"/><lb n="2617" ed="F1"/></l><l>But we will ship him hence: and this vile deed 
 <lb ed="G"/><lb n="2618" ed="F1"/></l><l>We must, with all our majesty and skill,
 <lb ed="G"/><lb n="2619" ed="F1"/></l><l>Both countenance and excuse. <lb n="2620" ed="F1"/>Ho, <rs type="person" about="[guil.]">Guildenstern</rs>!
-       <stage type="entrance" about="[ome:involves ros. guil.]"> Re-enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
+       <stage type="entrance" about="[ ros. guil.]"> Re-enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
 <lb ed="G"/><lb n="2621" ed="F1"/></l><l>Friends both, go join you with some further aid:
 <lb ed="G"/><lb n="2622" ed="F1"/></l><l><rs type="person" about="[ham.]">Hamlet</rs> in madness hath <rs type="person" about="[pol.]">Polonius</rs> slain,
 <lb ed="G"/><lb n="2623" ed="F1"/></l><l>And from his mother's closet hath he dragg'd him:
 <lb ed="G"/><lb n="2624" ed="F1"/></l><l>Go seek him out; speak fair, and bring the body
 <lb ed="G"/><lb n="2625" ed="F1"/></l><l>Into the chapel. I pray you, haste in this.
-<stage type="exit" about="[ome:involves ros. guil.]">[Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
+<stage type="exit" about="[ ros. guil.]">[Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
 <lb ed="G"/><lb n="2626" ed="F1"/></l><l>Come, <rs type="person" about="[queen.]">Gertrude</rs>, we'll call up our wisest friends;
 <lb ed="G"/><lb n="2627" ed="F1"/></l><l>And let them know, both what we mean to do,
 <lb n="40" ed="G"/><lb n="2628" ed="F1"/></l><l>And what's untimely done........       
@@ -3885,7 +3885,7 @@ Retires and kneels.
 <lb ed="G"/></l><l>Transports his poison'd shot, may miss our name,
 <lb ed="G"/></l><l>And hit the woundless air. O, come away!
 <lb ed="G"/><lb n="2629" ed="F1"/></l><l>My soul is full of discord and dismay.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">[Exeunt.</stage></l></sp>
 </div2>
 
  
@@ -3893,7 +3893,7 @@ Retires and kneels.
 <div2 n="2" type="scene" org="uniform" sample="complete">
  <head>SCENE II</head>
 <stage about="[ham:Another_room_in_the_castle.]" type="location">Another room in the castle.</stage>
-<lb n="2630" ed="F1"/><stage type="entrance" about="[ome:involves ham.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
+<lb n="2630" ed="F1"/><stage type="entrance" about="[ ham.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>.</stage>
 
 <lb ed="G"/><sp who="#ham."><speaker>Ham.</speaker><lb n="2631" ed="F1"/><p>Safely stowed.
 
@@ -3902,7 +3902,7 @@ Retires and kneels.
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2633" ed="F1"/><p>What noise? who calls on <rs type="person" about="[ham.]">Hamlet</rs>?
 <lb n="2634" ed="F1"/><lb ed="G"/>O, here they come.
 
-<stage type="entrance" about="[ome:involves ros. guil.]">  Enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
+<stage type="entrance" about="[ ros. guil.]">  Enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#ros."><speaker><rs type="person" about="[ros.]">Ros.</rs></speaker><lb n="2635" ed="F1"/><l>What have you done, my lord, with the dead body?
 
@@ -3948,7 +3948,7 @@ Retires and kneels.
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2659" ed="F1"/><p>Of nothing: bring me to him. Hide
 <lb ed="G"/>fox, and all <lb n="2660" ed="F1"/>after.
  
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></p></sp>
+<stage about="[-all]" type="exit">[Exeunt.</stage></p></sp>
 </div2> 
 
 
@@ -3969,7 +3969,7 @@ Retires and kneels.
 <lb ed="G"/><lb n="2670" ed="F1"/></l><l>Deliberate pause: diseases desperate grown
 <lb n="10" ed="G"/><lb n="2671" ed="F1"/></l><l>By desperate appliance are relieved,         
 <lb ed="G"/><lb n="2672" ed="F1"/></l><l>Or not at all.
-<stage type="entrance" about="[ome:involves ros.]">             Enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs>.</stage>
+<stage type="entrance" about="[ ros.]">             Enter <rs type="person" about="[ros.]">ROSENCRANTZ</rs>.</stage>
 <lb ed="G"/><lb n="2673" ed="F1"/></l><l>How now! what hath befall'n?
 
 <lb ed="G"/></l></sp><sp who="#ros."><speaker><rs type="person" about="[ros.]">Ros.</rs></speaker><lb n="2674" ed="F1"/><l>Where the dead body is bestow'd, my lord,
@@ -3982,7 +3982,7 @@ Retires and kneels.
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="2679" ed="F1"/><p>Bring him before us.
 
 <lb ed="G"/></p></sp><sp who="#ros."><speaker><rs type="person" about="[ros.]">Ros.</rs></speaker><lb n="2680" ed="F1"/><p>Ho, <rs type="person" about="[guil.]">Guildenstern</rs>! bring in my lord.
-<lb n="2681" ed="F1"/><stage type="entrance" about="[ome:involves ham. guil.]">   Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
+<lb n="2681" ed="F1"/><stage type="entrance" about="[ ham. guil.]">   Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[guil.]">GUILDENSTERN</rs>.</stage>
 
 <lb ed="G"/></p></sp><sp who="#king."><speaker>King.</speaker><lb n="2682" ed="F1"/><p>Now, <rs type="person" about="[ham.]">Hamlet</rs>, where's <rs type="person" about="[pol.]">Polonius</rs>?
 
@@ -4022,7 +4022,7 @@ Retires and kneels.
 [To some Attendants.
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2700" ed="F1"/><p>He will stay till you come.
-<stage about="[ome:involves-all]" type="exit">[Exeunt Attendants.</stage>
+<stage about="[-all]" type="exit">[Exeunt Attendants.</stage>
 
 <lb ed="G"/></p></sp><sp who="#king."><speaker>King.</speaker><lb n="2701" ed="F1"/><l><rs type="person" about="[ham.]">Hamlet</rs>, this deed, for thine especial safety,���
 <lb ed="G"/><lb n="2702" ed="F1"/></l><l>Which we do tender, as we dearly grieve
@@ -4048,13 +4048,13 @@ Retires and kneels.
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="2715" ed="F1"/><l>My mother: father and mother is
 <lb ed="G"/>man and <lb n="2716" ed="F1"/>wife; man and wife is one flesh; 
 <lb ed="G"/>and so, my mother. Come, <lb n="2717" ed="F1"/>for England! 
-      <stage type="exit" about="[ome:involves ham.]">[Exit.</stage>
+      <stage type="exit" about="[ ham.]">[Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="2718" ed="F1"/><l>Follow him at foot; <lb n="2719" ed="F1"/>tempt him with speed aboard;
 <lb ed="G"/><lb n="2720" ed="F1"/></l><l>Delay it not; I'll have him hence to-night:
 <lb ed="G"/><lb n="2721" ed="F1"/></l><l>Away! for every thing is seal'd and done
 <lb ed="G"/><lb n="2722" ed="F1"/></l><l>That else leans on the affair: pray you, make haste.
-<stage type="exit" about="[ome:involves ros. guil.]">[Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
+<stage type="exit" about="[ ros. guil.]">[Exeunt <rs type="person" about="[ros.]">Rosencrantz</rs> and <rs type="person" about="[guil.]">Guildenstern</rs>.</stage>
 <lb n="60" ed="G"/><lb n="2723" ed="F1"/></l><l>And, England, if my love thou hold'st at aught��� 
 <lb ed="G"/><lb n="2724" ed="F1"/></l><l>As my great power thereof may give thee sense,
 <lb ed="G"/><lb n="2725" ed="F1"/></l><l>Since yet thy cicatrice looks raw and red
@@ -4067,7 +4067,7 @@ Retires and kneels.
 <lb ed="G"/><lb n="2732" ed="F1"/></l><l>And thou must cure me: till I know 'tis done,
 <lb ed="G"/><lb n="2733" ed="F1"/></l><l>Howe'er my haps, my joys were ne'er begun.
 
-<stage type="exit" about="[ome:involves king.]">[Exit.</stage></l></sp>
+<stage type="exit" about="[ king.]">[Exit.</stage></l></sp>
 </div2> 
 
 
@@ -4076,7 +4076,7 @@ Retires and kneels.
  <head>SCENE IV</head>
 
 <stage about="[ham:A_plain_in_Denmark.]" type="location">A plain in Denmark.</stage>
-<lb n="2734" ed="F1"/><stage type="entrance" about="[ome:involves fort.]">Enter <rs type="person" about="[fort.]">FORTINBRAS</rs>, a Captain, and Soldiers, marching. </stage>
+<lb n="2734" ed="F1"/><stage type="entrance" about="[ fort.]">Enter <rs type="person" about="[fort.]">FORTINBRAS</rs>, a Captain, and Soldiers, marching. </stage>
 
 <lb ed="G"/><sp who="#fort."><speaker>Fort.</speaker><lb n="2735" ed="F1"/><l>Go, captain, from me greet the Danish king;
 <lb ed="G"/><lb n="2736" ed="F1"/></l><l>Tell him that, by his license, <rs type="person" about="[fort.]">Fortinbras</rs>
@@ -4089,9 +4089,9 @@ Retires and kneels.
 <lb ed="G"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><lb n="2742" ed="F1"/><l>I will do't, my lord.
 
 <lb ed="G"/></l></sp><sp who="#fort."><speaker>Fort.</speaker><lb n="2743" ed="F1"/><l>Go softly on.
-<stage type="exit" about="[ome:involves fort.]">[Exeunt <rs type="person" about="[fort.]">Fortinbras</rs> and Soldiers,</stage>
+<stage type="exit" about="[ fort.]">[Exeunt <rs type="person" about="[fort.]">Fortinbras</rs> and Soldiers,</stage>
 
-<stage type="entrance" about="[ome:involves ham. ros. guil.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, <rs type="person" about="[guil.]">GUILDENSTERN</rs>, and others.</stage>
+<stage type="entrance" about="[ ham. ros. guil.]">Enter <rs type="person" about="[ham.]">HAMLET</rs>, <rs type="person" about="[ros.]">ROSENCRANTZ</rs>, <rs type="person" about="[guil.]">GUILDENSTERN</rs>, and others.</stage>
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><l>Good sir, whose powers are these?
 
@@ -4126,12 +4126,12 @@ Retires and kneels.
 <lb ed="G"/></l><l>Why the man dies. I humbly thank you, sir.
 
 <lb ed="G"/></l></sp><sp who="#cap."><speaker>Cap.</speaker><l>God be wi' you, sir.
-<stage type="exit" about="[ome:involves cap.]">[Exit.</stage>
+<stage type="exit" about="[ cap.]">[Exit.</stage>
 
 <lb n="30" ed="G"/></l></sp><sp who="#ros."><speaker><rs type="person" about="[ros.]">Ros.</rs></speaker><l>Will't please you go, my lord? 
 
 <lb ed="G"/></l></sp><sp who="#ham."><speaker>Ham.</speaker><l>I'll be with you straight.   Go a little before.
-<stage type="exit" about="[ome:involves !( ham.)]">[Exeunt all except <rs type="person" about="[ham.]">Hamlet</rs>, </stage>
+<stage type="exit" about="[ !( ham.)]">[Exeunt all except <rs type="person" about="[ham.]">Hamlet</rs>, </stage>
 <lb ed="G"/></l><l>How all occasions do inform against me,
 <lb ed="G"/></l><l>And spur my dull revenge!   What is a man,
 <lb ed="G"/></l><l>If his chief good and market of his time
@@ -4167,14 +4167,14 @@ Retires and kneels.
 <lb ed="G"/></l><l>Which is not tomb enough and continent
 <lb ed="G"/></l><l>Fo hide the slain?   O, from this time forth,
 <lb ed="G"/></l><l>My thoughts be bloody, or be nothing worth!
-<stage type="exit" about="[ome:involves ham.]">[Exit.</stage></l></sp>
+<stage type="exit" about="[ ham.]">[Exit.</stage></l></sp>
 </div2> 
 
 <div2 n="5" type="scene" org="uniform" sample="complete">
  <head>SCENE V</head>
 
 <stage about="[ham:Elsinore._A_room_in_the_castle.]" type="location">Elsinore. A room in the castle.</stage>
-<lb n="2744" ed="F1"/><stage type="entrance" about="[ome:involves hor.]">Enter QUEEN, <rs type="person" about="[hor.]">HORATIO</rs>, and a Gentleman.</stage>
+<lb n="2744" ed="F1"/><stage type="entrance" about="[ hor.]">Enter QUEEN, <rs type="person" about="[hor.]">HORATIO</rs>, and a Gentleman.</stage>
 
 <lb ed="G"/><sp who="#queen."><speaker>Queen.</speaker><lb n="2745" ed="F1"/><l>I will not speak with her.
 
@@ -4198,12 +4198,12 @@ Retires and kneels.
 <lb ed="G"/><lb n="2760" ed="F1"/></l><l>Dangerous conjectures in ill-breeding minds.
 
 <lb ed="G"/></l></sp><sp who="#queen."><speaker>Queen.</speaker><lb n="2761" ed="F1"/><l>Let her come in.
-<stage type="exit" about="[ome:involves hor.]">[Exit <rs type="person" about="[hor.]">Horatio</rs>.</stage>
+<stage type="exit" about="[ hor.]">[Exit <rs type="person" about="[hor.]">Horatio</rs>.</stage>
 <lb ed="G"/><lb n="2762" ed="F1"/></l><l>To my sick soul, as sin's true nature is,
 <lb ed="G"/><lb n="2763" ed="F1"/></l><l>Each toy seems prologue to some great amiss:
 <lb ed="G"/><lb n="2764" ed="F1"/></l><l>So full of artless jealousy is guilt,
 <lb n="20" ed="G"/><lb n="2765" ed="F1"/></l><l>It spills itself in fearing to be split.
-<lb ed="G"/><lb n="2766" ed="F1"/><stage type="entrance" about="[ome:involves hor. oph.]">Re-enter <rs type="person" about="[hor.]">HORATIO</rs> with <rs type="person" about="[oph.]">OPHELIA</rs>.</stage>
+<lb ed="G"/><lb n="2766" ed="F1"/><stage type="entrance" about="[ hor. oph.]">Re-enter <rs type="person" about="[hor.]">HORATIO</rs> with <rs type="person" about="[oph.]">OPHELIA</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#oph."><speaker>Oph.</speaker><lb n="2767" ed="F1"/><l>Where is the beauteous majesty of Denmark?
 
@@ -4297,10 +4297,10 @@ Retires and kneels.
 <lb ed="G"/>you for your good counsel. Come, my <lb n="2809" ed="F1"/>coach! 
 <lb ed="G"/>Good night, ladies; good night, sweet ladies;
 <lb n="2810" ed="F1"/><lb ed="G"/>good night, good night.                    
-<stage type="exit" about="[ome:involves oph.]">Exit.</stage>
+<stage type="exit" about="[ oph.]">Exit.</stage>
 
 <lb ed="G"/></p></sp><sp who="#king."><speaker>King.</speaker><lb n="2811" ed="F1"/><l>Follow her close; <lb n="2812" ed="F1"/>give her good watch, I pray you.
-<stage type="exit" about="[ome:involves hor.]">[Exit <rs type="person" about="[hor.]">Horatio</rs>. </stage>
+<stage type="exit" about="[ hor.]">[Exit <rs type="person" about="[hor.]">Horatio</rs>. </stage>
 
 <lb ed="G"/><lb n="2813" ed="F1"/></l><l>O, this is the poison of deep grief; it springs
 <lb ed="G"/><lb n="2814" ed="F1"/></l><l><rs type="person" about="[all.]">All</rs> from her father's death.  O <rs type="person" about="[queen.]">Gertrude</rs>, <rs type="person" about="[queen.]">Gertrude</rs>,
@@ -4349,7 +4349,7 @@ Retires and kneels.
 <lb n="2851" ed="F1"/>
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="2852" ed="F1"/><l>The doors are broke.     [Noise within.
 
-<stage type="entrance" about="[ome:involves laer.]">Enter <rs type="person" about="[laer.]">LAERTES</rs>, armed; Danes following.</stage>
+<stage type="entrance" about="[ laer.]">Enter <rs type="person" about="[laer.]">LAERTES</rs>, armed; Danes following.</stage>
 
 <lb ed="G"/></l></sp><sp who="#laer."><speaker>Laer.</speaker><lb n="2853" ed="F1"/><l>Where is this king?   Sirs, stand you all without.
 
@@ -4359,7 +4359,7 @@ Retires and kneels.
 
 <lb ed="G"/></l></sp><sp who="#danes."><speaker><rs type="person" about="[danes.]">Danes.</rs></speaker><lb n="2856" ed="F1"/><p>We will, we will.
 
-<stage type="exit" about="[ome:involves danes.]">[They retire without the door.</stage>
+<stage type="exit" about="[ danes.]">[They retire without the door.</stage>
 
 <lb ed="G"/></p></sp><sp who="#laer."><speaker>Laer.</speaker><lb n="2857" ed="F1"/><l>I thank you; keep the door.   <lb n="2858" ed="F1"/>O thou vile king,
 <lb ed="G"/></l><l>Give me my father!
@@ -4427,7 +4427,7 @@ Retires and kneels.
 <lb n="2905" ed="F1"/>
 <lb ed="G"/></p></sp><sp who="#laer."><speaker>Laer.</speaker><lb n="2906" ed="F1"/><l>How now! what noise is that?
 
-<stage type="entrance" about="[ome:involves oph.]">               Re-enter <rs type="person" about="[oph.]">OPHELIA</rs>.</stage>
+<stage type="entrance" about="[ oph.]">               Re-enter <rs type="person" about="[oph.]">OPHELIA</rs>.</stage>
 
 <lb ed="G"/><lb n="2907" ed="F1"/></l><l>O heat, dry up my brains! tears seven times salt,
 <lb ed="G"/><lb n="2908" ed="F1"/></l><l>Burn out the sense and virtue of mine eye!
@@ -4504,7 +4504,7 @@ Retires and kneels.
 	      </l></lg>
 	    </lg>
 <lb ed="G"/><lb n="2949" ed="F1"/><l>And of all Christian souls, I pray God. <lb n="2950" ed="F1"/>God be wi' ye.
-<stage type="exit" about="[ome:involves oph.]">[Exit. </stage>
+<stage type="exit" about="[ oph.]">[Exit. </stage>
 
 <lb n="201" ed="G"/></l></sp><sp who="#laer."><speaker>Laer.</speaker><lb n="2951" ed="F1"/><p>Do you see this, O God?
 
@@ -4530,24 +4530,24 @@ Retires and kneels.
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="2969" ed="F1"/><l>So you shall;
 <lb ed="G"/><lb n="2970" ed="F1"/></l><l>And where the offence is let the great axe fall.
 <lb ed="G"/><lb n="2971" ed="F1"/></l><l>I pray you, go with me.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">[Exeunt.</stage></l></sp>
 </div2> 
 
 
 <div2 n="6" type="scene" org="uniform" sample="complete">
  <head>SCENE VI</head>
 <stage about="[ham:Another_room_in_the_castle.]" type="location">Another room in the castle.</stage>
-<lb n="2972" ed="F1"/><stage type="entrance" about="[ome:involves hor. serv.]"> Enter <rs type="person" about="[hor.]">HORATIO</rs> and a <rs type="person" about="[serv.]">Servant</rs>.</stage>
+<lb n="2972" ed="F1"/><stage type="entrance" about="[ hor. serv.]"> Enter <rs type="person" about="[hor.]">HORATIO</rs> and a <rs type="person" about="[serv.]">Servant</rs>.</stage>
 
 <lb ed="G"/><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="2973" ed="F1"/><l>What are they that would speak with me?
 
 <lb ed="G"/></l></sp><sp who="#serv."><speaker>Serv.</speaker><lb n="2974" ed="F1"/><l><rs type="person" about="[sail.]">Sailor</rs>s, sir: they say they have letters for you.
 
 <lb ed="G"/></l></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="2975" ed="F1"/><l>Let them come in.
-<stage type="exit" about="[ome:involves serv.]">[Exit <rs type="person" about="[serv.]">Servant</rs>.</stage>
+<stage type="exit" about="[ serv.]">[Exit <rs type="person" about="[serv.]">Servant</rs>.</stage>
 <lb ed="G"/><lb n="2976" ed="F1"/></l><l>I do not know from what part of the world
 <lb ed="G"/><lb n="2977" ed="F1"/></l><l>I should be greeted, if not from Lord <rs type="person" about="[ham.]">Hamlet</rs>.
-<lb n="2978" ed="F1"/><stage type="entrance" about="[ome:involves sail.]">                 Enter <rs type="person" about="[sail.]">Sailor</rs>s.</stage>
+<lb n="2978" ed="F1"/><stage type="entrance" about="[ sail.]">                 Enter <rs type="person" about="[sail.]">Sailor</rs>s.</stage>
 
 <lb ed="G"/></l></sp><sp who="#sail."><speaker>First Sail.</speaker><lb n="2979" ed="F1"/><p>God bless you, sir.
 
@@ -4588,14 +4588,14 @@ Retires and kneels.
 <lb n="3004" ed="F1"/><lb ed="G"/>And do't the speedier, that you may direct me
 <lb n="3005" ed="F1"/><lb ed="G"/>To him from whom you brought them.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></p></sp>
+<stage about="[-all]" type="exit">[Exeunt.</stage></p></sp>
 </div2> 
 
 
 <div2 n="7" type="scene" org="uniform" sample="complete">
  <head>SCENE VII</head>
 <stage about="[ham:Another_room_in_the_castle.]" type="location">Another room in the castle.</stage>
-<lb n="3006" ed="F1"/><stage type="entrance" about="[ome:involves laer.]">Enter KING and <rs type="person" about="[laer.]">LAERTES</rs>.</stage>
+<lb n="3006" ed="F1"/><stage type="entrance" about="[ laer.]">Enter KING and <rs type="person" about="[laer.]">LAERTES</rs>.</stage>
 
 <lb ed="G"/><sp who="#king."><speaker>King.</speaker><lb n="3007" ed="F1"/><l>Now must your conscience my acquittance seal,
 <lb ed="G"/><lb n="3008" ed="F1"/></l><l>And you must put me in your heart for friend,
@@ -4653,7 +4653,7 @@ Retires and kneels.
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="3052" ed="F1"/><l><rs type="person" about="[laer.]">Laertes</rs>, you shall hear them.
 <lb ed="G"/><lb n="3053" ed="F1"/></l><l>Leave us.
-<stage type="exit" about="[ome:involves king.]">[Exit Messenger.</stage>
+<stage type="exit" about="[ king.]">[Exit Messenger.</stage>
    [Reads]
 <text><body><lb n="3054" ed="F1"/><p>'High and mighty, You shall know
 <lb ed="G"/>I am set naked on your <lb n="3055" ed="F1"/>kingdom. To-morrow
@@ -4851,13 +4851,13 @@ Retires and kneels.
 <lb ed="G"/><lb n="3182" ed="F1"/></l><l>The woman will be out. Adieu, my lord:
 <lb ed="G"/><lb n="3183" ed="F1"/></l><l>I have a speech of fire, that fain would blaze,
 <lb ed="G"/><lb n="3184" ed="F1"/></l><l>But that this folly douts it.
-<stage type="exit" about="[ome:involves laer.]">Exit.</stage>
+<stage type="exit" about="[ laer.]">Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="3185" ed="F1"/><l>Let's follow, <rs type="person" about="[queen.]">Gertrude</rs>:
 <lb ed="G"/><lb n="3186" ed="F1"/></l><l>How much I had to do to calm his rage!
 <lb ed="G"/><lb n="3187" ed="F1"/></l><l>Now fear I this will give it start again;
 <lb ed="G"/><lb n="3188" ed="F1"/></l><l>Therefore let's follow.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">[Exeunt.</stage></l></sp>
 </div2> 
 </div1> 
 
@@ -4950,7 +4950,7 @@ Retires and kneels.
 <lb ed="G"/></p></sp><sp who="#first-clo."><speaker>First Clo.</speaker><lb n="3243" ed="F1"/><p>To't.
 
 <lb ed="G"/></p></sp><sp who="#sec.-clo."><speaker>Sec. Clo.</speaker><lb n="3244" ed="F1"/><p>Mass, I cannot tell.
-<lb n="3245" ed="F1"/><stage type="entrance" about="[ome:involves ham. hor.]"> Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[hor.]">HORATIO</rs>, at a distance.</stage>
+<lb n="3245" ed="F1"/><stage type="entrance" about="[ ham. hor.]"> Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[hor.]">HORATIO</rs>, at a distance.</stage>
 
 <lb ed="G"/></p></sp><sp who="#first-clo."><speaker>First Clo.</speaker><lb n="3246" ed="F1"/><p>Cudgel thy brains no more
 <lb ed="G"/>about it, for your <lb n="3247" ed="F1"/>dull ass will not mend his 
@@ -4958,7 +4958,7 @@ Retires and kneels.
 <lb ed="G"/>this question next, say 'a grave-maker:' the
 <lb n="3249" ed="F1"/><lb ed="G"/>houses that he makes last till doomsday. Go,
 <lb ed="G"/>get thee <lb n="3250" ed="F1"/>to Yaughan: fetch me a stoup of
-<lb ed="G"/>liquor.             <stage type="exit" about="[ome:involves first-clo.]">[Exit Sec. Clown.</stage>
+<lb ed="G"/>liquor.             <stage type="exit" about="[ first-clo.]">[Exit Sec. Clown.</stage>
 <lb n="3251" ed="F1"/>[He digs, and sings.
 	    </p><lg next="g1.2" type="song" id="g1.1" org="uniform" sample="complete">
 	      <lb n="3252" ed="F1"/><l>In youth, when I did love, did love,
@@ -5327,24 +5327,24 @@ Retires and kneels.
 <lb ed="G"/><lb n="3489" ed="F1"/></l><l>I loved you ever: but it is no matter;
 <lb ed="G"/><lb n="3490" ed="F1"/></l><l>Let Hercules himself do what he may,
 <lb ed="G"/><lb n="3491" ed="F1"/></l><l>The cat will mew and dog will have his day.
-<stage type="exit" about="[ome:involves ham.]">[Exit.</stage>
+<stage type="exit" about="[ ham.]">[Exit.</stage>
 
 <lb ed="G"/></l></sp><sp who="#king."><speaker>King.</speaker><lb n="3492" ed="F1"/><l>I pray you, good <rs type="person" about="[hor.]">Horatio</rs>, wait upon him.
-<stage type="exit" about="[ome:involves hor.]">[Exit <rs type="person" about="[hor.]">Horatio</rs>. </stage>
+<stage type="exit" about="[ hor.]">[Exit <rs type="person" about="[hor.]">Horatio</rs>. </stage>
 <lb ed="G"/>[To <rs type="person" about="[laer.]">Laertes</rs>]<lb n="3493" ed="F1"/></l><l>Strengthen your patience in our last night's speech;
 <lb ed="G"/><lb n="3494" ed="F1"/></l><l>We'll put the matter to the present push.
 <lb ed="G"/><lb n="3495" ed="F1"/></l><l>Good <rs type="person" about="[queen.]">Gertrude</rs>, set some watch over your son.
 <lb n="320" ed="G"/><lb n="3496" ed="F1"/></l><l>This grave shall have a living monument: 
 <lb ed="G"/><lb n="3497" ed="F1"/></l><l>An hour of quiet shortly shall we see;
 <lb ed="G"/><lb n="3498" ed="F1"/></l><l>Till then, in patience our proceeding be.
-<lb ed="G"/><stage about="[ome:involves-all]" type="exit">        [Exeunt.</stage></l></sp>
+<lb ed="G"/><stage about="[-all]" type="exit">        [Exeunt.</stage></l></sp>
 </div2> 
 
 
 <div2 n="2" type="scene" org="uniform" sample="complete">
  <head>SCENE II</head>
 <stage about="[ham:A_hall_in_the_castle.]" type="location">A hall in the castle.</stage>
-<lb n="3499" ed="F1"/><stage type="entrance" about="[ome:involves ham. hor.]"> Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[hor.]">HORATIO</rs>.  </stage>
+<lb n="3499" ed="F1"/><stage type="entrance" about="[ ham. hor.]"> Enter <rs type="person" about="[ham.]">HAMLET</rs> and <rs type="person" about="[hor.]">HORATIO</rs>.  </stage>
 
 <lb ed="G"/><sp who="#ham."><speaker>Ham.</speaker><lb n="3500" ed="F1"/><l>So much for this, sir: now shall you see the other;
 <lb ed="G"/><lb n="3501" ed="F1"/></l><l>You do remember all the circumstance?
@@ -5451,7 +5451,7 @@ Retires and kneels.
 <lb ed="G"/><lb n="3584" ed="F1"/></l><l>Into a towering passion.
 
 <lb n="80" ed="G"/></l></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="3585" ed="F1"/><l>Peace! who comes here? 
-<lb n="3586" ed="F1"/><stage type="entrance" about="[ome:involves osr.]">                  Enter <rs type="person" about="[osr.]">OSRIC</rs>.</stage>
+<lb n="3586" ed="F1"/><stage type="entrance" about="[ osr.]">                  Enter <rs type="person" about="[osr.]">OSRIC</rs>.</stage>
 
 <lb ed="G"/></l></sp><sp who="#osr."><speaker>Osr.</speaker><lb n="3587" ed="F1"/><p>Your lordship is right welcome back
 <lb ed="G"/>to Denmark. 
@@ -5609,7 +5609,7 @@ Retires and kneels.
 
 <lb ed="G"/></p></sp><sp who="#osr."><speaker>Osr.</speaker><lb n="3646" ed="F1"/><p>I commend my duty to your lordship.
 
-<lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="3647" ed="F1"/><p>Yours, yours.   <stage type="exit" about="[ome:involves osr.]">[Exit <rs type="person" about="[osr.]">Osric</rs>.</stage>  He
+<lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><lb n="3647" ed="F1"/><p>Yours, yours.   <stage type="exit" about="[ osr.]">[Exit <rs type="person" about="[osr.]">Osric</rs>.</stage>  He
 <lb ed="G"/>does well to commend it <lb n="3648" ed="F1"/>himself; there are no 
 <lb ed="G"/>tongues else for's turn. 
 
@@ -5625,7 +5625,7 @@ Retires and kneels.
 <lb ed="G"/>most fond and winnowed opinions; and do 
 <lb ed="G"/>but blow <lb n="3657" ed="F1"/>them to their trial, the bubbles are 
 <lb ed="G"/>out. 
-<stage type="entrance" about="[ome:involves lord.]">                  Enter a <rs type="person" about="[lord.]">Lord.</rs></stage>
+<stage type="entrance" about="[ lord.]">                  Enter a <rs type="person" about="[lord.]">Lord.</rs></stage>
 
 <lb ed="G"/></p></sp><sp who="#lord."><speaker><rs type="person" about="[lord.]">Lord.</rs></speaker><p>My lord, his majesty commended
 <lb ed="G"/>him to you by young <rs type="person" about="[osr.]">Osric</rs>, who brings back 
@@ -5647,7 +5647,7 @@ Retires and kneels.
 <lb ed="G"/>to play. 
 
 <lb ed="G"/></p></sp><sp who="#ham."><speaker>Ham.</speaker><p>She well instructs me.
-<stage type="exit" about="[ome:involves lord.]">[Exit <rs type="person" about="[lord.]">Lord.</rs></stage>
+<stage type="exit" about="[ lord.]">[Exit <rs type="person" about="[lord.]">Lord.</rs></stage>
 
 <lb ed="G"/></p></sp><sp who="#hor."><speaker><rs type="person" about="[hor.]">Hor.</rs></speaker><lb n="3658" ed="F1"/><p>You will lose this wager, my lord.
 
@@ -5674,7 +5674,7 @@ Retires and kneels.
 <lb ed="G"/>will come: the readiness is all: since no <lb n="3672" ed="F1"/>man 
 <lb ed="G"/>has aught of what he leaves, what is't to leave 
 <lb n="3673" ed="F1"/><lb ed="G"/>betimes? 
-<lb n="3674" ed="F1"/><stage type="entrance" about="[ome:involves laer. osr.]">Enter KING, QUEEN, <rs type="person" about="[laer.]">LAERTES</rs>, Lords, <rs type="person" about="[osr.]">OSRIC</rs>, and Attendants <lb n="3675" ed="F1"/>with foils, &amp;c. </stage>
+<lb n="3674" ed="F1"/><stage type="entrance" about="[ laer. osr.]">Enter KING, QUEEN, <rs type="person" about="[laer.]">LAERTES</rs>, Lords, <rs type="person" about="[osr.]">OSRIC</rs>, and Attendants <lb n="3675" ed="F1"/>with foils, &amp;c. </stage>
 <lb n="3676" ed="F1"/>
 <lb ed="G"/></p></sp><sp who="#king."><speaker>King.</speaker><lb n="3677" ed="F1"/><l>Come, <rs type="person" about="[ham.]">Hamlet</rs>, come, and take this hand from me.
 [The King puts <rs type="person" about="[laer.]">Laertes</rs>' hand into <rs type="person" about="[ham.]">Hamlet</rs>'s.
@@ -5905,7 +5905,7 @@ They play.
 <lb ed="G"/><lb n="3850" ed="F1"/></l><l>And flights of angels sing thee to thy rest!
 <lb ed="G"/><lb n="3851" ed="F1"/></l><l>Why does the drum come hither?
 [March within.
-<lb n="3852" ed="F1"/><stage type="entrance" about="[ome:involves fort. first-amb.]"> Enter <rs type="person" about="[fort.]">FORTINBRAS</rs>, the <rs type="person" about="[first-amb.]">English Ambassadors</rs>,  and others.</stage> 
+<lb n="3852" ed="F1"/><stage type="entrance" about="[ fort. first-amb.]"> Enter <rs type="person" about="[fort.]">FORTINBRAS</rs>, the <rs type="person" about="[first-amb.]">English Ambassadors</rs>,  and others.</stage> 
 <lb n="3853" ed="F1"/>
 <lb ed="G"/></l></sp><sp who="#fort."><speaker>Fort.</speaker><lb n="3854" ed="F1"/><l>Where is this sight?
 
@@ -5961,7 +5961,7 @@ They play.
 <lb ed="G"/><lb n="3902" ed="F1"/></l><l>Take up the bodies: such a sight as this
 <lb ed="G"/><lb n="3903" ed="F1"/></l><l>Becomes the field, but here shows much amiss.
 <lb ed="G"/><lb n="3904" ed="F1"/></l><l>Go, bid the soldiers shoot.
-[A dead march. <lb n="3905" ed="F1"/><stage about="[ome:involves-all]" type="exit">Exeunt, bearing off the
+[A dead march. <lb n="3905" ed="F1"/><stage about="[-all]" type="exit">Exeunt, bearing off the
          dead bodies; after which a peal of <lb n="3906" ed="F1"/>ordnance is shot off.</stage></l></sp>
 </div2> 
 </div1> 

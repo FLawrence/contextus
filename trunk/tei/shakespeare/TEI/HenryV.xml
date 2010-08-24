@@ -180,7 +180,7 @@
     <div1 n="prologue" type="act" org="uniform" sample="complete">
       <head>PROLOGUE</head>
       <lb ed="F1" n="2"/>
-      <stage type="entrance" about="[ome:involves chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
+      <stage type="entrance" about="[ chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
       <lb ed="G"/><lb ed="F1" n="3"/>
       
       <sp who="#chor."><speaker>Chor.</speaker><p>O for a Muse of fire, that would ascend
@@ -218,7 +218,7 @@
         <lb ed="G"/><lb ed="F1" n="35"/>Who prologue-like your humble patience pray,
         <lb ed="G"/><lb ed="F1" n="36"/>Gently to hear, kindly to judge, our play.
         
-        <lb ed="G"/><stage type="exit" about="[ome:involves chor.]">Exit.</stage>
+        <lb ed="G"/><stage type="exit" about="[ chor.]">Exit.</stage>
       </p></sp>
     </div1>
 
@@ -227,7 +227,7 @@
 <lb ed="F1" n="37"/>
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
-<lb ed="F1" n="38"/><stage type="entrance" about="[ome:involves cant. ely.]">Enter the <rs type="person" about="[cant.]">ARCHBISHOP OF CANTERBURY</rs>, and the <rs type="person" about="[ely.]">BISHOP OF ELY</rs>.</stage>
+<lb ed="F1" n="38"/><stage type="entrance" about="[ cant. ely.]">Enter the <rs type="person" about="[cant.]">ARCHBISHOP OF CANTERBURY</rs>, and the <rs type="person" about="[ely.]">BISHOP OF ELY</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="39"/><sp who="#cant."><speaker>Cant.</speaker><l>My lord, I'll tell you; that self bill is urged,
 <lb ed="G"/><lb ed="F1" n="40"/></l><l>Which in the eleventh year of the last king's reign
@@ -352,13 +352,13 @@
 <lb ed="G"/><lb ed="F1" n="140"/></l><l>Before the Frenchman speak a word of it.
 
 <lb ed="G"/><lb ed="F1" n="141"/></l></sp><sp who="#ely."><speaker><rs type="person" about="[ely.]">Ely</rs>.</speaker><l>I'll wait upon you, and I long to hear it.
-<lb ed="F1" n="142"/><stage about="[ome:involves-all]" type="exit">Exeunt. </stage>
+<lb ed="F1" n="142"/><stage about="[-all]" type="exit">Exeunt. </stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <lb ed="G"/>
-<lb ed="F1" n="143"/><stage type="entrance" about="[ome:involves k.-hen. glou. bed. exe. war. west.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[exe.]">EXETER</rs>, <lb ed="F1" n="144"/><rs type="person" about="[war.]">WARWICK</rs>, <rs type="person" about="[west.]">WESTMORELAND</rs>, and Attendants.</stage>
+<lb ed="F1" n="143"/><stage type="entrance" about="[ k.-hen. glou. bed. exe. war. west.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[exe.]">EXETER</rs>, <lb ed="F1" n="144"/><rs type="person" about="[war.]">WARWICK</rs>, <rs type="person" about="[west.]">WESTMORELAND</rs>, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="145"/><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Where is my gracious Lord of <rs type="person" about="[cant.]">Canterbury</rs>?
 
@@ -371,7 +371,7 @@
 <lb ed="G"/><lb ed="F1" n="149"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Not yet, my cousin: we would be resolved,
 <lb ed="G"/><lb ed="F1" n="150"/></l><l>Before we hear him, of some things of weight
 <lb ed="G"/><lb ed="F1" n="151"/></l><l>That task our thoughts, concerning us and France.
-<lb ed="F1" n="152"/><stage type="entrance" about="[ome:involves cant.]">Enter the <rs type="person" about="[cant.]">ARCHBISHOP OF CANTERBURY</rs>, and</stage>
+<lb ed="F1" n="152"/><stage type="entrance" about="[ cant.]">Enter the <rs type="person" about="[cant.]">ARCHBISHOP OF CANTERBURY</rs>, and</stage>
 <lb ed="G"/>             the <rs type="person" about="[ely.]">BISHOP OF ELY</rs>.
 
 <lb ed="G"/><lb ed="F1" n="153"/></l></sp><sp who="#cant."><speaker>Cant.</speaker><l>God and his angels guard your sacred throne
@@ -607,7 +607,7 @@
 <lb ed="G" n="220"/><lb ed="F1" n="367"/></l><l>The name of hardiness and policy.
 
 <lb ed="G"/><lb ed="F1" n="368"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Call in the messengers sent from the Dauphin.
-<lb ed="G"/><stage about="[ome:involves-all]" type="exit">Exeunt some Attendants. </stage>
+<lb ed="G"/><stage about="[-all]" type="exit">Exeunt some Attendants. </stage>
 
 <lb ed="G"/><lb ed="F1" n="369"/></l><l>Now are we well resolved; and, by God's help,
 <lb ed="G"/><lb ed="F1" n="370"/></l><l>And yours, the noble sinews of our power,
@@ -621,7 +621,7 @@
 <lb ed="G"/><lb ed="F1" n="378"/></l><l>Speak freely of our acts, or else our grave,
 <lb ed="G"/><lb ed="F1" n="379"/></l><l>Like Turkish mute, shall have a tongueless mouth,
 <lb ed="G"/><lb ed="F1" n="380"/></l><l>Not worshipp'd with a waxen epitaph.
-<lb ed="F1" n="381"/><stage type="entrance" about="[ome:involves first-amb.]">Enter <rs type="person" about="[first-amb.]">Ambassadors</rs> of France.</stage>
+<lb ed="F1" n="381"/><stage type="entrance" about="[ first-amb.]">Enter <rs type="person" about="[first-amb.]">Ambassadors</rs> of France.</stage>
 <lb ed="G"/><lb ed="F1" n="382"/></l><l>Now are we well prepared to know the pleasure
 <lb ed="G"/><lb ed="F1" n="383"/></l><l>Of our fair cousin Dauphin; for we hear
 <lb ed="G"/><lb ed="F1" n="384"/></l><l>Your greeting is from him, not from the king.
@@ -694,7 +694,7 @@
 <lb ed="G"/><lb ed="F1" n="445"/></l><l>His jest will savor but of shallow wit,
 <lb ed="G"/><lb ed="F1" n="446"/></l><l>When thousands weep more than did laugh at it.
 <lb ed="G"/><lb ed="F1" n="447"/></l><l>Convey them with safe conduct.   Fare you well.
-<lb ed="F1" n="448"/><stage type="exit" about="[ome:involves first-amb.]">[Exeunt <rs type="person" about="[first-amb.]">Ambassadors</rs>. </stage>
+<lb ed="F1" n="448"/><stage type="exit" about="[ first-amb.]">[Exeunt <rs type="person" about="[first-amb.]">Ambassadors</rs>. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="449"/></l></sp><sp who="#exe."><speaker>Exe.</speaker><l>This was a merry message.
@@ -711,7 +711,7 @@
 <lb ed="G"/><lb ed="F1" n="459"/></l><l>We'll chide this Dauphin at his father's door.
 <lb ed="G"/><lb ed="F1" n="460"/></l><l>Therefore let every man now task his thought,
 <lb ed="G"/><lb ed="F1" n="461"/></l><l>That this fair action may on foot be brought.
-                            <stage about="[ome:involves-all]" type="exit">Exeunt.</stage>
+                            <stage about="[-all]" type="exit">Exeunt.</stage>
 <lb ed="F1" n="462"/>Flourish.
 </l></sp>
 </div2>
@@ -721,7 +721,7 @@
 <head>ACT II</head>
 <div2 type="scene" n="prologue" org="uniform" sample="complete">
 <head>PROLOGUE</head>
-Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
+Flourish.<stage type="entrance" about="[ chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="463"/><sp who="#chor."><speaker>Chor.</speaker><l>Now all the youth of England are on fire,
 <lb ed="G"/><lb ed="F1" n="464"/></l><l>And silken dalliance in the wardrobe lies:
@@ -766,13 +766,13 @@ Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="per
 <lb ed="G"/><lb ed="F1" n="503"/></l><l>But, till the king come forth, and not till then,
 <lb ed="G"/><lb ed="F1" n="504"/></l><l>Unto Southampton do we shift our scene.
 
-<stage type="exit" about="[ome:involves chor.]">[Exit,</stage>
+<stage type="exit" about="[ chor.]">[Exit,</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[hal5:London._A_street.]" type="location">London. A street.</stage>
-<lb ed="F1" n="505"/><stage type="entrance" about="[ome:involves nym. bard.]">Enter Corporal <rs type="person" about="[nym.]">NYM</rs> and Lieutenant <rs type="person" about="[bard.]">BARDOLPH</rs>.</stage>
+<lb ed="F1" n="505"/><stage type="entrance" about="[ nym. bard.]">Enter Corporal <rs type="person" about="[nym.]">NYM</rs> and Lieutenant <rs type="person" about="[bard.]">BARDOLPH</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="506"/><sp who="#bard."><speaker>Bard.</speaker><p>Well met, Corporal <rs type="person" about="[nym.]">Nym</rs>.
 
@@ -810,7 +810,7 @@ Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="per
 <lb ed="G"/>though patience be a tired mare, yet she <lb ed="F1" n="528"/>will
 <lb ed="G"/>plod.   There must be conclusions. Well, I cannot
 <lb ed="G"/><lb ed="F1" n="529"/>tell.
-<lb ed="F1" n="530"/><stage type="entrance" about="[ome:involves pist. host.]">Enter <rs type="person" about="[pist.]">PISTOL</rs> and <rs type="person" about="[host.]">Hostess</rs>.</stage>
+<lb ed="F1" n="530"/><stage type="entrance" about="[ pist. host.]">Enter <rs type="person" about="[pist.]">PISTOL</rs> and <rs type="person" about="[host.]">Hostess</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="531"/></p></sp><sp who="#bard."><speaker>Bard.</speaker><p>Here comes Ancient <rs type="person" about="[pist.]">Pistol</rs> and his
 <lb ed="G"/>wife: good <lb ed="F1" n="532"/>corporal, be patient here. How
@@ -887,7 +887,7 @@ Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="per
 <lb ed="G"/></l><l>I have, and I <lb ed="F1" n="578"/>will hold, the quondam Quickly
 <lb ed="G"/></l><l>For the only she; and--<lb ed="F1" n="579"/>pauca, there's enough.
 <lb ed="G"/></l><l>Go to.
-<lb ed="F1" n="580"/><stage type="entrance" about="[ome:involves boy.]">Enter the <rs type="person" about="[boy.]">Boy</rs>.</stage>
+<lb ed="F1" n="580"/><stage type="entrance" about="[ boy.]">Enter the <rs type="person" about="[boy.]">Boy</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="581"/></l></sp><sp who="#boy."><speaker><rs type="person" about="[boy.]">Boy</rs>.</speaker><p>Mine host <rs type="person" about="[pist.]">Pistol</rs>, you must come to
 <lb ed="G"/>my master, <lb ed="F1" n="582"/>and you, hostess: he is very sick,
@@ -901,7 +901,7 @@ Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="per
 <lb ed="G"/>pudding one <lb ed="F1" n="587"/>of these days.   The king has killed
 <lb ed="G"/>his heart. Good husband, <lb ed="F1" n="588"/>come home
 <lb ed="G"/>presently.
-<stage type="exit" about="[ome:involves host. boy.]">[Exeunt <rs type="person" about="[host.]">Hostess</rs> and <rs type="person" about="[boy.]">Boy</rs>.</stage>
+<stage type="exit" about="[ host. boy.]">[Exeunt <rs type="person" about="[host.]">Hostess</rs> and <rs type="person" about="[boy.]">Boy</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="589"/></p></sp><sp who="#bard."><speaker>Bard.</speaker><p>Come, shall I make you two
@@ -948,7 +948,7 @@ Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="per
 <lb ed="G" n="120"/><lb ed="F1" n="612"/></l></sp><sp who="#pist."><speaker>Pist.</speaker><l>In cash most justly paid.
 
 <lb ed="G"/><lb ed="F1" n="613"/></l></sp><sp who="#nym."><speaker><rs type="person" about="[nym.]">Nym</rs>.</speaker><l>Well, then, that's the humor of 't.
-<lb ed="F1" n="614"/><stage type="entrance" about="[ome:involves host.]">Re-enter <rs type="person" about="[host.]">Hostess</rs>.</stage>
+<lb ed="F1" n="614"/><stage type="entrance" about="[ host.]">Re-enter <rs type="person" about="[host.]">Hostess</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="615"/></l></sp><sp who="#host."><speaker>Host.</speaker><p>As ever you came of women, come
 <lb ed="G"/>in quickly <lb ed="F1" n="616"/>to Sir John. Ah, poor heart! he
@@ -972,7 +972,7 @@ Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="per
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[hal5:Southampton._A_council-chamber]" type="location">Southampton. A council-chamber</stage>
-<lb ed="F1" n="627"/><stage type="entrance" about="[ome:involves exe. bed. west.]">Enter <rs type="person" about="[exe.]">EXETER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, and <rs type="person" about="[west.]">WESTMORELAND</rs>. </stage>
+<lb ed="F1" n="627"/><stage type="entrance" about="[ exe. bed. west.]">Enter <rs type="person" about="[exe.]">EXETER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, and <rs type="person" about="[west.]">WESTMORELAND</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="628"/><sp who="#bed."><speaker>Bed.</speaker><l>'Fore God, his grace is bold, to trust these traitors.
 
@@ -990,7 +990,7 @@ Flourish.<stage type="entrance" about="[ome:involves chor.]">Enter <rs type="per
 <lb ed="G" n="10"/><lb ed="F1" n="637"/></l><l>That he should, for a foreign purse, so sell
 <lb ed="G"/><lb ed="F1" n="638"/></l><l>His sovereign's life to death and treachery.
 <lb ed="F1" n="639"/>Trumpets sound.
-<lb ed="F1" n="640"/><stage type="entrance" about="[ome:involves k.-hen.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>,
+<lb ed="F1" n="640"/><stage type="entrance" about="[ k.-hen.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>,
 SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="641"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Now sits the wind fair, and we will aboard.
@@ -1189,7 +1189,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="809"/></l><l>You patience to endure, and true repentance
 <lb ed="G"/><lb ed="F1" n="810"/></l><l>Of all your dear offences! Bear them hence.
 
-<stage type="exit" about="[ome:involves cam. scroop.]">[Exeunt <rs type="person" about="[cam.]">Cambridge</rs>, <rs type="person" about="[scroop.]">Scroop</rs> and Grey, guarded</stage>
+<stage type="exit" about="[ cam. scroop.]">[Exeunt <rs type="person" about="[cam.]">Cambridge</rs>, <rs type="person" about="[scroop.]">Scroop</rs> and Grey, guarded</stage>
 <lb ed="G"/><lb ed="F1" n="811"/></l><l>Now, lords, for France; the enterprise whereof
 <lb ed="G"/><lb ed="F1" n="812"/></l><l>Shall be to you, as us, like glorious.
 <lb ed="G"/><lb ed="F1" n="813"/></l><l>We doubt not of a fair and lucky war,
@@ -1202,13 +1202,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="820"/></l><l>Putting it straight in expedition.
 <lb ed="G"/><lb ed="F1" n="821"/></l><l>Cheerly to sea; the signs of war advance:
 <lb ed="G"/><lb ed="F1" n="822"/></l><l>No king of England, if not king of France.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[hal5:London._Before_a_tavern.]" type="location">London. Before a tavern.</stage>
-<lb ed="F1" n="823"/><stage type="entrance" about="[ome:involves pist. host. nym. bard. boy.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>, <rs type="person" about="[host.]">Hostess</rs>, <rs type="person" about="[nym.]">NYM</rs>, <rs type="person" about="[bard.]">BARDOLPH</rs>, and <rs type="person" about="[boy.]">Boy</rs>.</stage>
+<lb ed="F1" n="823"/><stage type="entrance" about="[ pist. host. nym. bard. boy.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>, <rs type="person" about="[host.]">Hostess</rs>, <rs type="person" about="[nym.]">NYM</rs>, <rs type="person" about="[bard.]">BARDOLPH</rs>, and <rs type="person" about="[boy.]">Boy</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="824"/><sp who="#host."><speaker>Host.</speaker><p>Prithee, honey-sweet husband, let me
 <lb ed="G"/>bring <lb ed="F1" n="825"/>thee to Staines.
@@ -1300,7 +1300,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="882"/></p></sp><sp who="#pist."><speaker>Pist.</speaker><p>Let housewifery appear: keep close, I thee <lb ed="F1" n="883"/>command.
 
 <lb ed="G"/><lb ed="F1" n="884"/></p></sp><sp who="#host."><speaker>Host.</speaker><p>Farewell, adieu.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp>
 </div2>
 <div2 type="scene" n="4" org="uniform" sample="complete">
@@ -1386,7 +1386,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="957"/></l><l>Do crave admittance to your majesty.
 
 <lb ed="G"/><lb ed="F1" n="958"/></l></sp><sp who="#fr.-king."><speaker>Fr. King.</speaker><l>We'll give them present audience.   <lb ed="F1" n="959"/>Go, and bring them.
-<stage about="[ome:involves-all]" type="exit">[Exeunt Messenger and certain Lords.</stage>
+<stage about="[-all]" type="exit">[Exeunt Messenger and certain Lords.</stage>
 <lb ed="G"/><lb ed="F1" n="960"/></l><l>You see this chase is hotly follow'd, friends.
 
 <lb ed="G"/><lb ed="F1" n="961"/></l></sp><sp who="#dau."><speaker>Dau.</speaker><l>Turn head, and stop pursuit; for coward dogs
@@ -1396,7 +1396,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="965"/></l><l>Of what a monarchy you are the head:
 <lb ed="G"/><lb ed="F1" n="966"/></l><l>Self-love, my liege, is not so vile a sin
 <lb ed="G"/><lb ed="F1" n="967"/></l><l>As self-neglecting.
-<lb ed="F1" n="968"/><stage type="entrance" about="[ome:involves exe.]">Re-enter Lords, with <rs type="person" about="[exe.]">EXETER</rs> and train.</stage>
+<lb ed="F1" n="968"/><stage type="entrance" about="[ exe.]">Re-enter Lords, with <rs type="person" about="[exe.]">EXETER</rs> and train.</stage>
 
 <lb ed="G"/><lb ed="F1" n="969"/></l></sp><sp who="#fr.-king."><speaker>Fr. King.</speaker><l>From our brother England?
 
@@ -1484,7 +1484,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1041"/></l><l>A night is but small breath and little pause
 <lb ed="G"/><lb ed="F1" n="1042"/></l><l>To answer matters of this consequence.
 
-<stage about="[ome:involves-all]" type="exit">[Flourish. Exeunt.</stage>
+<stage about="[-all]" type="exit">[Flourish. Exeunt.</stage>
 </l></sp>
 </div2>
     </div1>
@@ -1494,7 +1494,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="F1" n="1043"/>
 <div2 type="scene" n="prologue" org="uniform" sample="complete">
 <head>PROLOGUE</head>
-<lb ed="F1" n="1044"/><stage type="entrance" about="[ome:involves chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
+<lb ed="F1" n="1044"/><stage type="entrance" about="[ chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1045"/><sp who="#chor."><speaker>Chor.</speaker><l>Thus with imagined wing our swift scene flies
 <lb ed="G"/><lb ed="F1" n="1046"/></l><l>In motion of no less celerity
@@ -1533,13 +1533,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1079"/></l><l>And down goes all before them. Still be kind,
 <lb ed="G"/><lb ed="F1" n="1080"/></l><l>And eke out our performance with your mind.
 
-<stage type="exit" about="[ome:involves chor.]">[Exit.</stage>
+<stage type="exit" about="[ chor.]">[Exit.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[hal5:France._Before_Harfleur.]" type="location">France. Before Harfleur.</stage>
-<lb ed="F1" n="1081"/><stage type="entrance" about="[ome:involves k.-hen. exe. bed. glou.]">Alarum.   Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[exe.]">EXETER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, and Soldiers, <lb ed="F1" n="1082"/>with scaling-ladders. </stage>
+<lb ed="F1" n="1081"/><stage type="entrance" about="[ k.-hen. exe. bed. glou.]">Alarum.   Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[exe.]">EXETER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, and Soldiers, <lb ed="F1" n="1082"/>with scaling-ladders. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1083"/><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Once more unto the breach, <lb ed="F1" n="1084"/>dear friends, once more;
 <lb ed="G"/><lb ed="F1" n="1085"/></l><l>Or close the wall up with our English dead.
@@ -1575,13 +1575,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1115"/></l><l>Straining upon the start. The game's afoot:
 <lb ed="G"/><lb ed="F1" n="1116"/></l><l>Follow your spirit, and upon this charge
 <lb ed="G"/><lb ed="F1" n="1117"/></l><l>Cry 'God for Harry, England, and Saint George!'
-<lb ed="F1" n="1118"/><stage about="[ome:involves-all]" type="exit">[Exeunt.   Alarum, and chambers go off.</stage>
+<lb ed="F1" n="1118"/><stage about="[-all]" type="exit">[Exeunt.   Alarum, and chambers go off.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[hal5:The_same.]" type="location">The same.</stage>
-<lb ed="F1" n="1119"/><stage type="entrance" about="[ome:involves nym. bard. pist. boy.]">Enter <rs type="person" about="[nym.]">NYM</rs>, <rs type="person" about="[bard.]">BARDOLPH</rs>, <rs type="person" about="[pist.]">PISTOL</rs>, and <rs type="person" about="[boy.]">Boy</rs>.</stage>
+<lb ed="F1" n="1119"/><stage type="entrance" about="[ nym. bard. pist. boy.]">Enter <rs type="person" about="[nym.]">NYM</rs>, <rs type="person" about="[bard.]">BARDOLPH</rs>, <rs type="person" about="[pist.]">PISTOL</rs>, and <rs type="person" about="[boy.]">Boy</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1120"/><sp who="#bard."><speaker>Bard.</speaker><p>On, on, on, on, on! to the breach, to the breach!
 
@@ -1607,7 +1607,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1134"/></l></sp><sp who="#boy."><speaker><rs type="person" about="[boy.]">Boy</rs>.</speaker><l>As duly, but not as truly,
 <lb ed="G" n="20"/></l><l>As bird doth sing on <lb ed="F1" n="1135"/>bough.
-<lb ed="F1" n="1136"/><stage type="entrance" about="[ome:involves flu.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs>.</stage>
+<lb ed="F1" n="1136"/><stage type="entrance" about="[ flu.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1137"/></l></sp><sp who="#flu."><speaker>Flu.</speaker><p>Up to the breach, you dogs! avaunt,
 <lb ed="G"/>you <lb ed="F1" n="1138"/>cullions!
@@ -1619,7 +1619,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/></l><l>Good bawcock, bate thy rage; use lenity, <lb ed="F1" n="1142"/>sweet chuck!
 
 <lb ed="G"/><lb ed="F1" n="1143"/></l></sp><sp who="#nym."><speaker><rs type="person" about="[nym.]">Nym</rs>.</speaker><l>These be good humors! your honor wins bad <lb ed="F1" n="1144"/>humours.
-<stage type="exit" about="[ome:involves !( boy.)]">[Exeunt all but <rs type="person" about="[boy.]">Boy</rs>.</stage>
+<stage type="exit" about="[ !( boy.)]">[Exeunt all but <rs type="person" about="[boy.]">Boy</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1145"/></l></sp><sp who="#boy."><speaker><rs type="person" about="[boy.]">Boy</rs>.</speaker><p>As young as I am, I have observed
@@ -1654,9 +1654,9 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>seek some better service: their <lb ed="F1" n="1169"/>villany goes
 <lb ed="G"/>against my weak stomach, and therefore <lb ed="F1" n="1170"/>I
 <lb ed="G"/>must cast it up.
-<stage type="exit" about="[ome:involves boy.]">[Exit.</stage>
+<stage type="exit" about="[ boy.]">[Exit.</stage>
 
-<lb ed="F1" n="1171"/><stage type="entrance" about="[ome:involves flu. gow.]">Re-enter <rs type="person" about="[flu.]">FLUELLEN</rs>, <rs type="person" about="[gow.]">GOWER</rs> following.</stage>
+<lb ed="F1" n="1171"/><stage type="entrance" about="[ flu. gow.]">Re-enter <rs type="person" about="[flu.]">FLUELLEN</rs>, <rs type="person" about="[gow.]">GOWER</rs> following.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1172"/></p></sp><sp who="#gow."><speaker>Gow.</speaker><p>Captain <rs type="person" about="[flu.]">Fluellen</rs>, you must come
 <lb ed="G"/>presently to <lb ed="F1" n="1173"/>the mines; the Duke of <reg orig="Glouces-ter"><rs type="person" about="[glou.]">Gloucester</rs></reg>
@@ -1686,7 +1686,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>has no more directions <lb ed="F1" n="1190"/>in the true disciplines
 <lb ed="G"/>of the wars, look you, of the <lb ed="F1" n="1191"/>Roman disciplines,
 <lb ed="G"/>than is a puppy-dog.
-<lb ed="F1" n="1192"/><stage type="entrance" about="[ome:involves mac. jamy.]">Enter <rs type="person" about="[mac.]">MACMORRIS</rs> cnd Captain <rs type="person" about="[jamy.]">JAMY</rs>.</stage>
+<lb ed="F1" n="1192"/><stage type="entrance" about="[ mac. jamy.]">Enter <rs type="person" about="[mac.]">MACMORRIS</rs> cnd Captain <rs type="person" about="[jamy.]">JAMY</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1193"/></p></sp><sp who="#gow."><speaker>Gow.</speaker><p>Here a' comes; and the Scots captain.
 <lb ed="G" n="80"/>Captain <lb ed="F1" n="1194"/><rs type="person" about="[jamy.]">Jamy</rs>, with him.
@@ -1788,13 +1788,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>you, I will be <lb ed="F1" n="1257"/>so bold as to tell you I know
 <lb ed="G"/>the disciplines of war; <lb ed="F1" n="1258"/>and there is an end.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp>
 </div2>
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[hal5:The_same._Before_the_gates._The_Governor_and_some_Citizens_on_the_walls;_the_English_forces_below.]" type="location">The same. Before the gates. The Governor and some Citizens on the walls; the English forces below.</stage>
-<lb ed="F1" n="1259"/><stage type="entrance" about="[ome:involves k.-hen.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs> and his train. </stage>
+<lb ed="F1" n="1259"/><stage type="entrance" about="[ k.-hen.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs> and his train. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1260"/><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>How yet resolves the governor of the town?
 <lb ed="G"/><lb ed="F1" n="1261"/></l><l>This is the latest parley we will admit:
@@ -1863,7 +1863,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <div2 type="scene" n="4" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[hal5:The_FRENCH_KING'S_palace.]" type="location">The FRENCH KING'S palace.</stage>
-<lb ed="F1" n="1320"/><stage type="entrance" about="[ome:involves alice.]">Enter KATHARINE and <rs type="person" about="[alice.]">ALICE</rs>. </stage>
+<lb ed="F1" n="1320"/><stage type="entrance" about="[ alice.]">Enter KATHARINE and <rs type="person" about="[alice.]">ALICE</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1321"/><sp who="#kath."><speaker>Kath.</speaker><p><rs type="person" about="[alice.]">Alice</rs>, tu as ete en Angleterre, et tu
 <lb ed="G"/>parles bien <lb ed="F1" n="1322"/>le langage.
@@ -1967,13 +1967,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1376"/></p></sp><sp who="#kath."><speaker>Kath.</speaker><p>C'est assez pour une fois: allons-
 <lb ed="G"/>nous a diner.
-<lb ed="F1" n="1377"/><stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="F1" n="1377"/><stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp>
 </div2>
 <div2 type="scene" n="5" org="uniform" sample="complete">
 <head>SCENE V</head>
 <stage about="[hal5:The_same.]" type="location">The same.</stage>
-<lb ed="F1" n="1378"/><stage type="entrance" about="[ome:involves bour.]">Enter the KING OF FRANCE, the DAUPHIN, the <rs type="person" about="[bour.]">DUKE OF BOURBON</rs>, the <lb ed="F1" n="1379"/>CONSTABLE OF FRANCE, and others.</stage>
+<lb ed="F1" n="1378"/><stage type="entrance" about="[ bour.]">Enter the KING OF FRANCE, the DAUPHIN, the <rs type="person" about="[bour.]">DUKE OF BOURBON</rs>, the <lb ed="F1" n="1379"/>CONSTABLE OF FRANCE, and others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1380"/><sp who="#fr.-king."><speaker>Fr. King.</speaker><l>'Tis certain he hath pass'd the river Somme.
 
@@ -2056,13 +2056,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1447"/></l><l>Now forth, lord constable and princes all,
 <lb ed="G"/><lb ed="F1" n="1448"/></l><l>And quickly bring us word of England's fall.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="6" org="uniform" sample="complete">
 <head>SCENE VI</head>
 <stage about="[hal5:The_English_camp_in_Picardy.]" type="location">The English camp in Picardy.</stage>
-<lb ed="F1" n="1449"/><stage type="entrance" about="[ome:involves gow. flu.]">Enter <rs type="person" about="[gow.]">GOWER</rs> and <rs type="person" about="[flu.]">FLUELLEN</rs>, meeting.</stage>
+<lb ed="F1" n="1449"/><stage type="entrance" about="[ gow. flu.]">Enter <rs type="person" about="[gow.]">GOWER</rs> and <rs type="person" about="[flu.]">FLUELLEN</rs>, meeting.</stage>
 <lb ed="F1" n="1450"/>
 
 <lb ed="G"/><lb ed="F1" n="1451"/><sp who="#gow."><speaker>Gow.</speaker><p>How now, Captain <rs type="person" about="[flu.]">Fluellen</rs>! come
@@ -2091,7 +2091,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1467"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><p>He is called Aunchient <rs type="person" about="[pist.]">Pistol</rs>.
 
 <lb ed="G" n="20"/><lb ed="F1" n="1468"/></p></sp><sp who="#gow."><speaker>Gow.</speaker><p>I know him not.
-<lb ed="F1" n="1469"/><stage type="entrance" about="[ome:involves pist.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>.</stage>
+<lb ed="F1" n="1469"/><stage type="entrance" about="[ pist.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1470"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><p>Here is the man.
 
@@ -2147,7 +2147,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1505"/></l></sp><sp who="#flu."><speaker>Flu.</speaker><p>It is well.
 
 <lb ed="G"/><lb ed="F1" n="1506"/></p></sp><sp who="#pist."><speaker>Pist.</speaker><p>The fig of Spain!
-<stage type="exit" about="[ome:involves pist.]">[Exit.</stage>
+<stage type="exit" about="[ pist.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1507"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><p>Very good.
@@ -2187,7 +2187,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>Hark you, the king is coming, and I
 <lb ed="G" n="91"/><lb ed="F1" n="1533"/>must speak with him from the pridge.
 <lb ed="F1" n="1534"/>Drum and colors.
-<stage type="entrance" about="[ome:involves k.-hen. glou.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>,<rs type="person" about="[glou.]">GLOUCESTER</rs>, and <lb ed="F1" n="1535"/>Soldiers.</stage>
+<stage type="entrance" about="[ k.-hen. glou.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>,<rs type="person" about="[glou.]">GLOUCESTER</rs>, and <lb ed="F1" n="1535"/>Soldiers.</stage>
 <lb ed="G"/><lb ed="F1" n="1536"/></p><l>God pless your majesty!
 
 <lb ed="G"/><lb ed="F1" n="1537"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>How now, <rs type="person" about="[flu.]">Fluellen</rs>! camest thou from the bridge?
@@ -2223,7 +2223,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>or abused in disdainful language; for
 <lb ed="G"/>when <lb ed="F1" n="1560"/>lenity and cruelty play for a kingdom,
 <lb ed="G" n="120"/>the gentler <lb ed="F1" n="1561"/>gamester is the soonest winner.
-<lb ed="F1" n="1562"/>Tucket.   <stage type="entrance" about="[ome:involves mont.]">Enter <rs type="person" about="[mont.]">MONTJOY</rs>.</stage>
+<lb ed="F1" n="1562"/>Tucket.   <stage type="entrance" about="[ mont.]">Enter <rs type="person" about="[mont.]">MONTJOY</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1563"/></p></sp><sp who="#mont."><speaker>Mont.</speaker><p>You know me by my habit.
 
@@ -2292,7 +2292,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1616"/></l><l>So tell your master.
 
 <lb ed="G"/><lb ed="F1" n="1617"/></l></sp><sp who="#mont."><speaker>Mont.</speaker><l>I shall deliver so. Thanks to your <lb ed="F1" n="1618"/>highness.
-<lb ed="G"/><stage type="exit" about="[ome:involves mont.]">Exit. </stage>
+<lb ed="G"/><stage type="exit" about="[ mont.]">Exit. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1619"/></l></sp><sp who="#glou."><speaker>Glou.</speaker><l>I hope they will not come upon us now.
 
@@ -2300,14 +2300,14 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1621"/></l><l>March to the bridge; it now draws toward night:
 <lb ed="G" n="180"/><lb ed="F1" n="1622"/></l><l>Beyond the river we'll encamp ourselves,
 <lb ed="G"/><lb ed="F1" n="1623"/></l><l>And on to-morrow bid them march away.
-<lb ed="G"/><stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/><stage about="[-all]" type="exit">[Exeunt.</stage>
 
 </l></sp>
 </div2>
 <div2 type="scene" n="7" org="uniform" sample="complete">
 <head>SCENE VI</head>
 <stage about="[hal5:The_French_camp,_near_Agincourt.]" type="location">The French camp, near Agincourt.</stage>
-<lb ed="F1" n="1624"/><stage type="entrance" about="[ome:involves ram. orl.]">Enter the CONSTABLE OF FRANCE, the LORD <rs type="person" about="[ram.]">RAMBURES</rs>, <lb ed="F1" n="1625"/><rs type="person" about="[orl.]">ORLEANS</rs>, DAUPHIN, with others.</stage>
+<lb ed="F1" n="1624"/><stage type="entrance" about="[ ram. orl.]">Enter the CONSTABLE OF FRANCE, the LORD <rs type="person" about="[ram.]">RAMBURES</rs>, <lb ed="F1" n="1625"/><rs type="person" about="[orl.]">ORLEANS</rs>, DAUPHIN, with others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1626"/><sp who="#con."><speaker>Con.</speaker><p>Tut!   I have the best armour of the
 <lb ed="G"/> world.   <lb ed="F1" n="1627"/>Would it were day!
@@ -2449,7 +2449,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>ere you <lb ed="F1" n="1714"/>have them.
 
 <lb ed="G"/><lb ed="F1" n="1715"/></p></sp><sp who="#dau."><speaker>Dau.</speaker><p>'Tis midnight; I'll go arm myself.
-<lb ed="G"/><stage type="exit" about="[ome:involves dau.]">[Exit.</stage>
+<lb ed="G"/><stage type="exit" about="[ dau.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1716"/></p></sp><sp who="#orl."><speaker>Orl.</speaker><p>The Dauphin longs for morning.
 
@@ -2562,7 +2562,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1786"/></p></sp><sp who="#orl."><speaker>Orl.</speaker><l>It is now two o'clock: but, let me see, by ten
 <lb ed="G"/><lb ed="F1" n="1787"/></l><l>We shall have each a hundred Englishmen.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
     </div1>
@@ -2572,7 +2572,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="F1" n="1788"/>
 <div2 type="scene" n="prologue" org="uniform" sample="complete">
 <head>PROLOGUE</head>
-<lb ed="F1" n="1789"/><stage type="entrance" about="[ome:involves chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
+<lb ed="F1" n="1789"/><stage type="entrance" about="[ chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1790"/><sp who="#chor."><speaker>Chor.</speaker><l>Now entertain conjecture of a time
 <lb ed="G"/><lb ed="F1" n="1791"/></l><l>When creeping murmur and the poring dark
@@ -2627,13 +2627,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G" n="51"/><lb ed="F1" n="1840"/></l><l>Right ill-disposed in brawl ridiculous,
 <lb ed="G"/><lb ed="F1" n="1841"/></l><l>The name of Agincourt.   Yet sit and see,
 <lb ed="G"/><lb ed="F1" n="1842"/></l><l>Minding true things by what their mockeries be.
-<lb ed="F1" n="1843"/><stage type="exit" about="[ome:involves chor.]">[Exit. </stage>
+<lb ed="F1" n="1843"/><stage type="exit" about="[ chor.]">[Exit. </stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[hal5:The_English_camp_at_Agincourt.]" type="location">The English camp at Agincourt.</stage>
-<lb ed="F1" n="1844"/><stage type="entrance" about="[ome:involves k.-hen. bed. glou.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, and <rs type="person" about="[glou.]">GLOUCESTER</rs>. </stage>
+<lb ed="F1" n="1844"/><stage type="entrance" about="[ k.-hen. bed. glou.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, and <rs type="person" about="[glou.]">GLOUCESTER</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1845"/><sp who="#k.-hen."><speaker>K. Hen.</speaker><l><rs type="person" about="[glou.]">Gloucester</rs>, 'tis true that we are in great danger;
 <lb ed="G"/><lb ed="F1" n="1846"/></l><l>The greater therefore should our courage be.
@@ -2676,11 +2676,11 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1878"/></l><l>And then I would no other company.
 
 <lb ed="G"/><lb ed="F1" n="1879"/></l></sp><sp who="#erp."><speaker>Erp.</speaker><l>The Lord in heaven bless thee, noble <lb ed="F1" n="1880"/>Harry!
-<stage about="[ome:involves-all]" type="exit">[Exeunt all but King. </stage>
+<stage about="[-all]" type="exit">[Exeunt all but King. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1881"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>God-a-mercy, old heart! thou speak'st <lb ed="F1" n="1882"/>cheerfully.
-<stage type="entrance" about="[ome:involves pist.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>.</stage>
+<stage type="entrance" about="[ pist.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1883"/></l></sp><sp who="#pist."><speaker>Pist.</speaker><p>Qui va la?
 
@@ -2731,12 +2731,12 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="1908"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><p>I thank you: God be with you!
 
 <lb ed="G"/><lb ed="F1" n="1909"/></p></sp><sp who="#pist."><speaker>Pist.</speaker><p>My name is <rs type="person" about="[pist.]">Pistol</rs> call'd.
-<stage type="exit" about="[ome:involves pist.]">[Exit.</stage>
+<stage type="exit" about="[ pist.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1910"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><p>It sorts well with your fierceness.
 <lb ed="F1" n="1911"/>
-<lb ed="F1" n="1912"/><stage type="entrance" about="[ome:involves flu.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs> and COWER.</stage>
+<lb ed="F1" n="1912"/><stage type="entrance" about="[ flu.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs> and COWER.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1913"/></p></sp><sp who="#gow."><speaker>Gow.</speaker><p>Captain <rs type="person" about="[flu.]">Fluellen</rs>!
 
@@ -2766,12 +2766,12 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1931"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><p>I pray you and beseech you that you
 <lb ed="G"/>will.
-<stage type="exit" about="[ome:involves gow. flu.]">[Exeunt <rs type="person" about="[gow.]">Gower</rs> and <rs type="person" about="[flu.]">Fluellen</rs>.</stage>
+<stage type="exit" about="[ gow. flu.]">[Exeunt <rs type="person" about="[gow.]">Gower</rs> and <rs type="person" about="[flu.]">Fluellen</rs>.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1932"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Though it appear a little out of fashion,
 <lb ed="G"/><lb ed="F1" n="1933"/></l><l>There is much care and valor in this Welshman.
-<lb ed="F1" n="1934"/><stage type="entrance" about="[ome:involves bates. court. will.]">Enter three soldiers, JOHN <rs type="person" about="[bates.]">BATES</rs>, ALEXANDER <rs type="person" about="[court.]">COURT</rs>, <lb ed="F1" n="1935"/>and MICHAEL <rs type="person" about="[will.]">WILLIAMS</rs>.</stage>
+<lb ed="F1" n="1934"/><stage type="entrance" about="[ bates. court. will.]">Enter three soldiers, JOHN <rs type="person" about="[bates.]">BATES</rs>, ALEXANDER <rs type="person" about="[court.]">COURT</rs>, <lb ed="F1" n="1935"/>and MICHAEL <rs type="person" about="[will.]">WILLIAMS</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1936"/></l></sp><sp who="#court."><speaker><rs type="person" about="[court.]">Court</rs>.</speaker><p>Brother John <rs type="person" about="[bates.]">Bates</rs>, is not that the
 <lb ed="G"/>morning <lb ed="F1" n="1937"/>which breaks yonder?
@@ -2978,7 +2978,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>they bear them <lb ed="F1" n="2076"/>on their shoulders: but it is no
 <lb ed="G"/>English treason to cut <lb ed="F1" n="2077"/>French crowns, and tomorrow
 <lb ed="G"/>the king himself will <lb ed="F1" n="2078"/>be a clipper.
-<stage about="[ome:involves-all]" type="exit">[Exeunt Soldiers.</stage>
+<stage about="[-all]" type="exit">[Exeunt Soldiers.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2079"/></p><l>Upon the king! let us our lives, our souls,
 <lb ed="G"/><lb ed="F1" n="2080"/></l><l>Our debts, our careful wives,
@@ -3045,7 +3045,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/></l><l>I'll be before thee.
 
 <lb ed="G"/><lb ed="F1" n="2140"/></l></sp><sp who="#erp."><speaker>Erp.</speaker><l>I shall do't, my lord.
-<stage type="exit" about="[ome:involves erp.]">[Exit.</stage>
+<stage type="exit" about="[ erp.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2141"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>O God of battles! steel my soldiers' hearts;
@@ -3065,20 +3065,20 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G" n="320"/><lb ed="F1" n="2156"/></l><l>Though all that I can do is nothing worth,
 <lb ed="G"/><lb ed="F1" n="2157"/></l><l>Since that my penitence comes after all,
 <lb ed="G"/><lb ed="F1" n="2158"/></l><l>Imploring pardon.
-<lb ed="F1" n="2159"/><stage type="entrance" about="[ome:involves glou.]">Re-enter <rs type="person" about="[glou.]">GLOUCESTER</rs>.</stage>
+<lb ed="F1" n="2159"/><stage type="entrance" about="[ glou.]">Re-enter <rs type="person" about="[glou.]">GLOUCESTER</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2160"/></l></sp><sp who="#glou."><speaker>Glou.</speaker><l>My liege!
 
 <lb ed="G"/><lb ed="F1" n="2161"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>My brother <rs type="person" about="[glou.]">Gloucester</rs>'s voice? Ay;
 <lb ed="G"/><lb ed="F1" n="2162"/></l><l>I know thy errand, I will go with thee:
 <lb ed="G"/><lb ed="F1" n="2163"/></l><l>The day, my friends and all things stay for me.
-<lb ed="F1" n="2164"/><stage about="[ome:involves-all]" type="exit">[Exeunt. </stage>
+<lb ed="F1" n="2164"/><stage about="[-all]" type="exit">[Exeunt. </stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[hal5:The_French_camp.]" type="location">The French camp.</stage>
-<lb ed="F1" n="2165"/><stage type="entrance" about="[ome:involves orl. ram.]">Enter the DAUPHIN, <rs type="person" about="[orl.]">ORLEANS</rs>, <rs type="person" about="[ram.]">RAMBURES</rs>, and <lb ed="F1" n="2166"/>others.</stage>
+<lb ed="F1" n="2165"/><stage type="entrance" about="[ orl. ram.]">Enter the DAUPHIN, <rs type="person" about="[orl.]">ORLEANS</rs>, <rs type="person" about="[ram.]">RAMBURES</rs>, and <lb ed="F1" n="2166"/>others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2167"/><sp who="#orl."><speaker>Orl.</speaker><p>The sun doth gild our armor; up, my <lb ed="F1" n="2168"/>lords!
 
@@ -3129,7 +3129,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2206"/></l><l>The tucket sonance and the note to mount;
 <lb ed="G"/><lb ed="F1" n="2207"/></l><l>For our approach shall so much dare the field
 <lb ed="G"/><lb ed="F1" n="2208"/></l><l>That England shall couch down in fear and yield.
-<lb ed="F1" n="2209"/><stage type="entrance" about="[ome:involves grand.]">Enter <rs type="person" about="[grand.]">GRANDPRE</rs>.</stage>
+<lb ed="F1" n="2209"/><stage type="entrance" about="[ grand.]">Enter <rs type="person" about="[grand.]">GRANDPRE</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2210"/></l></sp><sp who="#grand."><speaker>Grand.</speaker><l>Why do you stay so long, my lords of France?
 <lb ed="G"/><lb ed="F1" n="2211"/></l><l>Yon island carrions, desperate of their bones,
@@ -3161,13 +3161,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2235"/></l><l>And use it for my haste. Come, come, away!
 <lb ed="G"/><lb ed="F1" n="2236"/></l><l>The sun is high, and we outwear the day.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="3" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[hal5:The_English_camp.]" type="location">The English camp.</stage>
-<lb ed="F1" n="2237"/><stage type="entrance" about="[ome:involves glou. bed. exe. sal. west.]">Enter <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[exe.]">EXETER</rs>, ERPINGHAM, <lb ed="F1" n="2238"/>with all his host: <rs type="person" about="[sal.]">SALISBURY</rs> and <lb ed="F1" n="2239"/><rs type="person" about="[west.]">WESTMORELAND</rs>.</stage>
+<lb ed="F1" n="2237"/><stage type="entrance" about="[ glou. bed. exe. sal. west.]">Enter <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[exe.]">EXETER</rs>, ERPINGHAM, <lb ed="F1" n="2238"/>with all his host: <rs type="person" about="[sal.]">SALISBURY</rs> and <lb ed="F1" n="2239"/><rs type="person" about="[west.]">WESTMORELAND</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2240"/><sp who="#glou."><speaker>Glou.</speaker><p>Where is the king?
 
@@ -3189,7 +3189,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2253"/></l></sp><sp who="#exe."><speaker>Exe.</speaker><l>Farewell, kind lord; fight valiantly to-day:
 <lb ed="G"/><lb ed="F1" n="2254"/></l><l>And yet I do thee wrong to mind thee of it.
 <lb ed="G"/><lb ed="F1" n="2255"/></l><l>For thou art framed of the firm truth of valor.
-<stage type="exit" about="[ome:involves sal.]">[Exit <rs type="person" about="[sal.]">Salisbury</rs>. </stage>
+<stage type="exit" about="[ sal.]">[Exit <rs type="person" about="[sal.]">Salisbury</rs>. </stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2256"/></l></sp><sp who="#bed."><speaker>Bed.</speaker><l>He is as full of valor as of kindness;
@@ -3250,7 +3250,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2308"/></l><l>Shall think themselves accursed they were not here,
 <lb ed="G"/><lb ed="F1" n="2309"/></l><l>And hold their manhoods cheap whiles any speaks
 <lb ed="G"/><lb ed="F1" n="2310"/></l><l>That fought with us upon Saint Crispin's day.
-<lb ed="F1" n="2311"/><stage type="entrance" about="[ome:involves sal.]">Re-enter <rs type="person" about="[sal.]">SALISBURY</rs>.</stage>
+<lb ed="F1" n="2311"/><stage type="entrance" about="[ sal.]">Re-enter <rs type="person" about="[sal.]">SALISBURY</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2312"/></l></sp><sp who="#sal."><speaker>Sal.</speaker><l>My sovereign lord, bestow yourself with speed:
 <lb ed="G"/><lb ed="F1" n="2313"/></l><l>The French are bravely in their battles set,
@@ -3268,7 +3268,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2321"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Why, now thou hast unwish'd five thousand men;
 <lb ed="G"/><lb ed="F1" n="2322"/></l><l>Which likes me better than to wish us one.
 <lb ed="G"/><lb ed="F1" n="2323"/></l><l>You know your places: God be with you all!
-<lb ed="F1" n="2324"/><stage type="entrance" about="[ome:involves mont.]">Tucket. Enter <rs type="person" about="[mont.]">MONTJOY</rs>.</stage>
+<lb ed="F1" n="2324"/><stage type="entrance" about="[ mont.]">Tucket. Enter <rs type="person" about="[mont.]">MONTJOY</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2325"/></l></sp><sp who="#mont."><speaker>Mont.</speaker><l>Once more I come to know of thee, King Harry,
 <lb ed="G" n="80"/><lb ed="F1" n="2326"/></l><l>If for thy ransom thou wilt now compound,
@@ -3325,11 +3325,11 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2374"/></l></sp><sp who="#mont."><speaker>Mont.</speaker><l>I shall, King Harry. And so fare thee well:
 <lb ed="G"/><lb ed="F1" n="2375"/></l><l>Thou never shalt hear herald any more.
 
-<stage type="exit" about="[ome:involves mont.]">[Exit.</stage>
+<stage type="exit" about="[ mont.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2376"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>I fear thou'lt once more come again for <lb ed="F1" n="2377"/>ransom.
-<lb ed="F1" n="2378"/><stage type="entrance" about="[ome:involves york.]">Enter <rs type="person" about="[york.]">YORK</rs>.</stage>
+<lb ed="F1" n="2378"/><stage type="entrance" about="[ york.]">Enter <rs type="person" about="[york.]">YORK</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2379"/></l></sp><sp who="#york."><speaker><rs type="person" about="[york.]">York</rs>.</speaker><l>My lord, most humbly on my knee I beg
 <lb ed="G" n="130"/><lb ed="F1" n="2380"/></l><l>The leading of the vaward.
@@ -3337,14 +3337,14 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2381"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Take it, brave <rs type="person" about="[york.]">York</rs>.   <lb ed="F1" n="2382"/>Now, soldiers, march away:
 <lb ed="G"/><lb ed="F1" n="2383"/></l><l>And how thou pleasest, God, dispose the day!
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="4" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[hal5:The_field_of_battle.]" type="location">The field of battle.</stage>
 <lb ed="F1" n="2384"/>Alarum.   Excursions.
-<lb ed="F1" n="2385"/><stage type="entrance" about="[ome:involves pist. fr.-sol. boy.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>, <rs type="person" about="[fr.-sol.]">French Soldier</rs>, and <rs type="person" about="[boy.]">Boy</rs>. </stage>
+<lb ed="F1" n="2385"/><stage type="entrance" about="[ pist. fr.-sol. boy.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>, <rs type="person" about="[fr.-sol.]">French Soldier</rs>, and <rs type="person" about="[boy.]">Boy</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2386"/><sp who="#pist."><speaker>Pist.</speaker><p>Yield, cur!
 
@@ -3447,7 +3447,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G" n="69"/>Follow <lb ed="F1" n="2445"/>me!
 
 <lb ed="G"/><lb ed="F1" n="2446"/></p></sp><sp who="#boy."><speaker><rs type="person" about="[boy.]">Boy</rs>.</speaker><p>Suivez-vous le grand capitaine.
-<lb ed="G"/><stage type="exit" about="[ome:involves pist. fr.-sol.]">[Exeunt <rs type="person" about="[pist.]">Pistol</rs>, and <rs type="person" about="[fr.-sol.]">French Soldier</rs>.]</stage> <lb ed="F1" n="2447"/>I did
+<lb ed="G"/><stage type="exit" about="[ pist. fr.-sol.]">[Exeunt <rs type="person" about="[pist.]">Pistol</rs>, and <rs type="person" about="[fr.-sol.]">French Soldier</rs>.]</stage> <lb ed="F1" n="2447"/>I did
 <lb ed="G"/>never know so full a voice issue from so empty
 <lb ed="G"/>a <lb ed="F1" n="2448"/>heart: but the saying is true, 'The empty
 <lb ed="G"/>vessel makes the <lb ed="F1" n="2449"/>greatest sound.' <rs type="person" about="[bard.]">Bardolph</rs> and
@@ -3461,13 +3461,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>us, if he knew of it; for there is none <lb ed="F1" n="2456"/>to guard
 <lb ed="G"/>it but boys.
 
-<stage type="exit" about="[ome:involves boy.]">[Exit.</stage>
+<stage type="exit" about="[ boy.]">[Exit.</stage>
 </p></sp>
 </div2>
 <div2 type="scene" n="5" org="uniform" sample="complete">
 <head>SCENE V</head>
 <stage about="[hal5:Another_part_of_the_field.]" type="location">Another part of the field.</stage>
-<lb ed="F1" n="2457"/><stage type="entrance" about="[ome:involves orl. bour. ram.]">Enter CONSTABLE, <rs type="person" about="[orl.]">ORLEANS</rs>, <rs type="person" about="[bour.]">BOURBON</rs>, DAUPHIN, <lb ed="F1" n="2458"/>and <rs type="person" about="[ram.]">RAMBURES</rs>.</stage>
+<lb ed="F1" n="2457"/><stage type="entrance" about="[ orl. bour. ram.]">Enter CONSTABLE, <rs type="person" about="[orl.]">ORLEANS</rs>, <rs type="person" about="[bour.]">BOURBON</rs>, DAUPHIN, <lb ed="F1" n="2458"/>and <rs type="person" about="[ram.]">RAMBURES</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2459"/><sp who="#con."><speaker>Con.</speaker><p>O diable!
 
@@ -3504,13 +3504,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2481"/></l></sp><sp who="#bour."><speaker>Bour.</speaker><l>The devil take order now!   I'll to the throng:
 <lb ed="G"/><lb ed="F1" n="2482"/></l><l>Let life be short; else shame will be too long.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="6" org="uniform" sample="complete">
 <head>SCENE VI</head>
 <stage about="[hal5:Another_part_of_the_field.Alarums.]" type="location">Another part of the field.Alarums.</stage>
-<lb ed="F1" n="2483"/><stage type="entrance" about="[ome:involves k.-hen. exe.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs> and forces, <rs type="person" about="[exe.]">EXETER</rs>, and others. </stage>
+<lb ed="F1" n="2483"/><stage type="entrance" about="[ k.-hen. exe.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs> and forces, <rs type="person" about="[exe.]">EXETER</rs>, and others. </stage>
 <lb ed="F1" n="2484"/>
 
 <lb ed="G"/><lb ed="F1" n="2485"/><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Well have we done, thrice valiant countrymen:
@@ -3558,14 +3558,14 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2521"/></l><l>The French have reinforced their scatter'd men:
 <lb ed="G"/><lb ed="F1" n="2522"/></l><l>Then every soldier kill his prisoners:
 <lb ed="G"/><lb ed="F1" n="2523"/></l><l>Give the word through.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="7" org="uniform" sample="complete">
   <head>SCENE VII</head>
 <lb ed="F1" n="2524"/>
 <stage about="[hal5:Another_part_of_the_field.]" type="location">Another part of the field.</stage>
-<lb ed="F1" n="2525"/><stage type="entrance" about="[ome:involves flu. gow.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs> and <rs type="person" about="[gow.]">GOWER</rs>. </stage>
+<lb ed="F1" n="2525"/><stage type="entrance" about="[ flu. gow.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs> and <rs type="person" about="[gow.]">GOWER</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2526"/><sp who="#flu."><speaker>Flu.</speaker><p>Kill the poys and the luggage! 'tis expressly
 <lb ed="G"/><lb ed="F1" n="2527"/>against the law of arms: 'tis as arrant
@@ -3636,7 +3636,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>men porn <lb ed="F1" n="2576"/>at Monmouth.
 
 <lb ed="G"/><lb ed="F1" n="2577"/></p></sp><sp who="#gow."><speaker>Gow.</speaker><p>Here comes his majesty.
-<lb ed="F1" n="2578"/>[Alarum. <stage type="entrance" about="[ome:involves k.-hen. war. glou. exe.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, and forces; <rs type="person" about="[war.]">WARWICK</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[exe.]">EXETER</rs>,and others.</stage>
+<lb ed="F1" n="2578"/>[Alarum. <stage type="entrance" about="[ k.-hen. war. glou. exe.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs>, and forces; <rs type="person" about="[war.]">WARWICK</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[exe.]">EXETER</rs>,and others.</stage>
 <lb ed="F1" n="2579"/>
 
 <lb ed="G"/><lb ed="F1" n="2580"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>I was not angry since I came to France
@@ -3650,7 +3650,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2588"/></l><l>Besides, we'll cut the throats of those we have,
 <lb ed="G"/><lb ed="F1" n="2589"/></l><l>And not a man of them that we shall take
 <lb ed="G"/><lb ed="F1" n="2590"/></l><l>Shall taste our mercy. Go and tell them so.
-<lb ed="F1" n="2591"/><stage type="entrance" about="[ome:involves mont.]">Enter <rs type="person" about="[mont.]">MONTJOY</rs>.</stage>
+<lb ed="F1" n="2591"/><stage type="entrance" about="[ mont.]">Enter <rs type="person" about="[mont.]">MONTJOY</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2592"/></l></sp><sp who="#exe."><speaker>Exe.</speaker><p>Here comes the herald of the French, my liege.
 
@@ -3727,7 +3727,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2648"/></l><l>Bring me just notice of the numbers dead
 <lb ed="G"/><lb ed="F1" n="2649"/></l><l>On both our parts. Call yonder fellow hither.
 
-<stage type="exit" about="[ome:involves will. mont.]">[Points to <rs type="person" about="[will.]">Williams</rs>. Exeunt Heralds with <rs type="person" about="[mont.]">Montjoy</rs>.</stage>
+<stage type="exit" about="[ will. mont.]">[Points to <rs type="person" about="[will.]">Williams</rs>. Exeunt Heralds with <rs type="person" about="[mont.]">Montjoy</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2650"/></l></sp><sp who="#exe."><speaker>Exe.</speaker><p>Soldier, you must come to the king.
 
@@ -3779,7 +3779,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2681"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><p>Call him hither to me, soldier.
 
 <lb ed="G"/><lb ed="F1" n="2682"/></p></sp><sp who="#will."><speaker>Will.</speaker><p>I will, my liege.
-<stage type="exit" about="[ome:involves will.]">[Exit.</stage>
+<stage type="exit" about="[ will.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2683"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><p>Here, <rs type="person" about="[flu.]">Fluellen</rs>; wear thou this
 <lb ed="G"/>favor for me and <lb ed="F1" n="2684"/>stick it in thy cap: when
@@ -3806,7 +3806,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>him to my <lb ed="F1" n="2697"/>tent.
 
 <lb ed="G"/><lb ed="F1" n="2698"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><p>I will fetch him.
-<stage type="exit" about="[ome:involves flu.]">[Exit.</stage>
+<stage type="exit" about="[ flu.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2699"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>My lord of <rs type="person" about="[war.]">Warwick</rs>, and my brother <rs type="person" about="[glou.]">Gloucester</rs>,
 <lb ed="G"/><lb ed="F1" n="2700"/></l><l>Follow <rs type="person" about="[flu.]">Fluellen</rs> closely at the heels:
@@ -3822,16 +3822,16 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G" n="189"/><lb ed="F1" n="2710"/></l><l>And quickly will return an injury:
 <lb ed="G"/><lb ed="F1" n="2711"/></l><l>Follow, and see there be no harm between them.
 <lb ed="G"/><lb ed="F1" n="2712"/></l><l>Go you with me, uncle of <rs type="person" about="[exe.]">Exeter</rs>.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="8" org="uniform" sample="complete">
 <head>SCENE VIII</head>
 <stage about="[hal5:Before_KING_HENRY'S_pavillion.]" type="location">Before <rs type="person" about="[k.-hen.]">KING HENRY</rs>'S pavillion.</stage>
-<lb ed="F1" n="2713"/><stage type="entrance" about="[ome:involves gow. will.]">Enter <rs type="person" about="[gow.]">GOWER</rs> and <rs type="person" about="[will.]">WILLIAMS</rs>. </stage>
+<lb ed="F1" n="2713"/><stage type="entrance" about="[ gow. will.]">Enter <rs type="person" about="[gow.]">GOWER</rs> and <rs type="person" about="[will.]">WILLIAMS</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2714"/><sp who="#will."><speaker>Will.</speaker><p>I warrant it is to knight you, captain.
-<lb ed="F1" n="2715"/><stage type="entrance" about="[ome:involves flu.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs>.</stage>
+<lb ed="F1" n="2715"/><stage type="entrance" about="[ flu.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2716"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><p>God's will and his pleasure, captain,
 <lb ed="G"/>I beseech <lb ed="F1" n="2717"/>you now, come apace to the king:
@@ -3873,7 +3873,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>praised be God <lb ed="F1" n="2737"/>for it!--a most contagious
 <lb ed="G"/>treason come to light, look <lb ed="F1" n="2738"/>you, as you shall
 <lb ed="G"/>desire in a summer's day. Here is his <lb ed="F1" n="2739"/>majesty.
-<stage type="entrance" about="[ome:involves k.-hen. exe.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs> and <rs type="person" about="[exe.]">EXETER</rs>.  </stage>
+<stage type="entrance" about="[ k.-hen. exe.]">Enter <rs type="person" about="[k.-hen.]">KING HENRY</rs> and <rs type="person" about="[exe.]">EXETER</rs>.  </stage>
 
 <lb ed="G"/><lb ed="F1" n="2740"/></p></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><p>How now! what's the matter?
 
@@ -4013,7 +4013,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2845"/></l><l>The dead with charity enclosed in clay:
 <lb ed="G" n="130"/><lb ed="F1" n="2846"/></l><l>And then to Calais; and to England then:
 <lb ed="G"/><lb ed="F1" n="2847"/></l><l>Where ne'er from France arrived more happy men.
-<lb ed="F1" n="2848"/><stage about="[ome:involves-all]" type="exit">[Exeunt. </stage>
+<lb ed="F1" n="2848"/><stage about="[-all]" type="exit">[Exeunt. </stage>
 </l></sp>
 </div2>
     </div1>
@@ -4023,7 +4023,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="F1" n="2849"/>
 <div2 type="scene" n="prologue" org="uniform" sample="complete">
 <head>PROLOGUE</head>
-<lb ed="F1" n="2850"/><stage type="entrance" about="[ome:involves chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
+<lb ed="F1" n="2850"/><stage type="entrance" about="[ chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2851"/><sp who="#chor."><speaker>Chor.</speaker><l>Vouchsafe to those that have not read the story,
 <lb ed="G"/><lb ed="F1" n="2852"/></l><l>That I may prompt them: and of such as have,
@@ -4070,13 +4070,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2893"/></l><l>The interim, by remembering you 'tis past.
 <lb ed="G"/><lb ed="F1" n="2894"/></l><l>Then brook abridgement, and your eyes advance,
 <lb ed="G"/><lb ed="F1" n="2895"/></l><l>After your thoughts, straight back again to France.
-<lb ed="F1" n="2896"/><stage type="exit" about="[ome:involves chor.]">[Exit. </stage>
+<lb ed="F1" n="2896"/><stage type="exit" about="[ chor.]">[Exit. </stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[hal5:France._The_English_camp.]" type="location">France. The English camp.</stage>
-<lb ed="F1" n="2897"/><stage type="entrance" about="[ome:involves flu. gow.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs> and <rs type="person" about="[gow.]">GOWER</rs>. </stage>
+<lb ed="F1" n="2897"/><stage type="entrance" about="[ flu. gow.]">Enter <rs type="person" about="[flu.]">FLUELLEN</rs> and <rs type="person" about="[gow.]">GOWER</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2898"/><sp who="#gow."><speaker>Gow.</speaker><p>Nay, that's right; but why wear you
 <lb ed="G"/>your <lb ed="F1" n="2899"/>leek to-day?   Saint Davy's day is past.
@@ -4094,7 +4094,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>him; but I will be so bold as to wear it in
 <lb ed="G"/>my cap <lb ed="F1" n="2909"/>till I see him once again, and then I
 <lb ed="G"/>will tell him a little <lb ed="F1" n="2910"/>piece of my desires.
-<lb ed="F1" n="2911"/><stage type="entrance" about="[ome:involves pist.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>.</stage>
+<lb ed="F1" n="2911"/><stage type="entrance" about="[ pist.]">Enter <rs type="person" about="[pist.]">PISTOL</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2912"/></p></sp><sp who="#gow."><speaker>Gow.</speaker><p>Why, here he comes, swelling like a
 <lb ed="G"/><lb ed="F1" n="2913"/>turkey-cock.
@@ -4181,7 +4181,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>and buy nothing of <lb ed="F1" n="2962"/>me but cudgels. God b'
 <lb ed="G"/>wi' you, and keep you, and heal <lb ed="F1" n="2963"/>your pate.
 
-<stage type="exit" about="[ome:involves flu.]">[Exit.</stage>
+<stage type="exit" about="[ flu.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2964"/></p></sp><sp who="#pist."><speaker>Pist.</speaker><p><rs type="person" about="[all.]">All</rs> hell shall stir for this.
 
@@ -4198,7 +4198,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>it otherwise; <lb ed="F1" n="2973"/>and henceforth let a Welsh
 <lb ed="G"/>correction teach <lb ed="F1" n="2974"/>you a good English condition.
 <lb ed="G"/>Fare ye well.
-<stage type="exit" about="[ome:involves gow.]">[Exit.</stage>
+<stage type="exit" about="[ gow.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="2975"/></p></sp><sp who="#pist."><speaker>Pist.</speaker><l>Doth Fortune play the huswife with me now?
@@ -4212,13 +4212,13 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="2982"/></l><l>And patches will I get unto these cudgell'd scars,
 <lb ed="G"/><lb ed="F1" n="2983"/></l><l>And swear I got them in the Gallia wars.
 
-<stage type="exit" about="[ome:involves pist.]">[Exit.</stage>
+<stage type="exit" about="[ pist.]">[Exit.</stage>
 </l></sp>
 </div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[hal5:France._A_royal_palace.]" type="location">France. A royal palace.</stage>
-<lb ed="F1" n="2984"/><stage type="entrance" about="[ome:involves k.-hen. exe. bed. glou. war. west. q.-isa. alice. bur.]">Enter, at one door, <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[exe.]">EXETER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[war.]">WARWICK</rs>, <rs type="person" about="[west.]">WESTMORELAND</rs>, <lb ed="F1" n="2985"/>and other Lords; at another, <lb ed="F1" n="2986"/>the FRENCH   KING, QUEEN   <rs type="person" about="[q.-isa.]">ISABEL</rs>, the PRINCESS KATHARINE, <rs type="person" about="[alice.]">ALICE</rs> and other Ladies; the <rs type="person" about="[bur.]">DUKE OF BURGUNDY</rs>, and his train. </stage>
+<lb ed="F1" n="2984"/><stage type="entrance" about="[ k.-hen. exe. bed. glou. war. west. q.-isa. alice. bur.]">Enter, at one door, <rs type="person" about="[k.-hen.]">KING HENRY</rs>, <rs type="person" about="[exe.]">EXETER</rs>, <rs type="person" about="[bed.]">BEDFORD</rs>, <rs type="person" about="[glou.]">GLOUCESTER</rs>, <rs type="person" about="[war.]">WARWICK</rs>, <rs type="person" about="[west.]">WESTMORELAND</rs>, <lb ed="F1" n="2985"/>and other Lords; at another, <lb ed="F1" n="2986"/>the FRENCH   KING, QUEEN   <rs type="person" about="[q.-isa.]">ISABEL</rs>, the PRINCESS KATHARINE, <rs type="person" about="[alice.]">ALICE</rs> and other Ladies; the <rs type="person" about="[bur.]">DUKE OF BURGUNDY</rs>, and his train. </stage>
 <lb ed="F1" n="2987"/>
 
 <lb ed="G"/><lb ed="F1" n="2988"/><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Peace to this meeting, wherefore we are met!
@@ -4334,7 +4334,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="3086"/></l></sp><sp who="#q.-isa."><speaker>Q. Isa.</speaker><l>She hath good leave.
 
-<lb ed="F1" n="3087"/><stage type="exit" about="[ome:involves !( k.-hen. alice.)]">Exeunt all except <rs type="person" about="[k.-hen.]">Henry</rs>, Katharine, and <rs type="person" about="[alice.]">Alice</rs>.</stage>
+<lb ed="F1" n="3087"/><stage type="exit" about="[ !( k.-hen. alice.)]">Exeunt all except <rs type="person" about="[k.-hen.]">Henry</rs>, Katharine, and <rs type="person" about="[alice.]">Alice</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="3088"/></l></sp><sp who="#k.-hen."><speaker>K. Hen.</speaker><l>Fair Katharine, and most fair,
 <lb ed="G"/><lb ed="F1" n="3089"/></l><l>Will you vouchsafe to teach a soldier terms
@@ -4594,7 +4594,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/>should sooner persuade Harry of England
 <lb ed="G"/>than a <lb ed="F1" n="3267"/>general petition of monarchs.   Here
 <lb ed="G"/>comes your <lb ed="F1" n="3268"/>father.
-<lb ed="F1" n="3269"/><stage type="entrance" about="[ome:involves bur.]">Re-enter the FRENCH KING and his QUEEN, <rs type="person" about="[bur.]">BURGUNDY</rs>, and other <lb ed="F1" n="3270"/>Lords. </stage>
+<lb ed="F1" n="3269"/><stage type="entrance" about="[ bur.]">Re-enter the FRENCH KING and his QUEEN, <rs type="person" about="[bur.]">BURGUNDY</rs>, and other <lb ed="F1" n="3270"/>Lords. </stage>
 
 <lb ed="G"/><lb ed="F1" n="3271"/></p></sp><sp who="#bur."><speaker>Bur.</speaker><p>God save your majesty! my royal
 <lb ed="G"/>cousin, <lb ed="F1" n="3272"/>teach you our princess English?
@@ -4727,14 +4727,14 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="3363"/></l><l>And all the peers', for surety of our leagues.
 <lb ed="G"/><lb ed="F1" n="3364"/></l><l>Then shall I swear to Kate, and you to me;
 <lb ed="G"/><lb ed="F1" n="3365"/></l><l>And may our oaths well kept and prosperous be!
-<lb ed="F1" n="3366"/><stage about="[ome:involves-all]" type="exit">[Sennet. Exeunt. </stage>
+<lb ed="F1" n="3366"/><stage about="[-all]" type="exit">[Sennet. Exeunt. </stage>
 </l></sp>
 </div2>
     </div1>
 
     <div1 type="act" n="epilogue" org="uniform" sample="complete">
       <head>EPILOGUE</head>
-<lb ed="F1" n="3367"/><stage type="entrance" about="[ome:involves chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
+<lb ed="F1" n="3367"/><stage type="entrance" about="[ chor.]">Enter <rs type="person" about="[chor.]">Chorus</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="3368"/><sp who="#chor."><speaker>Chor.</speaker><l>Thus far, with rough and all-unable pen,
 <lb ed="G"/><lb ed="F1" n="3369"/></l><l>Our bending author hath pursued the story,
@@ -4751,7 +4751,7 @@ SCROOP, CAMBRIDGE, GREY, and Attendants.</stage>
 <lb ed="G"/><lb ed="F1" n="3380"/></l><l>Which oft our stage hath shown; and, for their sake,
 <lb ed="G"/><lb ed="F1" n="3381"/></l><l>In your fair minds let this acceptance take.
 
-<stage type="exit" about="[ome:involves chor.]">[Exit.</stage>
+<stage type="exit" about="[ chor.]">[Exit.</stage>
 </l></sp>
     </div1>
   </body>

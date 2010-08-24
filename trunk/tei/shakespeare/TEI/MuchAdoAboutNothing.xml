@@ -163,7 +163,7 @@ added ado.sgml to repository.
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[maan:Before_LEONATO'S_house.]" type="location">Before <rs type="person" about="[leon.]">LEONATO</rs>'S house.</stage>
-<lb n="3" ed="F1"/> <stage type="entrance" about="[ome:involves leon. hero. beat.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[hero.]">HERO</rs>, and <rs type="person" about="[beat.]">BEATRICE</rs>, with a Messenger.</stage>
+<lb n="3" ed="F1"/> <stage type="entrance" about="[ leon. hero. beat.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[hero.]">HERO</rs>, and <rs type="person" about="[beat.]">BEATRICE</rs>, with a Messenger.</stage>
 <lb n="4" ed="F1"/>
 
 <lb ed="G"/><lb n="5" ed="F1"/><sp who="#leon."><speaker>Leon.</speaker><p>I learn in this letter that Don Peter
@@ -296,7 +296,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="89" ed="F1"/></p></sp><sp who="#beat."><speaker>Beat.</speaker><p>No, not till a hot January.
 
 <lb ed="G"/><lb n="90" ed="F1"/></p></sp><sp who="#mess."><speaker>Mess.</speaker><p><rs type="person" about="[d.-pedro.]">Don Pedro</rs> is approached.
-<lb n="91" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro. d.-john. claud. bene. balth.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[d.-john.]">DON JOHN</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, and <rs type="person" about="[balth.]">BALTHASAR</rs>.</stage>
+<lb n="91" ed="F1"/><stage type="entrance" about="[ d.-pedro. d.-john. claud. bene. balth.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[d.-john.]">DON JOHN</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, and <rs type="person" about="[balth.]">BALTHASAR</rs>.</stage>
 <lb n="92" ed="F1"/>
 
 <lb ed="G"/><lb n="93" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Good Signior <rs type="person" about="[leon.]">Leonato</rs>, you are
@@ -389,7 +389,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="156" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Your hand, <rs type="person" about="[leon.]">Leonato</rs>; we will
 <lb ed="G"/>go together.
-<lb n="157" ed="F1"/><stage type="exit" about="[ome:involves !( bene. claud.)]">[Exeunt all except <rs type="person" about="[bene.]">Benedick</rs> and <rs type="person" about="[claud.]">Claudio</rs>.</stage>
+<lb n="157" ed="F1"/><stage type="exit" about="[ !( bene. claud.)]">[Exeunt all except <rs type="person" about="[bene.]">Benedick</rs> and <rs type="person" about="[claud.]">Claudio</rs>.</stage>
 
 <lb ed="G"/><lb n="158" ed="F1"/></p></sp><sp who="#claud."><speaker>Claud.</speaker><p><rs type="person" about="[bene.]">Benedick</rs>, didst thou note the
 <lb ed="G"/>daughter of Signior <lb n="159" ed="F1"/><rs type="person" about="[leon.]">Leonato</rs>?
@@ -447,7 +447,7 @@ added ado.sgml to repository.
 <lb ed="G"/>wilt needs thrust thy neck into a yoke, wear
 <lb ed="G"/><lb n="195" ed="F1"/>the print of it and sigh away Sundays. Look;
 <lb ed="G"/><rs type="person" about="[d.-pedro.]">Don Pedro</rs> <lb n="196" ed="F1"/>is returned to seek you.
-<lb n="197" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro.]">Re-enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>.</stage>
+<lb n="197" ed="F1"/><stage type="entrance" about="[ d.-pedro.]">Re-enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>.</stage>
 
 <lb ed="G"/><lb n="198" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>What secret hath held you here,
 <lb ed="G"/>that you followed <lb n="199" ed="F1"/>not to <rs type="person" about="[leon.]">Leonato</rs>'s?
@@ -565,7 +565,7 @@ added ado.sgml to repository.
 <lb ed="G"/>of your <lb n="275" ed="F1"/>discourse is sometime guarded with
 <lb ed="G"/>fragments, and the <lb n="276" ed="F1"/>guards are but slightly
 <lb n="290" ed="G"/>basted on neither: ere you flout <lb n="277" ed="F1"/>old ends any
-<lb ed="G"/>further, examine your conscience: and so I <lb n="278" ed="F1"/>leave you. <stage type="exit" about="[ome:involves bene.]">[Exit.</stage>
+<lb ed="G"/>further, examine your conscience: and so I <lb n="278" ed="F1"/>leave you. <stage type="exit" about="[ bene.]">[Exit.</stage>
 
 <lb ed="G"/><lb n="279" ed="F1"/></p></sp><sp who="#claud."><speaker>Claud.</speaker><l>My liege, your highness now may do me <lb n="280" ed="F1"/>good.
 
@@ -614,12 +614,12 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="316" ed="F1"/></l><l>Then after to her father will I break;
 <lb ed="G"/><lb n="317" ed="F1"/></l><l>And the conclusion is, she shall be thine.
 <lb n="330" ed="G"/><lb n="318" ed="F1"/></l><l>In practice let us put it presently.
-                          <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+                          <stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[maan:A_room_in_LEONATO'S_house.]" type="location">A room in <rs type="person" about="[leon.]">LEONATO</rs>'S house.</stage>
-<lb n="319" ed="F1"/><stage type="entrance" about="[ome:involves leon. ant.]">Enter <rs type="person" about="[leon.]">LEONATO</rs> and <rs type="person" about="[ant.]">ANTONIO</rs>, meeting.</stage>
+<lb n="319" ed="F1"/><stage type="entrance" about="[ leon. ant.]">Enter <rs type="person" about="[leon.]">LEONATO</rs> and <rs type="person" about="[ant.]">ANTONIO</rs>, meeting.</stage>
 
 <lb ed="G"/><lb n="320" ed="F1"/><sp who="#leon."><speaker>Leon.</speaker><p>How now, brother! Where is my
 <lb ed="G"/>cousin, your son? <lb n="321" ed="F1"/>hath he provided this music?
@@ -655,12 +655,12 @@ added ado.sgml to repository.
 <lb ed="G"/>Cousins, <lb n="341" ed="F1"/>you know what you have
 <lb ed="G"/>to do. O, I cry you mercy, <lb n="342" ed="F1"/>friend; go you
 <lb ed="G"/>with me, and I will use your skill.   <lb n="343" ed="F1"/>Good cousin,
-<lb ed="G"/>have a care this busy time.    <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>have a care this busy time.    <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[maan:The_same]" type="location">The same</stage>
-<lb n="344" ed="F1"/><stage type="entrance" about="[ome:involves d.-john. con.]"> Enter <rs type="person" about="[d.-john.]">DON JOHN</rs> and <rs type="person" about="[con.]">CONRADE</rs>. </stage>
+<lb n="344" ed="F1"/><stage type="entrance" about="[ d.-john. con.]"> Enter <rs type="person" about="[d.-john.]">DON JOHN</rs> and <rs type="person" about="[con.]">CONRADE</rs>. </stage>
 
 <lb ed="G"/><lb n="345" ed="F1"/><sp who="#con."><speaker>Con.</speaker><p>What the good-year, my lord! why
 <lb ed="G"/>are you <lb n="346" ed="F1"/>thus out of measure sad?
@@ -713,7 +713,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="379" ed="F1"/></p></sp><sp who="#d.-john."><speaker>D. <rs type="person" about="[d.-john.]">John</rs>.</speaker><p>I make all use of it, for I use it only.
 <lb ed="G"/><lb n="380" ed="F1"/>Who comes here?
-<stage type="entrance" about="[ome:involves bora.]"> Enter <rs type="person" about="[bora.]">BORACHIO</rs>.</stage>
+<stage type="entrance" about="[ bora.]"> Enter <rs type="person" about="[bora.]">BORACHIO</rs>.</stage>
 <lb ed="G"/>What news, <rs type="person" about="[bora.]">Borachio</rs>?
 <lb n="381" ed="F1"/>
 
@@ -764,7 +764,7 @@ added ado.sgml to repository.
 <lb ed="G"/>what's to be done?
 
 <lb ed="G"/><lb n="412" ed="F1"/></p></sp><sp who="#bora."><speaker>Bora.</speaker><l>We'll wait upon your lordship.
-                      <lb n="413" ed="F1"/><stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+                      <lb n="413" ed="F1"/><stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
 </div1>
@@ -774,7 +774,7 @@ added ado.sgml to repository.
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[maan:A_hall_in_LEONATO'S_house.]" type="location">A hall in <rs type="person" about="[leon.]">LEONATO</rs>'S house.</stage>
-<lb n="415" ed="F1"/><stage type="entrance" about="[ome:involves leon. ant. hero. beat.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, and others.</stage>
+<lb n="415" ed="F1"/><stage type="entrance" about="[ leon. ant. hero. beat.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, and others.</stage>
 <lb n="416" ed="F1"/>
 
 <lb ed="G"/><lb n="417" ed="F1"/><sp who="#leon."><speaker>Leon.</speaker><p>Was not Count <rs type="person" about="[d.-john.]">John</rs> here at supper?
@@ -890,7 +890,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="491" ed="F1"/></p></sp><sp who="#leon."><speaker>Leon.</speaker><p>The revellers are entering, brother:
 <lb ed="G"/>make good <lb n="492" ed="F1"/>room.  [All put on their masks.
-<lb n="493" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro. claud. bene. balth. d.-john. bora. marg. urs.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, <rs type="person" about="[balth.]">BALTHASAR</rs>, <rs type="person" about="[d.-john.]">DON JOHN</rs>, <rs type="person" about="[bora.]">BORACHIO</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, <rs type="person" about="[urs.]">URSULA</rs>, and others, masked.</stage>
+<lb n="493" ed="F1"/><stage type="entrance" about="[ d.-pedro. claud. bene. balth. d.-john. bora. marg. urs.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, <rs type="person" about="[balth.]">BALTHASAR</rs>, <rs type="person" about="[d.-john.]">DON JOHN</rs>, <rs type="person" about="[bora.]">BORACHIO</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, <rs type="person" about="[urs.]">URSULA</rs>, and others, masked.</stage>
 <lb n="494" ed="F1"/>
 
 <lb ed="G"/><lb n="495" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Lady, will you walk about with your friend?
@@ -1033,7 +1033,7 @@ added ado.sgml to repository.
 <lb ed="G"/>marry her <lb n="576" ed="F1"/>to-night.
 
 <lb ed="G"/><lb n="577" ed="F1"/></p></sp><sp who="#d.-john."><speaker>D. <rs type="person" about="[d.-john.]">John</rs>.</speaker><p>Come, let us to the banquet.
-<stage type="exit" about="[ome:involves d.-john. bora.]">[Exeunt <rs type="person" about="[d.-john.]">Don John</rs> and <rs type="person" about="[bora.]">Borachio</rs>.</stage>
+<stage type="exit" about="[ d.-john. bora.]">[Exeunt <rs type="person" about="[d.-john.]">Don John</rs> and <rs type="person" about="[bora.]">Borachio</rs>.</stage>
 
 <lb ed="G"/><lb n="578" ed="F1"/></p></sp><sp who="#claud."><speaker>Claud.</speaker><l>Thus answer I in name of <rs type="person" about="[bene.]">Benedick</rs>,
 <lb n="180" ed="G"/><lb n="579" ed="F1"/></l><l>But hear these ill news with the ears of <rs type="person" about="[claud.]">Claudio</rs>.
@@ -1046,7 +1046,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="586" ed="F1"/></l><l>Against whose charms faith melteth into blood.
 <lb ed="G"/><lb n="587" ed="F1"/></l><l>This is an accident of hourly proof,
 <lb ed="G"/><lb n="588" ed="F1"/></l><l>Which I mistrusted not. Farewell, therefore, <rs type="person" about="[hero.]">Hero</rs>!
-<lb n="589" ed="F1"/><stage type="entrance" about="[ome:involves bene.]">Re-enter <rs type="person" about="[bene.]">BENEDICK</rs>.</stage>
+<lb n="589" ed="F1"/><stage type="entrance" about="[ bene.]">Re-enter <rs type="person" about="[bene.]">BENEDICK</rs>.</stage>
 <lb n="190" ed="G"/>
 <lb ed="G"/><lb n="590" ed="F1"/></l></sp><sp who="#bene."><speaker>Bene.</speaker><l>Count <rs type="person" about="[claud.]">Claudio</rs>?
 
@@ -1076,7 +1076,7 @@ added ado.sgml to repository.
 <lb ed="G"/>you'll beat the post.
 
 <lb ed="G"/><lb n="606" ed="F1"/></p></sp><sp who="#claud."><speaker>Claud.</speaker><l>If it will not be, I'll leave you.
-                                <stage type="exit" about="[ome:involves claud.]">[Exit.</stage>
+                                <stage type="exit" about="[ claud.]">[Exit.</stage>
 
 <lb ed="G"/><lb n="607" ed="F1"/></l></sp><sp who="#bene."><speaker>Bene.</speaker><p>Alas, poor hurt fowl! now will he
 <lb n="210" ed="G"/>creep into <lb n="608" ed="F1"/>sedges. But that my Lady <rs type="person" about="[beat.]">Beatrice</rs>
@@ -1087,7 +1087,7 @@ added ado.sgml to repository.
 <lb ed="G"/>it is the <lb n="612" ed="F1"/>base, though bitter, disposition of
 <lb ed="G"/><rs type="person" about="[beat.]">Beatrice</rs> that puts <lb n="613" ed="F1"/>the world into her person,
 <lb ed="G"/>and so gives me out. Well, I'll <lb n="614" ed="F1"/>be revenged as I may.
-<lb n="615" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro.]">             Re-enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>.</stage>
+<lb n="615" ed="F1"/><stage type="entrance" about="[ d.-pedro.]">             Re-enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>.</stage>
 
 <lb ed="G"/><lb n="616" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Now, signior, where's the count?
 <lb ed="G"/>did you <lb n="617" ed="F1"/>see him?
@@ -1155,7 +1155,7 @@ added ado.sgml to repository.
 <lb n="663" ed="F1"/>
 
 <lb ed="G"/><lb n="664" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Look, here she comes.
-<stage type="entrance" about="[ome:involves claud. beat. hero. leon.]">   Re-enter <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, <rs type="person" about="[hero.]">HERO</rs>, and <rs type="person" about="[leon.]">LEONATO</rs>.</stage>
+<stage type="entrance" about="[ claud. beat. hero. leon.]">   Re-enter <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, <rs type="person" about="[hero.]">HERO</rs>, and <rs type="person" about="[leon.]">LEONATO</rs>.</stage>
 
 <lb ed="G"/><lb n="665" ed="F1"/></p></sp><sp who="#bene."><speaker>Bene.</speaker><p>Will your grace command me any
 <lb ed="G"/>service to <lb n="666" ed="F1"/>the world's end? I will go on the
@@ -1171,7 +1171,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="674" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>None, but to desire your good company.
 
 <lb ed="G"/><lb n="675" ed="F1"/></p></sp><sp who="#bene."><speaker>Bene.</speaker><p>O God, sir, here's a dish I love not:
-<lb ed="G"/>I cannot endure <lb n="676" ed="F1"/>my Lady Tongue.   <stage type="exit" about="[ome:involves bene.]">[Exit.</stage>
+<lb ed="G"/>I cannot endure <lb n="676" ed="F1"/>my Lady Tongue.   <stage type="exit" about="[ bene.]">[Exit.</stage>
 
 <lb ed="G"/><lb n="677" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Come, lady, come; you have
 <lb ed="G"/>lost the heart of <lb n="678" ed="F1"/>Signior <rs type="person" about="[bene.]">Benedick</rs>.
@@ -1266,7 +1266,7 @@ added ado.sgml to repository.
 <lb ed="G"/>I told <lb n="735" ed="F1"/>you of?
 
 <lb ed="G"/><lb n="736" ed="F1"/></p></sp><sp who="#beat."><speaker>Beat.</speaker><p>I cry you mercy, uncle. By your
-<lb ed="G"/>grace's pardon.   <lb n="737" ed="F1"/><stage type="exit" about="[ome:involves beat.]">[Exit.</stage>
+<lb ed="G"/>grace's pardon.   <lb n="737" ed="F1"/><stage type="exit" about="[ beat.]">[Exit.</stage>
 
 <lb ed="G"/><lb n="738" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><l>By my troth, a pleasant-spirited
 <lb ed="G"/>lady.
@@ -1333,12 +1333,12 @@ added ado.sgml to repository.
 <lb ed="G"/>If we can do this, Cupid is no longer an
 <lb ed="G"/>archer: <lb n="779" ed="F1"/>his glory shall be ours, for we are the
 <lb ed="G"/>only love-gods. <lb n="780" ed="F1"/>Go in with me, and I will tell
-<lb ed="G"/>you my drift.                <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>you my drift.                <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[maan:The_same.]" type="location">The same.</stage>
-<lb n="781" ed="F1"/><stage type="entrance" about="[ome:involves d.-john. bora.]"> Enter <rs type="person" about="[d.-john.]">DON JOHN</rs> and <rs type="person" about="[bora.]">BORACHIO</rs>. </stage>
+<lb n="781" ed="F1"/><stage type="entrance" about="[ d.-john. bora.]"> Enter <rs type="person" about="[d.-john.]">DON JOHN</rs> and <rs type="person" about="[bora.]">BORACHIO</rs>. </stage>
 
 <lb ed="G"/><lb n="782" ed="F1"/><sp who="#d.-john."><speaker>D. <rs type="person" about="[d.-john.]">John</rs>.</speaker><p>It is so; the Count <rs type="person" about="[claud.]">Claudio</rs> shall
 <lb ed="G"/>marry the daughter <lb n="783" ed="F1"/>of <rs type="person" about="[leon.]">Leonato</rs>.
@@ -1414,12 +1414,12 @@ added ado.sgml to repository.
 <lb ed="G"/>and my cunning <lb n="831" ed="F1"/>shall not shame me.
 
 <lb ed="G"/><lb n="832" ed="F1"/></p></sp><sp who="#d.-john."><speaker>D. <rs type="person" about="[d.-john.]">John</rs>.</speaker><p>I will presently go learn their day
-<lb ed="G"/>of <lb n="833" ed="F1"/>marriage.   <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>of <lb n="833" ed="F1"/>marriage.   <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[maan:LEONATO'S_orchard.]" type="location"><rs type="person" about="[leon.]">LEONATO</rs>'S orchard.</stage>
-<lb n="834" ed="F1"/><stage type="entrance" about="[ome:involves bene.]">Enter <rs type="person" about="[bene.]">BENEDICK</rs>,</stage>
+<lb n="834" ed="F1"/><stage type="entrance" about="[ bene.]">Enter <rs type="person" about="[bene.]">BENEDICK</rs>,</stage>
 
 <lb ed="G"/><lb n="835" ed="F1"/><sp who="#bene."><speaker>Bene.</speaker><p>Boy!
 
@@ -1432,7 +1432,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="839" ed="F1"/></p></sp><sp who="#boy."><speaker>Boy.</speaker><p>I am here already, sir.
 
 <lb ed="G"/><lb n="840" ed="F1"/></p></sp><sp who="#bene."><speaker>Bene.</speaker><p>I know that; but I would have thee
-<lb ed="G"/>hence, and <lb n="841" ed="F1"/>here again.<stage type="exit" about="[ome:involves bene.]">[Exit Boy.]</stage> I do much
+<lb ed="G"/>hence, and <lb n="841" ed="F1"/>here again.<stage type="exit" about="[ bene.]">[Exit Boy.]</stage> I do much
 <lb ed="G"/>wonder that one man, seeing <lb n="842" ed="F1"/>how much another
 <lb ed="G"/>man is a fool when he dedicates his <lb n="843" ed="F1"/>behaviors
 <lb n="10" ed="G"/>to love, will, after he hath laughed
@@ -1467,7 +1467,7 @@ added ado.sgml to repository.
 <lb ed="G"/>color it please God. Ha! the prince and <lb n="867" ed="F1"/>Monsieur
 <lb ed="G"/>Love! I will hide me in the arbor.
                              [Withdraws.
-<lb n="868" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro. claud. leon.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, and <rs type="person" about="[leon.]">LEONATO</rs>.</stage>
+<lb n="868" ed="F1"/><stage type="entrance" about="[ d.-pedro. claud. leon.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, and <rs type="person" about="[leon.]">LEONATO</rs>.</stage>
 
 <lb ed="G"/><lb n="869" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Come, shall we hear this music?
 
@@ -1478,7 +1478,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="873" ed="F1"/></l></sp><sp who="#claud."><speaker>Claud.</speaker><l>O, very well, my lord: the music ended,
 <lb ed="G"/><lb n="874" ed="F1"/></l><l>We'll fit the kid-fox with a pennyworth.
-<stage type="entrance" about="[ome:involves balth.]">Enter <rs type="person" about="[balth.]">BALTHASAR</rs> with Music.</stage>
+<stage type="entrance" about="[ balth.]">Enter <rs type="person" about="[balth.]">BALTHASAR</rs> with Music.</stage>
 
 <lb ed="G"/><lb n="875" ed="F1"/></l></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><l>Come, <rs type="person" about="[balth.]">Balthasar</rs>, we'll hear that song again.
 
@@ -1551,7 +1551,7 @@ added ado.sgml to repository.
 
 <lb n="90" ed="G"/><lb n="924" ed="F1"/></p></sp><sp who="#balth."><speaker>Balth.</speaker><p>The best I can, my lord.
 
-<lb ed="G"/><lb n="925" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Do so: farewell.<stage type="exit" about="[ome:involves balth.]">[Exit <rs type="person" about="[balth.]">Balthasar</rs>.]</stage>
+<lb ed="G"/><lb n="925" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>Do so: farewell.<stage type="exit" about="[ balth.]">[Exit <rs type="person" about="[balth.]">Balthasar</rs>.]</stage>
 <lb ed="G"/>Come hither, <rs type="person" about="[leon.]">Leonato</rs>. What <lb n="926" ed="F1"/>was it
 <lb ed="G"/>you told me of to-day, that your niece <rs type="person" about="[beat.]">Beatrice</rs>
 <lb ed="G"/><lb n="927" ed="F1"/>was in love with Signior <rs type="person" about="[bene.]">Benedick</rs>?
@@ -1741,7 +1741,7 @@ added ado.sgml to repository.
 <lb ed="G"/>and no such matter: that's the scene that I
 <lb ed="G"/><lb n="1042" ed="F1"/>would see, which will be merely a dumb-show.
 <lb ed="G"/>Let us <lb n="1043" ed="F1"/>send her to call him in to dinner.
-<stage type="exit" about="[ome:involves d.-pedro. claud. leon.]">[Exeunt <rs type="person" about="[d.-pedro.]">Don Pedro</rs>, <rs type="person" about="[claud.]">Claudio</rs>, and <rs type="person" about="[leon.]">Leonato</rs>.</stage>
+<stage type="exit" about="[ d.-pedro. claud. leon.]">[Exeunt <rs type="person" about="[d.-pedro.]">Don Pedro</rs>, <rs type="person" about="[claud.]">Claudio</rs>, and <rs type="person" about="[leon.]">Leonato</rs>.</stage>
 
 <lb ed="G"/><lb n="1044" ed="F1"/></p></sp><sp who="#bene."><speaker>Bene.</speaker>[Coming forward]<p>This can be no
 <lb ed="G"/>trick: the conference was sadly <lb n="1045" ed="F1"/>borne. They
@@ -1773,7 +1773,7 @@ added ado.sgml to repository.
 <lb ed="G"/>married. Here comes <lb n="1066" ed="F1"/><rs type="person" about="[beat.]">Beatrice</rs>. By this day!
 <lb ed="G"/>she's a fair lady: I do spy some <lb n="1067" ed="F1"/>marks of love
 <lb ed="G"/>in her.
-<lb n="1068" ed="F1"/><stage type="entrance" about="[ome:involves beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>.</stage>
+<lb n="1068" ed="F1"/><stage type="entrance" about="[ beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>.</stage>
 
 <lb ed="G"/><lb n="1069" ed="F1"/></p></sp><sp who="#beat."><speaker>Beat.</speaker><p>Against my will I am sent to bid you
 <lb ed="G"/>come in to <lb n="1070" ed="F1"/>dinner.
@@ -1790,7 +1790,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="1076" ed="F1"/></p></sp><sp who="#beat."><speaker>Beat.</speaker><p>Yea, just so much as you may take
 <lb ed="G"/>upon a knife's <lb n="1077" ed="F1"/>point and choke a daw withal.
 <lb ed="G"/>You have no stomach, <lb n="1078" ed="F1"/>signior: fare you well.
-                          <stage type="exit" about="[ome:involves beat.]">[Exit.</stage>
+                          <stage type="exit" about="[ beat.]">[Exit.</stage>
 
 <lb ed="G"/><lb n="1079" ed="F1"/></p></sp><sp who="#bene."><speaker>Bene.</speaker><p>Ha! 'Against my will I am sent to
 <lb ed="G"/>bid you come <lb n="1080" ed="F1"/>in to dinner;' there's a double
@@ -1799,7 +1799,7 @@ added ado.sgml to repository.
 <lb ed="G"/>that's as much as to say, Any pains that I <lb n="1083" ed="F1"/>take
 <lb ed="G"/>for you is as easy as thanks. If I do not take
 <lb ed="G"/>pity <lb n="1084" ed="F1"/>of her, I am a villain; if I do not love her,
-<lb ed="G"/>I am a Jew. I <lb n="1085" ed="F1"/>will go get her picture. <stage type="exit" about="[ome:involves bene.]">[Exit.</stage>
+<lb ed="G"/>I am a Jew. I <lb n="1085" ed="F1"/>will go get her picture. <stage type="exit" about="[ bene.]">[Exit.</stage>
 </p></sp>
 </div2>
 </div1>
@@ -1809,7 +1809,7 @@ added ado.sgml to repository.
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[maan:LEONATO'S_garden.]" type="location"><rs type="person" about="[leon.]">LEONATO</rs>'S garden.</stage>
-<lb n="1087" ed="F1"/><stage type="entrance" about="[ome:involves hero. marg. urs.]">   Enter <rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, and <rs type="person" about="[urs.]">URSULA</rs>.</stage>
+<lb n="1087" ed="F1"/><stage type="entrance" about="[ hero. marg. urs.]">   Enter <rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, and <rs type="person" about="[urs.]">URSULA</rs>.</stage>
 
 <lb ed="G"/><lb n="1088" ed="F1"/><sp who="#hero."><speaker><rs type="person" about="[hero.]">Hero</rs>.</speaker><l>Good <rs type="person" about="[marg.]">Margaret</rs>, run thee to the parlor;
 <lb ed="G"/><lb n="1089" ed="F1"/></l><l>There shalt thou find my cousin <rs type="person" about="[beat.]">Beatrice</rs>
@@ -1826,7 +1826,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="1100" ed="F1"/></l><l>Bear thee well in it and leave us alone.
 
 <lb ed="G"/><lb n="1101" ed="F1"/></l></sp><sp who="#marg."><speaker>Marg.</speaker><l>I'll make her come, I warrant you, presently.
-<stage type="exit" about="[ome:involves marg.]">[Exit. </stage>
+<stage type="exit" about="[ marg.]">[Exit. </stage>
 
 <lb ed="G"/><lb n="1102" ed="F1"/></l></sp><sp who="#hero."><speaker><rs type="person" about="[hero.]">Hero</rs>.</speaker><l>Now, <rs type="person" about="[urs.]">Ursula</rs>, when <rs type="person" about="[beat.]">Beatrice</rs> doth come,
 <lb ed="G"/><lb n="1103" ed="F1"/></l><l>As we do trace this alley up and down,
@@ -1837,7 +1837,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="1108" ed="F1"/></l><l>Is sick in love with <rs type="person" about="[beat.]">Beatrice</rs>. Of this matter
 <lb ed="G"/><lb n="1109" ed="F1"/></l><l>Is little Cupid's crafty arrow made,
 <lb ed="G"/><lb n="1110" ed="F1"/></l><l>That only wounds by hearsay.
-<stage type="entrance" about="[ome:involves beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>, behind.</stage>
+<stage type="entrance" about="[ beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>, behind.</stage>
 <lb ed="G"/>Now begin;
 <lb n="1111" ed="F1"/>
 <lb ed="G"/><lb n="1112" ed="F1"/></l><l>For look where <rs type="person" about="[beat.]">Beatrice</rs>, like a lapwing, runs
@@ -1948,7 +1948,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="1196" ed="F1"/></l></sp><sp who="#hero."><speaker><rs type="person" about="[hero.]">Hero</rs>.</speaker><l>If it proves so, then loving goes by haps:
 <lb ed="G"/><lb n="1197" ed="F1"/></l><l>Some Cupid kills with arrows, some with traps.
-                     <stage type="exit" about="[ome:involves hero. urs.]">[Exeunt <rs type="person" about="[hero.]">Hero</rs> and <rs type="person" about="[urs.]">Ursula</rs>.</stage>
+                     <stage type="exit" about="[ hero. urs.]">[Exeunt <rs type="person" about="[hero.]">Hero</rs> and <rs type="person" about="[urs.]">Ursula</rs>.</stage>
 
 <lb ed="G"/><lb n="1198" ed="F1"/></l></sp><sp who="#beat."><speaker>Beat.</speaker> [Coming forward]<l>What fire is in mine ears? Can this be true?
 <lb ed="G"/><lb n="1199" ed="F1"/></l><l>Stand I condemn'd for pride and scorn so much?
@@ -1959,12 +1959,12 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="1204" ed="F1"/></l><l>If thou dost love, my kindness shall incite thee
 <lb ed="G"/><lb n="1205" ed="F1"/></l><l>To bind our loves up in a holy band;
 <lb ed="G"/><lb n="1206" ed="F1"/></l><l>For others say thou dost deserve, and I
-<lb ed="G"/><lb n="1207" ed="F1"/></l><l>Believe it better than reportingly.<stage type="exit" about="[ome:involves beat.]">[Exit.</stage>
+<lb ed="G"/><lb n="1207" ed="F1"/></l><l>Believe it better than reportingly.<stage type="exit" about="[ beat.]">[Exit.</stage>
 </l></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[maan:A_room_in_LEONATO'S_house.]" type="location">A room in <rs type="person" about="[leon.]">LEONATO</rs>'S house.</stage>
-<lb n="1208" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro. claud. bene. leon.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, and <rs type="person" about="[leon.]">LEONATO</rs>.</stage>
+<lb n="1208" ed="F1"/><stage type="entrance" about="[ d.-pedro. claud. bene. leon.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, and <rs type="person" about="[leon.]">LEONATO</rs>.</stage>
 
 <lb ed="G"/><lb n="1209" ed="F1"/><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>I do but stay till your marriage
 <lb ed="G"/>be consummate, <lb n="1210" ed="F1"/>and then go I toward Arragon.
@@ -2074,7 +2074,7 @@ added ado.sgml to repository.
 <lb ed="G"/>Old signior, <lb n="1271" ed="F1"/>walk aside with me: I have
 <lb ed="G"/>studied eight or nine <lb n="1272" ed="F1"/>wise words to speak to
 <lb ed="G"/>you, which these hobby-horses <lb n="1273" ed="F1"/>must not hear.
-<stage type="exit" about="[ome:involves bene. leon.]">[Exeunt <rs type="person" about="[bene.]">Benedick</rs> and <rs type="person" about="[leon.]">Leonato</rs>.</stage>
+<stage type="exit" about="[ bene. leon.]">[Exeunt <rs type="person" about="[bene.]">Benedick</rs> and <rs type="person" about="[leon.]">Leonato</rs>.</stage>
 
 <lb ed="G"/><lb n="1274" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>For my life, to break with him
 <lb ed="G"/>about <rs type="person" about="[beat.]">Beatrice</rs>.
@@ -2083,7 +2083,7 @@ added ado.sgml to repository.
 <lb ed="G"/>have by this <lb n="1276" ed="F1"/>played their parts with <rs type="person" about="[beat.]">Beatrice</rs>;
 <lb ed="G"/>and then the two bears <lb n="1277" ed="F1"/>will not bite one another
 <lb n="81" ed="G"/> when they meet.
-<lb n="1278" ed="F1"/><stage type="entrance" about="[ome:involves d.-john.]">Enter <rs type="person" about="[d.-john.]">DON JOHN</rs>.</stage>
+<lb n="1278" ed="F1"/><stage type="entrance" about="[ d.-john.]">Enter <rs type="person" about="[d.-john.]">DON JOHN</rs>.</stage>
 
 <lb ed="G"/><lb n="1279" ed="F1"/></p></sp><sp who="#d.-john."><speaker>D. <rs type="person" about="[d.-john.]">John</rs>.</speaker><p>My lord and brother, God save you!
 
@@ -2169,12 +2169,12 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="1328" ed="F1"/></l></sp><sp who="#d.-john."><speaker>D. <rs type="person" about="[d.-john.]">John</rs>.</speaker><p>O plague right well prevented!
 <lb ed="G"/>so will you <lb n="1329" ed="F1"/>say when you have seen the sequel.
-                              <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+                              <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[maan:A_street.]" type="location">A street.</stage>
-<lb n="1330" ed="F1"/><stage type="entrance" about="[ome:involves dog. verg. watch.]"> Enter <rs type="person" about="[dog.]">DOGBERRY</rs> and <rs type="person" about="[verg.]">VERGES</rs> with the <rs type="person" about="[watch.]">Watch</rs>.</stage>
+<lb n="1330" ed="F1"/><stage type="entrance" about="[ dog. verg. watch.]"> Enter <rs type="person" about="[dog.]">DOGBERRY</rs> and <rs type="person" about="[verg.]">VERGES</rs> with the <rs type="person" about="[watch.]">Watch</rs>.</stage>
 
 <lb ed="G"/><lb n="1331" ed="F1"/><sp who="#dog."><speaker>Dog.</speaker><l>Are you good men and true?
 
@@ -2313,8 +2313,8 @@ added ado.sgml to repository.
 <lb ed="G"/>for the wedding being <lb n="1420" ed="F1"/>there to-morrow, there
 <lb ed="G"/>is a great coil to-night. <lb n="1421" ed="F1"/>Adieu: be vigitant, I
 <lb n="100" ed="G"/>beseech you.
-               <stage type="exit" about="[ome:involves dog. verg.]">[Exeunt <rs type="person" about="[dog.]">Dogberry</rs> and <rs type="person" about="[verg.]">Verges</rs>.</stage>
-<lb n="1422" ed="F1"/><stage type="entrance" about="[ome:involves bora. con.]"> Enter <rs type="person" about="[bora.]">BORACHIO</rs> and <rs type="person" about="[con.]">CONRADE</rs>.</stage>
+               <stage type="exit" about="[ dog. verg.]">[Exeunt <rs type="person" about="[dog.]">Dogberry</rs> and <rs type="person" about="[verg.]">Verges</rs>.</stage>
+<lb n="1422" ed="F1"/><stage type="entrance" about="[ bora. con.]"> Enter <rs type="person" about="[bora.]">BORACHIO</rs> and <rs type="person" about="[con.]">CONRADE</rs>.</stage>
 
 <lb ed="G"/><lb n="1423" ed="F1"/></p></sp><sp who="#bora."><speaker>Bora.</speaker><p>What, <rs type="person" about="[con.]">Conrade</rs>!
 </p></sp>
@@ -2440,12 +2440,12 @@ added ado.sgml to repository.
 <lb ed="G"/>being <lb n="1499" ed="F1"/>taken up of these men's bills.
 
 <lb ed="G"/><lb n="1500" ed="F1"/></p></sp><sp who="#con."><speaker>Con.</speaker><p>A commodity in question, I warrant
-<lb ed="G"/>you. Come, <lb n="1501" ed="F1"/>we'll obey you.   <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>you. Come, <lb n="1501" ed="F1"/>we'll obey you.   <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="4" type="scene" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[maan:HERO'S_apartment.]" type="location"><rs type="person" about="[hero.]">HERO</rs>'S apartment.</stage>
-<lb n="1502" ed="F1"/><stage type="entrance" about="[ome:involves hero. marg. urs.]">Enter <rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, and <rs type="person" about="[urs.]">URSULA</rs>.</stage>
+<lb n="1502" ed="F1"/><stage type="entrance" about="[ hero. marg. urs.]">Enter <rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, and <rs type="person" about="[urs.]">URSULA</rs>.</stage>
 
 <lb ed="G"/><lb n="1503" ed="F1"/><sp who="#hero."><speaker><rs type="person" about="[hero.]">Hero</rs>.</speaker><p>Good <rs type="person" about="[urs.]">Ursula</rs>, wake my cousin <rs type="person" about="[beat.]">Beatrice</rs>,
 <lb ed="G"/>and desire <lb n="1504" ed="F1"/>her to rise.
@@ -2454,7 +2454,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="1506" ed="F1"/></p></sp><sp who="#hero."><speaker><rs type="person" about="[hero.]">Hero</rs>.</speaker><p>And bid her come hither.
 
-<lb ed="G"/><lb n="1507" ed="F1"/></p></sp><sp who="#urs."><speaker>Urs.</speaker><p>Well.    <stage type="exit" about="[ome:involves urs.]">[Exit.</stage>
+<lb ed="G"/><lb n="1507" ed="F1"/></p></sp><sp who="#urs."><speaker>Urs.</speaker><p>Well.    <stage type="exit" about="[ urs.]">[Exit.</stage>
 
 <lb ed="G"/><lb n="1508" ed="F1"/></p></sp><sp who="#marg."><speaker>Marg.</speaker><p>Troth, I think your other rabato
 <lb ed="G"/>were better.
@@ -2500,7 +2500,7 @@ added ado.sgml to repository.
 <lb ed="G"/>and the right wife: <lb n="1536" ed="F1"/>otherwise 'tis light,
 <lb ed="G"/>and not heavy: ask my Lady <rs type="person" about="[beat.]">Beatrice</rs> <lb n="1537" ed="F1"/>else;
 <lb ed="G"/>here she comes.
-<lb n="1538" ed="F1"/><stage type="entrance" about="[ome:involves beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>.</stage>
+<lb n="1538" ed="F1"/><stage type="entrance" about="[ beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>.</stage>
 
 <lb ed="G"/><lb n="1539" ed="F1"/></p></sp><sp who="#hero."><speaker><rs type="person" about="[hero.]">Hero</rs>.</speaker><p>Good morrow, coz.
 <lb n="40" ed="G"/>
@@ -2583,7 +2583,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="1587" ed="F1"/></p></sp><sp who="#beat."><speaker>Beat.</speaker><p>What pace is this that thy tongue keeps?
 
 <lb ed="G"/><lb n="1588" ed="F1"/></p></sp><sp who="#marg."><speaker>Marg.</speaker><p>Not a false gallop.
-<lb n="1589" ed="F1"/><stage type="entrance" about="[ome:involves urs.]">               Re-enter <rs type="person" about="[urs.]">URSULA</rs>.</stage>
+<lb n="1589" ed="F1"/><stage type="entrance" about="[ urs.]">               Re-enter <rs type="person" about="[urs.]">URSULA</rs>.</stage>
 
 <lb ed="G"/><lb n="1590" ed="F1"/></p></sp><sp who="#urs."><speaker>Urs.</speaker><p>Madam, withdraw: the prince, the
 <lb ed="G"/>count, Signior <lb n="1591" ed="F1"/><rs type="person" about="[bene.]">Benedick</rs>, <rs type="person" about="[d.-john.]">Don John</rs>, and all the
@@ -2591,12 +2591,12 @@ added ado.sgml to repository.
 <lb ed="G"/>church.
 
 <lb ed="G"/><lb n="1593" ed="F1"/></p></sp><sp who="#hero."><speaker><rs type="person" about="[hero.]">Hero</rs>.</speaker><p>Help to dress me, good coz, good
-<lb ed="G"/>Meg, <lb n="1594" ed="F1"/>good <rs type="person" about="[urs.]">Ursula</rs>.<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>Meg, <lb n="1594" ed="F1"/>good <rs type="person" about="[urs.]">Ursula</rs>.<stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="5" type="scene" org="uniform" sample="complete">
 <head>SCENE V</head>
 <stage about="[maan:Another_room_in_LEONATO'S_house.]" type="location">Another room in <rs type="person" about="[leon.]">LEONATO</rs>'S house.</stage>
-<lb n="1595" ed="F1"/><stage type="entrance" about="[ome:involves leon. dog. verg.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, with <rs type="person" about="[dog.]">DOGBERRY</rs> and <rs type="person" about="[verg.]">VERGES</rs>.</stage>
+<lb n="1595" ed="F1"/><stage type="entrance" about="[ leon. dog. verg.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, with <rs type="person" about="[dog.]">DOGBERRY</rs> and <rs type="person" about="[verg.]">VERGES</rs>.</stage>
 
 <lb ed="G"/><lb n="1596" ed="F1"/><sp who="#leon."><speaker>Leon.</speaker><p>What would you with me, honest
 <lb ed="G"/><lb n="1597" ed="F1"/>neighbor?
@@ -2686,7 +2686,7 @@ added ado.sgml to repository.
 <lb n="60" ed="G"/>your <lb n="1646" ed="F1"/>daughter to her husband.
 
 <lb ed="G"/><lb n="1647" ed="F1"/></p></sp><sp who="#leon."><speaker>Leon.</speaker><p>I'll wait upon them: I am ready.
-<stage type="exit" about="[ome:involves leon.]">[Exeunt <rs type="person" about="[leon.]">Leonato</rs> and Messenger.</stage>
+<stage type="exit" about="[ leon.]">[Exeunt <rs type="person" about="[leon.]">Leonato</rs> and Messenger.</stage>
 
 <lb ed="G"/><lb n="1648" ed="F1"/></p></sp><sp who="#dog."><speaker>Dog.</speaker><p>Go, good partner, go, get you to
 <lb ed="G"/><rs type="person" about="[friar.]">Francis</rs> Seacole; <lb n="1649" ed="F1"/>bid him bring his pen and
@@ -2699,7 +2699,7 @@ added ado.sgml to repository.
 <lb ed="G"/>you; <lb n="1653" ed="F1"/>here's that shall drive some of them to a
 <lb ed="G"/>noncome: only <lb n="1654" ed="F1"/>get the learned writer to set
 <lb ed="G"/>down our excommunication <lb n="1655" ed="F1"/>and meet me at
-<lb ed="G"/>the gaol.                <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>the gaol.                <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp>
 </div2>
 </div1>
@@ -2710,7 +2710,7 @@ added ado.sgml to repository.
 <head>SCENE I</head>
 
 <stage about="[maan:A_church.]" type="location">A church.</stage>
-<lb n="1657" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro. d.-john. leon. friar. claud. bene. hero. beat.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[d.-john.]">DON JOHN</rs>, <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[friar.]">FRIAR FRANCIS</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, <lb n="1658" ed="F1"/><rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, and attendants.</stage>
+<lb n="1657" ed="F1"/><stage type="entrance" about="[ d.-pedro. d.-john. leon. friar. claud. bene. hero. beat.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[d.-john.]">DON JOHN</rs>, <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[friar.]">FRIAR FRANCIS</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, <lb n="1658" ed="F1"/><rs type="person" about="[hero.]">HERO</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, and attendants.</stage>
 
 <lb ed="G"/><lb n="1659" ed="F1"/><sp who="#leon."><speaker>Leon.</speaker><p>Come, <rs type="person" about="[friar.]">Friar Francis</rs>, be brief; only
 <lb ed="G"/>to the <lb n="1660" ed="F1"/>plain form of marriage, and you shall
@@ -2875,7 +2875,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="1771" ed="F1"/></l></sp><sp who="#d.-john."><speaker>D. <rs type="person" about="[d.-john.]">John</rs>.</speaker><l>Come, let us go. These things, come thus to light,
 <lb ed="G"/><lb n="1772" ed="F1"/></l><l>Smother her spirits up.
-<stage type="exit" about="[ome:involves d.-pedro. d.-john. claud.]">[Exeunt <rs type="person" about="[d.-pedro.]">Don Pedro</rs>, <rs type="person" about="[d.-john.]">Don John</rs>, and <rs type="person" about="[claud.]">Claudio</rs>.</stage>
+<stage type="exit" about="[ d.-pedro. d.-john. claud.]">[Exeunt <rs type="person" about="[d.-pedro.]">Don Pedro</rs>, <rs type="person" about="[d.-john.]">Don John</rs>, and <rs type="person" about="[claud.]">Claudio</rs>.</stage>
 
 <lb ed="G"/><lb n="1773" ed="F1"/></l></sp><sp who="#bene."><speaker>Bene.</speaker><l>How doth the lady?
 
@@ -3051,7 +3051,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="1917" ed="F1"/></l><l>For to strange sores strangely they strain the cure.
 <lb ed="G"/><lb n="1918" ed="F1"/></l><l>Come, lady, die to live: this wedding-day
 <lb ed="G"/><lb n="1919" ed="F1"/></l><l>Perhaps is but prolong'd: have patience and endure.
-<stage type="exit" about="[ome:involves !( bene. beat.)]">[Exeunt all but <rs type="person" about="[bene.]">Benedick</rs> and <rs type="person" about="[beat.]">Beatrice</rs>.</stage>
+<stage type="exit" about="[ !( bene. beat.)]">[Exeunt all but <rs type="person" about="[bene.]">Benedick</rs> and <rs type="person" about="[beat.]">Beatrice</rs>.</stage>
 
 <lb ed="G"/><lb n="1920" ed="F1"/></l></sp><sp who="#bene."><speaker>Bene.</speaker><p>Lady <rs type="person" about="[beat.]">Beatrice</rs>, have you wept all this while?
 
@@ -3179,13 +3179,13 @@ added ado.sgml to repository.
 <lb ed="G"/>leave you. By this hand, <rs type="person" about="[claud.]">Claudio</rs> <lb n="1994" ed="F1"/>shall render
 <lb ed="G"/>me a dear account. As you hear of me, <lb n="1995" ed="F1"/>so
 <lb ed="G"/>think of me. Go, comfort your cousin: I must
-<lb ed="G"/>say she <lb n="1996" ed="F1"/>is dead: and so, farewell.  <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>say she <lb n="1996" ed="F1"/>is dead: and so, farewell.  <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 
 <stage about="[maan:A_prison.]" type="location">A prison.</stage>
-<lb n="1997" ed="F1"/><stage type="entrance" about="[ome:involves dog. verg. watch. con. bora.]"> Enter <rs type="person" about="[dog.]">DOGBERRY</rs>, <rs type="person" about="[verg.]">VERGES</rs>, and Sexton, in gowns; and the <rs type="person" about="[watch.]">Watch</rs>, with <rs type="person" about="[con.]">CONRADE</rs> and <rs type="person" about="[bora.]">BORACHIO</rs>.</stage>
+<lb n="1997" ed="F1"/><stage type="entrance" about="[ dog. verg. watch. con. bora.]"> Enter <rs type="person" about="[dog.]">DOGBERRY</rs>, <rs type="person" about="[verg.]">VERGES</rs>, and Sexton, in gowns; and the <rs type="person" about="[watch.]">Watch</rs>, with <rs type="person" about="[con.]">CONRADE</rs> and <rs type="person" about="[bora.]">BORACHIO</rs>.</stage>
 <lb n="1998" ed="F1"/>
 
 <lb ed="G"/><lb n="1999" ed="F1"/><sp who="#dog."><speaker>Dog.</speaker><p>Is our whole dissembly appeared?
@@ -3319,7 +3319,7 @@ added ado.sgml to repository.
 <lb ed="G"/>that hath had losses, <lb n="2074" ed="F1"/>and one that hath two
 <lb ed="G"/>gowns and every thing handsome <lb n="2075" ed="F1"/>about him.
 <lb ed="G"/>Bring him away. O that I had been writ <lb n="2076" ed="F1"/>down
-<lb n="90" ed="G"/>an ass!            <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb n="90" ed="G"/>an ass!            <stage about="[-all]" type="exit">[Exeunt.</stage>
 
 </p></sp>
 </div2>
@@ -3331,7 +3331,7 @@ added ado.sgml to repository.
 <head>SCENE I</head>
 
 <stage about="[maan:Before_LEONATO'S_house.]" type="location">Before <rs type="person" about="[leon.]">LEONATO</rs>'S house.</stage>
-<lb n="2078" ed="F1"/><stage type="entrance" about="[ome:involves leon. ant.]"> Enter <rs type="person" about="[leon.]">LEONATO</rs> and <rs type="person" about="[ant.]">ANTONIO</rs>. </stage>
+<lb n="2078" ed="F1"/><stage type="entrance" about="[ leon. ant.]"> Enter <rs type="person" about="[leon.]">LEONATO</rs> and <rs type="person" about="[ant.]">ANTONIO</rs>. </stage>
 
 
 <lb ed="G"/><lb n="2079" ed="F1"/><sp who="#ant."><speaker>Ant.</speaker><l>If you go on thus, you will kill yourself:
@@ -3387,7 +3387,7 @@ added ado.sgml to repository.
 <lb n="2124" ed="F1"/>
 
 <lb ed="G"/><lb n="2125" ed="F1"/></l></sp><sp who="#ant."><speaker>Ant.</speaker><l>Here comes the prince and <rs type="person" about="[claud.]">Claudio</rs> hastily.
-<stage type="entrance" about="[ome:involves d.-pedro. claud.]"> Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs> and <rs type="person" about="[claud.]">CLAUDIO</rs>. </stage>
+<stage type="entrance" about="[ d.-pedro. claud.]"> Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs> and <rs type="person" about="[claud.]">CLAUDIO</rs>. </stage>
 
 <lb ed="G"/><lb n="2126" ed="F1"/></l></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><l>Good den, good den.
 
@@ -3490,10 +3490,10 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="2197" ed="F1"/></l></sp><sp who="#leon."><speaker>Leon.</speaker><l>No? Come, brother; away! I will be heard.
 
 <lb ed="G"/><lb n="2198" ed="F1"/></l></sp><sp who="#ant."><speaker>Ant.</speaker><l>And shall, or some of us will smart for it.
-<stage type="exit" about="[ome:involves leon. ant.]">[Exeunt <rs type="person" about="[leon.]">Leonato</rs> and <rs type="person" about="[ant.]">Antonio</rs> </stage>
+<stage type="exit" about="[ leon. ant.]">[Exeunt <rs type="person" about="[leon.]">Leonato</rs> and <rs type="person" about="[ant.]">Antonio</rs> </stage>
 
 <lb ed="G"/><lb n="2199" ed="F1"/></l></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><l>See, see; here comes the man we went to seek.
-<stage type="entrance" about="[ome:involves bene.]">Enter <rs type="person" about="[bene.]">BENEDICK</rs>.</stage>
+<stage type="entrance" about="[ bene.]">Enter <rs type="person" about="[bene.]">BENEDICK</rs>.</stage>
 
 <lb ed="G"/><lb n="2200" ed="F1"/></l></sp><sp who="#claud."><speaker>Claud.</speaker><p>Now, signior, what news?
 
@@ -3614,7 +3614,7 @@ added ado.sgml to repository.
 <lb ed="G"/>have among you <lb n="2275" ed="F1"/>killed a sweet and innocent
 <lb ed="G"/>lady. For my Lord Lackbeard <lb n="2276" ed="F1"/>there, he and
 <lb ed="G"/>I shall meet: and, till then, peace be <lb n="2277" ed="F1"/>with him.
-                          <stage type="exit" about="[ome:involves bene.]">[Exit.</stage>
+                          <stage type="exit" about="[ bene.]">[Exit.</stage>
 
 <lb ed="G"/><lb n="2278" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><l>He is in earnest.
 
@@ -3636,7 +3636,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="2288" ed="F1"/></p></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><p>But, soft you, let me be: pluck
 <lb ed="G"/>up, my heart, and <lb n="2289" ed="F1"/>be sad. Did he not say, my
 <lb ed="G"/>brother was fled?
-<stage type="entrance" about="[ome:involves dog. verg. watch. con. bora.]">Enter <rs type="person" about="[dog.]">DOGBERRY</rs>, <rs type="person" about="[verg.]">VERGES</rs>, and the <rs type="person" about="[watch.]">Watch</rs>, with <rs type="person" about="[con.]">CONRADE</rs> and <rs type="person" about="[bora.]">BORACHIO</rs>. </stage>
+<stage type="entrance" about="[ dog. verg. watch. con. bora.]">Enter <rs type="person" about="[dog.]">DOGBERRY</rs>, <rs type="person" about="[verg.]">VERGES</rs>, and the <rs type="person" about="[watch.]">Watch</rs>, with <rs type="person" about="[con.]">CONRADE</rs> and <rs type="person" about="[bora.]">BORACHIO</rs>. </stage>
 
 <lb ed="G"/><lb n="2290" ed="F1"/></p></sp><sp who="#dog."><speaker>Dog.</speaker><p>Come you, sir: if justice cannot tame
 <lb ed="G"/>you, she <lb n="2291" ed="F1"/>shall ne'er weigh more reasons in her
@@ -3712,7 +3712,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="2338" ed="F1"/></p></sp><sp who="#verg."><speaker>Verg.</speaker><p>Here, here comes master Signior <rs type="person" about="[leon.]">Leonato</rs>,
 <lb ed="G"/>and <lb n="2339" ed="F1"/>the Sexton too.
-<lb n="2340" ed="F1"/><stage type="entrance" about="[ome:involves leon. ant.]">Re-enter <rs type="person" about="[leon.]">LEONATO</rs> and <rs type="person" about="[ant.]">ANTONIO</rs>, with the Sexton.</stage>
+<lb n="2340" ed="F1"/><stage type="entrance" about="[ leon. ant.]">Re-enter <rs type="person" about="[leon.]">LEONATO</rs> and <rs type="person" about="[ant.]">ANTONIO</rs>, with the Sexton.</stage>
 
 <lb ed="G"/><lb n="2341" ed="F1"/></p></sp><sp who="#leon."><speaker>Leon.</speaker><l>Which is the villain? let me see his eyes,
 <lb n="270" ed="G"/><lb n="2342" ed="F1"/></l><l>That, when I note another man like him,
@@ -3806,7 +3806,7 @@ added ado.sgml to repository.
 <lb ed="G"/>well; God restore you to health! <lb n="2410" ed="F1"/>I humbly
 <lb ed="G"/>give you leave to depart; and if a merry <lb n="2411" ed="F1"/>meeting
 <lb ed="G"/>may be wished, God prohibit it! Come,
-<lb ed="G"/><lb n="2412" ed="F1"/>neighbor.    <stage type="exit" about="[ome:involves dog. verg.]">[Exeunt <rs type="person" about="[dog.]">Dogberry</rs> and <rs type="person" about="[verg.]">Verges</rs>.</stage>
+<lb ed="G"/><lb n="2412" ed="F1"/>neighbor.    <stage type="exit" about="[ dog. verg.]">[Exeunt <rs type="person" about="[dog.]">Dogberry</rs> and <rs type="person" about="[verg.]">Verges</rs>.</stage>
 
 <lb ed="G"/><lb n="2413" ed="F1"/></p></sp><sp who="#leon."><speaker>Leon.</speaker><l>Until to-morrow morning, lords, farewell.
 <lb n="2414" ed="F1"/>
@@ -3819,14 +3819,14 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="2419" ed="F1"/></l></sp><sp who="#leon."><speaker>Leon.</speaker>[To the <rs type="person" about="[watch.]">Watch</rs>]<l>Bring you these fellows on. We'll talk with <lb n="2420" ed="F1"/><rs type="person" about="[marg.]">Margaret</rs>,
 <lb ed="G"/><lb n="2421" ed="F1"/></l><l>How her acquaintance grew with this lewd <lb n="2422" ed="F1"/>fellow.
-<stage about="[ome:involves-all]" type="exit">[Exeunt, severally. </stage>
+<stage about="[-all]" type="exit">[Exeunt, severally. </stage>
 
 </l></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 
 <stage about="[maan:LEONATO'S_garden.]" type="location"><rs type="person" about="[leon.]">LEONATO</rs>'S garden.</stage>
-<lb n="2423" ed="F1"/><stage type="entrance" about="[ome:involves bene. marg.]"> Enter <rs type="person" about="[bene.]">BENEDICK</rs> and <rs type="person" about="[marg.]">MARGARET</rs>, meeting.</stage>
+<lb n="2423" ed="F1"/><stage type="entrance" about="[ bene. marg.]"> Enter <rs type="person" about="[bene.]">BENEDICK</rs> and <rs type="person" about="[marg.]">MARGARET</rs>, meeting.</stage>
 
 <lb ed="G"/><lb n="2424" ed="F1"/><sp who="#bene."><speaker>Bene.</speaker><p>Pray thee, sweet Mistress <rs type="person" about="[marg.]">Margaret</rs>,
 <lb ed="G"/>deserve <lb n="2425" ed="F1"/>well at my hands by helping me to
@@ -3863,7 +3863,7 @@ added ado.sgml to repository.
 <lb ed="G"/>who I think <lb n="2447" ed="F1"/>hath legs.
 
 <lb ed="G"/><lb n="2448" ed="F1"/></p></sp><sp who="#bene."><speaker>Bene.</speaker><p>And therefore will come.
-<stage type="exit" about="[ome:involves marg.]">[Exit <rs type="person" about="[marg.]">Margaret</rs>.</stage>
+<stage type="exit" about="[ marg.]">[Exit <rs type="person" about="[marg.]">Margaret</rs>.</stage>
 [Sings]
 	    </p><lg type="song" org="uniform" sample="complete">
 	      <lb ed="G"/><l>The god of love,
@@ -3885,7 +3885,7 @@ added ado.sgml to repository.
 <lb ed="G"/>ominous endings: no, I was not born under a
 <lb ed="G"/>rhyming <lb n="2460" ed="F1"/>planet, nor I cannot woo in festival
 <lb n="41" ed="G"/>terms.
-<lb n="2461" ed="F1"/><stage type="entrance" about="[ome:involves beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>.</stage>
+<lb n="2461" ed="F1"/><stage type="entrance" about="[ beat.]">Enter <rs type="person" about="[beat.]">BEATRICE</rs>.</stage>
 <lb n="2462" ed="F1"/></p><p>Sweet <rs type="person" about="[beat.]">Beatrice</rs>, wouldst thou come when I
 <lb ed="G"/>called <lb n="2463" ed="F1"/>thee?
 
@@ -3962,7 +3962,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="2510" ed="F1"/></p></sp><sp who="#bene."><speaker>Bene.</speaker><p>Serve God, love me and mend. There
 <lb ed="G"/>will I leave <lb n="2511" ed="F1"/>you too, for here comes one in
 <lb ed="G"/>haste.
-<stage type="entrance" about="[ome:involves urs.]">Enter <rs type="person" about="[urs.]">URSULA</rs>.</stage>
+<stage type="entrance" about="[ urs.]">Enter <rs type="person" about="[urs.]">URSULA</rs>.</stage>
 
 <lb ed="G"/><lb n="2512" ed="F1"/></p></sp><sp who="#urs."><speaker>Urs.</speaker><p>Madam, you must come to your uncle.
 <lb ed="G"/>Yonder's <lb n="2513" ed="F1"/>old coil at home: it is proved
@@ -3975,12 +3975,12 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="2518" ed="F1"/></l></sp><sp who="#bene."><speaker>Bene.</speaker><p>I will live in thy heart, die in thy
 <lb ed="G"/>lap and be buried <lb n="2519" ed="F1"/>in thy eyes; and moreover
-<lb ed="G"/></p><l>I will go with thee to <lb n="2520" ed="F1"/>thy uncle's. <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/></p><l>I will go with thee to <lb n="2520" ed="F1"/>thy uncle's. <stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp></div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[maan:A_church.]" type="location">A church.</stage>
-<lb n="2521" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro. claud.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, and three or four with tapers.</stage>
+<lb n="2521" ed="F1"/><stage type="entrance" about="[ d.-pedro. claud.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs>, <rs type="person" about="[claud.]">CLAUDIO</rs>, and three or four with tapers.</stage>
 
 <lb ed="G"/><lb n="2522" ed="F1"/><sp who="#claud."><speaker>Claud.</speaker><p>Is this the monument of <rs type="person" about="[leon.]">Leonato</rs>?
 
@@ -4030,13 +4030,13 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="2552" ed="F1"/></l></sp><sp who="#claud."><speaker>Claud.</speaker><l>And Hymen now with luckier issue speed's
 <lb ed="G"/><lb n="2553" ed="F1"/></l><l>Than this for whom we render'd up this woe.
-                     <stage about="[ome:involves-all]" type="exit">[Exeunt. </stage>
+                     <stage about="[-all]" type="exit">[Exeunt. </stage>
 </l></sp></div2>
 <div2 n="4" type="scene" org="uniform" sample="complete">
 <head>SCENE IV</head>
 
 <stage about="[maan:A_room_in_LEONATO'S_house.]" type="location">A room in <rs type="person" about="[leon.]">LEONATO</rs>'S house.</stage>
-<lb n="2554" ed="F1"/><stage type="entrance" about="[ome:involves leon. ant. bene. beat. marg. urs. friar. hero.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, <rs type="person" about="[urs.]">URSULA</rs>, <rs type="person" about="[friar.]">FRIAR FRANCIS</rs>, and <rs type="person" about="[hero.]">HERO</rs>.</stage>
+<lb n="2554" ed="F1"/><stage type="entrance" about="[ leon. ant. bene. beat. marg. urs. friar. hero.]">Enter <rs type="person" about="[leon.]">LEONATO</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[bene.]">BENEDICK</rs>, <rs type="person" about="[beat.]">BEATRICE</rs>, <rs type="person" about="[marg.]">MARGARET</rs>, <rs type="person" about="[urs.]">URSULA</rs>, <rs type="person" about="[friar.]">FRIAR FRANCIS</rs>, and <rs type="person" about="[hero.]">HERO</rs>.</stage>
 
 <lb ed="G"/><lb n="2555" ed="F1"/><sp who="#friar."><speaker>Friar.</speaker><l>Did I not tell you she was innocent?
 
@@ -4054,7 +4054,7 @@ added ado.sgml to repository.
 <lb n="10" ed="G"/><lb n="2564" ed="F1"/></l></sp><sp who="#leon."><speaker>Leon.</speaker><l>Well, daughter, and you gentlewomen all,
 <lb ed="G"/><lb n="2565" ed="F1"/></l><l>Withdraw into a chamber by yourselves,
 <lb ed="G"/><lb n="2566" ed="F1"/></l><l>And when I send for you, come hither mask'd.
-                       <stage about="[ome:involves-all]" type="exit">[Exeunt Ladies.</stage>
+                       <stage about="[-all]" type="exit">[Exeunt Ladies.</stage>
 <lb ed="G"/><lb n="2567" ed="F1"/></l><l>The prince and <rs type="person" about="[claud.]">Claudio</rs> promised by this hour
 <lb ed="G"/><lb n="2568" ed="F1"/></l><l>To visit me. You know your office, brother:
 <lb ed="G"/><lb n="2569" ed="F1"/></l><l>You must be father to your brother's daughter,
@@ -4087,7 +4087,7 @@ added ado.sgml to repository.
 
 <lb ed="G"/><lb n="2587" ed="F1"/></l></sp><sp who="#friar."><speaker>Friar.</speaker><l>And my help.
 <lb ed="G"/></l><l>Here comes the prince and <rs type="person" about="[claud.]">Claudio</rs>.
-<lb n="2588" ed="F1"/><stage type="entrance" about="[ome:involves d.-pedro. claud.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs> and <rs type="person" about="[claud.]">CLAUDIO</rs>, and two or three others.</stage>
+<lb n="2588" ed="F1"/><stage type="entrance" about="[ d.-pedro. claud.]">Enter <rs type="person" about="[d.-pedro.]">DON PEDRO</rs> and <rs type="person" about="[claud.]">CLAUDIO</rs>, and two or three others.</stage>
 
 
 <lb ed="G"/><lb n="2589" ed="F1"/></l></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><l>Good morrow to this fair assembly.
@@ -4099,7 +4099,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="2593" ed="F1"/></l></sp><sp who="#claud."><speaker>Claud.</speaker><l>I'll hold my mind, were she an Ethiope.
 
 <lb ed="G"/><lb n="2594" ed="F1"/></l></sp><sp who="#leon."><speaker>Leon.</speaker><l>Call her forth, brother; here's the friar ready.
-<stage type="exit" about="[ome:involves ant.]">[Exit <rs type="person" about="[ant.]">Antonio</rs>. </stage>
+<stage type="exit" about="[ ant.]">[Exit <rs type="person" about="[ant.]">Antonio</rs>. </stage>
 
 <lb n="40" ed="G"/><lb n="2595" ed="F1"/></l></sp><sp who="#d.-pedro."><speaker>D. <rs type="person" about="[d.-pedro.]">Pedro</rs>.</speaker><l>Good morrow, <rs type="person" about="[bene.]">Benedick</rs>. Why, what's the matter,
 <lb ed="G"/><lb n="2596" ed="F1"/></l><l>That you have such a February face,
@@ -4118,7 +4118,7 @@ added ado.sgml to repository.
 <lb n="2607" ed="F1"/>
 
 <lb ed="G"/><lb n="2608" ed="F1"/></l></sp><sp who="#claud."><speaker>Claud.</speaker><l>For this I owe you: here comes other reckonings.
-<stage type="entrance" about="[ome:involves ant.]">Re-enter <rs type="person" about="[ant.]">ANTONIO</rs>, with the Ladies masked.</stage>
+<stage type="entrance" about="[ ant.]">Re-enter <rs type="person" about="[ant.]">ANTONIO</rs>, with the Ladies masked.</stage>
 <lb ed="G"/><lb n="2609" ed="F1"/></l><l>Which is the lady I must seize upon?
 
 <lb ed="G"/><lb n="2610" ed="F1"/></l></sp><sp who="#ant."><speaker>Ant.</speaker><l>This same is she, and I do give you her.
@@ -4243,7 +4243,7 @@ added ado.sgml to repository.
 <lb ed="G"/><lb n="2683" ed="F1"/></l></sp><sp who="#bene."><speaker>Bene.</speaker><l>Think not on him till to-morrow:
 <lb ed="G"/></l><l>I'll devise <lb n="2684" ed="F1"/>thee brave punishments for him.
 <lb n="131" ed="G"/></l><l>Strike up, pipers.  [Dance.
-                                   <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></l></sp>
+                                   <stage about="[-all]" type="exit">[Exeunt.</stage></l></sp>
 </div2>
 </div1>
 </body></text></TEI.2>

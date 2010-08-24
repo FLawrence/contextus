@@ -200,7 +200,7 @@
 <head>SCENE I</head>
 <stage about="[ta:Rome._Before_the_Capitol.]" type="location">Rome. Before the Capitol.</stage>
 <stage about="[ta:The_Tomb_of_ANDRONICI_appearing;_the_Tribunes_and_Senators_aloft.]" type="location">The Tomb of ANDRONICI appearing; the <rs type="person" about="[tit-26]">Tribune</rs>s and Senators aloft.</stage>
-<lb n="3" ed="F1"/><stage type="entrance" about="[ome:involves tit-22 tit-4]"> Enter, below, from one side, <lb n="4" ed="F1"/><rs type="person" about="[tit-22]">SATURNINUS</rs> and his Followers; and, from the other side, <lb n="5" ed="F1"/><rs type="person" about="[tit-4]">BASSIANUS</rs> and his Followers; <lb n="6" ed="F1"/>with drum and colours. </stage>
+<lb n="3" ed="F1"/><stage type="entrance" about="[ tit-22 tit-4]"> Enter, below, from one side, <lb n="4" ed="F1"/><rs type="person" about="[tit-22]">SATURNINUS</rs> and his Followers; and, from the other side, <lb n="5" ed="F1"/><rs type="person" about="[tit-4]">BASSIANUS</rs> and his Followers; <lb n="6" ed="F1"/>with drum and colours. </stage>
 
 <lb ed="G"/><lb n="7" ed="F1"/><sp who="#tit-22"><speaker>Sat.</speaker><l>Noble patricians, patrons of my right,
 <lb ed="G"/><lb n="8" ed="F1"/></l><l>Defend the justice of my cause with arms,
@@ -220,7 +220,7 @@
 <lb ed="G"/><lb n="22" ed="F1"/></l><l>To justice, continence and nobility;
 <lb ed="G"/><lb n="23" ed="F1"/></l><l>But let desert in pure election shine,
 <lb ed="G"/><lb n="24" ed="F1"/></l><l>And, Romans, fight for freedom in your choice.
-<lb n="25" ed="F1"/><stage type="entrance" about="[ome:involves tit-15]">Enter <rs type="person" about="[tit-15]">MARCUS ANDRONICUS</rs>, aloft, with the crown.</stage>
+<lb n="25" ed="F1"/><stage type="entrance" about="[ tit-15]">Enter <rs type="person" about="[tit-15]">MARCUS ANDRONICUS</rs>, aloft, with the crown.</stage>
 
 <lb ed="G"/><lb n="26" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l>Princes, that strive by factions and by friends
 <lb ed="G"/><lb n="27" ed="F1"/></l><l>Ambitiously for rule and empery,
@@ -262,20 +262,20 @@
 <lb ed="G"/><lb n="62" ed="F1"/></l><l>That I will here dismiss my loving friends,
 <lb ed="G"/><lb n="63" ed="F1"/></l><l>And to my fortunes and the people's favour
 <lb ed="G"/><lb n="64" ed="F1"/></l><l>Commit my cause in balance to be weigh'd.
-<lb n="65" ed="F1"/><stage type="exit" about="[ome:involves tit-4]">Exeunt the Followers of <rs type="person" about="[tit-4]">Bassianus</rs>.</stage>
+<lb n="65" ed="F1"/><stage type="exit" about="[ tit-4]">Exeunt the Followers of <rs type="person" about="[tit-4]">Bassianus</rs>.</stage>
 
 <lb ed="G"/><lb n="66" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>Friends, that have been <lb n="67" ed="F1"/>thus forward in my right,
 <lb ed="G"/><lb n="68" ed="F1"/></l><l>I thank you all and here dismiss you all,
 <lb ed="G"/><lb n="69" ed="F1"/></l><l>And to the love and favour of my country
 <lb ed="G"/><lb n="70" ed="F1"/></l><l>Commit myself, my person and the cause.
-<stage type="exit" about="[ome:involves tit-22]">Exeunt the Followers of <rs type="person" about="[tit-22]">Saturninus</rs>.</stage>
+<stage type="exit" about="[ tit-22]">Exeunt the Followers of <rs type="person" about="[tit-22]">Saturninus</rs>.</stage>
 <lb n="60" ed="G"/><lb n="71" ed="F1"/></l><l>Rome, be as just and gracious unto me
 <lb ed="G"/><lb n="72" ed="F1"/></l><l>As I am confident and kind to thee.
 <lb ed="G"/><lb n="73" ed="F1"/></l><l>Open the gates, and let me in.
 
 <lb ed="G"/><lb n="74" ed="F1"/></l></sp><sp who="#tit-4"><speaker>Bas.</speaker><l><rs type="person" about="[tit-26]">Tribune</rs>s, and me, a poor competitor.
-<lb n="75" ed="F1"/><stage type="exit" about="[ome:involves tit-22 tit-4]">Flourish. <rs type="person" about="[tit-22]">Saturninus</rs> and <rs type="person" about="[tit-4]">Bassianus</rs> go up into the Capitol.</stage>
-<lb n="76" ed="F1"/><stage type="entrance" about="[ome:involves tit-7]">Enter a <rs type="person" about="[tit-7]">Captain</rs>.</stage>
+<lb n="75" ed="F1"/><stage type="exit" about="[ tit-22 tit-4]">Flourish. <rs type="person" about="[tit-22]">Saturninus</rs> and <rs type="person" about="[tit-4]">Bassianus</rs> go up into the Capitol.</stage>
+<lb n="76" ed="F1"/><stage type="entrance" about="[ tit-7]">Enter a <rs type="person" about="[tit-7]">Captain</rs>.</stage>
 
 <lb ed="G"/><lb n="77" ed="F1"/></l></sp><sp who="#tit-7"><speaker>Cap.</speaker><l>Romans, make way: the good Andronicus,
 <lb ed="G"/><lb n="78" ed="F1"/></l><l>Patron of virtue, Rome's best champion,
@@ -283,7 +283,7 @@
 <lb ed="G"/><lb n="80" ed="F1"/></l><l>With honour and with fortune is return'd
 <lb ed="G"/><lb n="81" ed="F1"/></l><l>From where he circumscribed with his sword,
 <lb ed="G"/><lb n="82" ed="F1"/></l><l>And brought to yoke, the enemies of Rome.
-<lb n="83" ed="F1"/><stage type="entrance" about="[ome:involves tit-16 tit-18 tit-13 tit-21 tit-24 tit-23 tit-10 tit-8 tit-1 tit-11]"> Drums and trumpets sounded. Enter <lb n="84" ed="F1"/><rs type="person" about="[tit-16]">MARTIUS</rs> and <rs type="person" about="[tit-18]">MUTIUS</rs>; after them, two Men bearing a coffin covered <lb n="85" ed="F1"/>with black; then <rs type="person" about="[tit-13]">LUCIUS</rs> and <rs type="person" about="[tit-21]">QUINTUS</rs>. After them, TITUS <lb n="86" ed="F1"/>ANDRONICUS; and then <rs type="person" about="[tit-24]">TAMORA</rs>, with <rs type="person" about="[tit-23]">ALARBUS</rs>, <lb n="87" ed="F1"/><rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, <rs type="person" about="[tit-1]">AARON</rs>, <lb n="88" ed="F1"/>and other <rs type="person" about="[tit-11]">Goths</rs>, prisoners; Soldiers and people following.  The Bearers set down the <lb n="89" ed="F1"/>coffin, and TITUS speaks.</stage>
+<lb n="83" ed="F1"/><stage type="entrance" about="[ tit-16 tit-18 tit-13 tit-21 tit-24 tit-23 tit-10 tit-8 tit-1 tit-11]"> Drums and trumpets sounded. Enter <lb n="84" ed="F1"/><rs type="person" about="[tit-16]">MARTIUS</rs> and <rs type="person" about="[tit-18]">MUTIUS</rs>; after them, two Men bearing a coffin covered <lb n="85" ed="F1"/>with black; then <rs type="person" about="[tit-13]">LUCIUS</rs> and <rs type="person" about="[tit-21]">QUINTUS</rs>. After them, TITUS <lb n="86" ed="F1"/>ANDRONICUS; and then <rs type="person" about="[tit-24]">TAMORA</rs>, with <rs type="person" about="[tit-23]">ALARBUS</rs>, <lb n="87" ed="F1"/><rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, <rs type="person" about="[tit-1]">AARON</rs>, <lb n="88" ed="F1"/>and other <rs type="person" about="[tit-11]">Goths</rs>, prisoners; Soldiers and people following.  The Bearers set down the <lb n="89" ed="F1"/>coffin, and TITUS speaks.</stage>
 
 <lb n="70" ed="G"/><lb n="90" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Hail, Rome, <lb n="91" ed="F1"/>victorious in thy mourning weeds!
 <lb ed="G"/><lb n="92" ed="F1"/></l><l>Lo, as the bark, that hath discharged her fraught,
@@ -351,7 +351,7 @@
 <lb ed="G"/><lb n="149" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>Away with him! and make a fire straight;
 <lb ed="G"/><lb n="150" ed="F1"/></l><l>And with our swords, upon a pile of wood,
 <lb ed="G"/><lb n="151" ed="F1"/></l><l>Let's hew his limbs till they be clean consumed.
-<lb n="152" ed="F1"/><stage type="exit" about="[ome:involves tit-13 tit-21 tit-16 tit-18 tit-23]">Exeunt <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">Quintus</rs>, <rs type="person" about="[tit-16]">Martius</rs>, and <rs type="person" about="[tit-18]">Mutius</rs>, with <rs type="person" about="[tit-23]">Alarbus</rs>.</stage>
+<lb n="152" ed="F1"/><stage type="exit" about="[ tit-13 tit-21 tit-16 tit-18 tit-23]">Exeunt <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">Quintus</rs>, <rs type="person" about="[tit-16]">Martius</rs>, and <rs type="person" about="[tit-18]">Mutius</rs>, with <rs type="person" about="[tit-23]">Alarbus</rs>.</stage>
 
 <lb n="130" ed="G"/><lb n="153" ed="F1"/></l></sp><sp who="#tit-24"><speaker>Tam.</speaker><l>O cruel, irreligious piety!
 
@@ -367,7 +367,7 @@
 <lb ed="G"/><lb n="162" ed="F1"/></l><l>May favour <rs type="person" about="[tit-24]">Tamora</rs>, the Queen of <rs type="person" about="[tit-11]">Goths</rs>���
 <lb n="140" ed="G"/><lb n="163" ed="F1"/></l><l>When <rs type="person" about="[tit-11]">Goths</rs> were <rs type="person" about="[tit-11]">Goths</rs> and <rs type="person" about="[tit-24]">Tamora</rs> was queen���
 <lb ed="G"/><lb n="164" ed="F1"/></l><l>To quit the bloody wrongs upon her foes.
-<lb n="165" ed="F1"/><stage type="entrance" about="[ome:involves tit-13 tit-21 tit-16 tit-18]">Re-enter <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">QUINTUS</rs>, <rs type="person" about="[tit-16]">MARTIUS</rs>, and <rs type="person" about="[tit-18]">MUTIUS</rs>, with their swords bloody. </stage>
+<lb n="165" ed="F1"/><stage type="entrance" about="[ tit-13 tit-21 tit-16 tit-18]">Re-enter <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">QUINTUS</rs>, <rs type="person" about="[tit-16]">MARTIUS</rs>, and <rs type="person" about="[tit-18]">MUTIUS</rs>, with their swords bloody. </stage>
 
 <lb ed="G"/><lb n="166" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>See, lord and father, how we have performed
 <lb ed="G"/><lb n="167" ed="F1"/></l><l>Our Roman rites: <rs type="person" about="[tit-23]">Alarbus</rs>' limbs are lopp'd,
@@ -387,7 +387,7 @@
 <lb ed="G"/><lb n="180" ed="F1"/></l><l>Here grow no damned grudges; here are no storms,
 <lb ed="G"/><lb n="181" ed="F1"/></l><l>No noise, but silence and eternal sleep:
 <lb ed="G"/><lb n="182" ed="F1"/></l><l>In peace and honour, rest you here, my sons!
-<lb n="183" ed="F1"/><stage type="entrance" about="[ome:involves tit-12]">Enter <rs type="person" about="[tit-12]">LAVINIA</rs>.</stage>
+<lb n="183" ed="F1"/><stage type="entrance" about="[ tit-12]">Enter <rs type="person" about="[tit-12]">LAVINIA</rs>.</stage>
 
 <lb ed="G"/><lb n="184" ed="F1"/></l></sp><sp who="#tit-12"><speaker>Lav.</speaker><l>In peace and honour live Lord <rs type="person" about="[tit-25]">Titus</rs> long;
 <lb ed="G"/><lb n="185" ed="F1"/></l><l>My noble lord and father, live in fame!
@@ -402,7 +402,7 @@
 <lb ed="G"/><lb n="194" ed="F1"/></l><l>The cordial of mine age to glad my heart!
 <lb ed="G"/><lb n="195" ed="F1"/></l><l><rs type="person" about="[tit-12]">Lavinia</rs>, live; outlive thy father's days,
 <lb ed="G"/><lb n="196" ed="F1"/></l><l>And fame's eternal date, for virtue's praise!
-<stage type="entrance" about="[ome:involves tit-15 tit-22 tit-4]">Enter, below, <rs type="person" about="[tit-15]">MARCUS ANDRONICUS</rs> and Tri bunes; re-enter <rs type="person" about="[tit-22]">SATURNINUS</rs> and <rs type="person" about="[tit-4]">BASSIANUS</rs>. attended.</stage>
+<stage type="entrance" about="[ tit-15 tit-22 tit-4]">Enter, below, <rs type="person" about="[tit-15]">MARCUS ANDRONICUS</rs> and Tri bunes; re-enter <rs type="person" about="[tit-22]">SATURNINUS</rs> and <rs type="person" about="[tit-4]">BASSIANUS</rs>. attended.</stage>
 
 <lb ed="G"/><lb n="197" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l>Long live Lord <rs type="person" about="[tit-25]">Titus</rs>, my beloved brother,
 <lb n="170" ed="G"/><lb n="198" ed="F1"/></l><l>Gracious triumpher in the eyes of Rome!
@@ -556,11 +556,11 @@ Seizing <rs type="person" about="[tit-12]">Lavinia</rs>.
 
 <lb ed="G"/><lb n="318" ed="F1"/></l></sp><sp who="#tit-4"><speaker>Bas.</speaker><l>By him that justly may
 <lb ed="G"/><lb n="319" ed="F1"/></l><l>Bear his betroth'd from all the world away.
-<stage type="exit" about="[ome:involves tit-4 tit-15 tit-12]">Exeunt <rs type="person" about="[tit-4]">Bassianus</rs> and <rs type="person" about="[tit-15]">Marcus</rs> with <rs type="person" about="[tit-12]">Lavinia</rs>.</stage>
+<stage type="exit" about="[ tit-4 tit-15 tit-12]">Exeunt <rs type="person" about="[tit-4]">Bassianus</rs> and <rs type="person" about="[tit-15]">Marcus</rs> with <rs type="person" about="[tit-12]">Lavinia</rs>.</stage>
 
 <lb ed="G"/><lb n="320" ed="F1"/></l></sp><sp who="#tit-18"><speaker>Mut.</speaker><l>Brothers, help to convey her hence away,
 <lb ed="G"/><lb n="321" ed="F1"/></l><l>And with my sword I 'll keep this door safe.
-<stage type="exit" about="[ome:involves tit-13 tit-21]">Exeunt <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">Quintus</rs>, and Marfius.</stage>
+<stage type="exit" about="[ tit-13 tit-21]">Exeunt <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">Quintus</rs>, and Marfius.</stage>
 
 <lb ed="G"/><lb n="322" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Follow, my lord, and I'll soon bring her back.
 
@@ -573,7 +573,7 @@ Stabbing <rs type="person" about="[tit-18]">Mutius</rs>.
 <lb ed="G"/><lb n="325" ed="F1"/></l></sp><sp who="#tit-18"><speaker>Mut.</speaker><l>Help, <rs type="person" about="[tit-13]">Lucius</rs>. help!
 Dies.
 During the fray, <rs type="person" about="[tit-22]">Saturninus</rs>, <rs type="person" about="[tit-24]">Tamora</rs>, <rs type="person" about="[tit-10]">Demetrius</rs>, <rs type="person" about="[tit-8]">Chiron</rs> and <rs type="person" about="[tit-1]">Aaron</rs> go out and re-enter, above. 
-<stage type="entrance" about="[ome:involves tit-13]">Re-enter <rs type="person" about="[tit-13]">Lucius</rs>.</stage>
+<stage type="entrance" about="[ tit-13]">Re-enter <rs type="person" about="[tit-13]">Lucius</rs>.</stage>
 
 <lb ed="G"/><lb n="326" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>My lord, you are unjust, and, more than so,
 <lb ed="G"/><lb n="327" ed="F1"/></l><l>In wrongful quarrel you have slain your son.
@@ -584,7 +584,7 @@ During the fray, <rs type="person" about="[tit-22]">Saturninus</rs>, <rs type="p
 
 <lb ed="G"/><lb n="331" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>Dead, if you will; but not to be his wife,
 <lb ed="G"/><lb n="332" ed="F1"/></l><l>That is another's lawful promised love.
-<stage type="exit" about="[ome:involves tit-13]">Exit.</stage>
+<stage type="exit" about="[ tit-13]">Exit.</stage>
 <lb n="333" ed="F1"/><lb n="334" ed="F1"/>
 
 <lb ed="G"/><lb n="335" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>No, <rs type="person" about="[tit-25]">Titus</rs>, no; the emperor needs her not,
@@ -632,12 +632,12 @@ During the fray, <rs type="person" about="[tit-22]">Saturninus</rs>, <rs type="p
 <lb ed="G"/><lb n="372" ed="F1"/></l><l>Sent by the heavens for Prince Saturnine,
 <lb ed="G"/><lb n="373" ed="F1"/></l><l>Whose wisdom hath her fortune conquered:
 <lb ed="G"/><lb n="374" ed="F1"/></l><l>There shall we consummate our spousal rites.
-<lb n="375" ed="F1"/><stage type="exit" about="[ome:involves !( tit-25)]">Exeunt all but <rs type="person" about="[tit-25]">Titus</rs>.</stage>
+<lb n="375" ed="F1"/><stage type="exit" about="[ !( tit-25)]">Exeunt all but <rs type="person" about="[tit-25]">Titus</rs>.</stage>
 
 <lb ed="G"/><lb n="376" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>I am not bid to wait upon this bride.
 <lb n="339" ed="G"/><lb n="377" ed="F1"/></l><l><rs type="person" about="[tit-25]">Titus</rs>, when wert thou wont to walk alone,
 <lb ed="G"/><lb n="378" ed="F1"/></l><l>Dishonour'd thus, and challenged of wrongs?
-<lb n="379" ed="F1"/><stage type="entrance" about="[ome:involves tit-13 tit-21 tit-16]">Re-enter MARCUS, <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">QUINTUS</rs>, and <rs type="person" about="[tit-16]">MARTIUS</rs>.</stage>
+<lb n="379" ed="F1"/><stage type="entrance" about="[ tit-13 tit-21 tit-16]">Re-enter MARCUS, <rs type="person" about="[tit-13]">Lucius</rs>, <rs type="person" about="[tit-21]">QUINTUS</rs>, and <rs type="person" about="[tit-16]">MARTIUS</rs>.</stage>
 
 <lb ed="G"/><lb n="380" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l>O <rs type="person" about="[tit-25]">Titus</rs>, see, O, see what thou hast done!
 <lb ed="G"/><lb n="381" ed="F1"/></l><l>In a bad quarrel slain a virtuous son.
@@ -725,7 +725,7 @@ During the fray, <rs type="person" about="[tit-22]">Saturninus</rs>, <rs type="p
 <lb ed="G"/><lb n="441" ed="F1"/></l><l>Is she not then beholding to the man
 <lb ed="G"/><lb n="442" ed="F1"/></l><l>That brought her for this high good turn so far?
 <lb ed="G"/><lb n="443" ed="F1"/></l><l>Yes, and will nobly him remunerate.
-<lb n="444" ed="F1"/><stage type="entrance" about="[ome:involves tit-22 tit-24 tit-10 tit-8 tit-1 tit-4 tit-12]">Flourish. <lb n="445" ed="F1"/>Re-enter, from one side, <rs type="person" about="[tit-22]">SATURNINUS</rs> attended, <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, and <rs type="person" about="[tit-1]">AARON</rs>; <lb n="446" ed="F1"/>from the other, <rs type="person" about="[tit-4]">BASSIANUS</rs>, <lb n="447" ed="F1"/><rs type="person" about="[tit-12]">LAVINIA</rs>, and others.</stage>
+<lb n="444" ed="F1"/><stage type="entrance" about="[ tit-22 tit-24 tit-10 tit-8 tit-1 tit-4 tit-12]">Flourish. <lb n="445" ed="F1"/>Re-enter, from one side, <rs type="person" about="[tit-22]">SATURNINUS</rs> attended, <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, and <rs type="person" about="[tit-1]">AARON</rs>; <lb n="446" ed="F1"/>from the other, <rs type="person" about="[tit-4]">BASSIANUS</rs>, <lb n="447" ed="F1"/><rs type="person" about="[tit-12]">LAVINIA</rs>, and others.</stage>
 
 <lb ed="G"/><lb n="448" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>So, <rs type="person" about="[tit-4]">Bassianus</rs>, you have play'd your prize:
 <lb ed="G"/><lb n="449" ed="F1"/></l><l>God give you joy, sir, of your gallant bride!
@@ -843,7 +843,7 @@ During the fray, <rs type="person" about="[tit-22]">Saturninus</rs>, <rs type="p
 <lb ed="G"/><lb n="550" ed="F1"/></l><l>With horn and hound <lb n="551" ed="F1"/>we'll give your grace bonjour.
 
 <lb ed="G"/><lb n="552" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>Be it so, <rs type="person" about="[tit-25]">Titus</rs>, and gramercy too.
-<stage about="[ome:involves-all]" type="exit">Flourish. Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Flourish. Exeunt.</stage></l></sp>
 </div2>
 </div1>
 
@@ -852,7 +852,7 @@ During the fray, <rs type="person" about="[tit-22]">Saturninus</rs>, <rs type="p
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[ta:Rome._Before_the_palace.]" type="location">Rome. Before the palace.</stage>
-<lb n="554" ed="F1"/><stage type="entrance" about="[ome:involves tit-1]">Enter <rs type="person" about="[tit-1]">AARON</rs>.</stage>
+<lb n="554" ed="F1"/><stage type="entrance" about="[ tit-1]">Enter <rs type="person" about="[tit-1]">AARON</rs>.</stage>
 
 <lb ed="G"/><lb n="555" ed="F1"/><sp who="#tit-1"><speaker>Aar.</speaker><l>Now climbeth <rs type="person" about="[tit-24]">Tamora</rs> Olympus' top,
 <lb ed="G"/><lb n="556" ed="F1"/></l><l>Safe out of fortune's shot; and sits aloft,
@@ -879,7 +879,7 @@ During the fray, <rs type="person" about="[tit-22]">Saturninus</rs>, <rs type="p
 <lb ed="G"/><lb n="577" ed="F1"/></l><l>This siren, that will charm Rome's Saturnine,
 <lb ed="G"/><lb n="578" ed="F1"/></l><l>And see his shipwreck and his commonweal's.
 <lb ed="G"/><lb n="579" ed="F1"/></l><l>Holloa! what storm is this?
-<lb n="580" ed="F1"/><stage type="entrance" about="[ome:involves tit-10 tit-8]">Enter <rs type="person" about="[tit-10]">DEMETRIUS</rs> and <rs type="person" about="[tit-8]">CHIRON</rs>, braving.</stage>
+<lb n="580" ed="F1"/><stage type="entrance" about="[ tit-10 tit-8]">Enter <rs type="person" about="[tit-10]">DEMETRIUS</rs> and <rs type="person" about="[tit-8]">CHIRON</rs>, braving.</stage>
 
 <lb ed="G"/><lb n="581" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l><rs type="person" about="[tit-8]">Chiron</rs>, thy years want wit, thy wit wants edge,
 <lb ed="G"/><lb n="582" ed="F1"/></l><l>And manners, to intrude where I am graced;
@@ -1025,12 +1025,12 @@ They draw.
 <lb ed="G"/><lb n="696" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l>Sit fas aut nefas, till I find the stream
 <lb ed="G"/><lb n="697" ed="F1"/></l><l>To cool this heat, a charm to calm these fits,
 <lb ed="G"/><lb n="698" ed="F1"/></l><l>Per Styga, per manes vehor.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[ta:A_forest_near_Rome._Horns_and_cry_of_hounds_heard.]" type="location">A forest near Rome. Horns and cry of hounds heard.</stage>
-<lb n="699" ed="F1"/><stage type="entrance" about="[ome:involves tit-25 tit-13 tit-21 tit-16]">Enter <rs type="person" about="[tit-25]">TITUS ANDRONICUS</rs>, <lb n="700" ed="F1"/>with Hunters, etc., MARCUS, <rs type="person" about="[tit-13]">LUCIUS</rs>, <rs type="person" about="[tit-21]">QUINTUS</rs>, and <rs type="person" about="[tit-16]">MARTIUS</rs>.</stage>
+<lb n="699" ed="F1"/><stage type="entrance" about="[ tit-25 tit-13 tit-21 tit-16]">Enter <rs type="person" about="[tit-25]">TITUS ANDRONICUS</rs>, <lb n="700" ed="F1"/>with Hunters, etc., MARCUS, <rs type="person" about="[tit-13]">LUCIUS</rs>, <rs type="person" about="[tit-21]">QUINTUS</rs>, and <rs type="person" about="[tit-16]">MARTIUS</rs>.</stage>
 
 <lb ed="G"/><lb n="701" ed="F1"/><sp who="#tit-25"><speaker>Tit.</speaker><l>The hunt is up, the morn is bright and grey,
 <lb ed="G"/><lb n="702" ed="F1"/></l><l>The fields are fragrant and the woods are green:
@@ -1044,7 +1044,7 @@ They draw.
 <lb ed="G"/><lb n="710" ed="F1"/></l><l>But dawning day new comfort hath inspired.
 <lb n="711" ed="F1"/>A cry of hounds, and horns winded in a peal.
 <lb n="712" ed="F1"/>
-<lb n="713" ed="F1"/><stage type="entrance" about="[ome:involves tit-22 tit-24 tit-4 tit-12 tit-10 tit-8]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs>, <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-4]">BASSIANUS</rs>, <rs type="person" about="[tit-12]">LAVINIA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, <lb n="714" ed="F1"/>and Attendants.</stage>
+<lb n="713" ed="F1"/><stage type="entrance" about="[ tit-22 tit-24 tit-4 tit-12 tit-10 tit-8]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs>, <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-4]">BASSIANUS</rs>, <rs type="person" about="[tit-12]">LAVINIA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, <lb n="714" ed="F1"/>and Attendants.</stage>
 <lb n="11" ed="G"/><lb n="715" ed="F1"/></l><l>Many good morrows to your majesty;
 <lb ed="G"/><lb n="716" ed="F1"/></l><l>Madam, to you as many and as good:
 <lb ed="G"/><lb n="717" ed="F1"/></l><l>I promised your grace a hunter's peal.
@@ -1070,12 +1070,12 @@ They draw.
 
 <lb ed="G"/><lb n="731" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l><rs type="person" about="[tit-8]">Chiron</rs>, we hunt not, we, with horse nor hound,
 <lb ed="G"/><lb n="732" ed="F1"/></l><l>But hope to pluck a dainty doe to ground.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[ta:A_lonely_part_of_the_forest.]" type="location">A lonely part of the forest.</stage>
-<lb n="733" ed="F1"/><stage type="entrance" about="[ome:involves tit-1]">Enter <rs type="person" about="[tit-1]">AARON</rs> ,with a bag of gold.</stage>
+<lb n="733" ed="F1"/><stage type="entrance" about="[ tit-1]">Enter <rs type="person" about="[tit-1]">AARON</rs> ,with a bag of gold.</stage>
 
 <lb ed="G"/><lb n="734" ed="F1"/><sp who="#tit-1"><speaker>Aar.</speaker><l>He that had wit would think that I had none,
 <lb ed="G"/><lb n="735" ed="F1"/></l><l>To bury so much gold under a tree,
@@ -1087,7 +1087,7 @@ They draw.
 <lb ed="G"/><lb n="741" ed="F1"/></l><l>And so repose, sweet gold, for their unrest
 Hides the gold.
 <lb ed="G"/><lb n="742" ed="F1"/></l><l>That have their alms out of the empress' chest.
-<lb n="743" ed="F1"/><stage type="entrance" about="[ome:involves tit-24]">Enter <rs type="person" about="[tit-24]">TAMORA</rs>.</stage>
+<lb n="743" ed="F1"/><stage type="entrance" about="[ tit-24]">Enter <rs type="person" about="[tit-24]">TAMORA</rs>.</stage>
 
 <lb n="10" ed="G"/><lb n="744" ed="F1"/></l></sp><sp who="#tit-24"><speaker>Tam.</speaker><l>My lovely <rs type="person" about="[tit-1]">Aaron</rs>, <lb n="745" ed="F1"/>wherefore look'st thou sad,
 <lb ed="G"/><lb n="746" ed="F1"/></l><l>When every thing doth make a gleeful boast?
@@ -1138,8 +1138,8 @@ Hides the gold.
 <lb ed="G"/><lb n="790" ed="F1"/></l></sp><sp who="#tit-1"><speaker>Aar.</speaker><l>No more, great empress; <rs type="person" about="[tit-4]">Bassianus</rs> comes:
 <lb ed="G"/><lb n="791" ed="F1"/></l><l>Be cross with him; and I'll go fetch thy sons
 <lb ed="G"/><lb n="792" ed="F1"/></l><l>To back thy quarrels, whatso'er they be.
-<stage type="exit" about="[ome:involves tit-1]">Exit.</stage>
-<stage type="entrance" about="[ome:involves tit-4 tit-12]"> Enter <rs type="person" about="[tit-4]">BASSIANUS</rs> and <rs type="person" about="[tit-12]">LAVINIA</rs>. </stage>
+<stage type="exit" about="[ tit-1]">Exit.</stage>
+<stage type="entrance" about="[ tit-4 tit-12]"> Enter <rs type="person" about="[tit-4]">BASSIANUS</rs> and <rs type="person" about="[tit-12]">LAVINIA</rs>. </stage>
 
 <lb ed="G"/><lb n="793" ed="F1"/></l></sp><sp who="#tit-4"><speaker>Bas.</speaker><l>Who have we here? <lb n="794" ed="F1"/>Rome's royal empress,
 <lb ed="G"/><lb n="795" ed="F1"/></l><l>Unfurnish'd of her well-beseeming troop?
@@ -1182,7 +1182,7 @@ Hides the gold.
 <lb ed="G"/><lb n="826" ed="F1"/></l><l>Good king, to be so mightily abused!
 
 <lb ed="G"/><lb n="827" ed="F1"/></l></sp><sp who="#tit-24"><speaker>Tam.</speaker><l>Why have I patience to endure all this?
-<lb n="828" ed="F1"/><stage type="entrance" about="[ome:involves tit-10 tit-8]"> Enter <rs type="person" about="[tit-10]">DEMETRIUS</rs> and <rs type="person" about="[tit-8]">CHIRON</rs>. </stage>
+<lb n="828" ed="F1"/><stage type="entrance" about="[ tit-10 tit-8]"> Enter <rs type="person" about="[tit-10]">DEMETRIUS</rs> and <rs type="person" about="[tit-8]">CHIRON</rs>. </stage>
 
 <lb ed="G"/><lb n="829" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l>How now, dear sovereign, <lb n="830" ed="F1"/>and our gracious mother!
 <lb ed="G"/><lb n="831" ed="F1"/></l><l>Why doth your highness look so pale and wan?
@@ -1318,8 +1318,8 @@ To <rs type="person" about="[tit-8]">Chiron</rs>
 <lb ed="G"/><lb n="938" ed="F1"/></l><l>Till all the Andronici be made away.
 <lb n="190" ed="G"/><lb n="939" ed="F1"/></l><l>Now will I hence to seek my lovely Moor,
 <lb ed="G"/><lb n="940" ed="F1"/></l><l>And let my spleenful sons this trull deflour.
-<stage type="exit" about="[ome:involves tit-24]">Exit.</stage>
-<lb n="941" ed="F1"/><stage type="entrance" about="[ome:involves tit-1 tit-21 tit-16]">Re-enter <rs type="person" about="[tit-1]">AARON</rs>, with <rs type="person" about="[tit-21]">QUINTUS</rs> and <rs type="person" about="[tit-16]">MARTIUS</rs>.</stage>
+<stage type="exit" about="[ tit-24]">Exit.</stage>
+<lb n="941" ed="F1"/><stage type="entrance" about="[ tit-1 tit-21 tit-16]">Re-enter <rs type="person" about="[tit-1]">AARON</rs>, with <rs type="person" about="[tit-21]">QUINTUS</rs> and <rs type="person" about="[tit-16]">MARTIUS</rs>.</stage>
 
 <lb ed="G"/><lb n="942" ed="F1"/></l></sp><sp who="#tit-1"><speaker>Aar.</speaker><l>Come on, my lords, the better foot before:
 <lb ed="G"/><lb n="943" ed="F1"/></l><l>Straight will I bring you to the loathsome pit
@@ -1344,7 +1344,7 @@ Falls into the pit.
 <lb ed="G"/><lb n="958" ed="F1"/></l></sp><sp who="#tit-1"><speaker>Aar.</speaker>Aside<l>Now will I fetch the king to find them here,
 <lb ed="G"/><lb n="959" ed="F1"/></l><l>That he thereby may give a likely guess
 <lb ed="G"/><lb n="960" ed="F1"/></l><l>How these were they that made away his brother.
-<lb n="961" ed="F1"/><stage type="exit" about="[ome:involves tit-1]">Exit. </stage>
+<lb n="961" ed="F1"/><stage type="exit" about="[ tit-1]">Exit. </stage>
 
 <lb n="209" ed="G"/><lb n="962" ed="F1"/></l></sp><sp who="#tit-16"><speaker>Mart.</speaker><l>Why dost not comfort me, and help me out
 <lb ed="G"/><lb n="963" ed="F1"/></l><l>From this unhallowed and blood-stained hole?
@@ -1393,7 +1393,7 @@ Falls into the pit.
 <lb ed="G"/><lb n="998" ed="F1"/></l><l>Till thou art here aloft, or I below:
 <lb ed="G"/><lb n="999" ed="F1"/></l><l>Thou canst not come to me: I come to thee.
 Falls in.
-<lb n="1000" ed="F1"/><stage type="entrance" about="[ome:involves tit-22 tit-1]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs> with <rs type="person" about="[tit-1]">AARON</rs>. </stage>
+<lb n="1000" ed="F1"/><stage type="entrance" about="[ tit-22 tit-1]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs> with <rs type="person" about="[tit-1]">AARON</rs>. </stage>
 
 <lb ed="G"/><lb n="1001" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>Along with me: I'll see what hole is here,
 <lb ed="G"/><lb n="1002" ed="F1"/></l><l>And what he is that now is leap'd into it.
@@ -1411,7 +1411,7 @@ Falls in.
 
 <lb ed="G"/><lb n="1012" ed="F1"/></l></sp><sp who="#tit-16"><speaker>Mart.</speaker><l>We know not where you left him all alive;
 <lb ed="G"/><lb n="1013" ed="F1"/></l><l>But, out, alas! here have we found him dead.
-<lb n="1014" ed="F1"/><stage type="entrance" about="[ome:involves tit-24 tit-25 tit-13]">Re-enter <rs type="person" about="[tit-24]">TAMORA</rs>, with Attendants; <rs type="person" about="[tit-25]">TITUS ANDRONICUS</rs>, and <rs type="person" about="[tit-13]">Lucius</rs>.</stage>
+<lb n="1014" ed="F1"/><stage type="entrance" about="[ tit-24 tit-25 tit-13]">Re-enter <rs type="person" about="[tit-24]">TAMORA</rs>, with Attendants; <rs type="person" about="[tit-25]">TITUS ANDRONICUS</rs>, and <rs type="person" about="[tit-13]">Lucius</rs>.</stage>
 
 <lb ed="G"/><lb n="1015" ed="F1"/></l></sp><sp who="#tit-24"><speaker>Tam.</speaker><l>Where is my lord the king?
 
@@ -1478,12 +1478,12 @@ Falls in.
 <lb ed="G"/><lb n="1065" ed="F1"/></l><l>Fear not thy sons; they shall do well enough.
 
 <lb ed="G"/><lb n="1066" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Come, <rs type="person" about="[tit-13]">Lucius</rs>, come; <lb n="1067" ed="F1"/>stay not to talk with them.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2>
 <div2 n="4" type="scene" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[ta:Another_part_of_the_forest.]" type="location">Another part of the forest.</stage>
-<lb n="1068" ed="F1"/><stage type="entrance" about="[ome:involves tit-10 tit-8 tit-12]">Enter <rs type="person" about="[tit-10]">DEMETRIUS</rs> and <rs type="person" about="[tit-8]">CHIRON</rs> with <rs type="person" about="[tit-12]">LAVINIA</rs>, ravished; her hands cut off, and <lb n="1069" ed="F1"/>her tongue cut out.</stage>
+<lb n="1068" ed="F1"/><stage type="entrance" about="[ tit-10 tit-8 tit-12]">Enter <rs type="person" about="[tit-10]">DEMETRIUS</rs> and <rs type="person" about="[tit-8]">CHIRON</rs> with <rs type="person" about="[tit-12]">LAVINIA</rs>, ravished; her hands cut off, and <lb n="1069" ed="F1"/>her tongue cut out.</stage>
 
 <lb ed="G"/><lb n="1070" ed="F1"/><sp who="#tit-10"><speaker>Dem.</speaker><l>So, now go tell, an if thy tongue can speak,
 <lb ed="G"/><lb n="1071" ed="F1"/></l><l>Who 'twas that cut thy tongue and ravish'd thee.
@@ -1501,7 +1501,7 @@ Falls in.
 <lb ed="G"/><lb n="1079" ed="F1"/></l></sp><sp who="#tit-8"><speaker>Chi.</speaker><l>An 'twere my case, I should go hang myself.
 
 <lb n="10" ed="G"/><lb n="1080" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l>If thou hadst hands to help thee knit the cord.
-<lb n="1081" ed="F1"/><stage type="exit" about="[ome:involves tit-10 tit-8]">Exeunt <rs type="person" about="[tit-10]">Demetrius</rs> and <rs type="person" about="[tit-8]">Chiron</rs>. </stage>
+<lb n="1081" ed="F1"/><stage type="exit" about="[ tit-10 tit-8]">Exeunt <rs type="person" about="[tit-10]">Demetrius</rs> and <rs type="person" about="[tit-8]">Chiron</rs>. </stage>
 <lb n="1082" ed="F1"/>
 <lb n="1083" ed="F1"/>
 
@@ -1552,7 +1552,7 @@ Falls in.
 <lb ed="G"/><lb n="1128" ed="F1"/></l><l>What will whole months of tears thy father's eyes?
 <lb ed="G"/><lb n="1129" ed="F1"/></l><l>Do not draw back, for we will mourn with thee:
 <lb ed="G"/><lb n="1130" ed="F1"/></l><l>O, could our mourning ease thy misery!
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2>
 </div1>
 
@@ -1561,7 +1561,7 @@ Falls in.
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[ta:Rome._A_street.]" type="location">Rome. A street.</stage>
-<lb n="1132" ed="F1"/><stage type="entrance" about="[ome:involves tit-26 tit-16]">Enter Judges, Senators and <rs type="person" about="[tit-26]">Tribune</rs>s, with <rs type="person" about="[tit-16]">MARTIUS</rs> and QUINTIUS, bound, <lb n="1133" ed="F1"/>passing on to the place of execution; TITUS going <lb n="1134" ed="F1"/>before, pleading.</stage>
+<lb n="1132" ed="F1"/><stage type="entrance" about="[ tit-26 tit-16]">Enter Judges, Senators and <rs type="person" about="[tit-26]">Tribune</rs>s, with <rs type="person" about="[tit-16]">MARTIUS</rs> and QUINTIUS, bound, <lb n="1133" ed="F1"/>passing on to the place of execution; TITUS going <lb n="1134" ed="F1"/>before, pleading.</stage>
 
 <lb ed="G"/><lb n="1135" ed="F1"/><sp who="#tit-25"><speaker>Tit.</speaker><l>Hear me, grave fathers! noble tribunes, stay!
 <lb ed="G"/><lb n="1136" ed="F1"/></l><l>For pity of mine age, whose youth was spent
@@ -1574,7 +1574,7 @@ Falls in.
 <lb ed="G"/><lb n="1143" ed="F1"/></l><l>Whose souls are not corrupted as 'tis thought.
 <lb n="10" ed="G"/><lb n="1144" ed="F1"/></l><l>For two and twenty sons I never wept,
 <lb ed="G"/><lb n="1145" ed="F1"/></l><l>Because they died in honour's lofty bed.
-<lb n="1146" ed="F1"/>Lieth down;<stage about="[ome:involves-all]" type="exit">the Judges, &amp;c., pass by  him, and Exeunt.</stage>
+<lb n="1146" ed="F1"/>Lieth down;<stage about="[-all]" type="exit">the Judges, &amp;c., pass by  him, and Exeunt.</stage>
 <lb ed="G"/><lb n="1147" ed="F1"/></l><l>For these, these, tribunes, in the dust I write
 <lb ed="G"/><lb n="1148" ed="F1"/></l><l>My heart's deep languor and my soul's sad tears:
 <lb ed="G"/><lb n="1149" ed="F1"/></l><l>Let my tears staunch the earth's dry appetite;
@@ -1587,7 +1587,7 @@ Falls in.
 <lb ed="G"/><lb n="1156" ed="F1"/></l><l>And keep eternal spring-time on thy face,
 <lb ed="G"/><lb n="1157" ed="F1"/></l><l>So thou refuse to drink my dear sons' blood.
 
-<lb n="1158" ed="F1"/><stage type="entrance" about="[ome:involves tit-13]"> Enter <rs type="person" about="[tit-13]">Lucius</rs>, with his sword drawn.</stage>
+<lb n="1158" ed="F1"/><stage type="entrance" about="[ tit-13]"> Enter <rs type="person" about="[tit-13]">Lucius</rs>, with his sword drawn.</stage>
 
 <lb ed="G"/><lb n="1159" ed="F1"/></l><l>O reverend tribunes! O gentle, aged men!
 <lb ed="G"/><lb n="1160" ed="F1"/></l><l>Unbind my sons, reverse the doom of death;
@@ -1632,7 +1632,7 @@ Rises.
 <lb ed="G"/><lb n="1192" ed="F1"/></l><l>But me and mine: how happy art thou, then,
 <lb ed="G"/><lb n="1193" ed="F1"/></l><l>From these devourers to be banished!
 <lb ed="G"/><lb n="1194" ed="F1"/></l><l>But who comes with our brother <rs type="person" about="[tit-15]">Marcus</rs> here?
-<lb n="1195" ed="F1"/><stage type="entrance" about="[ome:involves tit-12]">Enter MARCUS and <rs type="person" about="[tit-12]">LAVINIA</rs>.</stage>
+<lb n="1195" ed="F1"/><stage type="entrance" about="[ tit-12]">Enter MARCUS and <rs type="person" about="[tit-12]">LAVINIA</rs>.</stage>
 
 <lb ed="G"/><lb n="1196" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l><rs type="person" about="[tit-25]">Titus</rs>, prepare thy aged eyes to weep
 <lb n="60" ed="G"/><lb n="1197" ed="F1"/></l><l>Or, if not so, thy noble heart to break:
@@ -1743,7 +1743,7 @@ Rises.
 <lb ed="G"/><lb n="1291" ed="F1"/></l><l>Can do no service on her sorrowful cheeks.
 <lb ed="G"/><lb n="1292" ed="F1"/></l><l>O, what a sympathy of woe is this,
 <lb ed="G"/><lb n="1293" ed="F1"/></l><l>As far from help as Limbo is from bliss!
-<lb n="1294" ed="F1"/><stage type="entrance" about="[ome:involves tit-1]">Enter <rs type="person" about="[tit-1]">AARON</rs>.</stage>
+<lb n="1294" ed="F1"/><stage type="entrance" about="[ tit-1]">Enter <rs type="person" about="[tit-1]">AARON</rs>.</stage>
 
 <lb n="150" ed="G"/><lb n="1295" ed="F1"/></l></sp><sp who="#tit-1"><speaker>Aar.</speaker><l><rs type="person" about="[tit-25]">Titus Andronicus</rs>,my lord the emperor
 <lb ed="G"/><lb n="1296" ed="F1"/></l><l>Sends thee this word,���that, if thou love thy sons,
@@ -1795,7 +1795,7 @@ Rises.
 <lb ed="G"/><lb n="1330" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>Then I'll go fetch an axe.
 
 <lb ed="G"/><lb n="1331" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l>But I will use the axe.
-<stage type="exit" about="[ome:involves tit-13 tit-15]">Exeunt <rs type="person" about="[tit-13]">Lucius</rs> and <rs type="person" about="[tit-15]">Marcus</rs>.</stage>
+<stage type="exit" about="[ tit-13 tit-15]">Exeunt <rs type="person" about="[tit-13]">Lucius</rs> and <rs type="person" about="[tit-15]">Marcus</rs>.</stage>
 
 <lb ed="G"/><lb n="1332" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Come hither, <rs type="person" about="[tit-1]">Aaron</rs>; I'll deceive them both:
 <lb ed="G"/><lb n="1333" ed="F1"/></l><l>Lend me thy hand, and I will give thee mine.
@@ -1805,7 +1805,7 @@ Rises.
 <lb ed="G"/><lb n="1336" ed="F1"/></l><l>But I'll deceive you in another sort,
 <lb ed="G"/><lb n="1337" ed="F1"/></l><l>And that you'll say, ere half an hour pass.
 <lb n="1338" ed="F1"/>Cuts off <rs type="person" about="[tit-25]">Titus</rs>'s hand.
-<lb n="1339" ed="F1"/><stage type="entrance" about="[ome:involves tit-13]">Re-enter <rs type="person" about="[tit-13]">Lucius</rs> and MARCUS.</stage>
+<lb n="1339" ed="F1"/><stage type="entrance" about="[ tit-13]">Re-enter <rs type="person" about="[tit-13]">Lucius</rs> and MARCUS.</stage>
 
 <lb ed="G"/><lb n="1340" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Now stay your strife: what shall be is dispatched.
 <lb ed="G"/><lb n="1341" ed="F1"/></l><l>Good <rs type="person" about="[tit-1]">Aaron</rs>, give his majesty my hand:
@@ -1823,7 +1823,7 @@ Aside
 <lb ed="G"/><lb n="1351" ed="F1"/></l><l>Doth fat me with the very thoughts of it!
 <lb ed="G"/><lb n="1352" ed="F1"/></l><l>Let fools do good, and fair men call for grace,
 <lb ed="G"/><lb n="1353" ed="F1"/></l><l><rs type="person" about="[tit-1]">Aaron</rs> will have his soul black like his face.
-<stage type="exit" about="[ome:involves tit-1]">Exit.</stage>
+<stage type="exit" about="[ tit-1]">Exit.</stage>
 
 <lb ed="G"/><lb n="1354" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>O, here I lift this one hand up to heaven,
 <lb ed="G"/><lb n="1355" ed="F1"/></l><l>And bow this feeble ruin to the earth:
@@ -1858,7 +1858,7 @@ Aside
 <lb ed="G"/><lb n="1379" ed="F1"/></l><l>But like a drunkard must I vomit them.
 <lb ed="G"/><lb n="1380" ed="F1"/></l><l>Then give me leave, for losers will have leave
 <lb ed="G"/><lb n="1381" ed="F1"/></l><l>To ease their stomachs with their bitter tongues.
-<lb n="1382" ed="F1"/><stage type="entrance" about="[ome:involves tit-17]"> Enter a <rs type="person" about="[tit-17]">Messenger</rs>, with two heads and a hand.</stage>
+<lb n="1382" ed="F1"/><stage type="entrance" about="[ tit-17]"> Enter a <rs type="person" about="[tit-17]">Messenger</rs>, with two heads and a hand.</stage>
 
 <lb ed="G"/><lb n="1383" ed="F1"/></l></sp><sp who="#tit-17"><speaker>Mess.</speaker><l>Worthy Andronicus, ill art thou repaid
 <lb ed="G"/><lb n="1384" ed="F1"/></l><l>For that good hand thou sent'st the emperor.
@@ -1867,7 +1867,7 @@ Aside
 <lb ed="G"/><lb n="1387" ed="F1"/></l><l>Thy griefs their sports, thy resolution mock'd;
 <lb n="240" ed="G"/><lb n="1388" ed="F1"/></l><l>That woe is me to think upon thy woes
 <lb ed="G"/><lb n="1389" ed="F1"/></l><l>More than remembrance of my father's death.
-<stage type="exit" about="[ome:involves tit-17]">Exit.</stage>
+<stage type="exit" about="[ tit-17]">Exit.</stage>
 
 <lb ed="G"/><lb n="1390" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l>Now let hot ��tna cool in Sicily,
 <lb ed="G"/><lb n="1391" ed="F1"/></l><l>And be my heart an ever-burning hell!
@@ -1924,7 +1924,7 @@ Aside
 <lb ed="G"/><lb n="1434" ed="F1"/></l><l>Hie to the <rs type="person" about="[tit-11]">Goths</rs>, and raise an army there:
 <lb ed="G"/><lb n="1435" ed="F1"/></l><l>And, if you love me, as I think you do,
 <lb ed="G"/><lb n="1436" ed="F1"/></l><l>Let's kiss and part, for we have much to do.
-<stage type="exit" about="[ome:involves tit-25 tit-15 tit-12]">Exeunt <rs type="person" about="[tit-25]">Titus</rs>, <rs type="person" about="[tit-15]">Marcus</rs>, and <rs type="person" about="[tit-12]">Lavinia</rs>.</stage>
+<stage type="exit" about="[ tit-25 tit-15 tit-12]">Exeunt <rs type="person" about="[tit-25]">Titus</rs>, <rs type="person" about="[tit-15]">Marcus</rs>, and <rs type="person" about="[tit-12]">Lavinia</rs>.</stage>
 <lb n="1437" ed="F1"/>
 
 <lb n="289" ed="G"/><lb n="1438" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>Farewell, Andronicus, my noble father,
@@ -1940,12 +1940,12 @@ Aside
 <lb ed="G"/><lb n="1448" ed="F1"/></l><l>Beg at the gates, like Tarquin and his queen.
 <lb ed="G"/><lb n="1449" ed="F1"/></l><l>Now will I go to the <rs type="person" about="[tit-11]">Goths</rs>, and raise a power,
 <lb ed="G"/><lb n="1450" ed="F1"/></l><l>To be revenged on Rome and Saturnine.
-<stage type="exit" about="[ome:involves tit-13]">Exit.</stage></l></sp>
+<stage type="exit" about="[ tit-13]">Exit.</stage></l></sp>
 </div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[ta:A_room_in_Titus's_house._A_banquet_set_out.]" type="location">A room in <rs type="person" about="[tit-25]">Titus</rs>'s house. A banquet set out.</stage>
-<lb n="1452" ed="F1"/><stage type="entrance" about="[ome:involves tit-12 tit-14]">Enter TITUS, MARCUS, <rs type="person" about="[tit-12]">LAVINIA</rs>, and <rs type="person" about="[tit-14]">young Lucius</rs>, a Boy.</stage>
+<lb n="1452" ed="F1"/><stage type="entrance" about="[ tit-12 tit-14]">Enter TITUS, MARCUS, <rs type="person" about="[tit-12]">LAVINIA</rs>, and <rs type="person" about="[tit-14]">young Lucius</rs>, a Boy.</stage>
 
 <lb ed="G"/><lb n="1453" ed="F1"/><sp who="#tit-25"><speaker>Tit.</speaker><l>So, so; now sit: and look you eat no more
 <lb ed="G"/><lb n="1454" ed="F1"/></l><l>Than will preserve just so much strength in us
@@ -2046,7 +2046,7 @@ Aside
 <lb ed="G"/><lb n="1537" ed="F1"/></l><l>Sad stories chanced in the times of old.
 <lb ed="G"/><lb n="1538" ed="F1"/></l><l>Come, boy, and go with me: thy sight is young,
 <lb ed="G"/><lb n="1539" ed="F1"/></l><l>And thou shalt read when mine begin to dazzle.
-<stage about="[ome:involves-all]" type="exit">Exeunt. </stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt. </stage></l></sp>
 </div2>
   </div1>
   
@@ -2055,7 +2055,7 @@ Aside
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[ta:Rome._Titus's_garden.]" type="location">Rome. <rs type="person" about="[tit-25]">Titus</rs>'s garden.</stage>
-<lb n="1541" ed="F1"/><stage type="entrance" about="[ome:involves tit-14 tit-12]">Enter <rs type="person" about="[tit-14]">young Lucius</rs>, and <rs type="person" about="[tit-12]">LAVINIA</rs> running after him, and <lb n="1542" ed="F1"/>the boy flies from her, with books under his arm.   Then <lb n="1543" ed="F1"/>enter TITUS and MARCUS.</stage>
+<lb n="1541" ed="F1"/><stage type="entrance" about="[ tit-14 tit-12]">Enter <rs type="person" about="[tit-14]">young Lucius</rs>, and <rs type="person" about="[tit-12]">LAVINIA</rs> running after him, and <lb n="1542" ed="F1"/>the boy flies from her, with books under his arm.   Then <lb n="1543" ed="F1"/>enter TITUS and MARCUS.</stage>
 
 <lb ed="G"/><lb n="1544" ed="F1"/><sp who="#tit-14"><speaker>Young Luc.</speaker><l>Help, grandsire, help! my aunt <rs type="person" about="[tit-12]">Lavinia</rs>
 <lb ed="G"/><lb n="1545" ed="F1"/></l><l>Follows me every where, I know not why:
@@ -2214,7 +2214,7 @@ He writes his name with his staff, and guides it with feet and mouth.
 <lb ed="G"/><lb n="1668" ed="F1"/></l><l><rs type="person" about="[tit-12]">Lavinia</rs>, come. <rs type="person" about="[tit-15]">Marcus</rs>, look to my house:
 <lb n="121" ed="G"/><lb n="1669" ed="F1"/></l><l><rs type="person" about="[tit-13]">Lucius</rs> and I'll go brave it at the court:
 <lb ed="G"/><lb n="1670" ed="F1"/></l><l>Ay, marry, will we, sir; and we'll be waited on.
-<stage type="exit" about="[ome:involves tit-25 tit-12]">Exeunt <rs type="person" about="[tit-25]">Titus</rs>, <rs type="person" about="[tit-12]">Lavinia</rs>, and Young Luc.</stage>
+<stage type="exit" about="[ tit-25 tit-12]">Exeunt <rs type="person" about="[tit-25]">Titus</rs>, <rs type="person" about="[tit-12]">Lavinia</rs>, and Young Luc.</stage>
 
 <lb ed="G"/><lb n="1671" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l>O heavens, can you hear a good man groan,
 <lb ed="G"/><lb n="1672" ed="F1"/></l><l>And not relent, or not compassion him?
@@ -2223,12 +2223,12 @@ He writes his name with his staff, and guides it with feet and mouth.
 <lb ed="G"/><lb n="1675" ed="F1"/></l><l>Than foemen's marks upon his batter'd shield;
 <lb ed="G"/><lb n="1676" ed="F1"/></l><l>But yet so just that he will not revenge.
 <lb ed="G"/><lb n="1677" ed="F1"/></l><l>Revenge, ye heavens, for old Andronicus!
-<stage type="exit" about="[ome:involves tit-15]">Exit.</stage></l></sp>
+<stage type="exit" about="[ tit-15]">Exit.</stage></l></sp>
 </div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[ta:The_same._A_room_in_the_palace.]" type="location">The same. A room in the palace.</stage>
-<lb n="1678" ed="F1"/><stage type="entrance" about="[ome:involves tit-1 tit-10 tit-8 tit-13]">Enter, from one side, <rs type="person" about="[tit-1]">AARON</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, and <rs type="person" about="[tit-8]">CHIRON</rs>; from the other <lb n="1679" ed="F1"/>side, young <rs type="person" about="[tit-13]">LUCIUS</rs>, and an Attendant, with a bundle of <lb n="1680" ed="F1"/>weapons, and verses writ upon them. </stage>
+<lb n="1678" ed="F1"/><stage type="entrance" about="[ tit-1 tit-10 tit-8 tit-13]">Enter, from one side, <rs type="person" about="[tit-1]">AARON</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, and <rs type="person" about="[tit-8]">CHIRON</rs>; from the other <lb n="1679" ed="F1"/>side, young <rs type="person" about="[tit-13]">LUCIUS</rs>, and an Attendant, with a bundle of <lb n="1680" ed="F1"/>weapons, and verses writ upon them. </stage>
 
 <lb ed="G"/><lb n="1681" ed="F1"/><sp who="#tit-8"><speaker>Chi.</speaker><l><rs type="person" about="[tit-10]">Demetrius</rs>, here's the son of <rs type="person" about="[tit-13]">Lucius</rs>;
 <lb ed="G"/><lb n="1682" ed="F1"/></l><l>He hath some message to deliver us.
@@ -2251,7 +2251,7 @@ He writes his name with his staff, and guides it with feet and mouth.
 <lb ed="G"/><lb n="1694" ed="F1"/></l><l>Your lordships, that, whenever you have need,
 <lb ed="G"/><lb n="1695" ed="F1"/></l><l>You may be armed and appointed well:
 <lb ed="G"/><lb n="1696" ed="F1"/></l><l>And so I leave you both: Aside like bloody villains.
-<stage type="exit" about="[ome:involves tit-14]">Exeunt <rs type="person" about="[tit-14]">young Lucius</rs> and Attendant.</stage>
+<stage type="exit" about="[ tit-14]">Exeunt <rs type="person" about="[tit-14]">young Lucius</rs> and Attendant.</stage>
 
 <lb ed="G"/><lb n="1697" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l>What's here? A scroll; and written round about?
 <lb ed="G"/><lb n="1698" ed="F1"/></l><l>Let's see:
@@ -2302,7 +2302,7 @@ Reads
 <lb ed="G"/><lb n="1730" ed="F1"/></l></sp><sp who="#tit-8"><speaker>Chi.</speaker><l>Belike, for joy the emperor hath a son.
 
 <lb n="51" ed="G"/><lb n="1731" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l>Soft! who comes here?
-<lb n="1732" ed="F1"/><stage type="entrance" about="[ome:involves tit-19]">Enter a <rs type="person" about="[tit-19]">Nurse</rs>, with a blackamoor Child in her arms. </stage>
+<lb n="1732" ed="F1"/><stage type="entrance" about="[ tit-19]">Enter a <rs type="person" about="[tit-19]">Nurse</rs>, with a blackamoor Child in her arms. </stage>
 
 <lb ed="G"/><lb n="1733" ed="F1"/></l></sp><sp who="#tit-19"><speaker>Nur.</speaker><l>Good morrow, lords:
 <lb ed="G"/><lb n="1734" ed="F1"/></l><l>O, tell me, did you see <rs type="person" about="[tit-1]">Aaron</rs> the Moor?
@@ -2471,7 +2471,7 @@ Pointing to the nurse.
 
 <lb ed="G"/><lb n="1854" ed="F1"/></l></sp><sp who="#tit-10"><speaker>Dem.</speaker><l>For this care of <rs type="person" about="[tit-24]">Tamora</rs>,
 <lb ed="G"/><lb n="1855" ed="F1"/></l><l>Herself and hers are highly bound to thee.
-<stage type="exit" about="[ome:involves tit-19]">Exeunt Dem. and Chi. bearing off the <rs type="person" about="[tit-19]">Nurse</rs>'s body.</stage>
+<stage type="exit" about="[ tit-19]">Exeunt Dem. and Chi. bearing off the <rs type="person" about="[tit-19]">Nurse</rs>'s body.</stage>
 
 <lb ed="G"/><lb n="1856" ed="F1"/></l></sp><sp who="#tit-1"><speaker>Aar.</speaker><l>Now to the <rs type="person" about="[tit-11]">Goths</rs>, as swift as swallow flies;
 <lb ed="G"/><lb n="1857" ed="F1"/></l><l>There to dispose this treasure in mine arms,
@@ -2482,12 +2482,12 @@ Pointing to the nurse.
 <lb ed="G"/><lb n="1862" ed="F1"/></l><l>And feed on curds and whey, and suck the goat,
 <lb ed="G"/><lb n="1863" ed="F1"/></l><l>And cabin in a cave, and bring you up
 <lb n="180" ed="G"/><lb n="1864" ed="F1"/></l><l>To be a warrior, and command a camp.
-<stage type="exit" about="[ome:involves tit-1]">Exit.</stage></l></sp>
+<stage type="exit" about="[ tit-1]">Exit.</stage></l></sp>
 </div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[ta:The_same._A_public_place.]" type="location">The same. A public place.</stage>
-<lb n="1865" ed="F1"/><lb n="1866" ed="F1"/><stage type="entrance" about="[ome:involves tit-13 tit-20 tit-3 tit-5]"> Enter TITUS, bearing arrows with letters at the ends of them; with him, MARCUS, young <rs type="person" about="[tit-13]">LUCIUS</rs>, <rs type="person" about="[tit-20]">PUBLIUS</rs>, <rs type="person" about="[tit-3]">SEMPRONIUS</rs>, <rs type="person" about="[tit-5]">CAIUS</rs>, and other Gentlemen, <lb n="1867" ed="F1"/>with bows.</stage>
+<lb n="1865" ed="F1"/><lb n="1866" ed="F1"/><stage type="entrance" about="[ tit-13 tit-20 tit-3 tit-5]"> Enter TITUS, bearing arrows with letters at the ends of them; with him, MARCUS, young <rs type="person" about="[tit-13]">LUCIUS</rs>, <rs type="person" about="[tit-20]">PUBLIUS</rs>, <rs type="person" about="[tit-3]">SEMPRONIUS</rs>, <rs type="person" about="[tit-5]">CAIUS</rs>, and other Gentlemen, <lb n="1867" ed="F1"/>with bows.</stage>
 
 <lb ed="G"/><lb n="1868" ed="F1"/><sp who="#tit-25"><speaker>Tit.</speaker><l>Come, <rs type="person" about="[tit-15]">Marcus</rs>; come, kinsman; this is the way.
 <lb ed="G"/><lb n="1869" ed="F1"/></l><l>Sir boy, now let me see your archery;
@@ -2578,7 +2578,7 @@ Pointing to the nurse.
 <lb ed="G"/><lb n="1941" ed="F1"/></l><l>But give them to his master for a present.
 
 <lb ed="G"/><lb n="1942" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Why, there it goes: God give his lordship joy!
-<lb n="1943" ed="F1"/><stage type="entrance" about="[ome:involves tit-9]"> Enter a <rs type="person" about="[tit-9]">Clown</rs>, with a basket, and two pigeons in it.  </stage>
+<lb n="1943" ed="F1"/><stage type="entrance" about="[ tit-9]"> Enter a <rs type="person" about="[tit-9]">Clown</rs>, with a basket, and two pigeons in it.  </stage>
 <lb ed="G"/><lb n="1944" ed="F1"/></l><l>News, news from heaven!   <lb n="1945" ed="F1"/><rs type="person" about="[tit-15]">Marcus</rs>, the post is come.
 <lb ed="G"/><lb n="1946" ed="F1"/></l><l>Sirrah, what tidings? have you any letters?
 <lb n="79" ed="G"/><lb n="1947" ed="F1"/></l><l>Shall I have justice? what says Jupiter?
@@ -2641,12 +2641,12 @@ Pointing to the nurse.
 <lb n="120" ed="G"/><lb n="1987" ed="F1"/></l></sp><sp who="#tit-9"><speaker>Clo.</speaker><l>God be with you, sir; I will.
 
 <lb ed="G"/><lb n="1988" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Come, <rs type="person" about="[tit-15]">Marcus</rs>, let us go. <rs type="person" about="[tit-20]">Publius</rs>, follow me.
-<lb n="1989" ed="F1"/><stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<lb n="1989" ed="F1"/><stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2>
 <div2 n="4" type="scene" org="uniform" sample="complete">
 <head>SCENE IV</head>
 <stage about="[ta:The_same._Before_the_palace.]" type="location">The same. Before the palace.</stage>
-<lb n="1990" ed="F1"/><stage type="entrance" about="[ome:involves tit-22 tit-24 tit-10 tit-8 tit-22]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs>, <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, Lords, and others; <lb n="1991" ed="F1"/><rs type="person" about="[tit-22]">SATURNINUS</rs> with the arrows in his hand <lb n="1992" ed="F1"/>that TITUS shot.</stage>
+<lb n="1990" ed="F1"/><stage type="entrance" about="[ tit-22 tit-24 tit-10 tit-8 tit-22]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs>, <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, <rs type="person" about="[tit-8]">CHIRON</rs>, Lords, and others; <lb n="1991" ed="F1"/><rs type="person" about="[tit-22]">SATURNINUS</rs> with the arrows in his hand <lb n="1992" ed="F1"/>that TITUS shot.</stage>
 
 <lb ed="G"/><lb n="1993" ed="F1"/><sp who="#tit-22"><speaker>Sat.</speaker><l>Why, lords, <lb n="1994" ed="F1"/>what wrongs are these was ever seen
 <lb ed="G"/><lb n="1995" ed="F1"/></l><l>An emperor in Rome thus overborne,
@@ -2687,7 +2687,7 @@ Pointing to the nurse.
 <lb ed="G"/><lb n="2029" ed="F1"/></l><l>But, <rs type="person" about="[tit-25]">Titus</rs>, I have touch'd thee to the quick,
 <lb ed="G"/><lb n="2030" ed="F1"/></l><l>Thy life-blood out: if <rs type="person" about="[tit-1]">Aaron</rs> now be wise,
 <lb ed="G"/><lb n="2031" ed="F1"/></l><l>Then is all safe, the anchor's in the port.
-<lb n="2032" ed="F1"/><stage type="entrance" about="[ome:involves tit-9]">Enter <rs type="person" about="[tit-9]">Clown</rs>.</stage>
+<lb n="2032" ed="F1"/><stage type="entrance" about="[ tit-9]">Enter <rs type="person" about="[tit-9]">Clown</rs>.</stage>
 <lb ed="G"/><lb n="2033" ed="F1"/></l><l>How now, good fellow! wouldst thou speak with us?
 
 <lb n="40" ed="G"/><lb n="2034" ed="F1"/></l></sp><sp who="#tit-9"><speaker>Clo.</speaker><p>Yea, forsooth, an your mistership be emperial.
@@ -2707,7 +2707,7 @@ Pointing to the nurse.
 
 <lb ed="G"/><lb n="2042" ed="F1"/></p></sp><sp who="#tit-9"><speaker>Clo.</speaker><p>Hangedl by'r lady, then I have
 <lb ed="G"/>brought up a neck <lb n="2043" ed="F1"/>to a fair end.
-<stage type="exit" about="[ome:involves tit-9]">Exit, guarded.</stage>
+<stage type="exit" about="[ tit-9]">Exit, guarded.</stage>
 
 <lb n="50" ed="G"/><lb n="2044" ed="F1"/></p></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>Despiteful and intolerable wrongs!
 <lb ed="G"/><lb n="2045" ed="F1"/></l><l>Shall I endure this monstrous villany?
@@ -2777,7 +2777,7 @@ Pointing to the nurse.
 <lb ed="G"/><lb n="2100" ed="F1"/></l><l>Bid him demand what pledge will please him best.
 
 <lb ed="G"/><lb n="2101" ed="F1"/></l></sp><sp who="#tit-2"><speaker>��mil.</speaker><l>Your bidding shall I do effectually.
-<stage type="exit" about="[ome:involves tit-2]">Exit.</stage>
+<stage type="exit" about="[ tit-2]">Exit.</stage>
 
 <lb ed="G"/><lb n="2102" ed="F1"/></l></sp><sp who="#tit-24"><speaker>Tam.</speaker><l>Now will I to that old Andronicus,
 <lb ed="G"/><lb n="2103" ed="F1"/></l><l>And temper him with all the art I have,
@@ -2786,7 +2786,7 @@ Pointing to the nurse.
 <lb ed="G"/><lb n="2106" ed="F1"/></l><l>And bury all thy fear in my devices.
 
 <lb ed="G"/><lb n="2107" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>Then go successantly, and plead to him.
-<stage about="[ome:involves-all]" type="exit">Exeunt. </stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt. </stage></l></sp>
 </div2>
   </div1>
   
@@ -2795,7 +2795,7 @@ Pointing to the nurse.
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[ta:Plains_near_Rome.]" type="location">Plains near Rome.</stage>
-<lb n="2109" ed="F1"/><stage type="entrance" about="[ome:involves tit-13 tit-11]">Enter <rs type="person" about="[tit-13]">Lucius</rs> with an army of <rs type="person" about="[tit-11]">Goths</rs>, <lb n="2110" ed="F1"/>with drum and colours.</stage>
+<lb n="2109" ed="F1"/><stage type="entrance" about="[ tit-13 tit-11]">Enter <rs type="person" about="[tit-13]">Lucius</rs> with an army of <rs type="person" about="[tit-11]">Goths</rs>, <lb n="2110" ed="F1"/>with drum and colours.</stage>
 
 <lb ed="G"/><lb n="2111" ed="F1"/><sp who="#tit-13"><speaker>Luc.</speaker><l>Approved warriors, and my faithful friends,
 <lb ed="G"/><lb n="2112" ed="F1"/></l><l>I have received letters from great Rome,
@@ -2820,7 +2820,7 @@ Pointing to the nurse.
 <lb ed="G"/><lb n="2128" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>I humbly thank him, and I thank you all.
 <lb ed="G"/><lb n="2129" ed="F1"/></l><l>But who comes here, led by a lusty Goth?
 
-<lb n="2130" ed="F1"/><stage type="entrance" about="[ome:involves tit-1]">Enter a Goth, leading <rs type="person" about="[tit-1]">AARON</rs> with his Child <lb n="2131" ed="F1"/>in his arms.</stage>
+<lb n="2130" ed="F1"/><stage type="entrance" about="[ tit-1]">Enter a Goth, leading <rs type="person" about="[tit-1]">AARON</rs> with his Child <lb n="2131" ed="F1"/>in his arms.</stage>
 
 <lb n="20" ed="G"/><lb n="2132" ed="F1"/></l></sp><sp who="#tit-11"><speaker>Sec. Goth.</speaker><l>Renowned <rs type="person" about="[tit-13]">Lucius</rs>, from   our troops I stray'd
 <lb ed="G"/><lb n="2133" ed="F1"/></l><l>To gaze upon a ruinous monastery;
@@ -3002,12 +3002,12 @@ A ladder is brought, which <rs type="person" about="[tit-1]">Aaron</rs> is  made
 <lb ed="G"/><lb n="2280" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>��milius, let the emperor give his pledges
 <lb ed="G"/><lb n="2281" ed="F1"/></l><l>Unto my father and my uncle <rs type="person" about="[tit-15]">Marcus</rs>,
 <lb ed="G"/><lb n="2282" ed="F1"/></l><l>And we will come. March away.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[ta:Rome._Before_Titus's_house.]" type="location">Rome. Before <rs type="person" about="[tit-25]">Titus</rs>'s house.</stage>
-<lb n="2283" ed="F1"/><stage type="entrance" about="[ome:involves tit-24 tit-10 tit-8]">Enter <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, and <rs type="person" about="[tit-8]">CHIRON</rs>, disguised.</stage>
+<lb n="2283" ed="F1"/><stage type="entrance" about="[ tit-24 tit-10 tit-8]">Enter <rs type="person" about="[tit-24]">TAMORA</rs>, <rs type="person" about="[tit-10]">DEMETRIUS</rs>, and <rs type="person" about="[tit-8]">CHIRON</rs>, disguised.</stage>
 
 <lb ed="G"/><lb n="2284" ed="F1"/><sp who="#tit-24"><speaker>Tam.</speaker><l>Thus, in this strange and sad habiliment,
 <lb ed="G"/><lb n="2285" ed="F1"/></l><l>I will encounter with Andronicus,
@@ -3093,7 +3093,7 @@ A ladder is brought, which <rs type="person" about="[tit-1]">Aaron</rs> is  made
 <lb ed="G"/><lb n="2353" ed="F1"/></l><l>O sweet Revenge, now do I come to thee;
 <lb ed="G"/><lb n="2354" ed="F1"/></l><l>And, if one arm's embracement will content thee,
 <lb ed="G"/><lb n="2355" ed="F1"/></l><l>I will embrace thee in it by and by.
-<stage type="exit" about="[ome:involves tit-25]">Exit above.</stage>
+<stage type="exit" about="[ tit-25]">Exit above.</stage>
 
 <lb ed="G"/><lb n="2356" ed="F1"/></l></sp><sp who="#tit-24"><speaker>Tam.</speaker><l>This closing with him fits his lunacy:
 <lb n="71" ed="G"/><lb n="2357" ed="F1"/></l><l>Whate'er I forge to feed his brain-sick fits,
@@ -3169,7 +3169,7 @@ A ladder is brought, which <rs type="person" about="[tit-1]">Aaron</rs> is  made
 <lb n="130" ed="G"/><lb n="2417" ed="F1"/></l><l>As he regards his aged father's life.
 
 <lb ed="G"/><lb n="2418" ed="F1"/></l></sp><sp who="#tit-15"><speaker>Marc.</speaker><l>This will I do, and soon return again.
-<stage type="exit" about="[ome:involves tit-15]">Exit. </stage>
+<stage type="exit" about="[ tit-15]">Exit. </stage>
 
 <lb ed="G"/><lb n="2419" ed="F1"/></l></sp><sp who="#tit-24"><speaker>Tam.</speaker><l>Now will I hence about thy business,
 <lb ed="G"/><lb n="2420" ed="F1"/></l><l>And take my ministers along with me.
@@ -3194,13 +3194,13 @@ A ladder is brought, which <rs type="person" about="[tit-1]">Aaron</rs> is  made
 <lb ed="G"/><lb n="2434" ed="F1"/></l><l>To lay a complot to betray thy foes.
 
 <lb ed="G"/><lb n="2435" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>I know thou dost; and, sweet Revenge, farewell.
-<stage type="exit" about="[ome:involves tit-24]">Exit <rs type="person" about="[tit-24]">Tamora</rs>. </stage>
+<stage type="exit" about="[ tit-24]">Exit <rs type="person" about="[tit-24]">Tamora</rs>. </stage>
 
 <lb n="149" ed="G"/><lb n="2436" ed="F1"/></l></sp><sp who="#tit-8"><speaker>Chi.</speaker><l>Tell us, old man, how shall we be employ'd?
 
 <lb ed="G"/><lb n="2437" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Tut, I have work enough for you to do.
 <lb ed="G"/><lb n="2438" ed="F1"/></l><l><rs type="person" about="[tit-20]">Publius</rs>, come hither, <rs type="person" about="[tit-5]">Caius</rs>, and <rs type="person" about="[tit-6]">Valentine</rs>!
-<stage type="entrance" about="[ome:involves tit-20]"> Enter <rs type="person" about="[tit-20]">PUBLIUS</rs> and others.</stage>
+<stage type="entrance" about="[ tit-20]"> Enter <rs type="person" about="[tit-20]">PUBLIUS</rs> and others.</stage>
 
 <lb ed="G"/><lb n="2439" ed="F1"/></l></sp><sp who="#tit-20"><speaker>Pub.</speaker><l>What is your will?
 
@@ -3216,7 +3216,7 @@ A ladder is brought, which <rs type="person" about="[tit-1]">Aaron</rs> is  made
 <lb n="160" ed="G"/><lb n="2447" ed="F1"/></l><l>Oft have you heard me wish for such an hour,
 <lb ed="G"/><lb n="2448" ed="F1"/></l><l>And now I find it; therefore bind them sure,
 <lb ed="G"/></l><l>And stop their mouths, if they begin to cry.
-<stage type="exit" about="[ome:involves tit-25]">Exit.</stage>
+<stage type="exit" about="[ tit-25]">Exit.</stage>
 <rs type="person" about="[tit-20]">Publius</rs>, &amp;c., lay hold on <rs type="person" about="[tit-8]">Chiron</rs> and <rs type="person" about="[tit-10]">Demetrius</rs>.
 
 <lb ed="G"/><lb n="2449" ed="F1"/></l></sp><sp who="#tit-8"><speaker>Chi.</speaker><l>Villains, forbear! we are the empress sons.
@@ -3224,7 +3224,7 @@ A ladder is brought, which <rs type="person" about="[tit-1]">Aaron</rs> is  made
 <lb ed="G"/><lb n="2450" ed="F1"/></l></sp><sp who="#tit-20"><speaker>Pub.</speaker><l>And therefore do we what we are commanded.
 <lb ed="G"/><lb n="2451" ed="F1"/></l><l>Stop close their mouths, let them not speak a word.
 <lb ed="G"/><lb n="2452" ed="F1"/></l><l>Is he sure bound? look that you bind them fast.
-<lb n="2453" ed="F1"/><stage type="entrance" about="[ome:involves tit-12]">Re-enter TITUS, with <rs type="person" about="[tit-12]">LAVINIA</rs>; he bearing a knife, and she <lb n="2454" ed="F1"/>a basin.</stage>
+<lb n="2453" ed="F1"/><stage type="entrance" about="[ tit-12]">Re-enter TITUS, with <rs type="person" about="[tit-12]">LAVINIA</rs>; he bearing a knife, and she <lb n="2454" ed="F1"/>a basin.</stage>
 
 <lb ed="G"/><lb n="2455" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Come, come, <rs type="person" about="[tit-12]">Lavinia</rs>; look, thy foes are bound.
 <lb ed="G"/><lb n="2456" ed="F1"/></l><l>Sirs, stop their mouths, let them not speak to me;
@@ -3267,12 +3267,12 @@ He cuts their throats.
 <lb ed="G"/><lb n="2492" ed="F1"/></l><l>More stern and bloody than the Centaurs' feast.
 <lb ed="G"/><lb n="2493" ed="F1"/><lb n="2494" ed="F1"/></l><l>So, now bring them in, for I'll play the cook,
 <lb ed="G"/><lb n="2495" ed="F1"/></l><l>And see them ready 'gainst their mother comes.
-<stage about="[ome:involves-all]" type="exit">Exeunt, bearing the dead bodies.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt, bearing the dead bodies.</stage></l></sp>
 </div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
 <head>SCENE III</head>
 <stage about="[ta:Court_of_Titus'_house._A_banquet_set_out.]" type="location">Court of <rs type="person" about="[tit-25]">Titus</rs>' house. A banquet set out.</stage>
-<lb n="2496" ed="F1"/><stage type="entrance" about="[ome:involves tit-13 tit-11 tit-1]">Enter <rs type="person" about="[tit-13]">Lucius</rs>, MARCUS, and <rs type="person" about="[tit-11]">Goths</rs>, with <rs type="person" about="[tit-1]">AARON</rs> prisoner.</stage>
+<lb n="2496" ed="F1"/><stage type="entrance" about="[ tit-13 tit-11 tit-1]">Enter <rs type="person" about="[tit-13]">Lucius</rs>, MARCUS, and <rs type="person" about="[tit-11]">Goths</rs>, with <rs type="person" about="[tit-1]">AARON</rs> prisoner.</stage>
 
 <lb ed="G"/><lb n="2497" ed="F1"/><sp who="#tit-13"><speaker>Luc.</speaker><l>Uncle <rs type="person" about="[tit-15]">Marcus</rs>, since it is my father's mind
 <lb ed="G"/><lb n="2498" ed="F1"/></l><l>That I repair to Rome, I am content.
@@ -3293,9 +3293,9 @@ He cuts their throats.
 
 <lb ed="G"/><lb n="2510" ed="F1"/></l></sp><sp who="#tit-13"><speaker>Luc.</speaker><l>Away, inhuman   dog!   unhallow'd slave!
 <lb ed="G"/><lb n="2511" ed="F1"/></l><l>Sirs, help our uncle to convey him in.
-<stage type="exit" about="[ome:involves tit-11 tit-1]">Exeunt <rs type="person" about="[tit-11]">Goths</rs>, with <rs type="person" about="[tit-1]">Aaron</rs>.</stage>Flourish within.
+<stage type="exit" about="[ tit-11 tit-1]">Exeunt <rs type="person" about="[tit-11]">Goths</rs>, with <rs type="person" about="[tit-1]">Aaron</rs>.</stage>Flourish within.
 <lb ed="G"/><lb n="2512" ed="F1"/></l><l>The trumpets show the emperor is at hand.
-<lb n="2513" ed="F1"/><stage type="entrance" about="[ome:involves tit-22 tit-24 tit-26]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs> and <rs type="person" about="[tit-24]">TAMORA</rs>, with ��MILIUS, <lb n="2514" ed="F1"/><rs type="person" about="[tit-26]">Tribune</rs>s, Senators, and others.</stage>
+<lb n="2513" ed="F1"/><stage type="entrance" about="[ tit-22 tit-24 tit-26]">Enter <rs type="person" about="[tit-22]">SATURNINUS</rs> and <rs type="person" about="[tit-24]">TAMORA</rs>, with ��MILIUS, <lb n="2514" ed="F1"/><rs type="person" about="[tit-26]">Tribune</rs>s, Senators, and others.</stage>
 
 <lb ed="G"/><lb n="2515" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l>What, hath the firmament more suns than one?
 
@@ -3310,7 +3310,7 @@ He cuts their throats.
 
 <lb ed="G"/><lb n="2523" ed="F1"/></l></sp><sp who="#tit-22"><speaker>Sat.</speaker><l><rs type="person" about="[tit-15]">Marcus</rs>, we will.
 Hautboys sound. <lb n="2524" ed="F1"/>The Company sit  down at table. 
-<lb n="2525" ed="F1"/><stage type="entrance" about="[ome:involves tit-12 tit-14]">Enter TITUS dressed like a Cook, <rs type="person" about="[tit-12]">LAVINIA</rs>  veiled, <rs type="person" about="[tit-14]">young Lucius</rs>, and others. TITUS  places the dishes on <lb n="2526" ed="F1"/>the table. </stage>
+<lb n="2525" ed="F1"/><stage type="entrance" about="[ tit-12 tit-14]">Enter TITUS dressed like a Cook, <rs type="person" about="[tit-12]">LAVINIA</rs>  veiled, <rs type="person" about="[tit-14]">young Lucius</rs>, and others. TITUS  places the dishes on <lb n="2526" ed="F1"/>the table. </stage>
 
 <lb ed="G"/><lb n="2527" ed="F1"/></l></sp><sp who="#tit-25"><speaker>Tit.</speaker><l>Welcome, my gracious lord; <lb n="2528" ed="F1"/>welcome, dread queen;
 <lb ed="G"/><lb n="2529" ed="F1"/></l><l>Welcome, ye warlike <rs type="person" about="[tit-11]">Goths</rs>; welcome <rs type="person" about="[tit-13]">Lucius</rs>;
@@ -3461,7 +3461,7 @@ Pointing to the child in the arms of an Attendant.
 <lb ed="G"/><lb n="2647" ed="F1"/></l><l>And hither hale that misbelieving Moor,
 <lb ed="G"/><lb n="2648" ed="F1"/></l><l>To be adjudged some direful slaughtering death,
 <lb ed="G"/><lb n="2649" ed="F1"/></l><l>As punishment for his most wicked life.
-<stage about="[ome:involves-all]" type="exit">Exeunt Attendants.</stage>
+<stage about="[-all]" type="exit">Exeunt Attendants.</stage>
 <rs type="person" about="[tit-13]">LUCIUS</rs>, MARCUS, and the others descend.
 
 <lb ed="G"/><lb n="2650" ed="F1"/></l></sp><sp><speaker>All.</speaker><l><rs type="person" about="[tit-13]">Lucius</rs>, all hail, Rome's gracious governor!
@@ -3499,7 +3499,7 @@ Kissing <rs type="person" about="[tit-25]">Titus</rs>.
 <lb ed="G"/><lb n="2677" ed="F1"/></l><l>Would I were dead, so you did live again!
 <lb ed="G"/><lb n="2678" ed="F1"/></l><l>O Lord, I cannot speak to him for weeping;
 <lb ed="G"/><lb n="2679" ed="F1"/></l><l>My tears will choke me, if I ope my mouth.
-<stage type="entrance" about="[ome:involves tit-1]">Re-enter Attendants with <rs type="person" about="[tit-1]">AARON</rs>.</stage>
+<stage type="entrance" about="[ tit-1]">Re-enter Attendants with <rs type="person" about="[tit-1]">AARON</rs>.</stage>
 
 <lb ed="G"/><lb n="2680" ed="F1"/></l></sp><sp who="#tit-2"><speaker>��mil.</speaker><l>You sad Andronici, have done with woes:
 <lb ed="G"/><lb n="2681" ed="F1"/></l><l>Give sentence on this execrable wretch,
@@ -3533,7 +3533,7 @@ Kissing <rs type="person" about="[tit-25]">Titus</rs>.
 <lb ed="G"/><lb n="2706" ed="F1"/></l><l>By whom our heavy haps had their beginning:
 <lb ed="G"/><lb n="2707" ed="F1"/></l><l>Then, afterwards, to order well the state,
 <lb ed="G"/><lb n="2708" ed="F1"/></l><l>That like events may ne'er it ruinate.
-<stage about="[ome:involves-all]" type="exit">Exeunt.</stage></l></sp>
+<stage about="[-all]" type="exit">Exeunt.</stage></l></sp>
 </div2> 
 </div1> 
 </body>

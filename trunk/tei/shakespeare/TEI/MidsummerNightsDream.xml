@@ -149,7 +149,7 @@
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[mnd:Athens._The_palace_of_THESEUS.]" type="location">Athens. The palace of <rs type="person" about="[the.]">THESEUS</rs>.</stage>
-<lb ed="F1" n="3"/><stage type="entrance" about="[ome:involves the. hip. phil.]">Enter <rs type="person" about="[the.]">THESEUS</rs>, <rs type="person" about="[hip.]">HIPPOLYTA</rs>, <rs type="person" about="[phil.]">PHILOSTRATE</rs>, and Attendants.</stage>
+<lb ed="F1" n="3"/><stage type="entrance" about="[ the. hip. phil.]">Enter <rs type="person" about="[the.]">THESEUS</rs>, <rs type="person" about="[hip.]">HIPPOLYTA</rs>, <rs type="person" about="[phil.]">PHILOSTRATE</rs>, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="4"/><sp who="#the."><speaker>The.</speaker><l>Now, fair <rs type="person" about="[hip.]">Hippolyta</rs>, our nuptial hour
 <lb ed="G"/><lb ed="F1" n="5"/></l><l>Draws on apace; for happy days bring in
@@ -169,12 +169,12 @@
 <lb ed="G"/><lb ed="F1" n="17"/></l><l>Awake the pert and nimble spirit of mirth;
 <lb ed="G"/><lb ed="F1" n="18"/></l><l>Turn melancholy forth to funerals;
 <lb ed="G"/><lb ed="F1" n="19"/></l><l>The pale companion is not for our pomp.
-                     <stage type="exit" about="[ome:involves phil.]">[Exit <rs type="person" about="[phil.]">Philostrate</rs>.</stage>
+                     <stage type="exit" about="[ phil.]">[Exit <rs type="person" about="[phil.]">Philostrate</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="20"/></l><l><rs type="person" about="[hip.]">Hippolyta</rs>, I woo'd thee with my sword,
 <lb ed="G"/><lb ed="F1" n="21"/></l><l>And won thy love, doing thee injuries;
 <lb ed="G"/><lb ed="F1" n="22"/></l><l>But I will wed thee in another key,
 <lb ed="G"/><lb ed="F1" n="23"/></l><l>With pomp, with triumph and with revelling.
-<lb ed="F1" n="24"/><stage type="entrance" about="[ome:involves ege. her. lys. dem.]">   Enter <rs type="person" about="[ege.]">EGEUS</rs>, <rs type="person" about="[her.]">HERMIA</rs>, <rs type="person" about="[lys.]">LYSANDER</rs>, <lb ed="F1" n="25"/>and <rs type="person" about="[dem.]">DEMETRIUS</rs>.</stage>
+<lb ed="F1" n="24"/><stage type="entrance" about="[ ege. her. lys. dem.]">   Enter <rs type="person" about="[ege.]">EGEUS</rs>, <rs type="person" about="[her.]">HERMIA</rs>, <rs type="person" about="[lys.]">LYSANDER</rs>, <lb ed="F1" n="25"/>and <rs type="person" about="[dem.]">DEMETRIUS</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="26"/></l></sp><sp who="#ege."><speaker>Ege.</speaker><l>Happy be <rs type="person" about="[the.]">Theseus</rs>, our renowned duke!
 
@@ -302,7 +302,7 @@
 <lb ed="G"/><lb ed="F1" n="135"/></l><l>Of something nearly that concerns yourselves.
 
 <lb ed="G"/><lb ed="F1" n="136"/></l></sp><sp who="#ege."><speaker>Ege.</speaker><l>With duty and desire we follow you.
-<lb ed="F1" n="137"/><stage type="exit" about="[ome:involves !( lys. her.)]">[Exeunt all but <rs type="person" about="[lys.]">Lysander</rs> and <rs type="person" about="[her.]">Hermia</rs>.</stage>
+<lb ed="F1" n="137"/><stage type="exit" about="[ !( lys. her.)]">[Exeunt all but <rs type="person" about="[lys.]">Lysander</rs> and <rs type="person" about="[her.]">Hermia</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="138"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>How now, my love! why is your cheek so pale?
 <lb ed="G"/><lb ed="F1" n="139"/></l><l>How chance the roses there do fade so fast?
@@ -369,7 +369,7 @@
 <lb ed="G"/><lb ed="F1" n="189"/></l><l>To-morrow truly will I meet with thee.
 
 <lb ed="G"/><lb ed="F1" n="190"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>Keep promise, love.   Look, here comes <rs type="person" about="[hel.]">Helena</rs>.
-<lb ed="F1" n="191"/><stage type="entrance" about="[ome:involves hel.]">   Enter <rs type="person" about="[hel.]">HELENA</rs>.</stage>
+<lb ed="F1" n="191"/><stage type="entrance" about="[ hel.]">   Enter <rs type="person" about="[hel.]">HELENA</rs>.</stage>
 
 <lb ed="G" n="180"/><lb ed="F1" n="192"/></l></sp><sp who="#her."><speaker>Her.</speaker><l>God speed, fair <rs type="person" about="[hel.]">Helena</rs>! whither away?
 
@@ -430,10 +430,10 @@
 <lb ed="F1" n="237"/>
 
 <lb ed="G"/><lb ed="F1" n="238"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>I will, my <rs type="person" about="[her.]">Hermia</rs>.
-                            <stage type="exit" about="[ome:involves lys.]">[Exit Herm.</stage>
+                            <stage type="exit" about="[ lys.]">[Exit Herm.</stage>
 <lb ed="G"/></l><l><rs type="person" about="[hel.]">Helena</rs>, adieu:
 <lb ed="G"/><lb ed="F1" n="239"/></l><l>As you on him, <rs type="person" about="[dem.]">Demetrius</rs> dote on you!
-                            <stage type="exit" about="[ome:involves lys.]">[Exit.</stage>
+                            <stage type="exit" about="[ lys.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="240"/></l></sp><sp who="#hel."><speaker>Hel.</speaker><l>How happy some o'er other some can be!
 <lb ed="G"/><lb ed="F1" n="241"/></l><l>Through Athens I am thought as fair as she.
@@ -461,11 +461,11 @@
 <lb ed="G"/><lb ed="F1" n="263"/></l><l>If I have thanks, it is a dear expense:
 <lb ed="G" n="250"/><lb ed="F1" n="264"/></l><l>But herein mean I to enrich my pain,
 <lb ed="G"/><lb ed="F1" n="265"/></l><l>To have his sight thither and back again.
-                                    <stage type="exit" about="[ome:involves hel.]">[Exit.</stage></l></sp></div2>
+                                    <stage type="exit" about="[ hel.]">[Exit.</stage></l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[mnd:Athens._QUINCE'S_house.]" type="location">Athens. <rs type="person" about="[quin.]">QUINCE</rs>'S house.</stage>
-<lb ed="F1" n="266"/><stage type="entrance" about="[ome:involves quin. snug. bot. flu. snout. star.]">    Enter <rs type="person" about="[quin.]">QUINCE</rs>, <rs type="person" about="[snug.]">SNUG</rs>, <rs type="person" about="[bot.]">BOTTOM</rs>, <rs type="person" about="[flu.]">FLUTE</rs>, <rs type="person" about="[snout.]">SNOUT</rs> and <rs type="person" about="[star.]">STARVELING</rs>.</stage>
+<lb ed="F1" n="266"/><stage type="entrance" about="[ quin. snug. bot. flu. snout. star.]">    Enter <rs type="person" about="[quin.]">QUINCE</rs>, <rs type="person" about="[snug.]">SNUG</rs>, <rs type="person" about="[bot.]">BOTTOM</rs>, <rs type="person" about="[flu.]">FLUTE</rs>, <rs type="person" about="[snout.]">SNOUT</rs> and <rs type="person" about="[star.]">STARVELING</rs>.</stage>
 <lb ed="F1" n="267"/>
 <lb ed="F1" n="268"/>
 
@@ -626,7 +626,7 @@
 <lb ed="G"/><lb ed="F1" n="370"/></p></sp><sp who="#quin."><speaker>Quin.</speaker><l>At the duke's oak we meet.
 
 <lb ed="G"/><lb ed="F1" n="371"/></l></sp><sp who="#bot."><speaker>Bot.</speaker><l>Enough; hold or cut bow-strings.
-                         <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+                         <stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
      </div1>
@@ -636,7 +636,7 @@
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[mnd:A_wood_near_Athens.]" type="location">A wood near Athens.</stage>
-<lb ed="F1" n="373"/><stage type="entrance" about="[ome:involves puck.]">Enter, from opposite sides, a FAIRY, and <rs type="person" about="[puck.]">PUCK</rs>.</stage>
+<lb ed="F1" n="373"/><stage type="entrance" about="[ puck.]">Enter, from opposite sides, a FAIRY, and <rs type="person" about="[puck.]">PUCK</rs>.</stage>
 <lb ed="F1" n="374"/>
 
 <lb ed="G"/><lb ed="F1" n="375"/><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>How now, spirit! whither wander you?
@@ -704,7 +704,7 @@
 <lb ed="G"/><lb ed="F1" n="429"/></l><l>But, room, fairy! here comes <rs type="person" about="[obe.]">Oberon</rs>.
 
 <lb ed="G"/><lb ed="F1" n="430"/></l></sp><sp who="#fai."><speaker>Fai.</speaker><l>And here my mistress. <lb ed="F1" n="431"/>Would that he were gone!
-<lb ed="F1" n="432"/><stage type="entrance" about="[ome:involves obe. tita.]">Enter, from one side, <rs type="person" about="[obe.]">OBERON</rs>, with his train; from the other, <rs type="person" about="[tita.]">TITANIA</rs>, with hers.</stage>
+<lb ed="F1" n="432"/><stage type="entrance" about="[ obe. tita.]">Enter, from one side, <rs type="person" about="[obe.]">OBERON</rs>, with his train; from the other, <rs type="person" about="[tita.]">TITANIA</rs>, with hers.</stage>
 <lb ed="F1" n="433"/>
 
 <lb ed="G"/><lb ed="F1" n="434"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>Ill met by moonlight, <lb ed="F1" n="435"/>proud <rs type="person" about="[tita.]">Titania</rs>.
@@ -805,7 +805,7 @@
 
 <lb ed="G"/><lb ed="F1" n="520"/></l></sp><sp who="#tita."><speaker>Tita.</speaker><l>Not for thy fairy kingdom. Fairies, away!
 <lb ed="G"/><lb ed="F1" n="521"/></l><l>We shall chide downright, if I longer stay.
-            <stage type="exit" about="[ome:involves tita.]">[Exit <rs type="person" about="[tita.]">Titania</rs> with her train.</stage>
+            <stage type="exit" about="[ tita.]">[Exit <rs type="person" about="[tita.]">Titania</rs> with her train.</stage>
 
 <lb ed="G"/><lb ed="F1" n="522"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>Well, go thy way: thou shalt not from this grove
 <lb ed="G"/><lb ed="F1" n="523"/></l><l>Till I torment thee for this injury.
@@ -841,7 +841,7 @@
 <lb ed="G"/><lb ed="F1" n="551"/></l><l>Ere the leviathan can swim a league.
 
 <lb ed="G"/><lb ed="F1" n="552"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>I'll put a girdle round about the earth
-<lb ed="G"/></l><l>In forty <lb ed="F1" n="553"/>minutes. <stage type="exit" about="[ome:involves puck.]">[Exit.</stage>
+<lb ed="G"/></l><l>In forty <lb ed="F1" n="553"/>minutes. <stage type="exit" about="[ puck.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="554"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>Having once this juice,
 <lb ed="G"/><lb ed="F1" n="555"/></l><l>I'll watch <rs type="person" about="[tita.]">Titania</rs> when she is asleep,
@@ -855,7 +855,7 @@
 <lb ed="G"/><lb ed="F1" n="563"/></l><l>I'll make her render up her page to me.
 <lb ed="G"/><lb ed="F1" n="564"/></l><l>But who comes here? I am invisible;
 <lb ed="G"/><lb ed="F1" n="565"/></l><l>And I will overhear their conference.
-<lb ed="F1" n="566"/><stage type="entrance" about="[ome:involves dem. hel.]">Enter <rs type="person" about="[dem.]">DEMETRIUS</rs>, <rs type="person" about="[hel.]">HELENA</rs> following him.</stage>
+<lb ed="F1" n="566"/><stage type="entrance" about="[ dem. hel.]">Enter <rs type="person" about="[dem.]">DEMETRIUS</rs>, <rs type="person" about="[hel.]">HELENA</rs> following him.</stage>
 
 <lb ed="G"/><lb ed="F1" n="567"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>I love thee not, therefore pursue me not.
 <lb ed="G"/><lb ed="F1" n="568"/></l><l>Where is <rs type="person" about="[lys.]">Lysander</rs> and fair <rs type="person" about="[her.]">Hermia</rs>?
@@ -923,14 +923,14 @@
 <lb ed="G" n="240"/><lb ed="F1" n="619"/></l><l>Your wrongs do set a scandal on my sex:
 <lb ed="G"/><lb ed="F1" n="620"/></l><l>We cannot fight for love, as men may do;
 <lb ed="G"/><lb ed="F1" n="621"/></l><l>We should be woo'd and were not made to woo.
-                     <stage type="exit" about="[ome:involves hel.]">[Exit Dem. </stage>
+                     <stage type="exit" about="[ hel.]">[Exit Dem. </stage>
 <lb ed="G"/><lb ed="F1" n="622"/></l><l>I'll follow thee and make a heaven of hell,
 <lb ed="G"/><lb ed="F1" n="623"/></l><l>To die upon the hand I love so well.
-                     <stage type="exit" about="[ome:involves hel.]">[Exit.</stage>
+                     <stage type="exit" about="[ hel.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="624"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>Fare thee well, nymph: ere he do leave this grove,
 <lb ed="G"/><lb ed="F1" n="625"/></l><l>Thou shalt fly him and he shall seek thy love.
-<stage type="entrance" about="[ome:involves puck.]">   Re-enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
+<stage type="entrance" about="[ puck.]">   Re-enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="626"/></l><l>Hast thou the flower there?   Welcome, wanderer.
 <lb ed="F1" n="627"/>
 
@@ -958,11 +958,11 @@
 <lb ed="G"/><lb ed="F1" n="648"/></l><l>And look thou meet me ere the first cock crow.
 
 <lb ed="G"/><lb ed="F1" n="649"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>Fear not, my lord, you servant shall do so.
-                              <stage about="[ome:involves-all]" type="exit">[Exeunt. </stage></l></sp></div2>
+                              <stage about="[-all]" type="exit">[Exeunt. </stage></l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[mnd:Another_part_of_the_wood.]" type="location">Another part of the wood.</stage>
-<lb ed="F1" n="650"/><stage type="entrance" about="[ome:involves tita.]">  Enter <rs type="person" about="[tita.]">TITANIA</rs>, with her train.</stage>
+<lb ed="F1" n="650"/><stage type="entrance" about="[ tita.]">  Enter <rs type="person" about="[tita.]">TITANIA</rs>, with her train.</stage>
 
 <lb ed="G"/><lb ed="F1" n="651"/><sp who="#tita."><speaker>Tita.</speaker><l>Come, now a roundel and a fairy song;
 <lb ed="G"/><lb ed="F1" n="652"/></l><l>Then, for the third part of a minute, hence;
@@ -992,9 +992,9 @@
 
 <lb ed="G"/><lb ed="F1" n="675"/></l></sp><sp who="#fai."><speaker>Fai.</speaker><l>Hence, away! now all is well:
 <lb ed="G"/><lb ed="F1" n="676"/></l><l>One aloof stand sentinel.
-           <stage type="exit" about="[ome:involves tita.]">[Exeunt Fairies. <rs type="person" about="[tita.]">Titania</rs> sleeps.</stage>
+           <stage type="exit" about="[ tita.]">[Exeunt Fairies. <rs type="person" about="[tita.]">Titania</rs> sleeps.</stage>
 
-<lb ed="F1" n="677"/><stage type="entrance" about="[ome:involves obe. tita.]">Enter <rs type="person" about="[obe.]">OBERON</rs>, and squeezes the flower on <rs type="person" about="[tita.]">TITANIA</rs>'S eyelids.</stage>
+<lb ed="F1" n="677"/><stage type="entrance" about="[ obe. tita.]">Enter <rs type="person" about="[obe.]">OBERON</rs>, and squeezes the flower on <rs type="person" about="[tita.]">TITANIA</rs>'S eyelids.</stage>
 
 <lb ed="G"/><lb ed="F1" n="678"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>   What thou seest when thou dost wake,
 <lb ed="G"/><lb ed="F1" n="679"/></l><l>   Do it for thy true-love take,
@@ -1004,8 +1004,8 @@
 <lb ed="G"/><lb ed="F1" n="683"/></l><l>   In thy eye that shall appear
 <lb ed="G"/><lb ed="F1" n="684"/></l><l>   When thou wakest, it is thy dear:
 <lb ed="G"/><lb ed="F1" n="685"/></l><l>   Wake when some vile thing is near.
-                      <stage type="exit" about="[ome:involves obe.]">[Exit.</stage>
-<lb ed="F1" n="686"/><stage type="entrance" about="[ome:involves lys. her.]"> Enter <rs type="person" about="[lys.]">LYSANDER</rs> and <rs type="person" about="[her.]">HERMIA</rs>. </stage>
+                      <stage type="exit" about="[ obe.]">[Exit.</stage>
+<lb ed="F1" n="686"/><stage type="entrance" about="[ lys. her.]"> Enter <rs type="person" about="[lys.]">LYSANDER</rs> and <rs type="person" about="[her.]">HERMIA</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="687"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>Fair love, you faint with wandering is the wood;
 <lb ed="G"/><lb ed="F1" n="688"/></l><l>And to speak troth, I have forgot our way:
@@ -1046,7 +1046,7 @@
 
 <lb ed="G"/><lb ed="F1" n="717"/></l></sp><sp who="#her."><speaker>Her.</speaker><l>With half that wish the wisher's eyes be press'd!
                          <lb ed="F1" n="718"/> [They sleep. 
-<stage type="entrance" about="[ome:involves puck.]">Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
+<stage type="entrance" about="[ puck.]">Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="719"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>Through the forest have I gone,
 <lb ed="G"/><lb ed="F1" n="720"/></l><l>But Athenian found I none,
@@ -1066,8 +1066,8 @@
 <lb ed="G"/><lb ed="F1" n="734"/></l><l>Sleep his seat on thy eyelid:
 <lb ed="G"/><lb ed="F1" n="735"/></l><l>So awake when I am gone;
 <lb ed="G"/><lb ed="F1" n="736"/></l><l>For I must now to <rs type="person" about="[obe.]">Oberon</rs>.
-                            <stage type="exit" about="[ome:involves puck.]">[Exit.</stage>
-<lb ed="F1" n="737"/><stage type="entrance" about="[ome:involves dem. hel.]">   Enter <rs type="person" about="[dem.]">DEMETRIUS</rs> and <rs type="person" about="[hel.]">HELENA</rs>, running.</stage>
+                            <stage type="exit" about="[ puck.]">[Exit.</stage>
+<lb ed="F1" n="737"/><stage type="entrance" about="[ dem. hel.]">   Enter <rs type="person" about="[dem.]">DEMETRIUS</rs> and <rs type="person" about="[hel.]">HELENA</rs>, running.</stage>
 
 <lb ed="G"/><lb ed="F1" n="738"/></l></sp><sp who="#hel."><speaker>Hel.</speaker><l>Stay, though thou kill me, sweet <rs type="person" about="[dem.]">Demetrius</rs>.
 
@@ -1076,7 +1076,7 @@
 <lb ed="G"/><lb ed="F1" n="740"/></l></sp><sp who="#hel."><speaker>Hel.</speaker><l>O, wilt thou darkling leave me? do not so.
 
 <lb ed="G"/><lb ed="F1" n="741"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>Stay, on thy peril: I alone will go.
-                             <lb ed="F1" n="742"/><stage type="exit" about="[ome:involves dem.]">[Exit.</stage>
+                             <lb ed="F1" n="742"/><stage type="exit" about="[ dem.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="743"/></l></sp><sp who="#hel."><speaker>Hel.</speaker><l>O, I am out of breath in this fond chase!
 <lb ed="G"/><lb ed="F1" n="744"/></l><l>The more my prayer, the lesser is my grace.
@@ -1129,7 +1129,7 @@
 <lb ed="G"/><lb ed="F1" n="787"/></l><l>I thought you lord of more true gentleness.
 <lb ed="G"/><lb ed="F1" n="788"/></l><l>O, that a lady, of one man refused,
 <lb ed="G"/><lb ed="F1" n="789"/></l><l>Should of another therefore be abused!
-                            <stage type="exit" about="[ome:involves hel.]">[Exit.</stage>
+                            <stage type="exit" about="[ hel.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="790"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>She sees not <rs type="person" about="[her.]">Hermia</rs>. <rs type="person" about="[her.]">Hermia</rs>, sleep thou there:
 <lb ed="G"/><lb ed="F1" n="791"/></l><l>And never mayst thou come <rs type="person" about="[lys.]">Lysander</rs> near!
@@ -1140,7 +1140,7 @@
 <lb ed="G"/><lb ed="F1" n="796"/></l><l>So thou, my surfeit and my heresy,
 <lb ed="G"/><lb ed="F1" n="797"/></l><l>Of all be hated, but the most of me!
 <lb ed="G"/><lb ed="F1" n="798"/></l><l>And, all my powers, address your love and might
-<lb ed="G"/><lb ed="F1" n="799"/></l><l>To honor Helen and to be her knight! <stage type="exit" about="[ome:involves lys.]">[Exit.</stage></l></sp>
+<lb ed="G"/><lb ed="F1" n="799"/></l><l>To honor Helen and to be her knight! <stage type="exit" about="[ lys.]">[Exit.</stage></l></sp>
 <sp who="#her."><speaker>Her.</speaker> [Awaking]
 <lb ed="G"/><lb ed="F1" n="800"/><l>Help me, <rs type="person" about="[lys.]">Lysander</rs>, help me! do thy best
 <lb ed="G"/><lb ed="F1" n="801"/></l><l>To pluck this crawling serpent from my breast!
@@ -1154,7 +1154,7 @@
 <lb ed="G"/><lb ed="F1" n="809"/></l><l>Speak, of all loves! I swoon almost with fear.
 <lb ed="G"/><lb ed="F1" n="810"/></l><l>No? then I well perceive you are not nigh:
 <lb ed="G"/><lb ed="F1" n="811"/></l><l>Either death or you I'll find immediately.
-                                     <stage type="exit" about="[ome:involves her.]">[Exit</stage>
+                                     <stage type="exit" about="[ her.]">[Exit</stage>
 </l></sp>
 </div2>
      </div1>
@@ -1164,7 +1164,7 @@
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[mnd:The_wood._Titania_lying_asleep.]" type="location">The wood. <rs type="person" about="[tita.]">Titania</rs> lying asleep.</stage>
-<lb ed="F1" n="813"/><stage type="entrance" about="[ome:involves quin. snug. bot. flu. snout. star.]">   Enter <rs type="person" about="[quin.]">QUINCE</rs>, <rs type="person" about="[snug.]">SNUG</rs>, <rs type="person" about="[bot.]">BOTTOM</rs>, <rs type="person" about="[flu.]">FLUTE</rs>, <rs type="person" about="[snout.]">SNOUT</rs> and <rs type="person" about="[star.]">STARVELING</rs>.</stage>
+<lb ed="F1" n="813"/><stage type="entrance" about="[ quin. snug. bot. flu. snout. star.]">   Enter <rs type="person" about="[quin.]">QUINCE</rs>, <rs type="person" about="[snug.]">SNUG</rs>, <rs type="person" about="[bot.]">BOTTOM</rs>, <rs type="person" about="[flu.]">FLUTE</rs>, <rs type="person" about="[snout.]">SNOUT</rs> and <rs type="person" about="[star.]">STARVELING</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="814"/><sp who="#bot."><speaker>Bot.</speaker><l>Are we all met?
 
@@ -1272,7 +1272,7 @@
 <lb ed="G"/>hearse your parts. <lb ed="F1" n="885"/><rs type="person" about="[pyr.]">Pyramus</rs>, you begin; when
 <lb ed="G"/>you have spoken your speech, <lb ed="F1" n="886"/>enter into that
 <lb ed="G"/>brake: and so every one according to his <lb ed="F1" n="887"/>cue.
-<lb ed="F1" n="888"/><stage type="entrance" about="[ome:involves puck.]"> Enter <rs type="person" about="[puck.]">PUCK</rs> behind.</stage>
+<lb ed="F1" n="888"/><stage type="entrance" about="[ puck.]"> Enter <rs type="person" about="[puck.]">PUCK</rs> behind.</stage>
 
 <lb ed="G"/><lb ed="F1" n="889"/></p></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>What hempen home-spuns have we swaggering <lb ed="F1" n="890"/>here,
 <lb ed="G" n="80"/><lb ed="F1" n="891"/></l><l>So near the cradle of the fairy queen?
@@ -1288,10 +1288,10 @@
 <lb ed="G"/><lb ed="F1" n="897"/></l></sp><sp who="#bot."><speaker>Bot.</speaker><l>---odors savors sweet:
 <lb ed="G"/><lb ed="F1" n="898"/></l><l>So hath thy breath, my dearest Thisby dear.
 <lb ed="G"/><lb ed="F1" n="899"/></l><l>But hark, a voice! stay thou but here awhile,
-<lb ed="G"/><lb ed="F1" n="900"/></l><l>And by and by I will to thee appear.<stage type="exit" about="[ome:involves bot.]">[Exit.</stage>
+<lb ed="G"/><lb ed="F1" n="900"/></l><l>And by and by I will to thee appear.<stage type="exit" about="[ bot.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="901"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>A stranger <rs type="person" about="[pyr.]">Pyramus</rs> than e'er played here.
-                                <stage type="exit" about="[ome:involves puck.]">[Exit. </stage>
+                                <stage type="exit" about="[ puck.]">[Exit. </stage>
 
 <lb ed="G" n="91"/><lb ed="F1" n="902"/></l></sp><sp who="#flu."><speaker>Flu.</speaker><l>Must I speak now?
 
@@ -1312,13 +1312,13 @@
 <lb ed="G"/>is, 'never tire.'
 
 <lb ed="G"/><lb ed="F1" n="915"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><l>O,--As true as truest horse; that yet would never <lb ed="F1" n="916"/>tire.
-<stage type="entrance" about="[ome:involves puck. bot.]">Re-enter <rs type="person" about="[puck.]">PUCK</rs>, and <rs type="person" about="[bot.]">BOTTOM</rs> with an ass's head.</stage>
+<stage type="entrance" about="[ puck. bot.]">Re-enter <rs type="person" about="[puck.]">PUCK</rs>, and <rs type="person" about="[bot.]">BOTTOM</rs> with an ass's head.</stage>
 
 <lb ed="G"/><lb ed="F1" n="917"/></l></sp><sp who="#bot."><speaker>Bot.</speaker><l>If I were fair, Thisby, I were only thine.
 
 <lb ed="G"/><lb ed="F1" n="918"/></l></sp><sp who="#quin."><speaker>Quin.</speaker><p><lb ed="G"/><lb ed="F1" n="919"/></p><l>O monstrous! O strange! we are
 <lb ed="G"/>haunted. Pray, <lb ed="F1" n="920"/>masters! fly, masters! Help!
-<lb ed="F1" n="921"/><stage type="exit" about="[ome:involves quin. snug. flu. snout. star.]">[Exeunt <rs type="person" about="[quin.]">Quince</rs>, <rs type="person" about="[snug.]">Snug</rs>, <rs type="person" about="[flu.]">Flute</rs>, <rs type="person" about="[snout.]">Snout</rs>, and <rs type="person" about="[star.]">Starveling</rs>.</stage>
+<lb ed="F1" n="921"/><stage type="exit" about="[ quin. snug. flu. snout. star.]">[Exeunt <rs type="person" about="[quin.]">Quince</rs>, <rs type="person" about="[snug.]">Snug</rs>, <rs type="person" about="[flu.]">Flute</rs>, <rs type="person" about="[snout.]">Snout</rs>, and <rs type="person" about="[star.]">Starveling</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="922"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>I'll follow you, I'll lead you about a round,
 <lb ed="G" n="110"/><lb ed="F1" n="923"/></l><l>Through bog, through bush, through brake, through brier:
@@ -1326,22 +1326,22 @@
 <lb ed="G"/><lb ed="F1" n="925"/></l><l>A hog, a headless bear, sometime a fire;
 <lb ed="G"/><lb ed="F1" n="926"/></l><l>And neigh, and bark, and grunt, and roar, and burn,
 <lb ed="G"/><lb ed="F1" n="927"/></l><l>Like horse, hound, hog, bear, fire, at every turn.
-                                     <stage type="exit" about="[ome:involves puck.]">[Exit.</stage>
+                                     <stage type="exit" about="[ puck.]">[Exit.</stage>
 <lb ed="F1" n="928"/>
 
 <lb ed="G"/><lb ed="F1" n="929"/></l></sp><sp who="#bot."><speaker>Bot.</speaker><p>Why do they run away? this is a
 <lb ed="G"/>knavery of <lb ed="F1" n="930"/>them to make me afeard.
-<stage type="entrance" about="[ome:involves snout.]">  Re-enter <rs type="person" about="[snout.]">SNOUT</rs>.</stage>
+<stage type="entrance" about="[ snout.]">  Re-enter <rs type="person" about="[snout.]">SNOUT</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="931"/></p></sp><sp who="#snout."><speaker><rs type="person" about="[snout.]">Snout</rs>.</speaker><p>O <rs type="person" about="[bot.]">Bottom</rs>, thou art changed! what
 <lb ed="G"/>do I see on <lb ed="F1" n="932"/>thee?
 
 <lb ed="G"/><lb ed="F1" n="933"/></p></sp><sp who="#bot."><speaker>Bot.</speaker><p>What do you see? you see an ass-
-<lb ed="G"/>head of your <lb ed="F1" n="934"/>own, do you? <stage type="exit" about="[ome:involves snout.]">[Exit <rs type="person" about="[snout.]">Snout</rs>.</stage>
-<lb ed="F1" n="935"/><stage type="entrance" about="[ome:involves quin.]">   Re-enter <rs type="person" about="[quin.]">QUINCE</rs>.</stage>
+<lb ed="G"/>head of your <lb ed="F1" n="934"/>own, do you? <stage type="exit" about="[ snout.]">[Exit <rs type="person" about="[snout.]">Snout</rs>.</stage>
+<lb ed="F1" n="935"/><stage type="entrance" about="[ quin.]">   Re-enter <rs type="person" about="[quin.]">QUINCE</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="936"/></p></sp><sp who="#quin."><speaker>Quin.</speaker><p>Bless thee, <rs type="person" about="[bot.]">Bottom</rs>! bless thee! thou
-<lb ed="G"/>art <lb ed="F1" n="937"/>translated.            <stage type="exit" about="[ome:involves quin.]">[Exit.</stage>
+<lb ed="G"/>art <lb ed="F1" n="937"/>translated.            <stage type="exit" about="[ quin.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="938"/></p></sp><sp who="#bot."><speaker>Bot.</speaker><p>I see their knavery: this is to make
 <lb ed="G"/>an ass of me; <lb ed="F1" n="939"/>to fright me, if they could. But
@@ -1394,7 +1394,7 @@
 <lb ed="G"/><lb ed="F1" n="978"/></l><l>And I will purge thy mortal grossness so
 <lb ed="G"/><lb ed="F1" n="979"/></l><l>That thou shalt like an airy spirit go.
 <lb ed="G"/></l><l><rs type="person" about="[peas.]">Peaseblossom</rs>! <rs type="person" about="[cob.]">Cobweb</rs>! <rs type="person" about="[moth.]">Moth</rs>! and <rs type="person" about="[mus.]">Mustardseed</rs>!
-<lb ed="F1" n="980"/><stage type="entrance" about="[ome:involves peas. cob. moth. mus.]">Enter <rs type="person" about="[peas.]">PEASEBLOSSOM</rs>, <rs type="person" about="[cob.]">COBWEB</rs>, <rs type="person" about="[moth.]">MOTH</rs>, and <rs type="person" about="[mus.]">MUSTARDSEED</rs>.</stage>
+<lb ed="F1" n="980"/><stage type="entrance" about="[ peas. cob. moth. mus.]">Enter <rs type="person" about="[peas.]">PEASEBLOSSOM</rs>, <rs type="person" about="[cob.]">COBWEB</rs>, <rs type="person" about="[moth.]">MOTH</rs>, and <rs type="person" about="[mus.]">MUSTARDSEED</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="981"/></l></sp><sp who="#peas."><speaker>Peas.</speaker><l>Ready.
 
@@ -1460,17 +1460,17 @@
 <lb ed="G"/><lb ed="F1" n="1018"/></l><l>And when she weeps, weeps every little flower,
 <lb ed="G"/><lb ed="F1" n="1019"/></l><l>Lamenting some enforced chastity.
 <lb ed="G"/><lb ed="F1" n="1020"/></l><l>Tie up my love's tongue, bring him silently.
-                                 <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+                                 <stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[mnd:Another_part_of_the_wood.]" type="location">Another part of the wood.</stage>
-<lb ed="F1" n="1021"/><stage type="entrance" about="[ome:involves obe.]">  Enter <rs type="person" about="[obe.]">OBERON</rs>.</stage>
+<lb ed="F1" n="1021"/><stage type="entrance" about="[ obe.]">  Enter <rs type="person" about="[obe.]">OBERON</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1022"/><sp who="#obe."><speaker>Obe.</speaker><l>I wonder if <rs type="person" about="[tita.]">Titania</rs> be awaked;
 <lb ed="G"/><lb ed="F1" n="1023"/></l><l>Then, what it was that next came in her eye,
 <lb ed="G"/><lb ed="F1" n="1024"/></l><l>Which she must dote on in extremity.
-<lb ed="F1" n="1025"/><stage type="entrance" about="[ome:involves puck.]">  Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
+<lb ed="F1" n="1025"/><stage type="entrance" about="[ puck.]">  Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="1026"/></l><l>Here comes my messenger.
 <lb ed="G"/></l><l>How now, mad spirit!
 <lb ed="G"/><lb ed="F1" n="1027"/></l><l>What night-rule now about this haunted grove ?
@@ -1512,7 +1512,7 @@
 <lb ed="G"/><lb ed="F1" n="1060"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>I took him sleeping,--that is finish'd too,--
 <lb ed="G"/><lb ed="F1" n="1061"/></l><l>And the Athenian woman by his side:
 <lb ed="G" n="40"/><lb ed="F1" n="1062"/></l><l>That, when he waked, of force she must be eyed.
-<lb ed="F1" n="1063"/><stage type="entrance" about="[ome:involves her. dem.]"> Enter <rs type="person" about="[her.]">HERMIA</rs> and <rs type="person" about="[dem.]">DEMETRIUS</rs>. </stage>
+<lb ed="F1" n="1063"/><stage type="entrance" about="[ her. dem.]"> Enter <rs type="person" about="[her.]">HERMIA</rs> and <rs type="person" about="[dem.]">DEMETRIUS</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1064"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>Stand close: this is the same Athenian.
 
@@ -1566,7 +1566,7 @@
 <lb ed="G"/><lb ed="F1" n="1102"/></l></sp><sp who="#her."><speaker>Her.</speaker><l>A privilege never to see me more.
 <lb ed="G" n="80"/><lb ed="F1" n="1103"/></l><l>And from thy hated presence part I so:
 <lb ed="G"/><lb ed="F1" n="1104"/></l><l>See me no more, whether he be dead or no.
-                                 <stage type="exit" about="[ome:involves her.]">[Exit.</stage>
+                                 <stage type="exit" about="[ her.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1105"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>There is no following her in this fierce vein:
 <lb ed="G"/><lb ed="F1" n="1106"/></l><l>Here therefore for a while I will remain.
@@ -1593,7 +1593,7 @@
 
 <lb ed="G" n="100"/><lb ed="F1" n="1123"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>I go, I go; look how I go,
 <lb ed="G"/><lb ed="F1" n="1124"/></l><l>Swifter than arrow from the Tartar's bow.
-                                    <stage type="exit" about="[ome:involves puck.]">[Exit.</stage>
+                                    <stage type="exit" about="[ puck.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1125"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>     Flower of this purple dye,
@@ -1604,7 +1604,7 @@
 <lb ed="G"/><lb ed="F1" n="1130"/></l><l>     As the Venus of the sky.
 <lb ed="G"/><lb ed="F1" n="1131"/></l><l>     When thou wakest, if she be by,
 <lb ed="G"/><lb ed="F1" n="1132"/></l><l>     Beg of her for remedy.
-<lb ed="F1" n="1133"/><stage type="entrance" about="[ome:involves puck.]">  Re-enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
+<lb ed="F1" n="1133"/><stage type="entrance" about="[ puck.]">  Re-enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1134"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>     Captain of our fairy band,
 <lb ed="G"/><lb ed="F1" n="1135"/></l><l>     <rs type="person" about="[hel.]">Helena</rs> is here at hand;
@@ -1620,7 +1620,7 @@
 <lb ed="G"/><lb ed="F1" n="1143"/></l><l>     That must needs be sport alone;
 <lb ed="G"/><lb ed="F1" n="1144"/></l><l>     And those things do best please me
 <lb ed="G" n="121"/><lb ed="F1" n="1145"/></l><l>     That befall preposterously.
-<lb ed="F1" n="1146"/><stage type="entrance" about="[ome:involves lys. hel.]">Enter <rs type="person" about="[lys.]">Lysander</rs> and <rs type="person" about="[hel.]">Helena</rs>.</stage>
+<lb ed="F1" n="1146"/><stage type="entrance" about="[ lys. hel.]">Enter <rs type="person" about="[lys.]">Lysander</rs> and <rs type="person" about="[hel.]">Helena</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1147"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>Why should you think that I should woo in scorn?
 <lb ed="G"/><lb ed="F1" n="1148"/></l><l>Scorn and derision never come in tears:
@@ -1689,7 +1689,7 @@
 <lb ed="G"/><lb ed="F1" n="1200"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>Disparage not the faith thou dost not know,
 <lb ed="G"/><lb ed="F1" n="1201"/></l><l>Lest, to thy peril, thou aby it dear.
 <lb ed="G"/><lb ed="F1" n="1202"/></l><l>Look, where thy love comes; yonder is thy dear.
-<lb ed="F1" n="1203"/><stage type="entrance" about="[ome:involves her.]">   Re-enter <rs type="person" about="[her.]">HERMIA</rs>.</stage>
+<lb ed="F1" n="1203"/><stage type="entrance" about="[ her.]">   Re-enter <rs type="person" about="[her.]">HERMIA</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1204"/></l></sp><sp who="#her."><speaker>Her.</speaker><l>Dark night, that from the eye his function takes,
 <lb ed="G"/><lb ed="F1" n="1205"/></l><l>The ear more quick of apprehension makes;
@@ -1913,7 +1913,7 @@
 <lb ed="G"/><lb ed="F1" n="1376"/></l><l>Of thine or mine, is most in <rs type="person" about="[hel.]">Helena</rs>.
 
 <lb ed="G"/><lb ed="F1" n="1377"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>Follow! nay, I'll go with thee, cheek by <lb ed="F1" n="1378"/>jole.
-<stage type="exit" about="[ome:involves lys. dem.]">[Exeunt <rs type="person" about="[lys.]">Lysander</rs> and <rs type="person" about="[dem.]">Demetrius</rs>.</stage>
+<stage type="exit" about="[ lys. dem.]">[Exeunt <rs type="person" about="[lys.]">Lysander</rs> and <rs type="person" about="[dem.]">Demetrius</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1379"/></l></sp><sp who="#her."><speaker>Her.</speaker><l>You, mistress, all this coil is 'long of you:
 <lb ed="G"/><lb ed="F1" n="1380"/></l><l>Nay, go not back.
@@ -1921,11 +1921,11 @@
 <lb ed="G" n="340"/><lb ed="F1" n="1381"/></l></sp><sp who="#hel."><speaker>Hel.</speaker><l>I will not trust you, I,
 <lb ed="G"/><lb ed="F1" n="1382"/></l><l>Nor longer stay in your curst company.
 <lb ed="G"/><lb ed="F1" n="1383"/></l><l>Your hands than mine are quicker for a fray,
-<lb ed="G"/><lb ed="F1" n="1384"/></l><l>My legs are longer though, to run away.<stage type="exit" about="[ome:involves hel.]">[Exit.</stage>
+<lb ed="G"/><lb ed="F1" n="1384"/></l><l>My legs are longer though, to run away.<stage type="exit" about="[ hel.]">[Exit.</stage>
 <lb ed="F1" n="1385"/>
 
 <lb ed="G"/></l></sp><sp who="#her."><speaker>Her.</speaker><l>I am amazed, and know not what to say.
-                         <stage type="exit" about="[ome:involves her.]">[Exit. </stage>
+                         <stage type="exit" about="[ her.]">[Exit. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1386"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>This is thy negligence: still thou mistakest,
 <lb ed="G"/><lb ed="F1" n="1387"/></l><l>Or else committ'st thy knaveries wilfully.
@@ -1982,7 +1982,7 @@
 <lb ed="G"/><lb ed="F1" n="1434"/></l><l>Turns into yellow gold his salt green streams.
 <lb ed="G"/><lb ed="F1" n="1435"/></l><l>But, notwithstanding, haste; make no delay:
 <lb ed="G"/><lb ed="F1" n="1436"/></l><l>We may effect this business yet ere day.
-                                <stage type="exit" about="[ome:involves obe.]">[Exit.</stage>
+                                <stage type="exit" about="[ obe.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1437"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>Up and down, up and down,
@@ -1990,7 +1990,7 @@
      </l><l>I am fear'd in field and town:
      <lb ed="G"/><lb ed="F1" n="1439"/></l><l>Goblin, lead them up and down.
 <lb ed="G" n="400"/></l><l>Here comes one.
-<lb ed="F1" n="1440"/><stage type="entrance" about="[ome:involves lys.]"> Re-enter <rs type="person" about="[lys.]">LYSANDER</rs>.</stage>
+<lb ed="F1" n="1440"/><stage type="entrance" about="[ lys.]"> Re-enter <rs type="person" about="[lys.]">LYSANDER</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1441"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>Where art thou, proud <rs type="person" about="[dem.]">Demetrius</rs>? <lb ed="F1" n="1442"/>speak thou now.
 
@@ -2000,8 +2000,8 @@
 
 <lb ed="G"/><lb ed="F1" n="1445"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>Follow me, then,
 <lb ed="G"/></l><l>To plainer ground.
-<stage type="exit" about="[ome:involves lys.]">[Exit <rs type="person" about="[lys.]">Lysander</rs>, as following the voice.</stage>
-<lb ed="F1" n="1446"/><stage type="entrance" about="[ome:involves dem.]">             Re-enter <rs type="person" about="[dem.]">DEMETRIUS</rs>.</stage>
+<stage type="exit" about="[ lys.]">[Exit <rs type="person" about="[lys.]">Lysander</rs>, as following the voice.</stage>
+<lb ed="F1" n="1446"/><stage type="entrance" about="[ dem.]">             Re-enter <rs type="person" about="[dem.]">DEMETRIUS</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1447"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l><rs type="person" about="[lys.]">Lysander</rs>! speak again:
 <lb ed="G"/><lb ed="F1" n="1448"/></l><l>Thou runaway, thou coward, art thou fled?
@@ -2016,8 +2016,8 @@
 <lb ed="G"/><lb ed="F1" n="1455"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>Yea, art thou there?
 
 <lb ed="G"/><lb ed="F1" n="1456"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>Follow my voice; we'll try no manhood here.
-                          <stage about="[ome:involves-all]" type="exit">[Exeunt. </stage>
-<stage type="entrance" about="[ome:involves lys.]">   Re-enter <rs type="person" about="[lys.]">LYSANDER</rs>.</stage>
+                          <stage about="[-all]" type="exit">[Exeunt. </stage>
+<stage type="entrance" about="[ lys.]">   Re-enter <rs type="person" about="[lys.]">LYSANDER</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1457"/></l></sp><sp who="#lys."><speaker>Lys.</speaker><l>He goes before me and still dares me on:
 <lb ed="G"/><lb ed="F1" n="1458"/></l><l>When I come where he calls, then he is gone.
@@ -2028,7 +2028,7 @@
 <lb ed="G"/><lb ed="F1" n="1463"/></l><l>For if but once thou show me thy grey light,
 <lb ed="G" n="420"/><lb ed="F1" n="1464"/></l><l>I'll find <rs type="person" about="[dem.]">Demetrius</rs> and revenge this spite.
                                  [Sleeps.
-<lb ed="F1" n="1465"/><stage type="entrance" about="[ome:involves puck. dem.]">Re-enter <rs type="person" about="[puck.]">PUCK</rs> and <rs type="person" about="[dem.]">DEMETRIUS</rs>. </stage>
+<lb ed="F1" n="1465"/><stage type="entrance" about="[ puck. dem.]">Re-enter <rs type="person" about="[puck.]">PUCK</rs> and <rs type="person" about="[dem.]">DEMETRIUS</rs>. </stage>
 
 <lb ed="G" n="421"/><lb ed="F1" n="1466"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>Ho, ho, ho! Coward, why comest thou not?
 
@@ -2045,7 +2045,7 @@
 <lb ed="G"/><lb ed="F1" n="1476"/></l><l>To measure out my length on this cold bed.
 <lb ed="G" n="430"/><lb ed="F1" n="1477"/></l><l>By day's approach look to be visited.
                            [Lies down and sleeps.
-<lb ed="F1" n="1478"/><stage type="entrance" about="[ome:involves hel.]">  Re-enter <rs type="person" about="[hel.]">HELENA</rs>.</stage>
+<lb ed="F1" n="1478"/><stage type="entrance" about="[ hel.]">  Re-enter <rs type="person" about="[hel.]">HELENA</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1479"/></l></sp><sp who="#hel."><speaker>Hel.</speaker><l>O weary night, O long and tedious night,
 <lb ed="G"/><lb ed="F1" n="1480"/></l><l>Abate thy hours! Shine comforts from the east,
@@ -2061,7 +2061,7 @@
 <lb ed="G" n="440"/><lb ed="F1" n="1488"/></l><l>Cupid is a knavish lad,
 <lb ed="F1" n="1489"/>
 <lb ed="G"/><lb ed="F1" n="1490"/></l><l>Thus to make poor females mad.
-<stage type="entrance" about="[ome:involves her.]">  Re-enter <rs type="person" about="[her.]">HERMIA</rs>.</stage>
+<stage type="entrance" about="[ her.]">  Re-enter <rs type="person" about="[her.]">HERMIA</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1491"/></l></sp><sp who="#her."><speaker>Her.</speaker><l>Never so weary, never so in woe,
 <lb ed="G"/><lb ed="F1" n="1492"/></l><l>Bedabbled with the dew and torn with briers,
@@ -2089,7 +2089,7 @@
      <lb ed="G"/></l><l>Nought shall go ill;
 <lb ed="G"/><lb ed="F1" n="1505"/></l><l>The man shall have his mare again, and all shall be <lb ed="F1" n="1506"/>well.
 <lb ed="F1" n="1507"/>
-                                  <stage type="exit" about="[ome:involves puck.]">[Exit. </stage>
+                                  <stage type="exit" about="[ puck.]">[Exit. </stage>
 </l></sp>
 </div2>
      </div1>
@@ -2099,7 +2099,7 @@
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[mnd:The_same._LYSANDER,_DEMETRIUS._HELENA,_and_HERMIA_lying_asleep.]" type="location">The same. <rs type="person" about="[lys.]">LYSANDER</rs>, <rs type="person" about="[dem.]">DEMETRIUS</rs>. <rs type="person" about="[hel.]">HELENA</rs>, and <rs type="person" about="[her.]">HERMIA</rs> lying asleep.</stage>
-<lb ed="F1" n="1509"/><stage type="entrance" about="[ome:involves tita. bot. peas. cob. moth. mus. obe.]">Enter <rs type="person" about="[tita.]">TITANIA</rs> and <rs type="person" about="[bot.]">BOTTOM</rs>; <rs type="person" about="[peas.]">PEASEBLOSSOM</rs>, <rs type="person" about="[cob.]">COBWEB</rs>, <rs type="person" about="[moth.]">MOTH</rs>, <rs type="person" about="[mus.]">MUSTARDSEED</rs>, and other Fairies attending; <lb ed="F1" n="1510"/><rs type="person" about="[obe.]">OBERON</rs> behind unseen. </stage>
+<lb ed="F1" n="1509"/><stage type="entrance" about="[ tita. bot. peas. cob. moth. mus. obe.]">Enter <rs type="person" about="[tita.]">TITANIA</rs> and <rs type="person" about="[bot.]">BOTTOM</rs>; <rs type="person" about="[peas.]">PEASEBLOSSOM</rs>, <rs type="person" about="[cob.]">COBWEB</rs>, <rs type="person" about="[moth.]">MOTH</rs>, <rs type="person" about="[mus.]">MUSTARDSEED</rs>, and other Fairies attending; <lb ed="F1" n="1510"/><rs type="person" about="[obe.]">OBERON</rs> behind unseen. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1511"/><sp who="#tita."><speaker>Tita.</speaker><l>Come, sit thee down upon this flowery bed,
 <lb ed="G"/><lb ed="F1" n="1512"/></l><l>While I thy amiable cheeks do coy,
@@ -2163,13 +2163,13 @@
 
 <lb ed="G"/><lb ed="F1" n="1553"/></p></sp><sp who="#tita."><speaker>Tita.</speaker><l>Sleep thou, and I will wind thee in my arms.
 <lb ed="G"/><lb ed="F1" n="1554"/></l><l>Fairies, be gone, and be all ways away.
-                       <stage about="[ome:involves-all]" type="exit">[Exeunt fairies.</stage>
+                       <stage about="[-all]" type="exit">[Exeunt fairies.</stage>
 <lb ed="G"/><lb ed="F1" n="1555"/></l><l>So doth the woodbine the sweet honeysuckle
 <lb ed="G"/><lb ed="F1" n="1556"/></l><l>Gentle entwist; the female ivy so
 <lb ed="G"/><lb ed="F1" n="1557"/></l><l>Enrings the barky fingers of the elm.
 <lb ed="G" n="50"/><lb ed="F1" n="1558"/></l><l>O, how I love thee! how I dote on thee.
                                 [They sleep.
-<lb ed="F1" n="1559"/><stage type="entrance" about="[ome:involves puck.]">  Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage></l></sp>
+<lb ed="F1" n="1559"/><stage type="entrance" about="[ puck.]">  Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage></l></sp>
 <sp who="#obe."><speaker>Obe.</speaker> [Advancing]
 <lb ed="G"/><lb ed="F1" n="1560"/><l>Welcome, good Robin. <lb ed="F1" n="1561"/>See'st thou this sweet sight?
 <lb ed="G"/><lb ed="F1" n="1562"/></l><l>Her dotage now I do begin to pity:
@@ -2240,9 +2240,9 @@
      <lb ed="G"/><lb ed="F1" n="1618"/></l><l>Tell me how it came this night
      <lb ed="G"/><lb ed="F1" n="1619"/></l><l>That I sleeping here was found
     <lb ed="F1" n="1620"/><lb ed="G"/><lb ed="F1" n="1621"/></l><l>With these mortals on the ground.
-                                <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+                                <stage about="[-all]" type="exit">[Exeunt.</stage>
                    <lb ed="F1" n="1622"/> [Horns winded within.
-<lb ed="F1" n="1623"/><stage type="entrance" about="[ome:involves the. hip. ege.]">Enter <rs type="person" about="[the.]">THESEUS</rs>, <rs type="person" about="[hip.]">HIPPOLYTA</rs>, <rs type="person" about="[ege.]">EGEUS</rs>, and train.</stage>
+<lb ed="F1" n="1623"/><stage type="entrance" about="[ the. hip. ege.]">Enter <rs type="person" about="[the.]">THESEUS</rs>, <rs type="person" about="[hip.]">HIPPOLYTA</rs>, <rs type="person" about="[ege.]">EGEUS</rs>, and train.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1624"/></l></sp><sp who="#the."><speaker>The.</speaker><l>Go, one of you, find out the forester;
 <lb ed="G"/><lb ed="F1" n="1625"/></l><l>For now our observation is perform'd;
@@ -2250,7 +2250,7 @@
 <lb ed="G"/><lb ed="F1" n="1627"/></l><l>My love shall hear the music of my hounds.
 <lb ed="G"/><lb ed="F1" n="1628"/></l><l>Uncouple in the western valley; let them go:
 <lb ed="G"/><lb ed="F1" n="1629"/></l><l>Dispatch, I say, and find the forester.
-                          <stage type="exit" about="[ome:involves the.]">[Exit an Attendant.</stage>
+                          <stage type="exit" about="[ the.]">[Exit an Attendant.</stage>
 <lb ed="G"/><lb ed="F1" n="1630"/></l><l>We will, fair queen, up to the mountain's top,
 <lb ed="G"/><lb ed="F1" n="1631"/></l><l>And mark the musical confusion
 <lb ed="G"/><lb ed="F1" n="1632"/></l><l>Of hounds and echo in conjunction.
@@ -2343,7 +2343,7 @@
 <lb ed="G"/><lb ed="F1" n="1709"/></l><l>Away with us to Athens; three and three,
 <lb ed="G"/><lb ed="F1" n="1710"/></l><l>We'll hold a feast in great solemnity.
 <lb ed="G"/><lb ed="F1" n="1711"/></l><l>Come, <rs type="person" about="[hip.]">Hippolyta</rs>.
-<stage about="[ome:involves-all]" type="exit">[Exeunt The., Hip., Ege., and train.</stage>
+<stage about="[-all]" type="exit">[Exeunt The., Hip., Ege., and train.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1712"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>These things seem small and undistinguishable,
 <lb ed="G"/><lb ed="F1" n="1713"/></l><l>Like far-off mountains turned into clouds.
@@ -2368,7 +2368,7 @@
 
 <lb ed="G"/><lb ed="F1" n="1725"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><l>Why, then, we are awake; let's follow him;
 <lb ed="G"/></l><l>And <lb ed="F1" n="1726"/>by the way let us recount our dreams.
-                               <lb ed="F1" n="1727"/> <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+                               <lb ed="F1" n="1727"/> <stage about="[-all]" type="exit">[Exeunt.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1728"/></l></sp><sp who="#bot."><speaker>Bot.</speaker> [Awaking]<p>When my cue comes, call
 <lb ed="G"/>me, and I will answer: <lb ed="F1" n="1729"/>my next is, 'Most fair
@@ -2392,12 +2392,12 @@
 <lb ed="G"/>I will <lb ed="F1" n="1743"/>sing it in the latter end of a play, be-
 <lb ed="G"/>fore the duke: peradventure, <lb ed="F1" n="1744"/>to make it the
 <lb ed="G"/>more gracious, I shall sing it <lb ed="F1" n="1745"/>at her death.
-                                 <stage type="exit" about="[ome:involves bot.]">[Exit.</stage>
+                                 <stage type="exit" about="[ bot.]">[Exit.</stage>
 </p></sp></div2>
 <div2 type="scene" n="2" org="uniform" sample="complete">
 <head>SCENE II</head>
 <stage about="[mnd:Athens._QUINCE'S_house.]" type="location">Athens. <rs type="person" about="[quin.]">QUINCE</rs>'S house.</stage>
-<lb ed="F1" n="1746"/><stage type="entrance" about="[ome:involves quin. flu. snout. star.]">    Enter <rs type="person" about="[quin.]">QUINCE</rs>, <rs type="person" about="[flu.]">FLUTE</rs>, <rs type="person" about="[snout.]">SNOUT</rs>, and <rs type="person" about="[star.]">STARVELING</rs>.</stage>
+<lb ed="F1" n="1746"/><stage type="entrance" about="[ quin. flu. snout. star.]">    Enter <rs type="person" about="[quin.]">QUINCE</rs>, <rs type="person" about="[flu.]">FLUTE</rs>, <rs type="person" about="[snout.]">SNOUT</rs>, and <rs type="person" about="[star.]">STARVELING</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1747"/><sp who="#quin."><speaker>Quin.</speaker><p>Have you sent to <rs type="person" about="[bot.]">Bottom</rs>'s house?
 <lb ed="G"/>is he come <lb ed="F1" n="1748"/>home yet?
@@ -2420,7 +2420,7 @@
 
 <lb ed="G"/><lb ed="F1" n="1759"/></p></sp><sp who="#flu."><speaker>Flu.</speaker><p>You must say 'paragon:' a paramour
 <lb ed="G"/>is, God <lb ed="F1" n="1760"/>bless us, a thing of naught.
-<lb ed="F1" n="1761"/><stage type="entrance" about="[ome:involves snug.]">  Enter <rs type="person" about="[snug.]">SNUG</rs>.</stage>
+<lb ed="F1" n="1761"/><stage type="entrance" about="[ snug.]">  Enter <rs type="person" about="[snug.]">SNUG</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1762"/></p></sp><sp who="#snug."><speaker><rs type="person" about="[snug.]">Snug</rs>.</speaker><p>Masters, the duke is coming from
 <lb ed="G"/>the temple, <lb ed="F1" n="1763"/>and there is two or three lords
@@ -2434,7 +2434,7 @@
 <lb ed="G"/>playing <rs type="person" about="[pyr.]">Pyramus</rs>, I'll be hanged; he would
 <lb ed="G"/>have <lb ed="F1" n="1770"/>deserved it: sixpence a day in <rs type="person" about="[pyr.]">Pyramus</rs>,
 <lb ed="G"/>or nothing.
-<lb ed="F1" n="1771"/><stage type="entrance" about="[ome:involves bot.]">  Enter <rs type="person" about="[bot.]">BOTTOM</rs>.</stage>
+<lb ed="F1" n="1771"/><stage type="entrance" about="[ bot.]">  Enter <rs type="person" about="[bot.]">BOTTOM</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1772"/></p></sp><sp who="#bot."><speaker>Bot.</speaker><p>Where are these lads? where are
 <lb ed="G"/>these hearts?
@@ -2462,7 +2462,7 @@
 <lb ed="G"/>nor garlic, for we are to utter sweet <lb ed="F1" n="1788"/>breath;
 <lb ed="G"/>and I do not doubt but to hear them say, it is
 <lb ed="G"/>a <lb ed="F1" n="1789"/>sweet comedy. No more words: away! go, away!
-                               <lb ed="F1" n="1790"/><stage about="[ome:involves-all]" type="exit">[Exeunt.</stage></p></sp>
+                               <lb ed="F1" n="1790"/><stage about="[-all]" type="exit">[Exeunt.</stage></p></sp>
 </div2>
      </div1>
 
@@ -2471,7 +2471,7 @@
 <div2 type="scene" n="1" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[mnd:Athens._The_palace_of_THESEUS.]" type="location">Athens. The palace of <rs type="person" about="[the.]">THESEUS</rs>.</stage>
-<lb ed="F1" n="1792"/><stage type="entrance" about="[ome:involves the. hip. phil.]">Enter <rs type="person" about="[the.]">THESEUS</rs>, <rs type="person" about="[hip.]">HIPPOLYTA</rs>, <rs type="person" about="[phil.]">PHILOSTRATE</rs>, Lords, and Attendants.</stage>
+<lb ed="F1" n="1792"/><stage type="entrance" about="[ the. hip. phil.]">Enter <rs type="person" about="[the.]">THESEUS</rs>, <rs type="person" about="[hip.]">HIPPOLYTA</rs>, <rs type="person" about="[phil.]">PHILOSTRATE</rs>, Lords, and Attendants.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1793"/><sp who="#hip."><speaker>Hip.</speaker><l>'Tis strange, my <rs type="person" about="[the.]">Theseus</rs>, that these lovers speak of.
 
@@ -2506,7 +2506,7 @@
 <lb ed="F1" n="1820"/>
 
 <lb ed="G"/><lb ed="F1" n="1821"/></l></sp><sp who="#the."><speaker>The.</speaker><l>Here come the lovers, full of joy and mirth.
-<stage type="entrance" about="[ome:involves lys. dem. her. hel.]">Enter <rs type="person" about="[lys.]">LYSANDER</rs>, <rs type="person" about="[dem.]">DEMETRIUS</rs>, <rs type="person" about="[her.]">HERMIA</rs>, and <rs type="person" about="[hel.]">HELENA</rs>.</stage>
+<stage type="entrance" about="[ lys. dem. her. hel.]">Enter <rs type="person" about="[lys.]">LYSANDER</rs>, <rs type="person" about="[dem.]">DEMETRIUS</rs>, <rs type="person" about="[her.]">HERMIA</rs>, and <rs type="person" about="[hel.]">HELENA</rs>.</stage>
 <lb ed="G"/><lb ed="F1" n="1822"/></l><l>Joy, gentle friends! joy and fresh days <lb ed="F1" n="1823"/>of love
 <lb ed="G"/></l><l>Accompany your hearts!
 
@@ -2580,7 +2580,7 @@
 <lb ed="G"/></l><l>For never anything <lb ed="F1" n="1880"/>can be amiss,
 <lb ed="G"/></l><l>When simpleness and duty tender it.
 <lb ed="G"/><lb ed="F1" n="1881"/></l><l>Go, bring them in: and take your places, ladies.
-                            <stage type="exit" about="[ome:involves phil.]">[Exit <rs type="person" about="[phil.]">Philostrate</rs>. </stage>
+                            <stage type="exit" about="[ phil.]">[Exit <rs type="person" about="[phil.]">Philostrate</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1882"/></l></sp><sp who="#hip."><speaker>Hip.</speaker><l>I love not to see wretchedness o'ercharged
 <lb ed="G"/><lb ed="F1" n="1883"/></l><l>And duty in his service perishing.
@@ -2606,13 +2606,13 @@
 <lb ed="G"/><lb ed="F1" n="1900"/></l><l>Of saucy and audacious eloquence.
 <lb ed="G"/><lb ed="F1" n="1901"/></l><l>Love, therefore, and tongue-tied simplicity
 <lb ed="G"/><lb ed="F1" n="1902"/></l><l>In least speak most, to my capacity.
-<stage type="entrance" about="[ome:involves phil.]">   Re-enter <rs type="person" about="[phil.]">PHILOSTRATE</rs>.</stage>
+<stage type="entrance" about="[ phil.]">   Re-enter <rs type="person" about="[phil.]">PHILOSTRATE</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1903"/></l></sp><sp who="#phil."><speaker>Phil.</speaker><l>So please your grace, the <rs type="person" about="[pro.]">Prologue</rs> is address'd.
 
 <lb ed="G"/><lb ed="F1" n="1904"/></l></sp><sp who="#the."><speaker>The.</speaker><l> Let him approach.
                           [Flourish of trumpets. 
-<lb ed="F1" n="1905"/><stage type="entrance" about="[ome:involves quin. pro.]">Enter <rs type="person" about="[quin.]">QUINCE</rs> for the <rs type="person" about="[pro.]">Prologue</rs>. </stage>
+<lb ed="F1" n="1905"/><stage type="entrance" about="[ quin. pro.]">Enter <rs type="person" about="[quin.]">QUINCE</rs> for the <rs type="person" about="[pro.]">Prologue</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1906"/></l></sp><sp who="#pro."><speaker>Pro.</speaker><l>If we offend, it is with our good will,
 <lb ed="G"/><lb ed="F1" n="1907"/></l><l>That you should think, we come not to offend,
@@ -2667,7 +2667,7 @@
 <lb ed="G"/><lb ed="F1" n="1948"/></l><l>His dagger drew, and died. For all the rest,
 <lb ed="G"/><lb ed="F1" n="1949"/></l><l>Let <rs type="person" about="[lion.]">Lion</rs>, <rs type="person" about="[moon.]">Moon</rs>shine, <rs type="person" about="[wall.]">Wall</rs>, and lovers twain
 <lb ed="G"/><lb ed="F1" n="1950"/></l><l>At large discourse, while here they do remain,
-<lb ed="F1" n="1951"/><stage type="exit" about="[ome:involves pro. pyr. this. lion. moon.]">[Exeunt <rs type="person" about="[pro.]">Prologue</rs>, <rs type="person" about="[pyr.]">Pyramus</rs>, <rs type="person" about="[this.]">Thisbe</rs>, <rs type="person" about="[lion.]">Lion</rs>,and <rs type="person" about="[moon.]">Moon</rs>shine.</stage>
+<lb ed="F1" n="1951"/><stage type="exit" about="[ pro. pyr. this. lion. moon.]">[Exeunt <rs type="person" about="[pro.]">Prologue</rs>, <rs type="person" about="[pyr.]">Pyramus</rs>, <rs type="person" about="[this.]">Thisbe</rs>, <rs type="person" about="[lion.]">Lion</rs>,and <rs type="person" about="[moon.]">Moon</rs>shine.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1952"/></l></sp><sp who="#the."><speaker>The.</speaker><l>I wonder if the lion be to speak.
 
@@ -2746,11 +2746,11 @@
 <lb ed="G"/><lb ed="F1" n="2005"/></l></sp><sp who="#pyr."><speaker>Pyr.</speaker><l>Wilt thou at Ninny's tomb meet me <lb ed="F1" n="2006"/>straightway?
 
 <lb ed="G"/><lb ed="F1" n="2007"/></l></sp><sp who="#this."><speaker>This.</speaker><l>'Tide life, 'tide death, I come without delay.
-<stage type="exit" about="[ome:involves pyr. this.]">[Exeunt <rs type="person" about="[pyr.]">Pyramus</rs> and <rs type="person" about="[this.]">Thisbe</rs>. </stage>
+<stage type="exit" about="[ pyr. this.]">[Exeunt <rs type="person" about="[pyr.]">Pyramus</rs> and <rs type="person" about="[this.]">Thisbe</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="2008"/></l></sp><sp who="#wall."><speaker><rs type="person" about="[wall.]">Wall</rs>.</speaker><l>Thus have I, <rs type="person" about="[wall.]">Wall</rs>, my part discharged so;
 <lb ed="G"/><lb ed="F1" n="2009"/></l><l>And, being done, thus <rs type="person" about="[wall.]">Wall</rs> away doth go.
-                                      <stage type="exit" about="[ome:involves wall.]">[Exit.</stage>
+                                      <stage type="exit" about="[ wall.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2010"/></l></sp><sp who="#the."><speaker>The.</speaker><p>Now is the mural down between the
 <lb ed="G"/>two <lb ed="F1" n="2011"/>neighbours.
@@ -2893,7 +2893,7 @@ The <rs type="person" about="[lion.]">Lion</rs> shakes <rs type="person" about="
 <lb ed="G"/></l><l>Now am I fled;
 <lb ed="G"/></l><l>My soul is in the sky:
 <lb ed="G" n="309"/><lb ed="F1" n="2098"/></l><l>Tongue, lose thy light;
-<lb ed="G"/></l><l><rs type="person" about="[moon.]">Moon</rs>, take thy flight:<stage type="exit" about="[ome:involves moon.]">[Exit <rs type="person" about="[moon.]">Moon</rs>shine. </stage>
+<lb ed="G"/></l><l><rs type="person" about="[moon.]">Moon</rs>, take thy flight:<stage type="exit" about="[ moon.]">[Exit <rs type="person" about="[moon.]">Moon</rs>shine. </stage>
 <lb ed="G"/><lb ed="F1" n="2099"/></l><l>Now die, die, die, die, die.[Dies. 
 
 <lb ed="G"/><lb ed="F1" n="2100"/></l></sp><sp who="#dem."><speaker>Dem.</speaker><p>No die, but an ace, for him; for he
@@ -2980,8 +2980,8 @@ The <rs type="person" about="[lion.]">Lion</rs> shakes <rs type="person" about="
 <lb ed="G"/><lb ed="F1" n="2149"/></l><l>This palpable-gross play hath well beguiled
 <lb ed="G"/><lb ed="F1" n="2150"/></l><l>The heavy gait of night. Sweet friends, to bed.
 <lb ed="G"/><lb ed="F1" n="2151"/></l><l>A fortnight hold we this solemnity,
-<lb ed="G"/><lb ed="F1" n="2152"/></l><l>In nightly revels and new jollity.  <stage about="[ome:involves-all]" type="exit">[Exeunt,</stage>
-<lb ed="F1" n="2153"/><stage type="entrance" about="[ome:involves puck.]">  Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="2152"/></l><l>In nightly revels and new jollity.  <stage about="[-all]" type="exit">[Exeunt,</stage>
+<lb ed="F1" n="2153"/><stage type="entrance" about="[ puck.]">  Enter <rs type="person" about="[puck.]">PUCK</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2154"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>Now the hungry lion roars
 <lb ed="G"/><lb ed="F1" n="2155"/></l><l>And the wolf behowls the moon;
@@ -3003,7 +3003,7 @@ The <rs type="person" about="[lion.]">Lion</rs> shakes <rs type="person" about="
 <lb ed="G"/><lb ed="F1" n="2171"/></l><l>Shall disturb this hallow'd house:
 <lb ed="G"/><lb ed="F1" n="2172"/></l><l>I am sent with broom before,
 <lb ed="G"/><lb ed="F1" n="2173"/></l><l>To sweep the dust behind the door.
-<lb ed="F1" n="2174"/><stage type="entrance" about="[ome:involves obe. tita.]">Enter <rs type="person" about="[obe.]">OBERON</rs> and <rs type="person" about="[tita.]">TITANIA</rs> wlith their train.</stage>
+<lb ed="F1" n="2174"/><stage type="entrance" about="[ obe. tita.]">Enter <rs type="person" about="[obe.]">OBERON</rs> and <rs type="person" about="[tita.]">TITANIA</rs> wlith their train.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2175"/></l></sp><sp who="#obe."><speaker>Obe.</speaker><l>Through the house give glimmering light,
 <lb ed="G"/><lb ed="F1" n="2176"/></l><l>By the dead and drowsy fire:
@@ -3040,7 +3040,7 @@ The <rs type="person" about="[lion.]">Lion</rs> shakes <rs type="person" about="
 <lb ed="G"/><lb ed="F1" n="2204"/></l><l>Ever shall in safety rest.
 <lb ed="G"/><lb ed="F1" n="2205"/></l><l>Trip away; make no stay;
 <lb ed="G"/><lb ed="F1" n="2206"/></l><l>Meet me all by break of day.
-<stage type="exit" about="[ome:involves obe. tita.]">[Exeunt <rs type="person" about="[obe.]">Oberon</rs>, <rs type="person" about="[tita.]">Titania</rs>, and train.</stage>
+<stage type="exit" about="[ obe. tita.]">[Exeunt <rs type="person" about="[obe.]">Oberon</rs>, <rs type="person" about="[tita.]">Titania</rs>, and train.</stage>
 
 <lb ed="G" n="430"/><lb ed="F1" n="2207"/></l></sp><sp who="#puck."><speaker><rs type="person" about="[puck.]">Puck</rs>.</speaker><l>If we shadows have offended,
 <lb ed="G"/><lb ed="F1" n="2208"/></l><l>Think but this, and all is mended,
@@ -3057,7 +3057,7 @@ The <rs type="person" about="[lion.]">Lion</rs> shakes <rs type="person" about="
 <lb ed="G"/><lb ed="F1" n="2219"/></l><l>Else the <rs type="person" about="[puck.]">Puck</rs> a liar call;
 <lb ed="G"/><lb ed="F1" n="2220"/></l><l>So, good night unto you all.
 <lb ed="G"/><lb ed="F1" n="2221"/></l><l>Give me your hands, if we be friends,
-<lb ed="G"/><lb ed="F1" n="2222"/></l><l>And Robin shall restore amends.<stage type="exit" about="[ome:involves puck.]">[Exit,</stage>
+<lb ed="G"/><lb ed="F1" n="2222"/></l><l>And Robin shall restore amends.<stage type="exit" about="[ puck.]">[Exit,</stage>
 </l></sp>
 </div2>
      </div1>

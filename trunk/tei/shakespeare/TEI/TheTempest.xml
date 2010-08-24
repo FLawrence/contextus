@@ -153,7 +153,7 @@
 	  <head>SCENE I</head>
 
 <stage about="[tt:On_a_ship_at_sea:_a_tempestuous_noise_of_thunder_and_lightning_heard.]" type="location">On a ship at sea: a tempestuous noise of thunder and lightning heard.</stage>
-<stage type="entrance" about="[ome:involves boats.]">Enter a Ship-Master and a <rs type="person" about="[boats.]">Boatswain</rs>.</stage>
+<stage type="entrance" about="[ boats.]">Enter a Ship-Master and a <rs type="person" about="[boats.]">Boatswain</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="4"/><sp who="#mast."><speaker>Mast.</speaker><lb ed="F1" n="5"/><p><rs type="person" about="[boats.]">Boatswain</rs>!
 
@@ -161,15 +161,15 @@
 
 <lb ed="G"/><lb ed="F1" n="7"/></p></sp><sp who="#mast."><speaker>Mast.</speaker><p>Good, speak to the mariners: fall
 <lb ed="G"/>to't,<lb ed="F1" n="8"/> yarely, or we run ourselves aground:
-<lb ed="G"/><lb ed="F1" n="9"/>bestir, bestir.   <stage type="exit" about="[ome:involves mast.]">Exit.</stage>
-<lb ed="F1" n="10"/><stage type="entrance" about="[ome:involves mariners.]">Enter <rs type="person" about="[mariners.]">Mariners</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="9"/>bestir, bestir.   <stage type="exit" about="[ mast.]">Exit.</stage>
+<lb ed="F1" n="10"/><stage type="entrance" about="[ mariners.]">Enter <rs type="person" about="[mariners.]">Mariners</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="11"/></p></sp><sp who="#boats."><speaker>Boats.</speaker><p>Heigh, my hearts! cheerly, cheerly,
 <lb ed="G"/>my hearts! <lb ed="F1" n="12"/>yare, yare!   Take in the topsail.
 <lb ed="G"/>Tend to the master's <lb ed="F1" n="13"/>whistle. Blow, till thou
 <lb ed="G"/>burst thy wind, if room <lb ed="F1" n="14"/>enough!
 
-<lb ed="G"/><lb ed="F1" n="15"/><stage type="entrance" about="[ome:involves alon. seb. ant. fer. gon.]">Enter <rs type="person" about="[alon.]">ALONSO</rs>, <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[fer.]">FERDINAND</rs>,
+<lb ed="G"/><lb ed="F1" n="15"/><stage type="entrance" about="[ alon. seb. ant. fer. gon.]">Enter <rs type="person" about="[alon.]">ALONSO</rs>, <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[fer.]">FERDINAND</rs>,
 <lb ed="G"/><lb ed="F1" n="16"/><rs type="person" about="[gon.]">GONZALO</rs>, and others. </stage>
 
 <lb ed="G"/><lb ed="F1" n="17"/></p></sp><sp who="#alon."><speaker>Alon.</speaker><p>Good boatswain, have care. Where's
@@ -199,7 +199,7 @@
 <lb ed="G"/>you have lived so long, and make <lb ed="F1" n="33"/>yourself
 <lb ed="G"/>ready in your cabin for the mischance of the
 <lb ed="G"/><lb ed="F1" n="34"/>hour, if it so hap. Cheerly, good hearts!   Out
-<lb ed="G"/>of our <lb ed="F1" n="35"/>way, I say.  <stage type="exit" about="[ome:involves boats.]">Exit.</stage>
+<lb ed="G"/>of our <lb ed="F1" n="35"/>way, I say.  <stage type="exit" about="[ boats.]">Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="36"/></p></sp><sp who="#gon."><speaker>Gon.</speaker><p>I have great comfort from this fellow:
 <lb ed="G"/>methinks <lb ed="F1" n="37"/>he hath no drowning mark
@@ -207,8 +207,8 @@
 <lb ed="G"/>Stand fast, good Fate, to his hanging: <lb ed="F1" n="39"/>make
 <lb ed="G"/>the rope of his destiny our cable, for our <lb ed="F1" n="40"/>own
 <lb ed="G"/>doth little advantage.   If he be not born to be
-<lb ed="G"/><lb ed="F1" n="41"/>hanged, our case is miserable.      <stage about="[ome:involves-all]" type="exit">[Exeunt</stage>
-<lb ed="G"/><lb ed="F1" n="42"/><stage type="entrance" about="[ome:involves boats.]">Re-enter <rs type="person" about="[boats.]">Boatswain</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="41"/>hanged, our case is miserable.      <stage about="[-all]" type="exit">[Exeunt</stage>
+<lb ed="G"/><lb ed="F1" n="42"/><stage type="entrance" about="[ boats.]">Re-enter <rs type="person" about="[boats.]">Boatswain</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="43"/></p></sp><sp who="#boats."><speaker>Boats.</speaker><p>Down with the topmast! yare!
 <lb ed="G"/>lower, lower! <lb ed="F1" n="44"/>Bring her to try with main-course.
@@ -216,7 +216,7 @@
 <lb ed="G"/>this howling! they are louder than the weather <lb ed="F1" n="47"/>or
 <lb ed="G" n="40"/>our office.
 
-<stage type="entrance" about="[ome:involves seb. ant. gon.]">Re-enter <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, and <rs type="person" about="[gon.]">GONZALO</rs>.</stage>
+<stage type="entrance" about="[ seb. ant. gon.]">Re-enter <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, and <rs type="person" about="[gon.]">GONZALO</rs>.</stage>
 
 <lb ed="G"/>Yet again! what do you here?   Shall we
 <lb ed="G"/><lb ed="F1" n="48"/>give o'er and drown? Have you a mind to sink?
@@ -236,7 +236,7 @@
 
 <lb ed="G"/><lb ed="F1" n="57"/></p></sp><sp who="#boats."><speaker>Boats.</speaker><p>Lay her a-hold, a-hold! set her two
 <lb ed="G"/>courses off <lb ed="F1" n="58"/>to sea again; lay her off.
-<lb ed="G"/><lb ed="F1" n="59"/><stage type="entrance" about="[ome:involves mariners.]">Enter <rs type="person" about="[mariners.]">Mariners</rs> wet.</stage>
+<lb ed="G"/><lb ed="F1" n="59"/><stage type="entrance" about="[ mariners.]">Enter <rs type="person" about="[mariners.]">Mariners</rs> wet.</stage>
 
 <lb ed="G"/><lb ed="F1" n="60"/></p></sp><sp who="#mariners."><speaker><rs type="person" about="[mariners.]">Mariners</rs>.</speaker><p>All lost!  to prayers, to prayers!
 <lb ed="G"/>all lost!
@@ -267,17 +267,17 @@
 <lb ed="G"/><lb ed="F1" n="74"/></l></sp><sp who="#ant."><speaker>Ant.</speaker><l>Let's all sink with the king.
 
 <lb ed="G"/><lb ed="F1" n="75"/></l></sp><sp who="#seb."><speaker>Seb.</speaker><l>Let's take leave of him.
-<stage about="[ome:involves-all]" type="exit">[Exeunt Ant. and Seb.</stage>
+<stage about="[-all]" type="exit">[Exeunt Ant. and Seb.</stage>
 
 <lb ed="G"/><lb ed="F1" n="76"/></l></sp><sp who="#gon."><speaker>Gon.</speaker><p>Now would I give a thousand furlongs
 <lb ed="G"/>of sea <lb ed="F1" n="77"/>for an acre of barren ground,
 <lb ed="G"/>long heath, brown <lb ed="F1" n="78"/>furze, any thing.  The
 <lb ed="G"/>wills above be done! but I would <lb ed="F1" n="79"/>fain die a dry
-<lb ed="G"/>death.  <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/>death.  <stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
   <head>SCENE II</head><lb ed="F1" n="80"/>
-<stage about="[tt:The_island._Before_PROSPERO'S_cell.]" type="location">The island. Before <rs type="person" about="[pros.]">PROSPERO</rs>'S cell.</stage> <lb ed="F1" n="81"/><stage type="entrance" about="[ome:involves pros. mir.]"> Enter <rs type="person" about="[pros.]">PROSPERO</rs> and <rs type="person" about="[mir.]">MIRANDA</rs>. </stage>
+<stage about="[tt:The_island._Before_PROSPERO'S_cell.]" type="location">The island. Before <rs type="person" about="[pros.]">PROSPERO</rs>'S cell.</stage> <lb ed="F1" n="81"/><stage type="entrance" about="[ pros. mir.]"> Enter <rs type="person" about="[pros.]">PROSPERO</rs> and <rs type="person" about="[mir.]">MIRANDA</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="82"/><sp who="#mir."><speaker>Mir.</speaker><l>If by your art, my dearest father, you have
 <lb ed="G"/><lb ed="F1" n="83"/></l><l>Put the wild waters in this roar, allay them.
@@ -540,7 +540,7 @@
 <lb ed="G"/><lb ed="F1" n="298"/></l><l>Come away, servant, come. I am ready now.
 <lb ed="G"/><lb ed="F1" n="299"/></l><l>Approach, my <rs type="person" about="[ari.]">Ariel</rs>, come.
 
-<stage type="entrance" about="[ome:involves ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>.</stage>
+<stage type="entrance" about="[ ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="300"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>All hail, great master! grave sir, hail!   I come
 <lb ed="G" n="190"/><lb ed="F1" n="301"/></l><l>To answer thy best pleasure; be 't to fly,
@@ -717,7 +717,7 @@
 <lb ed="G" n="301"/><lb ed="F1" n="433"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Go make thyself like a nymph o' the sea: be subject
 <lb ed="G"/><lb ed="F1" n="434"/></l><l>To no sight but thine and mine, invisible
 <lb ed="G"/><lb ed="F1" n="435"/></l><l>To every eyeball else. Go take this shape
-<lb ed="G"/><lb ed="F1" n="436"/></l><l>And hither come in 't: go, hence with diligence! <stage type="exit" about="[ome:involves ari.]">[Exit <rs type="person" about="[ari.]">Ariel</rs>. </stage>
+<lb ed="G"/><lb ed="F1" n="436"/></l><l>And hither come in 't: go, hence with diligence! <stage type="exit" about="[ ari.]">[Exit <rs type="person" about="[ari.]">Ariel</rs>. </stage>
 <lb ed="G"/><lb ed="F1" n="437"/></l><l>Awake, dear heart, awake! thou hast slept well,
 <lb ed="G"/><lb ed="F1" n="438"/></l><l>Awake!
 
@@ -743,18 +743,18 @@
 <lb ed="G"/><lb ed="F1" n="452"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Come forth, I say! there's other business for thee:
 <lb ed="G"/><lb ed="F1" n="453"/></l><l>Come, thou tortoise! when?
 
-<stage type="entrance" about="[ome:involves ari.]">    Re-enter <rs type="person" about="[ari.]">ARIEL</rs> like a water-nymph.</stage>
+<stage type="entrance" about="[ ari.]">    Re-enter <rs type="person" about="[ari.]">ARIEL</rs> like a water-nymph.</stage>
 
 <lb ed="G"/><lb ed="F1" n="454"/></l><l>Fine apparition!   My quaint <rs type="person" about="[ari.]">Ariel</rs>,
 <lb ed="G"/><lb ed="F1" n="455"/></l><l>Hark in thine ear.
 
-<lb ed="G"/><lb ed="F1" n="456"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>My lord, it shall be done. <stage type="exit" about="[ome:involves ari.]">[Exit.</stage>
+<lb ed="G"/><lb ed="F1" n="456"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>My lord, it shall be done. <stage type="exit" about="[ ari.]">[Exit.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="457"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Thou poisonous slave, got by the devil himself
 <lb ed="G" n="320"/><lb ed="F1" n="458"/></l><l>Upon thy wicked dam, come forth!
 
-<stage type="entrance" about="[ome:involves cal.]">Enter <rs type="person" about="[cal.]">CALIBAN</rs>.</stage>
+<stage type="entrance" about="[ cal.]">Enter <rs type="person" about="[cal.]">CALIBAN</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="459"/></l></sp><sp who="#cal."><speaker>Cal.</speaker><l>As wicked dew as e'er my mother brush'd
 <lb ed="G"/><lb ed="F1" n="460"/></l><l>With raven's feather from unwholesome fen
@@ -824,9 +824,9 @@
 <lb ed="G"/><lb ed="F1" n="516"/></l><l>It would control my dam's god, Setebos,
 <lb ed="G"/><lb ed="F1" n="517"/></l><l>And make a vassal of him.
 
-<lb ed="G"/><lb ed="F1" n="518"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>So, slave; hence! <stage type="exit" about="[ome:involves cal.]">[Exit <rs type="person" about="[cal.]">Caliban</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="518"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>So, slave; hence! <stage type="exit" about="[ cal.]">[Exit <rs type="person" about="[cal.]">Caliban</rs>.</stage>
 
-<stage type="entrance" about="[ome:involves ari. fer.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible, playing and singing; <rs type="person" about="[fer.]">FERDINAND</rs> following. </stage>
+<stage type="entrance" about="[ ari. fer.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible, playing and singing; <rs type="person" about="[fer.]">FERDINAND</rs> following. </stage>
 
 <lb ed="G"/><text><body><head><rs type="person" about="[ari.]">ARIEL</rs>'S song.</head>
 <lg type="song" org="uniform" sample="complete">
@@ -1030,7 +1030,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 
 <lb ed="G"/><lb ed="F1" n="673"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Come, follow.   Speak not for him.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp>
 </div2>
       </div1>
@@ -1039,7 +1039,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[tt:Another_part_of_the_island.]" type="location">Another part of the island.</stage>
-<lb ed="F1" n="675"/><stage type="entrance" about="[ome:involves alon. seb. ant. gon. adr. fran.]">Enter <rs type="person" about="[alon.]">ALONSO</rs>, <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[gon.]">GONZALO</rs>, <rs type="person" about="[adr.]">ADRIAN</rs>, <lb ed="F1" n="676"/><rs type="person" about="[fran.]">FRANCISCO</rs>, and others.</stage>
+<lb ed="F1" n="675"/><stage type="entrance" about="[ alon. seb. ant. gon. adr. fran.]">Enter <rs type="person" about="[alon.]">ALONSO</rs>, <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[gon.]">GONZALO</rs>, <rs type="person" about="[adr.]">ADRIAN</rs>, <lb ed="F1" n="676"/><rs type="person" about="[fran.]">FRANCISCO</rs>, and others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="677"/><sp who="#gon."><speaker>Gon.</speaker><l>Beseech you, sir, be merry; you have cause,
 <lb ed="G"/><lb ed="F1" n="678"/></l><l>So have we all, of joy; for our escape
@@ -1349,7 +1349,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/>she would continue <lb ed="F1" n="861"/>in it five weeks without
 <lb ed="G"/>changing.
 
-<lb ed="G"/><lb ed="F1" n="862"/><stage type="entrance" about="[ome:involves ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible, playing solemn music.</stage>
+<lb ed="G"/><lb ed="F1" n="862"/><stage type="entrance" about="[ ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible, playing solemn music.</stage>
 
 <lb ed="G"/><lb ed="F1" n="863"/></p></sp><sp who="#seb."><speaker>Seb.</speaker><p>We would so, and then go a
 <lb ed="G"/>batfowling.
@@ -1380,7 +1380,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 
 <lb ed="G"/><lb ed="F1" n="877"/></l></sp><sp who="#alon."><speaker>Alon.</speaker><l>Thank you.   Wondrous heavy.
 
-<lb ed="G"/><rs type="person" about="[alon.]">Alonso</rs> sleeps.<stage type="exit" about="[ome:involves ari.]"> Exit <rs type="person" about="[ari.]">Ariel</rs>.</stage>
+<lb ed="G"/><rs type="person" about="[alon.]">Alonso</rs> sleeps.<stage type="exit" about="[ ari.]"> Exit <rs type="person" about="[ari.]">Ariel</rs>.</stage>
 
 
 <lb ed="G" n="199"/><lb ed="F1" n="878"/></l></sp><sp who="#seb."><speaker>Seb.</speaker><l>What a strange drowsiness possesses them!
@@ -1539,7 +1539,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/><lb ed="F1" n="998"/></l></sp><sp who="#seb."><speaker>Seb.</speaker><l>O, but one word.
 [They talk apart.]
 <lb ed="G"/>
-<lb ed="F1" n="999"/><stage type="entrance" about="[ome:involves ari.]">           Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible.</stage>
+<lb ed="F1" n="999"/><stage type="entrance" about="[ ari.]">           Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1000"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>My master through his art foresees the danger
 <lb ed="G"/><lb ed="F1" n="1001"/></l><l>That you, his friend, are in; and sends me forth--
@@ -1593,12 +1593,12 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/><lb ed="F1" n="1034"/></l></sp><sp who="#alon."><speaker>Alon.</speaker><l>Lead away.
 
 <lb ed="G"/><lb ed="F1" n="1035"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l><rs type="person" about="[pros.]">Prospero</rs> my lord shall know what I have done:
-<lb ed="G"/><lb ed="F1" n="1036"/></l><l>So, king, go safely on to seek thy son. <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/><lb ed="F1" n="1036"/></l><l>So, king, go safely on to seek thy son. <stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
   <head>SCENE II</head><lb ed="F1" n="1037"/>
 <stage about="[tt:Another_part_of_the_island.]" type="location">Another part of the island.</stage>
-<lb ed="F1" n="1038"/><stage type="entrance" about="[ome:involves cal.]">   Enter <rs type="person" about="[cal.]">CALIBAN</rs> with a burden of food.</stage> A noise of <lb ed="F1" n="1039"/>thunder heard.
+<lb ed="F1" n="1038"/><stage type="entrance" about="[ cal.]">   Enter <rs type="person" about="[cal.]">CALIBAN</rs> with a burden of food.</stage> A noise of <lb ed="F1" n="1039"/>thunder heard.
 
 <lb ed="G"/><lb ed="F1" n="1040"/><sp who="#cal."><speaker>Cal.</speaker><l>All the infections that the sun sucks up
 <lb ed="G"/><lb ed="F1" n="1041"/></l><l>From bogs, fens, flats, on Prosper fall and make him
@@ -1615,7 +1615,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/><lb ed="F1" n="1052"/></l><l>All wound with adders who with cloven tongues
 <lb ed="G"/><lb ed="F1" n="1053"/></l><l>Do hiss me into madness.
 
-<lb ed="G"/><stage type="entrance" about="[ome:involves trin.]">Enter <rs type="person" about="[trin.]">TRINCULO</rs>.</stage>
+<lb ed="G"/><stage type="entrance" about="[ trin.]">Enter <rs type="person" about="[trin.]">TRINCULO</rs>.</stage>
 
 <lb ed="G"/></l><l>Lo, now, lo!
 <lb ed="G"/><lb ed="F1" n="1054"/></l><l>Here comes a spirit of his, and to torment me
@@ -1651,7 +1651,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/>bed-fellows. <lb ed="F1" n="1079"/>I will here shroud till the dregs of
 <lb ed="G"/>the storm <lb ed="F1" n="1080"/>be past.
 
-<lb ed="G"/><lb ed="F1" n="1081"/><stage type="entrance" about="[ome:involves ste.]">Enter <rs type="person" about="[ste.]">STEPHANO</rs>, singing: a bottle in his hand.</stage>
+<lb ed="G"/><lb ed="F1" n="1081"/><stage type="entrance" about="[ ste.]">Enter <rs type="person" about="[ste.]">STEPHANO</rs>, singing: a bottle in his hand.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1082"/></p></sp><sp who="#ste."><speaker>Ste.</speaker><lg type="song" org="uniform" sample="complete"><l>I shall no more to sea, to sea,
 <lb ed="G"/></l><l>Here shall I die ashore--</l>
@@ -1859,13 +1859,13 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/>hey-day, <lb ed="F1" n="1232"/>freedom!
 
 <lb ed="G" n="192"/><lb ed="F1" n="1233"/></p></sp><sp who="#ste."><speaker>Ste.</speaker><p>O brave monster! Lead the way.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2></div1>
 <div1 n="3" type="act" org="uniform" sample="complete">
   <head>ACT III</head><lb ed="F1" n="1234"/>
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
-<stage about="[tt:Before_PROSPERO's_cell.]" type="location">Before <rs type="person" about="[pros.]">PROSPERO</rs>'s cell.</stage> <lb ed="F1" n="1235"/><stage type="entrance" about="[ome:involves fer.]">Enter <rs type="person" about="[fer.]">FERDINAND</rs>, bearing a log. </stage>
+<stage about="[tt:Before_PROSPERO's_cell.]" type="location">Before <rs type="person" about="[pros.]">PROSPERO</rs>'s cell.</stage> <lb ed="F1" n="1235"/><stage type="entrance" about="[ fer.]">Enter <rs type="person" about="[fer.]">FERDINAND</rs>, bearing a log. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1236"/><sp who="#fer."><speaker>Fer.</speaker><l>There be some sports are painful, and their labour
 <lb ed="G"/><lb ed="F1" n="1237"/></l><l>Delight in them sets off: some kinds of baseness
@@ -1883,7 +1883,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/><lb ed="F1" n="1249"/></l><l>But these sweet thoughts do even refresh my labours,
 <lb ed="G"/><lb ed="F1" n="1250"/></l><l>Most busy lest, when I do it.
 
-<stage type="entrance" about="[ome:involves mir. pros.]">    Enter <rs type="person" about="[mir.]">MIRANDA</rs>; and <rs type="person" about="[pros.]">PROSPERO</rs> at a distance, unseen.</stage>
+<stage type="entrance" about="[ mir. pros.]">    Enter <rs type="person" about="[mir.]">MIRANDA</rs>; and <rs type="person" about="[pros.]">PROSPERO</rs> at a distance, unseen.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1251"/></l></sp><sp who="#mir."><speaker>Mir.</speaker><l>Alas, now, pray you,
 <lb ed="G"/><lb ed="F1" n="1252"/></l><l>Work not so hard: I would the lightning had
@@ -2002,19 +2002,19 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 
 <lb ed="G"/><lb ed="F1" n="1344"/></l></sp><sp who="#fer."><speaker>Fer.</speaker><l>A thousand thousand!
 
-<lb ed="G"/><stage about="[ome:involves-all]" type="exit">[Exeunt Fer. and Mir. severally.</stage>
+<lb ed="G"/><stage about="[-all]" type="exit">[Exeunt Fer. and Mir. severally.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1345"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>So glad of this as they I cannot be,
 <lb ed="G"/><lb ed="F1" n="1346"/></l><l>Who are surprised withal: but my rejoicing
 <lb ed="G"/><lb ed="F1" n="1347"/></l><l>At nothing can be more. I'll to my book.
 <lb ed="G"/><lb ed="F1" n="1348"/></l><l>For yet ere supper-time must I perform
 <lb ed="G"/><lb ed="F1" n="1349"/></l><l>Much business appertaining.
-<stage type="exit" about="[ome:involves pros.]">[Exit.</stage>
+<stage type="exit" about="[ pros.]">[Exit.</stage>
 </l></sp></div2>
 <div2 n="2" type="scene" org="uniform" sample="complete">
   <head>SCENE II</head><lb ed="F1" n="1350"/>
 <stage about="[tt:Another_part_of_the_island.]" type="location">Another part of the island.</stage>
-<lb ed="F1" n="1351"/><stage type="entrance" about="[ome:involves cal. ste. trin.]">Enter <rs type="person" about="[cal.]">CALIBAN</rs>, <rs type="person" about="[ste.]">STEPHANO</rs>, and <rs type="person" about="[trin.]">TRINCULO</rs>.</stage>
+<lb ed="F1" n="1351"/><stage type="entrance" about="[ cal. ste. trin.]">Enter <rs type="person" about="[cal.]">CALIBAN</rs>, <rs type="person" about="[ste.]">STEPHANO</rs>, and <rs type="person" about="[trin.]">TRINCULO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1352"/><sp who="#ste."><speaker>Ste.</speaker><p>Tell not me; when the butt is out, we
 <lb ed="G"/>will drink <lb ed="F1" n="1353"/>water; not a drop before: therefore
@@ -2082,7 +2082,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/><lb ed="F1" n="1390"/></p></sp><sp who="#ste."><speaker>Ste.</speaker><p>Marry, will I: kneel and repeat it; <lb ed="F1" n="1391"/>I
 <lb ed="G"/>will stand, and so shall <rs type="person" about="[trin.]">Trinculo</rs>.
 
-<lb ed="G"/><lb ed="F1" n="1392"/><stage type="entrance" about="[ome:involves ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible.</stage>
+<lb ed="G"/><lb ed="F1" n="1392"/><stage type="entrance" about="[ ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>, invisible.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1393"/></p></sp><sp who="#cal."><speaker>Cal.</speaker><p>As I told thee before, I am subject to
 <lb ed="G"/>a tyrant, <lb ed="F1" n="1394"/>a sorcerer, that by his cunning hath
@@ -2258,12 +2258,12 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 
 <lb ed="G"/><lb ed="F1" n="1511"/></p></sp><sp who="#trin."><speaker>Trin.</speaker><p>Wilt come? <lb ed="F1" n="1512"/>I'll follow, <rs type="person" about="[ste.]">Stephano</rs>.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 </p></sp></div2>
 <div2 n="3" type="scene" org="uniform" sample="complete">
   <head>SCENE III</head><lb ed="F1" n="1513"/>
 <stage about="[tt:Another_part_of_the_island.]" type="location">Another part of the island.</stage>
-<lb ed="F1" n="1514"/><stage type="entrance" about="[ome:involves alon. seb. ant. gon. adr. fran.]">Enter <rs type="person" about="[alon.]">ALONSO</rs>, <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[gon.]">GONZALO</rs>, <lb ed="F1" n="1515"/><rs type="person" about="[adr.]">ADRIAN</rs>, <rs type="person" about="[fran.]">FRANCISCO</rs>, and others.</stage>
+<lb ed="F1" n="1514"/><stage type="entrance" about="[ alon. seb. ant. gon. adr. fran.]">Enter <rs type="person" about="[alon.]">ALONSO</rs>, <rs type="person" about="[seb.]">SEBASTIAN</rs>, <rs type="person" about="[ant.]">ANTONIO</rs>, <rs type="person" about="[gon.]">GONZALO</rs>, <lb ed="F1" n="1515"/><rs type="person" about="[adr.]">ADRIAN</rs>, <rs type="person" about="[fran.]">FRANCISCO</rs>, and others.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1516"/><sp who="#gon."><speaker>Gon.</speaker><l>By'r lakin, I can go no further, sir;
 <lb ed="G"/><lb ed="F1" n="1517"/></l><l>My old bones ache: here's a maze trod indeed
@@ -2299,7 +2299,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/><lb ed="F1" n="1540"/></p></sp><sp who="#alon."><speaker>Alon.</speaker><l>What harmony is this?   My good friends, hark!
 
 <lb ed="G"/><lb ed="F1" n="1541"/></l></sp><sp who="#gon."><speaker>Gon.</speaker><p>Marvellous sweet music!
-<stage type="entrance" about="[ome:involves pros.]">Enter <rs type="person" about="[pros.]">PROSPERO</rs> above, invisible. Enter several
+<stage type="entrance" about="[ pros.]">Enter <rs type="person" about="[pros.]">PROSPERO</rs> above, invisible. Enter several
 <lb ed="G"/>  strange Shapes, bringing in a banquet;
 <lb ed="G"/> they dance about it with gentle actions of
 <lb ed="G"/>  salutation; and, inviting the King, &amp;c., to
@@ -2358,7 +2358,7 @@ Burthen.<lb ed="F1" n="546"/></l><l>Ding-dong.</l>
 <lb ed="G"/><lb ed="F1" n="1581"/></l><l>The best is past. Brother, my lord the duke,
 <lb ed="G"/><lb ed="F1" n="1582"/></l><l>Stand to and do as we.
 
-<lb ed="G"/><lb ed="F1" n="1583"/>Thunder and lightning.<stage type="entrance" about="[ome:involves ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>, like a
+<lb ed="G"/><lb ed="F1" n="1583"/>Thunder and lightning.<stage type="entrance" about="[ ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>, like a
 <lb ed="G"/>harpy, claps <lb ed="F1" n="1584"/>his wings upon the table;
 <lb ed="G"/>and, with a quaint device, the <lb ed="F1" n="1585"/>banquet vanishes.</stage>
 
@@ -2397,7 +2397,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1614"/></l><l>Upon your heads--is nothing but heart-sorrow
 <lb ed="G" n="81"/><lb ed="F1" n="1615"/></l><l>And a clear life ensuing.
 
-<lb ed="F1" n="1616"/><stage type="exit" about="[ome:involves ari.]">He vanishes in thunder;</stage> and dance, with
+<lb ed="F1" n="1616"/><stage type="exit" about="[ ari.]">He vanishes in thunder;</stage> and dance, with
 <lb ed="G"/>   mocks and mows, and <lb ed="F1" n="1618"/>carrying out the
 <lb ed="G"/>   table. 
 
@@ -2411,7 +2411,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1626"/></l><l>In their distractions; they now are in my power;
 <lb ed="G" n="91"/><lb ed="F1" n="1627"/></l><l>And in these fits I leave them, while I visit
 <lb ed="G"/><lb ed="F1" n="1628"/></l><l>Young <rs type="person" about="[fer.]">Ferdinand</rs>, whom they suppose is drown'd,
-<lb ed="G"/><lb ed="F1" n="1629"/></l><l>And his and mine loved darling. <stage type="exit" about="[ome:involves pros.]">Exit above.</stage>
+<lb ed="G"/><lb ed="F1" n="1629"/></l><l>And his and mine loved darling. <stage type="exit" about="[ pros.]">Exit above.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1630"/></l></sp><sp who="#gon."><speaker>Gon.</speaker><l>I' the name of something holy, sir, why stand you
@@ -2424,14 +2424,14 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1636"/></l><l>The name of Prosper: it did bass my trespass.
 <lb ed="G" n="100"/><lb ed="F1" n="1637"/></l><l>Therefore my son i' the ooze is bedded, and
 <lb ed="G"/><lb ed="F1" n="1638"/></l><l>I'll seek him deeper than e'er plummet sounded
-<lb ed="G"/><lb ed="F1" n="1639"/></l><l>And with him there lie mudded. <stage type="exit" about="[ome:involves alon.]">[Exit.</stage>
+<lb ed="G"/><lb ed="F1" n="1639"/></l><l>And with him there lie mudded. <stage type="exit" about="[ alon.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1640"/></l></sp><sp who="#seb."><speaker>Seb.</speaker><l>But one fiend at a time,
 <lb ed="G"/><lb ed="F1" n="1641"/></l><l>I'll fight their legions o'er.
 
 <lb ed="G"/><lb ed="F1" n="1642"/></l></sp><sp who="#ant."><speaker>Ant.</speaker><l>I'll be thy second.
 
-<stage about="[ome:involves-all]" type="exit">[Exeunt Seb. and Ant.</stage>
+<stage about="[-all]" type="exit">[Exeunt Seb. and Ant.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1643"/></l></sp><sp who="#gon."><speaker>Gon.</speaker><l>All three of them are desperate: their great guilt,
@@ -2441,14 +2441,14 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1647"/></l><l>And hinder them from what this ecstasy
 <lb ed="G"/><lb ed="F1" n="1648"/></l><l>May now provoke them to.
 
-<lb ed="G"/><lb ed="F1" n="1649"/></l></sp><sp who="#adr."><speaker>Adr.</speaker><l>Follow, I pray you. <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/><lb ed="F1" n="1649"/></l></sp><sp who="#adr."><speaker>Adr.</speaker><l>Follow, I pray you. <stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp></div2></div1>
 <div1 n="4" type="act" org="uniform" sample="complete">
   <head>ACT IV</head><lb ed="F1" n="1650"/>
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[tt:Before_PROSPERO'S_cell.]" type="location">Before <rs type="person" about="[pros.]">PROSPERO</rs>'S cell.</stage>
-<lb ed="F1" n="1651"/><stage type="entrance" about="[ome:involves pros. fer. mir.]">Enter <rs type="person" about="[pros.]">PROSPERO</rs>, <rs type="person" about="[fer.]">FERDINAND</rs>, and <rs type="person" about="[mir.]">MIRANDA</rs>.</stage>
+<lb ed="F1" n="1651"/><stage type="entrance" about="[ pros. fer. mir.]">Enter <rs type="person" about="[pros.]">PROSPERO</rs>, <rs type="person" about="[fer.]">FERDINAND</rs>, and <rs type="person" about="[mir.]">MIRANDA</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1652"/><sp who="#pros."><speaker>Pros.</speaker><l>If I have too austerely punish'd you,
 <lb ed="G"/><lb ed="F1" n="1653"/></l><l>Your compensation makes amends, for I
@@ -2490,7 +2490,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1685"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Fairly spoke.
 <lb ed="G"/><lb ed="F1" n="1686"/></l><l>Sit then and talk with her; she is thine own.
 <lb ed="G"/><lb ed="F1" n="1687"/></l><l>What, <rs type="person" about="[ari.]">Ariel</rs>!   my industrious servant, <rs type="person" about="[ari.]">Ariel</rs>!
-<stage type="entrance" about="[ome:involves ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>.</stage>
+<stage type="entrance" about="[ ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1688"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>What would my potent master? here I am.
 
@@ -2516,7 +2516,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1704"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Dearly, my delicate <rs type="person" about="[ari.]">Ariel</rs>. Do not approach
 <lb ed="G"/><lb ed="F1" n="1705"/></l><l>Till thou dost hear me call.
 
-<lb ed="G" n="50"/><lb ed="F1" n="1706"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>Well, I conceive. <stage type="exit" about="[ome:involves ari.]">[Exit. </stage>
+<lb ed="G" n="50"/><lb ed="F1" n="1706"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>Well, I conceive. <stage type="exit" about="[ ari.]">[Exit. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1707"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Look thou be true; do not give dalliance
 <lb ed="G"/><lb ed="F1" n="1708"/></l><l>Too much the rein: the strongest oaths are straw
@@ -2532,7 +2532,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1716"/></l><l>Rather than want a spirit: appear, and pertly!
 <lb ed="G"/><lb ed="F1" n="1717"/></l><l>No tongue! all eyes! be silent. [Soft music.
 
-<lb ed="G"/><stage type="entrance" about="[ome:involves iris.]">Enter <rs type="person" about="[iris.]">IRIS</rs>.</stage>
+<lb ed="G"/><stage type="entrance" about="[ iris.]">Enter <rs type="person" about="[iris.]">IRIS</rs>.</stage>
 
 <lb ed="G" n="60"/><lb ed="F1" n="1718"/></l></sp><sp who="#iris."><speaker><rs type="person" about="[iris.]">Iris</rs>.</speaker><l><rs type="person" about="[cer.]">Ceres</rs>, most bounteous lady, thy rich leas
 <lb ed="G"/><lb ed="F1" n="1719"/></l><l>Of wheat, rye, barley, vetches, oats and pease;
@@ -2551,7 +2551,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1732"/></l><l>To come and sport: her peacocks fly amain:
 <lb ed="G"/><lb ed="F1" n="1733"/></l><l>Approach, rich <rs type="person" about="[cer.]">Ceres</rs>, her to entertain.
 
-<lb ed="G"/><stage type="entrance" about="[ome:involves cer.]">Enter <rs type="person" about="[cer.]">CERES</rs>.</stage>
+<lb ed="G"/><stage type="entrance" about="[ cer.]">Enter <rs type="person" about="[cer.]">CERES</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1734"/></l></sp><sp who="#cer."><speaker>Cer.</speaker><l>Hail, many-colour'd messenger, that ne'er
 <lb ed="G"/><lb ed="F1" n="1735"/></l><l>Dost disobey the wife of Jupiter;
@@ -2588,7 +2588,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1762"/></l></sp><sp who="#cer."><speaker>Cer.</speaker><l>High'st queen of state.
 <lb ed="G"/><lb ed="F1" n="1763"/></l><l>Great <rs type="person" about="[juno.]">Juno</rs>, comes: I know her by her gait.
 
-<stage type="entrance" about="[ome:involves juno.]">Enter <rs type="person" about="[juno.]">JUNO</rs>.</stage>
+<stage type="entrance" about="[ juno.]">Enter <rs type="person" about="[juno.]">JUNO</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1764"/></l></sp><sp who="#juno."><speaker><rs type="person" about="[juno.]">Juno</rs>.</speaker><l>How does my bounteous sister? Go with me
 <lb ed="G"/><lb ed="F1" n="1765"/></l><l>To bless this twain, that they may prosperous be
@@ -2685,12 +2685,12 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1835"/></l></sp><sp who="#fer."><speaker>Fer.</speaker><l>We wish your peace.
 
 <lb ed="G"/></l></sp><sp who="#mir."><speaker>Mir.</speaker><l>We wish your peace.
-<stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<stage about="[-all]" type="exit">[Exeunt.</stage>
 
 
 <lb ed="G"/><lb ed="F1" n="1836"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Come with a thought. I thank thee, <rs type="person" about="[ari.]">Ariel</rs>: come.
 
-<lb ed="G"/><lb ed="F1" n="1837"/><stage type="entrance" about="[ome:involves ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>.</stage>
+<lb ed="G"/><lb ed="F1" n="1837"/><stage type="entrance" about="[ ari.]">Enter <rs type="person" about="[ari.]">ARIEL</rs>.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1838"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>Thy thoughts I cleave to.   What's thy pleasure?
 
@@ -2723,7 +2723,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1860"/></l><l>The trumpery in my house, go bring it hither,
 <lb ed="G"/><lb ed="F1" n="1861"/></l><l>For stale to catch these thieves.
 
-<lb ed="G"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>I go, I go. <stage type="exit" about="[ome:involves ari.]">[Exit.</stage>
+<lb ed="G"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>I go, I go. <stage type="exit" about="[ ari.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1862"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>A devil, a born devil, on whose nature
 <lb ed="G"/><lb ed="F1" n="1863"/></l><l>Nurture can never stick; on whom my pains,
@@ -2731,11 +2731,11 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1865"/></l><l>And as with age his body uglier grows,
 <lb ed="G"/><lb ed="F1" n="1866"/></l><l>So his mind cankers. I will plague them all,
 <lb ed="G"/><lb ed="F1" n="1867"/></l><l>Even to roaring.
-<stage type="entrance" about="[ome:involves ari.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, loaden with glistering
+<stage type="entrance" about="[ ari.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, loaden with glistering
 <lb ed="G"/>                   apparel, &amp;c.</stage>
 <lb ed="G"/></l><l>Come, hang them on this line.
 
-<lb ed="G"/><rs type="person" about="[pros.]">PROSPERO</rs> and <rs type="person" about="[ari.]">ARIEL</rs> remain, invisible.<lb ed="F1" n="1868"/><lb ed="F1" n="1869"/><stage type="entrance" about="[ome:involves cal. ste. trin.]"> Enter <rs type="person" about="[cal.]">CALIBAN</rs>, <rs type="person" about="[ste.]">STEPHANO</rs>, and <rs type="person" about="[trin.]">TRINCULO</rs>, all wet.</stage>
+<lb ed="G"/><rs type="person" about="[pros.]">PROSPERO</rs> and <rs type="person" about="[ari.]">ARIEL</rs> remain, invisible.<lb ed="F1" n="1868"/><lb ed="F1" n="1869"/><stage type="entrance" about="[ cal. ste. trin.]"> Enter <rs type="person" about="[cal.]">CALIBAN</rs>, <rs type="person" about="[ste.]">STEPHANO</rs>, and <rs type="person" about="[trin.]">TRINCULO</rs>, all wet.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1870"/></l></sp><sp who="#cal."><speaker>Cal.</speaker><l>Pray you, tread softly, that the blind mole may <lb ed="F1" n="1871"/>not
 <lb ed="G"/></l><l>Hear a foot fall: we now are near his cell.
@@ -2826,7 +2826,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1927"/></p></sp><sp who="#trin."><speaker>Trin.</speaker><p>And this.
 
 <lb ed="G"/><lb ed="F1" n="1928"/></p></sp><sp who="#ste."><speaker>Ste.</speaker><p>Ay, and this.
-<lb ed="F1" n="1929"/>A noise of hunters heard.<stage type="entrance" about="[ome:involves pros. ari.]"> Enter divers Spirits,
+<lb ed="F1" n="1929"/>A noise of hunters heard.<stage type="entrance" about="[ pros. ari.]"> Enter divers Spirits,
 <lb ed="G"/>   in shape <lb ed="F1" n="1930"/>of dogs and hounds, and hunt
 <lb ed="G"/>   them about, <rs type="person" about="[pros.]">PROSPERO</rs> <lb ed="F1" n="1931"/>and <rs type="person" about="[ari.]">ARIEL</rs> setting
 <lb ed="G"/>   them on.</stage>
@@ -2835,7 +2835,7 @@ Alon., Seb. &amp;c. draw their swords.
 
 <lb ed="G"/><lb ed="F1" n="1933"/></p></sp><sp who="#ari."><speaker>Ari.</speaker><p>Silver! there it goes, Silver!
 
-<lb ed="G"/><lb ed="F1" n="1934"/></p></sp><sp who="#pros."><speaker>Pros.</speaker><p>Fury, Fury! there, Tyrant, there! hark! hark! <stage type="exit" about="[ome:involves pros.]">Cal., Ste., and Trin. are driven out.</stage>
+<lb ed="G"/><lb ed="F1" n="1934"/></p></sp><sp who="#pros."><speaker>Pros.</speaker><p>Fury, Fury! there, Tyrant, there! hark! hark! <stage type="exit" about="[ pros.]">Cal., Ste., and Trin. are driven out.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1935"/></p><l>Go charge my goblins that they grind their joints
 <lb ed="G"/><lb ed="F1" n="1936"/></l><l>With dry convulsions, shorten up their sinews
@@ -2848,14 +2848,14 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1941"/></l><l>Lie at my mercy all mine enemies:
 <lb ed="G"/><lb ed="F1" n="1942"/></l><l>Shortly shall all my labours end, and thou
 <lb ed="G"/><lb ed="F1" n="1943"/></l><l>Shalt have the air at freedom: for a little
-<lb ed="G"/><lb ed="F1" n="1944"/></l><l>Follow, and do me service. <stage about="[ome:involves-all]" type="exit">[Exeunt.</stage>
+<lb ed="G"/><lb ed="F1" n="1944"/></l><l>Follow, and do me service. <stage about="[-all]" type="exit">[Exeunt.</stage>
 </l></sp></div2></div1>
 <div1 n="5" type="act" org="uniform" sample="complete">
   <head>ACT V</head><lb ed="F1" n="1945"/>
 <div2 n="1" type="scene" org="uniform" sample="complete">
 <head>SCENE I</head>
 <stage about="[tt:Before_PROSPERO's_cell.]" type="location">Before <rs type="person" about="[pros.]">PROSPERO</rs>'s cell.</stage>
-<lb ed="F1" n="1946"/><stage type="entrance" about="[ome:involves pros. ari.]"> Enter <rs type="person" about="[pros.]">PROSPERO</rs> in his magic robes, and <rs type="person" about="[ari.]">ARIEL</rs>. </stage>
+<lb ed="F1" n="1946"/><stage type="entrance" about="[ pros. ari.]"> Enter <rs type="person" about="[pros.]">PROSPERO</rs> in his magic robes, and <rs type="person" about="[ari.]">ARIEL</rs>. </stage>
 
 <lb ed="G"/><lb ed="F1" n="1947"/><sp who="#pros."><speaker>Pros.</speaker><l>Now does my project gather to a head:
 <lb ed="G"/><lb ed="F1" n="1948"/></l><l>My charms crack not; my spirits obey; and time
@@ -2900,7 +2900,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="1981"/></l><l>My charms I'll break, their senses I'll restore,
 <lb ed="G"/><lb ed="F1" n="1982"/></l><l>And they shall be themselves.
 
-<lb ed="G"/><lb ed="F1" n="1983"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>I'll fetch them, sir. <stage type="exit" about="[ome:involves ari.]">[Exit.</stage>
+<lb ed="G"/><lb ed="F1" n="1983"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>I'll fetch them, sir. <stage type="exit" about="[ ari.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="1984"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Ye elves of hills, brooks, standing lakes and groves,
 <lb ed="G"/><lb ed="F1" n="1985"/></l><l>And ye that on the sands with printless foot
@@ -2928,7 +2928,7 @@ Alon., Seb. &amp;c. draw their swords.
 <lb ed="G"/><lb ed="F1" n="2007"/></l><l>And deeper than did ever plummet sound
 <lb ed="G"/><lb ed="F1" n="2008"/></l><l>I'll drown my book. [Solemn music.
 
-<lb ed="G"/><lb ed="F1" n="2009"/><stage type="entrance" about="[ome:involves ari. alon. gon. seb. ant. adr. fran. pros. pros.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs> before: then <rs type="person" about="[alon.]">ALONSO</rs>, with a
+<lb ed="G"/><lb ed="F1" n="2009"/><stage type="entrance" about="[ ari. alon. gon. seb. ant. adr. fran. pros. pros.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs> before: then <rs type="person" about="[alon.]">ALONSO</rs>, with a
 frantic gesture, <lb ed="F1" n="2010"/>attended by <rs type="person" about="[gon.]">GONZALO</rs>; <rs type="person" about="[seb.]">SEBASTIAN</rs> and <rs type="person" about="[ant.]">ANTONIO</rs> in <lb ed="F1" n="2011"/>like manner, attended by <rs type="person" about="[adr.]">ADRIAN</rs> and <rs type="person" about="[fran.]">FRANCISCO</rs>: they all <lb ed="F1" n="2012"/>enter the circle which <rs type="person" about="[pros.]">PROSPERO</rs> had  made, and there stand <lb ed="F1" n="2013"/>charmed; which <rs type="person" about="[pros.]">PROSPERO</rs> observing, speaks:</stage>
 
 <lb ed="G"/><lb ed="F1" n="2014"/></l><l>A solemn air and the best comforter
@@ -2982,7 +2982,7 @@ frantic gesture, <lb ed="F1" n="2010"/>attended by <rs type="person" about="[gon
 <lb ed="G"/><lb ed="F1" n="2058"/></l><l>And presently, I prithee.
 
 <lb ed="G"/><lb ed="F1" n="2059"/></l></sp><sp who="#ari."><speaker>Ari.</speaker><l>I drink the air before me, and return
-<lb ed="G"/><lb ed="F1" n="2060"/></l><l>Or ere your pulse twice beat. <stage type="exit" about="[ome:involves ari.]">[Exit.</stage>
+<lb ed="G"/><lb ed="F1" n="2060"/></l><l>Or ere your pulse twice beat. <stage type="exit" about="[ ari.]">[Exit.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2061"/></l></sp><sp who="#gon."><speaker>Gon.</speaker><l>All torment, trouble, wonder and amazement
 <lb ed="G"/><lb ed="F1" n="2062"/></l><l>Inhabits here: some heavenly power guide us
@@ -3160,7 +3160,7 @@ frantic gesture, <lb ed="F1" n="2010"/>attended by <rs type="person" about="[gon
 
 <lb ed="G"/><lb ed="F1" n="2199"/></l></sp><sp who="#gon."><speaker>Gon.</speaker><l>Be it so! Amen!
 
-<lb ed="G"/><lb ed="F1" n="2200"/><stage type="entrance" about="[ome:involves ari. boats.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, with the Master and <rs type="person" about="[boats.]">Boatswain</rs> <lb ed="F1" n="2201"/>amazedly following.</stage>
+<lb ed="G"/><lb ed="F1" n="2200"/><stage type="entrance" about="[ ari. boats.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, with the Master and <rs type="person" about="[boats.]">Boatswain</rs> <lb ed="F1" n="2201"/>amazedly following.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2202"/></l><l>O, look, sir, look, sir! here is more of us:
 <lb ed="G"/><lb ed="F1" n="2203"/></l><l>I prophesied, if a gallows were on land,
@@ -3214,11 +3214,11 @@ frantic gesture, <lb ed="F1" n="2010"/>attended by <rs type="person" about="[gon
 <lb ed="G" n="250"/><lb ed="F1" n="2241"/></l><l>These happen'd accidents; till when, be cheerful
 <lb ed="G"/><lb ed="F1" n="2242"/></l><l>And think of each thing well. [Aside to Ari.] Come hither, spirit:
 <lb ed="G"/><lb ed="F1" n="2243"/></l><l>Set <rs type="person" about="[cal.]">Caliban</rs> and his companions free;
-<lb ed="G"/><lb ed="F1" n="2244"/></l><l>Untie the spell. <stage type="exit" about="[ome:involves ari.]">[Exit <rs type="person" about="[ari.]">Ariel</rs>.</stage> How fares my gracious sir?
+<lb ed="G"/><lb ed="F1" n="2244"/></l><l>Untie the spell. <stage type="exit" about="[ ari.]">[Exit <rs type="person" about="[ari.]">Ariel</rs>.</stage> How fares my gracious sir?
 <lb ed="G"/><lb ed="F1" n="2245"/></l><l>There are yet missing of your company
 <lb ed="G"/><lb ed="F1" n="2246"/></l><l>Some few odd lads that you remember not,
 
-<lb ed="G"/><lb ed="F1" n="2247"/><stage type="entrance" about="[ome:involves ari. cal. ste. trin.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, driving in <rs type="person" about="[cal.]">CALIBAN</rs>, <rs type="person" about="[ste.]">STEPHANO</rs> and <lb ed="F1" n="2248"/><rs type="person" about="[trin.]">TRINCULO</rs>, in their stolen
+<lb ed="G"/><lb ed="F1" n="2247"/><stage type="entrance" about="[ ari. cal. ste. trin.]"> Re-enter <rs type="person" about="[ari.]">ARIEL</rs>, driving in <rs type="person" about="[cal.]">CALIBAN</rs>, <rs type="person" about="[ste.]">STEPHANO</rs> and <lb ed="F1" n="2248"/><rs type="person" about="[trin.]">TRINCULO</rs>, in their stolen
 <lb ed="G"/> apparel.</stage>
 
 <lb ed="G"/><lb ed="F1" n="2249"/></l></sp><sp who="#ste."><speaker>Ste.</speaker><p>Every man shift for all the rest, and
@@ -3288,7 +3288,7 @@ frantic gesture, <lb ed="F1" n="2010"/>attended by <rs type="person" about="[gon
 
 <lb ed="G"/><lb ed="F1" n="2296"/></l></sp><sp who="#alon."><speaker>Alon.</speaker><l>Hence, and bestow your luggage where you found it.
 
-<lb ed="G"/><lb ed="F1" n="2297"/></l></sp><sp who="#seb."><speaker>Seb.</speaker><l>Or stole it, rather. <stage about="[ome:involves-all]" type="exit">[Exeunt Cal., Ste., and Trin.</stage>
+<lb ed="G"/><lb ed="F1" n="2297"/></l></sp><sp who="#seb."><speaker>Seb.</speaker><l>Or stole it, rather. <stage about="[-all]" type="exit">[Exeunt Cal., Ste., and Trin.</stage>
 
 <lb ed="G" n="300"/><lb ed="F1" n="2298"/></l></sp><sp who="#pros."><speaker>Pros.</speaker><l>Sir, I invite your highness and your train
 <lb ed="G"/><lb ed="F1" n="2299"/></l><l>To my poor cell, where you shall take your rest
@@ -3313,7 +3313,7 @@ frantic gesture, <lb ed="F1" n="2010"/>attended by <rs type="person" about="[gon
 <lb ed="G"/><lb ed="F1" n="2316"/></l><l>Your royal fleet far off. [Aside to Ari.]
 <lb ed="G"/></l><l>My <rs type="person" about="[ari.]">Ariel</rs>, chick,
 <lb ed="G"/><lb ed="F1" n="2317"/></l><l>That is thy charge: then to the elements
-<lb ed="G"/><lb ed="F1" n="2318"/></l><l>Be free, and fare thou well! Please you, draw near. <lb ed="F1" n="2319"/><stage about="[ome:involves-all]" type="exit">[Exeunt. </stage> </l></sp></div2></div1>
+<lb ed="G"/><lb ed="F1" n="2318"/></l><l>Be free, and fare thou well! Please you, draw near. <lb ed="F1" n="2319"/><stage about="[-all]" type="exit">[Exeunt. </stage> </l></sp></div2></div1>
 </body>
 <back>
 
