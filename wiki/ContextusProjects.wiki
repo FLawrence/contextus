@@ -22,9 +22,9 @@ Primordial Ooze Directory
 
  * Narratology Ontology :Mike
 
-=== OntoMedia ===
+=== Ontomedia===
 
- * OntoMedia Ontology :Faith
+ * Ontomedia Ontology :Faith
 
 === SiX ===
 
@@ -42,4 +42,3 @@ TEI bootstrapping projects
  * Conversion script (Python) :Mike
  * Dark Star :Mike
  * Shakespeare :Faith
-
