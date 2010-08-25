@@ -145,11 +145,11 @@ def convert(teifile, namespace):
 					
 		for node in sceneItem.getiterator():
 			#print("Node: " + node.tag)	
-			if(node.tag == "sp")
-				id = speechItem.get("who")
+			if node.tag == "sp":
+				id = node.get("who")
 				if id and cast:
 					currentCast.append(cast[id[1:]])
-			elif(node.tag == "stage")	
+			elif node.tag == "stage":
 				if node.get("type") == "entrance":		
 				
 					# Add Social Event if there are people in the CurrentCast list
