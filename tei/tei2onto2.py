@@ -123,6 +123,7 @@ def convert(teifile, namespace):
 			# Work out a list of all cast in a given section
 			currentCast = list()
 			speakers = list()
+		
 
 		# Iterate through elements within stageItem
 			# Find speaker events and add to list of current cast for inclusion in social event
@@ -146,7 +147,8 @@ def convert(teifile, namespace):
 		
 		first = True
 		refersTo = list()
-		parent = None
+		#parent = None
+		speakerNodes = list()
 					
 		for node in sceneItem.getiterator():
 			#print("Node: " + node.tag)	
@@ -154,6 +156,7 @@ def convert(teifile, namespace):
 				id = node.get("who")
 				if id and cast:
 					speakers.append(cast[id[1:]])	
+					speakerNodes.append(node)
 					if cast[id[1:]] not in currentCast:
 						currentCast.append(cast[id[1:]])
 					
@@ -163,13 +166,14 @@ def convert(teifile, namespace):
 					# Add Social Events for all the people who spoke since the last break (if there were any)
 					
 					update = list()
-					update = getSocial(graph, ns, speakers, currentCast, eventCount, event, prior_event, location)
+					update = getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location)
 					eventCount = update[0]
 					prior_event = update[1]
 					
 					event = ns['event/'+str(eventCount)]
 					
 					speakers = list()
+					speakerNodes = list()
 					
 				
 					# Add Travel Event
@@ -227,13 +231,14 @@ def convert(teifile, namespace):
 					
 					# Add Social Events for all the people who spoke since the last break (if there were any)
 					update = list()
-					update = getSocial(graph, ns, speakers, currentCast, eventCount, event, prior_event, location)
+					update = getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location)
 					eventCount = update[0]
 					prior_event = update[1]
 					
 					event = ns['event/'+str(eventCount)]
 					
-					speakers = list()					
+					speakers = list()
+					speakerNodes = list()
 					
 					# Add Travel Event
 				
@@ -378,19 +383,20 @@ def convert(teifile, namespace):
 					eventCount = eventCount + 1
 					event = ns['event/'+str(eventCount)]
 					
-			elif node.tag == "rs":	
-				#print("Found rs node")
-				if parent:
-					#print("Parent type is " + parent.tag)
-					if parent.tag == "p" or  parent.tag == "l":
-						refersTo.append(node.get("about"))
+			#elif node.tag == "rs":	
+			#	#print("Found rs node")
+			#	if parent:
+			#		#print("Parent type is " + parent.tag)
+			#		if parent.tag == "p" or  parent.tag == "l":
+			#			refersTo.append(node.get("about"))
 						
-			parent = node
+			#parent = node
 				
 
 		# Add Social Events for all the people who spoke since the last break (if there were any)
+		#print("Final section of scene, currentCast:" + str(len(currentCast)) + " sperkers: " + str(len(speakers)))
 		update = list()
-		update = getSocial(graph, ns, speakers, currentCast, eventCount, event, prior_event, location)
+		update = getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location)
 		eventCount = update[0]
 		prior_event = update[1]
 		
@@ -398,6 +404,7 @@ def convert(teifile, namespace):
 		group = ns['group/'+str(groupCount)]
 			
 		speakers = list()
+		speakerNodes = list()
 		currentCast = list()
 		
 		
@@ -484,9 +491,11 @@ def convert(teifile, namespace):
 
 """	
 
-def getSocial(graph, ns, speakers, currentCast, eventCount, event, prior_event, location):
+def getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location):
 
 	# Add Social Events for all the people who spoke since the last break (if there were any)
+	
+	speakerCount = 0
 					
 	if len(speakers) > 1:
 		for speaker in speakers:
@@ -497,6 +506,33 @@ def getSocial(graph, ns, speakers, currentCast, eventCount, event, prior_event, 
 			elif len(currentCast) == 1:
 				graph.add((event, RDF.type, ome['Event']))
 				
+			parent = None	
+			if speakerNodes[speakerCount]:
+				
+				node = speakerNodes[speakerCount]
+				
+				#print("Start iteration")
+				for subnode in node.getiterator():	
+					if subnode.tag == "rs":	
+						#print("Found rs node, about:" + subnode.get("about") + " parent:" + str(parent))
+						if parent is not None :
+							#print("Parent type is " + parent.tag)
+							if parent.tag == "p" or  parent.tag == "l" or  parent.tag == "rs":
+								#about = extractCURIEorURI(graph, subnode.get("about"))
+								
+								if(len(subnode.get("about")) > 0 and subnode.get("about")[0] == "[" and subnode.get("about")[-1] == "]"):
+									reffed = subnode.get("about")[1:-1]	
+									
+									#print("reffed: " + reffed)
+									peep = cast[reffed]
+									graph.add((event, ome["refers-to"], peep))
+						#else:
+						#	print("No parent")
+								
+					parent = subnode
+			
+			speakerCount +=1 				
+				
 			if len(currentCast) > 0:
 			
 				graph.add((event, ome['has-subject-entity'], speaker))
@@ -506,7 +542,7 @@ def getSocial(graph, ns, speakers, currentCast, eventCount, event, prior_event, 
 					
 				for castMember in currentCast:
 					graph.add((event, ome['involves'], castMember))
-					graph.add((castMember, ome['involved-in'], event))	
+					graph.add((castMember, ome['involved-in'], event))					
 
 
 				if(prior_event):
@@ -517,7 +553,7 @@ def getSocial(graph, ns, speakers, currentCast, eventCount, event, prior_event, 
 				first = False
 
 				eventCount = eventCount + 1							
-				event = ns['event/'+str(eventCount)]			
+				event = ns['event/'+str(eventCount)]	
 	
 	return [eventCount, prior_event]
 
