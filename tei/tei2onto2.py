@@ -12,6 +12,7 @@ from rdflib import Literal
 from rdflib import BNode
 from rdflib import URIRef
 from rdflib import RDF
+from rdflib import RDFS
 from rdflib import ConjunctiveGraph
 
 foaf = Namespace("http://xmlns.com/foaf/0.1/")
@@ -34,18 +35,29 @@ def extractCURIEorURI(graph, resource):
 	if(len(resource) > 0 and resource[0] == "[" and resource[-1] == "]"):
 		resource = resource[1:-1]
 
+	input_ns = ""
+
+	for prefix, ns in graph.namespaces(): 
+		if prefix == "default":
+			input_ns = ns
+
 	# resolve prefixes
 	# TODO: check whether I need to reverse the ns_contexts
 	if(resource.find(":") > -1):
 		rpre,rsuf = resource.split(":", 1)
 		for prefix, ns in graph.namespaces(): 
+			#print("Prefix: " + prefix + ", ns: " + ns + ", rpre: " + rpre )
 			if prefix == rpre:
-				resource = ns + rsuf
+				if ns in input_ns:
+					resource = input_ns + rsuf
+				else:
+					resource = ns + rsuf
 
 	# TODO: is this enough to check for bnodes?
 	if(len(resource) > 0 and resource[0:2] == "_:"):
 		return BNode(resource[2:])
 
+	#print("Namespace returning: " + resource)
 	return URIRef(resolveURI(resource))
 
 def resolveURI(uri):
@@ -63,6 +75,14 @@ def convert(teifile, namespace):
 
 	graph = ConjunctiveGraph()
 	graph.load(teifile, format="rdfa")
+	
+	graph.bind("default", ns)
+				
+		#print("Prefix: " + prefix + ", URI: " + nms)
+	
+	act = ""
+	scene = ""
+	line = ""
 
 	tree = ET.parse(teifile)
 	cast = dict()
@@ -95,318 +115,344 @@ def convert(teifile, namespace):
 	eventCount = 1
 	groupCount = 1
 	prior_event = None
-	sceneItems = tree.findall('/text/body/div1/div2')
 	
-	for sceneItem in sceneItems:
+	actItems = tree.findall('/text/body/div1')
+	ref = ""
+	
+	for actItem in actItems:
+	
+		if actItem.get("type") == "act":
+			act = actItem.get("n")
 		
-		#print("Found sceneItems!")
+		sceneItems = actItem.findall('div2')
 		
-		# Work out the location of this scene
-		location = None
-		stageItems = sceneItem.findall("stage")
-		for stageItem in stageItems:
-			if stageItem.get("type") == "location":
-				# The RDFa parser doesn't handle the type - so we can grab that here.
-				if stageItem.get("typeof") and stageItem.get("about"):
-					type = extractCURIEorURI(graph, stageItem.get("typeof"))
-					location = extractCURIEorURI(graph, stageItem.get("about"))
-					graph.add((location, RDF.type, type))
-				elif stageItem.get("about"):
-					type = extractCURIEorURI(graph, "[loc:Space]")
-					location = extractCURIEorURI(graph, stageItem.get("about"))
-					graph.add((location, RDF.type, type))		
-					
-				#print("Adding location type: " + type + " (" + location + ")")
-
-
-		if cast:
-			# Work out a list of all cast in a given section
-			currentCast = list()
-			speakers = list()
-		
-
-		# Iterate through elements within stageItem
-			# Find speaker events and add to list of current cast for inclusion in social event
-			# Find reference events and add to ongoing social event ?
-			# Find stage events
-				# If event is an entrance then
-					# create social event for people talking before entrance
-					# create travel event i.e. entrance
-					# add new arrival to current cast list
-				# If event is exit event then
-					# create social event for people talking before exit
-					# create travel event i.e. exit
-						# if leavers are not named directly the calculate who is leaving
-					# remove leavers from current cast list
-			# If reach end of scene then create social event with current cast list
+		for sceneItem in sceneItems:
 			
-			#Also need to check if social event before exit has same composition as social event after exit since then they should be merged
+			#print("Found sceneItems!")
 			
-		event = ns['event/'+str(eventCount)]
-		group = ns['group/'+str(groupCount)]	
-		
-		first = True
-		refersTo = list()
-		#parent = None
-		speakerNodes = list()
-					
-		for node in sceneItem.getiterator():
-			#print("Node: " + node.tag)	
-			if node.tag == "sp":
-				id = node.get("who")
-				if id and cast:
-					speakers.append(cast[id[1:]])	
-					speakerNodes.append(node)
-					if cast[id[1:]] not in currentCast:
-						currentCast.append(cast[id[1:]])
-					
-			elif node.tag == "stage":
-				if node.get("type") == "entrance":		
-				
-					# Add Social Events for all the people who spoke since the last break (if there were any)
-					
-					update = list()
-					update = getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location)
-					eventCount = update[0]
-					prior_event = update[1]
-					
-					event = ns['event/'+str(eventCount)]
-					
-					speakers = list()
-					speakerNodes = list()
-					
-				
-					# Add Travel Event
-					
-					graph.add((event, RDF.type, omj['Travel']))
-					
-					#print("Entrance event. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
-
-					#print("Found entrence event!")
-					if location:
-						graph.add((event, ome['to'], location))		
+			if sceneItem.get("type") == "scene":
+				scene = sceneItem.get("n")		
+			
+			# Work out the location of this scene
+			location = None
+			stageItems = sceneItem.findall("stage")
+			for stageItem in stageItems:
+				if stageItem.get("type") == "location":
+					# The RDFa parser doesn't handle the type - so we can grab that here.
+					if stageItem.get("typeof") and stageItem.get("about"):
+						type = extractCURIEorURI(graph, stageItem.get("typeof"))
+						location = extractCURIEorURI(graph, stageItem.get("about"))
+						graph.add((location, RDF.type, type))
+					elif stageItem.get("about"):
+						type = extractCURIEorURI(graph, "[loc:Space]")
+						location = extractCURIEorURI(graph, stageItem.get("about"))
+						graph.add((location, RDF.type, type))		
 						
-					involved = node.get("about")
-					
-					if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
-						involved = involved[1:-1]
-						
-					chunks = involved.split()
-					
-					chunk_count = len(chunks)
-					
-					if chunk_count > 1:
-						type = extractCURIEorURI(graph, "[omb:Group]")
-						graph.add((group, RDF.type, type))
-					
-					for chunk in chunks:
-						striped = chunk.strip()
-						
-						if(len(striped) > 0 and striped[0] == "[" and striped[-1] == "]"):
-							striped = striped[1:-1]
-							currentCast.append(cast[striped])
-						
-						if chunk_count > 1:
-							graph.add((group, ome['contains'], cast[striped]))
-						else:
-							#print("Adding person as subject-entity to entry event "   + str(eventCount))
-							graph.add((event, ome['has-subject-entity'], cast[striped]))
-						
-					if chunk_count > 1:
-						graph.add((event, ome['has-subject-entity'], group))	
-						#print("Adding group as subject-entity to entry event "   + str(eventCount))
-						groupCount = groupCount + 1
-						group = ns['group/'+str(groupCount)]	
+					#print("Adding location type: " + type + " (" + location + ")")
 	
-					if(prior_event):
-						graph.add((event, ome['follows'], prior_event))
-						graph.add((prior_event, ome['precedes'], event))
 	
-					prior_event = event					
-
-					eventCount = eventCount + 1
-					event = ns['event/'+str(eventCount)]
-								
-				if node.get("type") == "exit":		
-					
-					# Add Social Events for all the people who spoke since the last break (if there were any)
-					update = list()
-					update = getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location)
-					eventCount = update[0]
-					prior_event = update[1]
-					
-					event = ns['event/'+str(eventCount)]
-					
-					speakers = list()
-					speakerNodes = list()
-					
-					# Add Travel Event
+			if cast:
+				# Work out a list of all cast in a given section
+				currentCast = list()
+				speakers = list()
+			
+	
+			# Iterate through elements within stageItem
+				# Find speaker events and add to list of current cast for inclusion in social event
+				# Find reference events and add to ongoing social event ?
+				# Find stage events
+					# If event is an entrance then
+						# create social event for people talking before entrance
+						# create travel event i.e. entrance
+						# add new arrival to current cast list
+					# If event is exit event then
+						# create social event for people talking before exit
+						# create travel event i.e. exit
+							# if leavers are not named directly the calculate who is leaving
+						# remove leavers from current cast list
+				# If reach end of scene then create social event with current cast list
 				
-					graph.add((event, RDF.type, omj['Travel']))
-
-					#print("Found entrence event!")
-					if location:
-						graph.add((event, ome['from'], location))		
+				#Also need to check if social event before exit has same composition as social event after exit since then they should be merged
+				
+			event = ns['event/'+str(eventCount)]
+			group = ns['group/'+str(groupCount)]	
+			
+			first = True
+			refersTo = list()
+			#parent = None
+			speakerNodes = list()
+			speakerRef = list()
 						
-					involved = node.get("about")	
+			for node in sceneItem.getiterator():
+				#print("Node: " + node.tag)	
+				
+				if node.tag == "lb":
+					if node.get("ed") == "F1":
+						line = node.get("n")	
+						ref = str(act) + "." + str(scene) + "." + str(line)	
+						#print("Ref: " + ref)
+				elif node.tag == "sp":
+					id = node.get("who")
 					
-					if involved.strip() == "" or "-all" in involved:
-						# Remove everyone
-												
-						#print("Exit all. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
+					if id and cast:
+						speakers.append(cast[id[1:]])	
+						speakerNodes.append(node)
+						speakerRef.append(ref)
+						#print("Line ref: " + ref)
 						
-						#for peep in currentCast:	
-						#	print(peep)
+						if cast[id[1:]] not in currentCast:
+							currentCast.append(cast[id[1:]])
 						
-						if currentCast > 1:							
-							type = extractCURIEorURI(graph, "[omb:Group]")
-							graph.add((group, RDF.type, type))
-														
-						
-						for peep in currentCast:	
-							if currentCast > 1:
-								graph.add((group, ome['contains'], peep))
-							else:
-								#print("Adding person as subject-entity to exuant event "   + str(eventCount))
-								graph.add((event, ome['has-subject-entity'], peep))							
-
-						if currentCast > 1:
-							graph.add((event, ome['has-subject-entity'], group))	
-							#print("Adding group as subject-entity to exuant event "   + str(eventCount))
-							groupCount = groupCount + 1
-							group = ns['group/'+str(groupCount)]	
-						
-						currentCast = list()
+				elif node.tag == "stage":
+					if node.get("type") == "entrance":		
 					
-					elif "!" in involved:
-						#print("Exit except some. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
+						# Add Social Events for all the people who spoke since the last break (if there were any)
+						
+						update = list()
+						update = getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, eventCount, event, prior_event, location)
+						eventCount = update[0]
+						prior_event = update[1]
+						
+						event = ns['event/'+str(eventCount)]
+						
+						speakers = list()
+						speakerNodes = list()
+						speakerRef = list()
+					
+						# Add Travel Event
+						
+						graph.add((event, RDF.type, omj['Travel']))
+						graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
+						
+						#print("Entrance event. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
+	
+						#print("Found entrence event!")
+						if location:
+							graph.add((event, ome['to'], location))		
+							
+						involved = node.get("about")
 						
 						if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
-							involved = involved[1:-1]	
+							involved = involved[1:-1]
 							
-						involved = involved.strip()	
+						chunks = involved.split()
 						
-						if(len(involved) > 0 and involved[0] == "!" and involved[1] == "(" and involved[-1] == ")"):
-							involved = involved[2:-1]	
-						
-						#print("involved: " + involved)
-						
-						striped = involved.strip()	
-						
-						chunks = striped.split()
-						
-						staying = list()
-						going = list()
-						
-						for player in currentCast:
-							if player in chunks:
-								staying.append(player)
-							else:
-								going.append(player)
-								
-						going_count = len(going)	
-						
-						if going_count > 1:
-							type = extractCURIEorURI(graph, "[omb:Group]")
-							graph.add((group, RDF.type, type))	
-							
-						for ghost in going:							
-							#print("ghost: " + ghost)
-							
-							
-							if ghost in currentCast:
-								currentCast.remove(ghost)
-								#print("Current cast count: "  + str(len(currentCast)))	
-							
-							if chunk_count > 1:
-								graph.add((group, ome['contains'], ghost))
-							else:
-								#print("Adding person as subject-entity to exit event "   + str(eventCount))
-								graph.add((event, ome['has-subject-entity'], ghost))
-							
-						if going_count > 1:
-							graph.add((event, ome['has-subject-entity'], group))	
-							#print("Adding group as subject-entity to exit event "   + str(eventCount))
-							groupCount = groupCount + 1
-							group = ns['group/'+str(groupCount)]	
-	
-									
-					else:
-						#print("Exit some. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
-						
-						if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
-							involved = involved[1:-1]	
-							
-						striped = involved.strip()							
-						chunks = striped.split()
-						
-						#print("striped: " + striped)
-				
 						chunk_count = len(chunks)
-					
+						
 						if chunk_count > 1:
 							type = extractCURIEorURI(graph, "[omb:Group]")
 							graph.add((group, RDF.type, type))
 						
-						for chunk in chunks:							
-							#print("chunk: " + chunk)	
-								
-							ghost = cast[chunk]
+						for chunk in chunks:
+							striped = chunk.strip()
 							
-							#print("ghost: " + ghost)
-							
-							if ghost in currentCast:
-								currentCast.remove(ghost)
-								#print("Current cast count: "  + str(len(currentCast)))	
+							if(len(striped) > 0 and striped[0] == "[" and striped[-1] == "]"):
+								striped = striped[1:-1]
+								currentCast.append(cast[striped])
 							
 							if chunk_count > 1:
-								graph.add((group, ome['contains'], ghost))
+								graph.add((group, ome['contains'], cast[striped]))
 							else:
-								#print("Adding person as subject-entity to exit event "   + str(eventCount))
-								graph.add((event, ome['has-subject-entity'], ghost))
+								#print("Adding person as subject-entity to entry event "   + str(eventCount))
+								graph.add((event, ome['has-subject-entity'], cast[striped]))
 							
 						if chunk_count > 1:
 							graph.add((event, ome['has-subject-entity'], group))	
-							#print("Adding group as subject-entity to exit event "   + str(eventCount))
+							#print("Adding group as subject-entity to entry event "   + str(eventCount))
 							groupCount = groupCount + 1
 							group = ns['group/'+str(groupCount)]	
-
+		
+						if(prior_event):
+							graph.add((event, ome['follows'], prior_event))
+							graph.add((prior_event, ome['precedes'], event))
+		
+						prior_event = event					
 	
+						eventCount = eventCount + 1
+						event = ns['event/'+str(eventCount)]
+									
+					if node.get("type") == "exit":		
 						
+						# Add Social Events for all the people who spoke since the last break (if there were any)
+						update = list()
+						update = getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, eventCount, event, prior_event, location)
+						eventCount = update[0]
+						prior_event = update[1]
 						
-					if(prior_event):
-						graph.add((event, ome['follows'], prior_event))
-						graph.add((prior_event, ome['precedes'], event))
-	
-					prior_event = event					
-
-					eventCount = eventCount + 1
-					event = ns['event/'+str(eventCount)]
+						event = ns['event/'+str(eventCount)]
+						
+						speakers = list()
+						speakerNodes = list()
+						speakerRef = list()
+						
+						# Add Travel Event
 					
-			#elif node.tag == "rs":	
-			#	#print("Found rs node")
-			#	if parent:
-			#		#print("Parent type is " + parent.tag)
-			#		if parent.tag == "p" or  parent.tag == "l":
-			#			refersTo.append(node.get("about"))
+						graph.add((event, RDF.type, omj['Travel']))						
+						graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
+	
+						#print("Found entrence event!")
+						if location:
+							graph.add((event, ome['from'], location))		
+							
+						involved = node.get("about")	
 						
-			#parent = node
-				
-
-		# Add Social Events for all the people who spoke since the last break (if there were any)
-		#print("Final section of scene, currentCast:" + str(len(currentCast)) + " sperkers: " + str(len(speakers)))
-		update = list()
-		update = getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location)
-		eventCount = update[0]
-		prior_event = update[1]
+						if involved.strip() == "" or "-all" in involved:
+							# Remove everyone
+													
+							#print("Exit all. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
+							
+							#for peep in currentCast:	
+							#	print(peep)
+							
+							if currentCast > 1:							
+								type = extractCURIEorURI(graph, "[omb:Group]")
+								graph.add((group, RDF.type, type))
+															
+							
+							for peep in currentCast:	
+								if currentCast > 1:
+									graph.add((group, ome['contains'], peep))
+								else:
+									#print("Adding person as subject-entity to exuant event "   + str(eventCount))
+									graph.add((event, ome['has-subject-entity'], peep))							
+	
+							if currentCast > 1:
+								graph.add((event, ome['has-subject-entity'], group))	
+								#print("Adding group as subject-entity to exuant event "   + str(eventCount))
+								groupCount = groupCount + 1
+								group = ns['group/'+str(groupCount)]	
+							
+							currentCast = list()
+						
+						elif "!" in involved:
+							#print("Exit except some. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
+							
+							if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
+								involved = involved[1:-1]	
+								
+							involved = involved.strip()	
+							
+							if(len(involved) > 0 and involved[0] == "!" and involved[1] == "(" and involved[-1] == ")"):
+								involved = involved[2:-1]	
+							
+							#print("involved: " + involved)
+							
+							striped = involved.strip()	
+							
+							chunks = striped.split()
+							
+							staying = list()
+							going = list()
+							
+							for player in currentCast:
+								if player in chunks:
+									staying.append(player)
+								else:
+									going.append(player)
+									
+							going_count = len(going)	
+							
+							if going_count > 1:
+								type = extractCURIEorURI(graph, "[omb:Group]")
+								graph.add((group, RDF.type, type))	
+								
+							for ghost in going:							
+								#print("ghost: " + ghost)
+								
+								
+								if ghost in currentCast:
+									currentCast.remove(ghost)
+									#print("Current cast count: "  + str(len(currentCast)))	
+								
+								if chunk_count > 1:
+									graph.add((group, ome['contains'], ghost))
+								else:
+									#print("Adding person as subject-entity to exit event "   + str(eventCount))
+									graph.add((event, ome['has-subject-entity'], ghost))
+								
+							if going_count > 1:
+								graph.add((event, ome['has-subject-entity'], group))	
+								#print("Adding group as subject-entity to exit event "   + str(eventCount))
+								groupCount = groupCount + 1
+								group = ns['group/'+str(groupCount)]	
 		
-		event = ns['event/'+str(eventCount)]
-		group = ns['group/'+str(groupCount)]
+										
+						else:
+							#print("Exit some. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
+							
+							if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
+								involved = involved[1:-1]	
+								
+							striped = involved.strip()							
+							chunks = striped.split()
+							
+							#print("striped: " + striped)
+					
+							chunk_count = len(chunks)
+						
+							if chunk_count > 1:
+								type = extractCURIEorURI(graph, "[omb:Group]")
+								graph.add((group, RDF.type, type))
+							
+							for chunk in chunks:							
+								#print("chunk: " + chunk)	
+									
+								ghost = cast[chunk]
+								
+								#print("ghost: " + ghost)
+								
+								if ghost in currentCast:
+									currentCast.remove(ghost)
+									#print("Current cast count: "  + str(len(currentCast)))	
+								
+								if chunk_count > 1:
+									graph.add((group, ome['contains'], ghost))
+								else:
+									#print("Adding person as subject-entity to exit event "   + str(eventCount))
+									graph.add((event, ome['has-subject-entity'], ghost))
+								
+							if chunk_count > 1:
+								graph.add((event, ome['has-subject-entity'], group))	
+								#print("Adding group as subject-entity to exit event "   + str(eventCount))
+								groupCount = groupCount + 1
+								group = ns['group/'+str(groupCount)]	
+	
+		
+							
+							
+						if(prior_event):
+							graph.add((event, ome['follows'], prior_event))
+							graph.add((prior_event, ome['precedes'], event))
+		
+						prior_event = event					
+	
+						eventCount = eventCount + 1
+						event = ns['event/'+str(eventCount)]
+						
+				#elif node.tag == "rs":	
+				#	#print("Found rs node")
+				#	if parent:
+				#		#print("Parent type is " + parent.tag)
+				#		if parent.tag == "p" or  parent.tag == "l":
+				#			refersTo.append(node.get("about"))
+							
+				#parent = node
+					
+	
+			# Add Social Events for all the people who spoke since the last break (if there were any)
+			#print("Final section of scene, currentCast:" + str(len(currentCast)) + " sperkers: " + str(len(speakers)))
+			update = list()
+			update = getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, eventCount, event, prior_event, location)
+			eventCount = update[0]
+			prior_event = update[1]
 			
-		speakers = list()
-		speakerNodes = list()
-		currentCast = list()
-		
+			event = ns['event/'+str(eventCount)]
+			group = ns['group/'+str(groupCount)]
+				
+			speakers = list()
+			speakerNodes = list()
+			currentCast = list()
+			speakerRef = list()
 		
 		
 		
@@ -491,9 +537,11 @@ def convert(teifile, namespace):
 
 """	
 
-def getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, event, prior_event, location):
+def getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, eventCount, event, prior_event, location):
 
 	# Add Social Events for all the people who spoke since the last break (if there were any)
+	
+	#print("---")
 	
 	speakerCount = 0
 					
@@ -530,8 +578,7 @@ def getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, 
 						#	print("No parent")
 								
 					parent = subnode
-			
-			speakerCount +=1 				
+						
 				
 			if len(currentCast) > 0:
 			
@@ -548,12 +595,20 @@ def getSocial(graph, ns, speakers, speakerNodes, cast, currentCast, eventCount, 
 				if(prior_event):
 					graph.add((event, ome['follows'], prior_event))
 					graph.add((prior_event, ome['precedes'], event))
+					
+				lineRef = speakerRef[speakerCount]	
+				#print("LineRef: " + lineRef)
+				
+				if lineRef != "":
+					graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(lineRef)))
 
 				prior_event = event	
 				first = False
 
 				eventCount = eventCount + 1							
 				event = ns['event/'+str(eventCount)]	
+			
+			speakerCount +=1 	
 	
 	return [eventCount, prior_event]
 
