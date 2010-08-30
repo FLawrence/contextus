@@ -77,8 +77,20 @@ def convert(teifile, namespace):
 	graph.load(teifile, format="rdfa")
 	
 	graph.bind("default", ns)
-				
-		#print("Prefix: " + prefix + ", URI: " + nms)
+	
+	to_update = ""
+
+	for prefix, nsuri in graph.namespaces(): 
+		#print("prefix: " + str(prefix) + " - " + str(nsuri))
+		if nsuri in ns:
+			to_update = nsuri
+			
+	for s, p, o in graph:
+    		#print s, p, o
+    		if to_update != "" and to_update in s:
+    			graph.remove((s, p, o))
+			s = URIRef(s.replace(to_update, ns))			
+			graph.add((s, p, o))
 	
 	act = ""
 	scene = ""
@@ -90,7 +102,9 @@ def convert(teifile, namespace):
 	for castItem in castItems:
 		actorNode = castItem.find('actor')
 		roleNode = castItem.find('role')
-		id = roleNode.get("{http://www.w3.org/XML/1998/namespace}id")
+
+		if roleNode != None:
+			id = roleNode.get("{http://www.w3.org/XML/1998/namespace}id")
 		
 		#print("Found castItem!")
 
