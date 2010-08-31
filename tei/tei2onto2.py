@@ -27,6 +27,7 @@ omj = Namespace("http://purl.org/ontomedia/ext/events/travel#")
 
 _urifixer = re.compile('^([A-Za-z][A-Za-z0-9+-.]*://)(/*)(.*?)')
 
+
 def _urljoin(base, uri):
 	uri = _urifixer.sub(r'\1\3', uri)
 	return urlparse.urljoin(base, uri)
@@ -65,12 +66,13 @@ def resolveURI(uri):
 
 #### End nabbage
 
-def usage():
-	print "Usage: ./tei2onto.py [-t|--teifile=]teifile.xml [-n|--namespace=]http://mynamespace.com/"
+def usage(error):
+	print "(Error " + str(error) +  ") Usage: ./tei2onto.py [-t|--teifile=]teifile.xml [-n|--namespace=]http://mynamespace.com/ [-p|--perseusid=]docid"
 	return
 
 def convert(teifile, namespace):
 	#graph_uri = "http://contextus.net/resource/blue_velvet/"
+	
 	ns = Namespace(namespace)
 
 	graph = ConjunctiveGraph()
@@ -98,6 +100,9 @@ def convert(teifile, namespace):
 
 	tree = ET.parse(teifile)
 	cast = dict()
+	
+	titleNode = tree.find('//title')
+	
 	castItems = tree.findall('/text/body/div1/castList//castItem')
 	for castItem in castItems:
 		actorNode = castItem.find('actor')
@@ -203,15 +208,24 @@ def convert(teifile, namespace):
 				if node.tag == "lb":
 					if node.get("ed") == "F1":
 						line = node.get("n")	
-						ref = str(act) + "." + str(scene) + "." + str(line)	
-						#print("Ref: " + ref)
+						if titleNode != None:
+							ref = titleNode.text + " " + str(act) + "." + str(scene) + "." + str(line)	
+						else:
+							ref = str(act) + "." + str(scene) + "." + str(line)
+							
+						xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene) + "#xpointer(//lb[@ed='F1' and @n='" + str(line)	 + "'])"
+						#print("Ref: " + xpointer)
 				elif node.tag == "sp":
 					id = node.get("who")
 					
 					if id and cast:
 						speakers.append(cast[id[1:]])	
 						speakerNodes.append(node)
-						speakerRef.append(ref)
+						
+						if perseusid == None:
+							speakerRef.append(ref)
+						else:
+							speakerRef.append(xpointer)
 						#print("Line ref: " + ref)
 						
 						if cast[id[1:]] not in currentCast:
@@ -236,7 +250,11 @@ def convert(teifile, namespace):
 						# Add Travel Event
 						
 						graph.add((event, RDF.type, omj['Travel']))
-						graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
+						
+						if perseusid == None:
+							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
+						else:
+							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(xpointer)))
 						
 						#print("Entrance event. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
 	
@@ -301,8 +319,12 @@ def convert(teifile, namespace):
 						
 						# Add Travel Event
 					
-						graph.add((event, RDF.type, omj['Travel']))						
-						graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
+						graph.add((event, RDF.type, omj['Travel']))		
+						
+						if perseusid == None:
+							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
+						else:
+							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(xpointer)))
 	
 						#print("Found entrence event!")
 						if location:
@@ -613,8 +635,13 @@ def getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, 
 				lineRef = speakerRef[speakerCount]	
 				#print("LineRef: " + lineRef)
 				
+				#Xpointer reference to Perseus
+				
 				if lineRef != "":
-					graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(lineRef)))
+					if perseusid == None:
+						graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(lineRef)))
+					else:
+						graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(lineRef)))					
 
 				prior_event = event	
 				first = False
@@ -630,27 +657,34 @@ def getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, 
 
 def main(argv):
 	try:
-		opts, args = getopt.getopt(argv, "ht:n:", ["help", "teifile=", "namespace="])
+		opts, args = getopt.getopt(argv, "ht:n:p:", ["help", "teifile=", "namespace=", "perseusid="])
 	except getopt.GetoptError:
-		usage()
+		usage("1")
 		sys.exit(2)
 
 	teifile = None
 	namespace = None
+	global perseusid
+	perseusid = None
+	
 	for o,a in opts:
+		#print("o: " + str(o) + ", a: " + str(a))
 		if o in ("-t", "--teifile"):
 			teifile = a
 		elif o in ("-n", "--namespace"):
 			namespace = a
+		elif o in ("-p", "--perseusid"):
+			perseusid = a	
+			#print("perseusid: " + str(perseusid))
 		else:
-			usage()
+			usage("2")
 			sys.exit(2)
 
 	if teifile == None or namespace == None:
-		usage()
+		usage("3")
 		sys.exit(2)
-
-	convert(teifile, namespace)
+		
+	convert(teifile, namespace)	
 
 if __name__ == "__main__":
 	main(sys.argv[1:])
