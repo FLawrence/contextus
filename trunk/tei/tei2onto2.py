@@ -32,7 +32,10 @@ def _urljoin(base, uri):
 	uri = _urifixer.sub(r'\1\3', uri)
 	return urlparse.urljoin(base, uri)
 
-def extractCURIEorURI(graph, resource):
+def extractCURIEorURI(graph, resource, o=""):
+
+	#print "Resource input: " + resource	
+
 	if(len(resource) > 0 and resource[0] == "[" and resource[-1] == "]"):
 		resource = resource[1:-1]
 
@@ -49,10 +52,27 @@ def extractCURIEorURI(graph, resource):
 		for prefix, ns in graph.namespaces(): 
 			#print("Prefix: " + prefix + ", ns: " + ns + ", rpre: " + rpre )
 			if prefix == rpre:
-				if ns in input_ns:
+				if ns in input_ns:				
 					resource = input_ns + rsuf
+					s = URIRef(input_ns + o)
+					#print "S: " + str(s)
+
 				else:
 					resource = ns + rsuf
+					s = URIRef(ns + o)
+					#print "S: " + str(s)					
+
+
+				#print "O: " + str(o)
+				p = graph.value(s, None, o)
+				#print "P: " + str(p)				
+				
+				if s != None and p != None and o != None:
+			    		graph.remove((s, p, o))
+					s = URIRef(resolveURI(resource))		
+					graph.add((s, p, o))				
+					
+	#print "Resource output: " + resource				
 
 	# TODO: is this enough to check for bnodes?
 	if(len(resource) > 0 and resource[0:2] == "_:"):
@@ -88,7 +108,7 @@ def convert(teifile, namespace):
 			to_update = nsuri
 			
 	for s, p, o in graph:
-    		#print s, p, o
+#    		print s, p, o
     		if to_update != "" and to_update in s:
     			graph.remove((s, p, o))
 			s = URIRef(s.replace(to_update, ns))			
@@ -97,6 +117,8 @@ def convert(teifile, namespace):
 	act = ""
 	scene = ""
 	line = ""
+	char = 0
+	loc = 0
 
 	tree = ET.parse(teifile)
 	cast = dict()
@@ -117,11 +139,22 @@ def convert(teifile, namespace):
 		role = None
 
 		# Check to see if we already have an entry
-		if(roleNode != None and roleNode.get("about")):
-			role = extractCURIEorURI(graph, roleNode.get("about"))
+		if(roleNode != None and roleNode.get("about")):		
+
+			charname = roleNode.get("about")
+			
+			if(charname.find(":") > -1):
+				nmsp,nom = charname.split(":", 1)		
+				charcode =  "character/" + str(char)
+				charref = nmsp + ":" + charcode + "]"
+				role = extractCURIEorURI(graph, charref,nom[0:-1])
+				char += 1				
+			else:
+				role = extractCURIEorURI(graph, charname)
+
 			cast[id] = role
 			graph.add((role, RDF.type, omb['Character']))
-			#print("Adding id " + id + " to " + role)
+			#print(charname + ": adding id " + id + " to " + role)
 		
 		if(actorNode != None and actorNode.get("about")):
 			actor = extractCURIEorURI(graph, actorNode.get("about"))
@@ -158,14 +191,35 @@ def convert(teifile, namespace):
 			for stageItem in stageItems:
 				if stageItem.get("type") == "location":
 					# The RDFa parser doesn't handle the type - so we can grab that here.
-					if stageItem.get("typeof") and stageItem.get("about"):
-						type = extractCURIEorURI(graph, stageItem.get("typeof"))
-						location = extractCURIEorURI(graph, stageItem.get("about"))
-						graph.add((location, RDF.type, type))
-					elif stageItem.get("about"):
-						type = extractCURIEorURI(graph, "[loc:Space]")
-						location = extractCURIEorURI(graph, stageItem.get("about"))
-						graph.add((location, RDF.type, type))		
+					
+					if stageItem.get("about") != None:
+						locname = stageItem.get("about")
+					
+						# Adding location type/loc:space for location
+						if stageItem.get("typeof") and stageItem.get("about"):
+							type = extractCURIEorURI(graph, stageItem.get("typeof"))
+							#print "1. Location: " + str(location) + " Type: " + str(type)
+						elif stageItem.get("about"):	
+							#print "2. Location: " + str(locname)											
+							type = extractCURIEorURI(graph, "[loc:Space]")						
+						
+						
+						# Get location value and add rdfs:label is location is not using the TEI value
+						if(locname.find(":") > -1):
+							nmsp,nom = locname.split(":", 1)		
+							loccode =  "location/" + str(loc)
+							locref = nmsp + ":" + loccode + "]"
+							location = extractCURIEorURI(graph, locref, nom[0:-1])
+							loc += 1
+							graph.add((location, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(nom[0:-1])))
+						else:
+							location = extractCURIEorURI(graph, stageItem.get("about"))
+						
+						# Add location to graph
+						graph.add((location, RDF.type, type))	
+					else:
+						location = ""
+					
 						
 					#print("Adding location type: " + type + " (" + location + ")")
 	
@@ -196,7 +250,6 @@ def convert(teifile, namespace):
 			event = ns['event/'+str(eventCount)]
 			group = ns['group/'+str(groupCount)]	
 			
-			first = True
 			refersTo = list()
 			#parent = None
 			speakerNodes = list()
@@ -272,8 +325,9 @@ def convert(teifile, namespace):
 						chunk_count = len(chunks)
 						
 						if chunk_count > 1:
-							type = extractCURIEorURI(graph, "[omb:Group]")
-							graph.add((group, RDF.type, type))
+							#type = extractCURIEorURI(graph, "[omb:Group]")
+							#graph.add((group, RDF.type, type))
+							graph.add((group, RDF.type, omb['Group']))
 						
 						for chunk in chunks:
 							striped = chunk.strip()
@@ -341,8 +395,9 @@ def convert(teifile, namespace):
 							#	print(peep)
 							
 							if currentCast > 1:							
-								type = extractCURIEorURI(graph, "[omb:Group]")
-								graph.add((group, RDF.type, type))
+								#type = extractCURIEorURI(graph, "[omb:Group]")
+								#graph.add((group, RDF.type, type))
+								graph.add((group, RDF.type, omb['Group']))
 															
 							
 							for peep in currentCast:	
@@ -389,8 +444,9 @@ def convert(teifile, namespace):
 							going_count = len(going)	
 							
 							if going_count > 1:
-								type = extractCURIEorURI(graph, "[omb:Group]")
-								graph.add((group, RDF.type, type))	
+								#type = extractCURIEorURI(graph, "[omb:Group]")
+								#graph.add((group, RDF.type, type))	
+								graph.add((group, RDF.type, omb['Group']))
 								
 							for ghost in going:							
 								#print("ghost: " + ghost)
@@ -427,8 +483,9 @@ def convert(teifile, namespace):
 							chunk_count = len(chunks)
 						
 							if chunk_count > 1:
-								type = extractCURIEorURI(graph, "[omb:Group]")
-								graph.add((group, RDF.type, type))
+								#type = extractCURIEorURI(graph, "[omb:Group]")
+								#graph.add((group, RDF.type, type))
+								graph.add((group, RDF.type, omb['Group']))
 							
 							for chunk in chunks:							
 								#print("chunk: " + chunk)	
@@ -578,6 +635,7 @@ def getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, 
 	# Add Social Events for all the people who spoke since the last break (if there were any)
 	
 	#print("---")
+	first = True	
 	
 	speakerCount = 0
 					
