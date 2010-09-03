@@ -14,6 +14,8 @@ The form needs to load the data from the triple store for a given entity or even
  * User can edit the character name/location name strings
  * User can save this information back to the data store as their version of the character/location
 
+Notes: Have to work out about identification/authorisation. Can anyone write? Use names? Hashed email addresses? Can link in with site log in?
+
 == Milestone 2: Enhanced Entity Editor ==
 
  * User can assert that two entities are the same 
