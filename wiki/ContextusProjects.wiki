@@ -43,4 +43,4 @@ TEI bootstrapping projects
  * Conversion script (Python) :Mike
  * Dark Star :Mike
  * Shakespeare :Faith
- ** [Shakespeare Editor] :Faith
+  * [ShakespeareEditorPlan Shakespeare Data Editor] :Faith
