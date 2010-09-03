@@ -1,0 +1,49 @@
+#labels Phase-Design,Phase-Requirements
+#Project plan for editing the Shakespeare Data
+
+= Introduction =
+
+The form needs to load the data from the triple store for a given entity or event, allow the user to edit the data and save it back to the triple store as their interpretation of the entity/event
+
+
+= Details =
+
+== Milestone 1: Basic Entity Editor ==
+
+ * Editor gets character and location information from the automatically generated in the data store and presents this to the user. 
+ * User can edit the character name/location name strings
+ * User can save this information back to the data store as their version of the character/location
+
+== Milestone 2: Enhanced Entity Editor ==
+
+ * User can assert that two entities are the same 
+ * User can assert basic geographic links between locations (next to, within etc)? 
+
+== Milestone 3: Basic Event Editor ==
+
+ * Editor can load up the information related to an event:
+  ** Event Type (drop down of allowed event types)
+  ** Location (drop down of known locations)
+  ** Subject Entity (checky boxes of known characters - if more than one is selected then a group should be made/used)
+  ** Subjects Involved (checky boxes of known characters - if more then one is selected then a group should be made/used. This list should include any subject entities even if they are not checked)
+  ** References (Checky boxes of all known characters and locations)
+  ** Event specific information
+   ** In the case of travel events then:
+    ** From (drop down of known locations)
+    ** To (drop down of known locations)
+ * User can edit the event details
+ * User can save this information back to the data store as their version of the character/location
+
+== Milestone 4: Extended Entity Editor ==
+
+ * User can create new character and location entities
+
+== Milestone 5: Extended Event Editor == 
+
+ * User can create and populate new events
+ * User can select from more types of events
+
+== Milestone 6: Bonus Options ==
+
+ * User can delete events
+ * User can delete character and location entities
