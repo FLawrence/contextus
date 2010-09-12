@@ -266,7 +266,8 @@ def convert(teifile, namespace):
 						else:
 							ref = str(act) + "." + str(scene) + "." + str(line)
 							
-						xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene) + "#xpointer(//lb[@ed='F1' and @n='" + str(line)	 + "'])"
+						#xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene) + "#xpointer(//lb[@ed='F1' and @n='" + str(line)	 + "'])"
+						xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene)
 						#print("Ref: " + xpointer)
 				elif node.tag == "sp":
 					id = node.get("who")
@@ -278,7 +279,8 @@ def convert(teifile, namespace):
 						if perseusid == None:
 							speakerRef.append(ref)
 						else:
-							speakerRef.append(xpointer)
+							speechRef = xpointer + "#xpointer(ancestor::sp//lb[@ed='F1' and @n='" + str(int(line) + 1) + "'])"
+							speakerRef.append(speechRef)
 						#print("Line ref: " + ref)
 						
 						if cast[id[1:]] not in currentCast:
@@ -307,7 +309,8 @@ def convert(teifile, namespace):
 						if perseusid == None:
 							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
 						else:
-							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(xpointer)))
+							entRef = xpointer + "#xpointer(//lb[@ed='F1' and @n='" + str(line) + "']/following-sibling::*[1]/self::stage)"
+							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(entRef)))
 						
 						#print("Entrance event. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
 	
@@ -328,19 +331,33 @@ def convert(teifile, namespace):
 							#type = extractCURIEorURI(graph, "[omb:Group]")
 							#graph.add((group, RDF.type, type))
 							graph.add((group, RDF.type, omb['Group']))
+							
+						event_label = ""	
+						en = 1
 						
 						for chunk in chunks:
 							striped = chunk.strip()
 							
 							if(len(striped) > 0 and striped[0] == "[" and striped[-1] == "]"):
 								striped = striped[1:-1]
-								currentCast.append(cast[striped])
+								currentCast.append(cast[striped])								
 							
 							if chunk_count > 1:
 								graph.add((group, ome['contains'], cast[striped]))
+								
+								if en == chunk_count:
+									event_label = event_label[0:-2] + " and " + striped
+									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " arrive")))
+								elif en < chunk_count:
+									event_label += striped + ", "									
+									
 							else:
 								#print("Adding person as subject-entity to entry event "   + str(eventCount))
+								graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(striped + " arrives")))
 								graph.add((event, ome['has-subject-entity'], cast[striped]))
+								
+							en += 1
+									
 							
 						if chunk_count > 1:
 							graph.add((event, ome['has-subject-entity'], group))	
@@ -378,10 +395,11 @@ def convert(teifile, namespace):
 						if perseusid == None:
 							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
 						else:
-							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(xpointer)))
+							exitRef = xpointer
+							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(exitRef)))
 	
 						#print("Found entrence event!")
-						if location:
+						if location != None:
 							graph.add((event, ome['from'], location))		
 							
 						involved = node.get("about")	
@@ -394,20 +412,37 @@ def convert(teifile, namespace):
 							#for peep in currentCast:	
 							#	print(peep)
 							
-							if currentCast > 1:							
+							if len(currentCast) > 1:							
 								#type = extractCURIEorURI(graph, "[omb:Group]")
 								#graph.add((group, RDF.type, type))
 								graph.add((group, RDF.type, omb['Group']))
 															
+							event_label = ""
+							en = 1
 							
 							for peep in currentCast:	
-								if currentCast > 1:
+								short_ref = ""
+								for key, value in cast.iteritems():
+									if peep == value:	
+										short_ref = key
+							
+								if len(currentCast) > 1:
 									graph.add((group, ome['contains'], peep))
+									
+									if en == len(currentCast):
+										event_label = event_label[0:-2] + " and " + short_ref
+										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave1")))	
+									elif en < len(currentCast):
+										event_label += short_ref + ", "
+																	
 								else:
 									#print("Adding person as subject-entity to exuant event "   + str(eventCount))
-									graph.add((event, ome['has-subject-entity'], peep))							
+									graph.add((event, ome['has-subject-entity'], peep))
+									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(short_ref + " leaves1")))
+									
+								en += 1
 	
-							if currentCast > 1:
+							if len(currentCast) > 1:
 								graph.add((event, ome['has-subject-entity'], group))	
 								#print("Adding group as subject-entity to exuant event "   + str(eventCount))
 								groupCount = groupCount + 1
@@ -448,19 +483,39 @@ def convert(teifile, namespace):
 								#graph.add((group, RDF.type, type))	
 								graph.add((group, RDF.type, omb['Group']))
 								
+
+							event_label = ""
+							en = 1
+								
 							for ghost in going:							
 								#print("ghost: " + ghost)
 								
-								
+								short_ref = ""
+								for key, value in cast.iteritems():
+									if ghost == value:	
+										short_ref = key
+										
+										
 								if ghost in currentCast:
 									currentCast.remove(ghost)
 									#print("Current cast count: "  + str(len(currentCast)))	
 								
-								if chunk_count > 1:
+								if going_count > 1:
 									graph.add((group, ome['contains'], ghost))
+									
+									if en == len(going):
+										event_label = event_label[0:-2] + " and " + short_ref
+										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave2")))	
+									elif en < len(going):
+										event_label += short_ref + ", "	
+										
 								else:
 									#print("Adding person as subject-entity to exit event "   + str(eventCount))
 									graph.add((event, ome['has-subject-entity'], ghost))
+									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(short_ref + " leaves2")))
+									
+								en += 1
+								
 								
 							if going_count > 1:
 								graph.add((event, ome['has-subject-entity'], group))	
@@ -486,9 +541,13 @@ def convert(teifile, namespace):
 								#type = extractCURIEorURI(graph, "[omb:Group]")
 								#graph.add((group, RDF.type, type))
 								graph.add((group, RDF.type, omb['Group']))
+								
+								
+							event_label = ""
+							en = 1								
 							
 							for chunk in chunks:							
-								#print("chunk: " + chunk)	
+								#print("chunk: " + chunk)			
 									
 								ghost = cast[chunk]
 								
@@ -500,9 +559,19 @@ def convert(teifile, namespace):
 								
 								if chunk_count > 1:
 									graph.add((group, ome['contains'], ghost))
+									
+									if en == len(currentCast):
+										event_label = event_label[0:-2] + " and " + chunk
+										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave3")))	
+									elif en < len(currentCast):
+										event_label += chunk + ", "										
+									
 								else:
 									#print("Adding person as subject-entity to exit event "   + str(eventCount))
 									graph.add((event, ome['has-subject-entity'], ghost))
+									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(chunk + " leaves3")))
+									
+								en += 1	
 								
 							if chunk_count > 1:
 								graph.add((event, ome['has-subject-entity'], group))	
@@ -677,6 +746,10 @@ def getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, 
 			if len(currentCast) > 0:
 			
 				graph.add((event, ome['has-subject-entity'], speaker))
+				
+				for key, value in cast.iteritems():
+					if speaker == value:				
+						graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(key + " speaks")))
 			
 				if location:
 					graph.add((event, oml['is-located-in'], location))	
