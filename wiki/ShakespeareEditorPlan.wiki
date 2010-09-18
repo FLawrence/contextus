@@ -16,6 +16,9 @@ The form needs to load the data from the triple store for a given entity or even
 
 Notes: Have to work out about identification/authorisation. Can anyone write? Use names? Hashed email addresses? Can link in with site log in?
 
+Progress So Far (Keith): Implemented login with OpenID (& Google's flavour), user able to edit character names. Data put back into fourstore in a graph identified by a SHA1 hash of the returned OpenID. Still a few wrinkles to work out with fourstore-php.
+
+
 == Milestone 2: Enhanced Entity Editor ==
 
  * User can assert that two entities are the same 
