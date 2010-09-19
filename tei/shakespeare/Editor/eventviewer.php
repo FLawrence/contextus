@@ -22,7 +22,7 @@ $query = implode("\n", $prefixes);
 $queryAuto = $query . "\n" . 'SELECT ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p ome:Social . } } ORDER BY ?id LIMIT 1' . "\n";
 
 $s = new FourStore_Store('http://contextus.net:7000/sparql/');
-$events = array();
+$event = array();
 
 $rAuto = $s->select($queryAuto);
 
@@ -32,12 +32,44 @@ $queryAuto2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> 
 
 $rAuto = $s->select($queryAuto2);
 
-$count = 0;
+$involves_count = 0;
+$refers_count = 0;
+
 foreach ($rAuto as $result)
 {
-	$events[$count]['link'] = $result['p'];
-	$events[$count]['value'] = $result['o'];
-	$count++;
+	switch ($result['p'])
+	{
+		case "http://www.w3.org/2000/01/rdf-schema#label":
+			$event['label'] = $result['o'];
+			break;
+		case "http://www.w3.org/2000/01/rdf-schema#seeAlso":
+			$event['text'] = $result['o'];
+			break;	
+		case "http://purl.org/ontomedia/core/expression#refers-to":		
+			$event['refers'][$refers_count] = $result['o'];
+			$refers_count ++;
+			break;
+		case "http://purl.org/ontomedia/core/expression#involves":		
+			$event['involves'][$involves_count] = $result['o'];
+			$involves_count ++;
+			break;		
+		case "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
+			$event['type'] = $result['o'];
+			break;	
+		case "http://purl.org/ontomedia/core/expression#has-subject-entity":
+			$event['subject'] = $result['o'];
+			break;	
+		case "http://signage.ecs.soton.ac.uk/ontologies/location#is-located-in":
+			$event['location'] = $result['o'];
+			break;	
+		case "http://purl.org/ontomedia/core/expression#precedes":
+			$event['precedes'] = $result['o'];
+			break;	
+		case "http://purl.org/ontomedia/core/expression#follows":
+			$event['follows'] = $result['o'];
+			break;				
+	}
+
 }
 
 
@@ -54,15 +86,35 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 <p>Your ID is: <?php print($_GET['idhash']); ?>, and your event was <?php print($eventNum); ?></p>
 
 <table>
+<tr><td>Event</td><td><?php print($event['type']);?></td></tr>
+<tr><td>Description</td><td><?php print($event['label']);?></td></tr>
+<tr><td>Subject</td><td><?php print($event['subject']);?></td></tr>
+<tr><td valign='top'>Also Involves</td>
+<td>
+<ul>
 <?php
-
-foreach ($events as $count => $values)
+foreach ($event['involves'] as $value)
 {
-	print('<tr><td>' . $values['link'] . '</td><td>' . $values['value'] . '</td></tr>');
+	print('<li>' . $value['value'] . '</li>');
 }
-
 ?>
+</ul>
+</td>
+<tr><td>Location</td><td><?php print($event['location']);?></td></tr>
+<tr><td valign='top'>Refers To</td>
+<td>
+<ul>
+<?php
+foreach ($event['refers'] as $value)
+{
+	print('<li>' . $value['value'] . '</li>');
+}
+?>
+</ul>
+</td>
+<tr><td>Previous</td><td><?php print($event['follows']);?></td></tr>
+<tr><td>Next</td><td><?php print($event['precedes']);?></td></tr>
+<tr><td>See Text</td><td><?php print($event['text']);?></td></tr>
 </table>
-
 </body>
 </html>
