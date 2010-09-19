@@ -30,7 +30,6 @@ foreach ($changes as $change)
 	if ($r == true)
 	{
 		//print('Setting: &lt;' . $subject . '&gt; &lt;http://xmlns.com/foaf/0.1/name&gt; "' . $object . '" . <br />');
-		$s->set($graphUser, '<' . $subject . '> a <http://purl.org/ontomedia/ext/common/being#Character> .');
 		$s->set($graphUser, '<' . $subject . '> <http://xmlns.com/foaf/0.1/name> "' . $object . '" .');
 	}
 	else

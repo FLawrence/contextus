@@ -19,7 +19,7 @@ $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $_GET['idhash'] .  '/';
 
 $query = implode("\n", $prefixes);
-$queryAuto = $query . "\n" . 'SELECT ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p ome:Event . } } ORDER BY ?id LIMIT 1' . "\n";
+$queryAuto = $query . "\n" . 'SELECT ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p ome:Social . } } ORDER BY ?id LIMIT 1' . "\n";
 
 $s = new FourStore_Store('http://contextus.net:7000/sparql/');
 $events = array();
@@ -28,9 +28,9 @@ $rAuto = $s->select($queryAuto);
 
 $eventNum = array_pop(explode("/",$rAuto[0]['id']));
 
-$queryAuto = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphAuto . 'event/' . $eventNum . '> ?p ?o . } }' . "\n";
+$queryAuto2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphAuto . 'event/' . $eventNum . '> ?p ?o . } }' . "\n";
 
-$rAuto = $s->select($queryAuto);
+$rAuto = $s->select($queryAuto2);
 
 $count = 0;
 foreach ($rAuto as $result)
@@ -51,7 +51,7 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 </head>
 <body>
 
-<p>Your ID is: <?php print($_GET['idhash']); ?></p>
+<p>Your ID is: <?php print($_GET['idhash']); ?>, and your event was <?php print($eventNum); ?></p>
 
 <table>
 <?php
