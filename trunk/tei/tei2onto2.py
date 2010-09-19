@@ -119,6 +119,9 @@ def convert(teifile, namespace):
 	line = ""
 	char = 0
 	loc = 0
+	
+	#timeline = ns['timeline/narrative']
+	#graph.add((timeline, RDF.type, ome['Timeline']))
 
 	tree = ET.parse(teifile)
 	cast = dict()
@@ -195,13 +198,13 @@ def convert(teifile, namespace):
 					if stageItem.get("about") != None:
 						locname = stageItem.get("about")
 					
-						# Adding location type/loc:space for location
+						# Adding location type/oml:space for location
 						if stageItem.get("typeof") and stageItem.get("about"):
 							type = extractCURIEorURI(graph, stageItem.get("typeof"))
 							#print "1. Location: " + str(location) + " Type: " + str(type)
 						elif stageItem.get("about"):	
 							#print "2. Location: " + str(locname)											
-							type = extractCURIEorURI(graph, "[loc:Space]")						
+							type = extractCURIEorURI(graph, oml['Space'])						
 						
 						
 						# Get location value and add rdfs:label is location is not using the TEI value
@@ -279,7 +282,7 @@ def convert(teifile, namespace):
 						if perseusid == None:
 							speakerRef.append(ref)
 						else:
-							speechRef = xpointer + "#xpointer(ancestor::sp//lb[@ed='F1' and @n='" + str(int(line) + 1) + "'])"
+							speechRef = xpointer + "#xpointer(//lb[@ed='F1' and @n='" + str(int(line) + 1) + "']/ancestor::sp)"
 							speakerRef.append(speechRef)
 						#print("Line ref: " + ref)
 						
