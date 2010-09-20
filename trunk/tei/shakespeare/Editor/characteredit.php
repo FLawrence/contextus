@@ -6,21 +6,11 @@ require 'fourstore-php/Namespace.php';
 require '/usr/share/php/libzend-framework-php/Zend/Loader/Autoloader.php';
 spl_autoload_register(array('Zend_Loader_Autoloader', 'autoload'));
 
-$prefixes = array();
-$prefixes[] = 'PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>';
-$prefixes[] = 'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
-$prefixes[] = 'PREFIX ds:   <http://contextus.net/resource/dark_star/>';
-$prefixes[] = 'PREFIX dse:  <http://contextus.net/resource/dark_star/event>';
-$prefixes[] = 'PREFIX omb:  <http://purl.org/ontomedia/ext/common/being#>';
-$prefixes[] = 'PREFIX ome:  <http://purl.org/ontomedia/core/expression#>';
-$prefixes[] = 'PREFIX foaf: <http://xmlns.com/foaf/0.1/>';
-
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $_GET['idhash'] .  '/';
 
-$query = implode("\n", $prefixes);
-$queryAuto = $query . "\n" . 'SELECT ?name, ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; foaf:name ?name . } }' . "\n";
-$queryUser = $query . "\n" . 'SELECT ?name, ?id WHERE { GRAPH <' . $graphUser . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; foaf:name ?name . } }' . "\n";
+$queryAuto = 'SELECT ?name, ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; foaf:name ?name . } }' . "\n";
+$queryUser = 'SELECT ?name, ?id WHERE { GRAPH <' . $graphUser . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; foaf:name ?name . } }' . "\n";
 
 $s = new FourStore_Store('http://contextus.net:7000/sparql/');
 $characters = array();

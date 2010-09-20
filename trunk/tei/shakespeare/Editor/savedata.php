@@ -6,14 +6,22 @@ require 'fourstore-php/Namespace.php';
 require '/usr/share/php/libzend-framework-php/Zend/Loader/Autoloader.php';
 spl_autoload_register(array('Zend_Loader_Autoloader', 'autoload'));
 
-//print_r($_POST);
-//print("<br /><br />");
-
 $changes = explode("|", $_POST['alteredData']);
 
-$graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $_POST['idhash'] .  '/';
+$userGraphURL = 'http://contextus.net/resource/midsum_night_dream/' . $_POST['idhash'] .  '/';
+
+$queryUser = 'SELECT ?s, ?p, ?o WHERE { GRAPH <' . $userGraphURL . '> { ?s ?p ?o } }' . "\n";
 
 $s = new FourStore_Store('http://contextus.net:7000/sparql/');
+
+$userGraph = array();
+
+$results = $s->select($queryUser);
+
+foreach ($results as $result)
+{
+	addTripleToGraph($userGraph, $result);
+}
 
 $results = array();
 
@@ -23,29 +31,57 @@ foreach ($changes as $change)
 
 	if (count($parts) != 2) continue;
 
-	$subject = $graphUser . 'character/' . $parts[0];
+	$subject = $userGraphURL . 'character/' . $parts[0];
 	$object = $parts[1];
 
-	//print('Asking: &lt;' . $subject . '&gt; &lt;http://xmlns.com/foaf/0.1/name&gt; ?o <br />');
-	$r = $s->ask('ASK WHERE {<' . $subject . '> <http://xmlns.com/foaf/0.1/name> ?o }');
+	addTripleToGraph($userGraph, makeTriple($subject, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
+	addTripleToGraph($userGraph, makeTriple($subject, 'http://xmlns.com/foaf/0.1/name' ,$object));
+}
 
-	if ($r == true)
-	{
-		$r = $s->set($graphUser, '<' . $subject . '> <http://xmlns.com/foaf/0.1/name> "' . $object . '" .');
-		$r = $s->add($graphUser, '<' . $subject . '> a <http://purl.org/ontomedia/ext/common/being#Character> .');
-		$results['Setting: &lt;' . $subject . '&gt; &lt;http://xmlns.com/foaf/0.1/name&gt; "' . $object . '"'] = $r;
-	}
-	else
-	{
-		$r = $s->add($graphUser, '<' . $subject . '> a <http://purl.org/ontomedia/ext/common/being#Character> .');
-		$r = $s->add($graphUser, '<' . $subject . '> <http://xmlns.com/foaf/0.1/name> "' . $object . '" .');
-		$results['Adding: &lt;' . $subject . '&gt; &lt;http://xmlns.com/foaf/0.1/name&gt; "' . $object . '"'] = $r;
-	}
+$results['Deleting Graph'] = $s->delete($userGraphURL);
+
+foreach ($userGraph as $triple)
+{
+	$results['Adding Triple: ' . makeTurtleFromTriple($triple)] = $s->add($userGraphURL, makeTurtleFromTriple($triple));
 }
 
 //header('Location: characteredit.php?idhash=' . $_POST['idhash']);
 print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
 print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
+
+function addTripleToGraph ( &$graph, $triple )
+{
+	$graph[md5($triple['s'] . $triple['p'])] = $triple;
+}
+
+function makeTriple ( $subject, $predicate, $object )
+{
+	$triple = array( 's' => $subject, 'p' => $predicate, 'o' => $object);
+	return $triple;
+}
+
+function makeTurtleFromTriple ( $triple )
+{
+	$turtle = "";
+
+	if (substr($triple['s'], 0 , 7) == 'http://')
+		$turtle .= '<' . $triple['s'] . '> ';
+	else
+		$turtle .= $triple['s'] . ' ';
+
+	if (substr($triple['p'], 0 , 7) == 'http://')
+		$turtle .= '<' . $triple['p'] . '> ';
+	else
+		$turtle .= $triple['p'] . ' ';
+
+	if (substr($triple['o'], 0 , 7) == 'http://')
+		$turtle .= '<' . $triple['o'] . '> .';
+	else
+		$turtle .= '"' . $triple['o'] . '" .';
+
+	return $turtle;
+}
+
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
