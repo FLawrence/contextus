@@ -9,6 +9,7 @@ spl_autoload_register(array('Zend_Loader_Autoloader', 'autoload'));
 $changes = explode("|", $_POST['alteredData']);
 
 $userGraphURL = 'http://contextus.net/resource/midsum_night_dream/' . $_POST['idhash'] .  '/';
+$autoGraphURL = 'http://contextus.net/resource/midsum_night_dream/data/';
 
 $queryUser = 'SELECT ?s, ?p, ?o WHERE { GRAPH <' . $userGraphURL . '> { ?s ?p ?o } }' . "\n";
 
@@ -31,21 +32,28 @@ foreach ($changes as $change)
 
 	if (count($parts) != 2) continue;
 
+	$originalSubject = $autoGraphURL . 'character/' . $parts[0];
 	$subject = $userGraphURL . 'character/' . $parts[0];
 	$object = $parts[1];
 
 	addTripleToGraph($userGraph, makeTriple($subject, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
 	addTripleToGraph($userGraph, makeTriple($subject, 'http://xmlns.com/foaf/0.1/name' ,$object));
+	addTripleToGraph($userGraph, makeTriple($subject, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalSubject));
 }
 
 $results['Deleting Graph'] = $s->delete($userGraphURL);
 
+$allTriples = "";
+
 foreach ($userGraph as $triple)
 {
-	$results['Adding Triple: ' . makeTurtleFromTriple($triple)] = $s->add($userGraphURL, makeTurtleFromTriple($triple));
+	$allTriples .= makeTurtleFromTriple($triple) . "\n";
 }
+$results['Adding All Triples'] = $s->add($userGraphURL, $allTriples);
 
-//header('Location: characteredit.php?idhash=' . $_POST['idhash']);
+header('Location: characteredit.php?idhash=' . $_POST['idhash']);
+exit(0);
+
 print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
 print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
 

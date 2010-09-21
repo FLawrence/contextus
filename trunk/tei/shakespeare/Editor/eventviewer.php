@@ -31,7 +31,7 @@ else if(isset($_POST['goto']) && $_POST['eventNum'] != "")
 	$eventNum = $_POST['eventNum'];
 else
 {
-	$queryAuto1 = $query . "\n" . 'SELECT ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p omj:Travel . } } ORDER BY ?id LIMIT 1' . "\n";
+	$queryAuto1 = $query . "\n" . 'SELECT DISTINCT ?id WHERE { { GRAPH ?g {?id a ome:Event}} {GRAPH <' . $graphAuto . '> { ?id ?p ?o . } } } ORDER BY ?id LIMIT 1' . "\n";
 
 	$rAuto = $s->select($queryAuto1);
 
@@ -118,50 +118,50 @@ foreach ($rAuto as $result)
 
 		case "http://signage.ecs.soton.ac.uk/ontologies/location#is-located-in":
 
-			$queryAuto6 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";		
-			
+			$queryAuto6 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+
 			$result6 = $s->select($queryAuto6);
-		
+
 			$event['location'] = $result6[0]['label'];
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#to":
-		
-			$queryAuto7 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";		
-			
+
+			$queryAuto7 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+
 			$result7 = $s->select($queryAuto7);
-		
+
 			$event['to'] = $result7[0]['label'];
-			
+
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#from":
 
-			$queryAuto8 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";		
-			
+			$queryAuto8 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+
 			$result8 = $s->select($queryAuto8);
-		
+
 			$event['from'] = $result8[0]['label'];
 
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#precedes":
-		
-			$queryAuto9 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";		
-			
+
+			$queryAuto9 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+
 			$result9 = $s->select($queryAuto9);
-		
-			$event['precedes']['label'] = $result9[0]['label'];	
+
+			$event['precedes']['label'] = $result9[0]['label'];
 			$event['precedes']['id'] = array_pop(explode("/",$result['o']));
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#follows":
-		
-			$queryAuto10 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";		
-			
+
+			$queryAuto10 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+
 			$result10 = $s->select($queryAuto10);
-		
-			$event['follows']['label'] = $result10[0]['label'];			
+
+			$event['follows']['label'] = $result10[0]['label'];
 			$event['follows']['id'] = array_pop(explode("/",$result['o']));
 			break;
 	}
