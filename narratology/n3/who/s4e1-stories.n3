@@ -5,7 +5,8 @@
 @prefix motivation:	<http://contextus.net/agentmotivation#>.
 #FIXME.New: make this ontology, extends FOAF. Combine with provenance.
 #FIXME.Old: make this ontology. This is used for story assertions that allow basic plot logic to be expressed. Essentially this is more precise expression of what 'factor' and 'agent' means combined with cause-and-effect mechanics such as 'believes', 'facilitates', 'requires' etc.
-@prefix provenance:	<http://openprovenance.org/ontology#>.
+@prefix canda:		<http://contextus.net/causeandeffect#>.
+#FIXME. In reality, from the two above all we have are agent:believes and thing:facilitates. Two ontologies for two predicates?!
 @prefix event: 	    <http://purl.org/NET/c4dm/event.owl#>.
 @prefix timeline:   <http://purl.org/NET/c4dm/timeline.owl#>.
 @prefix programmes:	<http://purl.org/ontology/po/>.
@@ -88,19 +89,27 @@ whoc:martha_jones a foaf:Person;
 
 # GROUPS
 
-:journalists a foaf:Group.
+:journalists a foaf:Group;
+	foaf:name "The journalists covering Adipose Industries".
 
-:adiposeindustries_staff a foaf:Group.
-:salespeople a foaf:Group.
-:collection_squad a foaf:Group.
-:adipose a foaf:Group.
-:wednesday_girls a foaf:Group.
-:pill_takers a foaf:Group.
-:bystanders a foaf:Group.
-:adiposian_first_family a foaf:Group.
+:adiposeindustries_staff a foaf:Group;
+	foaf:name "The staff working at Adipose Industries".
+:salespeople a foaf:Group;
+	foaf:name "The sales people working at Adipose Industries".
+:collection_squad a foaf:Group;
+	foaf:name "Adipose Industrie's covert collection squad".
+:adipose a foaf:Group;
+	foaf:name "The Adipose".
+:wednesday_girls a foaf:Group;
+	foaf:name "Sylvia's friends, the 'Wednesday Girls'".
+:bystanders a foaf:Group;
+	foaf:name "The bystanders around the Wine Bar".
+:adiposian_first_family a foaf:Group;
+	foaf:name "The Adiposian First Family".
 :health_and_safety a foaf:Group;
-    rdfs:label "Health and Safety".
-:adiposeindustries_customers a foaf:Group.
+    foaf:name "Health and Safety".
+:adiposeindustries_customers a foaf:Group;
+	foaf:name "Customers of Adipose Industries".
 
 # GROUP MEMBERSHIPS
 
@@ -127,30 +136,53 @@ whoc:martha_jones a foaf:Person;
 
 ### LOCATIONS
 
-whol:tardis a geonames:Feature.
-whol:noble_house a geonames:Feature.
-
-:adipose_industries a geonames:Feature.
-:adipose_industries_foyer a geonames:Feature.
-:adipose_industries_basement a geonames:Feature.
-:adipose_industries_cinema a geonames:Feature.
-:adipose_industries_projection_booth a geonames:Feature.
-:adipose_industries_sales_cubicles a geonames:Feature.
-:rogers_house a geonames:Feature.
-:staceys_house a geonames:Feature.
-:staceys_bathroom a geonames:Feature.
-:fosters_office a geonames:Feature.
-:suburbia a geonames:Feature.
-whol:hilltop a geonames:Feature.
-:adipose_industries_storeroom a geonames:Feature.
-:adipose_industries_ladies_toilets a geonames:Feature.
-:adipose_industries_ladies_toilets_cubicles a geonames:Feature.
-:adipose_industries_cradle a geonames:Feature.
-:church a geonames:Feature.
-:adipose_industries_rooftop a geonames:Feature.
-:wine_bar a geonames:Feature.
-:wine_bar_surroundings a geonames:Feature.
-:adipose_industries_surroundings a geonames:Feature.
+whol:tardis a geonames:Feature;
+	rdfs:label "The Tardis".
+whol:noble_house a geonames:Feature;
+	rdfs:label "The Noble's family house".
+:adipose_industries a geonames:Feature;
+	rdfs:label "Adipose Industries HQ".
+:adipose_industries_foyer a geonames:Feature;
+	rdfs:label "Adipose Industries HQ's foyer".
+:adipose_industries_basement a geonames:Feature;
+	rdfs:label "Adipose Industries HQ's basement".
+:adipose_industries_cinema a geonames:Feature;
+	rdfs:label "Adipose Industries HQ's cinema".
+:adipose_industries_projection_booth a geonames:Feature;
+	rdfs:label "Adipose Industries HQ's cinema's projection booth".
+:adipose_industries_sales_cubicles a geonames:Feature;
+	rdfs:label "Adipose Industries HQ's sales cubicles".
+:rogers_house a geonames:Feature;
+	rdfs:label "Roger's house".
+:staceys_house a geonames:Feature;
+	rdfs:label "Stacey's house".
+:staceys_bathroom a geonames:Feature;
+	rdfs:label "Stacey's Bathroom".
+:fosters_office a geonames:Feature;
+	rdfs:label "Miss Foster's office".
+:suburbia a geonames:Feature;
+	rdfs:label "A housing estate, somewhere".
+:hilltop a geonames:Feature;
+	rdfs:label "The hilltop Wilf uses for astronomy".
+:adipose_industries_storeroom a geonames:Feature;
+	rdfs:label "A storeroom in Adipose Industries HQ".
+:adipose_industries_ladies_toilets a geonames:Feature;
+	rdfs:label "The ladies toilets in Adipose Industries".
+:adipose_industries_ladies_toilets_cubicles a geonames:Feature;
+	rdfs:label "The cubicles of the ladies toilets".
+:adipose_industries_cradle a geonames:Feature;
+	rdfs:label "Adipose Industries HQ's window cleaner's cradle".
+:church a geonames:Feature;
+	rdfs:label "A church".
+:adipose_industries_rooftop a geonames:Feature;
+	rdfs:label "Adipose Industries's rooftop".
+:wine_bar a geonames:Feature;
+	rdfs:label "A wine bar.";
+	rdfs:comment "Smart, but not posh".
+:wine_bar_surroundings a geonames:Feature;
+	rdfs:label "The wine bar's surroundings".
+:adipose_industries_surroundings a geonames:Feature;
+	rdfs:label "The surrounding streets of Adipose Industries HQ".
 
 :wine_bar geonames:neighbours :wine_bar_surroundings.
 :adipose_industries geonames:neighbours :adipose_industries_surroundings.
@@ -179,29 +211,49 @@ whol:hilltop a geonames:Feature.
     rdfs:subClassOf itemOntologyPlaceholder:item.
 #FIXME and same for pill?
 
-whoi:tardis a itemOntologyPlaceholder:item.
-whoi:psychic_paper a itemOntologyPlaceholder:item.
-whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
-
-:id_pass a itemOntologyPlaceholder:item.
-:adipose_product a itemOntologyPlaceholder:item.
-:pendant1 a :AdiposePendant.
-:pendant2 a :AdiposePendant.
-:pendant3 a :AdiposePendant.
-:papers1 a itemOntologyPlaceholder:item.
-:papers2 a itemOntologyPlaceholder:item.
-:window_cleaners_cradle a itemOntologyPlaceholder:item.
-:fosters_comm_device a itemOntologyPlaceholder:item.
-:doctors_gizmo a itemOntologyPlaceholder:item.
-:sylvias_car a itemOntologyPlaceholder:item.
-:sylvias_car_keys a itemOntologyPlaceholder:item.
-:gun1 a itemOntologyPlaceholder:item.
-:gun2 a itemOntologyPlaceholder:item.
-:fosters_capsule a itemOntologyPlaceholder:item.
-:fosters_sonic_pen a itemOntologyPlaceholder:item.
-:inducer a itemOntologyPlaceholder:item.
-:adipose_nursery_ship a itemOntologyPlaceholder:item.
-:bin a itemOntologyPlaceholder:item.
+whoi:tardis a itemOntologyPlaceholder:item;
+	rdfs:label "The Tardis".
+whoi:psychic_paper a itemOntologyPlaceholder:item;
+	rdfs:label "The Doctor's psychic paper.";
+	rdfs:comment "Rarely fails".
+whoi:sonic_screwdriver a itemOntologyPlaceholder:item;
+	rdfs:label "The Doctor's sonic screwdriver".
+:id_pass a itemOntologyPlaceholder:item;
+	rdfs:label "An ID pass Donna has found".
+:adipose_product a itemOntologyPlaceholder:item;
+	rdfs:label "The product Adipose Industries is pushing".
+:pendant1 a :AdiposePendant;
+	rdfs:label "A Pendant". # Should label / make these belong to their owner
+:pendant2 a :AdiposePendant;
+	rdfs:label "A Pendant".
+:pendant3 a :AdiposePendant;
+	rdfs:label "A Pendant".
+:window_cleaners_cradle a itemOntologyPlaceholder:item; # And tie these both location and items together? Tardis too.
+	rdfs:label "Adipose Industries HQ's window cleaner's cradle".
+:fosters_comm_device a itemOntologyPlaceholder:item;
+	rdfs:label "Miss Foster's communication device".
+:doctors_gizmo a itemOntologyPlaceholder:item;
+	rdfs:label "The Doctor's gizmo";
+	rdfs:comment "Like an improvised palm-pilot, with a red flashing light".
+:sylvias_car a itemOntologyPlaceholder:item;
+	rdfs:label "Sylvia's car";
+	rdfs:comment "Often borrowed by Donna".
+:sylvias_car_keys a itemOntologyPlaceholder:item;
+	rdfs:label "The keys to Sylvia's car".
+:gun1 a itemOntologyPlaceholder:item;
+	rdfs:label "Miss Foster's guard's gun".
+:gun2 a itemOntologyPlaceholder:item;
+	rdfs:label "Miss Foster's guard's gun".
+:fosters_capsule a itemOntologyPlaceholder:item;
+	rdfs:label "Miss Foster's capsule".
+:fosters_sonic_pen a itemOntologyPlaceholder:item;
+	rdfs:label "Miss Foster's sonic pen".
+:inducer a itemOntologyPlaceholder:item;
+	rdfs:label "The 'Inducer'".
+:adipose_nursery_ship a itemOntologyPlaceholder:item;
+	rdfs:label "The nursery ship sent by the Adiposian First Family".
+:bin a itemOntologyPlaceholder:item;
+	rdfs:label "A bin".
 
 # FIXME: where does pill come from
 # FIXME: this need to be a kind of class declaration 
@@ -744,6 +796,8 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 	rdfs:resource <path/to/encodedscript/#scene1>;
 	stories:source :script.
 
+# make same URI for both resource and object, then content negotiation can determine whether its RDF or the web page you get back
+
 :donna_in_noble_house { whoc:donna_noble geonames:locatedIn whol:noble_house. }
 
 :scriptScene02 a stories:Interpretation;
@@ -801,50 +855,54 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 	stories:source :script.
 
 :doctor_in_adipose_industries_basement { whoc:doctor geonames:locatedIn :adipose_industries_basement. }
-#:sonic_screwdriver_facilitates_doctor_in_adipose_industries_basement { whoi:sonic_screwdriver logic:facilitates :doctor_in_basement}
 
 :scriptScene09 a stories:Interpretation;
 	rdfs:label "Script - Scene 9";
 	rdfs:comment "THE DOCTOR's down a flight of steps, sonicking a basement door - PRAC EXPLOSION on the lock, and he slips inside.";
 	stories:interprets :building_entry;
+	stories:retracts :doctor_in_adipose_industries_surroundings;
 	stories:asserts :doctor_in_basement;
 	stories:asserts :sonic_screwdriver_facilitates_doctor_in_adipose_industries_basement;
 	stories:source :script.
 
+:donna_noble_in_adipose_industries_foyer { whoc:donna_noble geonames:locatedIn :adipose_industries_foyer. }
+:donna_noble_is_health_and_safety { :health_and_safety foaf:member whoc:donna_noble. }
+:guard_believes_donna_noble_is_health_and_safety { :security_guard1 motivation:believes :donna_is_health_and_safety. }
+:id_pass_facilitates_guard_believes_donna_noble_is_health_and_safety { :id_pass canda:facilitates :guard_believes_donna_noble_is_health_and_safety. }
+:donna_noble_is_adipose_staff { whoc:donna_noble foaf:member :adipose_staff. }
+:guard_believes_donna_noble_is_adipose_staff { :guard motivation:believes :donna_noble_is_adipose_staff. }
+:guard_believes_donna_noble_is_adipose_staff_facilitates_donna_noble_in_adipose_industries_foyer { :guard_believes_donna_noble_is_adipose_staff canda:facilitates :donna_noble_in_adipose_industries_foyer. }
 
-#:donna_noble_in_adipose_industries_foyer { whoc:donna_noble geonames:locatedIn :adipose_industries_foyer. }
-#:donna_noble_is_health_and_safety { :health_and_safety foaf:member whoc:donna_noble. }
-#:guard_believes_donna_noble_is_health_and_safety { :security_guard1 logic:believes :donna_is_health_and_safety. }
-#:id_pass_facilitates_guard_believes_donna_noble_is_health_and_safety { :id_pass logic:facilitates :guard_believes_donna_noble_is_health_and_safety. }
-
-# FIXME: Need to say something like...
-# guard_facilitates_donna_in_adipose_industries_because_member_of_adipose_staff_permits_foafagent_in_adipose_industries
-# ...expressed with the story logic ontology. 
-# staff *permits* entry? entry *requires* staff? latter more generic (idea of dependencies) but not quite as natural english.
-
-# FIXME: Also should aim to get a balance between named graphs and in-line tripes. only need to be named if they're going to be re-used? or if all auto-generated from tool does it matter?
+# set of one group of guard group, so is a.n. other guard.
 
 :scriptScene10 a stories:Interpretation;
 	rdfs:label "Script - Scene 10";
 	rdfs:comment "Posh foyer. DONNA shows her ID pass to the SECURITY GUARD. DONNA: 'Donna Noble, Health and Safety.'";
 	stories:interprets :building_entry;
-	stories:asserts :donna_in_foyer;
-	stories:asserts :donna_is_health_and_safety;
-	stories:asserts :guard_believes_donna_is_health_and_safety;
+	stories:retracts :donna_in_adipose_industries_surroundings;
+	stories:asserts :donna_noble_in_adipose_industries_foyer;
+	stories:asserts :guard_believes_donna_noble_is_health_and_safety;
 	stories:asserts :id_pass_facilitates_guard_believes_donna_noble_is_health_and_safety;
+	stories:asserts :guard_believes_donna_noble_is_adipose_staff_facilitates_donna_noble_in_adipose_industries_foyer;
 	stories:source :script.
 
-	
-#:doctor_is_health_and_safety { :health_and_safety foaf:member whoc:doctor. :whoc:doctor foaf:name "John Smith". }
-#:psychic_paper_facilitates_guard_believes_doctor_is_health_and_safety { whoi:psychic_paper logic:facilitates [:security_guard2 logic:believes :doctor_is_health_and_safety.] };
+:doctor_in_adipose_industries_basement { whoc:doctor geonames:locatedIn :adipose_industries_basement. }
+:doctor_is_health_and_safety { :health_and_safety foaf:member whoc:doctor. }
+:guard_believes_doctor_is_health_and_safety { :security_guard1 motivation:believes :doctor_is_health_and_safety. }
+:psychic_paper_facilitates_guard_believes_doctor_is_health_and_safety { whoi:psychic_paper canda:facilitates :guard_believes_doctor_is_health_and_safety. }
+:doctor_is_adipose_staff { whoc:doctor foaf:member :adipose_staff. }
+:guard_believes_doctor_is_adipose_staff { :guard motivation:believes :doctor_is_adipose_staff. } 
+:guard_believes_doctor_is_adipose_staff_facilitates_doctor_in_adipose_industries_foyer { :guard_believes_doctor_is_adipose_staff canda:facilitates :doctor_in_adipose_industries_basement.}
+
+# set of one group of guard group, so is a.n. other guard.
 
 :scriptScene11 a stories:Interpretation;
 	rdfs:label "Script - Scene 11";
 	rdfs:comment "'Backstage' corridor, all concrete and pipes. THE DOCTOR passes a SECURITY GUARD, shows the psychic paper. THE DOCTOR: 'John Smith, Health and Safety.'";
 	stories:interprets :building_entry;
-	stories:asserts :doctor_is_health_and_safety;
 	stories:asserts :guard_believes_doctor_is_health_and_safety;
     stories:asserts :psychic_paper_facilitates_guard_believes_doctor_is_health_and_safety;
+    stories:asserts :guard_believes_doctor_is_adipose_staff_facilitates_doctor_in_adipose_industries_foyer;
     stories:source :script.
     
 :scriptScene12 a stories:Interpretation;
@@ -1735,16 +1793,57 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 	#
 	stories:source :script. 
 
-# FIXME: No way of ordering interpretations in sequence. ie scene1 < scene2 < scene 3. Would the :script do this somehow, or the :canonicalStory similar to consituent event?
+# FIXME: No way of ordering interpretations in sequence. ie scene1 < scene2 < scene 3. Would the :script do this somehow, or the :plotBeatsStory similar to consituent event?
 # This is could be esp. important as auto-injest would come from scripts, so stories as interpretations with no events could happen?
 # And somehow we need to group script scenes into the script -> done by source, but not ordered. -> perhaps source has location within media
 
 ### STORIES
 
-# CANONICAL STORY
+# 'HIGH LEVEL' STORY
 
-:canonicalStory a stories:story;
-	stories:events :canonicalStoryEvents;
+:highLevelStory a stories:Story;
+	rdfs:label "Doctor Who Series 4 Episode 1: Partners In Crime";
+	rdfs:comment "High Level Events";
+	stories:events :highLevelStoryEvents;
+	stories:contextualises :programmeProduction.
+
+:highLevelStoryEvents a stories:EventList;
+	stories:slot [
+		olo:index 1;
+		stories:item :adipose_industries_exposition
+		];
+	stories:slot [
+		olo:index 2;
+		stories:item :parthenogenesis_single
+		];
+	stories:slot [
+		olo:index 3;
+		stories:item :parthenogenesis_investigations
+		];
+	stories:slot [
+		olo:index 4;
+		stories:item :team_doctor_and_donna
+		];
+	stories:slot [
+		olo:index 5;
+		stories:item :parthenogenesis_all
+		];
+	stories:slot [
+		olo:index 6;
+		stories:item :adipose_arrive
+		];
+	stories:slot [
+		olo:index 7;
+		stories:item :donna_is_new_assistant
+		].
+
+
+# 'PLOT BEAT' LEVEL STORY
+
+:plotBeatsStory a stories:Story;
+	rdfs:label "Doctor Who Series 4 Episode 1: Partners In Crime";
+	rdfs:comment "Plot Beat Events and Interpretations";
+	stories:events :plotBeatsStoryEvents;
 	stories:contextualises :programmeProduction;
 	stories:contextualises :scriptScene01;
 	stories:contextualises :scriptScene02;
@@ -1758,7 +1857,11 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 	stories:contextualises :scriptScene10;
 	stories:contextualises :scriptScene11;
 	stories:contextualises :scriptScene12;
-	stories:contextualises :scriptScene13;
+	stories:contextualises :scriptScene13part1;
+	stories:contextualises :scriptScene13part2;
+	stories:contextualises :scriptScene13part3;
+	stories:contextualises :scriptScene13part4;
+	stories:contextualises :scriptScene13part5;
 	stories:contextualises :scriptScene14;
 	stories:contextualises :scriptScene15;
 	stories:contextualises :scriptScene15;
@@ -1875,7 +1978,7 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 	stories:contextualises :scriptScene127;
 	stories:contextualises :scriptScene128.
 
-:canonicalStoryEvents a stories:EventList;
+:plotBeatsStoryEvents a stories:EventList;
 	stories:slot [
 		olo:index 1;
 		stories:item :building_entry
@@ -1885,189 +1988,190 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 		stories:item :presentation
 		];
 	stories:slot [
-		olo:index 2;
+		olo:index 3;
 		stories:item :cubicles
 		];
 	stories:slot [
-		olo:index 3;
+		olo:index 4;
 		stories:item :stacey_and_donna
 		];
 	stories:slot [
-		olo:index 4;
+		olo:index 5;
 		stories:item :partho_activated
 		];
 	stories:slot [
-		olo:index 5;
+		olo:index 6;
 		stories:item :stacey_partho
 		];
 	stories:slot [
-		olo:index 6;
+		olo:index 7;
 		stories:item :donna_investigates
 		];
 	stories:slot [
-		olo:index 7;
+		olo:index 8;
 		stories:item :doctor_and_roger
 		];
 	stories:slot [
-		olo:index 8;
+		olo:index 9;
 		stories:item :collection_squad_sent
 		];
 	stories:slot [
-		olo:index 9;
+		olo:index 10;
 		stories:item :doctor_investigates
 		];
 	stories:slot [
-		olo:index 10;
+		olo:index 11;
 		stories:item :collection_squad_collects
 		];
 	stories:slot [
-		olo:index 11;
+		olo:index 12;
 		stories:item :foster_investigates
 		];
 	stories:slot [
-		olo:index 12;
+		olo:index 13;
 		stories:item :donna_with_family
 		];
 	stories:slot [
-		olo:index 13;
+		olo:index 14;
 		stories:item :doctor_investigates_pendant
 		];
 	stories:slot [
-		olo:index 14;
+		olo:index 15;
 		stories:item :doctor_to_storeroom
 		];
 	stories:slot [
-		olo:index 15;
+		olo:index 16;
 		stories:item :donna_to_cubicles
 		];
 	stories:slot [
-		olo:index 16;
+		olo:index 17;
 		stories:item :donna_cubicles
 		];
 	stories:slot [
-		olo:index 17;
+		olo:index 18;
 		stories:item :foster_investigates_cubicles
 		];
 	stories:slot [
-		olo:index 18;
+		olo:index 19;
 		stories:item :noble_family_prepare_for_evening
 		];
 	stories:slot [
-		olo:index 19;
+		olo:index 20;
 		stories:item :doctor_storeroom
 		];		
 	stories:slot [
-		olo:index 20;
+		olo:index 21;
 		stories:item :doctor_snooping
 		];		
 	stories:slot [
-		olo:index 21;
+		olo:index 22;
 		stories:item :pennys_capture
 		];		
 	stories:slot [
-		olo:index 22;
+		olo:index 23;
 		stories:item :doctor_donna_meet
 		];
 	stories:slot [
-		olo:index 23;
+		olo:index 24;
 		stories:item :doctor_donna_escape
 		];
 	stories:slot [
-		olo:index 24;
+		olo:index 25;
 		stories:item :fosters_chase
 		];
 	stories:slot [
-		olo:index 25;
+		olo:index 26;
 		stories:item :doctor_rescues_donna
 		];
 	stories:slot [
-		olo:index 26;
+		olo:index 27;
 		stories:item :penny_released
 		];
 	stories:slot [
-		olo:index 27;
+		olo:index 28;
 		stories:item :foster_and_doctor_reveal_indentities
 		];
 	stories:slot [
-		olo:index 28;
+		olo:index 29;
 		stories:item :premature_labour_triggered
 		];
 	stories:slot [
-		olo:index 29;
+		olo:index 30;
 		stories:item :penny_recaptured
 		];
 	stories:slot [
-		olo:index 30;
+		olo:index 31;
 		stories:item :foster_acts
 		];
 	stories:slot [
-		olo:index 31;
+		olo:index 32;
 		stories:item :doctor_hacking
 		];
 	stories:slot [
-		olo:index 32;
+		olo:index 33;
 		stories:item :guards_stunned
 		];
 	stories:slot [
-		olo:index 33;
+		olo:index 34;
 		stories:item :parthenogenesis
 		];
 	stories:slot [
-		olo:index 34;
-		stories:item :adipose_collection
-		];
-	stories:slot [
 		olo:index 35;
-		stories:item :foster_acts2
+		stories:item :adipose_collection
 		];
 	stories:slot [
 		olo:index 36;
-		stories:item :doctor_hacking2
+		stories:item :foster_acts2
 		];
 	stories:slot [
 		olo:index 37;
-		stories:item :nursery_arrives
+		stories:item :doctor_hacking2
 		];
 	stories:slot [
 		olo:index 38;
-		stories:item :wilf_night
+		stories:item :nursery_arrives
 		];
 	stories:slot [
 		olo:index 39;
-		stories:item :adiposians_communicate
+		stories:item :wilf_night
 		];
 	stories:slot [
 		olo:index 40;
-		stories:item :adipose_collection
+		stories:item :adiposians_communicate
 		];
 	stories:slot [
 		olo:index 41;
-		stories:item :fosters_collection
+		stories:item :adipose_collection
 		];
 	stories:slot [
 		olo:index 42;
-		stories:item :nursery_leaves
+		stories:item :fosters_collection
 		];
 	stories:slot [
 		olo:index 43;
-		stories:item :doctor_reports_crime
+		stories:item :nursery_leaves
 		];
 	stories:slot [
 		olo:index 44;
-		stories:item :penny_finally_escapes
+		stories:item :doctor_reports_crime
 		];
 	stories:slot [
 		olo:index 45;
-		stories:item :assistant_discussion
+		stories:item :penny_finally_escapes
 		];
 	stories:slot [
 		olo:index 46;
+		stories:item :assistant_discussion
+		];
+	stories:slot [
+		olo:index 47;
 		stories:item :departure
 		].
 
 # MEDIA REPRESENTATIONS
 
-<http://www.bbc.co.uk/programmes/b009w049#programme> stories:tells :canonicalStory.
+<http://www.bbc.co.uk/programmes/b009w049#programme> stories:tells :highLevelStory.
+<http://www.bbc.co.uk/programmes/b009w049#programme> stories:tells :plotBeatsStory.
 
 :cast {
 #	whoc:doctor portrayal:actor whop:david_tennant.
@@ -2081,7 +2185,7 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 	# [etc.....]
 	}
 
-:programmeProduction a stories:interpretation;
+:programmeProduction a stories:Interpretation;
 	rdfs:label "Production info for the TV programme: writer, cast, etc.";
 	stories:interprets <http://www.bbc.co.uk/programmes/b009w049#programme>;
 	stories:asserts :cast;
@@ -2091,6 +2195,6 @@ whoi:sonic_screwdriver a itemOntologyPlaceholder:item.
 :script a foaf:Document;
     foaf:primaryTopic <http://www.bbc.co.uk/programmes/b009w049#programme>;
     foaf:page <http://www.thewriterstale.com/scr.html>;
-#	rdf:resource <http://www.thewriterstale.com/pdfs/Doctor%20Who%204%20Ep.1%20-%20Shooting%20Script%20-%20Yellow%20-%2016.10.07.pdf>;
-	stories:tells :canonicalStory.
+	rdfs:resource <http://www.thewriterstale.com/pdfs/Doctor%20Who%204%20Ep.1%20-%20Shooting%20Script%20-%20Yellow%20-%2016.10.07.pdf>;
+	stories:tells :plotBeatsStory.
 #FIXME: group script scenes into script
