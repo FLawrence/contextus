@@ -47,10 +47,18 @@ else
 
 
 $queryAuto2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphAuto . $entityID . '> ?p ?o } }' . "\n";
-$queryUser2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphUser . $entityID . '> ?p ?o } }' . "\n";
-
 $rAuto = $s->select($queryAuto2);
-$rUser = $s->select($queryUser2);
+
+$rUser = null;
+
+
+if(isset($_GET['idhash']))
+{
+	$queryUser2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphUser . $entityID . '> ?p ?o } }' . "\n";
+	$rUser = $s->select($queryUser2);
+}
+
+
 
 $involved_count = 0;
 $aka_count = 0;
@@ -65,11 +73,11 @@ foreach ($rAuto as $result)
 	switch ($result['p'])
 	{
 		case "http://xmlns.com/foaf/0.1/name":
-			$entity['name'] = $result['o'];
+			$entity['name']['auto'] = $result['o'];
 			break;
 
 		case "http://www.w3.org/2000/01/rdf-schema#label":
-			$entity['name'] = $result['o'];
+			$entity['name']['auto'] = $result['o'];
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#involved-in":
@@ -78,13 +86,13 @@ foreach ($rAuto as $result)
 
 			$result3 = $s->select($queryAuto3);
 
-			$entity['involved'][$involved_count] = $result3[0]['label'];
+			$entity['involved']['auto'][$involved_count] = $result3[0]['label'];
 			$involved_count ++;
 			break;
 
 		case "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
-			$entity['type'] = array_pop(explode("#",$result['o']));
-			$type = $event['type'];
+			$entity['type']['auto'] = array_pop(explode("#",$result['o']));
+			$type = $event['type']['auto'];
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#is":
@@ -95,7 +103,7 @@ foreach ($rAuto as $result)
 
 				$result4a = $s->select($queryAuto4a);
 
-				$entity['aka'][$aka_count] = $result4a[0]['name'];
+				$entity['aka']['auto'][$aka_count] = $result4a[0]['name'];
 			}
 			else
 			{
@@ -103,7 +111,7 @@ foreach ($rAuto as $result)
 
 				$result4b = $s->select($queryAuto4b);
 
-				$entity['aka'][$aka_count] = $result4b[0]['label'];
+				$entity['aka']['auto'][$aka_count] = $result4b[0]['label'];
 			}
 
 			$aka_count ++;
@@ -117,7 +125,7 @@ foreach ($rAuto as $result)
 
 				$result5a = $s->select($queryAuto5a);
 
-				$entity['shadows'][$shadow_count] = $result5a[0]['name'];
+				$entity['shadows']['auto'][$shadow_count] = $result5a[0]['name'];
 			}
 			else
 			{
@@ -125,7 +133,7 @@ foreach ($rAuto as $result)
 
 				$result5b = $s->select($queryAuto5b);
 
-				$entity['shadows'][$shadow_count] = $result5b[0]['label'];
+				$entity['shadows']['auto'][$shadow_count] = $result5b[0]['label'];
 			}
 			$shadow_count++;
 			break;
@@ -136,7 +144,7 @@ foreach ($rAuto as $result)
 
 			$result6 = $s->select($queryAuto6);
 
-			$entity['located-in'][$loc_in_count] = $result6[0]['label'];
+			$entity['located-in']['auto'][$loc_in_count] = $result6[0]['label'];
 			$loc_in_count++;
 			break;
 
@@ -146,7 +154,7 @@ foreach ($rAuto as $result)
 
 			$result7 = $s->select($queryAuto7);
 
-			$entity['part-of'][$part_of_count] = $result7[0]['label'];
+			$entity['part-of']['auto'][$part_of_count] = $result7[0]['label'];
 			$part_of_count++;
 			break;
 
@@ -156,7 +164,7 @@ foreach ($rAuto as $result)
 
 			$result8 = $s->select($queryAuto8);
 
-			$entity['adjacent-to'][$adj_to_count] = $result8[0]['label'];
+			$entity['adjacent-to']['auto'][$adj_to_count] = $result8[0]['label'];
 			$adj_to_count++;
 			break;
 
@@ -164,19 +172,17 @@ foreach ($rAuto as $result)
 
 }
 
-if(count($rUser) > 0)
+if($rUser != null)
 {
-	foreach($uUser as $result)
+	foreach($rUser as $result)
 	{
 		switch ($result['p'])
 		{
 			case "http://xmlns.com/foaf/0.1/name":
-				$entity['name']['auto'] = $entity['name'];
 				$entity['name']['user'] = $result['o'];
 				break;
 
 			case "http://www.w3.org/2000/01/rdf-schema#label":
-				$entity['name']['auto'] = $entity['name'];
 				$entity['name']['user'] = $result['o'];
 				break;
 
@@ -186,7 +192,6 @@ if(count($rUser) > 0)
 
 				$result3 = $s->select($queryAuto3);
 
-				$entity['involved']['auto'][$involves_count] = $entity['involved'][$involves_count];
 				$entity['involved']['user'][$involves_count] = $result3[0]['label'];
 				$involved_count ++;
 				break;
@@ -205,7 +210,6 @@ if(count($rUser) > 0)
 
 					$result4a = $s->select($queryAuto4a);
 
-					$entity['aka']['auto'][$aka_count] = $entity['aka'][$aka_count];
 					$entity['aka']['user'][$aka_count] = $result4a[0]['name'];
 				}
 				else
@@ -214,7 +218,6 @@ if(count($rUser) > 0)
 
 					$result4b = $s->select($queryAuto4b);
 
-					$entity['aka']['auto'][$aka_count] = $entity['aka'][$aka_count];
 					$entity['aka']['user'][$aka_count] = $result4b[0]['label'];
 				}
 
@@ -229,7 +232,6 @@ if(count($rUser) > 0)
 
 					$result5a = $s->select($queryAuto5a);
 
-					$entity['shadows']['auto'][$shadow_count] = $entity['shadows'][$shadow_count];
 					$entity['shadows']['user'][$shadow_count] = $result5a[0]['name'];
 				}
 				else
@@ -238,7 +240,6 @@ if(count($rUser) > 0)
 
 					$result5b = $s->select($queryAuto5b);
 
-					$entity['shadows']['auto'][$shadow_count] = $entity['shadows'][$shadow_count];
 					$entity['shadows']['user'][$shadow_count] = $result5b[0]['label'];
 				}
 				$shadow_count++;
@@ -250,7 +251,6 @@ if(count($rUser) > 0)
 
 				$result6 = $s->select($queryAuto6);
 
-				$entity['located-in']['auto'][$loc_in_count] = $entity['located-in'][$loc_in_count];
 				$entity['located-in']['user'][$loc_in_count] = $result6[0]['label'];
 				$loc_in_count++;
 				break;
@@ -261,7 +261,6 @@ if(count($rUser) > 0)
 
 				$result7 = $s->select($queryAuto7);
 
-				$entity['part-of']['auto'][$part_of_count] = $entity['part-of'][$part_of_count];
 				$entity['part-of']['user'][$part_of_count] = $result7[0]['label'];
 				$part_of_count++;
 				break;
@@ -272,7 +271,6 @@ if(count($rUser) > 0)
 
 				$result8 = $s->select($queryAuto8);
 
-				$entity['adjacent-to']['auto'][$adj_to_count] = $entity['adjacent-to'][$adj_to_count];
 				$entity['adjacent-to']['user'][$adj_to_count] = $result8[0]['label'];
 				$adj_to_count++;
 				break;
@@ -302,12 +300,18 @@ function armourQuery ( $query )
 
 <table>
 <tr><td>Entity Number</td><td><?php print($entityID);?></td></tr>
-<tr><td>Entity Name</td><td><?php print($entity['name']);?></td></tr>
+<tr><td>Entity Name</td><td><?php
+if($entity['name']['user'] != null)
+	print($entity['name']['user'] . " [" . $entity['name']['auto'] . "]");
+else
+	print($entity['name']['auto']);
+
+?></td></tr>
 <tr><td>Entity Type</td><td><?php
 if($entity['type']['user'] != null)
 	print($entity['type']['user'] . " [" . $entity['type']['auto'] . "]");
 else
-	print($entity['type']);
+	print($entity['type']['auto']);
 
 ?></td></tr>
 
@@ -336,7 +340,7 @@ if($entity['aka'] != null)
 	print("</td></tr>");
 }
 
-if($entity['type'] == "Character" || $entity['type']['user'] = "Character")
+if($entity['type']['user'] = "Character" || ($entity['type']['auto'] = "Character" && $entity['type']['user'] == null))
 {
 	print("<tr><td valign='top'>Involved In</td>\n<td>\n<ul>");
 
@@ -350,7 +354,7 @@ if($entity['type'] == "Character" || $entity['type']['user'] = "Character")
 	}
 	else
 	{
-		foreach ($entity['involved'] as $value)
+		foreach ($entity['involved']['auto'] as $value)
 		{
 			print('<li>' . $value . '</li>');
 		}
@@ -417,7 +421,7 @@ else
 </table>
 
 <form name="navigateForm" method="post" action="entityviewer.php">
-
+<input name="idhash" type="hidden" value="<?php print($_GET['idhash']); ?>" />
 <p>Go To Character:
 <select name="charNum">
 <?php
