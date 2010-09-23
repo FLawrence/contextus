@@ -230,6 +230,20 @@ function retrieveStage ( $xpointer )
 <body>
 
 <?php //print_r($_POST); // print("<p>Query 1: " . armourQuery($queryAuto1) . "</p>"); ?>
+<form name="navigateForm" method="post" action="eventviewer.php">
+
+<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
+<input name="previousid" type="hidden" value="<?php print($event['follows']['id']); ?>" />
+<input name="nextid" type="hidden" value="<?php print($event['precedes']['id']); ?>" />
+
+<p><button name="previous" <?php if($event['follows'] ==""){print ('disabled="true"');}?>>Previous</button><button name="next" <?php if($event['precedes'] ==""){print ('disabled="true"');}?>>Next</button></p>
+<p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
+</form>
+
+<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
+<p><a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a></p>
+<p class="selectedNav">Event Viewer</p>
+<p><a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
 
 <table>
 <tr><td>Event Number</td><td><?php print($eventNum);?></td></tr>
@@ -286,21 +300,6 @@ foreach ($event['refers'] as $value)
 <tr><td>Next Event</td><td><?php print($event['precedes']['label']);?></td></tr>
 <tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']);?>">Text</a>)</td></tr>
 </table>
-
-<form name="navigateForm" method="post" action="eventviewer.php">
-
-<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
-<input name="previousid" type="hidden" value="<?php print($event['follows']['id']); ?>" />
-<input name="nextid" type="hidden" value="<?php print($event['precedes']['id']); ?>" />
-
-<p><button name="previous" <?php if($event['follows'] ==""){print ('disabled="true"');}?>>Previous</button><button name="next" <?php if($event['precedes'] ==""){print ('disabled="true"');}?>>Next</button></p>
-<p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
-</form>
-
-<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
-<p><a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a></p>
-<p class="selectedNav">Event Viewer</p>
-<p><a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
 
 </body>
 </html>
