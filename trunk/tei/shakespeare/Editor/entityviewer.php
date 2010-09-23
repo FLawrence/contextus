@@ -301,129 +301,6 @@ function armourQuery ( $query )
 <body>
 
 <?php //print_r($_POST); // print("<p>Query 1: " . armourQuery($queryAuto1) . "</p>"); ?>
-
-<table>
-<tr><td>Entity Number</td><td><?php print($entityID);?></td></tr>
-<tr><td>Entity Name</td><td><?php
-if(isset($entity['name']['user']))
-	print($entity['name']['user'] . " [" . $entity['name']['auto'] . "]");
-else
-	print($entity['name']['auto']);
-
-?></td></tr>
-<tr><td>Entity Type</td><td><?php
-if(isset($entity['type']['user']))
-	print($entity['type']['user'] . " [" . $entity['type']['auto'] . "]");
-else
-	print($entity['type']['auto']);
-
-?></td></tr>
-
-<?php
-
-if(isset($entity['aka']))
-{
-	print("<tr><td valign='top'>Is</td><td>");
-
-	if(isset($entity['aka']['user']))
-	{
-
-		if(count($entity['aka']['user']) == 1)
-			print($entity['aka']['user'][0]);
-		else
-		{
-			print("<ul>");
-			foreach ($entity['aka']['user'] as $value)
-			{
-				print('<li>' . $value . '</li>');
-			}
-			print("</ul>");
-		}
-	}
-
-	print("</td></tr>");
-}
-
-if($entity['type']['user'] = "Character" || ($entity['type']['auto'] = "Character" && $entity['type']['user'] == null))
-{
-	print("<tr><td valign='top'>Involved In</td>\n<td>\n<ul>");
-
-	if(isset($entity['involved']['user']))
-	{
-		foreach ($entity['involved']['user'] as $value)
-		{
-			print('<li>' . $value . '</li>');
-		}
-		print("</ul>\n</td>");
-	}
-	else
-	{
-		foreach ($entity['involved']['auto'] as $value)
-		{
-			print('<li>' . $value . '</li>');
-		}
-	}
-
-	print("</ul>\n</td>");
-}
-else
-{
-	if(isset($entity['located-in']['user']))
-	{
-		print("<tr><td valign='top'>Located Within</td><td>");
-
-		if(count($entity['located-in']['user']) == 1)
-			print($entity['located-in']['user'][0]);
-		else
-		{
-			print("<ul>");
-			foreach ($entity['located-in']['user'] as $value)
-			{
-				print('<li>' . $value . '</li>');
-			}
-			print("</ul>");
-		}
-	}
-
-	if(isset($entity['part-of']['user']))
-	{
-		print("<tr><td valign='top'>Is Part Of</td><td>");
-
-		if(count($entity['part-of']['user']) == 1)
-			print($entity['part-of']['user'][0]);
-		else
-		{
-			print("<ul>");
-			foreach ($entity['part-of']['user'] as $value)
-			{
-				print('<li>' . $value . '</li>');
-			}
-			print("</ul>");
-		}
-	}
-
-	if(isset($entity['adjacent-to']))
-	{
-		print("<tr><td valign='top'>Located Next To</td><td>");
-
-		if(count($entity['adjacent-to']['user']) == 1)
-			print($entity['adjacent-to']['user'][0]);
-		else
-		{
-			print("<ul>");
-			foreach ($entity['adjacent-to']['user'] as $value)
-			{
-				print('<li>' . $value . '</li>');
-			}
-			print("</ul>");
-		}
-	}
-
-}
-?>
-</tr>
-</table>
-
 <form name="navigateForm" method="post" action="entityviewer.php">
 <input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 <p>Go To Character:
@@ -493,6 +370,127 @@ else
 <p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
 <p class="selectedNav">Entity Viewer</p>
 <p><a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a></p>
+<table>
+<tr><td>Entity Number</td><td><?php print($entityID);?></td></tr>
+<tr><td>Entity Name</td><td><?php
+if(isset($entity['name']['user']))
+	print($entity['name']['user'] . " [" . $entity['name']['auto'] . "]");
+else
+	print($entity['name']['auto']);
+
+?></td></tr>
+<tr><td>Entity Type</td><td><?php
+if(isset($entity['type']['user']))
+	print($entity['type']['user'] . " [" . $entity['type']['auto'] . "]");
+else
+	print($entity['type']['auto']);
+
+?></td></tr>
+
+<?php
+
+if(isset($entity['aka']))
+{
+	print("<tr><td valign='top'>Is</td><td>");
+
+	if(isset($entity['aka']['user']))
+	{
+
+		if(count($entity['aka']['user']) == 1)
+			print($entity['aka']['user'][0]);
+		else
+		{
+			print("<ul>");
+			foreach ($entity['aka']['user'] as $value)
+			{
+				print('<li>' . $value . '</li>');
+			}
+			print("</ul>");
+		}
+	}
+
+	print("</td></tr>");
+}
+
+if($entity['type']['user'] = "Character" || ($entity['type']['auto'] = "Character" && $entity['type']['user'] == null))
+{
+	print("<tr><td valign='top'>Involved In</td>\n<td>\n<ul>");
+
+	if(isset($entity['involved']['user']))
+	{
+		foreach ($entity['involved']['user'] as $value)
+		{
+			print('<li>' . $value . '</li>');
+		}
+		print("</ul>\n</td>");
+	}
+	elseif(isset($entity['involved']['auto']))
+	{
+		foreach ($entity['involved']['auto'] as $value)
+		{
+			print('<li>' . $value . '</li>');
+		}
+	}
+
+	print("</ul>\n</td>");
+}
+else
+{
+	if(isset($entity['located-in']['user']))
+	{
+		print("<tr><td valign='top'>Located Within</td><td>");
+
+		if(count($entity['located-in']['user']) == 1)
+			print($entity['located-in']['user'][0]);
+		else
+		{
+			print("<ul>");
+			foreach ($entity['located-in']['user'] as $value)
+			{
+				print('<li>' . $value . '</li>');
+			}
+			print("</ul>");
+		}
+	}
+
+	if(isset($entity['part-of']['user']))
+	{
+		print("<tr><td valign='top'>Is Part Of</td><td>");
+
+		if(count($entity['part-of']['user']) == 1)
+			print($entity['part-of']['user'][0]);
+		else
+		{
+			print("<ul>");
+			foreach ($entity['part-of']['user'] as $value)
+			{
+				print('<li>' . $value . '</li>');
+			}
+			print("</ul>");
+		}
+	}
+
+	if(isset($entity['adjacent-to']))
+	{
+		print("<tr><td valign='top'>Located Next To</td><td>");
+
+		if(count($entity['adjacent-to']['user']) == 1)
+			print($entity['adjacent-to']['user'][0]);
+		else
+		{
+			print("<ul>");
+			foreach ($entity['adjacent-to']['user'] as $value)
+			{
+				print('<li>' . $value . '</li>');
+			}
+			print("</ul>");
+		}
+	}
+
+}
+?>
+</tr>
+</table>
 
 </body>
 </html>
