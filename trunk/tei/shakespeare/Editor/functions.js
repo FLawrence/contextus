@@ -6,15 +6,15 @@ function setupChooser ( )
 {
 	var i;
 
-	document.editForm.characterList.options.length = 0;
+	document.editForm.namedEntityList.options.length = 0;
 	
-	for (i = 0; i < characters; i++)
+	for (i = 0; i < namedEntities; i++)
 	{
-		originalNameArray[i] = characterNameArray[i];
-		originalIDArray[i] = characterIDArray[i];
+		originalNameArray[i] = namedEntityNameArray[i];
+		originalIDArray[i] = namedEntityIDArray[i];
 
-		var option = new Option(characterNameArray[i], characterIDArray[i], false, false);
-		document.editForm.characterList.options[i] = option;
+		var option = new Option(namedEntityNameArray[i], namedEntityIDArray[i], false, false);
+		document.editForm.namedEntityList.options[i] = option;
 	}
 	
 	updateFields();
@@ -22,26 +22,26 @@ function setupChooser ( )
 
 function updateFields ( )
 {
-	document.editForm.characterName.value = characterNameArray[document.editForm.characterList.selectedIndex];
-	document.getElementById('characterID').innerHTML = characterIDArray[document.editForm.characterList.selectedIndex];
+	document.editForm.namedEntityName.value = namedEntityNameArray[document.editForm.namedEntityList.selectedIndex];
+	document.getElementById('namedEntityID').innerHTML = namedEntityIDArray[document.editForm.namedEntityList.selectedIndex];
 
 	checkFields();
 }
 
 function updateName ( )
 {
-	characterNameArray[document.editForm.characterList.selectedIndex] = document.editForm.characterName.value;
-	document.editForm.characterList.options[document.editForm.characterList.selectedIndex].text = document.editForm.characterName.value;
+	namedEntityNameArray[document.editForm.namedEntityList.selectedIndex] = document.editForm.namedEntityName.value;
+	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = document.editForm.namedEntityName.value;
 
-	if (characterNameArray[document.editForm.characterList.selectedIndex] != originalNameArray[document.editForm.characterList.selectedIndex])
+	if (namedEntityNameArray[document.editForm.namedEntityList.selectedIndex] != originalNameArray[document.editForm.namedEntityList.selectedIndex])
 	{
-		characterIDArray[document.editForm.characterList.selectedIndex] = '(changed, press save to update store)';
-		document.getElementById('characterID').innerHTML = '(changed, press save to update store)';
+		namedEntityIDArray[document.editForm.namedEntityList.selectedIndex] = '(changed, press save to update store)';
+		document.getElementById('namedEntityID').innerHTML = '(changed, press save to update store)';
 	}
 	else
 	{
-		characterIDArray[document.editForm.characterList.selectedIndex] = originalIDArray[document.editForm.characterList.selectedIndex];
-		document.getElementById('characterID').innerHTML = originalIDArray[document.editForm.characterList.selectedIndex];
+		namedEntityIDArray[document.editForm.namedEntityList.selectedIndex] = originalIDArray[document.editForm.namedEntityList.selectedIndex];
+		document.getElementById('namedEntityID').innerHTML = originalIDArray[document.editForm.namedEntityList.selectedIndex];
 	}
 
 	checkFields();
@@ -51,12 +51,12 @@ function checkFields ( )
 {
 	var dataString = "";
 
-	for (i = 0; i < characters; i++)
+	for (i = 0; i < namedEntities; i++)
 	{
-		if (originalNameArray[i] != characterNameArray[i])
+		if (originalNameArray[i] != namedEntityNameArray[i])
 		{
 			if (dataString != "") dataString += "|";
-			dataString += characterNumArray[i] + "=" + characterNameArray[i];
+			dataString += namedEntityNumArray[i] + "=" + namedEntityNameArray[i];
 		}
 	}
 

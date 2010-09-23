@@ -7,15 +7,15 @@ require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
 
 FourStore_Namespace::addW3CNamespace();
-FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
-FourStore_Namespace::add('foaf','http://xmlns.com/foaf/0.1/');
+FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
+
 $query = FourStore_Namespace::to_sparql();
 
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
 
-$queryAuto = $query . "\n" . 'SELECT ?name ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p omb:Character ; foaf:name ?name } }' . "\n";
-$queryUser = $query . "\n" . 'SELECT ?name ?id WHERE { GRAPH <' . $graphUser . '> { ?id ?p omb:Character ; foaf:name ?name } }' . "\n";
+$queryAuto = $query . "\n" . 'SELECT ?name ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p loc:Space ; rdfs:label ?name } }' . "\n";
+$queryUser = $query . "\n" . 'SELECT ?name ?id WHERE { GRAPH <' . $graphUser . '> { ?id ?p loc:Space ; rdfs:label ?name } }' . "\n";
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $namedEntities = array();
@@ -50,7 +50,7 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<title>A Midsummer Night's Dream: Character Editor</title>
+	<title>A Midsummer Night's Dream: Location Editor</title>
 	<link rel="stylesheet" href="fourstore_editor.css" type="text/css" media="all" title="Default styles" />
 	<script type="text/javascript">
 <?php
@@ -88,7 +88,7 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 	<span id="namedEntityID" style="font-style: italic">Please Wait...</span>
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
-	<input name="saveType" type="hidden" value="character" />
+	<input name="saveType" type="hidden" value="location" />
 	<input name="alteredData" type="hidden" value="" />
 
 
