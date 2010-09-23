@@ -16,7 +16,13 @@ $userGraph = array();
 
 $results = $s->query($queryUser);
 
-foreach ($results['result']['row'] as $result)
+$err = $s->getErrors();
+if ($err) {
+	print_r($err);
+	throw new Exception(print_r($err,true));
+}
+
+foreach ($results['result']['rows'] as $result)
 {
 	addTripleToGraph($userGraph, $result);
 }
@@ -46,7 +52,7 @@ foreach ($userGraph as $triple)
 {
 	$allTriples .= makeTurtleFromTriple($triple) . "\n";
 }
-$results['Adding All Triples'] = $s->addWrite($userGraphURL, $allTriples);
+$results['Adding All Triples'] = $sWrite->add($userGraphURL, $allTriples);
 
 header('Location: characteredit.php?idhash=' . $_POST['idhash']);
 exit(0);
