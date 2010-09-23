@@ -119,6 +119,10 @@ def convert(teifile, namespace):
 	line = ""
 	char = 0
 	loc = 0
+	stagenum = 0
+	internalnum = 1
+	speechnum = 1
+	
 	
 	#timeline = ns['timeline/narrative']
 	#graph.add((timeline, RDF.type, ome['Timeline']))
@@ -257,10 +261,15 @@ def convert(teifile, namespace):
 			#parent = None
 			speakerNodes = list()
 			speakerRef = list()
+			
+			xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene)
+			stagecount = 0
 						
 			for node in sceneItem.getiterator():
 				#print("Node: " + node.tag)	
 				
+				
+				"""
 				if node.tag == "lb":
 					if node.get("ed") == "F1":
 						line = node.get("n")	
@@ -272,7 +281,9 @@ def convert(teifile, namespace):
 						#xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene) + "#xpointer(//lb[@ed='F1' and @n='" + str(line)	 + "'])"
 						xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene)
 						#print("Ref: " + xpointer)
-				elif node.tag == "sp":
+				"""		
+						
+				if node.tag == "sp":
 					id = node.get("who")
 					
 					if id and cast:
@@ -282,14 +293,34 @@ def convert(teifile, namespace):
 						if perseusid == None:
 							speakerRef.append(ref)
 						else:
-							speechRef = xpointer + "#xpointer(//lb[@ed='F1' and @n='" + str(int(line) + 1) + "']/ancestor::sp)"
+							#speechRef = xpointer + "#xpointer(//lb[@ed='F1' and @n='" + str(int(line) + 1) + "']/ancestor::sp)"
+							speechRef  = xpointer + "#xpointer(//div2/sp[" + str(speechnum) + "])";
 							speakerRef.append(speechRef)
 						#print("Line ref: " + ref)
 						
 						if cast[id[1:]] not in currentCast:
 							currentCast.append(cast[id[1:]])
+							
+					internalnum = 1
+					speechnum += 1
+					stagecount = 0
+					
+					for subnode in node.getiterator():
+						if subnode.tag == "stage":
+							stagecount += 1
+							
+					
 						
 				elif node.tag == "stage":
+					stagenum += 1
+					
+					if stagecount > 0:
+						entRef = xpointer + "#xpointer(//div2/sp[" + str(stagenum - 1) + "]/l/stage[" + str(internalnum) +"])";
+						internalnum += 1
+						stagecount -= 1
+					else:
+						entRef = xpointer + "#xpointer(//div2/stage[" + str(stagenum) +"])";				
+					
 					if node.get("type") == "entrance":		
 					
 						# Add Social Events for all the people who spoke since the last break (if there were any)
@@ -312,7 +343,7 @@ def convert(teifile, namespace):
 						if perseusid == None:
 							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
 						else:
-							entRef = xpointer + "#xpointer(//lb[@ed='F1' and @n='" + str(line) + "']/following-sibling::*[1]/self::stage)"
+							#entRef = xpointer + "#xpointer(//lb[@ed='F1' and @n='" + str(line) + "']/following-sibling::*[1]/self::stage)"
 							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(entRef)))
 						
 						#print("Entrance event. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
@@ -398,8 +429,9 @@ def convert(teifile, namespace):
 						if perseusid == None:
 							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), Literal(ref)))
 						else:
-							exitRef = xpointer
-							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(exitRef)))
+							#exitRef = xpointer
+							#graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(exitRef)))
+							graph.add((event, rdflib.URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"), URIRef(entRef)))
 	
 						#print("Found entrence event!")
 						if location != None:
@@ -434,14 +466,14 @@ def convert(teifile, namespace):
 									
 									if en == len(currentCast):
 										event_label = event_label[0:-2] + " and " + short_ref
-										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave1")))	
+										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave")))	
 									elif en < len(currentCast):
 										event_label += short_ref + ", "
 																	
 								else:
 									#print("Adding person as subject-entity to exuant event "   + str(eventCount))
 									graph.add((event, ome['has-subject-entity'], peep))
-									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(short_ref + " leaves1")))
+									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(short_ref + " leaves")))
 									
 								en += 1
 	
@@ -508,14 +540,14 @@ def convert(teifile, namespace):
 									
 									if en == len(going):
 										event_label = event_label[0:-2] + " and " + short_ref
-										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave2")))	
+										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave")))	
 									elif en < len(going):
 										event_label += short_ref + ", "	
 										
 								else:
 									#print("Adding person as subject-entity to exit event "   + str(eventCount))
 									graph.add((event, ome['has-subject-entity'], ghost))
-									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(short_ref + " leaves2")))
+									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(short_ref + " leaves")))
 									
 								en += 1
 								
