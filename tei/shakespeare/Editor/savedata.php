@@ -70,7 +70,7 @@ foreach ($userGraph as $triple)
 }
 $results['Adding All Triples'] = $sWrite->add($userGraphURL, $allTriples);
 
-header('Location: characteredit.php?idhash=' . $_POST['idhash']);
+header('Location: ' . $continueURL);
 exit(0);
 
 print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");

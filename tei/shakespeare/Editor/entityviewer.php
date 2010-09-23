@@ -6,8 +6,7 @@ if (isset($_GET['idhash']))
 }
 else
 {
-$userID = 'dca94aa5ab2ea5e7a59340ad59279c43eb3822e1';
-//	$userID = $_POST['idhash'];
+	$userID = $_POST['idhash'];
 }
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
@@ -67,9 +66,6 @@ if ($err) {
 	print_r($err);
 	throw new Exception(print_r($err,true));
 }
-
-print("RUSER:\n\n");
-print_r($rUser);
 
 }
 
@@ -380,6 +376,8 @@ function armourQuery ( $query )
 <p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
 <p class="selectedNav">Entity Viewer</p>
 <p><a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a></p>
+<p><a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
+
 <table>
 <tr><td>Entity Number</td><td><?php print($entityID);?></td></tr>
 <tr><td>Entity Name</td><td><?php
