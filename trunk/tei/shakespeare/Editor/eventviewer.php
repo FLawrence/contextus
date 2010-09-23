@@ -300,6 +300,7 @@ foreach ($event['refers'] as $value)
 <p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
 <p><a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a></p>
 <p class="selectedNav">Event Viewer</p>
+<p><a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
 
 </body>
 </html>
