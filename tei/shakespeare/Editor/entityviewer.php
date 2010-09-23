@@ -469,7 +469,7 @@ else
 
 	foreach($autoPlaces['result']['rows'] as $loc)
 	{
-		$names[array_pop(explode("/",$loc['id']))] = $loc['label'];
+		$places[array_pop(explode("/",$loc['id']))] = $loc['label'];
 	}
 
 	$locUserNames = $query . "\n" . 'SELECT ?id ?label WHERE { GRAPH <' . $graphUser . '> { ?id ?p loc:Space; rdfs:label ?label } }' . "\n";
@@ -478,7 +478,7 @@ else
 
 	foreach($userPlaces['result']['rows'] as $loc)
 	{
-		$names[array_pop(explode("/",$loc['id']))] = $loc['label'];
+		$places[array_pop(explode("/",$loc['id']))] = $loc['label'];
 	}
 
 	foreach($places as $id => $label)
