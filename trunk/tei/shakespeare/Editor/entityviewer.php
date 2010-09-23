@@ -1,26 +1,30 @@
 <?php
 
-require 'fourstore-php/Store.php';
-require 'fourstore-php/Namespace.php';
+if (isset($_GET['idhash']))
+{
+	$userID = $_GET['idhash'];
+}
+else
+{
+$userID = 'd7294d00acc853a07ef3b2ad94bc2dc490f299a3';
+//	$userID = $_POST['idhash'];
+}
 
-require '/usr/share/php/libzend-framework-php/Zend/Loader/Autoloader.php';
-spl_autoload_register(array('Zend_Loader_Autoloader', 'autoload'));
+require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
+require 'bc-fourstore-php/FourStore/Namespace.php';
 
-$prefixes = array();
-$prefixes[] = 'PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>';
-$prefixes[] = 'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
-$prefixes[] = 'PREFIX omb:  <http://purl.org/ontomedia/ext/common/being#>';
-$prefixes[] = 'PREFIX ome:  <http://purl.org/ontomedia/core/expression#>';
-$prefixes[] = 'PREFIX omj:  <http://purl.org/ontomedia/ext/events/travel#>';
-$prefixes[] = 'PREFIX loc:  <http://signage.ecs.soton.ac.uk/ontologies/location#>';
-$prefixes[] = 'PREFIX foaf: <http://xmlns.com/foaf/0.1/>';
+FourStore_Namespace::addW3CNamespace();
+FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
+FourStore_Namespace::add('ome','http://purl.org/ontomedia/core/expression#');
+FourStore_Namespace::add('omj','http://purl.org/ontomedia/ext/events/travel#');
+FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
+FourStore_Namespace::add('foaf','http://xmlns.com/foaf/0.1/');
+$query = FourStore_Namespace::to_sparql();
 
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
-$graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $_GET['idhash'] .  '/';
+$graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
 
-$query = implode("\n", $prefixes);
-
-$s = new FourStore_Store('http://contextus.net:7000/sparql/');
+$s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 
 $entity = array();
 $type = "Character";
@@ -36,26 +40,26 @@ else
 {
 	$queryAuto1 = $query . "\n" . 'SELECT DISTINCT ?id WHERE { { GRAPH ?g {?id a omb:Character}} {GRAPH <' . $graphAuto . '> { ?id ?p ?o } } } ORDER BY ?id LIMIT 1' . "\n";
 
-	$rAuto = $s->select($queryAuto1);
+	$rAuto = $s->query($queryAuto1);
 
 	//print("<p>Result: '" . $rAuto[0]['id'] . "'</p>");
 
-	$entityID = "character/" . array_pop(explode("/",$rAuto[0]['id']));
+	$entityID = "character/" . array_pop(explode("/",$rAuto['result']['rows'][0]['id']));
 
 	//print("<p>Result: '" . $entityID . "'</p>");
 }
 
 
-$queryAuto2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphAuto . $entityID . '> ?p ?o } }' . "\n";
-$rAuto = $s->select($queryAuto2);
+$queryAuto2 = $query . "\n" . 'SELECT ?p ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphAuto . $entityID . '> ?p ?o } }' . "\n";
+$rAuto = $s->query($queryAuto2);
 
 $rUser = null;
 
 
 if(isset($_GET['idhash']))
 {
-	$queryUser2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphUser . $entityID . '> ?p ?o } }' . "\n";
-	$rUser = $s->select($queryUser2);
+	$queryUser2 = $query . "\n" . 'SELECT ?p ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphUser . $entityID . '> ?p ?o } }' . "\n";
+	$rUser = $s->query($queryUser2);
 }
 
 
@@ -67,7 +71,7 @@ $loc_in_count = 0;
 $part_of_count = 0;
 $adj_to_count = 0;
 
-foreach ($rAuto as $result)
+foreach ($rAuto['result']['rows'] as $result)
 {
 	//print("<p>Checking property: " . $result['p'] . "</p>");
 	switch ($result['p'])
@@ -84,15 +88,15 @@ foreach ($rAuto as $result)
 
 			$queryAuto3 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-			$result3 = $s->select($queryAuto3);
+			$result3 = $s->query($queryAuto3);
 
-			$entity['involved']['auto'][$involved_count] = $result3[0]['label'];
+			$entity['involved']['auto'][$involved_count] = $result3['result']['rows'][0]['label'];
 			$involved_count ++;
 			break;
 
 		case "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
 			$entity['type']['auto'] = array_pop(explode("#",$result['o']));
-			$type = $event['type']['auto'];
+			$type = $entity['type']['auto'];
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#is":
@@ -101,17 +105,17 @@ foreach ($rAuto as $result)
 			{
 				$queryAuto4a = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name . } }' . "\n";
 
-				$result4a = $s->select($queryAuto4a);
+				$result4a = $s->query($queryAuto4a);
 
-				$entity['aka']['auto'][$aka_count] = $result4a[0]['name'];
+				$entity['aka']['auto'][$aka_count] = $result4a['result']['rows'][0]['name'];
 			}
 			else
 			{
 				$queryAuto4b = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-				$result4b = $s->select($queryAuto4b);
+				$result4b = $s->query($queryAuto4b);
 
-				$entity['aka']['auto'][$aka_count] = $result4b[0]['label'];
+				$entity['aka']['auto'][$aka_count] = $result4b['result']['rows'][0]['label'];
 			}
 
 			$aka_count ++;
@@ -123,17 +127,17 @@ foreach ($rAuto as $result)
 			{
 				$queryAuto5a = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name . } }' . "\n";
 
-				$result5a = $s->select($queryAuto5a);
+				$result5a = $s->query($queryAuto5a);
 
-				$entity['shadows']['auto'][$shadow_count] = $result5a[0]['name'];
+				$entity['shadows']['auto'][$shadow_count] = $result5a['result']['rows'][0]['name'];
 			}
 			else
 			{
 				$queryAuto5b = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-				$result5b = $s->select($queryAuto5b);
+				$result5b = $s->query($queryAuto5b);
 
-				$entity['shadows']['auto'][$shadow_count] = $result5b[0]['label'];
+				$entity['shadows']['auto'][$shadow_count] = $result5b['result']['rows'][0]['label'];
 			}
 			$shadow_count++;
 			break;
@@ -142,9 +146,9 @@ foreach ($rAuto as $result)
 
 			$queryAuto6 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-			$result6 = $s->select($queryAuto6);
+			$result6 = $s->query($queryAuto6);
 
-			$entity['located-in']['auto'][$loc_in_count] = $result6[0]['label'];
+			$entity['located-in']['auto'][$loc_in_count] = $result6['result']['rows'][0]['label'];
 			$loc_in_count++;
 			break;
 
@@ -152,9 +156,9 @@ foreach ($rAuto as $result)
 
 			$queryAuto7 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-			$result7 = $s->select($queryAuto7);
+			$result7 = $s->query($queryAuto7);
 
-			$entity['part-of']['auto'][$part_of_count] = $result7[0]['label'];
+			$entity['part-of']['auto'][$part_of_count] = $result7['result']['rows'][0]['label'];
 			$part_of_count++;
 			break;
 
@@ -162,9 +166,9 @@ foreach ($rAuto as $result)
 
 			$queryAuto8 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-			$result8 = $s->select($queryAuto8);
+			$result8 = $s->query($queryAuto8);
 
-			$entity['adjacent-to']['auto'][$adj_to_count] = $result8[0]['label'];
+			$entity['adjacent-to']['auto'][$adj_to_count] = $result8['result']['rows'][0]['label'];
 			$adj_to_count++;
 			break;
 
@@ -174,7 +178,7 @@ foreach ($rAuto as $result)
 
 if($rUser != null)
 {
-	foreach($rUser as $result)
+	foreach($rUser['result']['rows'] as $result)
 	{
 		switch ($result['p'])
 		{
@@ -190,9 +194,9 @@ if($rUser != null)
 
 				$queryAuto3 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-				$result3 = $s->select($queryAuto3);
+				$result3 = $s->query($queryAuto3);
 
-				$entity['involved']['user'][$involves_count] = $result3[0]['label'];
+				$entity['involved']['user'][$involves_count] = $result3['result']['rows'][0]['label'];
 				$involved_count ++;
 				break;
 
@@ -208,17 +212,17 @@ if($rUser != null)
 				{
 					$queryAuto4a = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name . } }' . "\n";
 
-					$result4a = $s->select($queryAuto4a);
+					$result4a = $s->query($queryAuto4a);
 
-					$entity['aka']['user'][$aka_count] = $result4a[0]['name'];
+					$entity['aka']['user'][$aka_count] = $result4a['result']['rows'][0]['name'];
 				}
 				else
 				{
 					$queryAuto4b = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-					$result4b = $s->select($queryAuto4b);
+					$result4b = $s->query($queryAuto4b);
 
-					$entity['aka']['user'][$aka_count] = $result4b[0]['label'];
+					$entity['aka']['user'][$aka_count] = $result4b['result']['rows'][0]['label'];
 				}
 
 				$aka_count ++;
@@ -230,17 +234,17 @@ if($rUser != null)
 				{
 					$queryAuto5a = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name . } }' . "\n";
 
-					$result5a = $s->select($queryAuto5a);
+					$result5a = $s->query($queryAuto5a);
 
-					$entity['shadows']['user'][$shadow_count] = $result5a[0]['name'];
+					$entity['shadows']['user'][$shadow_count] = $result5a['result']['rows'][0]['name'];
 				}
 				else
 				{
 					$queryAuto5b = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-					$result5b = $s->select($queryAuto5b);
+					$result5b = $s->query($queryAuto5b);
 
-					$entity['shadows']['user'][$shadow_count] = $result5b[0]['label'];
+					$entity['shadows']['user'][$shadow_count] = $result5b['result']['rows'][0]['label'];
 				}
 				$shadow_count++;
 				break;
@@ -249,9 +253,9 @@ if($rUser != null)
 
 				$queryAuto6 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-				$result6 = $s->select($queryAuto6);
+				$result6 = $s->query($queryAuto6);
 
-				$entity['located-in']['user'][$loc_in_count] = $result6[0]['label'];
+				$entity['located-in']['user'][$loc_in_count] = $result6['result']['rows'][0]['label'];
 				$loc_in_count++;
 				break;
 
@@ -259,9 +263,9 @@ if($rUser != null)
 
 				$queryAuto7 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-				$result7 = $s->select($queryAuto7);
+				$result7 = $s->query($queryAuto7);
 
-				$entity['part-of']['user'][$part_of_count] = $result7[0]['label'];
+				$entity['part-of']['user'][$part_of_count] = $result7['result']['rows'][0]['label'];
 				$part_of_count++;
 				break;
 
@@ -269,9 +273,9 @@ if($rUser != null)
 
 				$queryAuto8 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
 
-				$result8 = $s->select($queryAuto8);
+				$result8 = $s->query($queryAuto8);
 
-				$entity['adjacent-to']['user'][$adj_to_count] = $result8[0]['label'];
+				$entity['adjacent-to']['user'][$adj_to_count] = $result8['result']['rows'][0]['label'];
 				$adj_to_count++;
 				break;
 		}
@@ -301,14 +305,14 @@ function armourQuery ( $query )
 <table>
 <tr><td>Entity Number</td><td><?php print($entityID);?></td></tr>
 <tr><td>Entity Name</td><td><?php
-if($entity['name']['user'] != null)
+if(isset($entity['name']['user']))
 	print($entity['name']['user'] . " [" . $entity['name']['auto'] . "]");
 else
 	print($entity['name']['auto']);
 
 ?></td></tr>
 <tr><td>Entity Type</td><td><?php
-if($entity['type']['user'] != null)
+if(isset($entity['type']['user']))
 	print($entity['type']['user'] . " [" . $entity['type']['auto'] . "]");
 else
 	print($entity['type']['auto']);
@@ -317,11 +321,11 @@ else
 
 <?php
 
-if($entity['aka'] != null)
+if(isset($entity['aka']))
 {
 	print("<tr><td valign='top'>Is</td><td>");
 
-	if($entity['aka']['user'] != null)
+	if(isset($entity['aka']['user']))
 	{
 
 		if(count($entity['aka']['user']) == 1)
@@ -344,7 +348,7 @@ if($entity['type']['user'] = "Character" || ($entity['type']['auto'] = "Characte
 {
 	print("<tr><td valign='top'>Involved In</td>\n<td>\n<ul>");
 
-	if($entity['type']['user'] != null)
+	if(isset($entity['involved']['user']))
 	{
 		foreach ($entity['involved']['user'] as $value)
 		{
@@ -364,7 +368,7 @@ if($entity['type']['user'] = "Character" || ($entity['type']['auto'] = "Characte
 }
 else
 {
-	if($entity['located-in']['user'] != null)
+	if(isset($entity['located-in']['user']))
 	{
 		print("<tr><td valign='top'>Located Within</td><td>");
 
@@ -381,7 +385,7 @@ else
 		}
 	}
 
-	if($entity['part-of']['user'] != null)
+	if(isset($entity['part-of']['user']))
 	{
 		print("<tr><td valign='top'>Is Part Of</td><td>");
 
@@ -398,7 +402,7 @@ else
 		}
 	}
 
-	if($entity['adjacent-to'] != null)
+	if(isset($entity['adjacent-to']))
 	{
 		print("<tr><td valign='top'>Located Next To</td><td>");
 
@@ -421,29 +425,29 @@ else
 </table>
 
 <form name="navigateForm" method="post" action="entityviewer.php">
-<input name="idhash" type="hidden" value="<?php print($_GET['idhash']); ?>" />
+<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 <p>Go To Character:
 <select name="charNum">
 <?php
 
-	$charAutoNames = $query . "\n" . 'SELECT ?id, ?name WHERE { GRAPH <' . $graphAuto . '> { ?id ?p omb:Character; foaf:name ?name . } }' . "\n";
+	$charAutoNames = $query . "\n" . 'SELECT ?id ?name WHERE { GRAPH <' . $graphAuto . '> { ?id ?p omb:Character; foaf:name ?name } }' . "\n";
 
-	$autoNames = $s->select($charAutoNames);
+	$autoNames = $s->query($charAutoNames);
 
 	$names = array();
 
-	foreach($autoNames as $char)
+	foreach($autoNames['result']['rows'] as $char)
 	{
 		$names[array_pop(explode("/",$char['id']))] = $char['name'];
 	}
 
-	$charUserNames = $query . "\n" . 'SELECT ?id, ?name WHERE { GRAPH <' . $graphUser . '> { ?id ?p omb:Character; foaf:name ?name . } }' . "\n";
+	$charUserNames = $query . "\n" . 'SELECT ?id ?name WHERE { GRAPH <' . $graphUser . '> { ?id ?p omb:Character; foaf:name ?name } }' . "\n";
 
-	$userNames = $s->select($charUserNames);
+	$userNames = $s->query($charUserNames);
 
-	foreach($userNames as $char)
+	foreach($userNames['result']['rows'] as $char)
 	{
-		$names[$array_pop(explode("/",$char['id']))] = $char['name'];
+		$names[array_pop(explode("/",$char['id']))] = $char['name'];
 	}
 
 	foreach($names as $id => $name)
@@ -457,24 +461,24 @@ else
 <select name="locNum">
 <?php
 
-	$locAutoNames = $query . "\n" . 'SELECT ?id, ?label WHERE { GRAPH <' . $graphAuto . '> { ?id ?p loc:Space; rdfs:label ?label . } }' . "\n";
+	$locAutoNames = $query . "\n" . 'SELECT ?id ?label WHERE { GRAPH <' . $graphAuto . '> { ?id ?p loc:Space; rdfs:label ?label } }' . "\n";
 
-	$autoPlaces = $s->select($locAutoNames);
+	$autoPlaces = $s->query($locAutoNames);
 
 	$places = array();
 
-	foreach($autoPlaces as $loc)
+	foreach($autoPlaces['result']['rows'] as $loc)
 	{
-		$names[array_pop(explode("/",$loc['id']))] = $char['label'];
+		$names[array_pop(explode("/",$loc['id']))] = $loc['label'];
 	}
 
-	$locUserNames = $query . "\n" . 'SELECT ?id, ?label WHERE { GRAPH <' . $graphUser . '> { ?id ?p loc:Space; rdfs:label ?label . } }' . "\n";
+	$locUserNames = $query . "\n" . 'SELECT ?id ?label WHERE { GRAPH <' . $graphUser . '> { ?id ?p loc:Space; rdfs:label ?label } }' . "\n";
 
-	$userPlaces = $s->select($locUserNames);
+	$userPlaces = $s->query($locUserNames);
 
-	foreach($userPlaces as $loc)
+	foreach($userPlaces['result']['rows'] as $loc)
 	{
-		$names[array_pop(explode("/",$loc['id']))] = $char['label'];
+		$names[array_pop(explode("/",$loc['id']))] = $loc['label'];
 	}
 
 	foreach($places as $id => $label)
@@ -485,5 +489,10 @@ else
 </select>
 <button name="gotoLoc">Go</button></p>
 </form>
+
+<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
+<p class="selectedNav">Entity Viewer</p>
+<p><a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a></p>
+
 </body>
 </html>
