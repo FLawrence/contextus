@@ -80,5 +80,8 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 
 </form>
 
+
+<p><a href="eventviewer.php?idhash=<?php print($_GET['idhash']); ?>">Go to Event Viewer</a></p>
+
 </body>
 </html>

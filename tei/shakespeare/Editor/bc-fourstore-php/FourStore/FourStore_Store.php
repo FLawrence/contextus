@@ -63,7 +63,7 @@ class FourStore_Store {
 		$this->_debug = $debug;
 		$this->_endpoint = $endpoint;
 	}
-	
+
 //	/**
 //	 * Check if the triplestore is up.
 //	 * @return boolean true if the triplestore is up.
@@ -77,7 +77,7 @@ class FourStore_Store {
 //
 //		$response = $client->send_post_data($sUri, $data	);
 //		$code = $client->get_http_response_code();
-//		
+//
 //		$this->debugLog($query,$sUri,$code,$response);
 //		return $code == 200;
 //	}
@@ -99,7 +99,7 @@ class FourStore_Store {
 	 * @access public
 	 */
 	public function set($graph, $turtle) {
-		$client = &new Curl_HTTP_Client();
+		$client = new Curl_HTTP_Client();
 
 		$headers = array( 'Content-Type: application/x-turtle' );
 		$sUri    = $this->_endpoint . $graph;
@@ -133,7 +133,7 @@ class FourStore_Store {
 		$data = array( "graph" => $graph, "data" => $turtle , "mime-type" => 'application/x-turtle' );
 		$sUri    = $post_endpoint;
 
-		$client = &new Curl_HTTP_Client();
+		$client = new Curl_HTTP_Client();
 		$response = $client->send_post_data($sUri, $data);
 		$code = $client->get_http_response_code();
 
@@ -156,7 +156,7 @@ class FourStore_Store {
 	 * @access public
 	 */
 	public function delete($graph) {
-		$client = &new Curl_HTTP_Client();
+		$client = new Curl_HTTP_Client();
 		$sUri    = $this->_endpoint . $graph ;
 		$response = $client->send_delete($sUri);
 		$code = $client->get_http_response_code();
@@ -205,7 +205,7 @@ class FourStore_Store {
 	 * @access public
 	 */
 	public function queryRead($query,$typeOutput="application/sparql-results+xml" ) {
-		$client = &new Curl_HTTP_Client();
+		$client = new Curl_HTTP_Client();
 		$sUri    = $this->_endpoint;
 		$data = array("query" =>   $query);
 		$header = array("Accept:". $typeOutput);
@@ -220,14 +220,14 @@ class FourStore_Store {
 			$response = $client->send_post_data($sUri,$data,$header);
 
 		$code = $client->get_http_response_code();
-			
+
 		$this->debugLog($query,$sUri,$code,$response);
 
 		if($code != 200)
 		{
 			$datastr = print_r($data, true);
 			$headerstr = print_r($header, true);
-			$this->errorLog("Set:\nHeader :".$headerstr."\n Data:".$datastr,$sUri,$code,$response);			
+			$this->errorLog("Set:\nHeader :".$headerstr."\n Data:".$datastr,$sUri,$code,$response);
 			return "";
 		}
 		return $response;
@@ -272,13 +272,13 @@ class FourStore_Store {
 		$data =array("update" =>    $query) ;
 
 		$this->debugLog($query,$sUri);
-			
-		$client = &new Curl_HTTP_Client();
+
+		$client = new Curl_HTTP_Client();
 		$response = $client->send_post_data($sUri, $data);
 		$code = $client->get_http_response_code();
 
 		$this->debugLog($query,$sUri,$code,$response);
-			
+
 		//FIXME in 4Store : check in the next version || $code == 0 || $code == 100
 		if($code == 200 ) //bug
 		{
@@ -304,7 +304,7 @@ class FourStore_Store {
 					"Error endpoint: " .$endPoint."\n" .
 					"Error http_response_code: " .$httpcode."\n" .
 					"Error message: " .$response."\n";
-			
+
 		if($this->_debug)
 		{
 			echo '=========================>>>>>>'.$error ;

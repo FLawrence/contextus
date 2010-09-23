@@ -1,25 +1,28 @@
 <?php
 
-require 'fourstore-php/Store.php';
-require 'fourstore-php/Namespace.php';
+if (isset($_GET['idhash']))
+{
+	$userID = $_GET['idhash'];
+}
+else
+{
+	$userID = $_POST['idhash'];
+}
 
-require '/usr/share/php/libzend-framework-php/Zend/Loader/Autoloader.php';
-spl_autoload_register(array('Zend_Loader_Autoloader', 'autoload'));
+require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
+require 'bc-fourstore-php/FourStore/Namespace.php';
 
-$prefixes = array();
-$prefixes[] = 'PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>';
-$prefixes[] = 'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
-$prefixes[] = 'PREFIX omb:  <http://purl.org/ontomedia/ext/common/being#>';
-$prefixes[] = 'PREFIX ome:  <http://purl.org/ontomedia/core/expression#>';
-$prefixes[] = 'PREFIX omj:  <http://purl.org/ontomedia/ext/events/travel#>';
-$prefixes[] = 'PREFIX foaf: <http://xmlns.com/foaf/0.1/>';
+FourStore_Namespace::addW3CNamespace();
+FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
+FourStore_Namespace::add('ome','http://purl.org/ontomedia/core/expression#');
+FourStore_Namespace::add('omj','http://purl.org/ontomedia/ext/events/travel#');
+FourStore_Namespace::add('foaf','http://xmlns.com/foaf/0.1/');
+$query = FourStore_Namespace::to_sparql();
 
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
-$graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $_GET['idhash'] .  '/';
+$graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
 
-$query = implode("\n", $prefixes);
-
-$s = new FourStore_Store('http://contextus.net:7000/sparql/');
+$s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 
 $event = array();
 
@@ -31,22 +34,32 @@ else if(isset($_POST['goto']) && $_POST['eventNum'] != "")
 	$eventNum = $_POST['eventNum'];
 else
 {
-	$queryAuto1 = $query . "\n" . 'SELECT DISTINCT ?id WHERE { { GRAPH ?g {?id a ome:Event}} {GRAPH <' . $graphAuto . '> { ?id ?p ?o . } } } ORDER BY ?id LIMIT 1' . "\n";
+	$queryAuto1 = $query . "\n" . 'SELECT DISTINCT ?id WHERE { { GRAPH ?g {?id a ome:Event}} {GRAPH <' . $graphAuto . '> { ?id ?p ?o } } } ORDER BY ?id LIMIT 1' . "\n";
 
-	$rAuto = $s->select($queryAuto1);
+	$rAuto = $s->query($queryAuto1);
 
-	$eventNum = array_pop(explode("/",$rAuto[0]['id']));
+	$eventNum = array_pop(explode("/",$rAuto['result']['rows'][0]['id']));
 }
 
 
-$queryAuto2 = $query . "\n" . 'SELECT ?p, ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphAuto . 'event/' . $eventNum . '> ?p ?o . } }' . "\n";
+$queryAuto2 = $query . "\n" . 'SELECT ?p ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphAuto . 'event/' . $eventNum . '> ?p ?o } }' . "\n";
 
-$rAuto = $s->select($queryAuto2);
+$rAuto = $s->query($queryAuto2);
 
 $involves_count = 0;
 $refers_count = 0;
 
-foreach ($rAuto as $result)
+$event['involves'] = array();
+$event['subject'] = array();
+$event['refers'] = array();
+
+$event['follows']['label'] = '-';
+$event['follows']['id'] = '';
+
+$event['precedes']['label'] = '-';
+$event['precedes']['id'] = '';
+
+foreach ($rAuto['result']['rows'] as $result)
 {
 	switch ($result['p'])
 	{
@@ -60,11 +73,11 @@ foreach ($rAuto as $result)
 
 		case "http://purl.org/ontomedia/core/expression#refers-to":
 
-			$queryAuto3 = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name . } }' . "\n";
+			$queryAuto3 = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name } }' . "\n";
 
-			$result3 = $s->select($queryAuto3);
+			$result3 = $s->query($queryAuto3);
 
-			$event['refers'][$refers_count] = $result3[0]['name'];
+			$event['refers'][$refers_count] = $result3['result']['rows'][0]['name'];
 			$refers_count ++;
 			break;
 
@@ -72,11 +85,11 @@ foreach ($rAuto as $result)
 
 			// NB. In theory this could be a person (foaf:name) or a location (rdf:label) but I don't think there are any locations as values currently so I am ignoring that possibility for now
 
-			$queryAuto4b = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name . } }' . "\n";
+			$queryAuto4b = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name } }' . "\n";
 
-			$result4b = $s->select($queryAuto4b);
+			$result4b = $s->query($queryAuto4b);
 
-			$event['involves'][$involves_count] = $result4b[0]['name'];
+			$event['involves'][$involves_count] = $result4b['result']['rows'][0]['name'];
 			$involves_count ++;
 			break;
 
@@ -89,25 +102,25 @@ foreach ($rAuto as $result)
 			// Find if subject is Character or Group
 			$queryAuto5 = $query . "\n" . 'SELECT ?type WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> rdf:type ?type } }' . "\n";
 
-			$result5 = $s->select($queryAuto5);
+			$result5 = $s->query($queryAuto5);
 
-			if ($result5[0]['type'] == "http://purl.org/ontomedia/ext/common/being#Character")
+			if ($result5['result']['rows'][0]['type'] == "http://purl.org/ontomedia/ext/common/being#Character")
 			{
-				$queryAuto5a = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name . } }' . "\n";
+				$queryAuto5a = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name } }' . "\n";
 
-				$result5a = $s->select($queryAuto5a);
+				$result5a = $s->query($queryAuto5a);
 
-				$event['subject'][0] = $result5a[0]['name'];
+				$event['subject'][0] = $result5a['result']['rows'][0]['name'];
 			}
-			else if ($result5[0]['type'] == "http://purl.org/ontomedia/ext/common/being#Group")
+			else if ($result5['result']['rows'][0]['type'] == "http://purl.org/ontomedia/ext/common/being#Group")
 			{
-				$queryAuto5b = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ome:contains ?o. ?o foaf:name ?name . } }' . "\n";
+				$queryAuto5b = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ome:contains ?o. ?o foaf:name ?name } }' . "\n";
 
-				$result5b = $s->select($queryAuto5b);
+				$result5b = $s->query($queryAuto5b);
 
 				$person_count = 0;
 
-				foreach($result5b as $name)
+				foreach($result5b['result']['rows'] as $name)
 				{
 					$event['subject'][$person_count] = $name['name'];
 					$person_count++;
@@ -118,50 +131,50 @@ foreach ($rAuto as $result)
 
 		case "http://signage.ecs.soton.ac.uk/ontologies/location#is-located-in":
 
-			$queryAuto6 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+			$queryAuto6 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label } }' . "\n";
 
-			$result6 = $s->select($queryAuto6);
+			$result6 = $s->query($queryAuto6);
 
-			$event['location'] = $result6[0]['label'];
+			$event['location'] = $result6['result']['rows'][0]['label'];
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#to":
 
-			$queryAuto7 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+			$queryAuto7 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label } }' . "\n";
 
-			$result7 = $s->select($queryAuto7);
+			$result7 = $s->query($queryAuto7);
 
-			$event['to'] = $result7[0]['label'];
+			$event['to'] = $result7['result']['rows'][0]['label'];
 
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#from":
 
-			$queryAuto8 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+			$queryAuto8 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label } }' . "\n";
 
-			$result8 = $s->select($queryAuto8);
+			$result8 = $s->query($queryAuto8);
 
-			$event['from'] = $result8[0]['label'];
+			$event['from'] = $result8['result']['rows'][0]['label'];
 
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#precedes":
 
-			$queryAuto9 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+			$queryAuto9 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label } }' . "\n";
 
-			$result9 = $s->select($queryAuto9);
+			$result9 = $s->query($queryAuto9);
 
-			$event['precedes']['label'] = $result9[0]['label'];
+			$event['precedes']['label'] = $result9['result']['rows'][0]['label'];
 			$event['precedes']['id'] = array_pop(explode("/",$result['o']));
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#follows":
 
-			$queryAuto10 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label . } }' . "\n";
+			$queryAuto10 = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label } }' . "\n";
 
-			$result10 = $s->select($queryAuto10);
+			$result10 = $s->query($queryAuto10);
 
-			$event['follows']['label'] = $result10[0]['label'];
+			$event['follows']['label'] = $result10['result']['rows'][0]['label'];
 			$event['follows']['id'] = array_pop(explode("/",$result['o']));
 			break;
 	}
@@ -276,11 +289,15 @@ foreach ($event['refers'] as $value)
 
 <form name="navigateForm" method="post" action="eventviewer.php">
 
+<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 <input name="previousid" type="hidden" value="<?php print($event['follows']['id']); ?>" />
 <input name="nextid" type="hidden" value="<?php print($event['precedes']['id']); ?>" />
 
 <p><button name="previous" <?php if($event['follows'] ==""){print ('disabled="true"');}?>>Previous</button><button name="next" <?php if($event['precedes'] ==""){print ('disabled="true"');}?>>Next</button></p>
 <p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
 </form>
+
+<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Go to Character Editor</a></p>
+
 </body>
 </html>

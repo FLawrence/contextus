@@ -16,7 +16,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   function __construct($a = '', &$caller) {
     parent::__construct($a, $caller);
   }
-  
+
   function ARC2_TurtleParser($a = '', &$caller) {
     $this->__construct($a, $caller);
   }
@@ -31,9 +31,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     $this->unparsed_code = '';
     $this->max_parsing_loops = $this->v('turtle_max_parsing_loops', 500, $this->a);
   }
-  
+
   /*  */
-  
+
   function x($re, $v, $options = 'si') {
     $v = preg_replace('/^[\xA0\xC2]+/', ' ', $v);
     while (preg_match('/^\s*(\#[^\xd\xa]*)(.*)$/si', $v, $m)) {/* comment removal */
@@ -49,7 +49,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /*  */
-  
+
   function addT($t) {
     if ($this->skip_dupes) {
       $h = md5(serialize($t));
@@ -70,19 +70,19 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   function getTriples() {
     return $this->v('triples', array());
   }
-  
+
   function countTriples() {
     return $this->t_count;
   }
-  
+
   /*  */
-  
+
   function getUnparsedCode() {
     return $this->v('unparsed_code', '');
   }
-  
+
   /*  */
-  
+
   function setDefaultPrefixes() {
     $this->prefixes = array(
       'rdf:' => 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
@@ -94,14 +94,14 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
       foreach ($ns as $p => $u) $this->prefixes[$p . ':'] = $u;
     }
   }
-  
+
 
   function parse($path, $data = '', $iso_fallback = false) {
     $this->setDefaultPrefixes();
     /* reader */
     if (!$this->v('reader')) {
       ARC2::inc('Reader');
-      $this->reader = & new ARC2_Reader($this->a, $this);
+      $this->reader = new ARC2_Reader($this->a, $this);
     }
     $this->reader->setAcceptHeader('Accept: application/x-turtle; q=0.9, */*; q=0.1');
     $this->reader->activate($path, $data);
@@ -180,7 +180,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array($r, $v);
   }
-  
+
   /* 3 */
 
   function xBaseDecl($v) {
@@ -194,9 +194,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 4 */
-  
+
   function xPrefixDecl($v) {
     if ($r = $this->x("\@?prefix\s+", $v)) {
       if ((list($r, $sub_v) = $this->xPNAME_NS($r[1])) && $r) {
@@ -214,7 +214,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 21.., 32.. */
-  
+
   function xTriplesBlock($v) {
     $pre_r = array();
     $r = array();
@@ -278,7 +278,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
           $proceed = 1;
         }
         elseif ($sub_r = $this->x('\.', $sub_v)) {
-          $state = 4;          
+          $state = 4;
         }
         elseif ($sub_r = $this->x('\}', $sub_v)) {
           $buffer = $sub_v;
@@ -344,9 +344,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     } while ($proceed);
     return count($r) ? array($r, $buffer, $pre_r, $sub_v) : array(0, $buffer, $pre_r, $sub_v);
   }
-  
+
   /* 39.. */
-  
+
   function xBlankNodePropertyList($v) {
     if ($sub_r = $this->x('\[', $v)) {
       $sub_v = $sub_r[1];
@@ -427,9 +427,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 40.. */
-  
+
   function xCollection($v) {
     if ($sub_r = $this->x('\(', $v)) {
       $sub_v = $sub_r[1];
@@ -472,9 +472,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array (0, $v);
   }
-  
+
   /* 42 */
-  
+
   function xVarOrTerm($v) {
     if ((list($sub_r, $sub_v) = $this->xVar($v)) && $sub_r) {
       return array($sub_r, $sub_v);
@@ -484,9 +484,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 44, 74.., 75.. */
-  
+
   function xVar($v) {
     if ($r = $this->x('(\?|\$)([^\s]+)', $v)) {
       if ((list($sub_r, $sub_v) = $this->xVARNAME($r[2])) && $sub_r) {
@@ -500,14 +500,14 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 45 */
-  
+
   function xGraphTerm($v) {
     foreach (array(
-      'IRIref' => 'uri', 
-      'RDFLiteral' => 'literal', 
-      'NumericLiteral' => 'literal', 
-      'BooleanLiteral' => 'literal', 
-      'BlankNode' => 'bnode', 
+      'IRIref' => 'uri',
+      'RDFLiteral' => 'literal',
+      'NumericLiteral' => 'literal',
+      'BooleanLiteral' => 'literal',
+      'BlankNode' => 'bnode',
       'NIL' => 'uri',
       'Placeholder' => 'placeholder'
     ) as $term => $type) {
@@ -524,7 +524,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 60 */
-  
+
   function xRDFLiteral($v) {
     if ((list($sub_r, $sub_v) = $this->xString($v)) && $sub_r) {
       $sub_r['value'] = $this->unescapeNtripleUTF($sub_r['value']);
@@ -540,8 +540,8 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     return array(0, $v);
   }
 
-  /* 61.., 62.., 63.., 64.. */  
-  
+  /* 61.., 62.., 63.., 64.. */
+
   function xNumericLiteral($v) {
     $sub_r = $this->x('(\-|\+)?', $v);
     $prefix = $sub_r[1];
@@ -555,9 +555,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 65.. */
-  
+
   function xBooleanLiteral($v) {
     if ($r = $this->x('(true|false)', $v)) {
       return array($r[1], $r[2]);
@@ -566,7 +566,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 66.., 87.., 88.., 89.., 90.., 91.. */
-  
+
   function xString($v) {/* largely simplified, may need some tweaks in following revisions */
     $sub_v = $v;
     if (!preg_match('/^\s*([\']{3}|\'|[\"]{3}|\")(.*)$/s', $sub_v, $m)) return array(0, $v);
@@ -596,9 +596,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 67 */
-  
+
   function xIRIref($v) {
     if ((list($r, $v) = $this->xIRI_REF($v)) && $r) {
       return array($this->calcURI($r, $this->base), $v);
@@ -608,9 +608,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 68 */
-  
+
   function xPrefixedName($v) {
     if ((list($r, $v) = $this->xPNAME_LN($v)) && $r) {
       return array($r, $v);
@@ -620,9 +620,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 69.., 73.., 93, 94..  */
-  
+
   function xBlankNode($v) {
     if (($r = $this->x('\_\:', $v)) && (list($r, $sub_v) = $this->xPN_LOCAL($r[1])) && $r) {
       return array(array('type' => 'bnode', 'value' => '_:' . $r), $sub_v);
@@ -634,7 +634,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 70.. @@sync with SPARQLParser */
-  
+
   function xIRI_REF($v) {
     //if ($r = $this->x('\<([^\<\>\"\{\}\|\^\'[:space:]]*)\>', $v)) {
     if (($r = $this->x('\<(\$\{[^\>]*\})\>', $v)) && ($sub_r = $this->xPlaceholder($r[1]))) {
@@ -648,9 +648,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 71 */
-  
+
   function xPNAME_NS($v) {
     list($r, $sub_v) = $this->xPN_PREFIX($v);
     $prefix = $r ? $r : '';
@@ -658,7 +658,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 72 */
-  
+
   function xPNAME_LN($v) {
     if ((list($r, $sub_v) = $this->xPNAME_NS($v)) && $r) {
       if (!$this->x('\s', $sub_v) && (list($sub_r, $sub_v) = $this->xPN_LOCAL($sub_v)) && $sub_r) {
@@ -670,18 +670,18 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /* 76 */
-  
+
   function xLANGTAG($v) {
     if (!$this->x('\s', $v) && ($r = $this->x('\@([a-z]+(\-[a-z0-9]+)*)', $v))) {
       return array($r[1], $r[3]);
     }
     return array(0, $v);
   }
-  
+
   /* 77.. */
-  
+
   function xINTEGER($v) {
     if ($r = $this->x('([0-9]+)', $v)) {
       return array($r[1], $r[2]);
@@ -715,9 +715,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(false, $v);
   }
-  
+
   /* 92 */
-  
+
   function xNIL($v) {
     if ($r = $this->x('\([\x20\x9\xd\xa]*\)', $v)) {
       return array(array('type' => 'uri', 'value' => $this->rdf . 'nil'), $r[1]);
@@ -726,7 +726,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 95.. */
-  
+
   function xPN_CHARS_BASE($v) {
     if ($r = $this->x("([a-z]+|\\\u[0-9a-f]{1,4})", $v)) {
       return array($r[1], $r[2]);
@@ -735,7 +735,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 96 */
-  
+
   function xPN_CHARS_U($v) {
     if ((list($r, $sub_v) = $this->xPN_CHARS_BASE($v)) && $r) {
       return array($r, $sub_v);
@@ -747,7 +747,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 97.. */
-  
+
   function xVARNAME($v) {
     $r = '';
     do {
@@ -772,7 +772,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 98.. */
-  
+
   function xPN_CHARS($v) {
     if ((list($r, $sub_v) = $this->xPN_CHARS_U($v)) && $r) {
       return array($r, $sub_v);
@@ -784,7 +784,7 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
   }
 
   /* 99 */
-  
+
   function xPN_PREFIX($v) {
     if ($sub_r = $this->x("([^\s\:\(\)\{\}\;\,]+)", $v, 's')) {/* accelerator */
       return array($sub_r[1], $sub_r[2]);/* @@testing */
@@ -808,9 +808,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array($r, $sub_v);
   }
-  
+
   /* 100 */
-  
+
   function xPN_LOCAL($v) {
     if (($sub_r = $this->x("([^\s\(\)\{\}\[\]\;\,\.]+)", $v, 's')) && !preg_match('/^\./', $sub_r[2])) {/* accelerator */
       return array($sub_r[1], $sub_r[2]);/* @@testing */
@@ -844,9 +844,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     } while ($proceed);
     return array($r, $sub_v);
   }
-  
+
   /*  */
-  
+
   function unescapeNtripleUTF($v) {
     if (strpos($v, '\\') === false) return $v;
     $mappings = array('t' => "\t", 'n' => "\n", 'r' => "\r", '\"' => '"', '\'' => "'");
@@ -865,9 +865,9 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return $v;
   }
-  
+
   /*  */
-  
+
   function xPlaceholder($v) {
     //if ($r = $this->x('(\?|\$)\{([^\}]+)\}', $v)) {
     if ($r = $this->x('(\?|\$)', $v)) {
@@ -881,6 +881,6 @@ class ARC2_TurtleParser extends ARC2_RDFParser {
     }
     return array(0, $v);
   }
-  
+
   /*  */
 }
