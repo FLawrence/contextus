@@ -65,7 +65,7 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 	{
 		print("   namedEntityNumArray[" . $index . "] = '" . $key . "';\n");
 		print("   namedEntityIDArray[" . $index . "] = '" . $namedEntity['id'] . "';\n");
-		print("   namedEntityNameArray[" . $index . "] = '" . $namedEntity['name'] . "';\n");
+		print("   namedEntityNameArray[" . $index . "] = '" . str_replace("'"."\\'",$namedEntity['name']) . "';\n");
 		$index++;
 	}
 ?>
