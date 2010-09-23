@@ -74,10 +74,10 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 </head>
 <body onload="setupChooser();">
 
-<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
+<p class="selectedNav">Character Editor</a></p>
 <p><a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a></p>
 <p><a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a></p>
-<p class="selectedNav">Location Editor</p>
+<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
 
 
 <form name="editForm" method="post" action="savedata.php">
