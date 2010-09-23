@@ -297,7 +297,9 @@ foreach ($event['refers'] as $value)
 <p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
 </form>
 
-<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Go to Character Editor</a></p>
+<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
+<p><a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a></p>
+<p class="selectedNav">Event Viewer</p>
 
 </body>
 </html>
