@@ -56,9 +56,9 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 <?php
 
 	print("   var namedEntities = " . count($namedEntities) . ";\n");
-	print("   var namedEntitiesNumArray = [];\n");
-	print("   var namedEntitiesIDArray = [];\n");
-	print("   var namedEntitiesNameArray = [];\n");
+	print("   var namedEntityNumArray = [];\n");
+	print("   var namedEntityIDArray = [];\n");
+	print("   var namedEntityNameArray = [];\n");
 
 	$index = 0;
 	foreach($namedEntities as $key => $namedEntity)
