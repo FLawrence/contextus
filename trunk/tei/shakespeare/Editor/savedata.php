@@ -1,25 +1,22 @@
 <?php
-
-require 'fourstore-php/Store.php';
-require 'fourstore-php/Namespace.php';
-
-require '/usr/share/php/libzend-framework-php/Zend/Loader/Autoloader.php';
-spl_autoload_register(array('Zend_Loader_Autoloader', 'autoload'));
+require 'bc-fourstore-php/FourStore/FourStore_Store.php';
+require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 
 $changes = explode("|", $_POST['alteredData']);
 
 $userGraphURL = 'http://contextus.net/resource/midsum_night_dream/' . $_POST['idhash'] .  '/';
 $autoGraphURL = 'http://contextus.net/resource/midsum_night_dream/data/';
 
-$queryUser = 'SELECT ?s, ?p, ?o WHERE { GRAPH <' . $userGraphURL . '> { ?s ?p ?o } }' . "\n";
+$queryUser = 'SELECT ?s ?p ?o WHERE { GRAPH <' . $userGraphURL . '> { ?s ?p ?o } }' . "\n";
 
-$s = new FourStore_Store('http://contextus.net:7000/sparql/');
+$s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
+$sWrite = new FourStore_Store('http://contextus.net:7000/sparql/');
 
 $userGraph = array();
 
-$results = $s->select($queryUser);
+$results = $s->query($queryUser);
 
-foreach ($results as $result)
+foreach ($results['result']['row'] as $result)
 {
 	addTripleToGraph($userGraph, $result);
 }
@@ -41,7 +38,7 @@ foreach ($changes as $change)
 	addTripleToGraph($userGraph, makeTriple($subject, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalSubject));
 }
 
-$results['Deleting Graph'] = $s->delete($userGraphURL);
+$results['Deleting Graph'] = $sWrite->delete($userGraphURL);
 
 $allTriples = "";
 
@@ -49,7 +46,7 @@ foreach ($userGraph as $triple)
 {
 	$allTriples .= makeTurtleFromTriple($triple) . "\n";
 }
-$results['Adding All Triples'] = $s->add($userGraphURL, $allTriples);
+$results['Adding All Triples'] = $s->addWrite($userGraphURL, $allTriples);
 
 header('Location: characteredit.php?idhash=' . $_POST['idhash']);
 exit(0);

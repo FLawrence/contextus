@@ -1,22 +1,25 @@
 <?php
 
-require 'fourstore-php/Store.php';
-require 'fourstore-php/Namespace.php';
-
-require '/usr/share/php/libzend-framework-php/Zend/Loader/Autoloader.php';
-spl_autoload_register(array('Zend_Loader_Autoloader', 'autoload'));
+require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $_GET['idhash'] .  '/';
 
-$queryAuto = 'SELECT ?name, ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; foaf:name ?name . } }' . "\n";
-$queryUser = 'SELECT ?name, ?id WHERE { GRAPH <' . $graphUser . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; foaf:name ?name . } }' . "\n";
+$queryAuto = 'SELECT ?name ?id WHERE { GRAPH <' . $graphAuto . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; <http://xmlns.com/foaf/0.1/name> ?name } }' . "\n";
+$queryUser = 'SELECT ?name ?id WHERE { GRAPH <' . $graphUser . '> { ?id ?p <http://purl.org/ontomedia/ext/common/being#Character> ; <http://xmlns.com/foaf/0.1/name> ?name . } }' . "\n";
 
-$s = new FourStore_Store('http://contextus.net:7000/sparql/');
+$s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $characters = array();
 
-$rAuto = $s->select($queryAuto);
-foreach ($rAuto as $result)
+$rAuto = $s->query($queryAuto);
+
+$err = $s->getErrors();
+if ($err) {
+	print_r($err);
+	throw new Exception(print_r($err,true));
+}
+
+foreach ($rAuto['result']['rows'] as $result)
 {
 	$characterNum = array_pop(explode("/",$result['id']));
 
@@ -24,8 +27,8 @@ foreach ($rAuto as $result)
 	$characters[$characterNum]['name'] = $result['name'];
 }
 
-$rUser = $s->select($queryUser);
-foreach ($rUser as $result)
+$rUser = $s->query($queryUser);
+foreach ($rUser['result']['rows'] as $result)
 {
 	$characterNum = array_pop(explode("/",$result['id']));
 
