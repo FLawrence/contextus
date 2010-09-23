@@ -6,7 +6,7 @@ if (isset($_GET['idhash']))
 }
 else
 {
-$userID = 'd7294d00acc853a07ef3b2ad94bc2dc490f299a3';
+$userID = 'dca94aa5ab2ea5e7a59340ad59279c43eb3822e1';
 //	$userID = $_POST['idhash'];
 }
 
@@ -56,12 +56,22 @@ $rAuto = $s->query($queryAuto2);
 $rUser = null;
 
 
-if(isset($_GET['idhash']))
+if(isset($userID))
 {
-	$queryUser2 = $query . "\n" . 'SELECT ?p ?o WHERE { GRAPH <' . $graphAuto . '> { <' . $graphUser . $entityID . '> ?p ?o } }' . "\n";
+	$queryUser2 = $query . "\n" . 'SELECT ?p ?o WHERE { GRAPH <' . $graphUser . '> { <' . $graphUser . $entityID . '> ?p ?o } }' . "\n";
 	$rUser = $s->query($queryUser2);
+
+
+$err = $s->getErrors();
+if ($err) {
+	print_r($err);
+	throw new Exception(print_r($err,true));
 }
 
+print("RUSER:\n\n");
+print_r($rUser);
+
+}
 
 
 $involved_count = 0;

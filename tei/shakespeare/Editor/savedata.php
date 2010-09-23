@@ -34,13 +34,30 @@ foreach ($changes as $change)
 
 	if (count($parts) != 2) continue;
 
-	$originalSubject = $autoGraphURL . 'character/' . $parts[0];
-	$subject = $userGraphURL . 'character/' . $parts[0];
-	$object = $parts[1];
+	if ($_POST['saveType'] == 'character')
+	{
+		$originalSubject = $autoGraphURL . 'character/' . $parts[0];
+		$subject = $userGraphURL . 'character/' . $parts[0];
+		$object = $parts[1];
 
-	addTripleToGraph($userGraph, makeTriple($subject, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
-	addTripleToGraph($userGraph, makeTriple($subject, 'http://xmlns.com/foaf/0.1/name' ,$object));
-	addTripleToGraph($userGraph, makeTriple($subject, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalSubject));
+		addTripleToGraph($userGraph, makeTriple($subject, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
+		addTripleToGraph($userGraph, makeTriple($subject, 'http://xmlns.com/foaf/0.1/name' ,$object));
+		addTripleToGraph($userGraph, makeTriple($subject, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalSubject));
+
+		$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
+	}
+	else if ($_POST['saveType'] == 'location')
+	{
+		$originalSubject = $autoGraphURL . 'location/' . $parts[0];
+		$subject = $userGraphURL . 'location/' . $parts[0];
+		$object = $parts[1];
+
+		addTripleToGraph($userGraph, makeTriple($subject, 'a' , 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'));
+		addTripleToGraph($userGraph, makeTriple($subject, 'http://www.w3.org/2000/01/rdf-schema#label' ,$object));
+		addTripleToGraph($userGraph, makeTriple($subject, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalSubject));
+
+		$continueURL = 'locationedit.php?idhash=' . $_POST['idhash'];
+	}
 }
 
 $results['Deleting Graph'] = $sWrite->delete($userGraphURL);
@@ -99,7 +116,7 @@ function makeTurtleFromTriple ( $triple )
 </head>
 <body>
 
-<p>Continue to <a href="<?php print('characteredit.php?idhash=' . $_POST['idhash']); ?>">Editor</a></p>
+<p>Continue to <a href="<?php print($continueURL); ?>">Editor</a></p>
 
 <?php
 	foreach ($results as $title => $r)
