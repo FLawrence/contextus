@@ -20,7 +20,7 @@ function printNavigationList ( $current, $userID )
 		if ($current == $url)
 			print('   <li class="selectedNav">' . $label . '</li>' . "\n");
 		else
-			print('   <li><a href="' . $url .  '?idhash=<?php print($userID); ?>">' . $label . '</a></li>' . "\n");
+			print('   <li><a href="' . $url .  '?idhash=' . $userID . '">' . $label . '</a></li>' . "\n");
 	}
 	print('</ul>' . "\n");
 }
