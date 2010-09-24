@@ -119,9 +119,6 @@ def convert(teifile, namespace):
 	line = ""
 	char = 0
 	loc = 0
-	stagenum = 0
-	internalnum = 1
-	speechnum = 1
 	
 	
 	#timeline = ns['timeline/narrative']
@@ -195,6 +192,11 @@ def convert(teifile, namespace):
 			# Work out the location of this scene
 			location = None
 			stageItems = sceneItem.findall("stage")
+			
+			#internalnum = 1
+			stagenum = 0
+			speechnum = 1
+			
 			for stageItem in stageItems:
 				if stageItem.get("type") == "location":
 					# The RDFa parser doesn't handle the type - so we can grab that here.
