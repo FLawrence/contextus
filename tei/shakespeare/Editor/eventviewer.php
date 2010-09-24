@@ -345,7 +345,7 @@ foreach ($event['refers'] as $value)
 </td>
 <tr><td>Previous Event</td><td><?php print($event['follows']['auto']['label']);?></td></tr>
 <tr><td>Next Event</td><td><?php print($event['precedes']['auto']['label']);?></td></tr>
-<tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']);?>">Text</a>)</td></tr>
+<tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</td></tr>
 </table>
 
 </body>
