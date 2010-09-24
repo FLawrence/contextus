@@ -195,31 +195,36 @@ function armourQuery ( $query )
 
 function retrieveStage ( $xpointer )
 {
-	$sections = explode('#xpointer', $xpointer);
-
-	$data = array();
-
-	$url = $sections[0];
-	$xpathQuery = substr($sections[1], 1, -1);
-
-	if (preg_match('/ancestor::sp\/\/lb\[(.+)\]/i', $xpathQuery))
+	if($xpointer != "")
 	{
-		$xpathQuery = preg_replace('/ancestor::sp\/\/lb\[(.+)\]/i', '//lb[\1]/ancestor::sp', $xpathQuery);
+		$sections = explode('#xpointer', $xpointer);
+	
+		$data = array();
+	
+		$url = $sections[0];
+		$xpathQuery = substr($sections[1], 1, -1);
+	
+		if (preg_match('/ancestor::sp\/\/lb\[(.+)\]/i', $xpathQuery))
+		{
+			$xpathQuery = preg_replace('/ancestor::sp\/\/lb\[(.+)\]/i', '//lb[\1]/ancestor::sp', $xpathQuery);
+		}
+	
+		$document = new DOMDocument();
+		$document->load($url);
+	
+		$xpath = new DOMXPath($document);
+		$nodelist = $xpath->query($xpathQuery);
+	
+	
+		foreach ($nodelist as $node)
+		{
+			$data['stage'] = $node->nodeValue;
+		}
+	
+		return $data;
 	}
-
-	$document = new DOMDocument();
-	$document->load($url);
-
-	$xpath = new DOMXPath($document);
-	$nodelist = $xpath->query($xpathQuery);
-
-
-	foreach ($nodelist as $node)
-	{
-		$data['stage'] = $node->nodeValue;
-	}
-
-	return $data;
+	else
+		return "";
 }
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
