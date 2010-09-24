@@ -11,6 +11,7 @@ else
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
+require('shakespeare_utilities.php');
 
 FourStore_Namespace::addW3CNamespace();
 FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
@@ -78,7 +79,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 			$event['refers'][$refers_count] = $result3['result']['rows'][0]['name'];
 			$refers_count ++;
-			
+
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#involves":
@@ -136,19 +137,19 @@ foreach ($rAuto['result']['rows'] as $result)
 			$result6 = $s->query($queryAuto6);
 
 			$event['location']['auto'] = $result6['result']['rows'][0]['label'];
-			
+
 			if(isset($userID))
 			{
-				$queryAuto6u = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> {?id  ome:is-shadow-of <' . $result['o'] . '>; rdfs:label ?label } }' . "\n";	
-				
+				$queryAuto6u = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> {?id  ome:is-shadow-of <' . $result['o'] . '>; rdfs:label ?label } }' . "\n";
+
 				//print(armourQuery($queryAuto6u));
-				
+
 				$result6u = $s->query($queryAuto6u);
 
 				$event['location']['user'] = $result6u['result']['rows'][0]['label'];
 			}
-			
-			
+
+
 			break;
 
 		case "http://purl.org/ontomedia/core/expression#to":
@@ -199,9 +200,7 @@ if(isset($event['text']['user']))
 else
 	$stage = retrieveStage($event['text']['auto']);
 
-print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
-print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
-
+printXMLHeaders();
 
 function armourQuery ( $query )
 {
@@ -214,29 +213,29 @@ function retrieveStage ( $xpointer )
 	if($xpointer != "")
 	{
 		$sections = explode('#xpointer', $xpointer);
-	
+
 		$data = array();
-	
+
 		$url = $sections[0];
 		$xpathQuery = substr($sections[1], 1, -1);
-	
+
 		if (preg_match('/ancestor::sp\/\/lb\[(.+)\]/i', $xpathQuery))
 		{
 			$xpathQuery = preg_replace('/ancestor::sp\/\/lb\[(.+)\]/i', '//lb[\1]/ancestor::sp', $xpathQuery);
 		}
-	
+
 		$document = new DOMDocument();
 		$document->load($url);
-	
+
 		$xpath = new DOMXPath($document);
 		$nodelist = $xpath->query($xpathQuery);
-	
-	
+
+
 		foreach ($nodelist as $node)
 		{
 			$data['stage'] = $node->nodeValue;
 		}
-	
+
 		return $data;
 	}
 	else
@@ -250,7 +249,7 @@ function retrieveStage ( $xpointer )
 </head>
 <body>
 
-<p class="navbar"><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a> &nbsp; <a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a> &nbsp; <span class="selectedNav">Event Viewer</span> &nbsp; <a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
+<?php printNavigationList('eventviewer.php', $userID) ?>
 
 <?php //print_r($_POST); // print("<p>Query 1: " . armourQuery($queryAuto1) . "</p>"); ?>
 <form name="navigateForm" method="post" action="eventviewer.php">
@@ -320,14 +319,14 @@ foreach ($event['involves'] as $value)
 	{
 		if(isset($event['from']['user']))
 			print("<td>Arrive in</td><td>" . $event['from']['user'] . " <span class='old'>[" . $entity['from']['auto'] . "]</span></td>");
-		else	
+		else
 			print("<td>Leave </td><td>" . $event['from']['auto'] . "</td>");
 	}
 	else
 	{
 		if(isset($event['location']['user']))
 			print("<td>Arrive in</td><td>" . $event['location']['user'] . " <span class='old'>[" . $entity['location']['auto'] . "]</span></td>");
-		else	
+		else
 			print("<td>Location</td><td>" . $event['location']['auto'] . "</td>");
 	}
 ?>

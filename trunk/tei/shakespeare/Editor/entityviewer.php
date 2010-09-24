@@ -11,6 +11,7 @@ else
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
+require('shakespeare_utilities.php');
 
 FourStore_Namespace::addW3CNamespace();
 FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
@@ -62,7 +63,7 @@ if(isset($userID))
 
 
 	$err = $s->getErrors();
-	if ($err) 
+	if ($err)
 	{
 		print_r($err);
 		throw new Exception(print_r($err,true));
@@ -289,9 +290,7 @@ if($rUser != null)
 	}
 }
 
-print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
-print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
-
+printXMLHeaders();
 
 function armourQuery ( $query )
 {
@@ -307,7 +306,7 @@ function armourQuery ( $query )
 </head>
 <body>
 
-<p class="navbar"><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a> &nbsp; <span class="selectedNav">Entity Viewer</span> &nbsp; <a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a> &nbsp; <a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
+<?php printNavigationList('entityviewer.php', $userID) ?>
 
 <?php //print_r($_POST); // print("<p>Query 1: " . armourQuery($queryAuto1) . "</p>"); ?>
 <form name="navigateForm" method="post" action="entityviewer.php">
