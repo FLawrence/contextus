@@ -391,7 +391,7 @@ function retrieveStage ( $xpointer )
 <input name="previousid" type="hidden" value="<?php print($event['follows']['auto']['id']); ?>" />
 <input name="nextid" type="hidden" value="<?php print($event['precedes']['auto']['id']); ?>" />
 
-<p><button name="previous" <?php if($event['follows']['id'] ==""){print ('disabled="true"');}?>>Previous</button><button name="next" <?php if($event['precedes']['id'] ==""){print ('disabled="true"');}?>>Next</button></p>
+<p><button name="previous" <?php if($event['follows']['auto']['id'] ==""){print ('disabled="true"');}?>>Previous</button><button name="next" <?php if($event['precedes']['auto']['id'] ==""){print ('disabled="true"');}?>>Next</button></p>
 
 <p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
 </form>
@@ -440,6 +440,7 @@ foreach ($event['involves'] as $value)
 </td>
 <tr>
 <?php
+
 	if ($event['to']['auto'] != "")
 	{
 		if(isset($event['to']['user']))
