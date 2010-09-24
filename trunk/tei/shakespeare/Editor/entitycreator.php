@@ -11,6 +11,7 @@ else
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
+require('shakespeare_utilities.php');
 
 FourStore_Namespace::addW3CNamespace();
 FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
@@ -22,7 +23,6 @@ $query = FourStore_Namespace::to_sparql();
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
-$namedEntities = array();
 
 if(isset($_POST['createNew']))
 {
