@@ -234,6 +234,8 @@ function retrieveStage ( $xpointer )
 </head>
 <body>
 
+<p class="navbar"><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a> &nbsp; <a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a> &nbsp; <span class="selectedNav">Event Viewer</span> &nbsp; <a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
+
 <?php //print_r($_POST); // print("<p>Query 1: " . armourQuery($queryAuto1) . "</p>"); ?>
 <form name="navigateForm" method="post" action="eventviewer.php">
 
@@ -242,13 +244,9 @@ function retrieveStage ( $xpointer )
 <input name="nextid" type="hidden" value="<?php print($event['precedes']['id']); ?>" />
 
 <p><button name="previous" <?php if($event['follows']['id'] ==""){print ('disabled="true"');}?>>Previous</button><button name="next" <?php if($event['precedes']['id'] ==""){print ('disabled="true"');}?>>Next</button></p>
+
 <p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
 </form>
-
-<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
-<p><a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a></p>
-<p class="selectedNav">Event Viewer</p>
-<p><a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
 
 <table>
 <tr><td>Event Number</td><td><?php print($eventNum);?></td></tr>

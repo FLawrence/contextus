@@ -73,11 +73,7 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 </head>
 <body onload="setupChooser();">
 
-<p class="selectedNav">Character Editor</a></p>
-<p><a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a></p>
-<p><a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a></p>
-<p><a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
-
+<p class="navbar"><span class="selectedNav">Character Editor</a></span> &nbsp; <a href="entityviewer.php?idhash=<?php print($userID); ?>">Entity Viewer</a> &nbsp; <a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a> &nbsp; <a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
 
 <form name="editForm" method="post" action="savedata.php">
 	<select name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select> <br />
