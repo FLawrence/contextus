@@ -306,6 +306,8 @@ function armourQuery ( $query )
 </head>
 <body>
 
+<p class="navbar"><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a> &nbsp; <span class="selectedNav">Entity Viewer</span> &nbsp; <a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a> &nbsp; <a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
+
 <?php //print_r($_POST); // print("<p>Query 1: " . armourQuery($queryAuto1) . "</p>"); ?>
 <form name="navigateForm" method="post" action="entityviewer.php">
 <input name="idhash" type="hidden" value="<?php print($userID); ?>" />
@@ -373,23 +375,18 @@ function armourQuery ( $query )
 <button name="gotoLoc">Go</button></p>
 </form>
 
-<p><a href="characteredit.php?idhash=<?php print($userID); ?>">Character Editor</a></p>
-<p class="selectedNav">Entity Viewer</p>
-<p><a href="eventviewer.php?idhash=<?php print($userID); ?>">Event Viewer</a></p>
-<p><a href="locationedit.php?idhash=<?php print($userID); ?>">Location Editor</a></p>
-
 <table>
 <tr><td>Entity Number</td><td><?php print($entityID);?></td></tr>
 <tr><td>Entity Name</td><td><?php
 if(isset($entity['name']['user']))
-	print($entity['name']['user'] . " [" . $entity['name']['auto'] . "]");
+	print($entity['name']['user'] . " <span class='old'>[" . $entity['name']['auto'] . "]<span>");
 else
 	print($entity['name']['auto']);
 
 ?></td></tr>
 <tr><td>Entity Type</td><td><?php
 if(isset($entity['type']['user']))
-	print($entity['type']['user'] . " [" . $entity['type']['auto'] . "]");
+	print($entity['type']['user'] . " <span class='old'>[" . $entity['type']['auto'] . "]</span>");
 else
 	print($entity['type']['auto']);
 
