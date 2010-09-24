@@ -388,8 +388,8 @@ function retrieveStage ( $xpointer )
 <form name="navigateForm" method="post" action="eventviewer.php">
 
 <input name="idhash" type="hidden" value="<?php print($userID); ?>" />
-<input name="previousid" type="hidden" value="<?php print($event['follows']['id']); ?>" />
-<input name="nextid" type="hidden" value="<?php print($event['precedes']['id']); ?>" />
+<input name="previousid" type="hidden" value="<?php print($event['follows']['auto']['id']); ?>" />
+<input name="nextid" type="hidden" value="<?php print($event['precedes']['auto']['id']); ?>" />
 
 <p><button name="previous" <?php if($event['follows']['id'] ==""){print ('disabled="true"');}?>>Previous</button><button name="next" <?php if($event['precedes']['id'] ==""){print ('disabled="true"');}?>>Next</button></p>
 
@@ -400,16 +400,16 @@ function retrieveStage ( $xpointer )
 <tr><td>Event Number</td><td><?php print($eventNum);?></td></tr>
 <tr><td>Event Type</td><td><?php
 if(isset($entity['type']['user']))
-	print($entity['type']['user'] . " <span class='old'>[" . $entity['type']['auto'] . "]</span>");
+	print($event['type']['user'] . " <span class='old'>[" . $event['type']['auto'] . "]</span>");
 else
-	print($entity['type']['auto']);
+	print($event['type']['auto']);
 
 ?></td></tr>
 <tr><td>Description</td><td><?php
 if(isset($entity['label']['user']))
-	print($entity['label']['user'] . " <span class='old'>[" . $entity['label']['auto'] . "]<span>");
+	print($event['label']['user'] . " <span class='old'>[" . $event['label']['auto'] . "]<span>");
 else
-	print($entity['label']['auto']);
+	print($event['label']['auto']);
 
 ?></td></tr>
 <tr><td valign='top'>Subject</td><td><?php
