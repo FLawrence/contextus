@@ -61,11 +61,12 @@ if(isset($userID))
 	$rUser = $s->query($queryUser2);
 
 
-$err = $s->getErrors();
-if ($err) {
-	print_r($err);
-	throw new Exception(print_r($err,true));
-}
+	$err = $s->getErrors();
+	if ($err) 
+	{
+		print_r($err);
+		throw new Exception(print_r($err,true));
+	}
 
 }
 
