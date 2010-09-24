@@ -56,3 +56,15 @@ BONUS - Event and Entity information display also working
 
  * User can delete events
  * User can delete character and location entities
+
+== Milestone 7: Social Stuff ==
+
+ * User profile page (save foaf data for annotator)
+
+== Milestone 8: Bloody Statistics == 
+
+ * Page showing fun and interesting statistics drawn from the graph
+ ** Number of editors
+ ** Most corrected
+ ** Most contentious
+ ** etc
