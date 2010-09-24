@@ -1,3 +1,15 @@
-.selectedNav	{ font-weight: bold }
+#navigationList { margin: 0; padding: 0 0 20px 10px; border-bottom: 1px solid #000; }
 
-.old {color: gray}
+#navigationList ul, #navigationList li { margin: 0; padding: 0; display: inline; list-style-type: none; }
+
+#navigationList li { float: left; line-height: 14px; font-weight: bold; margin: 0 10px 4px 10px; text-decoration: none; color: #999; }
+
+#navigationList li a { text-decoration: none; color: #999; margin: 0 0 0 0; line-height: 14px }
+
+#navigationList #selectedNav { border-bottom: 4px solid #000; padding-bottom: 2px; background: transparent; color: #000; }
+
+#navigationList a:hover { border-bottom: 4px solid #666; background: transparent; color: #000; }
+
+#navigationList a:hover { color: #000; }
+
+div#editForm { margin: 5px }
