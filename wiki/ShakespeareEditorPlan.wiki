@@ -8,7 +8,7 @@ The form needs to load the data from the triple store for a given entity or even
 
 = Details =
 
-== Milestone 1: Basic Entity Editor [COMPLETED] ==
+== Milestone 1: Basic Entity Editor {COMPLETED} ==
 
  * Editor gets character and location information from the automatically generated in the data store and presents this to the user. 
  * User can edit the character name/location name strings
