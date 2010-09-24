@@ -264,6 +264,7 @@ def convert(teifile, namespace):
 			
 			xpointer = "http://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus:text:"  + str(perseusid) + ":act=" + str(act) + ":scene=" + str(scene)
 			stagecount = 0
+			stage_array = list()
 						
 			for node in sceneItem.getiterator():
 				#print("Node: " + node.tag)	
@@ -301,24 +302,38 @@ def convert(teifile, namespace):
 						if cast[id[1:]] not in currentCast:
 							currentCast.append(cast[id[1:]])
 							
-					internalnum = 1
+					#internalnum = 1
 					speechnum += 1
 					stagecount = 0
 					
+					
+					previousl = 0
+					
 					for subnode in node.getiterator():
+						if subnode.tag == "l":
+							previousl += 1
+						
 						if subnode.tag == "stage":
+							#print ("Stagecount: " + str(stagecount) + " Previousl: " + str(previousl) + "\n")
+							stage_array.append(previousl)
 							stagecount += 1
 							
 					
 						
 				elif node.tag == "stage":
-					stagenum += 1
 					
 					if stagecount > 0:
-						entRef = xpointer + "#xpointer(//div2/sp[" + str(stagenum - 1) + "]/l/stage[" + str(internalnum) +"])";
-						internalnum += 1
+						s_max = len(stage_array)
+						diff = s_max - stagecount
+						
+						#if diff == 0:
+						#	stagenum += 1
+					
+						entRef = xpointer + "#xpointer(//div2/sp[" + str(speechnum - 1) + "]/l[" + str(stage_array[diff]) +"]/stage)";
+						#internalnum += 1
 						stagecount -= 1
 					else:
+						stagenum += 1
 						entRef = xpointer + "#xpointer(//div2/stage[" + str(stagenum) +"])";				
 					
 					if node.get("type") == "entrance":		
@@ -488,6 +503,8 @@ def convert(teifile, namespace):
 						elif "!" in involved:
 							#print("Exit except some. GroupCount: " + str(groupCount) + ", EventCount: "  + str(eventCount) + ", current cast count: "  + str(len(currentCast)))	
 							
+							#print("Event: " + involved);
+							
 							if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
 								involved = involved[1:-1]	
 								
@@ -500,12 +517,19 @@ def convert(teifile, namespace):
 							
 							striped = involved.strip()	
 							
-							chunks = striped.split()
+							c_ids = striped.split()
+							
+							chunks = list()
+							
+							for stay in c_ids:
+								#print("Staying: " + cast[stay])
+								chunks.append(cast[stay])							
 							
 							staying = list()
 							going = list()
 							
 							for player in currentCast:
+								#print("Player: " + player)							
 								if player in chunks:
 									staying.append(player)
 								else:
@@ -597,14 +621,14 @@ def convert(teifile, namespace):
 									
 									if en == len(currentCast):
 										event_label = event_label[0:-2] + " and " + chunk
-										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave3")))	
+										graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(event_label + " leave")))	
 									elif en < len(currentCast):
 										event_label += chunk + ", "										
 									
 								else:
 									#print("Adding person as subject-entity to exit event "   + str(eventCount))
 									graph.add((event, ome['has-subject-entity'], ghost))
-									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(chunk + " leaves3")))
+									graph.add((event, rdflib.URIRef('http://www.w3.org/2000/01/rdf-schema#label'), Literal(chunk + " leaves")))
 									
 								en += 1	
 								
