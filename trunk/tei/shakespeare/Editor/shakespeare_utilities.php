@@ -22,7 +22,7 @@ function printNavigationList ( $current, $userID )
 		else
 			print('   <li><a href="' . $url .  '?idhash=' . $userID . '">' . $label . '</a></li>' . "\n");
 	}
-	print('   <li><a href="index.php">Logout</a></li>
+	print('   <li><a href="index.php">Logout</a></li>' . "\n");
 	print('</ul>' . "\n");
 }
 
