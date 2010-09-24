@@ -414,12 +414,12 @@ else
 ?></td></tr>
 <tr><td valign='top'>Subject</td><td><?php
 
-if(count($event['subject']) == 1)
-	print($event['subject'][0]);
+if(count($event['subject']['auto']) == 1)
+	print($event['subject']['auto'][0]);
 else
 {
 	print("<ul>");
-	foreach ($event['subject'] as $value)
+	foreach ($event['subject']['auto'] as $value)
 	{
 		print('<li>' . $value . '</li>');
 	}
@@ -431,7 +431,7 @@ else
 <td>
 <ul>
 <?php
-foreach ($event['involves'] as $value)
+foreach ($event['involves']['auto'] as $value)
 {
 	print('<li>' . $value . '</li>');
 }
@@ -472,7 +472,7 @@ if(isset($event['refers']['user']))
 }
 else
 {
-	foreach ($event['refers'] as $value)
+	foreach ($event['refers']['auto'] as $value)
 	{
 		print('<li>' . $value . '</li>');
 	}
@@ -480,8 +480,8 @@ else
 ?>
 </ul>
 </td>
-<tr><td>Previous Event</td><td><?php print($event['follows']['label']);?></td></tr>
-<tr><td>Next Event</td><td><?php print($event['precedes']['label']);?></td></tr>
+<tr><td>Previous Event</td><td><?php print($event['follows']['auto']['label']);?></td></tr>
+<tr><td>Next Event</td><td><?php print($event['precedes']['auto']['label']);?></td></tr>
 <tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']);?>">Text</a>)</td></tr>
 </table>
 
