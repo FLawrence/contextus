@@ -139,9 +139,9 @@ foreach ($rAuto['result']['rows'] as $result)
 			
 			if(isset($userID))
 			{
-				$queryAuto6u = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label } }' . "\n";	
+				$queryAuto6u = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> {?id  ome:is-shadow-of <' . $result['o'] . '>; rdfs:label ?label } }' . "\n";	
 				
-				print(armourQuery($queryAuto6u));
+				//print(armourQuery($queryAuto6u));
 				
 				$result6u = $s->query($queryAuto6u);
 
