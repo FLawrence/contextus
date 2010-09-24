@@ -75,6 +75,7 @@ printXMLHeaders();
 
 <?php printNavigationList('characteredit.php', $userID) ?>
 
+<div id="editForm">
 <form name="editForm" method="post" action="savedata.php">
 	<select name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select> <br />
 
@@ -85,9 +86,8 @@ printXMLHeaders();
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 	<input name="saveType" type="hidden" value="character" />
 	<input name="alteredData" type="hidden" value="" />
-
-
 </form>
+</div>
 
 </body>
 </html>
