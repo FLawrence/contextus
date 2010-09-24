@@ -18,7 +18,7 @@ function printNavigationList ( $current, $userID )
 	foreach ($navigationArray as $url => $label)
 	{
 		if ($current == $url)
-			print('   <li class="selectedNav">' . $label . '</li>' . "\n");
+			print('   <li id="selectedNav">' . $label . '</li>' . "\n");
 		else
 			print('   <li><a href="' . $url .  '?idhash=' . $userID . '">' . $label . '</a></li>' . "\n");
 	}
