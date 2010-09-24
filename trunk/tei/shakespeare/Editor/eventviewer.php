@@ -141,6 +141,8 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto6u = $query . "\n" . 'SELECT ?label WHERE { GRAPH <' . $graphUser . '> { <' . $result['o'] . '> ?p ?o; rdfs:label ?label } }' . "\n";	
 				
+				print(armourQuery($queryAuto6u));
+				
 				$result6u = $s->query($queryAuto6u);
 
 				$event['location']['user'] = $result6u['result']['rows'][0]['label'];
