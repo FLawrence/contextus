@@ -93,7 +93,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 			$result3 = $s->query($queryAuto3);
 
-			$event['refers']['auto'][$refers_count] = $result3['result']['rows'][0]['name'];
+			$event['refers'][$refers_count] = $result3['result']['rows'][0]['name'];
 			$refers_count ++;
 			
 			break;
@@ -106,7 +106,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 			$result4b = $s->query($queryAuto4b);
 
-			$event['involves']['auto'][$involves_count] = $result4b['result']['rows'][0]['name'];
+			$event['involves'][$involves_count] = $result4b['result']['rows'][0]['name'];
 			$involves_count ++;
 			break;
 
@@ -127,7 +127,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 				$result5a = $s->query($queryAuto5a);
 
-				$event['subject']['auto'][0] = $result5a['result']['rows'][0]['name'];
+				$event['subject'][0] = $result5a['result']['rows'][0]['name'];
 			}
 			else if ($result5['result']['rows'][0]['type'] == "http://purl.org/ontomedia/ext/common/being#Group")
 			{
@@ -139,7 +139,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 				foreach($result5b['result']['rows'] as $name)
 				{
-					$event['subject']['auto'][$person_count] = $name['name'];
+					$event['subject'][$person_count] = $name['name'];
 					$person_count++;
 				}
 			}
@@ -414,12 +414,12 @@ else
 ?></td></tr>
 <tr><td valign='top'>Subject</td><td><?php
 
-if(count($event['subject']['auto']) == 1)
-	print($event['subject']['auto'][0]);
+if(count($event['subject']) == 1)
+	print($event['subject'][0]);
 else
 {
 	print("<ul>");
-	foreach ($event['subject']['auto'] as $value)
+	foreach ($event['subject'] as $value)
 	{
 		print('<li>' . $value . '</li>');
 	}
@@ -431,7 +431,7 @@ else
 <td>
 <ul>
 <?php
-foreach ($event['involves']['auto'] as $value)
+foreach ($event['involves'] as $value)
 {
 	print('<li>' . $value . '</li>');
 }
@@ -467,16 +467,11 @@ foreach ($event['involves']['auto'] as $value)
 <td>
 <ul>
 <?php
-if(isset($event['refers']['user']))
+foreach ($event['refers'] as $value)
 {
+	print('<li>' . $value . '</li>');
 }
-else
-{
-	foreach ($event['refers']['auto'] as $value)
-	{
-		print('<li>' . $value . '</li>');
-	}
-}
+
 ?>
 </ul>
 </td>
