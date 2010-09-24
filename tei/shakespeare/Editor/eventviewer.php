@@ -326,7 +326,10 @@ if($rUser != null)
 	
 }
 
-$stage = retrieveStage($event['text']);
+if(isset($event['text']['user']))
+	$stage = retrieveStage($event['text']['user']);
+else
+	$stage = retrieveStage($event['text']['auto']);
 
 print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
 print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
