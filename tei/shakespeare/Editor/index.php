@@ -36,7 +36,7 @@ try
 	{
 		$openid = new LightOpenID;
 		if ($openid->validate())
-			header('Location: characteredit.php?idhash=' . sha1($openid->authUrl() . '&idraw=' . $openid->authUrl() . '&idid' . $openid->identity()));
+			header('Location: characteredit.php?idhash=' . sha1($openid->authUrl() . '&idraw=' . $openid->authUrl() . '&idid' . $openid->identity));
 		else
 			echo 'User ' . $openid->identity . ' has not logged in.';
 	}
