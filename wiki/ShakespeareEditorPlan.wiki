@@ -64,7 +64,7 @@ BONUS - Event and Entity information display also working
 == Milestone 8: Bloody Statistics == 
 
  * Page showing fun and interesting statistics drawn from the graph
- ** Number of editors
- ** Most corrected
- ** Most contentious
- ** etc
+  ** Number of editors
+  ** Most corrected
+  ** Most contentious
+  ** etc
