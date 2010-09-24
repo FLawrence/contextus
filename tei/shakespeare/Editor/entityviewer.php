@@ -417,7 +417,7 @@ if(isset($entity['aka']))
 	print("</td></tr>");
 }
 
-if($entity['type']['user'] = "Character" || ($entity['type']['auto'] = "Character" && !isset($entity['type']['user'])))
+if(($entity['type']['auto'] == "Character" && !isset($entity['type']['user'])) || (isset($entity['type']['user']) && $entity['type']['user'] == "Character"))
 {
 	print("<tr><td valign='top'>Involved In</td>\n<td>\n<ul>");
 
