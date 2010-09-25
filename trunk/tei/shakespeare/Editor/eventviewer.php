@@ -432,7 +432,8 @@ foreach ($event['refers'] as $id => $value)
 	else
 		print('<li>' . $value['auto'] . '</li>');
 		
-	print("$id: " . $id . ", $value: " . $value);
+	print("id: " . $id);
+	print_r($value);
 }
 
 ?>
