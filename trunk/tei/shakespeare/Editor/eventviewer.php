@@ -137,20 +137,18 @@ foreach ($rAuto['result']['rows'] as $result)
 			$result6 = $s->query($queryAuto6);
 
 			$event['location']['auto'] = $result6['result']['rows'][0]['label'];
-			
-			print("Test!");
 
 			if(isset($userID))
 			{
 				$queryAuto6u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				print("Query: " . armourQuery($queryAuto6u));
+				//print("Query: " . armourQuery($queryAuto6u));
 
 				$result6u = $s->query($queryAuto6u);
 
 				$event['location']['user'] = $result6u['result']['rows'][0]['label'];
 				
-				print("Result: " . $result6u['result']['rows'][0]['label']); 
+				//print("Result: " . $result6u['result']['rows'][0]['label']); 
 			}
 
 
@@ -163,6 +161,19 @@ foreach ($rAuto['result']['rows'] as $result)
 			$result7 = $s->query($queryAuto7);
 
 			$event['to']['auto'] = $result7['result']['rows'][0]['label'];
+			
+			if(isset($userID))
+			{
+				$queryAuto7u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
+
+				//print("Query: " . armourQuery($queryAuto6u));
+
+				$result7u = $s->query($queryAuto7u);
+
+				$event['to']['user'] = $result7u['result']['rows'][0]['label'];
+				
+				//print("Result: " . $result6u['result']['rows'][0]['label']); 
+			}			
 
 			break;
 
@@ -173,6 +184,19 @@ foreach ($rAuto['result']['rows'] as $result)
 			$result8 = $s->query($queryAuto8);
 
 			$event['from']['auto'] = $result8['result']['rows'][0]['label'];
+			
+			if(isset($userID))
+			{
+				$queryAuto8u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
+
+				//print("Query: " . armourQuery($queryAuto6u));
+
+				$result8u = $s->query($queryAuto8u);
+
+				$event['from']['user'] = $result8u['result']['rows'][0]['label'];
+				
+				//print("Result: " . $result6u['result']['rows'][0]['label']); 
+			}			
 
 			break;
 
