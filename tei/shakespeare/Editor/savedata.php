@@ -4,7 +4,7 @@ require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 
 $changes = explode("|", $_POST['alteredData']);
 
-$autoGraphURL = 'http://contextus.net/resource/midsum_night_dream/data/';
+$autoGraphURL = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $userGraphURL = 'http://contextus.net/resource/midsum_night_dream/' . $_POST['idhash'] .  '/';
 
 $queryUser = 'SELECT ?s ?p ?o WHERE { GRAPH <' . $userGraphURL . '> { ?s ?p ?o } }' . "\n";
