@@ -64,7 +64,7 @@ foreach ($rAuto['result']['rows'] as $result)
 	switch ($result['p'])
 	{
 		case "http://www.w3.org/2000/01/rdf-schema#label":
-			$event['label']['auto'] = $result['o'];
+			$event['label']['auto'] = $result['o'];			
 			break;
 
 		case "http://www.w3.org/2000/01/rdf-schema#seeAlso":
@@ -76,9 +76,21 @@ foreach ($rAuto['result']['rows'] as $result)
 			$queryAuto3 = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ?p ?o; foaf:name ?name } }' . "\n";
 
 			$result3 = $s->query($queryAuto3);
+			
+			$event['refers'][$result['o']] ['auto'] = $name['name'];
+			
+			if(isset($userID))
+			{
+				$queryAuto3u = $query . "\n" . 'SELECT ?name FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; foaf:name ?name }' . "\n";
 
-			$event['refers'][$refers_count] = $result3['result']['rows'][0]['name'];
-			$refers_count ++;
+				//print("<p>Refers Query: " . armourQuery($queryAuto3u) . "</p>");
+
+				$result3u = $s->query($queryAuto3u);
+				
+				$event['refers'][$result['o']]['user'] = $result3u['result']['rows'][0]['name'];			
+				
+				//print("<p>Refers Result: " . $result3u['result']['rows'][0]['name'] . "</p>"); 
+			}			
 
 			break;
 
@@ -90,8 +102,22 @@ foreach ($rAuto['result']['rows'] as $result)
 
 			$result4b = $s->query($queryAuto4b);
 
-			$event['involves'][$involves_count] = $result4b['result']['rows'][0]['name'];
-			$involves_count ++;
+			$event['involves'][$result['o']]['auto'] = $name['name'];
+
+
+			if(isset($userID))
+			{
+				$queryAuto4u = $query . "\n" . 'SELECT ?name FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; foaf:name ?name}' . "\n";
+
+				//print("<p>Involves Query: " . armourQuery($queryAuto4u) . "</p>");
+
+				$result4u = $s->query($queryAuto4u);
+				
+				$event['involves'][$result['o']]['user'] = $result4u['result']['rows'][0]['name'];			
+				
+				//print("<p>Involves Result: " . $result4u['result']['rows'][0]['label'] . "</p>"); 
+			}				
+			
 			break;
 
 		case "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
@@ -111,11 +137,25 @@ foreach ($rAuto['result']['rows'] as $result)
 
 				$result5a = $s->query($queryAuto5a);
 
-				$event['subject'][0] = $result5a['result']['rows'][0]['name'];
+				$event['subject'][$result['o']]['auto'] = $result5a['result']['rows'][0]['name'];
+				
+				if(isset($userID))
+				{
+					$queryAuto5au = $query . "\n" . 'SELECT ?name FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; foaf:name ?name}' . "\n";
+	
+					//print("<p>Subject Query: " . armourQuery($queryAuto5au) . "</p>");
+	
+					$result5au = $s->query($queryAuto5au);
+					
+					$event['subject'][$result['o']]['user'] = $result5au['result']['rows'][0]['name'];				
+					
+					//print("<p>Subject Result: " . $result5au['result']['rows'][0]['label'] . "</p>"); 
+				}				
+				
 			}
 			else if ($result5['result']['rows'][0]['type'] == "http://purl.org/ontomedia/ext/common/being#Group")
 			{
-				$queryAuto5b = $query . "\n" . 'SELECT ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ome:contains ?o. ?o foaf:name ?name } }' . "\n";
+				$queryAuto5b = $query . "\n" . 'SELECT ?o ?name WHERE { GRAPH <' . $graphAuto . '> { <' . $result['o'] . '> ome:contains ?o. ?o foaf:name ?name } }' . "\n";
 
 				$result5b = $s->query($queryAuto5b);
 
@@ -123,10 +163,25 @@ foreach ($rAuto['result']['rows'] as $result)
 
 				foreach($result5b['result']['rows'] as $name)
 				{
-					$event['subject'][$person_count] = $name['name'];
-					$person_count++;
-				}
-			}
+					$event['subject'][$name['o']]['auto'] = $name['name'];
+	
+					if(isset($userID))
+					{
+						$queryAuto5bu = $query . "\n" . 'SELECT ?name FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $name['id'] . '> ; foaf:name ?name}' . "\n";
+		
+						//print("<p>Subject Query: " . armourQuery($queryAuto5bu) . "</p>");
+		
+						$result5bu = $s->query($queryAuto5bu);
+						
+						$event['subject'][$name['o']]['user'] = $result5bu['result']['rows'][0]['name'];				
+						
+						//print("<p>Subject Result: " . $result5bu['result']['rows'][0]['label'] . "</p>"); 
+					}
+					
+					$person_count++;					
+					
+				}								
+			}			
 
 			break;
 
@@ -142,13 +197,13 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto6u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				print("<p>Location Query: " . armourQuery($queryAuto6u) . "</p>");
+				//print("<p>Location Query: " . armourQuery($queryAuto6u) . "</p>");
 
 				$result6u = $s->query($queryAuto6u);
 
 				$event['location']['user'] = $result6u['result']['rows'][0]['label'];
 				
-				print("<p>Location Result: " . $result6u['result']['rows'][0]['label'] . "</p>"); 
+				//print("<p>Location Result: " . $result6u['result']['rows'][0]['label'] . "</p>"); 
 			}
 
 
@@ -166,13 +221,13 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto7u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				print("<p>To Query: " . armourQuery($queryAuto7u) . "</p>");
+				//print("<p>To Query: " . armourQuery($queryAuto7u) . "</p>");
 
 				$result7u = $s->query($queryAuto7u);
 
 				$event['to']['user'] = $result7u['result']['rows'][0]['label'];
 				
-				print("<p>To Result: " . $result7u['result']['rows'][0]['label'] . "</p>"); 
+				//print("<p>To Result: " . $result7u['result']['rows'][0]['label'] . "</p>"); 
 			}			
 
 			break;
@@ -189,13 +244,13 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto8u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				print("<p>From Query: " . armourQuery($queryAuto8u) . "</p>");
+				//print("<p>From Query: " . armourQuery($queryAuto8u) . "</p>");
 
 				$result8u = $s->query($queryAuto8u);
 
 				$event['from']['user'] = $result8u['result']['rows'][0]['label'];
 				
-				print("From Result: " . $result8u['result']['rows'][0]['label'] . "</p>"); 
+				//print("From Result: " . $result8u['result']['rows'][0]['label'] . "</p>"); 
 			}			
 
 			break;
@@ -310,13 +365,21 @@ else
 <tr><td valign='top'>Subject</td><td><?php
 
 if(count($event['subject']) == 1)
-	print($event['subject'][0]);
+{
+	if(isset($event['subject'][0]['user']))
+		print('<li>' . $event['subject'][0]['user'] . " <span class='old'>[" . $event['subject'][0]['auto'] . "]<span></li>");
+	else
+		print('<li>' . $event['subject'][0]['auto'] . '</li>');
+}
 else
 {
 	print("<ul>");
 	foreach ($event['subject'] as $value)
 	{
-		print('<li>' . $value . '</li>');
+		if(isset($value['user']))
+			print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
+		else
+			print('<li>' . $value['auto'] . '</li>');
 	}
 	print("</ul>");
 }
@@ -328,7 +391,10 @@ else
 <?php
 foreach ($event['involves'] as $value)
 {
-	print('<li>' . $value . '</li>');
+	if(isset($value['user']))
+		print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
+	else
+		print('<li>' . $value['auto'] . '</li>');
 }
 ?>
 </ul>
@@ -339,21 +405,21 @@ foreach ($event['involves'] as $value)
 	if ($event['to']['auto'] != "")
 	{
 		if(isset($event['to']['user']))
-			print("<td>Arrive in</td><td>" . $event['to']['user'] . " <span class='old'>[" . $entity['to']['auto'] . "]</span></td>");
+			print("<td>Arrive in</td><td>" . $event['to']['user'] . " <span class='old'>[" . $event['to']['auto'] . "]</span></td>");
 		else
 			print("<td>Arrive in</td><td>" . $event['to']['auto'] . "</td>");
 	}
 	else if ($event['from']['auto'] != "")
 	{
 		if(isset($event['from']['user']))
-			print("<td>Arrive in</td><td>" . $event['from']['user'] . " <span class='old'>[" . $entity['from']['auto'] . "]</span></td>");
+			print("<td>Arrive in</td><td>" . $event['from']['user'] . " <span class='old'>[" . $event['from']['auto'] . "]</span></td>");
 		else
 			print("<td>Leave </td><td>" . $event['from']['auto'] . "</td>");
 	}
 	else
 	{
 		if(isset($event['location']['user']))
-			print("<td>Arrive in</td><td>" . $event['location']['user'] . " <span class='old'>[" . $entity['location']['auto'] . "]</span></td>");
+			print("<td>Arrive in</td><td>" . $event['location']['user'] . " <span class='old'>[" . $event['location']['auto'] . "]</span></td>");
 		else
 			print("<td>Location</td><td>" . $event['location']['auto'] . "</td>");
 	}
@@ -365,7 +431,10 @@ foreach ($event['involves'] as $value)
 <?php
 foreach ($event['refers'] as $value)
 {
-	print('<li>' . $value . '</li>');
+	if(isset($value['user']))
+		print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
+	else
+		print('<li>' . $value['auto'] . '</li>');
 }
 
 ?>
