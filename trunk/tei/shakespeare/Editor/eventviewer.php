@@ -142,13 +142,13 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto6u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				//print("Query: " . armourQuery($queryAuto6u));
+				print("<p>Location Query: " . armourQuery($queryAuto6u) . "</p>");
 
 				$result6u = $s->query($queryAuto6u);
 
 				$event['location']['user'] = $result6u['result']['rows'][0]['label'];
 				
-				//print("Result: " . $result6u['result']['rows'][0]['label']); 
+				print("<p>Location Result: " . $result6u['result']['rows'][0]['label'] . "</p>"); 
 			}
 
 
@@ -166,13 +166,13 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto7u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				//print("Query: " . armourQuery($queryAuto6u));
+				print("<p>To Query: " . armourQuery($queryAuto7u) . "</p>");
 
 				$result7u = $s->query($queryAuto7u);
 
 				$event['to']['user'] = $result7u['result']['rows'][0]['label'];
 				
-				//print("Result: " . $result6u['result']['rows'][0]['label']); 
+				print("<p>To Result: " . $result7u['result']['rows'][0]['label'] . "</p>"); 
 			}			
 
 			break;
@@ -189,13 +189,13 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto8u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				//print("Query: " . armourQuery($queryAuto6u));
+				print("<p>From Query: " . armourQuery($queryAuto8u) . "</p>");
 
 				$result8u = $s->query($queryAuto8u);
 
 				$event['from']['user'] = $result8u['result']['rows'][0]['label'];
 				
-				//print("Result: " . $result6u['result']['rows'][0]['label']); 
+				print("From Result: " . $result8u['result']['rows'][0]['label'] . "</p>"); 
 			}			
 
 			break;
