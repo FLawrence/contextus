@@ -137,6 +137,8 @@ foreach ($rAuto['result']['rows'] as $result)
 			$result6 = $s->query($queryAuto6);
 
 			$event['location']['auto'] = $result6['result']['rows'][0]['label'];
+			
+			print("Test!");
 
 			if(isset($userID))
 			{
