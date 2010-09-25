@@ -142,11 +142,13 @@ foreach ($rAuto['result']['rows'] as $result)
 			{
 				$queryAuto6u = $query . "\n" . 'SELECT ?label FROM <' . $graphUser . '> WHERE  {?id  ome:is-shadow-of <' . $result['o'] . '> ; rdfs:label ?label }' . "\n";
 
-				//print(armourQuery($queryAuto6u));
+				print("<p>Query: " . armourQuery($queryAuto6u) . "</p>");
 
 				$result6u = $s->query($queryAuto6u);
 
 				$event['location']['user'] = $result6u['result']['rows'][0]['label'];
+				
+				print("<p>Result: " . $result6u['result']['rows'][0]['label'] . "</p>"); 
 			}
 
 
