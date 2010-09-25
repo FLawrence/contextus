@@ -159,8 +159,6 @@ foreach ($rAuto['result']['rows'] as $result)
 
 				$result5b = $s->query($queryAuto5b);
 
-				$person_count = 0;
-
 				foreach($result5b['result']['rows'] as $name)
 				{
 					$event['subject'][$name['o']]['auto'] = $name['name'];
@@ -176,9 +174,7 @@ foreach ($rAuto['result']['rows'] as $result)
 						$event['subject'][$name['o']]['user'] = $result5bu['result']['rows'][0]['name'];				
 						
 						//print("<p>Subject Result: " . $result5bu['result']['rows'][0]['label'] . "</p>"); 
-					}
-					
-					$person_count++;					
+					}				
 					
 				}								
 			}			
@@ -429,12 +425,14 @@ foreach ($event['involves'] as $value)
 <td>
 <ul>
 <?php
-foreach ($event['refers'] as $value)
+foreach ($event['refers'] as $id => $value)
 {
 	if(isset($value['user']))
 		print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
 	else
 		print('<li>' . $value['auto'] . '</li>');
+		
+	print("$id: " . $id . ", $value: " . $value);
 }
 
 ?>
