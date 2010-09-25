@@ -362,10 +362,18 @@ else
 
 if(count($event['subject']) == 1)
 {
-	if(isset($event['subject'][0]['user']))
-		print('<li>' . $event['subject'][0]['user'] . " <span class='old'>[" . $event['subject'][0]['auto'] . "]<span></li>");
+/*	if(isset($event['subject'][0]['user']))
+		print($event['subject'][0]['user'] . " <span class='old'>[" . $event['subject'][0]['auto'] . "]<span>");
 	else
-		print('<li>' . $event['subject'][0]['auto'] . '</li>');
+		print($event['subject'][0]['auto']);*/
+		
+	foreach ($event['subject'] as $id => $value)
+	{
+		if(isset($value['user']))
+			print($value['user'] . " <span class='old'>[" . $value['auto'] . "]<span>");
+		else
+			print($value['auto']);
+	}		
 }
 else
 {
@@ -432,8 +440,8 @@ foreach ($event['refers'] as $id => $value)
 	else
 		print('<li>' . $value['auto'] . '</li>');
 		
-	print("id: " . $id);
-	print_r($value);
+	//print("id: " . $id);
+	//print_r($value);
 }
 
 ?>
