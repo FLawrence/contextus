@@ -77,7 +77,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 			$result3 = $s->query($queryAuto3);
 			
-			$event['refers'][$result['o']] ['auto'] = $name['name'];
+			$event['refers'][$result['o']] ['auto'] = $result3['result']['rows'][0]['name'];
 			
 			if(isset($userID))
 			{
@@ -102,7 +102,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 			$result4b = $s->query($queryAuto4b);
 
-			$event['involves'][$result['o']]['auto'] = $name['name'];
+			$event['involves'][$result['o']]['auto'] = $result4b['result']['rows'][0]['name'];
 
 
 			if(isset($userID))
@@ -370,7 +370,7 @@ if(count($event['subject']) == 1)
 else
 {
 	print("<ul>");
-	foreach ($event['subject'] as $value)
+	foreach ($event['subject'] as $id => $value)
 	{
 		if(isset($value['user']))
 			print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
@@ -385,7 +385,7 @@ else
 <td>
 <ul>
 <?php
-foreach ($event['involves'] as $value)
+foreach ($event['involves'] as $id => $value)
 {
 	if(isset($value['user']))
 		print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
