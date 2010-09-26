@@ -341,7 +341,7 @@ function retrieveStage ( $xpointer )
 
 <p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
 </form>
-
+<hr />
 <table>
 <tr><td>Event Number</td><td><?php print($eventNum);?></td></tr>
 <tr><td>Event Type</td><td><?php
@@ -419,14 +419,14 @@ if(count($event['involves']) > 0)
 	else if (isset($event['from']['auto']))
 	{
 		if(isset($event['from']['user']))
-			print("<td>Arrive in</td><td>" . $event['from']['user'] . " <span class='old'>[" . $event['from']['auto'] . "]</span></td>");
+			print("<td>Leave</td><td>" . $event['from']['user'] . " <span class='old'>[" . $event['from']['auto'] . "]</span></td>");
 		else
 			print("<td>Leave </td><td>" . $event['from']['auto'] . "</td>");
 	}
 	else
 	{
 		if(isset($event['location']['user']))
-			print("<td>Arrive in</td><td>" . $event['location']['user'] . " <span class='old'>[" . $event['location']['auto'] . "]</span></td>");
+			print("<td>Location</td><td>" . $event['location']['user'] . " <span class='old'>[" . $event['location']['auto'] . "]</span></td>");
 		else
 			print("<td>Location</td><td>" . $event['location']['auto'] . "</td>");
 	}
@@ -453,7 +453,7 @@ if(count($event['refers']) > 0)
 }
 ?>
 <tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</td></tr>
-<tr><td></td><tr><hr /></td></tr>
+<tr><td></td><td><hr /></td></tr>
 <tr><td>Previous Event</td><td><?php print($event['follows']['auto']['label']);?></td></tr>
 <tr><td>Next Event</td><td><?php print($event['precedes']['auto']['label']);?></td></tr>
 
