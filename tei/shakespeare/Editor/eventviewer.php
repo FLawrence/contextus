@@ -389,31 +389,34 @@ else
 }
 
 ?></td></tr>
-<tr><td valign='top'>Also Involves</td>
-<td>
-<ul>
 <?php
-foreach ($event['involves'] as $id => $value)
+if(count($event['involves']) > 0)
 {
-	if(isset($value['user']))
-		print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
-	else
-		print('<li>' . $value['auto'] . '</li>');
+	print("<tr><td valign='top'>Also Involves</td>\n<td>\n<ul>");
+
+	foreach ($event['involves'] as $id => $value)
+	{
+		if(isset($value['user']))
+			print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
+		else
+			print('<li>' . $value['auto'] . '</li>');
+	}
+	
+	print(<"</ul>\n</td>\n</tr>">);
+	
 }
 ?>
-</ul>
-</td>
 <tr>
 <?php
 
-	if ($event['to']['auto'] != "")
+	if (isset($event['to']['auto']))
 	{
 		if(isset($event['to']['user']))
 			print("<td>Arrive in</td><td>" . $event['to']['user'] . " <span class='old'>[" . $event['to']['auto'] . "]</span></td>");
 		else
 			print("<td>Arrive in</td><td>" . $event['to']['auto'] . "</td>");
 	}
-	else if ($event['from']['auto'] != "")
+	else if (isset($event['from']['auto']))
 	{
 		if(isset($event['from']['user']))
 			print("<td>Arrive in</td><td>" . $event['from']['user'] . " <span class='old'>[" . $event['from']['auto'] . "]</span></td>");
@@ -429,27 +432,31 @@ foreach ($event['involves'] as $id => $value)
 	}
 ?>
 </tr>
-<tr><td valign='top'>Refers To</td>
-<td>
-<ul>
-<?php
-foreach ($event['refers'] as $id => $value)
-{
-	if(isset($value['user']))
-		print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
-	else
-		print('<li>' . $value['auto'] . '</li>');
-		
-	//print("id: " . $id);
-	//print_r($value);
-}
 
+<?php
+
+if(count($event['refers']) > 0)
+{
+	print("<tr><td valign='top'>Refers To</td>\n<td>\n<ul>");
+	
+	foreach ($event['refers'] as $id => $value)
+	{
+		if(isset($value['user']))
+			print('<li>' . $value['user'] . " <span class='old'>[" . $value['auto'] . "]<span></li>");
+		else
+			print('<li>' . $value['auto'] . '</li>');
+			
+		//print("id: " . $id);
+		//print_r($value);
+	}
+	print(<"</ul>\n</td>\n</tr>">);
+}
 ?>
-</ul>
-</td>
+<tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</td></tr>
+<tr><td></td><tr><hr /></td></tr>
 <tr><td>Previous Event</td><td><?php print($event['follows']['auto']['label']);?></td></tr>
 <tr><td>Next Event</td><td><?php print($event['precedes']['auto']['label']);?></td></tr>
-<tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</td></tr>
+
 </table>
 
 </body>
