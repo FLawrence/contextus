@@ -402,7 +402,7 @@ if(count($event['involves']) > 0)
 			print('<li>' . $value['auto'] . '</li>');
 	}
 	
-	print(<"</ul>\n</td>\n</tr>">);
+	print("</ul>\n</td>\n</tr>");
 	
 }
 ?>
@@ -449,7 +449,7 @@ if(count($event['refers']) > 0)
 		//print("id: " . $id);
 		//print_r($value);
 	}
-	print(<"</ul>\n</td>\n</tr>">);
+	print("</ul>\n</td>\n</tr>");
 }
 ?>
 <tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</td></tr>
