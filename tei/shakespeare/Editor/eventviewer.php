@@ -452,7 +452,7 @@ if(count($event['refers']) > 0)
 	print("</ul>\n</td>\n</tr>");
 }
 ?>
-<tr><td>See Text</td><td><p><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</p>
+<tr><td td valign='top'>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)<br />
 
 <?php
 
@@ -466,7 +466,7 @@ $cutScene = array_shift(explode("#", $scene));
 
 $sceneNum = array_pop(explode("=", $cutScene));
 
-print("<p>Act " . $actNum . ", Scene " . $sceneNum . "</p>");
+print("Act " . $actNum . ": Scene " . $sceneNum);
 
 ?>
 
