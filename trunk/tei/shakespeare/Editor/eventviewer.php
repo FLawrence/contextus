@@ -452,7 +452,25 @@ if(count($event['refers']) > 0)
 	print("</ul>\n</td>\n</tr>");
 }
 ?>
-<tr><td>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</td></tr>
+<tr><td>See Text</td><td><p><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)</p>
+
+<?php
+
+$uri = $event['text']['auto'];
+
+list($http, $web, $text, $doc, $act, $scene) = explode(":", $uri);
+
+$actNum = array_pop(explode("=", $act));
+
+$cutScene = array_shift(explode("#", $scene));
+
+$sceneNum = array_pop(explode("=", $cutScene));
+
+print("<p>Act " . $actNum . ", Scene " . $sceneNum . "</p>");
+
+?>
+
+</td></tr>
 <tr><td></td><td><hr /></td></tr>
 <tr><td>Previous Event</td><td><?php print($event['follows']['auto']['label']);?></td></tr>
 <tr><td>Next Event</td><td><?php print($event['precedes']['auto']['label']);?></td></tr>
