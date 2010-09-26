@@ -452,7 +452,7 @@ if(count($event['refers']) > 0)
 	print("</ul>\n</td>\n</tr>");
 }
 ?>
-<tr><td td valign='top'>See Text</td><td><span style="font-style: italic"><?php print($stage['stage']);?><span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)<br />
+<tr><td td valign='top'>See Text</td><td><span class="quote"><?php print($stage['stage']);?></span> (<a href="<?php print($event['text']['auto']);?>">Text</a>)<br />
 
 <?php
 
