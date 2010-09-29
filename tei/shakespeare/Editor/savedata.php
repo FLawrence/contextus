@@ -56,13 +56,18 @@ foreach ($changes as $change)
 	}
 	else if ($_POST['saveType'] == 'location')
 	{
-		$originalSubject = $autoGraphURL . 'location/' . $parts[0];
-		$subject = $userGraphURL . 'location/' . $parts[0];
-		$object = $parts[1];
+		if (substr($s, 0, strlen($autoGraphURL)) == $autoGraphURL)
+		{
+			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
+			addTripleToGraph($userGraph, makeTriple($newS, 'a' , 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'));
+			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
+			addTripleToGraph($userGraph, makeTriple($newS, 'http://www.w3.org/2000/01/rdf-schema#label' ,$o));
 
-		addTripleToGraph($userGraph, makeTriple($subject, 'a' , 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'));
-		addTripleToGraph($userGraph, makeTriple($subject, 'http://www.w3.org/2000/01/rdf-schema#label' ,$object));
-		addTripleToGraph($userGraph, makeTriple($subject, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalSubject));
+		}
+		else
+		{
+			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
+		}
 
 		$continueURL = 'locationedit.php?idhash=' . $_POST['idhash'];
 	}
