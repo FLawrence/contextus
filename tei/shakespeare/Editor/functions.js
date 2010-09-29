@@ -1,20 +1,18 @@
 
-var originalNameArray = [];
-var originalIDArray = [];
-
 function setupChooser ( )
 {
-	var i;
-
 	document.editForm.namedEntityList.options.length = 0;
-	
-	for (i = 0; i < namedEntities; i++)
-	{
-		originalNameArray[i] = namedEntityNameArray[i];
-		originalIDArray[i] = namedEntityIDArray[i];
 
-		var option = new Option(namedEntityNameArray[i], namedEntityIDArray[i], false, false);
-		document.editForm.namedEntityList.options[i] = option;
+	triples = store.getTriples();
+	var index = 0;
+	for (i = 0; i < triples.length; i++)
+	{
+		if (triples[i].getP() == 'http://xmlns.com/foaf/0.1/name')
+		{
+			var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
+			document.editForm.namedEntityList.options[index] = option;
+			index++;
+		}
 	}
 	
 	updateFields();
@@ -22,28 +20,43 @@ function setupChooser ( )
 
 function updateFields ( )
 {
-	document.editForm.namedEntityName.value = namedEntityNameArray[document.editForm.namedEntityList.selectedIndex];
-	document.getElementById('namedEntityID').innerHTML = namedEntityIDArray[document.editForm.namedEntityList.selectedIndex];
+	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, 'http://xmlns.com/foaf/0.1/name');
 
+	document.editForm.namedEntityName.value = item.getO();
+
+	foundTriple = originalStore.findTriple(item.getS(), item.getP());
+
+	if (item.getO() != foundTriple.getO())
+	{
+		document.getElementById('namedEntityID').innerHTML = '(changed, press save to update store)';
+	}
+	else
+	{
+		document.getElementById('namedEntityID').innerHTML = item.getS();
+	}
+
+	createPropertyTable(store, item.getS());
 	checkFields();
 }
 
 function updateName ( )
 {
-	namedEntityNameArray[document.editForm.namedEntityList.selectedIndex] = document.editForm.namedEntityName.value;
-	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = document.editForm.namedEntityName.value;
+	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, 'http://xmlns.com/foaf/0.1/name');
+	foundTriple = originalStore.findTriple(item.getS(), item.getP());
 
-	if (namedEntityNameArray[document.editForm.namedEntityList.selectedIndex] != originalNameArray[document.editForm.namedEntityList.selectedIndex])
+	item.setO(document.editForm.namedEntityName.value);
+	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = item.getO();
+
+	if (item.getO() != foundTriple.getO())
 	{
-		namedEntityIDArray[document.editForm.namedEntityList.selectedIndex] = '(changed, press save to update store)';
 		document.getElementById('namedEntityID').innerHTML = '(changed, press save to update store)';
 	}
 	else
 	{
-		namedEntityIDArray[document.editForm.namedEntityList.selectedIndex] = originalIDArray[document.editForm.namedEntityList.selectedIndex];
-		document.getElementById('namedEntityID').innerHTML = originalIDArray[document.editForm.namedEntityList.selectedIndex];
+		document.getElementById('namedEntityID').innerHTML = item.getS();
 	}
 
+	createPropertyTable(store, item.getS());
 	checkFields();
 }
 
@@ -51,12 +64,15 @@ function checkFields ( )
 {
 	var dataString = "";
 
-	for (i = 0; i < namedEntities; i++)
+	var triples = store.getTriples();
+
+	for (i = 0; i < triples.length; i++)
 	{
-		if (originalNameArray[i] != namedEntityNameArray[i])
+		foundTriple = originalStore.findTriple(triples[i].getS(), triples[i].getP());
+
+		if (triples[i].getO() != foundTriple.getO())
 		{
-			if (dataString != "") dataString += "|";
-			dataString += namedEntityNumArray[i] + "=" + namedEntityNameArray[i];
+			dataString += triples[i].getS() + " " + triples[i].getP() + " " + triples[i].getO() + "\n";
 		}
 	}
 
@@ -70,4 +86,33 @@ function checkFields ( )
 	{
 		document.editForm.saveButton.disabled = false;
 	}
+}
+
+
+function createPropertyTable ( store, subject )
+{
+	var triples = store.getTriples();
+
+	var table = '<table><tr><th>Property</th><th>Value</th><th></th></tr>'
+
+	for (i = 0; i < triples.length; i++)
+	{
+		if (triples[i].getS() == subject)
+		{
+			foundTriple = originalStore.findTriple(triples[i].getS(), triples[i].getP());
+
+			if (triples[i].getO() != foundTriple.getO())
+			{
+				table += '<tr><td>' + triples[i].getP() + '</td><td clas="changed">' + triples[i].getO() + '</td><td><a href="">[X]</a></td></tr>';
+			}
+			else
+			{
+				table += '<tr><td>' + triples[i].getP() + '</td><td>' + triples[i].getO() + '</td><td><a href="">[X]</a></td></tr>';
+			}
+		}	
+	}
+
+	table += '</table>'
+
+	document.getElementById('propertyTable').innerHTML = table;
 }
