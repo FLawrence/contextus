@@ -42,7 +42,7 @@ $results['Change ' . $s] = explode(' ', $change, 3);
 	{
 		$characterPart = substr($s, strlen($baseURL));
 
-		if (substr($characterPart, 0, 5) == 'data/')
+		if (substr($characterPart, 0, 5) == 'auto/')
 		{
 			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
 			addTripleToGraph($userGraph, makeTriple($newS, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
