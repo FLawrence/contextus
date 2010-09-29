@@ -77,6 +77,7 @@ printXMLHeaders();
 <?php
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar originalStore = new TripleStore();\n");
+	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");
 
 	$index = 0;
 	foreach($graph as $triple)

@@ -7,7 +7,7 @@ function setupChooser ( )
 	var index = 0;
 	for (i = 0; i < triples.length; i++)
 	{
-		if (triples[i].getP() == 'http://xmlns.com/foaf/0.1/name')
+		if (triples[i].getP() == nameLabel)
 		{
 			var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
 			document.editForm.namedEntityList.options[index] = option;
@@ -20,7 +20,7 @@ function setupChooser ( )
 
 function updateFields ( )
 {
-	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, 'http://xmlns.com/foaf/0.1/name');
+	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, nameLabel);
 
 	document.editForm.namedEntityName.value = item.getO();
 
@@ -41,7 +41,7 @@ function updateFields ( )
 
 function updateName ( )
 {
-	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, 'http://xmlns.com/foaf/0.1/name');
+	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, nameLabel);
 	foundTriple = originalStore.findTriple(item.getS(), item.getP());
 
 	item.setO(document.editForm.namedEntityName.value);
