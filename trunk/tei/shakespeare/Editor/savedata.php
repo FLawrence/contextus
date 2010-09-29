@@ -36,6 +36,8 @@ foreach ($changes as $change)
 
 	list($s, $p, $o) = explode(' ', $change, 3);
 
+$results['Change ' . $s] = explode(' ', $change, 3);
+
 	if ($_POST['saveType'] == 'character')
 	{
 		$characterPart = substr($s, strlen($baseURL));
@@ -78,8 +80,8 @@ foreach ($userGraph as $triple)
 }
 $results['Adding All Triples'] = $sWrite->add($userGraphURL, $allTriples);
 
-header('Location: ' . $continueURL);
-exit(0);
+//header('Location: ' . $continueURL);
+//exit(0);
 
 print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
 print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
