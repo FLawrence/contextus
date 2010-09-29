@@ -2,7 +2,7 @@
 require 'bc-fourstore-php/FourStore/FourStore_Store.php';
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 
-$changes = explode("|", $_POST['alteredData']);
+$changes = explode("\n", $_POST['alteredData']);
 
 $baseURL = 'http://contextus.net/resource/midsum_night_dream/';
 $autoGraphURL = $baseURL . 'auto/';
@@ -32,6 +32,8 @@ $results = array();
 
 foreach ($changes as $change)
 {
+	if ($change == '') continue;
+
 	list($s, $p, $o) = explode(' ', $change, 3);
 
 	if ($_POST['saveType'] == 'character')
