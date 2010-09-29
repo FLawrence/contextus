@@ -137,6 +137,8 @@ function makeTurtleFromTriple ( $triple )
 		print_r($r);
 		print("</p>");
 	}
+
+	print ('<p>' . $allTriples . '</p>');
 ?>
 
 </body>
