@@ -46,14 +46,10 @@ foreach ($changes as $change)
 			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
 			addTripleToGraph($userGraph, makeTriple($newS, 'http://xmlns.com/foaf/0.1/name' ,$o));
 
-$results['Change ' . $s] = 'Added Triples to user Graph [' . $newS . '] [' . $p . '] [' . $o . ']';
-
 		}
 		else
 		{
 			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
-
-$results['Change ' . $s] = 'Point edit in user Graph';
 		}
 
 		$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
@@ -82,8 +78,8 @@ foreach ($userGraph as $triple)
 }
 $results['Adding All Triples'] = $sWrite->add($userGraphURL, $allTriples);
 
-//header('Location: ' . $continueURL);
-//exit(0);
+header('Location: ' . $continueURL);
+exit(0);
 
 print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
 print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
