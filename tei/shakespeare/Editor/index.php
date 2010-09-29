@@ -37,8 +37,7 @@ try
 		$openid = new LightOpenID;
 		if ($openid->validate())
 		{
-			//header('Location: characteredit.php?idhash=' . sha1($openid->claimed_id) . '&actual_claimed_id=' . $openid->claimed_id . '&identity=' . $openid->identity);
-			print_r($openid);
+			header('Location: characteredit.php?idhash=' . sha1($openid->identity));
 		}
 		else
 			echo 'User ' . $openid->identity . ' has not logged in.';
