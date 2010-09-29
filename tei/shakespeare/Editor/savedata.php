@@ -45,7 +45,7 @@ foreach ($changes as $change)
 			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
 			addTripleToGraph($userGraph, makeTriple($newS, 'http://xmlns.com/foaf/0.1/name' ,$o));
 
-$results['Change ' . $s] = 'Added Triples to user Graph [' . $s . '] [' . $p . '] [' . $o . ']';
+$results['Change ' . $s] = 'Added Triples to user Graph [' . $newS . '] [' . $p . '] [' . $o . ']';
 
 		}
 		else
