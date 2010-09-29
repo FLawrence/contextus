@@ -32,6 +32,7 @@ $results = array();
 
 foreach ($changes as $change)
 {
+	$change = trim($change);
 	if ($change == '') continue;
 
 	list($s, $p, $o) = explode(' ', $change, 3);
