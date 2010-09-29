@@ -77,6 +77,7 @@ printXMLHeaders();
 <?php
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar originalStore = new TripleStore();\n");
+	print("\tvar nameLabel = 'http://xmlns.com/foaf/0.1/name';\n");
 
 	$index = 0;
 	foreach($graph as $triple)
