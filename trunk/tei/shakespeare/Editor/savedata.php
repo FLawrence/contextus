@@ -36,22 +36,23 @@ foreach ($changes as $change)
 
 	list($s, $p, $o) = explode(' ', $change, 3);
 
-$results['Change ' . $s] = explode(' ', $change, 3);
-
 	if ($_POST['saveType'] == 'character')
 	{
-		$characterPart = substr($s, strlen($baseURL));
-
-		if (substr($characterPart, 0, 5) == 'auto/')
+		if (substr($s, 0, strlen($autoGraphURL)) == $autoGraphURL)
 		{
 			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
 			addTripleToGraph($userGraph, makeTriple($newS, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
 			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
 			addTripleToGraph($userGraph, makeTriple($newS, 'http://xmlns.com/foaf/0.1/name' ,$o));
+
+$results['Change ' . $s] = 'Added Triples to user Graph';
+
 		}
 		else
 		{
 			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
+
+$results['Change ' . $s] = 'Point edit in user Graph';
 		}
 
 		$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
