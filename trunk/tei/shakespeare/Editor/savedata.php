@@ -4,10 +4,11 @@ require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 
 $changes = explode("|", $_POST['alteredData']);
 
-$autoGraphURL = 'http://contextus.net/resource/midsum_night_dream/auto/';
-$userGraphURL = 'http://contextus.net/resource/midsum_night_dream/' . $_POST['idhash'] .  '/';
+$baseURL = 'http://contextus.net/resource/midsum_night_dream/';
+$autoGraphURL = $baseURL . 'auto/';
+$userGraphURL = $baseURL . $_POST['idhash'] .  '/';
 
-$queryUser = 'SELECT ?s ?p ?o WHERE { GRAPH <' . $userGraphURL . '> { ?s ?p ?o } }' . "\n";
+$queryUser = 'SELECT ?s ?p ?o FROM <' . $userGraphURL . '> WHERE { ?s ?p ?o }' . "\n";
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $sWrite = new FourStore_Store('http://contextus.net:7000/sparql/');
@@ -31,19 +32,23 @@ $results = array();
 
 foreach ($changes as $change)
 {
-	$parts = split("=", $change);
-
-	if (count($parts) != 2) continue;
+	list($s, $p, $o) = explode(' ', $change, 3);
 
 	if ($_POST['saveType'] == 'character')
 	{
-		$originalSubject = $autoGraphURL . 'character/' . $parts[0];
-		$subject = $userGraphURL . 'character/' . $parts[0];
-		$object = $parts[1];
+		$characterPart = substr($s, strlen($baseURL));
 
-		addTripleToGraph($userGraph, makeTriple($subject, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
-		addTripleToGraph($userGraph, makeTriple($subject, 'http://xmlns.com/foaf/0.1/name' ,$object));
-		addTripleToGraph($userGraph, makeTriple($subject, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalSubject));
+		if (substr($characterPart, 0, 5) == 'data/')
+		{
+			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
+			addTripleToGraph($userGraph, makeTriple($newS, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
+			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
+			addTripleToGraph($userGraph, makeTriple($newS, 'http://xmlns.com/foaf/0.1/name' ,$o));
+		}
+		else
+		{
+			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
+		}
 
 		$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
 	}
