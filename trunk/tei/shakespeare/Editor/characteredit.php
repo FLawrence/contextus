@@ -1,7 +1,6 @@
 <?php
 
-$userID = 'dc77d0ceb755748698e53255b00fbe62ed0fccee';
-//$userID = $_GET['idhash'];
+$userID = $_GET['idhash'];
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
