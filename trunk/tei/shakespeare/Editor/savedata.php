@@ -32,6 +32,14 @@ foreach ($results['result']['rows'] as $result)
 
 $results = array();
 
+if ($_POST['saveType'] == 'character')
+	$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
+else if ($_POST['saveType'] == 'location')
+	$continueURL = 'locationedit.php?idhash=' . $_POST['idhash'];
+
+
+
+
 foreach ($deletes as $delete)
 {
 	$delete = trim($delete);
@@ -70,8 +78,6 @@ foreach ($changes as $change)
 
 		deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
 		addTripleToGraph($userGraph, makeTriple($s, $p, $o));
-
-		$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
 	}
 	else if ($_POST['saveType'] == 'location')
 	{
@@ -87,8 +93,6 @@ foreach ($changes as $change)
 		{
 			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
 		}
-
-		$continueURL = 'locationedit.php?idhash=' . $_POST['idhash'];
 	}
 }
 
@@ -102,8 +106,8 @@ foreach ($userGraph as $triple)
 }
 $results['Adding All Triples'] = $sWrite->add($userGraphURL, $allTriples);
 
-//header('Location: ' . $continueURL);
-//exit(0);
+header('Location: ' . $continueURL);
+exit(0);
 
 print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
 print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
