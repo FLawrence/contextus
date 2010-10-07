@@ -52,9 +52,9 @@ function updateName ( index )
 
 	var indexName = 'editProperty' + index;
 
-alert('Setting name (' + indexName + ') to [' + document.editForm[indexName].value + ']');
+alert('Setting name (' + indexName + ') to [' + document.propertyTableForm[indexName].value + ']');
 
-	item.setO(document.editForm[indexName].value);
+	item.setO(document.propertyTableForm[indexName].value);
 	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = item.getO();
 
 	if (item.getO() != foundTriple.getO())
