@@ -38,6 +38,7 @@ foreach ($deletes as $delete)
 	if ($delete == '') continue;
 
 	list($s, $p, $o) = explode('|', $delete, 3);
+	deleteTripleFromGraph($userGraph, makeTriple($s, $p, $o));
 }
 
 foreach ($adds as $add)
@@ -46,8 +47,8 @@ foreach ($adds as $add)
 	if ($add == '') continue;
 
 	list($s, $p, $o) = explode('|', $add, 3);
+	addTripleToGraph($userGraph, makeTriple($s, $p, $o));
 }
-
 
 foreach ($changes as $change)
 {
@@ -58,18 +59,17 @@ foreach ($changes as $change)
 
 	if ($_POST['saveType'] == 'character')
 	{
-		if (substr($s, 0, strlen($autoGraphURL)) == $autoGraphURL)
-		{
-			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
-			addTripleToGraph($userGraph, makeTriple($newS, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
-			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
-			addTripleToGraph($userGraph, makeTriple($newS, 'http://xmlns.com/foaf/0.1/name' ,$o));
+		$originalS = $s;
+		$s = str_replace($autoGraphURL, $userGraphURL, $s);
 
-		}
-		else
+		if ($s != $originalS)
 		{
-			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
+			addTripleToGraph($userGraph, makeTriple($s, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
+			addTripleToGraph($userGraph, makeTriple($s, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalS));
 		}
+
+		deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
+		addTripleToGraph($userGraph, makeTriple($s, $p, $o));
 
 		$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
 	}
@@ -110,7 +110,12 @@ print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x
 
 function addTripleToGraph ( &$graph, $triple )
 {
-	$graph[md5($triple['s'] . $triple['p'])] = $triple;
+	$graph[md5($triple['s'] . $triple['p']) . $triple['o']] = $triple;
+}
+
+function deleteTripleFromGraph ( &$graph, $triple )
+{
+	unset($graph[md5($triple['s'] . $triple['p']) . $triple['o']]);
 }
 
 function makeTriple ( $subject, $predicate, $object )
