@@ -2,7 +2,9 @@
 require 'bc-fourstore-php/FourStore/FourStore_Store.php';
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 
-$changes = explode("\n", $_POST['alteredData']);
+$adds = explode("\n", $_POST['addedTriples']);
+$changes = explode("\n", $_POST['changedTriples']);
+$deletes = explode("\n", $_POST['deletedTriples']);
 
 $baseURL = 'http://contextus.net/resource/midsum_night_dream/';
 $autoGraphURL = $baseURL . 'auto/';
@@ -30,12 +32,29 @@ foreach ($results['result']['rows'] as $result)
 
 $results = array();
 
+foreach ($deletes as $delete)
+{
+	$delete = trim($delete);
+	if ($delete == '') continue;
+
+	list($s, $p, $o) = explode('|', $delete, 3);
+}
+
+foreach ($adds as $add)
+{
+	$add = trim($add);
+	if ($add == '') continue;
+
+	list($s, $p, $o) = explode('|', $add, 3);
+}
+
+
 foreach ($changes as $change)
 {
 	$change = trim($change);
 	if ($change == '') continue;
 
-	list($s, $p, $o) = explode(' ', $change, 3);
+	list($s, $p, $o, $originalO) = explode('|', $change, 4);
 
 	if ($_POST['saveType'] == 'character')
 	{
