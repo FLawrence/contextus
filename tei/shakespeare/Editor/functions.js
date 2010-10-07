@@ -77,7 +77,7 @@ function checkFields ( )
 
 		if (triples[i].getState() == 'deleted')
 		{
-			addedString += triples[i].getS() + "|" + triples[i].getP() + "|" + triples[i].getO() + "\n";
+			deletedString += triples[i].getS() + "|" + triples[i].getP() + "|" + triples[i].getO() + "\n";
 		}
 	}
 
