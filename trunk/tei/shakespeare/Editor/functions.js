@@ -150,9 +150,14 @@ function createPropertyTable ( store, subject )
 						edit = '<input name="editProperty' + i + '" value="' + edit + '" onkeyup="updateName(' + i + ');"/>';
 					}
 
+
 					if ((properties[j].min == 0) || (propertyFound == 1))
 					{
 						button = '<button onclick="removeProperty(' + i + '); return false;">delete</button>';
+					}
+					else
+					{
+						button = '<button disable="disabled">delete</button>';
 					}
 	
 					table += '<tr><td>' + triples[i].getP() + '</td><td' + classAttribute + '>' + edit + '</td><td>' + button + '</td></tr>';
