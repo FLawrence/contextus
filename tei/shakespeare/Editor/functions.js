@@ -147,12 +147,14 @@ function createPropertyTable ( store, subject )
 
 					if (properties[j].expected == 'L')
 					{
-						edit = '<input name="editProperty' + i + '" value="' + edit + '"/>';
-					}
-
-					if (((properties[j].module + properties[j].property) == nameLabel) && (propertyFound == 0))
-					{
-						edit = '<input name="editProperty' + i + '" value="' + edit + '" onkeyup="updateName(' + i + ');"/>';
+						if (((properties[j].module + properties[j].property) == nameLabel) && (propertyFound == 0))
+						{
+							edit = '<input name="editProperty' + i + '" value="' + edit + '" onkeyup="updateName(' + i + ');"/>';
+						}
+						else
+						{
+							edit = '<input name="editProperty' + i + '" value="' + edit + '"/>';
+						}
 					}
 
 
