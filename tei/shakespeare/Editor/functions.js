@@ -50,9 +50,11 @@ function updateName ( index )
 	item = triples[index];
 	foundTriple = originalStore.findTriple(item.getS(), item.getP());
 
-alert('Setting name to [' + document.editForm[('editProperty' + index)].value + ']');
+	var indexName = 'editProperty' + index;
 
-	item.setO(document.editForm[('editProperty' + index)].value);
+alert('Setting name (' + indexName + ') to [' + document.editForm[indexName].value + ']');
+
+	item.setO(document.editForm[indexName].value);
 	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = item.getO();
 
 	if (item.getO() != foundTriple.getO())
