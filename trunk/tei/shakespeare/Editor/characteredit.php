@@ -1,10 +1,13 @@
 <?php
 
-$userID = $_GET['idhash'];
+$userID = 'dc77d0ceb755748698e53255b00fbe62ed0fccee';
+//$userID = $_GET['idhash'];
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
 require('shakespeare_utilities.php');
+
+$propertyList = loadProperties();
 
 FourStore_Namespace::addW3CNamespace();
 FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
@@ -78,12 +81,22 @@ printXMLHeaders();
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar originalStore = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://xmlns.com/foaf/0.1/name';\n");
+	print("\tvar nonNameTriples = '';\n");
+	print("\tvar properties = [];\n");
 
-	$index = 0;
 	foreach($graph as $triple)
 	{
 		print("\tstore.set(new Triple('" . armourItem($triple['s']) . "', '" . armourItem($triple['p']) . "', '" . armourItem($triple['o']) . "'));\n");
 		print("\toriginalStore.set(new Triple('" . armourItem($triple['s']) . "', '" . armourItem($triple['p']) . "', '" . armourItem($triple['o']) . "'));\n");
+	}
+
+	$index = 0;
+	foreach($propertyList as $property)
+	{
+		print("\tproperties[" . $index . "] = new Property('" . $property['property'] . "', '" . $property['module'] .
+		      "', '" . $property['object restriction'] . "', '" . $property['subject restriction'] .
+		      "', '" . $property['min'] . "', '" . $property['max'] . "');\n");
+		$index++;
 	}
 ?>
 	</script>
@@ -95,11 +108,11 @@ printXMLHeaders();
 
 <div id="editForm">
 <form name="editForm" method="post" action="savedata.php">
-	<select name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select> <br />
+	<select class="chooseCharacter" name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select> <br />
 
-	<input name="namedEntityName" type="text" onkeyup="updateName();"> <button name="saveButton">save</button><br />
+	<button name="saveButton">Save Changes</button><br />
 
-	<span id="namedEntityID" style="font-style: italic">Please Wait...</span>
+	<input name="namedEntityName" type="hidden" value="" /><!-- REMOVE -->
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 	<input name="saveType" type="hidden" value="character" />
@@ -109,6 +122,8 @@ printXMLHeaders();
 
 <div id="propertyTable">
 </div>
+
+<p><span id="namedEntityID">Please Wait...</span></p>
 
 </body>
 </html>

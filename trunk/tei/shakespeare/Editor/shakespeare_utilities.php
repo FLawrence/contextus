@@ -7,6 +7,7 @@ function printXMLHeaders ( )
 }
 
 
+
 function printNavigationList ( $current, $userID )
 {
 	$navigationArray = array('characteredit.php' => 'Character Editor',
@@ -24,6 +25,31 @@ function printNavigationList ( $current, $userID )
 	}
 	print('   <li><a href="index.php">Logout</a></li>' . "\n");
 	print('</ul>' . "\n");
+}
+
+
+
+function loadProperties ( )
+{
+	$propertyDetails = array();
+
+	$propertyFile = fopen("Properties.csv", "r");
+
+	$headers = fgetcsv($propertyFile);
+
+    while (($data = fgetcsv($propertyFile)) !== FALSE)
+    {
+    	$dataHash = array();
+
+    	for ($i = 0; $i < count($headers); $i++)
+    		$dataHash[$headers[$i]] = $data[$i];
+
+    	$propertyDetails[] = $dataHash;
+    }
+
+	fclose($propertyFile);
+
+	return $propertyDetails;
 }
 
 ?>

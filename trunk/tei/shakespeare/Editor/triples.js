@@ -7,6 +7,16 @@
 
 */
 
+function Property ( newProperty, newModule, newObject, newSubject, newMin, newMax )
+{
+	this.property = newProperty;
+	this.module = newModule;
+	this.object = newObject;
+	this.subject = newSubject;
+	this.min = newMin;
+	this.max = newMax;
+}
+
 function Triple ( newS, newP, newO )
 {
 	this.s = newS;
@@ -65,6 +75,17 @@ TripleStore.prototype.set = function ( newTriple )
 	this.triples[index] = newTriple;
 }
 
+TripleStore.prototype.add = function ( newTriple )
+{
+	index = this.triples.length;
+	this.triples[index] = newTriple;
+}
+
+TripleStore.prototype.deleteByIndex = function ( deadIndex )
+{
+	this.triples.splice(deadIndex,1);
+}
+
 TripleStore.prototype.findIndex = function ( queryTriple )
 {
 	for (i = 0; i < this.triples.length; i++)
@@ -81,12 +102,12 @@ TripleStore.prototype.findIndex = function ( queryTriple )
 
 TripleStore.prototype.findTriple = function ( queryS, queryP )
 {
-	for (i = 0; i < this.triples.length; i++)
+	for (searchIndex = 0; searchIndex < this.triples.length; searchIndex++)
 	{
-		if ((this.triples[i].getS() == queryS) &&
-		    (this.triples[i].getP() == queryP) )
+		if ((this.triples[searchIndex].getS() == queryS) &&
+		    (this.triples[searchIndex].getP() == queryP) )
 		{
-			return this.triples[i];
+			return this.triples[searchIndex];
 		}
 	}
 
