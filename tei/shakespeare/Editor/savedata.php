@@ -141,6 +141,9 @@ function makeTurtleFromTriple ( $triple )
 	}
 
 	print ('<p>' . $allTriples . '</p>');
+
+	print ('<p style="color: red;">' . $_POST['alteredData'] . '</p>');
+
 ?>
 
 </body>
