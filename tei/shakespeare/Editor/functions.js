@@ -168,8 +168,7 @@ function createPropertyTable ( store, subject )
 	}
 
 	table += '<tr><td><select name="propertyList">';
-	table += '<option value="is" name="http://purl.org/ontomedia/core/expression#is" />';
-	table += '<option value="is-shadow-of" name="http://purl.org/ontomedia/core/expression#is-shadow-of" />';
+	table += '<option value="please wait..." />';
 	table += '</select></td><td><select name="entityList"><option value="" name="please wait..."/></select></td><td><button onclick="addProperty();">add</button></td></tr>';
 
 	table += '</table></form>'
@@ -179,6 +178,8 @@ function createPropertyTable ( store, subject )
 	document.propertyTableForm.propertyList.options.length = 0;
 	var property = new Option('http://purl.org/ontomedia/core/expression#is', 'http://purl.org/ontomedia/core/expression#is', false, false);
 	document.propertyTableForm.propertyList.options[0] = property;
+	var property = new Option('http://purl.org/ontomedia/core/expression#is-shadow-of', 'is-shadow-of', false, false);
+	document.propertyTableForm.propertyList.options[1] = property;
 
 	document.propertyTableForm.entityList.options.length = 0;
 	var index = 0;
