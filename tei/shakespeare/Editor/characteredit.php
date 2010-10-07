@@ -1,6 +1,7 @@
 <?php
 
-$userID = $_GET['idhash'];
+$userID = 'dc77d0ceb755748698e53255b00fbe62ed0fccee';
+//$userID = $_GET['idhash'];
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
@@ -78,15 +79,13 @@ printXMLHeaders();
 	<script type="text/javascript">
 <?php
 	print("\tvar store = new TripleStore();\n");
-	print("\tvar originalStore = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://xmlns.com/foaf/0.1/name';\n");
 	print("\tvar nonNameTriples = '';\n");
 	print("\tvar properties = [];\n");
 
 	foreach($graph as $triple)
 	{
-		print("\tstore.set(new Triple('" . armourItem($triple['s']) . "', '" . armourItem($triple['p']) . "', '" . armourItem($triple['o']) . "'));\n");
-		print("\toriginalStore.set(new Triple('" . armourItem($triple['s']) . "', '" . armourItem($triple['p']) . "', '" . armourItem($triple['o']) . "'));\n");
+		print("\tstore.set(new Triple('" . armourItem($triple['s']) . "', '" . armourItem($triple['p']) . "', '" . armourItem($triple['o']) . "', '" . armourItem($triple['o']) . "'));\n");
 	}
 
 	$index = 0;
@@ -107,15 +106,17 @@ printXMLHeaders();
 
 <div id="editForm">
 <form name="editForm" method="post" action="savedata.php">
-	<select class="chooseCharacter" name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select> <br />
+	<select class="chooseCharacter" name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select>
 
-	<button name="saveButton">Save Changes</button><br />
+	<button id="saveChanges" name="saveButton">Save Changes</button><br />
 
 	<input name="namedEntityName" type="hidden" value="" /><!-- REMOVE -->
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 	<input name="saveType" type="hidden" value="character" />
-	<input name="alteredData" type="hidden" value="" />
+	<input name="addedTriples" type="hidden" value="" />
+	<input name="changedTriples" type="hidden" value="" />
+	<input name="deletedTriples" type="hidden" value="" />
 </form>
 </div>
 

@@ -24,18 +24,9 @@ function updateFields ( )
 {
 	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, nameLabel);
 
-	document.editForm.namedEntityName.value = item.getO();
+//	document.editForm.namedEntityName.value = item.getO();
 
-	foundTriple = originalStore.findTriple(item.getS(), item.getP());
-
-	if (item.getO() != foundTriple.getO())
-	{
-		document.getElementById('namedEntityID').innerHTML = '(changed, press save to update store)';
-	}
-	else
-	{
-		document.getElementById('namedEntityID').innerHTML = item.getS();
-	}
+	document.getElementById('namedEntityID').innerHTML = item.getS();
 
 	createPropertyTable(store, item.getS());
 	checkFields();
@@ -48,21 +39,13 @@ function updateName ( index )
 	var triples = store.getTriples();
 
 	item = triples[index];
-	foundTriple = originalStore.findTriple(item.getS(), item.getP());
 
 	var indexName = 'editProperty' + index;
 
 	item.setO(document.propertyTableForm[indexName].value);
 	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = item.getO();
 
-	if (item.getO() != foundTriple.getO())
-	{
-		document.getElementById('namedEntityID').innerHTML = '(changed, press save to update store)';
-	}
-	else
-	{
-		document.getElementById('namedEntityID').innerHTML = item.getS();
-	}
+	document.getElementById('namedEntityID').innerHTML = item.getS();
 
 	createPropertyTable(store, item.getS());
 	checkFields();
@@ -74,37 +57,35 @@ function updateName ( index )
 
 function checkFields ( )
 {
-	var triplesA = store.getNonOverlappingTriples(originalStore);
-
-	for (i = 0; i < triplesA.length; i++)
-	{
-		alert("TRIPLE:\n" + triplesA[i].getS() + "\n" + triplesA[i].getP() + "\n" + triplesA[i].getO() + "\n"); 
-	}
-
-	var dataString = "";
+	var addedString = "";
+	var changedString = "";
+	var deletedString = "";
 
 	var triples = store.getTriples();
 
 	for (i = 0; i < triples.length; i++)
 	{
-		foundTriple = originalStore.findTriple(triples[i].getS(), triples[i].getP());
-
-		if ((foundTriple == null) || (triples[i].getO() != foundTriple.getO()))
+		if (triples[i].getState() == 'added')
 		{
-			dataString += triples[i].getS() + " " + triples[i].getP() + " " + triples[i].getO() + "\n";
+			addedString += triples[i].getS() + "|" + triples[i].getP() + "|" + triples[i].getO() + "\n";
+		}
+
+		if (triples[i].getState() == 'changed')
+		{
+			changedString += triples[i].getS() + "|" + triples[i].getP() + "|" + triples[i].getO() + "|" + triples[i].getOriginalO() + "\n";
+		}
+
+		if (triples[i].getState() == 'deleted')
+		{
+			addedString += triples[i].getS() + "|" + triples[i].getP() + "|" + triples[i].getO() + "\n";
 		}
 	}
 
-	document.editForm.alteredData.value = dataString;
+	document.editForm.addedTriples.value = addedString;
+	document.editForm.changedTriples.value = changedString;
+	document.editForm.deletedTriples.value = deletedString;
 
-	if (dataString == "")
-	{
-		document.editForm.saveButton.disabled = true;
-	}
-	else
-	{
-		document.editForm.saveButton.disabled = false;
-	}
+	document.editForm.saveButton.disabled = !store.isChanged();
 }
 
 
@@ -119,9 +100,9 @@ function createPropertyTable ( store, subject )
 	var table = '<form onsubmit="return false;" name="propertyTableForm"><table><tr><th>Property</th><th>Value</th><th></th></tr>'
 	for (i = 0; i < triples.length; i++)
 	{
-		if (triples[i].getS() == subject)
+		if ((triples[i].getS() == subject) && (triples[i].getState() != 'deleted'))
 		{
-			foundTriple = originalStore.findTriple(triples[i].getS(), triples[i].getP());
+//			foundTriple = originalStore.findTriple(triples[i].getS(), triples[i].getP());
 
 			for (j = 0; j < properties.length; j++)
 			{
@@ -147,7 +128,7 @@ function createPropertyTable ( store, subject )
 					var edit = triples[i].getO();
 					var button = '';
 
-					if ((foundTriple == null) || (triples[i].getO() != foundTriple.getO()))
+					if (triples[i].getState() == 'changed')
 					{
 						classAttribute = ' class="changed"';
 					}
@@ -267,13 +248,13 @@ function addProperty ( )
 			{
 				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
 						document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value,
-						document.propertyTableForm.newObjectText.value);
+						document.propertyTableForm.newObjectText.value, '');
 			}
 			else
 			{
 				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
 						document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value,
-						document.propertyTableForm.entityList.options[document.propertyTableForm.entityList.selectedIndex].value);
+						document.propertyTableForm.entityList.options[document.propertyTableForm.entityList.selectedIndex].value, '');
 			}
 		}
 	}

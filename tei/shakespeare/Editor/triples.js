@@ -18,11 +18,21 @@ function Property ( newProperty, newModule, newObject, newSubject, newMin, newMa
 	this.expected = newExpected;
 }
 
-function Triple ( newS, newP, newO )
+function Triple ( newS, newP, newO, originalO )
 {
 	this.s = newS;
 	this.p = newP;
 	this.o = newO;
+	this.originalO = originalO;
+
+	if (this.o != this.originalO)
+	{
+		this.state = 'added';
+	}
+	else
+	{
+		this.state = 'unchanged';
+	}
 }
 
 Triple.prototype.set = function ( newS, newP, newO )
@@ -47,22 +57,56 @@ Triple.prototype.getO = function ( )
 	return this.o;
 };
 
+Triple.prototype.getOriginalO = function ( )
+{
+	return this.originalO;
+};
+
+Triple.prototype.getState = function ( )
+{
+	return this.state;
+};
+
 Triple.prototype.setO = function ( newO )
 {
 	this.o = newO;
+	if ((this.o != this.originalO) && (this.state != 'added'))
+	{
+		this.state = 'changed';
+	}
+	else
+	{
+		this.state = 'unchanged';
+	}
 };
+
+Triple.prototype.setState = function ( newState )
+{
+	this.state = newState;
+};
+
+
+
+
+
+
+
 
 
 
 function TripleStore ( )
 {
 	this.triples = [];
-}
+};
+
+
 
 TripleStore.prototype.getTriples = function ( )
 {
 	return this.triples;
-}
+};
+
+
 
 TripleStore.prototype.set = function ( newTriple )
 {
@@ -74,18 +118,31 @@ TripleStore.prototype.set = function ( newTriple )
 	}
 	
 	this.triples[index] = newTriple;
-}
+};
+
+
 
 TripleStore.prototype.add = function ( newTriple )
 {
 	index = this.triples.length;
 	this.triples[index] = newTriple;
-}
+};
+
+
 
 TripleStore.prototype.deleteByIndex = function ( deadIndex )
 {
-	this.triples.splice(deadIndex,1);
-}
+	if (this.triples[deadIndex].getState() == 'added')
+	{
+		this.triples.splice(deadIndex,1);
+	}
+	else
+	{
+		this.triples[deadIndex].setState('deleted');
+	}
+};
+
+
 
 TripleStore.prototype.findIndex = function ( queryTriple )
 {
@@ -99,7 +156,9 @@ TripleStore.prototype.findIndex = function ( queryTriple )
 	}
 
 	return -1;
-}
+};
+
+
 
 TripleStore.prototype.findTriple = function ( queryS, queryP )
 {
@@ -113,69 +172,27 @@ TripleStore.prototype.findTriple = function ( queryS, queryP )
 	}
 
 	return null;
-}
+};
 
-TripleStore.prototype.getAllTriplesBySubject = function ( subject )
+
+
+TripleStore.prototype.isChanged = function ( )
 {
-	var relevantTriples = [];
-
-	for (searchIndex = 0; searchIndex < this.triples.length; searchIndex++)
+	for (cI = 0; cI < this.triples.length; cI++)
 	{
-		if (this.triples[searchIndex].getS() == subject)
-		{
-			relevantTriples[relevantTriples.length] = this.triples[searchIndex];
-		}
+		if (this.triples[cI].state != 'unchanged') return true;
 	}
 
-	return relevantTriples;
-}
+	return false;
+};
 
-
-TripleStore.prototype.getOverlappingTriples = function ( otherStore, subject )
+TripleStore.prototype.isSubjectChanged = function ( subject )
 {
-	var thisRelevantTriples = this.getAllTriplesBySubject(subject);
-	var otherRelevantTriples = otherStore.getAllTriplesBySubject(subject);
-	var overlappingTriples = [];
-
-	for (cI = 0; cI = thisRelevantTriples.length; cI++)
+	for (cI = 0; cI < this.triples.length; cI++)
 	{
-		for (cI2 = 0; cI2 = otherRelevantTriples.length; cI2++)
-		{
-			if ((thisRelevantTriples[cI].getS() == otherRelevantTriples[cI2].getS()) &&
-			    (thisRelevantTriples[cI].getP() == otherRelevantTriples[cI2].getP()) &&
-			    (thisRelevantTriples[cI].getO() == otherRelevantTriples[cI2].getO()))
-			{
-				overlappingTriples[overlappingTriples.length] = thisRelevantTriples[cI];
-				otherRelevantTriples.splice(cI2,1);
-				break;
-			}
-		}
+		if (this.triples[cI].getS() != subject) continue;
+		if (this.triples[cI].state != 'unchanged') return true;
 	}
 
-	return overlappingTriples;
-}
-
-TripleStore.prototype.getNonOverlappingTriples = function ( otherStore )
-{
-	var otherTriples = [];
-	for (cI = 0; cI = otherStore.triples.length; cI++)
-	{
-		otherTriples[otherTriples.length] = otherStore.triples[cI];
-	}
-
-	for (cI = 0; cI = triples.length; cI++)
-	{
-		for (cI2 = 0; cI2 = otherTriples.length; cI2++)
-		{
-			if ((triples[cI].getS() == otherTriples[cI2].getS()) &&
-			    (triples[cI].getP() == otherTriples[cI2].getP()) &&
-			    (triples[cI].getO() == otherTriples[cI2].getO()))
-			{
-				otherTriples.splice(cI2,1);
-				break;
-			}
-		}
-	}
-
-	return otherTriples;
-}
+	return false;
+};
