@@ -49,7 +49,7 @@ foreach ($rAuto['result']['rows'] as $result)
 
 function addTripleToGraph ( &$graph, $triple )
 {
-	$graph[md5($triple['s'] . $triple['p'])] = $triple;
+	$graph[md5($triple['s'] . $triple['p'] . $triple['o'])] = $triple;
 }
 
 function makeTriple ( $subject, $predicate, $object )
