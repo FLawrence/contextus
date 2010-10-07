@@ -157,7 +157,7 @@ function createPropertyTable ( store, subject )
 					}
 					else
 					{
-						button = '<button disable="disabled">delete</button>';
+						button = '<button disabled="true">delete</button>';
 					}
 	
 					table += '<tr><td>' + triples[i].getP() + '</td><td' + classAttribute + '>' + edit + '</td><td>' + button + '</td></tr>';
