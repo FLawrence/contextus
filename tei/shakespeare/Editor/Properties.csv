@@ -1,6 +1,6 @@
 "property","module","object restriction","subject restriction","min","max"
-"name","http://xmlns.com/foaf/0.1/","ome:Being",,1,"m"
-"label","http://www.w3.org/2000/01/rdf-schema#",,,1,1
+"name","http://xmlns.com/foaf/0.1/","ome:Being",*,1,"m"
+"label","http://www.w3.org/2000/01/rdf-schema#",,*,1,1
 "comment","http://www.w3.org/2000/01/rdf-schema#",,,1,1
 "involved-in","http://purl.org/ontomedia/core/expression#",,"ome:Event",0,"m"
 "involves","http://purl.org/ontomedia/core/expression#","ome:Event",,0,"m"
