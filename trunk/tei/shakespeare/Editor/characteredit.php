@@ -1,7 +1,6 @@
 <?php
 
-$userID = 'dc77d0ceb755748698e53255b00fbe62ed0fccee';
-//$userID = $_GET['idhash'];
+$userID = $_GET['idhash'];
 
 require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
 require 'bc-fourstore-php/FourStore/Namespace.php';
@@ -19,8 +18,8 @@ $query = FourStore_Namespace::to_sparql();
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
 
-$queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type) }' . "\n";
-$queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type) }' . "\n";
+$queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
+$queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $graph = array();
