@@ -52,8 +52,6 @@ function updateName ( index )
 
 	var indexName = 'editProperty' + index;
 
-alert('Setting name (' + indexName + ') to [' + document.propertyTableForm[indexName].value + ']');
-
 	item.setO(document.propertyTableForm[indexName].value);
 	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = item.getO();
 
