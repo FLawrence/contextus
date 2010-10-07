@@ -7,7 +7,7 @@
 
 */
 
-function Property ( newProperty, newModule, newObject, newSubject, newMin, newMax )
+function Property ( newProperty, newModule, newObject, newSubject, newMin, newMax, newExpected )
 {
 	this.property = newProperty;
 	this.module = newModule;
@@ -15,6 +15,7 @@ function Property ( newProperty, newModule, newObject, newSubject, newMin, newMa
 	this.subject = newSubject;
 	this.min = newMin;
 	this.max = newMax;
+	this.expected = newExpected;
 }
 
 function Triple ( newS, newP, newO )

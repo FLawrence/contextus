@@ -106,6 +106,9 @@ function createPropertyTable ( store, subject )
 {
 	var triples = store.getTriples();
 
+	var propertyNames = [];
+	var propertyCounts = [];
+
 	var table = '<form onsubmit="return false;" name="propertyTableForm"><table><tr><th>Property</th><th>Value</th><th></th></tr>'
 	for (i = 0; i < triples.length; i++)
 	{
@@ -117,27 +120,52 @@ function createPropertyTable ( store, subject )
 			{
 				if ((properties[j].module + properties[j].property) == triples[i].getP())
 				{
+					var propertyFound = 0;
+					for (k = 0; k < propertyNames.length; k++)
+					{
+						if (propertyNames[k] == triples[i].getP())
+						{
+							propertyFound = 1;
+							propertyCounts[k]++;
+						}
+					}
+					if (propertyFound == 0)
+					{
+						propertyNames[propertyNames.length] = triples[i].getP();
+						propertyCounts[propertyNames.length] = 1;
+					}
+
+
 					var classAttribute = '';
 					var edit = triples[i].getO();
+					var button = '';
 
 					if ((foundTriple == null) || (triples[i].getO() != foundTriple.getO()))
 					{
 						classAttribute = ' class="changed"';
 					}
 
-					if (properties[j].subject == '*')
+					if (properties[j].expected == 'L')
 					{
 						edit = '<input name="editProperty' + i + '" value="' + edit + '" onkeyup="updateName(' + i + ');"/>';
 					}
+
+					if ((properties[j].min == 0) || (propertyFound == 1))
+					{
+						button = '<button onclick="removeProperty(' + i + '); return false;">delete</button>';
+					}
 	
-					table += '<tr><td>' + triples[i].getP() + '</td><td' + classAttribute + '>' + edit + '</td><td><button onclick="removeProperty(' + i + '); return false;">delete</button></td></tr>';
+					table += '<tr><td>' + triples[i].getP() + '</td><td' + classAttribute + '>' + edit + '</td><td>' + button + '</td></tr>';
 				}
 			}	
 
 		}	
 	}
 
-	table += '<tr><td><select name="propertyList"><option value="http://purl.org/ontomedia/core/expression#is" name="http://purl.org/ontomedia/core/expression#is"/></select></td><td><select name="entityList"><option value="" name="please wait..."/></select></td><td><button onclick="addProperty();">add</button></td></tr>';
+	table += '<tr><td><select name="propertyList">';
+	table += '<option value="is" name="http://purl.org/ontomedia/core/expression#is" />';
+	table += '<option value="is-shadow-of" name="http://purl.org/ontomedia/core/expression#is-shadow-of" />';
+	table += '</select></td><td><select name="entityList"><option value="" name="please wait..."/></select></td><td><button onclick="addProperty();">add</button></td></tr>';
 
 	table += '</table></form>'
 
