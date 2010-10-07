@@ -145,7 +145,7 @@ TripleStore.prototype.getOverlappingTriples = function ( otherStore, subject )
 			    (thisRelevantTriples[cI].getP() == otherRelevantTriples[cI2].getP()) &&
 			    (thisRelevantTriples[cI].getO() == otherRelevantTriples[cI2].getO()))
 			{
-				overlappingTriples[overlappingTriples.length) = thisRelevantTriples[cI];
+				overlappingTriples[overlappingTriples.length] = thisRelevantTriples[cI];
 				otherRelevantTriples.splice(cI2,1);
 				break;
 			}
