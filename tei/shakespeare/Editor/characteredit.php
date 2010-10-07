@@ -94,7 +94,7 @@ printXMLHeaders();
 	{
 		print("\tproperties[" . $index . "] = new Property('" . $property['property'] . "', '" . $property['module'] .
 		      "', '" . $property['object restriction'] . "', '" . $property['subject restriction'] .
-		      "', '" . $property['min'] . "', '" . $property['max'] . "');\n");
+		      "', '" . $property['min'] . "', '" . $property['max'] . "', '" . $property['expected'] . "');\n");
 		$index++;
 	}
 ?>
