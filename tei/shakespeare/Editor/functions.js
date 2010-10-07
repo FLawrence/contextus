@@ -169,7 +169,7 @@ function createPropertyTable ( store, subject )
 
 	table += '<tr><td><select name="propertyList" onchange="updateNewObjectField();">';
 	table += '<option value="please wait..." />';
-	table += '</select></td><td><select name="entityList"><option value="" name="please wait..."/></select></td><td><button onclick="addProperty();">add</button></td></tr>';
+	table += '</select></td><td><span id="newObjectField"><select name="entityList"><option value="" name="please wait..."/></select></span></td><td><button onclick="addProperty();">add</button></td></tr>';
 
 	table += '</table></form>'
 
@@ -204,7 +204,39 @@ function createPropertyTable ( store, subject )
 
 function updateNewObjectField ( )
 {
-	alert(document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value);
+	var newProperty = document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value;
+
+	for (j = 0; j < properties.length; j++)
+	{
+		if ((properties[j].module + properties[j].property) == newProperty)
+		{
+			if (properties[j].expected == 'L')
+			{
+				document.getElementById('newObjectField').innerHTML = '<input name="newObjectText" />';
+			}
+			else
+			{
+				document.getElementById('newObjectField').innerHTML = '<select name="entityList"><option value="" name="please wait..."/></select>';
+
+				document.propertyTableForm.entityList.options.length = 0;
+				var index = 0;
+				for (i = 0; i < triples.length; i++)
+				{
+					if (triples[i].getS() == document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value)
+					{
+						continue;
+					}
+		
+					if (triples[i].getP() == nameLabel)
+					{
+						var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
+						document.propertyTableForm.entityList.options[index] = option;
+						index++;
+					}
+				}
+			}
+		}
+	}
 }
 
 
