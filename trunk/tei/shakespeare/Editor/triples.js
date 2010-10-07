@@ -115,7 +115,7 @@ TripleStore.prototype.findTriple = function ( queryS, queryP )
 	return null;
 }
 
-TripleStore.prototype.getAllTriplesBySubject ( subject )
+TripleStore.prototype.getAllTriplesBySubject = function ( subject )
 {
 	var relevantTriples = [];
 
