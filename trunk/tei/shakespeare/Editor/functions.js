@@ -167,7 +167,7 @@ function createPropertyTable ( store, subject )
 		}	
 	}
 
-	table += '<tr><td><select name="propertyList">';
+	table += '<tr><td><select name="propertyList" onchange="updateNewObjectField();">';
 	table += '<option value="please wait..." />';
 	table += '</select></td><td><select name="entityList"><option value="" name="please wait..."/></select></td><td><button onclick="addProperty();">add</button></td></tr>';
 
@@ -176,10 +176,12 @@ function createPropertyTable ( store, subject )
 	document.getElementById('propertyTable').innerHTML = table;
 
 	document.propertyTableForm.propertyList.options.length = 0;
-	var property = new Option('http://purl.org/ontomedia/core/expression#is', 'http://purl.org/ontomedia/core/expression#is', false, false);
+	var property = new Option('is', 'http://purl.org/ontomedia/core/expression#is', false, false);
 	document.propertyTableForm.propertyList.options[0] = property;
-	var property = new Option('http://purl.org/ontomedia/core/expression#is-shadow-of', 'is-shadow-of', false, false);
+	var property = new Option('is-shadow-of', 'http://purl.org/ontomedia/core/expression#is-shadow-of', false, false);
 	document.propertyTableForm.propertyList.options[1] = property;
+	var property = new Option('name', nameLabel, false, false);
+	document.propertyTableForm.propertyList.options[2] = property;
 
 	document.propertyTableForm.entityList.options.length = 0;
 	var index = 0;
@@ -199,6 +201,11 @@ function createPropertyTable ( store, subject )
 	}
 }
 
+
+function updateNewObjectField ( )
+{
+	alert(document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value);
+}
 
 
 function addProperty ( )
