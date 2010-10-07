@@ -43,12 +43,16 @@ function updateFields ( )
 
 
 
-function updateName ( )
+function updateName ( index )
 {
-	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, nameLabel);
+	var triples = store.getTriples();
+
+	item = triples[index];
 	foundTriple = originalStore.findTriple(item.getS(), item.getP());
 
-	item.setO(document.editForm.namedEntityName.value);
+alert('Setting name to [' + document.editForm[('editProperty' + index)].value + ']');
+
+	item.setO(document.editForm[('editProperty' + index)].value);
 	document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].text = item.getO();
 
 	if (item.getO() != foundTriple.getO())
@@ -121,7 +125,7 @@ function createPropertyTable ( store, subject )
 
 					if (properties[j].subject == '*')
 					{
-						edit = '<input name="editProperty' + i + '" value="' + edit + '" onkeyup="updateName();"/>';
+						edit = '<input name="editProperty' + i + '" value="' + edit + '" onkeyup="updateName(' + i + ');"/>';
 					}
 	
 					table += '<tr><td>' + triples[i].getP() + '</td><td' + classAttribute + '>' + edit + '</td><td><button onclick="removeProperty(' + i + '); return false;">delete</button></td></tr>';
