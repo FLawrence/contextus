@@ -115,4 +115,67 @@ TripleStore.prototype.findTriple = function ( queryS, queryP )
 	return null;
 }
 
+TripleStore.prototype.getAllTriplesBySubject ( subject )
+{
+	var relevantTriples = [];
 
+	for (searchIndex = 0; searchIndex < this.triples.length; searchIndex++)
+	{
+		if (this.triples[searchIndex].getS() == subject)
+		{
+			relevantTriples[relevantTriples.length] = this.triples[searchIndex];
+		}
+	}
+
+	return relevantTriples;
+}
+
+
+TripleStore.prototype.getOverlappingTriples = function ( otherStore, subject )
+{
+	var thisRelevantTriples = this.getAllTriplesBySubject(subject);
+	var otherRelevantTriples = otherStore.getAllTriplesBySubject(subject);
+	var overlappingTriples = [];
+
+	for (cI = 0; cI = thisRelevantTriples.length; cI++)
+	{
+		for (cI2 = 0; cI2 = otherRelevantTriples.length; cI2++)
+		{
+			if ((thisRelevantTriples[cI].getS() == otherRelevantTriples[cI2].getS()) &&
+			    (thisRelevantTriples[cI].getP() == otherRelevantTriples[cI2].getP()) &&
+			    (thisRelevantTriples[cI].getO() == otherRelevantTriples[cI2].getO()))
+			{
+				overlappingTriples[overlappingTriples.length) = thisRelevantTriples[cI];
+				otherRelevantTriples.splice(cI2,1);
+				break;
+			}
+		}
+	}
+
+	return overlappingTriples;
+}
+
+TripleStore.prototype.getNonOverlappingTriples = function ( otherStore )
+{
+	var otherTriples = [];
+	for (cI = 0; cI = otherStore.triples.length; cI++)
+	{
+		otherTriples[otherTriples.length] = otherStore.triples[cI];
+	}
+
+	for (cI = 0; cI = triples.length; cI++)
+	{
+		for (cI2 = 0; cI2 = otherTriples.length; cI2++)
+		{
+			if ((triples[cI].getS() == otherTriples[cI2].getS()) &&
+			    (triples[cI].getP() == otherTriples[cI2].getP()) &&
+			    (triples[cI].getO() == otherTriples[cI2].getO()))
+			{
+				otherTriples.splice(cI2,1);
+				break;
+			}
+		}
+	}
+
+	return otherTriples;
+}

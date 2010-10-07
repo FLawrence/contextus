@@ -74,6 +74,13 @@ function updateName ( index )
 
 function checkFields ( )
 {
+	var triplesA = store.getNonOverlappingTriples(originalStore);
+
+	for (i = 0; i < triplesA.length; i++)
+	{
+		alert("TRIPLE:\n" + triplesA[i].getS() + "\n" + triplesA[i].getP() + "\n" + triplesA[i].getO() + "\n"); 
+	}
+
 	var dataString = "";
 
 	var triples = store.getTriples();
