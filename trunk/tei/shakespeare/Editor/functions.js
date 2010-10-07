@@ -66,6 +66,8 @@ function updateName ( index )
 
 	createPropertyTable(store, item.getS());
 	checkFields();
+
+	document.propertyTableForm[indexName].focus()
 }
 
 
