@@ -242,9 +242,27 @@ function updateNewObjectField ( )
 
 function addProperty ( )
 {
-	var triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
-				document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value,
-				document.propertyTableForm.entityList.options[document.propertyTableForm.entityList.selectedIndex].value);
+	var newProperty = document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value;
+	var triple;
+
+	for (j = 0; j < properties.length; j++)
+	{
+		if ((properties[j].module + properties[j].property) == newProperty)
+		{
+			if (properties[j].expected == 'L')
+			{
+				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
+						document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value,
+						document.propertyTableForm.newObjectText.value);
+			}
+			else
+			{
+				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
+						document.propertyTableForm.propertyList.options[document.propertyTableForm.propertyList.selectedIndex].value,
+						document.propertyTableForm.entityList.options[document.propertyTableForm.entityList.selectedIndex].value);
+			}
+		}
+	}
 	store.add(triple);
 	createPropertyTable(store, triple.getS());
 	checkFields();
