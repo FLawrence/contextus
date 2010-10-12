@@ -28,6 +28,14 @@ BONUS - Event and Entity information display also working
  * User can assert that two entities are the same 
  * User can assert basic geographic links between locations (next to, within etc)? 
 
+Progress so far (Keith): Implemented functions to add triples from properties and dropdown/text options
+
+(Faith): Duplicated code implemented on CharacterEdit page on LocationEdit page and added way to differentiate between which groups of properties are displayed as options.
+
+To Do: 
+1. Implement addition of reciprocal values
+2. Improve display
+
 == Milestone 3: Basic Event Editor ==
 
  * Editor can load up the information related to an event:
