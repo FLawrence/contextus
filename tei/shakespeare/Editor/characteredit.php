@@ -47,27 +47,6 @@ foreach ($rAuto['result']['rows'] as $result)
 	}
 }
 
-function addTripleToGraph ( &$graph, $triple )
-{
-	$graph[md5($triple['s'] . $triple['p'] . $triple['o'])] = $triple;
-}
-
-function makeTriple ( $subject, $predicate, $object )
-{
-	$triple = array( 's' => $subject, 'p' => $predicate, 'o' => $object);
-	return $triple;
-}
-
-function armourItem ( $item )
-{
-//	if (substr($item, 0 , 7) == 'http://')
-//		$item = '<' . $item . '>';
-//	else
-		$item = str_replace("'", "\\'", $item);
-
-	return $item;
-}
-
 printXMLHeaders();
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">

@@ -1,5 +1,17 @@
 <?php
 
+/*
+Contains:
+
+printXMLHeaders ( )
+printNavigationList ( $current, $userID )
+loadProperties ( )
+addTripleToGraph ( &$graph, $triple )
+makeTriple ( $subject, $predicate, $object )
+armourItem ( $item )
+
+*/
+
 function printXMLHeaders ( )
 {
 	print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
@@ -50,6 +62,27 @@ function loadProperties ( )
 	fclose($propertyFile);
 
 	return $propertyDetails;
+}
+
+function addTripleToGraph ( &$graph, $triple )
+{
+	$graph[md5($triple['s'] . $triple['p'] . $triple['o'])] = $triple;
+}
+
+function makeTriple ( $subject, $predicate, $object )
+{
+	$triple = array( 's' => $subject, 'p' => $predicate, 'o' => $object);
+	return $triple;
+}
+
+function armourItem ( $item )
+{
+//	if (substr($item, 0 , 7) == 'http://')
+//		$item = '<' . $item . '>';
+//	else
+		$item = str_replace("'", "\\'", $item);
+
+	return $item;
 }
 
 ?>
