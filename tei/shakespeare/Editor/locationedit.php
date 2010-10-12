@@ -58,6 +58,7 @@ printXMLHeaders();
 <?php
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");
+	print("\tvar pageType = 'location''';\n");
 	print("\tvar nonLabelTriples = '';\n");
 	print("\tvar properties = [];\n");
 

@@ -58,6 +58,7 @@ printXMLHeaders();
 <?php
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://xmlns.com/foaf/0.1/name';\n");
+	print("\tvar pageType = 'character''';\n");
 	print("\tvar nonNameTriples = '';\n");
 	print("\tvar properties = [];\n");
 

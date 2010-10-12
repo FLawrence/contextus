@@ -170,13 +170,30 @@ function createPropertyTable ( store, subject )
 
 	document.getElementById('propertyTable').innerHTML = table;
 
-	document.propertyTableForm.propertyList.options.length = 0;
-	var property = new Option('is', 'http://purl.org/ontomedia/core/expression#is', false, false);
-	document.propertyTableForm.propertyList.options[0] = property;
-	var property = new Option('is-shadow-of', 'http://purl.org/ontomedia/core/expression#is-shadow-of', false, false);
-	document.propertyTableForm.propertyList.options[1] = property;
-	var property = new Option('name', nameLabel, false, false);
-	document.propertyTableForm.propertyList.options[2] = property;
+	if(pageType == "character")
+	{
+		document.propertyTableForm.propertyList.options.length = 0;
+		var property = new Option('is', 'http://purl.org/ontomedia/core/expression#is', false, false);
+		document.propertyTableForm.propertyList.options[0] = property;
+		var property = new Option('is-shadow-of', 'http://purl.org/ontomedia/core/expression#is-shadow-of', false, false);
+		document.propertyTableForm.propertyList.options[1] = property;
+		var property = new Option('name', nameLabel, false, false);
+		document.propertyTableForm.propertyList.options[2] = property;
+	}
+	else if (pageType == "location")
+	{
+		document.propertyTableForm.propertyList.options.length = 0;
+		var property = new Option('is', 'http://purl.org/ontomedia/core/expression#is', false, false);
+		document.propertyTableForm.propertyList.options[0] = property;
+		var property = new Option('is-shadow-of', 'http://purl.org/ontomedia/core/expression#is-shadow-of', false, false);
+		document.propertyTableForm.propertyList.options[1] = property;
+		var property = new Option('label', nameLabel, false, false);
+		document.propertyTableForm.propertyList.options[2] = property;
+		var property = new Option('is-part-of', 'http://signage.ecs.soton.ac.uk/ontologies/location#is-part-of', false, false);
+		document.propertyTableForm.propertyList.options[3] = property;	
+		var property = new Option('adjacent-to', 'http://signage.ecs.soton.ac.uk/ontologies/location#adjacent-to', false, false);
+		document.propertyTableForm.propertyList.options[4] = property;			
+	}
 
 	document.propertyTableForm.entityList.options.length = 0;
 	var index = 0;
