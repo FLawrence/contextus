@@ -6,6 +6,8 @@ require('bc-fourstore-php/FourStore/FourStore_StorePlus.php');
 require('bc-fourstore-php/FourStore/Namespace.php');
 require('shakespeare_utilities.php');
 
+$propertyList = loadProperties();
+
 FourStore_Namespace::addW3CNamespace();
 FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
 FourStore_Namespace::add('ome','http://purl.org/ontomedia/core/expression#');
@@ -55,7 +57,7 @@ printXMLHeaders();
 	<script type="text/javascript">
 <?php
 	print("\tvar store = new TripleStore();\n");
-	print("\tvar originalStore = new TripleStore();\n");
+	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");
 	print("\tvar nonLabelTriples = '';\n");
 	print("\tvar properties = [];\n");
 
