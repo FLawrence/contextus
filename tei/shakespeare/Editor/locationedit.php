@@ -91,8 +91,7 @@ printXMLHeaders();
 
 <div id="editForm">
 <form name="editForm" method="post" action="savedata.php">
-	<select class="chooseLocation" name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select> <br />
-
+	<select class="chooseLocation" name="namedEntityList" onchange="updateFields();"><option value="Please wait..." /></select>
 	<button id="saveChanges" name="saveButton">Save Changes</button><br />
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
