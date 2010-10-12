@@ -6,7 +6,7 @@
 "involves","http://purl.org/ontomedia/core/expression#","http://purl.org/ontomedia/core/expression#Event",,0,"m","I","http://purl.org/ontomedia/core/expression#involved-in"
 "type","http://www.w3.org/1999/02/22-rdf-syntax-ns#",,,1,"m","C",
 "is","http://purl.org/ontomedia/core/expression#",,,0,"m","I","http://purl.org/ontomedia/core/expression#is"
-"is-shadow-of","http://purl.org/ontomedia/core/expression#",,,0,"m","I","http://purl.org/ontomedia/core/expression#has-shadow"
+"is-shadow-of","http://purl.org/ontomedia/core/expression#",,,1,"m","I","http://purl.org/ontomedia/core/expression#has-shadow"
 "is-located-in","http://signage.ecs.soton.ac.uk/ontologies/location#",,"http://purl.org/ontomedia/core/space#Space",0,1,"I",
 "is-part-of","http://signage.ecs.soton.ac.uk/ontologies/location#","http://purl.org/ontomedia/core/space#Space","http://purl.org/ontomedia/core/space#Space",0,"m","I",
 "adjacent-to","http://signage.ecs.soton.ac.uk/ontologies/location#","http://purl.org/ontomedia/core/space#Space","http://purl.org/ontomedia/core/space#Space",0,"m","I","http://signage.ecs.soton.ac.uk/ontologies/location#adjacent-to"
