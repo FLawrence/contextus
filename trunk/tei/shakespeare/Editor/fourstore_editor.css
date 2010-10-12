@@ -20,7 +20,7 @@ div#editForm { margin: 5px }
 
 td.changed	{ color: red }
 
-.chooseCharacter	{ font-size: 135%; font-weight: bold; background-color: #fddfb1; border: 0px}
+.chooseCharacter, .chooseLocation	{ font-size: 135%; font-weight: bold; background-color: #fddfb1; border: 0px}
 
 #namedEntityID	{ font-style: italic; color: #777777 }
 
