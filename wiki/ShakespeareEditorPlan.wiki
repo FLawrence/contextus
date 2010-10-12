@@ -30,11 +30,11 @@ BONUS - Event and Entity information display also working
 
 Progress so far (Keith): Implemented functions to add triples from properties and dropdown/text options
 
-(Faith): Duplicated code implemented on CharacterEdit page on LocationEdit page and added way to differentiate between which groups of properties are displayed as options.
+(Faith): Duplicated code implemented on characteredit page on locationedit page and added way to differentiate between which groups of properties are displayed as options.
 
 To Do: 
-1. Implement addition of reciprocal values
-2. Improve display
+ # Implement addition of reciprocal values
+ # Improve display
 
 == Milestone 3: Basic Event Editor ==
 
