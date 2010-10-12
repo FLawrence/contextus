@@ -2,8 +2,8 @@
 
 $userID = $_GET['idhash'];
 
-require 'bc-fourstore-php/FourStore/FourStore_StorePlus.php';
-require 'bc-fourstore-php/FourStore/Namespace.php';
+require('bc-fourstore-php/FourStore/FourStore_StorePlus.php');
+require('bc-fourstore-php/FourStore/Namespace.php');
 require('shakespeare_utilities.php');
 
 $propertyList = loadProperties();
