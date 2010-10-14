@@ -273,7 +273,7 @@ function updateNewObjectField ( field )
 			{
 				document.getElementById(field + 'ObjectField').innerHTML = '<select name="' + field + 'EntityList"><option value="" name="please wait..."/></select>';
 
-				document.propertyTableForm.[field + 'EntityList'].options.length = 0;
+				document.propertyTableForm[field + 'EntityList'].options.length = 0;
 				var index = 0;
 				for (i = 0; i < triples.length; i++)
 				{
@@ -285,7 +285,7 @@ function updateNewObjectField ( field )
 					if (triples[i].getP() == nameLabel)
 					{
 						var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
-						document.propertyTableForm.[field + 'EntityList'].options[index] = option;
+						document.propertyTableForm[field + 'EntityList'].options[index] = option;
 						index++;
 					}
 				}
