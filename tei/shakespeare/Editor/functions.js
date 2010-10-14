@@ -161,15 +161,15 @@ function createPropertyTable ( store, subject )
 		}	
 	}
 
-	table += '<tr><td><select name="propertyList" onchange="updateNewObjectField("property");">';
+	table += '<tr><td><select name="propertyList" onchange="updateNewObjectField(\'property\');">';
 	table += '<option value="please wait..." />';
-	table += '</select></td><td><span id="propertyObjectField"><select name="propertyEntityList"><option value="" name="please wait..."/></select></span></td><td><button onclick="addProperty("property");">add</button></td></tr>';
+	table += '</select></td><td><span id="propertyObjectField"><select name="propertyEntityList"><option value="" name="please wait..."/></select></span></td><td><button onclick="addProperty(\'property\');">add</button></td></tr>';
 	
 	if (pageType == "location")
 	{
-		table += '<tr><td><select name="geoLinkList" onchange="updateNewObjectField("geoLink");">';
+		table += '<tr><td><select name="geoLinkList" onchange="updateNewObjectField(\'geoLink\');">';
 		table += '<option value="please wait..." />';
-		table += '</select></td><td><span id="geoLinkObjectField"><select name="geoLinkEntityList"><option value="" name="please wait..."/></select></span></td><td><button onclick="addProperty("geoLink");">add</button></td></tr>';
+		table += '</select></td><td><span id="geoLinkObjectField"><select name="geoLinkEntityList"><option value="" name="please wait..."/></select></span></td><td><button onclick="addProperty(\'geoLink\');">add</button></td></tr>';
 	}
 
 	table += '</table></form>'
