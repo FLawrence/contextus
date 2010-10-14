@@ -261,7 +261,7 @@ function updateNewObjectField ( field )
 
 function addProperty ( fieldname )
 {
-	var newProperty = document.propertyTableForm[fieldname . 'List'].options[document.propertyTableForm[fieldname . 'List'].selectedIndex].value;
+	var newProperty = document.propertyTableForm[fieldname + 'List'].options[document.propertyTableForm[fieldname + 'List'].selectedIndex].value;
 	var triple;
 
 	for (j = 0; j < properties.length; j++)
@@ -271,13 +271,13 @@ function addProperty ( fieldname )
 			if (properties[j].expected == 'L')
 			{
 				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
-						document.propertyTableForm[fieldname . 'List'].options[document.propertyTableForm[fieldname . 'List'].selectedIndex].value,
+						document.propertyTableForm[fieldname + 'List'].options[document.propertyTableForm[fieldname + 'List'].selectedIndex].value,
 						document.propertyTableForm.newObjectText.value, '');
 			}
 			else
 			{
 				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
-						document.propertyTableForm[fieldname . 'List'].options[document.propertyTableForm[fieldname . 'List'].selectedIndex].value,
+						document.propertyTableForm[fieldname + 'List'].options[document.propertyTableForm[fieldname + 'List'].selectedIndex].value,
 						document.propertyTableForm.entityList.options[document.propertyTableForm.entityList.selectedIndex].value, '');
 			}
 		}
