@@ -231,11 +231,11 @@ function updateNewObjectField ( field )
 		{
 			if (properties[j].expected == 'L')
 			{
-				document.getElementById(field . 'ObjectField').innerHTML = '<input name="' . field . 'ObjectText" />';
+				document.getElementById(field + 'ObjectField').innerHTML = '<input name="' + field + 'ObjectText" />';
 			}
 			else
 			{
-				document.getElementById(field . 'ObjectField').innerHTML = '<select name="' . field . 'EntityList"><option value="" name="please wait..."/></select>';
+				document.getElementById(field + 'ObjectField').innerHTML = '<select name="' + field + 'EntityList"><option value="" name="please wait..."/></select>';
 
 				document.propertyTableForm.entityList.options.length = 0;
 				var index = 0;
