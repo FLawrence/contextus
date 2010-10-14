@@ -185,6 +185,24 @@ function createPropertyTable ( store, subject )
 		document.propertyTableForm.propertyList.options[1] = property;
 		var property = new Option('name', nameLabel, false, false);
 		document.propertyTableForm.propertyList.options[2] = property;
+		
+		document.propertyTableForm.propertyEntityList.options.length = 0;
+		var index = 0;
+		for (i = 0; i < triples.length; i++)
+		{
+			if (triples[i].getS() == document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value)
+			{
+				continue;
+			}
+	
+			if (triples[i].getP() == nameLabel)
+			{
+				var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
+				document.propertyTableForm.propertyEntityList.options[index] = option;
+				index++;
+			}
+		}		
+		
 	}
 	else if (pageType == "location")
 	{
@@ -199,25 +217,43 @@ function createPropertyTable ( store, subject )
 		var property = new Option('is-part-of', 'http://signage.ecs.soton.ac.uk/ontologies/location#is-part-of', false, false);
 		document.propertyTableForm.geoLinkList.options[0] = property;	
 		var property = new Option('adjacent-to', 'http://signage.ecs.soton.ac.uk/ontologies/location#adjacent-to', false, false);
-		document.propertyTableForm.geoLinkList.options[1] = property;			
+		document.propertyTableForm.geoLinkList.options[1] = property;	
+		
+		document.propertyTableForm.propertyEntityList.options.length = 0;
+		var index = 0;
+		for (i = 0; i < triples.length; i++)
+		{
+			if (triples[i].getS() == document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value)
+			{
+				continue;
+			}
+	
+			if (triples[i].getP() == nameLabel)
+			{
+				var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
+				document.propertyTableForm.propertyEntityList.options[index] = option;
+				index++;
+			}
+		}
+		
+		document.propertyTableForm.geoLinkEntityList.options.length = 0;
+		var index = 0;
+		for (i = 0; i < triples.length; i++)
+		{
+			if (triples[i].getS() == document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value)
+			{
+				continue;
+			}
+	
+			if (triples[i].getP() == nameLabel)
+			{
+				var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
+				document.propertyTableForm.geoLinkEntityList.options[index] = option;
+				index++;
+			}
+		}		
 	}
 
-	document.propertyTableForm.entityList.options.length = 0;
-	var index = 0;
-	for (i = 0; i < triples.length; i++)
-	{
-		if (triples[i].getS() == document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value)
-		{
-			continue;
-		}
-
-		if (triples[i].getP() == nameLabel)
-		{
-			var option = new Option(triples[i].getO(), triples[i].getS(), false, false);
-			document.propertyTableForm.entityList.options[index] = option;
-			index++;
-		}
-	}
 }
 
 
