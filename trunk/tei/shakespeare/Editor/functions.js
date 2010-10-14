@@ -308,7 +308,7 @@ function addProperty ( fieldname )
 			{
 				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
 						document.propertyTableForm[fieldname + 'List'].options[document.propertyTableForm[fieldname + 'List'].selectedIndex].value,
-						document.propertyTableForm.newObjectText.value, '');
+						document.propertyTableForm[fieldname + 'ObjectText'].value, '');
 			}
 			else
 			{
