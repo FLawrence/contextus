@@ -314,7 +314,7 @@ function addProperty ( fieldname )
 			{
 				triple = new Triple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value,
 						document.propertyTableForm[fieldname + 'List'].options[document.propertyTableForm[fieldname + 'List'].selectedIndex].value,
-						document.propertyTableForm.entityList.options[document.propertyTableForm[fieldname + 'EntityList'].selectedIndex].value, '');
+						document.propertyTableForm[fieldname + 'EntityList'].options[document.propertyTableForm[fieldname + 'EntityList'].selectedIndex].value, '');
 			}
 		}
 	}
