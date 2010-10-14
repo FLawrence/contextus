@@ -223,7 +223,7 @@ function createPropertyTable ( store, subject )
 
 function updateNewObjectField ( field )
 {
-	var newProperty = document.propertyTableForm[field . 'List'].options[document.propertyTableForm[field . 'List'].selectedIndex].value;
+	var newProperty = document.propertyTableForm[field + 'List'].options[document.propertyTableForm[field + 'List'].selectedIndex].value;
 
 	for (j = 0; j < properties.length; j++)
 	{
