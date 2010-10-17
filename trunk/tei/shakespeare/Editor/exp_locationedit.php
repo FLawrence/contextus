@@ -80,8 +80,7 @@ printXMLHeaders();
 	   var controlsToSetup = [];
 	   controlsToSetup[0] = 'locatedWithin';
 	   controlsToSetup[1] = 'locatedAdjacentTo';
-	   controlsToSetup[2] = 'locatedAbove';
-	   controlsToSetup[3] = 'locatedUnder';
+	   controlsToSetup[2] = 'is';
 <?php	   
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");
@@ -136,8 +135,7 @@ printXMLHeaders();
 <?php
 writeLocationControl('Located Within');
 writeLocationControl('Located Adjacent To');
-writeLocationControl('Located Above');
-writeLocationControl('Located Under');
+writeLocationControl('Is');
 ?>
 
 </body>
