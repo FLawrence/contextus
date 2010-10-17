@@ -179,6 +179,9 @@ function getFullPropertyName ( controlName )
 
     if (controlName == 'locatedUnder')
 		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-below';
+
+    if (controlName == 'is')
+		return 'http://purl.org/ontomedia/core/expression#is';
 }
 
 function isAuto ( entityID )
