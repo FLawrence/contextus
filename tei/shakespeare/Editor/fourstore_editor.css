@@ -1,3 +1,5 @@
+body { background-color: #ccf }
+
 #navigationList { margin: 0; padding: 0 0 20px 10px; border-bottom: 1px solid #000; }
 
 #navigationList ul, #navigationList li { margin: 0; padding: 0; display: inline; list-style-type: none; }
@@ -20,8 +22,14 @@ div#editForm { margin: 5px }
 
 td.changed	{ color: red }
 
-.chooseCharacter, .chooseLocation	{ font-size: 135%; font-weight: bold; background-color: #fddfb1; border: 0px}
+.chooseCharacter, .chooseLocation	{ font-size: 115%; font-weight: bold; background-color: #fddfb1; border: 0px}
 
 #namedEntityID	{ font-style: italic; color: #777777 }
 
 button#saveChanges { margin-left: 200px }
+
+table.locationList { width: 60%; min-height: 150px; background-color: #bbb }
+
+div.control { background-color: white; border: 1px solid black; margin-top: 10px; }
+
+p.controlTitle { width: 100%; border-bottom: 1px solid black; }

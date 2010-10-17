@@ -1,4 +1,194 @@
 
+var currentEntity;
+var rdfTypeLabel = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
+var shadowOfLabel = 'http://purl.org/ontomedia/core/expression#is-shadow-of';
+var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space';
+
+function setupPage ( )
+{
+   selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
+   currentEntity = selectTriples[0].getS();
+   
+   document.entityChooserForm.entityChooserSelect.options.length = 0;
+   var index = 0;
+   for (i = 0; i < selectTriples.length; i++)
+   {
+      var option = new Option(getDisplayName(selectTriples[i].getS()), selectTriples[i].getS(), false, false);
+      document.entityChooserForm.entityChooserSelect.options[index++] = option;
+   }
+   
+   updateAllControls();
+}
+
+function addLocation ( controlName )
+{
+    var propertyName = getFullPropertyName(controlName);
+    var index = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].selectedIndex;
+    var propertyValue = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[index].value;
+
+   mainLabelChanged();
+   
+   store.add(new Triple(currentEntity, propertyName, propertyValue, ''));
+   
+   updateControl(controlName);
+   checkFields();
+}
+
+function removeLocation ( controlName, entityToRemove )
+{
+   var propertyName = getFullPropertyName(controlName);
+   var triplesToRemove = store.findTripleIndexes(currentEntity, propertyName, entityToRemove);
+   store.deleteByIndex(triplesToRemove[0]);
+   
+   updateControl(controlName);
+   checkFields();
+}
+
+function entityChanged ( )
+{
+	currentEntity = document.entityChooserForm.entityChooserSelect.options[document.entityChooserForm.entityChooserSelect.selectedIndex].value;
+
+   updateAllControls();
+}
+
+function createEntityInNewGraph ( entity, name )
+{
+   var oldTripleIndexes = store.findTripleIndexes(entity, '*', '*');
+   
+   for (i = 0; i < oldTripleIndexes.length; i++)
+   {
+      store.deleteByIndex(oldTripleIndexes[i]);
+   }
+   
+   var newID = 'http://contextus.net/resource/midsum_night_dream/' + userID + '/' + entity.substring(54);
+   
+   store.add(new Triple(newID, nameLabel, name, ''));
+   store.add(new Triple(newID, shadowOfLabel, entity, ''));
+   store.add(new Triple(newID, rdfTypeLabel, entityType, ''));
+   
+   return newID;
+}
+
+function mainLabelChanged ( )
+{
+   if (isAuto(currentEntity) == true)
+   {
+      userEntity = createEntityInNewGraph(currentEntity, document.generalInformationForm.entityName.value);
+      currentEntity = userEntity;
+   }
+   else
+   {
+      nameTriples = store.findTriples(currentEntity, nameLabel, '*');
+      nameTriples[0].setO(document.generalInformationForm.entityName.value);
+   }
+
+   var option = new Option(document.generalInformationForm.entityName.value, currentEntity, false, false);   
+   var changeIndex = document.entityChooserForm.entityChooserSelect.selectedIndex;
+   
+   document.entityChooserForm.entityChooserSelect.options[changeIndex] = option;
+   document.entityChooserForm.entityChooserSelect.selectedIndex = changeIndex;
+
+   checkFields();
+}
+
+function updateAllControls ( )
+{
+   nameTriples = store.findTriples(currentEntity, nameLabel, '*');
+
+   document.generalInformationForm.entityName.value = nameTriples[0].getO();
+
+   for (control = 0; control < controlsToSetup.length; control++)
+   {
+      updateControl(controlsToSetup[control]);
+   }
+}
+
+function updateControl ( controlName )
+{
+   propertyName = getFullPropertyName(controlName);
+
+   listTriples = store.findTriples(currentEntity, propertyName, '*');
+   selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
+
+   document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
+   var optionsIndex = 0;
+
+   for (i = 0; i < selectTriples.length; i++)
+   {
+      if (selectTriples[i].getS() == currentEntity) continue;
+      
+      var skip = false;
+      for (j = 0; j < listTriples.length; j++)
+      {
+          if (selectTriples[i].getS() == listTriples[j].getO()) skip = true;
+      }
+      if (skip == true) continue;
+      
+      var option = new Option(getDisplayName(selectTriples[i].getS()), selectTriples[i].getS(), false, false);
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[optionsIndex++] = option;
+   }
+
+   if (optionsIndex == 0)
+   {
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].disabled = true;
+      document.forms[controlName + 'Form'].elements[controlName + 'AddButton'].disabled = true;
+ 
+      var option = new Option('All entities in list', 'null', false, false);
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[0] = option;
+   }
+   else
+   {
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].disabled = false;
+      document.forms[controlName + 'Form'].elements[controlName + 'AddButton'].disabled = false;
+   }
+
+   var newTableHTML = '<tr><th>Name</th><th>&nbsp;</th></tr>';
+
+   for (i = 0; i < listTriples.length; i++)
+   {
+      name = getDisplayName(listTriples[i].getO());
+      newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeLocation(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+   }
+
+	document.getElementById(controlName + 'List').innerHTML = newTableHTML;
+}
+
+
+function getDisplayName ( entityID )
+{
+   nameTriples = store.findTriples(entityID, nameLabel, '*');
+   
+   if (isAuto(entityID) == true)
+   {
+      return nameTriples[0].getO() + ' (auto)';
+   }
+
+   return nameTriples[0].getO();
+}
+
+function getFullPropertyName ( controlName )
+{
+    if (controlName == 'locatedWithin')
+		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-part-of';
+
+    if (controlName == 'locatedAdjacentTo')
+		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-adjacent-to';
+
+    if (controlName == 'locatedAbove')
+		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-above';
+
+    if (controlName == 'locatedUnder')
+		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-below';
+}
+
+function isAuto ( entityID )
+{
+   if (entityID.substring(0,54) == 'http://contextus.net/resource/midsum_night_dream/auto/') return true;
+
+   return false;
+}
+
+
 function setupChooser ( )
 {
 	document.editForm.namedEntityList.options.length = 0;
@@ -53,6 +243,12 @@ function updateName ( index )
 }
 
 
+function displayChanges ( )
+{
+	alert('ADDED\n' + document.entityChooserForm.addedTriples.value);
+	alert('CHANGED\n' + document.entityChooserForm.changedTriples.value);
+	alert('DELETED\n' + document.entityChooserForm.deletedTriples.value);
+}
 
 function checkFields ( )
 {
@@ -80,11 +276,11 @@ function checkFields ( )
 		}
 	}
 
-	document.editForm.addedTriples.value = addedString;
-	document.editForm.changedTriples.value = changedString;
-	document.editForm.deletedTriples.value = deletedString;
+	document.entityChooserForm.addedTriples.value = addedString;
+	document.entityChooserForm.changedTriples.value = changedString;
+	document.entityChooserForm.deletedTriples.value = deletedString;
 
-	document.editForm.saveButton.disabled = !store.isChanged();
+	document.entityChooserForm.saveButton.disabled = !store.isChanged();
 }
 
 
