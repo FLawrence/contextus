@@ -118,6 +118,7 @@ printXMLHeaders();
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 	<input name="saveType" type="hidden" value="location" />
+	<input name="source" type="hidden" value="exp_locationedit" />
 	
 	<input name="addedTriples" type="hidden" value="" />
 	<input name="changedTriples" type="hidden" value="" />

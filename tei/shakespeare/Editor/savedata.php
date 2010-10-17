@@ -35,8 +35,12 @@ $results = array();
 if ($_POST['saveType'] == 'character')
 	$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
 else if ($_POST['saveType'] == 'location')
+{
 	$continueURL = 'locationedit.php?idhash=' . $_POST['idhash'];
 
+    if (isset($_POST['source']))
+    	$continueURL = $_POST['source'] . '?idhash=' . $_POST['idhash'];
+}
 
 
 
