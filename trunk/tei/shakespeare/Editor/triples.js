@@ -70,7 +70,10 @@ Triple.prototype.getState = function ( )
 Triple.prototype.setO = function ( newO )
 {
 	this.o = newO;
-	if ((this.o != this.originalO) && (this.state != 'added'))
+	
+	if (this.state == 'added') return;
+	
+	if (this.o != this.originalO)
 	{
 		this.state = 'changed';
 	}
@@ -174,7 +177,43 @@ TripleStore.prototype.findTriple = function ( queryS, queryP )
 	return null;
 };
 
+TripleStore.prototype.findTriples = function ( queryS, queryP, queryO )
+{
+    var triplesFound = [];
+    var tfIndex = 0;
+    
+	for (searchIndex = 0; searchIndex < this.triples.length; searchIndex++)
+	{
+		if (((queryS == '*') || (this.triples[searchIndex].getS() == queryS)) &&
+		    ((queryP == '*') || (this.triples[searchIndex].getP() == queryP)) &&
+		    ((queryO == '*') || (this.triples[searchIndex].getO() == queryO)))
+		{
+			if (this.triples[searchIndex].getState() != 'deleted')
+		    	triplesFound[tfIndex++] = this.triples[searchIndex];
+		}
+	}
 
+	return triplesFound;
+};
+
+TripleStore.prototype.findTripleIndexes = function ( queryS, queryP, queryO )
+{
+    var indexesFound = [];
+    var tfIndex = 0;
+    
+	for (searchIndex = 0; searchIndex < this.triples.length; searchIndex++)
+	{
+		if (((queryS == '*') || (this.triples[searchIndex].getS() == queryS)) &&
+		    ((queryP == '*') || (this.triples[searchIndex].getP() == queryP)) &&
+		    ((queryO == '*') || (this.triples[searchIndex].getO() == queryO)))
+		{
+			if (this.triples[searchIndex].getState() != 'deleted')
+		    	indexesFound[tfIndex++] = searchIndex;
+		}
+	}
+
+	return indexesFound;
+};
 
 TripleStore.prototype.isChanged = function ( )
 {

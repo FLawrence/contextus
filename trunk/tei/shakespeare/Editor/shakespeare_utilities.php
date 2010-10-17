@@ -3,6 +3,7 @@
 /*
 Contains:
 
+getUserID ( )
 printXMLHeaders ( )
 printNavigationList ( $current, $userID )
 loadProperties ( )
@@ -12,9 +13,20 @@ armourItem ( $item )
 
 */
 
+function getUserID ( )
+{
+    if (file_exists('debug_user_id'))
+    {
+    	$userFile = file('debug_user_id');
+    	return (trim($userFile[0]));
+    }
+    
+    return $_GET['idhash'];
+}
+
 function printXMLHeaders ( )
 {
-	print('<' . '?xml version="1.1" encoding="iso-8859-1"?>' . "\n");
+	print('<' . '?xml version="1.0" encoding="iso-8859-1"?>' . "\n");
 	print('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">' . "\n");
 }
 
@@ -25,7 +37,8 @@ function printNavigationList ( $current, $userID )
 	$navigationArray = array('characteredit.php' => 'Character Editor',
 							 'entityviewer.php' => 'Entity Viewer',
 							 'eventviewer.php' => 'Event Viewer',
-							 'locationedit.php' => 'Location Editor');
+							 'locationedit.php' => 'Location Editor', 
+							 'exp_locationedit.php' => 'Location Editor (Expanded)');
 
 	print('<ul id="navigationList">' . "\n");
 	foreach ($navigationArray as $url => $label)
