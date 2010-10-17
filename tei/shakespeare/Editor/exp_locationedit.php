@@ -112,7 +112,7 @@ printXMLHeaders();
 <?php printNavigationList('exp_locationedit.php', $userID) ?>
 
 <div id="entityChooser">
-   <form name="entityChooserForm" method="POST" onsubmit="displayChanges(); return false;" action="savedata.php">
+   <form name="entityChooserForm" method="POST" action="savedata.php">
 	<select class="chooseLocation" name="entityChooserSelect" onchange="entityChanged();"><option value="Please wait..." /></select>
 	<button id="saveChanges" name="saveButton">Save Changes</button><br />
 
