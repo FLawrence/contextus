@@ -9,7 +9,7 @@ function setupPage ( )
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
    currentEntity = selectTriples[0].getS();
    
-   alert("CurrentEntity: " + currentEntity);
+   //alert("CurrentEntity: " + currentEntity);
    
    document.entityChooserForm.entityChooserSelect.options.length = 0;
    var index = 0;
@@ -186,14 +186,18 @@ function updateControl ( controlName )
 
 function getDisplayName ( entityID )
 {
-   nameTriples = store.findTriples(entityID, nameLabel, '*');
+   var nameTriples = store.findTriples(entityID, nameLabel, '*');
+   var name = '[could not find name for ' + entityID + ']';
+   
+   if (nameTriples.length > 0) name = nameTriples[0].getO();
+   
    
    if (isAuto(entityID) == true)
    {
-      return nameTriples[0].getO() + ' (auto)';
+      return name + ' (auto)';
    }
 
-   return nameTriples[0].getO();
+   return name;
 }
 
 function getFullPropertyName ( controlName )
