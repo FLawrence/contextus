@@ -9,6 +9,8 @@ function setupPage ( )
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
    currentEntity = selectTriples[0].getS();
    
+   alert("CurrentEntity: " + currentEntity);
+   
    document.entityChooserForm.entityChooserSelect.options.length = 0;
    var index = 0;
    for (i = 0; i < selectTriples.length; i++)
