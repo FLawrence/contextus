@@ -97,4 +97,27 @@ function armourItem ( $item )
 	return $item;
 }
 
+function writeEntityControl ( $controlTitle )
+{
+	$controlName = str_replace(' ', '', $controlTitle);
+	$controlName[0] = strtolower($controlName[0]); 
+
+	echo <<< END_FORM
+	<div class="control" id="{$controlName}">
+		<p class="controlTitle">{$controlTitle}</p>
+		<form name="{$controlName}Form" onSubmit="return false;">
+			<select class="entitySelect" name="{$controlName}AddList">
+				<option value="Please wait..." />
+			</select>
+
+			<button id="{$controlName}AddButton" name="{$controlName}AddButton" onClick="addEntity('{$controlName}');">Add</button>
+       
+		<table class="entityList" id="{$controlName}List">
+			<tr><th>Name</th><th>&nbsp;</th></tr>
+		</table>
+		</form>
+	</div>
+END_FORM;
+}
+
 ?>
