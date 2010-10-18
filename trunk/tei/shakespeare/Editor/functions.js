@@ -6,7 +6,7 @@ var shadowOfLabel = 'http://purl.org/ontomedia/core/expression#is-shadow-of';
 
 function setupPage ( )
 {
-   selectTriples = store.findTriples('*', rdfTypeLabel);
+   selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
    currentEntity = selectTriples[0].getS();
    
    document.entityChooserForm.entityChooserSelect.options.length = 0;
