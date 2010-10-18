@@ -6,6 +6,7 @@
 	Last Change: $LastChangedDate$ (Rev: $Rev$)
 
 */
+var debug = true;
 
 function Property ( newProperty, newModule, newObject, newSubject, newMin, newMax, newExpected )
 {
@@ -192,6 +193,9 @@ TripleStore.prototype.findTriples = function ( queryS, queryP, queryO )
 		    	triplesFound[tfIndex++] = this.triples[searchIndex];
 		}
 	}
+	
+	if (debug == true)
+	   alert('TripleStore.findTriples:\nSearched for [' + queryS + '] [' + queryP + '] [' + queryO + '], found ' + triplesFound.length + ' results');
 
 	return triplesFound;
 };
