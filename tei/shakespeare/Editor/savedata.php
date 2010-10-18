@@ -85,18 +85,20 @@ foreach ($changes as $change)
 	}
 	else if ($_POST['saveType'] == 'location')
 	{
-		if (substr($s, 0, strlen($autoGraphURL)) == $autoGraphURL)
-		{
-			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
-			addTripleToGraph($userGraph, makeTriple($newS, 'a' , 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'));
-			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
-			addTripleToGraph($userGraph, makeTriple($newS, 'http://www.w3.org/2000/01/rdf-schema#label' ,$o));
-
-		}
-		else
-		{
-			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
-		}
+		deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
+		addTripleToGraph($userGraph, makeTriple($s, $p, $o));	
+//		if (substr($s, 0, strlen($autoGraphURL)) == $autoGraphURL)
+//		{
+//			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
+//			addTripleToGraph($userGraph, makeTriple($newS, 'a' , 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'));
+//			addTripleToGraph($userGraph, makeTriple($newS, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $s));
+//			addTripleToGraph($userGraph, makeTriple($newS, 'http://www.w3.org/2000/01/rdf-schema#label' ,$o));
+//
+//		}
+//		else
+//		{
+//			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
+//		}
 	}
 }
 
