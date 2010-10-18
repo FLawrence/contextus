@@ -68,7 +68,7 @@ echo <<< END_FORM
 END_FORM;
 }
 
-
+header('Cache-Control: no-store');
 printXMLHeaders();
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
