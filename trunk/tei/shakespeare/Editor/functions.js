@@ -174,7 +174,7 @@ function getFullPropertyName ( controlName )
 		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-part-of';
 
     if (controlName == 'locatedAdjacentTo')
-		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-adjacent-to';
+		return 'http://signage.ecs.soton.ac.uk/ontologies/location#adjacent-to';
 
     if (controlName == 'locatedAbove')
 		return 'http://signage.ecs.soton.ac.uk/ontologies/location#is-above';
