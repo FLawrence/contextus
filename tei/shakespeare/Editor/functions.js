@@ -175,7 +175,7 @@ function updateControl ( controlName )
    for (i = 0; i < listTriples.length; i++)
    {
       name = getDisplayName(listTriples[i].getO());
-      newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeLocation(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+      newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
    }
 
 	document.getElementById(controlName + 'List').innerHTML = newTableHTML;
