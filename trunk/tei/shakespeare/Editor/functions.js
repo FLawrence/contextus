@@ -20,6 +20,31 @@ function setupPage ( )
    updateAllControls();
 }
 
+function addEntity ( controlName )
+{
+    var propertyName = getFullPropertyName(controlName);
+    var index = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].selectedIndex;
+    var propertyValue = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[index].value;
+
+   mainLabelChanged();
+   
+   store.add(new Triple(currentEntity, propertyName, propertyValue, ''));
+   
+   updateControl(controlName);
+   checkFields();
+}
+
+function removeEntity ( controlName, entityToRemove )
+{
+   var propertyName = getFullPropertyName(controlName);
+   var triplesToRemove = store.findTripleIndexes(currentEntity, propertyName, entityToRemove);
+   store.deleteByIndex(triplesToRemove[0]);
+   
+   updateControl(controlName);
+   checkFields();
+}
+
+/*
 function addLocation ( controlName )
 {
     var propertyName = getFullPropertyName(controlName);
@@ -43,6 +68,7 @@ function removeLocation ( controlName, entityToRemove )
    updateControl(controlName);
    checkFields();
 }
+*/
 
 function entityChanged ( )
 {
@@ -542,4 +568,27 @@ function alertStore ( store )
 			"P=" + triples[i].getP() + "\n" +
 			"O=" + triples[i].getO())
 	}
+}
+
+function writeEntityControl ( $controlTitle )
+{
+	$controlName = str_replace(' ', '', $controlTitle);
+	$controlName[0] = strtolower($controlName[0]); 
+
+	echo <<< END_FORM
+	<div class="control" id="{$controlName}">
+		<p class="controlTitle">{$controlTitle}</p>
+		<form name="{$controlName}Form" onSubmit="return false;">
+			<select class="entitySelect" name="{$controlName}AddList">
+				<option value="Please wait..." />
+			</select>
+
+			<button id="{$controlName}AddButton" name="{$controlName}AddButton" onClick="addEntity('{$controlName}');">Add</button>
+       
+		<table class="entityList" id="{$controlName}List">
+			<tr><th>Name</th><th>&nbsp;</th></tr>
+		</table>
+		</form>
+	</div>
+	END_FORM;
 }

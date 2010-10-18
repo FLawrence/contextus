@@ -34,11 +34,10 @@ function printXMLHeaders ( )
 
 function printNavigationList ( $current, $userID )
 {
-	$navigationArray = array('characteredit.php' => 'Character Editor',
+	$navigationArray = array('exp_characteredit.php' => 'Character Editor',
 							 'entityviewer.php' => 'Entity Viewer',
 							 'eventviewer.php' => 'Event Viewer',
-							 'locationedit.php' => 'Location Editor', 
-							 'exp_locationedit.php' => 'Location Editor (Expanded)');
+							 'exp_locationedit.php' => 'Location Editor');
 
 	print('<ul id="navigationList">' . "\n");
 	foreach ($navigationArray as $url => $label)

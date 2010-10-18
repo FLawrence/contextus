@@ -45,7 +45,7 @@ foreach ($rAuto['result']['rows'] as $result)
 	}
 }
 
-function writeLocationControl ( $controlTitle )
+/* function writeLocationControl ( $controlTitle )
 {
    $controlName = str_replace(' ', '', $controlTitle);
    $controlName[0] = strtolower($controlName[0]); 
@@ -67,6 +67,8 @@ echo <<< END_FORM
 </div>
 END_FORM;
 }
+
+*/
 
 header('Cache-Control: no-store');
 printXMLHeaders();
@@ -112,7 +114,7 @@ printXMLHeaders();
 
 <div id="entityChooser">
    <form name="entityChooserForm" method="POST" onsubmit="displayChanges();" action="savedata.php">
-	<select class="chooseLocation" name="entityChooserSelect" onchange="entityChanged();"><option value="Please wait..." /></select>
+	<select class="chooseEntity" name="entityChooserSelect" onchange="entityChanged();"><option value="Please wait..." /></select>
 	<button id="saveChanges" name="saveButton">Save Changes</button><br />
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
@@ -133,9 +135,9 @@ printXMLHeaders();
 </div>
 
 <?php
-writeLocationControl('Located Within');
-writeLocationControl('Located Adjacent To');
-writeLocationControl('Is');
+writeEntityControl('Located Within');
+writeEntityControl('Located Adjacent To');
+writeEntityControl('Is');
 ?>
 
 <p id="namedEntityID">Please wait...</p>
