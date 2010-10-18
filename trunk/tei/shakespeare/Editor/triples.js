@@ -6,7 +6,7 @@
 	Last Change: $LastChangedDate$ (Rev: $Rev$)
 
 */
-var debug = true;
+var debug = false;
 
 function Property ( newProperty, newModule, newObject, newSubject, newMin, newMax, newExpected )
 {
