@@ -56,7 +56,7 @@ printXMLHeaders();
 	<script type="text/javascript" src="triples.js"></script>
 	<script type="text/javascript">
 	  var controlsToSetup = [];
-	   controlsToSetup[2] = 'is';
+	   controlsToSetup[0] = 'is';
 	   var entityType = 'http://purl.org/ontomedia/ext/common/being#Character';
 <?php
 	print("\tvar store = new TripleStore();\n");
