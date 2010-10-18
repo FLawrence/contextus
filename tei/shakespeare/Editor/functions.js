@@ -101,6 +101,8 @@ function updateAllControls ( )
    {
       updateControl(controlsToSetup[control]);
    }
+   
+   document.getElementById('namedEntityID').innerHTML = currentEntity;
 }
 
 function updateControl ( controlName )

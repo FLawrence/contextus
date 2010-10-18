@@ -138,5 +138,7 @@ writeLocationControl('Located Adjacent To');
 writeLocationControl('Is');
 ?>
 
+<p id="#namedEntityID">Please wait...</p>
+
 </body>
 </html>
