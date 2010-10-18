@@ -16,8 +16,8 @@ $query = FourStore_Namespace::to_sparql();
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
 
-$queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a loc:Space ; ?p ?o . FILTER (?p = rdfs:label || ?p = ome:is-shadow-of ||  ?p = rdf:type || ?p = ome:is || ?p = loc:is-part-of || ?p = loc:adjacent-to) }' . "\n";
-$queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a loc:Space ; ?p ?o . FILTER (?p = rdfs:label || ?p = ome:is-shadow-of ||  ?p = rdf:type || ?p = ome:is || ?p = loc:is-part-of || ?p = loc:adjacent-to) }' . "\n";
+$queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a loc:Space ; ?p ?o . FILTER (?p = rdfs:label || ?p = ome:is-shadow-of ||  ?p = rdf:type || ?p = ome:is || ?p = loc:is-part-of || ?p = loc:is-adjacent-to) }' . "\n";
+$queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a loc:Space ; ?p ?o . FILTER (?p = rdfs:label || ?p = ome:is-shadow-of ||  ?p = rdf:type || ?p = ome:is || ?p = loc:is-part-of || ?p = loc:is-adjacent-to) }' . "\n";
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $graph = array();
