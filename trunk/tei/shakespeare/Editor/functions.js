@@ -2,11 +2,11 @@
 var currentEntity;
 var rdfTypeLabel = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
 var shadowOfLabel = 'http://purl.org/ontomedia/core/expression#is-shadow-of';
-var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space';
+/* var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'; */
 
 function setupPage ( )
 {
-   selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
+   selectTriples = store.findTriples('*', rdfTypeLabel);
    currentEntity = selectTriples[0].getS();
    
    document.entityChooserForm.entityChooserSelect.options.length = 0;
@@ -77,7 +77,7 @@ function entityChanged ( )
    updateAllControls();
 }
 
-function createEntityInNewGraph ( entity, name )
+function createEntityInNewGraph ( entity, name)
 {
    var oldTripleIndexes = store.findTripleIndexes(entity, '*', '*');
    

@@ -57,6 +57,7 @@ printXMLHeaders();
 	<script type="text/javascript">
 	  var controlsToSetup = [];
 	   controlsToSetup[2] = 'is';
+	   var entityType = 'http://purl.org/ontomedia/ext/common/being#Character';
 <?php
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://xmlns.com/foaf/0.1/name';\n");
