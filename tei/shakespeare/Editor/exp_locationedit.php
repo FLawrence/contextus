@@ -83,6 +83,7 @@ printXMLHeaders();
 	   controlsToSetup[0] = 'locatedWithin';
 	   controlsToSetup[1] = 'locatedAdjacentTo';
 	   controlsToSetup[2] = 'is';
+	   var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'; 
 <?php	   
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");
