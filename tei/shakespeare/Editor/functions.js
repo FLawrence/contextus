@@ -123,7 +123,15 @@ function updateAllControls ( )
 {
    nameTriples = store.findTriples(currentEntity, nameLabel, '*');
 
-   document.generalInformationForm.entityName.value = nameTriples[0].getO();
+   if (nameTriples.length > 0)
+   {
+      document.generalInformationForm.entityName.value = nameTriples[0].getO();
+   }
+   else
+   {
+      document.generalInformationForm.entityName.value = 'unnamed';
+      mainLabelChanged();
+   }
 
    for (control = 0; control < controlsToSetup.length; control++)
    {
