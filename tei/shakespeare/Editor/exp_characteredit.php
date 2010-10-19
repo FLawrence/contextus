@@ -22,7 +22,9 @@ $graphMeta = 'http://contextus.net/resource/meta/';
 $queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 $queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 
-$stateQuery = $query . "\nSELECT DISTINCT ?s ?label\nFROM <". $graphMeta . ">\n" . 'WHERE { ?s a omt:State-Of-Being; rdfs:label ?label }' . "\n";
+$stateQuery = $query . "\nSELECT DISTINCT ?s ?label\n" . 'WHERE { ?s a omt:State-Of-Being; rdfs:label ?label }' . "\n";
+
+print($stateQuery);
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $graph = array();
