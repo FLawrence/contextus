@@ -9,6 +9,7 @@ $propertyList = loadProperties();
 
 FourStore_Namespace::addW3CNamespace();
 FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
+FourStore_Namespace::add('omt','http://purl.org/ontomedia/ext/common/trait#');
 FourStore_Namespace::add('ome','http://purl.org/ontomedia/core/expression#');
 FourStore_Namespace::add('foaf','http://xmlns.com/foaf/0.1/');
 
@@ -16,9 +17,12 @@ $query = FourStore_Namespace::to_sparql();
 
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
+$graphMeta = 'http://contextus.net/resource/meta/';
 
 $queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 $queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
+
+$stateQuery = $query . "\nSELECT DISTINCT ?s ?label\nFROM <". $graphMeta . ">\n" . 'WHERE { ?s a omt:State-Of-Being; rdfs:label ?label }
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $graph = array();
@@ -45,6 +49,7 @@ foreach ($rAuto['result']['rows'] as $result)
 		addTripleToGraph($graph, makeTriple($result['s'], $result['p'], $result['o']));
 	}
 }
+
 
 header('Cache-Control: no-store');
 printXMLHeaders();
@@ -106,6 +111,34 @@ printXMLHeaders();
    <p class="controlTitle">General Information</p>
    <form name="generalInformationForm">
       <p>Name: <input name="entityName" value="" onkeyup="mainLabelChanged();" /></p>
+   </form>
+</div>
+
+<div class="control" id="stateInformation">
+   <p class="controlTitle">State Information at Start of Text</p>
+   <form name="stateInformationForm">
+      <p>State of Being: 
+      <select class="chooseEntity" name="stateBeingSelect" onchange="stateBChanged();">
+      <?
+      		$rAuto = $s->query($stateQuery);
+      		
+     		foreach ($rAuto['result']['rows'] as $result)
+		{ 	
+      			print("<option value='" . $result['s'] . "'>" . $result['label'] . "</option>");
+      		}
+      ?>
+      </select></p>
+      <p>State of Form: <select class="chooseEntity" name="stateFormSelect" onchange="stateFChanged();"><option value="Please wait..." /></select></p>
+   </form>
+</div>
+
+<div class="control" id="sexInformation">
+   <p class="controlTitle">Gender/Sexuality Information at Start of Text</p>
+   <form name="stateInformationForm">
+      	<p>Gender: <select class="chooseEntity" name="genderSelect" onchange="genderChanged();"><option value="Please wait..." /></select></p>
+      	<p>Projected Gender: <select class="chooseEntity" name="projGenderSelect" onchange="projGenderChanged();"><option value="Please wait..." /></select></p>
+      	<p>Sexuality: <select class="chooseEntity" name="sexSelect" onchange="sexChanged();"><option value="Please wait..." /></select></p>
+      	<p>Projected Sexuality: <select class="chooseEntity" name="projSexSelect" onchange="projSexChanged();"><option value="Please wait..." /></select></p>
    </form>
 </div>
 
