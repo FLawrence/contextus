@@ -17,3 +17,5 @@
 "refers-to","http://purl.org/ontomedia/core/expression#","http://purl.org/ontomedia/core/expression#Event",,0,"m","I","http://purl.org/ontomedia/core/expression#referenced-by"
 "precedes","http://purl.org/ontomedia/core/expression#","http://purl.org/ontomedia/core/expression#Event","http://purl.org/ontomedia/core/expression#Event",1,1,"I","http://purl.org/ontomedia/core/expression#follows"
 "follows","http://purl.org/ontomedia/core/expression#","http://purl.org/ontomedia/core/expression#Event","http://purl.org/ontomedia/core/expression#Event",1,1,"I","http://purl.org/ontomedia/core/expression#precedes"
+"has-trait","http://purl.org/ontomedia/ext/common/trait#","http://purl.org/ontomedia/ext/common/trait#Being","http://purl.org/ontomedia/ext/common/trait#Trait",0,"m","I",
+"has-projected-trait","http://purl.org/ontomedia/ext/common/trait#","http://purl.org/ontomedia/ext/common/trait#Being","http://purl.org/ontomedia/ext/common/trait#Trait",0,"m","I",
