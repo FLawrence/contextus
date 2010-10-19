@@ -5676,9 +5676,6 @@
     <_10:has-subject-entity rdf:resource="http://contextus.net/resource/midsum_night_dream/auto/group/25"/>
     <_10:to rdf:resource="http://contextus.net/resource/midsum_night_dream/auto/location/6"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://contextus.net/resource/midsum_night_dream/auto/Other_fairies_attending_their_King_and_Queen">
-    <foaf:name>Other Fairies Attending Their King And Queen</foaf:name>
-  </rdf:Description>
   <rdf:Description rdf:about="http://contextus.net/resource/midsum_night_dream/auto/event/122">
     <_10:follows rdf:resource="http://contextus.net/resource/midsum_night_dream/auto/event/121"/>
     <_10:precedes rdf:resource="http://contextus.net/resource/midsum_night_dream/auto/event/123"/>
@@ -6275,6 +6272,7 @@
     <_10:involved-in rdf:resource="http://contextus.net/resource/midsum_night_dream/auto/event/135"/>
     <_10:involved-in rdf:resource="http://contextus.net/resource/midsum_night_dream/auto/event/121"/>
     <rdf:type rdf:resource="http://purl.org/ontomedia/ext/common/being#Character"/>
+    <foaf:name>Other Fairies Attending Their King And Queen</foaf:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://contextus.net/resource/midsum_night_dream/auto/event/355">
     <_10:follows rdf:resource="http://contextus.net/resource/midsum_night_dream/auto/event/354"/>
