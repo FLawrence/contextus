@@ -28,7 +28,7 @@ td.changed	{ color: red }
 
 button#saveChanges { margin-left: 200px }
 
-table.locationList { width: 60%; min-height: 150px; background-color: #bbb }
+table.entityList { width: 60%; min-height: 150px; background-color: #bbb }
 
 div.control { background-color: white; border: 1px solid black; margin-top: 10px; }
 
