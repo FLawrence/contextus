@@ -22,9 +22,9 @@ $graphMeta = 'http://contextus.net/resource/meta/';
 $queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 $queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 
-$stateQuery = $query . "\nSELECT DISTINCT ?s ?label\n" . 'WHERE { ?s a omt:State-Of-Being; rdfs:label ?label }' . "\n";
+/* $stateQuery = $query . "\nSELECT DISTINCT ?s ?label\n" . 'WHERE { ?s a omt:State-Of-Being; rdfs:label ?label }' . "\n";
 
-print($stateQuery);
+print($stateQuery); */
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $graph = array();
@@ -116,7 +116,7 @@ printXMLHeaders();
    </form>
 </div>
 
-<div class="control" id="stateInformation">
+<!-- <div class="control" id="stateInformation">
    <p class="controlTitle">State Information at Start of Text</p>
    <form name="stateInformationForm">
       <p>State of Being: 
@@ -142,7 +142,7 @@ printXMLHeaders();
       	<p>Sexuality: <select class="chooseEntity" name="sexSelect" onchange="sexChanged();"><option value="Please wait..." /></select></p>
       	<p>Projected Sexuality: <select class="chooseEntity" name="projSexSelect" onchange="projSexChanged();"><option value="Please wait..." /></select></p>
    </form>
-</div>
+</div> -->
 
 <?php
 writeEntityControl('Is');
