@@ -38,6 +38,19 @@ To Do:
  # Entity drop downs and text boxes implemented - also need to implement classes dropdown
  # ~~Improve display~~
 
+useful queries
+{{{
+
+SELECT DISTINCT ?l
+WHERE {
+  { <http://www.contextus.net/resource/meta/Female> ?p ?o; rdfs:label ?l }
+  UNION
+  { ?s <http://purl.org/ontomedia/ext/common/trait#identified-with> <http://www.contextus.net/resource/meta/Female>; rdfs:label ?l }
+}
+ORDER BY ?l
+
+}}}
+
 == Milestone 3: Basic Event Editor ==
 
  * Editor can load up the information related to an event:
