@@ -33,13 +33,10 @@ foreach ($results['result']['rows'] as $result)
 $results = array();
 
 if ($_POST['saveType'] == 'character')
-	$continueURL = 'characteredit.php?idhash=' . $_POST['idhash'];
+	$continueURL = 'exp_characteredit.php?idhash=' . $_POST['idhash'];
 else if ($_POST['saveType'] == 'location')
 {
-	$continueURL = 'locationedit.php?idhash=' . $_POST['idhash'];
-
-    if (isset($_POST['source']))
-    	$continueURL = $_POST['source'] . '?idhash=' . $_POST['idhash'];
+	$continueURL = 'exp_locationedit.php?idhash=' . $_POST['idhash'];
 }
 
 
@@ -68,25 +65,27 @@ foreach ($changes as $change)
 	if ($change == '') continue;
 
 	list($s, $p, $o, $originalO) = explode('|', $change, 4);
+	deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
+	addTripleToGraph($userGraph, makeTriple($s, $p, $o));
 
-	if ($_POST['saveType'] == 'character')
-	{
-		$originalS = $s;
-		$s = str_replace($autoGraphURL, $userGraphURL, $s);
-
-		if ($s != $originalS)
-		{
-			addTripleToGraph($userGraph, makeTriple($s, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
-			addTripleToGraph($userGraph, makeTriple($s, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalS));
-		}
-
-		deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
-		addTripleToGraph($userGraph, makeTriple($s, $p, $o));
-	}
-	else if ($_POST['saveType'] == 'location')
-	{
-		deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
-		addTripleToGraph($userGraph, makeTriple($s, $p, $o));	
+//	if ($_POST['saveType'] == 'character')
+//	{
+//		$originalS = $s;
+//		$s = str_replace($autoGraphURL, $userGraphURL, $s);
+//
+//		if ($s != $originalS)
+//		{
+//			addTripleToGraph($userGraph, makeTriple($s, 'a' , 'http://purl.org/ontomedia/ext/common/being#Character'));
+//			addTripleToGraph($userGraph, makeTriple($s, 'http://purl.org/ontomedia/core/expression#is-shadow-of' , $originalS));
+//		}
+//
+//		deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
+//		addTripleToGraph($userGraph, makeTriple($s, $p, $o));
+//	}
+//	else if ($_POST['saveType'] == 'location')
+//	{
+//		deleteTripleFromGraph($userGraph, makeTriple($s, $p, $originalO));
+//		addTripleToGraph($userGraph, makeTriple($s, $p, $o));
 //		if (substr($s, 0, strlen($autoGraphURL)) == $autoGraphURL)
 //		{
 //			$newS = str_replace($autoGraphURL, $userGraphURL, $s);
@@ -99,7 +98,7 @@ foreach ($changes as $change)
 //		{
 //			addTripleToGraph($userGraph, makeTriple($s, $p, $o));
 //		}
-	}
+//	}
 }
 
 $results['Deleting Graph'] = $sWrite->delete($userGraphURL);
