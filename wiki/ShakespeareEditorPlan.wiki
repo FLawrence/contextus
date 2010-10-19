@@ -34,9 +34,9 @@ Progress so far (Keith): Implemented functions to add triples from properties an
 
 To Do: 
  # Implement addition of reciprocal values
- # --Multiple dropdowns (in javascript add create and add properties to multiple dropdown boxes - still creating options on a per-page basis but can have multiple options within that page)--
+ # ~~Multiple dropdowns (in javascript add create and add properties to multiple dropdown boxes - still creating options on a per-page basis but can have multiple options within that page)~~
  # Entity drop downs and text boxes implemented - also need to implement classes dropdown
- # --Improve display--
+ # ~~Improve display~~
 
 == Milestone 3: Basic Event Editor ==
 
