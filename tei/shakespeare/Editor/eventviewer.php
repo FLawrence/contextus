@@ -20,8 +20,16 @@ FourStore_Namespace::add('omj','http://purl.org/ontomedia/ext/events/travel#');
 FourStore_Namespace::add('foaf','http://xmlns.com/foaf/0.1/');
 $query = FourStore_Namespace::to_sparql();
 
-$graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
-$graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
+if(isset($_POST['gragh']))
+{
+	$graphAuto = $_POST['gragh'] . 'auto/';
+	$graphUser = $_POST['gragh'] . $userID .  '/';	
+}
+else
+{
+	$graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
+	$graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
+}
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 
@@ -341,6 +349,7 @@ function retrieveStage ( $xpointer )
 
 <p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
 </form>
+<p><a href="eventviewer.php?goto=true&eventNum=1">Act 1, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=57">Act 1, Scene 2</a>
 <hr />
 <table>
 <tr><td>Event Number</td><td><?php print($eventNum);?></td></tr>
