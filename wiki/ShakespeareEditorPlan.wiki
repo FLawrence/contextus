@@ -33,10 +33,14 @@ Progress so far (Keith): Implemented functions to add triples from properties an
 (Faith): Duplicated code implemented on characteredit page on locationedit page and added way to differentiate between which groups of properties are displayed as options.
 
 To Do: 
- # Implement addition of reciprocal values
+ # ~~Implement addition of reciprocal values~~
  # ~~Multiple dropdowns (in javascript add create and add properties to multiple dropdown boxes - still creating options on a per-page basis but can have multiple options within that page)~~
- # Entity drop downs and text boxes implemented - also need to implement classes dropdown
  # ~~Improve display~~
+
+Types of dropdowns needed
+ # ~~content of relevant types of instances from Dream graph~~
+ # content from csv file
+ # content from relevant types of instance from meta gragh
 
 useful queries
 {{{
