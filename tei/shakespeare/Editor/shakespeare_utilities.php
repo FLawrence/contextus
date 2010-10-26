@@ -76,6 +76,29 @@ function loadProperties ( )
 	return $propertyDetails;
 }
 
+function loadClasses ( )
+{
+	$classDetails = array();
+
+	$classFile = fopen("classes.csv", "r");
+	
+	$headers = fgetcsv($classFile);
+
+    while (($data = fgetcsv($classFile)) !== FALSE)
+    {
+    	$dataHash = array();
+
+    	for ($i = 0; $i < count($headers); $i++)
+    		$dataHash[$headers[$i]] = $data[$i];
+
+    	$classDetails[] = $dataHash;
+    }
+
+	fclose($classFile);
+
+	return $classDetails;
+}
+
 function addTripleToGraph ( &$graph, $triple )
 {
 	$graph[md5($triple['s'] . $triple['p'] . $triple['o'])] = $triple;

@@ -6,6 +6,7 @@ require('shakespeare_utilities.php');
 $userID = getUserID();
 
 $propertyList = loadProperties();
+$classList = loadClasses();
 
 FourStore_Namespace::addW3CNamespace();
 FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
@@ -83,6 +84,8 @@ printXMLHeaders();
 	   controlsToSetup[0] = 'locatedWithin';
 	   controlsToSetup[1] = 'locatedAdjacentTo';
 	   controlsToSetup[2] = 'is';
+	   var classControlsToSetup = [];
+	   setControlsToSetup[0] = 'type';  
 	   var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space';
 <?php
 	print("\tvar store = new TripleStore();\n");
@@ -106,6 +109,14 @@ printXMLHeaders();
 		      "', '" . $property['reciprocal'] . "');\n");
 		$index++;
 	}
+
+	$index = 0;	
+	foreach($classList as $class)
+	{
+		print("\tclasses[" . $index . "] = new Class('" . $class['type'] . "', '" . $class['value'] .
+		      "', '" . $class['display'] . "');\n");
+		$index++;
+	}	
 ?>
 	</script>
 	<script type="text/javascript" src="functions.js"></script>
@@ -137,6 +148,7 @@ printXMLHeaders();
 </div>
 
 <?php
+writeEntityControl('Type');
 writeEntityControl('Located Within');
 writeEntityControl('Located Adjacent To');
 writeEntityControl('Is');
