@@ -83,7 +83,9 @@ printXMLHeaders();
 	{
 		print("\tproperties[" . $index . "] = new Property('" . $property['property'] . "', '" . $property['module'] .
 		      "', '" . $property['object restriction'] . "', '" . $property['subject restriction'] .
-		      "', '" . $property['min'] . "', '" . $property['max'] . "', '" . $property['expected'] . "');\n");
+		      "', '" . $property['min'] . "', '" . $property['max'] . "', '" . $property['expected'] .
+		      "', '" . $property['reciprocal'] . "');\n");
+
 		$index++;
 	}
 ?>
@@ -102,10 +104,10 @@ printXMLHeaders();
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 	<input name="saveType" type="hidden" value="location" />
 	<input name="source" type="hidden" value="exp_locationedit.php" />
-	
+
 	<input name="addedTriples" type="hidden" value="" />
 	<input name="changedTriples" type="hidden" value="" />
-	<input name="deletedTriples" type="hidden" value="" />		
+	<input name="deletedTriples" type="hidden" value="" />
 	</form>
 </div>
 
@@ -119,13 +121,13 @@ printXMLHeaders();
 <!-- <div class="control" id="stateInformation">
    <p class="controlTitle">State Information at Start of Text</p>
    <form name="stateInformationForm">
-      <p>State of Being: 
+      <p>State of Being:
       <select class="chooseEntity" name="stateBeingSelect" onchange="stateBChanged();">
       <?
       		$rAuto = $s->query($stateQuery);
-      		
+
      		foreach ($rAuto['result']['rows'] as $result)
-		{ 	
+		{
       			print("<option value='" . $result['s'] . "'>" . $result['label'] . "</option>");
       		}
       ?>

@@ -29,9 +29,38 @@ function addEntity ( controlName )
     var propertyValue = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[index].value;
 
    mainLabelChanged();
-   
+
+   if (isAuto(propertyValue) == true)
+   {
+      var oldNameTriple = store.findTriple(propertyValue, nameLabel);
+      var newPropertyValue = createEntityInNewGraph(propertyValue, oldNameTriple.getO());
+
+      var option = new Option(oldNameTriple.getO(), newPropertyValue, false, false);
+      for (i = 0; i < document.entityChooserForm.entityChooserSelect.options.length; i++)
+      {
+         if (document.entityChooserForm.entityChooserSelect.options[i].value == propertyValue)
+	 {
+	    document.entityChooserForm.entityChooserSelect.options[i] = option;
+         }
+      }
+
+      propertyValue = newPropertyValue;
+   }
+
    store.add(new Triple(currentEntity, propertyName, propertyValue, ''));
-   
+
+   // Add reciprocal, if any
+   for(i = 0; i < properties.length; i++)
+   {
+      if (propertyName == (properties[i].module + properties[i].property))
+      {
+         if (properties[i].reciprocal != '')
+         {
+            store.add(new Triple(propertyValue, properties[i].reciprocal, currentEntity, ''));
+         }
+      }
+   }
+
    updateControl(controlName);
    checkFields();
 }
@@ -41,6 +70,20 @@ function removeEntity ( controlName, entityToRemove )
    var propertyName = getFullPropertyName(controlName);
    var triplesToRemove = store.findTripleIndexes(currentEntity, propertyName, entityToRemove);
    store.deleteByIndex(triplesToRemove[0]);
+
+   // Add reciprocal, if any
+   for(i = 0; i < properties.length; i++)
+   {
+      if (propertyName == (properties[i].module + properties[i].property))
+      {
+         if (properties[i].reciprocal != '')
+         {
+            triplesToRemove = store.findTripleIndexes(entityToRemove, properties[i].reciprocal, currentEntity);
+            store.deleteByIndex(triplesToRemove[0]);
+         }
+      }
+   }
+
    
    updateControl(controlName);
    checkFields();
@@ -74,12 +117,12 @@ function removeLocation ( controlName, entityToRemove )
 
 function entityChanged ( )
 {
-	currentEntity = document.entityChooserForm.entityChooserSelect.options[document.entityChooserForm.entityChooserSelect.selectedIndex].value;
+    currentEntity = document.entityChooserForm.entityChooserSelect.options[document.entityChooserForm.entityChooserSelect.selectedIndex].value;
 
    updateAllControls();
 }
 
-function createEntityInNewGraph ( entity, name)
+function createEntityInNewGraph ( entity, name )
 {
    var oldTripleIndexes = store.findTripleIndexes(entity, '*', '*');
    
@@ -89,7 +132,7 @@ function createEntityInNewGraph ( entity, name)
    }
    
    var newID = 'http://contextus.net/resource/midsum_night_dream/' + userID + '/' + entity.substring(54);
-   
+
    store.add(new Triple(newID, nameLabel, name, ''));
    store.add(new Triple(newID, shadowOfLabel, entity, ''));
    store.add(new Triple(newID, rdfTypeLabel, entityType, ''));
@@ -119,7 +162,7 @@ function mainLabelChanged ( )
    checkFields();
 }
 
-function updateAllControls ( )
+function updateMainChooser (  )
 {
    nameTriples = store.findTriples(currentEntity, nameLabel, '*');
 
@@ -132,6 +175,11 @@ function updateAllControls ( )
       document.generalInformationForm.entityName.value = 'unnamed';
       mainLabelChanged();
    }
+}
+
+function updateAllControls ( )
+{
+   updateMainChooser();
 
    for (control = 0; control < controlsToSetup.length; control++)
    {
