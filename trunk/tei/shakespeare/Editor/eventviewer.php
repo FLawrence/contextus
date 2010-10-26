@@ -354,11 +354,11 @@ function retrieveStage ( $xpointer )
 
 <p>Go To Event: <input name="eventNum" type="text"><button name="goto">Go</button></p>
 </form>
-<p><a href="eventviewer.php?goto=true&eventNum=1">Act 1, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=57">Act 1, Scene 2</a>
-*&nbsp;<a href="eventviewer.php?goto=true&eventNum=100">Act 2, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=146">Act 2, Scene 2</a>
-*&nbsp;<a href="eventviewer.php?goto=true&eventNum=177">Act 3, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=254">Act 3, Scene 2</a>
-*&nbsp;<a href="eventviewer.php?goto=true&eventNum=382">Act 4, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=439">Act 4, Scene 2</a>
-*&nbsp;<a href="eventviewer.php?goto=true&eventNum=457">Act 5, Scene 1</a></p>
+<p><a href="eventviewer.php?goto=true&eventNum=1&idhash=<?php echo $userID ?>">Act 1, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=57&idhash=<?php echo $userID ?>">Act 1, Scene 2</a>
+*&nbsp;<a href="eventviewer.php?goto=true&eventNum=100&idhash=<?php echo $userID ?>">Act 2, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=146&idhash=<?php echo $userID ?>">Act 2, Scene 2</a>
+*&nbsp;<a href="eventviewer.php?goto=true&eventNum=177&idhash=<?php echo $userID ?>">Act 3, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=254&idhash=<?php echo $userID ?>">Act 3, Scene 2</a>
+*&nbsp;<a href="eventviewer.php?goto=true&eventNum=382&idhash=<?php echo $userID ?>">Act 4, Scene 1</a>&nbsp;*&nbsp;<a href="eventviewer.php?goto=true&eventNum=439&idhash=<?php echo $userID ?>">Act 4, Scene 2</a>
+*&nbsp;<a href="eventviewer.php?goto=true&eventNum=457&idhash=<?php echo $userID ?>">Act 5, Scene 1</a></p>
 <hr />
 <table>
 <tr><td>Event Number</td><td><?php print($eventNum);?></td></tr>
