@@ -186,6 +186,11 @@ function updateAllControls ( )
       updateControl(controlsToSetup[control]);
    }
    
+   for (control = 0; control < classControlsToSetup.length; control++)
+   {
+      updateClassControl(classControlsToSetup[control]);
+   }   
+   
    document.getElementById('namedEntityID').innerHTML = currentEntity;
 }
 
@@ -239,6 +244,58 @@ function updateControl ( controlName )
 	document.getElementById(controlName + 'List').innerHTML = newTableHTML;
 }
 
+function updateClassControl ( controlName )
+{
+   propertyName = getFullPropertyName(controlName);
+
+   listTriples = store.findTriples(currentEntity, propertyName, '*');
+   selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
+
+  /* document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
+   var optionsIndex = 0;
+
+   for (i = 0; i < selectTriples.length; i++)
+   {
+      if (selectTriples[i].getS() == currentEntity) continue;
+      
+      var skip = false;
+      for (j = 0; j < listTriples.length; j++)
+      {
+          if (selectTriples[i].getS() == listTriples[j].getO()) skip = true;
+      }
+      if (skip == true) continue;
+      
+      var option = new Option(getDisplayName(selectTriples[i].getS()), selectTriples[i].getS(), false, false);
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[optionsIndex++] = option;
+   }
+   */
+
+   if (optionsIndex == 0)
+   {
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].disabled = true;
+      document.forms[controlName + 'Form'].elements[controlName + 'AddButton'].disabled = true;
+ 
+      var option = new Option('All entities in list', 'null', false, false);
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[0] = option;
+   }
+   else
+   {
+      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].disabled = false;
+      document.forms[controlName + 'Form'].elements[controlName + 'AddButton'].disabled = false;
+   }
+
+   var newTableHTML = '<tr><th></th><th>&nbsp;</th></tr>';
+
+   for (i = 0; i < listTriples.length; i++)
+   {
+      name = getDisplayName(listTriples[i].getO());
+      newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+   }
+
+	document.getElementById(controlName + 'List').innerHTML = newTableHTML;
+   
+}
+
 
 function getDisplayName ( entityID )
 {
@@ -272,6 +329,9 @@ function getFullPropertyName ( controlName )
 
     if (controlName == 'is')
 		return 'http://purl.org/ontomedia/core/expression#is';
+		
+    if (controlName == 'type')
+		return 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';		
 }
 
 function isAuto ( entityID )

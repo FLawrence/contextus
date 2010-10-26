@@ -118,7 +118,7 @@ printXMLHeaders();
    </form>
 </div>
 
-<!-- <div class="control" id="stateInformation">
+<div class="control" id="stateInformation">
    <p class="controlTitle">State Information at Start of Text</p>
    <form name="stateInformationForm">
       <p>State of Being:
@@ -139,12 +139,12 @@ printXMLHeaders();
 <div class="control" id="sexInformation">
    <p class="controlTitle">Gender/Sexuality Information at Start of Text</p>
    <form name="stateInformationForm">
-      	<p>Gender: <select class="chooseEntity" name="genderSelect" onchange="genderChanged();"><option value="Please wait..." /></select></p>
-      	<p>Projected Gender: <select class="chooseEntity" name="projGenderSelect" onchange="projGenderChanged();"><option value="Please wait..." /></select></p>
+      	<p>Gender: <select class="chooseEntity" name="genderSelect" onchange="genderChanged();"><option value="Please wait..." /></select> Expanded <input type="checkbox" name="genderExpand" /></p>
+      	<p>Projected Gender: <select class="chooseEntity" name="projGenderSelect" onchange="projGenderChanged();"><option value="Please wait..." /></select> Expanded <input type="checkbox" name="projGenderExpand" /></p>
       	<p>Sexuality: <select class="chooseEntity" name="sexSelect" onchange="sexChanged();"><option value="Please wait..." /></select></p>
       	<p>Projected Sexuality: <select class="chooseEntity" name="projSexSelect" onchange="projSexChanged();"><option value="Please wait..." /></select></p>
    </form>
-</div> -->
+</div>
 
 <?php
 writeEntityControl('Is');
