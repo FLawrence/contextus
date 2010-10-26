@@ -8,7 +8,7 @@
 */
 var debug = false;
 
-function Property ( newProperty, newModule, newObject, newSubject, newMin, newMax, newExpected )
+function Property ( newProperty, newModule, newObject, newSubject, newMin, newMax, newExpected, newReciprocal )
 {
 	this.property = newProperty;
 	this.module = newModule;
@@ -17,6 +17,7 @@ function Property ( newProperty, newModule, newObject, newSubject, newMin, newMa
 	this.min = newMin;
 	this.max = newMax;
 	this.expected = newExpected;
+	this.reciprocal = newReciprocal;
 }
 
 function Triple ( newS, newP, newO, originalO )

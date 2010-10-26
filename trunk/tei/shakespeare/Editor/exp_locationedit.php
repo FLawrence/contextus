@@ -48,7 +48,7 @@ foreach ($rAuto['result']['rows'] as $result)
 /* function writeLocationControl ( $controlTitle )
 {
    $controlName = str_replace(' ', '', $controlTitle);
-   $controlName[0] = strtolower($controlName[0]); 
+   $controlName[0] = strtolower($controlName[0]);
 
 echo <<< END_FORM
 <div class="control" id="{$controlName}">
@@ -59,7 +59,7 @@ echo <<< END_FORM
        </select>
 
 	   <button id="{$controlName}AddButton" name="{$controlName}AddButton" onClick="addLocation('{$controlName}');">Add</button>
-       
+
        <table class="locationList" id="{$controlName}List">
 	      <tr><th>Name</th><th>&nbsp;</th></tr>
        </table>
@@ -83,8 +83,8 @@ printXMLHeaders();
 	   controlsToSetup[0] = 'locatedWithin';
 	   controlsToSetup[1] = 'locatedAdjacentTo';
 	   controlsToSetup[2] = 'is';
-	   var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'; 
-<?php	   
+	   var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space';
+<?php
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");
 	print("\tvar pageType = 'location';\n");
@@ -102,10 +102,11 @@ printXMLHeaders();
 	{
 		print("\tproperties[" . $index . "] = new Property('" . $property['property'] . "', '" . $property['module'] .
 		      "', '" . $property['object restriction'] . "', '" . $property['subject restriction'] .
-		      "', '" . $property['min'] . "', '" . $property['max'] . "', '" . $property['expected'] . "');\n");
+		      "', '" . $property['min'] . "', '" . $property['max'] . "', '" . $property['expected'] .
+		      "', '" . $property['reciprocal'] . "');\n");
 		$index++;
 	}
-?>	
+?>
 	</script>
 	<script type="text/javascript" src="functions.js"></script>
 </head>
@@ -121,10 +122,10 @@ printXMLHeaders();
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
 	<input name="saveType" type="hidden" value="location" />
 	<input name="source" type="hidden" value="exp_locationedit.php" />
-	
+
 	<input name="addedTriples" type="hidden" value="" />
 	<input name="changedTriples" type="hidden" value="" />
-	<input name="deletedTriples" type="hidden" value="" />		
+	<input name="deletedTriples" type="hidden" value="" />
 	</form>
 </div>
 
