@@ -39,8 +39,13 @@ if(isset($_POST['previous']))
 	$eventNum = $_POST['previousid'];
 else if(isset($_POST['next']))
 	$eventNum = $_POST['nextid'];
-else if(isset($_POST['goto']) && $_POST['eventNum'] != "")
-	$eventNum = $_POST['eventNum'];
+else if((isset($_POST['goto']) && $_POST['eventNum'] != "") || (isset($_GET['goto']) && $_GET['eventNum'] != ""))
+{
+	if(isset($_POST['eventNum']))
+		$eventNum = $_POST['eventNum'];
+	else
+		$eventNum = $_GET['eventNum'];
+}
 else
 {
 	$queryAuto1 = $query . "\n" . 'SELECT DISTINCT ?id WHERE { { GRAPH ?g {?id a ome:Event}} {GRAPH <' . $graphAuto . '> { ?id ?p ?o } } } ORDER BY ?id LIMIT 1' . "\n";
