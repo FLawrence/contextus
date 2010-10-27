@@ -95,6 +95,8 @@ function loadClasses ( )
     }
 
 	fclose($classFile);
+	
+	//print_r($classDetails);
 
 	return $classDetails;
 }
@@ -120,7 +122,7 @@ function armourItem ( $item )
 	return $item;
 }
 
-function writeEntityControl ( $controlTitle )
+function writeEntityControl ( $controlTitle, $entityControlType )
 {
 	$controlName = str_replace(' ', '', $controlTitle);
 	$controlName[0] = strtolower($controlName[0]); 
@@ -133,7 +135,7 @@ function writeEntityControl ( $controlTitle )
 				<option value="Please wait..." />
 			</select>
 
-			<button id="{$controlName}AddButton" name="{$controlName}AddButton" onClick="addEntity('{$controlName}');">Add</button>
+			<button id="{$controlName}AddButton" name="{$controlName}AddButton" onClick="add{$entityControlType}Entity('{$controlName}');">Add</button>
        
 		<table class="entityList" id="{$controlName}List">
 			<tr><th>Name</th><th>&nbsp;</th></tr>

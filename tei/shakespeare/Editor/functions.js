@@ -65,6 +65,15 @@ function addEntity ( controlName )
    checkFields();
 }
 
+function addClassEntity ( controlName )
+{
+
+
+    
+   updateClassControl(controlName);
+   checkFields();
+}
+
 function removeEntity ( controlName, entityToRemove )
 {
    var propertyName = getFullPropertyName(controlName);
@@ -86,6 +95,14 @@ function removeEntity ( controlName, entityToRemove )
 
    
    updateControl(controlName);
+   checkFields();
+}
+
+function removeClassEntity ( controlName, entityToRemove )
+{
+
+   
+   updateClassControl(controlName);
    checkFields();
 }
 
@@ -233,7 +250,7 @@ function updateControl ( controlName )
       document.forms[controlName + 'Form'].elements[controlName + 'AddButton'].disabled = false;
    }
 
-   var newTableHTML = '<tr><th>Name</th><th>&nbsp;</th></tr>';
+   var newTableHTML = '<tr><th>&nbsp;</th><th>&nbsp;</th></tr>';
 
    for (i = 0; i < listTriples.length; i++)
    {
@@ -250,25 +267,18 @@ function updateClassControl ( controlName )
 
    listTriples = store.findTriples(currentEntity, propertyName, '*');
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
-
-  /* document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
+   
+   document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
    var optionsIndex = 0;
-
-   for (i = 0; i < selectTriples.length; i++)
-   {
-      if (selectTriples[i].getS() == currentEntity) continue;
-      
-      var skip = false;
-      for (j = 0; j < listTriples.length; j++)
-      {
-          if (selectTriples[i].getS() == listTriples[j].getO()) skip = true;
-      }
-      if (skip == true) continue;
-      
-      var option = new Option(getDisplayName(selectTriples[i].getS()), selectTriples[i].getS(), false, false);
-      document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[optionsIndex++] = option;
+   
+   for (j = 0; j < classes.length; j++)
+   {   	
+   	if(classes[j].type == "http://purl.org/ontomedia/core/space#Space")
+   	{
+      		var option = new Option(classes[j].display, classes[j].value, false, false);
+      		document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[optionsIndex++] = option;   	
+      	}
    }
-   */
 
    if (optionsIndex == 0)
    {
@@ -284,12 +294,32 @@ function updateClassControl ( controlName )
       document.forms[controlName + 'Form'].elements[controlName + 'AddButton'].disabled = false;
    }
 
-   var newTableHTML = '<tr><th></th><th>&nbsp;</th></tr>';
+   var newTableHTML = '<tr><th>&nbsp;</th><th>&nbsp;</th></tr>';
+   
+   var spaceMatch = false;
 
    for (i = 0; i < listTriples.length; i++)
-   {
-      name = getDisplayName(listTriples[i].getO());
-      newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+   {   	   
+  	 for (j = 0; j < classes.length; j++)
+   	{    
+   		//alert("Object: " +  listTriples[i].getO() + " Class: " + classes[j].value);
+   			
+   		if(classes[j].value == listTriples[i].getO())
+   		{
+      			spaceMatch = true;
+      			
+      			name = classes[j].display
+      			
+      			newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+      		}
+      	}
+      	
+   
+	if(spaceMatch == false)
+	{
+		newTableHTML += '<tr><td>' + listTriples[i].getO() + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'		
+	}
+   
    }
 
 	document.getElementById(controlName + 'List').innerHTML = newTableHTML;

@@ -85,7 +85,7 @@ printXMLHeaders();
 	   controlsToSetup[1] = 'locatedAdjacentTo';
 	   controlsToSetup[2] = 'is';
 	   var classControlsToSetup = [];
-	   setControlsToSetup[0] = 'type';  
+	   classControlsToSetup[0] = 'type';  
 	   var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space';
 <?php
 	print("\tvar store = new TripleStore();\n");
@@ -93,6 +93,7 @@ printXMLHeaders();
 	print("\tvar pageType = 'location';\n");
 	print("\tvar nonLabelTriples = '';\n");
 	print("\tvar properties = [];\n");
+	print("\tvar classes = [];\n");
 	print("\tvar userID = '" . $userID . "';\n");
 
 	foreach($graph as $triple)
@@ -113,8 +114,8 @@ printXMLHeaders();
 	$index = 0;	
 	foreach($classList as $class)
 	{
-		print("\tclasses[" . $index . "] = new Class('" . $class['type'] . "', '" . $class['value'] .
-		      "', '" . $class['display'] . "');\n");
+		print("\tclasses[" . $index . "] = new Class('" . $class['Type'] . "', '" . $class['Value'] .
+		      "', '" . $class['Display'] . "');\n");
 		$index++;
 	}	
 ?>
@@ -148,10 +149,10 @@ printXMLHeaders();
 </div>
 
 <?php
-writeEntityControl('Type');
-writeEntityControl('Located Within');
-writeEntityControl('Located Adjacent To');
-writeEntityControl('Is');
+writeEntityControl('Type', 'Class');
+writeEntityControl('Located Within', '');
+writeEntityControl('Located Adjacent To', '');
+writeEntityControl('Is', '');
 ?>
 
 <p id="namedEntityID">Please wait...</p>
