@@ -20,6 +20,13 @@ function Property ( newProperty, newModule, newObject, newSubject, newMin, newMa
 	this.reciprocal = newReciprocal;
 }
 
+function Class ( newType, newValue, newDisplay )
+{
+	this.type = newType;
+	this.value = newValue;
+	this.display = newDisplay;
+}
+
 function Triple ( newS, newP, newO, originalO )
 {
 	this.s = newS;
