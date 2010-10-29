@@ -4,9 +4,41 @@ var rdfTypeLabel = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
 var shadowOfLabel = 'http://purl.org/ontomedia/core/expression#is-shadow-of';
 /* var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space'; */
 
+function sortBySName ( a, b )
+{
+   var as = getDisplayName(a.getS());
+   var bs = getDisplayName(b.getS());
+
+   return ( ( as == bs ) ? 0 : ( ( as > bs ) ? 1 : -1 ) );
+
+}
+
+function sortByO ( a, b )
+{
+   var as = a.getO();
+   var bs = b.getO();
+
+   return ( ( as == bs ) ? 0 : ( ( as > bs ) ? 1 : -1 ) );
+
+}
+
+function sortClass ( a, b )
+{
+   var as = a.display;
+   var bs = b.display;
+
+   return ( ( as == bs ) ? 0 : ( ( as > bs ) ? 1 : -1 ) );
+
+}
+
+
 function setupPage ( )
 {
+   classes = classes.sort(sortClass);
+
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
+   selectTriples = selectTriples.sort(sortBySName);
+
    currentEntity = selectTriples[0].getS();
    
    //alert("CurrentEntity: " + currentEntity);
@@ -217,6 +249,7 @@ function updateControl ( controlName )
 
    listTriples = store.findTriples(currentEntity, propertyName, '*');
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
+   selectTriples = selectTriples.sort(sortBySName);
 
    document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
    var optionsIndex = 0;
@@ -266,7 +299,9 @@ function updateClassControl ( controlName )
    propertyName = getFullPropertyName(controlName);
 
    listTriples = store.findTriples(currentEntity, propertyName, '*');
+   listTriples = listTriples.sort(sortByO);
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
+   selectTriples = selectTriples.sort(sortBySName);
    
    document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
    var optionsIndex = 0;
