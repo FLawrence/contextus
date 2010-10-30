@@ -390,14 +390,13 @@ function updateClassControl ( controlName )
 	}
    
    }
+
+   document.getElementById(controlName + 'List').innerHTML = newTableHTML;
    
-  /* if(classCount == 1)
+   if(classCount == 1)
    {
    	document.forms[controlName + 'Form'].elements['first'].disabled = true;
    }
-*/
-	document.getElementById(controlName + 'List').innerHTML = newTableHTML;
-   
 }
 
 
