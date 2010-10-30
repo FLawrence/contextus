@@ -99,11 +99,27 @@ function addEntity ( controlName )
 
 function addClassEntity ( controlName )
 {
-
+	var propertyName = getFullPropertyName(controlName);
+	var newClass = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].value;
+	var newClassRef = "";
+	
+	/* for (j = 0; j < classes.length; j++)
+   	{  
+   		alert("Type: " + classes[j].type + " newClass: " + newClass)
+   		if(classes[j].type == newClass)
+   		{
+   			newClassRef = classes[j].value;
+   		}
+   	}*/
+	
+	//if(newClassRef != "")
+	//{
+		store.add(new Triple(currentEntity, propertyName, newClass , ''));
+	//}
 
     
-   updateClassControl(controlName);
-   checkFields();
+	updateClassControl(controlName);
+	checkFields();
 }
 
 function removeEntity ( controlName, entityToRemove )
@@ -332,6 +348,7 @@ function updateClassControl ( controlName )
    var newTableHTML = '<tr><th>&nbsp;</th><th>&nbsp;</th></tr>';
    
    var spaceMatch = false;
+   var classCount = 0;
 
    for (i = 0; i < listTriples.length; i++)
    {   	   
@@ -342,21 +359,43 @@ function updateClassControl ( controlName )
    		if(classes[j].value == listTriples[i].getO())
    		{
       			spaceMatch = true;
+      			classCount++;
       			
       			name = classes[j].display
       			
-      			newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+  			if(classCount == 1)
+   			{
+      				newTableHTML += '<tr><td>' + name + '</td><td><button name="first" onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+      			}
+      			else
+      			{
+      				 newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+      			}
       		}
       	}
       	
    
 	if(spaceMatch == false)
 	{
-		newTableHTML += '<tr><td>' + listTriples[i].getO() + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'		
+		classCount++;
+		
+  		if(classCount == 1)
+   		{
+      			newTableHTML += '<tr><td>' + listTriples[i].getO() + '</td><td><button name="first" onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+      		}
+      		else
+      		{
+      			 newTableHTML += '<tr><td>' + listTriples[i].getO() + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
+      		}			
 	}
    
    }
-
+   
+  /* if(classCount == 1)
+   {
+   	document.forms[controlName + 'Form'].elements['first'].disabled = true;
+   }
+*/
 	document.getElementById(controlName + 'List').innerHTML = newTableHTML;
    
 }
