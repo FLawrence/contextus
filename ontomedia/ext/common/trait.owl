@@ -11,7 +11,7 @@
   <!ENTITY locspec      "http://contextus.net/ontology/ontomedia/misc/locspec#">
   <!ENTITY omm	      	"http://contextus.net/ontology/ontomedia/core/media#">
   <!ENTITY dat	      	"http://contextus.net/ontology/ontomedia/owl/misc/date#">
-  <!ENTITY base	      	"http://contextus.net/ontology/ontomedia/ext/common/trait">
+  <!ENTITY base	      	"http://contextus.net/ontology/ontomedia/ext/common/trait#">
   <!ENTITY omb 		"http://contextus.net/ontology/ontomedia/ext/common/being#">
   <!ENTITY nom		"http://contextus.net/ontology/ontomedia/misc/name#">
 ]>  
