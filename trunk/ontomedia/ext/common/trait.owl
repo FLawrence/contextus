@@ -5,11 +5,10 @@
   <!ENTITY rdfs		"http://www.w3.org/2000/01/rdf-schema#">
   <!ENTITY owl		"http://www.w3.org/2002/07/owl#">
   <!ENTITY ome		"http://contextus.net/ontology/ontomedia/core/expression#">
-  <!ENTITY omk 	"http://contextus.net/ontology/ontomedia/ext/detail/know#">
+  <!ENTITY omk		"http://contextus.net/ontology/ontomedia/ext/detail/know#">
   <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
   <!ENTITY dct          "http://purl.org/dc/terms/">
   <!ENTITY locspec      "http://contextus.net/ontology/ontomedia/misc/locspec#">
-  <!ENTITY omt	      	"http://contextus.net/ontology/ontomedia/ext/common/trait#">
   <!ENTITY omm	      	"http://contextus.net/ontology/ontomedia/core/media#">
   <!ENTITY dat	      	"http://contextus.net/ontology/ontomedia/owl/misc/date#">
   <!ENTITY base	      	"http://contextus.net/ontology/ontomedia/ext/common/trait">
@@ -25,6 +24,7 @@
 	 xmlns:ome="&ome;"
 	 xmlns:omm="&omm;"
 	 xmlns:nom="&nom;"
+	 xmlns:omk="&omk;"
 	 xmlns:omb="&omb;"
 	 xmlns:dat="&dat;"
 	 xml:base="&base;"
