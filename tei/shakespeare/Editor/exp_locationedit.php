@@ -122,13 +122,13 @@ printXMLHeaders();
 	</script>
 	<script type="text/javascript" src="functions.js"></script>
 </head>
-<body onload="setupPage();">
+<body onload="setupLocPage();">
 
 <?php printNavigationList('exp_locationedit.php', $userID) ?>
 
 <div id="entityChooser">
    <form name="entityChooserForm" method="POST" onsubmit="displayChanges();" action="savedata.php">
-	<select class="chooseEntity" name="entityChooserSelect" onchange="entityChanged();"><option value="Please wait..." /></select>
+	<select class="chooseEntity" name="entityChooserSelect" onchange="entityChanged('all');"><option value="Please wait..." /></select>
 	<button id="saveChanges" name="saveButton">Save Changes</button><br />
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
