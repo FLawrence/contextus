@@ -22,9 +22,11 @@ $graphMeta = 'http://contextus.net/resource/meta/';
 $queryAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 $queryUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
 
-/* $stateQuery = $query . "\nSELECT DISTINCT ?s ?label\n" . 'WHERE { ?s a omt:State-Of-Being; rdfs:label ?label }' . "\n";
+//$stateQuery = $query . "\nSELECT DISTINCT ?s ?label\nFROM <" .  $graphMeta . ">\n" . 'WHERE { ?s a omt:; rdfs:label ?label }' . "\n";
 
-print($stateQuery); */
+$stateQuery = $query . "\n" . 'SELECT DISTINCT ?id WHERE { { GRAPH ?g {?id a omt:State-Of-Being}} {GRAPH <' . $graphMeta . '> { ?id ?p ?o } } } ORDER BY ?id' . "\n";
+
+//print($stateQuery);
 
 $s = new FourStore_StorePlus('http://contextus.net:7000/sparql/');
 $graph = array();
@@ -98,7 +100,7 @@ printXMLHeaders();
 
 <div id="entityChooser">
    <form name="entityChooserForm" method="POST" onsubmit="displayChanges();" action="savedata.php">
-	<select class="chooseEntity" name="entityChooserSelect" onchange="entityChanged();"><option value="Please wait..." /></select>
+	<select class="chooseEntity" name="entityChooserSelect" onchange="entityChanged('basic');"><option value="Please wait..." /></select>
 	<button id="saveChanges" name="saveButton">Save Changes</button><br />
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
@@ -125,6 +127,8 @@ printXMLHeaders();
       <select class="chooseEntity" name="stateBeingSelect" onchange="stateBChanged();">
       <?
       		$rAuto = $s->query($stateQuery);
+      		
+      		print_r($rAuto['result']['rows']);
 
      		foreach ($rAuto['result']['rows'] as $result)
 		{
@@ -147,7 +151,7 @@ printXMLHeaders();
 </div>
 
 <?php
-writeEntityControl('Is');
+writeEntityControl('Is', '');
 ?>
 
 <p><span id="namedEntityID">Please Wait...</span></p>

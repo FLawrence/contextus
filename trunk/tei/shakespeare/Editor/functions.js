@@ -31,10 +31,23 @@ function sortClass ( a, b )
 
 }
 
-
-function setupPage ( )
+function setupNewPage ( )
 {
-   classes = classes.sort(sortClass);
+	classes.sort(sortClass);
+	updateClassControls ( );
+}
+
+function setupLocPage ( )
+{
+	classes = classes.sort(sortClass);
+	setupPage ( );
+	
+	updateClassControls ( );
+}
+
+
+function setupPage (  )
+{
 
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
    selectTriples = selectTriples.sort(sortBySName);
@@ -101,23 +114,10 @@ function addClassEntity ( controlName )
 {
 	var propertyName = getFullPropertyName(controlName);
 	var newClass = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].value;
-	var newClassRef = "";
 	
-	/* for (j = 0; j < classes.length; j++)
-   	{  
-   		alert("Type: " + classes[j].type + " newClass: " + newClass)
-   		if(classes[j].type == newClass)
-   		{
-   			newClassRef = classes[j].value;
-   		}
-   	}*/
-	
-	//if(newClassRef != "")
-	//{
-		store.add(new Triple(currentEntity, propertyName, newClass , ''));
-	//}
 
-    
+	store.add(new Triple(currentEntity, propertyName, newClass , ''));
+
 	updateClassControl(controlName);
 	checkFields();
 }
@@ -149,42 +149,26 @@ function removeEntity ( controlName, entityToRemove )
 function removeClassEntity ( controlName, entityToRemove )
 {
 
+   var propertyName = getFullPropertyName(controlName);
+   var triplesToRemove = store.findTripleIndexes(currentEntity, propertyName, entityToRemove);
+   store.deleteByIndex(triplesToRemove[0]);
    
    updateClassControl(controlName);
    checkFields();
 }
 
-/*
-function addLocation ( controlName )
-{
-    var propertyName = getFullPropertyName(controlName);
-    var index = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].selectedIndex;
-    var propertyValue = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[index].value;
-
-   mainLabelChanged();
-   
-   store.add(new Triple(currentEntity, propertyName, propertyValue, ''));
-   
-   updateControl(controlName);
-   checkFields();
-}
-
-function removeLocation ( controlName, entityToRemove )
-{
-   var propertyName = getFullPropertyName(controlName);
-   var triplesToRemove = store.findTripleIndexes(currentEntity, propertyName, entityToRemove);
-   store.deleteByIndex(triplesToRemove[0]);
-   
-   updateControl(controlName);
-   checkFields();
-}
-*/
-
-function entityChanged ( )
+function entityChanged ( pageSelect )
 {
     currentEntity = document.entityChooserForm.entityChooserSelect.options[document.entityChooserForm.entityChooserSelect.selectedIndex].value;
 
-   updateAllControls();
+	if (pageSelect == "basic")
+	{
+   		updateAllControls();
+   	}
+   	else
+   	{
+   		updateClassControls ( );
+   	}
 }
 
 function createEntityInNewGraph ( entity, name )
@@ -251,12 +235,19 @@ function updateAllControls ( )
       updateControl(controlsToSetup[control]);
    }
    
+   document.getElementById('namedEntityID').innerHTML = currentEntity;
+}
+
+function updateClassControls ( )
+{
+   
    for (control = 0; control < classControlsToSetup.length; control++)
    {
       updateClassControl(classControlsToSetup[control]);
    }   
    
-   document.getElementById('namedEntityID').innerHTML = currentEntity;
+   updateAllControls ( );
+   
 }
 
 function updateControl ( controlName )
@@ -371,8 +362,8 @@ function updateClassControl ( controlName )
       			{
       				 newTableHTML += '<tr><td>' + name + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
       			}
-      		}
-      	}
+      		}      		
+      	}	
       	
    
 	if(spaceMatch == false)
@@ -388,6 +379,8 @@ function updateClassControl ( controlName )
       			 newTableHTML += '<tr><td>' + listTriples[i].getO() + '</td><td><button onClick="removeClassEntity(\'' + controlName + '\', \'' + listTriples[i].getO() + '\');">Delete</button></td></tr>'
       		}			
 	}
+	
+	spaceMatch = false;
    
    }
 
