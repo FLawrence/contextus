@@ -39,7 +39,7 @@ foreach ($rUser['result']['rows'] as $result)
 {
 	addTripleToGraph($graph, makeTriple($result['s'], $result['p'], $result['o']));
 	
-	array_push($chars, $result);
+	array_push($chars, $result['s']);
 
 	if ($result['p'] == 'http://purl.org/ontomedia/core/expression#is-shadow-of')
 	{
@@ -55,16 +55,22 @@ foreach ($rAuto['result']['rows'] as $result)
 	{
 		addTripleToGraph($graph, makeTriple($result['s'], $result['p'], $result['o']));
 		
-		array_push($chars, $result);
+		array_push($chars, $result['s']);
 	}
 }
 
+//print_r($chars);
+
 $autoLocsToBeIgnored = array();
+
+$locs = array();
 
 $rUser = $s->query($queryLocUser);
 foreach ($rUser['result']['rows'] as $result)
 {
 	addTripleToGraph($graph, makeTriple($result['s'], $result['p'], $result['o']));
+
+	array_push($locs, $result['s']);
 
 	if ($result['p'] == 'http://purl.org/ontomedia/core/expression#is-shadow-of')
 	{
@@ -79,6 +85,8 @@ foreach ($rAuto['result']['rows'] as $result)
 	if (!in_array($result['s'], $autoLocsToBeIgnored))
 	{
 		addTripleToGraph($graph, makeTriple($result['s'], $result['p'], $result['o']));
+		
+		array_push($locs, $result['s']);
 	}
 }
 
@@ -98,7 +106,7 @@ $potentialLocationEntity = "";
 
 while($potentialLocationEntity == "")
 {
-	if(array_search($graphAuto . 'location/' . $i, $chars) !== false || array_search($graphUser . 'location/' . $i, $chars) !== false)
+	if(array_search($graphAuto . 'location/' . $i, $locs) !== false || array_search($graphUser . 'location/' . $i, $locs) !== false)
 		$i++;
 	else
 		$potentialLocationEntity = $graphUser . 'location/' . $i;
@@ -158,40 +166,40 @@ printXMLHeaders();
 <body onload="setupNewPage();">
 
 <?php printNavigationList('entitycreator.php', $userID) ?>
-
-<div class="control" id="generalInformation">
-   <p class="controlTitle">General Information</p>
-   <form name="generalInformationForm">
-  	<select class="chooseType" name="newTypeSelect" onchange="getTypeChanged();">
+<div id="entityCreator">
+   <form name="entityCreatorForm" method="POST" onsubmit=";" action="">
+     	<select class="chooseType" name="newTypeSelect" onchange="typeChanged();">
   		<option value="<?php print $potentialCharacterEntity ?>">Character</option>
   		<option value="<?php print $potentialLocationEntity ?>" >Location</option>
   	</select>
-      <p>Name: <input name="entityName" value="" onkeyup="mainLabelChanged();" /></p>
-   </form>
-</div>
-
-<?php
-writeEntityControl('Type', 'Class');
-writeEntityControl('Is', '');
-writeEntityControl('IsShadowOf', '');
-
-?>
-
-<div id="entityCreator">
-	<p>
-   <form name="entityCreatorForm" method="POST" onsubmit=";" action="">
 	<button id="saveChanges" name="saveButton">Create Entity</button><br />
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
-	<input name="saveType" type="hidden" value="<?php print($type); ?>" />
+	<input name="newType" type="hidden" value="<?php print($newType); ?>" />
 	<input name="source" type="hidden" value="entitycreator.php" />
 
 	<input name="addedTriples" type="hidden" value="" />
 	<input name="changedTriples" type="hidden" value="" />
 	<input name="deletedTriples" type="hidden" value="" />
 	</form>
-	</p>
 </div>
+<div class="control" id="generalInformation">
+   <p class="controlTitle">General Information</p>
+   <form name="generalInformationForm">
+      <p>Name: <input name="entityName" value="" onkeyup="mainLabelChanged();" /></p>
+   </form>
+</div>
+
+<?php
+
+# if Type is location then show options - else option is character
+writeEntityControl('Type', 'Class');
+	
+writeEntityControl('Is', '');
+writeEntityControl('IsShadowOf', '');
+
+?>
+
 </body>
 </html>
 

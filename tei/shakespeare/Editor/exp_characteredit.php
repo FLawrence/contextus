@@ -120,6 +120,7 @@ printXMLHeaders();
    </form>
 </div>
 
+<!--
 <div class="control" id="stateInformation">
    <p class="controlTitle">State Information at Start of Text</p>
    <form name="stateInformationForm">
@@ -149,6 +150,7 @@ printXMLHeaders();
       	<p>Projected Sexuality: <select class="chooseEntity" name="projSexSelect" onchange="projSexChanged();"><option value="Please wait..." /></select></p>
    </form>
 </div>
+-->
 
 <?php
 writeEntityControl('Is', '');
