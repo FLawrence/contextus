@@ -787,3 +787,7 @@ function alertStore ( store )
 			"O=" + triples[i].getO())
 	}
 }
+
+function typeChanged ( )
+{
+}
