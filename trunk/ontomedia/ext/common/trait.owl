@@ -368,12 +368,12 @@
     <owl:disjointWith>
      <owl:Class>
       <owl:unionOf rdf:parseType="Collection">
-        <owl:Class rdf:ID="#Unprovable"/>
-        <owl:Class rdf:ID="#NonExistent"/>
-        <owl:Class rdf:ID="#Unknown"/>
-        <owl:Class rdf:ID="#Dead"/>
-        <owl:Class rdf:ID="#Alive"/>
-        <owl:Class rdf:ID="#Inanimate"/>
+        <owl:Class rdf:about="#Unprovable"/>
+        <owl:Class rdf:about="#NonExistent"/>
+        <owl:Class rdf:about="#Unknown"/>
+        <owl:Class rdf:about="#Dead"/>
+        <owl:Class rdf:about="#Alive"/>
+        <owl:Class rdf:about="#Inanimate"/>
       </owl:unionOf>
      </owl:Class>
     </owl:disjointWith>
@@ -556,7 +556,7 @@
 
   <owl:Class rdf:ID="Corporeal">
     <owl:disjointWith>
-      <owl:Class rdf:ID="Incorporeal"/>
+      <owl:Class rdf:about="#Incorporeal"/>
     </owl:disjointWith>
     <rdfs:subClassOf rdf:resource="#State-Of-Form"/>
     <rdfs:comment>This class describes an Entity which is corporeal</rdfs:comment>
