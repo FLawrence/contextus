@@ -22,6 +22,7 @@
 	 xmlns:locspec="&locspec;"
 	 xmlns:dat="&dat;"
 	 xml:base="&base;"
+	 xml:omt="&omt;"
 	 xmlns:dc="&dc;"
 	 xmlns:dct="&dct;">
 
