@@ -9,7 +9,7 @@
   <!ENTITY dc           "http://purl.org/dc/elements/1.1/">
   <!ENTITY dct          "http://purl.org/dc/terms/">
   <!ENTITY locspec      "http://contextus.net/ontology/ontomedia/misc/locspec#">
-  <!ENTITY omt	      	"http://contextus.net/ontology/ontomedia/common/trait#">
+  <!ENTITY omt	      	"http://contextus.net/ontology/ontomedia/ext/common/trait#">
   <!ENTITY dat	      	"http://contextus.net/ontology/ontomedia/misc/date#">
 ]>  
 
@@ -50,7 +50,7 @@
   <owl:ObjectProperty rdf:ID="is-linked-to">
     <rdfs:label>Is Linked To</rdfs:label>
     <rdfs:comment>This property indicates that there is some type of link between the named Expressions</rdfs:comment>
-    <owl:inverseOf rdf:resource="#is-linked-to"/>
+    <owl:inverseOf rdf:resource="#is-not-linked-to"/>
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:range rdf:resource="#Expression"/>
   </owl:ObjectProperty>
@@ -58,7 +58,7 @@
   <owl:ObjectProperty rdf:ID="is-not-linked-to">
     <rdfs:label>Is Not Linked To</rdfs:label>
     <rdfs:comment>This property indicates that there is some no link between the named Expressions</rdfs:comment>
-    <owl:inverseOf rdf:resource="#is-not-linked-to"/>
+    <owl:inverseOf rdf:resource="#is-linked-to"/>
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:range rdf:resource="#Expression"/>
   </owl:ObjectProperty>
@@ -67,7 +67,7 @@
     <rdfs:label>Contains</rdfs:label>
     <rdfs:comment>This property indicates that one expression contains the other</rdfs:comment>
     <owl:inverseOf rdf:resource="#contained-by"/>
-    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <rdfs:subPropertyOf rdf:resource="#is-linked-to" />
     <rdfs:range rdf:resource="#Expression"/>
     <rdfs:domain rdf:resource="#Expression"/>
   </owl:ObjectProperty>
@@ -76,7 +76,7 @@
     <rdfs:label>Contained By</rdfs:label>
     <rdfs:comment>This property indicates that one expression is contained by the other</rdfs:comment>
     <owl:inverseOf rdf:resource="#contains"/>
-    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <rdfs:subPropertyOf rdf:resource="#is-linked-to" />
     <rdfs:range rdf:resource="#Expression"/>
     <rdfs:domain rdf:resource="#Expression"/>
   </owl:ObjectProperty>
@@ -86,7 +86,7 @@
   <owl:ObjectProperty rdf:ID="is">
     <rdfs:label>Is</rdfs:label>
     <rdfs:comment>This property indicates that the expression is exactly the same as another</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <rdfs:subPropertyOf rdf:resource="#is-linked-to" />
     <owl:inverseOf rdf:resource="#is"/>
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:range rdf:resource="#Expression"/>
@@ -95,7 +95,7 @@
   <owl:ObjectProperty rdf:ID="is-not">
     <rdfs:label>Is Not</rdfs:label>
     <rdfs:comment>This property indicates that the expression is entirely different to another</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;is-not-linked-to" />
+    <rdfs:subPropertyOf rdf:resource="#is-not-linked-to" />
     <owl:inverseOf rdf:resource="#is-not"/>
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:range rdf:resource="#Expression"/>
@@ -106,7 +106,7 @@
   <owl:ObjectProperty rdf:ID="has-variant">
     <rdfs:label>Has Variant</rdfs:label>
     <rdfs:comment>This property indicates that the expression is a variation of another</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;is-linked-to" />
+    <rdfs:subPropertyOf rdf:resource="#is-linked-to" />
     <owl:inverseOf rdf:resource="has-variant"/>
     <rdfs:range rdf:resource="#Expression"/>
     <rdfs:domain rdf:resource="#Expression"/>
@@ -115,7 +115,7 @@
   <owl:ObjectProperty rdf:ID="has-shadow">
     <rdfs:label>Has Shadow</rdfs:label>
     <rdfs:comment>This property indicates that the expression is a variation on another, very similar but not exactly the same. For example the different interpretations of the same character</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:subPropertyOf rdf:resource="#has-variant" />
     <owl:inverseOf rdf:resource="#is-shadow-of"/>
     <rdfs:range rdf:resource="#Expression"/>
     <rdfs:domain rdf:resource="#Expression"/>
@@ -124,7 +124,7 @@
   <owl:ObjectProperty rdf:ID="is-shadow-of">
     <rdfs:label>Is Shadow Of</rdfs:label>
     <rdfs:comment>This property indicates that the expression is a variation on another, very similar but not exactly the same. For example the different interpretations of the same character</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:subPropertyOf rdf:resource="#has-variant" />
     <owl:inverseOf rdf:resource="#has-shadow"/>
     <rdfs:range rdf:resource="#Expression"/>
     <rdfs:domain rdf:resource="#Expression"/>
@@ -133,7 +133,7 @@
   <owl:ObjectProperty rdf:ID="has-spin-off">
     <rdfs:label>Has Spin Off</rdfs:label>
     <rdfs:comment>This property indicates that the expression has developed from another</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:subPropertyOf rdf:resource="#has-variant" />
     <owl:inverseOf rdf:resource="#is-spin-off-of"/>
     <rdfs:domain rdf:resource="#Item"/>
     <rdfs:range rdf:resource="#Item"/>
@@ -142,7 +142,7 @@
   <owl:ObjectProperty rdf:ID="is-spin-off-of">
     <rdfs:label>Is Spin Off Of</rdfs:label>
     <rdfs:comment>This property indicates that the expression has developed from another</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:subPropertyOf rdf:resource="#has-variant" />
     <owl:inverseOf rdf:resource="#has-spin-off"/>
    <rdfs:domain rdf:resource="#Item"/>
    <rdfs:range rdf:resource="#Item"/>
@@ -151,7 +151,7 @@
   <owl:ObjectProperty rdf:ID="inspired-by">
     <rdfs:label>Inspired By</rdfs:label>
     <rdfs:comment>This property indicates that the expression was inspired by another</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:subPropertyOf rdf:resource="#has-variant" />
     <owl:inverseOf rdf:resource="#inspired"/>
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:range rdf:resource="#Expression"/>
@@ -160,7 +160,7 @@
   <owl:ObjectProperty rdf:ID="inspired">
     <rdfs:label>Inspired</rdfs:label>
     <rdfs:comment>This property indicates that the expression inspired another</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:subPropertyOf rdf:resource="#has-variant" />
     <owl:inverseOf rdf:resource="#inspired-by"/>
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:range rdf:resource="#Expression"/>
@@ -168,7 +168,7 @@
 
   <owl:ObjectProperty rdf:ID="is-potentially">
     <rdfs:label>Is Potentially</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="&base;has-variant" />
+    <rdfs:subPropertyOf rdf:resource="#has-variant" />
     <rdfs:range rdf:resource="#Expression"/>
     <rdfs:domain rdf:resource="#Expression"/>
     <rdfs:comment>This property indicates that the expression is potentially another. For example, it may be a possible future version</rdfs:comment>
