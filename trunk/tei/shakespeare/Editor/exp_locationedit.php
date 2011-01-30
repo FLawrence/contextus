@@ -9,7 +9,8 @@ $propertyList = loadProperties();
 $classList = loadClasses();
 
 FourStore_Namespace::addW3CNamespace();
-FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
+//FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
+FourStore_Namespace::add('loc','http://purl.org/ontomedia/core/space#');
 FourStore_Namespace::add('ome','http://purl.org/ontomedia/core/expression#');
 
 $query = FourStore_Namespace::to_sparql();
