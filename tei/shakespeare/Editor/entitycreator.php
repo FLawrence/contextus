@@ -9,7 +9,8 @@ $propertyList = loadProperties();
 $classList = loadClasses();
 
 FourStore_Namespace::addW3CNamespace();
-FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
+//FourStore_Namespace::add('loc','http://signage.ecs.soton.ac.uk/ontologies/location#');
+FourStore_Namespace::add('loc','http://purl.org/ontomedia/core/space#');
 FourStore_Namespace::add('omb','http://purl.org/ontomedia/ext/common/being#');
 FourStore_Namespace::add('omt','http://purl.org/ontomedia/ext/common/trait#');
 FourStore_Namespace::add('ome','http://purl.org/ontomedia/core/expression#');
