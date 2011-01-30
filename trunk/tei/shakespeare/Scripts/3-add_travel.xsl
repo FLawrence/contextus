@@ -8,7 +8,7 @@
     <!--    <xsl:strip-space elements="*"/> -->
     
     <xsl:variable name="namespace" select="'ta'" />
-    <xsl:variable name="travel-event" select="'[ome:involves'" /> 
+    <xsl:variable name="travel-event" select="'['" /> 
     
     <xsl:template match="@*|node()">   
         <xsl:copy>        
@@ -118,7 +118,7 @@
             </xsl:if>      
             
             <xsl:if test="contains(., 'Exeunt')">
-                <stage about="{$travel-event}-all]" type="exit" ><xsl:apply-templates select="@*|node()"/></stage>
+                <stage about="{$travel-event} all]" type="exit" ><xsl:apply-templates select="@*|node()"/></stage>
             </xsl:if>
         </xsl:if>          
         

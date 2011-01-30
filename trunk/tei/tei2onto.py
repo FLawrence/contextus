@@ -20,6 +20,7 @@ dbpedia = Namespace("http://dbpedia.org/resource/")
 ome = Namespace("http://purl.org/ontomedia/core/expression#")
 omb = Namespace("http://purl.org/ontomedia/ext/common/being#")
 oml = Namespace("http://signage.ecs.soton.ac.uk/ontologies/location#")
+omj = Namespace("http://purl.org/ontomedia/ext/events/travel#")
 
 #### The following nabbed from RDFaParser to handle CURIEs
 
@@ -65,11 +66,13 @@ def convert(teifile, namespace):
 
 	tree = ET.parse(teifile)
 	cast = dict()
-	castItems = tree.findall('/castList/castItem')
+	castItems = tree.findall('/text/body/div1/castList//castItem')
 	for castItem in castItems:
 		actorNode = castItem.find('actor')
 		roleNode = castItem.find('role')
 		id = roleNode.get("{http://www.w3.org/XML/1998/namespace}id")
+		
+		#print("Found castItem!")
 
 		actor = None
 		role = None
@@ -79,6 +82,7 @@ def convert(teifile, namespace):
 			role = extractCURIEorURI(graph, roleNode.get("about"))
 			cast[id] = role
 			graph.add((role, RDF.type, omb['Character']))
+			#print("Adding id " + id + " to " + role)
 		
 		if(actorNode != None and actorNode.get("about")):
 			actor = extractCURIEorURI(graph, actorNode.get("about"))
@@ -90,8 +94,10 @@ def convert(teifile, namespace):
 
 	eventCount = 1
 	prior_event = None
-	sceneItems = tree.findall('/div1')
+	sceneItems = tree.findall('/text/body/div1/div2')
 	for sceneItem in sceneItems:
+		
+		#print("Found sceneItems!")
 		
 		# Work out the location of this scene
 		location = None
@@ -103,7 +109,130 @@ def convert(teifile, namespace):
 					type = extractCURIEorURI(graph, stageItem.get("typeof"))
 					location = extractCURIEorURI(graph, stageItem.get("about"))
 					graph.add((location, RDF.type, type))
+				elif stageItem.get("about"):
+					type = extractCURIEorURI(graph, "[loc:Space]")
+					location = extractCURIEorURI(graph, stageItem.get("about"))
+					graph.add((location, RDF.type, type))		
+					
+				#print("Adding location type: " + type + " (" + location + ")")
 
+
+		if cast:
+			# Work out a list of all cast in a given section
+			currentCast = list()
+			previousCast = list()
+
+		# Iterate through elements within stageItem
+			# Find speaker events and add to list of current cast for inclusion in social event
+			# Find reference events and add to ongoing social event ?
+			# Find stage events
+				# If event is an entrance then
+					# create social event for people talking before entrance
+					# create travel event i.e. entrance
+					# add new arrival to current cast list
+				# If event is exit event then
+					# create social event for people talking before exit
+					# create travel event i.e. exit
+						# if leavers are not named directly the calculate who is leaving
+					# remove leavers from current cast list
+			# If reach end of scene then create social event with current cast list
+			
+			#Also need to check if social event before exit has same composition as social event after exit since then they should be merged
+			
+		event = ns['event/'+str(eventCount)]
+		group = ns['group/'+str(eventCount)]				
+					
+					
+		for node in sceneItem.getiterator():
+			#print("Node: " + node.tag)	
+			if(node.tag == "sp")
+				id = speechItem.get("who")
+				if id and cast:
+					currentCast.append(cast[id[1:]])
+			elif(node.tag == "stage")	
+				if node.get("type") == "entrance":		
+				
+					# Add Social Event if there are people in the CurrentCast list
+				
+				
+					# Add Travel Event
+					graph.add((event, RDF.type, omj['Travel']))
+
+					#print("Found entrence event!")
+					if location:
+						graph.add((event, ome['to'], location))		
+						
+					involved = stageItem.get("about")
+					
+					if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
+						involved = involved[1:-1]
+						
+					chunks = involved.split()
+					
+					chunk_count = len(chunks)
+					
+					if chunk_count > 1:
+						type = extractCURIEorURI(graph, "[omb:Group]")
+						graph.add((group, RDF.type, type))		
+					
+					for chunk in chunks:
+						striped = chunk.strip()
+						peep = extractCURIEorURI(graph, striped)
+						
+						if chunk_count > 1:
+							graph.add((group, ome['contains'], peep))
+						else:
+							graph.add((event, ome['has-subject-entity'], peep))
+						
+					if chunk_count > 1:
+						graph.add((event, ome['has-subject-entity'], group))
+	
+					if(prior_event):
+						graph.add((event, ome['follows'], prior_event))
+						graph.add((prior_event, ome['precedes'], event))
+	
+					prior_event = event					
+
+					eventCount = eventCount + 1
+					event = ns['event/'+str(eventCount)]
+					group = ns['group/'+str(eventCount)]				
+		
+	
+
+				
+	print graph.serialize(format='xml')		
+	
+	
+			
+"""			
+			#if stageItem.get("type") == "exit":	
+				event = ns['event/'+str(eventCount)]
+				eventCount = eventCount + 1
+				graph.add((event, RDF.type, omj['Travel']))
+				#print("Found entrence event!")
+				if location:
+					graph.add((event, ome['to'], location))		
+					
+				involved = stageItem.get("about")
+				
+				if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
+					involved = involved[1:-1]
+					
+				if(contains(involved, "-all"))	
+					
+				elif(contains(involved, "!"))	
+				
+				else
+					chunks = involved.split()
+					
+					if(contains(chunks[0], ":"))			
+"""			
+		
+	
+
+		
+				
+"""
 		speechItems = sceneItem.findall('sp')
 
 		if cast:
@@ -113,6 +242,8 @@ def convert(teifile, namespace):
 				id = speechItem.get("who")
 				if id:
 					sceneCast.append(cast[id[1:]])
+
+
 
 		# Build up the events
 		for speechItem in speechItems:
@@ -148,7 +279,9 @@ def convert(teifile, namespace):
 
 			prior_event = event
 
-	print graph.serialize(format='xml')
+"""	
+
+
 
 def main(argv):
 	try:

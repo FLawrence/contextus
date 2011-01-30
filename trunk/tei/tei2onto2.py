@@ -20,7 +20,7 @@ dc = Namespace("http://purl.org/dc/elements/1.1/")
 dbpedia = Namespace("http://dbpedia.org/resource/")
 ome = Namespace("http://purl.org/ontomedia/core/expression#")
 omb = Namespace("http://purl.org/ontomedia/ext/common/being#")
-oml = Namespace("http://signage.ecs.soton.ac.uk/ontologies/location#")
+oml = Namespace("http://purl.org/ontomedia/core/space#")
 omj = Namespace("http://purl.org/ontomedia/ext/events/travel#")
 
 #### The following nabbed from RDFaParser to handle CURIEs
@@ -152,9 +152,11 @@ def convert(teifile, namespace):
 				charcode =  "character/" + str(char)
 				charref = nmsp + ":" + charcode + "]"
 				role = extractCURIEorURI(graph, charref,nom[0:-1])
-				char += 1				
+				char += 1		
+				#print("1:" + charname + ": adding id " + id + " to " + role)
 			else:
 				role = extractCURIEorURI(graph, charname)
+				#print("2:" + charname + ": adding id " + id + " to " + role)
 
 			cast[id] = role
 			graph.add((role, RDF.type, omb['Character']))
@@ -681,84 +683,6 @@ def convert(teifile, namespace):
 		
 	print graph.serialize(format='xml')		
 	
-	
-			
-"""			
-			#if stageItem.get("type") == "exit":	
-				event = ns['event/'+str(eventCount)]
-				eventCount = eventCount + 1
-				graph.add((event, RDF.type, omj['Travel']))
-				#print("Found entrence event!")
-				if location:
-					graph.add((event, ome['from'], location))		
-					
-				involved = stageItem.get("about")
-				
-				if(len(involved) > 0 and involved[0] == "[" and involved[-1] == "]"):
-					involved = involved[1:-1]
-					
-				if(strip(involved) == "" or contains(involved, "-all"))	
-					
-				elif(contains(involved, "!"))	
-				
-				else
-					chunks = involved.split()
-					
-					if(contains(chunks[0], ":"))			
-"""			
-		
-	
-
-		
-				
-"""
-		speechItems = sceneItem.findall('sp')
-
-		if cast:
-			# Work out a list of all cast in this scene
-			sceneCast = list()
-			for speechItem in speechItems:
-				id = speechItem.get("who")
-				if id:
-					sceneCast.append(cast[id[1:]])
-
-
-
-		# Build up the events
-		for speechItem in speechItems:
-			event = ns['event/'+str(eventCount)]
-			eventCount = eventCount + 1
-			graph.add((event, RDF.type, ome['Social']))
-			if location:
-				graph.add((event, oml['is-located-in'], location))
-				
-
-			id = speechItem.get("who")
-			if id and cast:
-				castUri = cast[id[1:]]
-				graph.add((event, ome['has-subject-entity'], castUri))
-				for castMember in sceneCast:
-					graph.add((event, ome['involves'], castMember))
-					graph.add((castMember, ome['involved-in'], event))
-
-			refItems = speechItem.findall("l/rs")
-			for refItem in refItems:
-				about = extractCURIEorURI(graph, refItem.get("about"))
-				graph.add((event, ome["refers-to"], about))
-			
-			refItems = speechItem.findall("p/rs")
-			for refItem in refItems:
-				about = extractCURIEorURI(graph, refItem.get("about"))
-				graph.add((event, ome["refers-to"], about))
-
-			if(prior_event):
-				graph.add((event, ome['follows'], prior_event))
-				graph.add((prior_event, ome['precedes'], event))
-
-
-			prior_event = event
-
-"""	
 
 def getSocial(graph, ns, speakers, speakerNodes, speakerRef, cast, currentCast, eventCount, event, prior_event, location):
 
