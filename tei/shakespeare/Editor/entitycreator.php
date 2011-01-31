@@ -92,27 +92,32 @@ foreach ($rAuto['result']['rows'] as $result)
 }
 
 $i = 1;
-$potentialCharacterEntity = "";
+//$potentialCharacterEntity = "";
 
-while($potentialCharacterEntity == "")
+//while($potentialCharacterEntity == "")
+
+if($newType == "char" || !isset($newType) || $newType = "")
 {
 	if(array_search($graphAuto . 'character/' . $i, $chars) !== false || array_search($graphUser . 'character/' . $i, $chars) !== false)
 		$i++;
 	else
 		$potentialCharacterEntity = $graphUser . 'character/' . $i;
 }
-
-$i = 1;
-$potentialLocationEntity = "";
-
-while($potentialLocationEntity == "")
+else
 {
-	if(array_search($graphAuto . 'location/' . $i, $locs) !== false || array_search($graphUser . 'location/' . $i, $locs) !== false)
-		$i++;
-	else
-		$potentialLocationEntity = $graphUser . 'location/' . $i;
+	$i = 1;
+	//$potentialLocationEntity = "";
+	
+	//while($potentialLocationEntity == "")
+	
+	if($newType == "loc")
+	{
+		if(array_search($graphAuto . 'location/' . $i, $locs) !== false || array_search($graphUser . 'location/' . $i, $locs) !== false)
+			$i++;
+		else
+			$potentialLocationEntity = $graphUser . 'location/' . $i;
+	}
 }
-
 
 header('Cache-Control: no-store');
 printXMLHeaders();
@@ -127,7 +132,10 @@ printXMLHeaders();
 	   controlsToSetup[0] = 'is';
 	   controlsToSetup[1] = 'isShadowOf';
 	   var classControlsToSetup = [];
-	   classControlsToSetup[0] = 'type';  
+	   <?php
+	   if($newType == "loc")
+	   	print("classControlsToSetup[0] = 'type'");  
+	   ?>
 	   var entityType = '';
 <?php
 	print("\tvar store = new TripleStore();\n");
@@ -168,11 +176,12 @@ printXMLHeaders();
 
 <?php printNavigationList('entitycreator.php', $userID) ?>
 <div id="entityCreator">
-   <form name="entityCreatorForm" method="POST" onsubmit=";" action="">
-     	<select class="chooseType" name="newTypeSelect" onchange="typeChanged();">
-  		<option value="<?php print $potentialCharacterEntity ?>">Character</option>
-  		<option value="<?php print $potentialLocationEntity ?>" >Location</option>
+   <form name="entityCreatorForm" method="POST">
+     	<select class="chooseType" name="newTypeSelect" onchange="typeChanged('entitycreator.php?idhash=<?php print($userID); ?>&type=')">
+  		<option value="char" selected="selected">Character</option>
+  		<option value="loc" >Location</option>
   	</select>
+  	
 	<button id="saveChanges" name="saveButton">Create Entity</button><br />
 
 	<input name="idhash" type="hidden" value="<?php print($userID); ?>" />
@@ -184,22 +193,52 @@ printXMLHeaders();
 	<input name="deletedTriples" type="hidden" value="" />
 	</form>
 </div>
+
 <div class="control" id="generalInformation">
    <p class="controlTitle">General Information</p>
-   <form name="generalInformationForm">
+   <form name="generalInformationForm" onSubmit="return false;">
       <p>Name: <input name="entityName" value="" onkeyup="mainLabelChanged();" /></p>
    </form>
 </div>
 
 <?php
 
+# NB. each drop down is in it's own form
+
 # if Type is location then show options - else option is character
-writeEntityControl('Type', 'Class');
+if($newType == "loc")
+{
+	print("XXXX");
+	writeEntityControl('Type', 'Class');
+}
+else
+{
+	?>
+	<div class="control">
+		<p class="controlTitle">Type</p>
+		<!-- <form name="typeForm" onSubmit="return false;"> -->
+			<form>
+			<select class="entitySelect">
+				<option value="Character" >Character</option>
+			</select>
+
+			<button disabled="disabled">Add</button>
+		
+	
+		<table class="entityList" id="typeList">
+			<tr><td>Character</td><td>&nbsp;</td></tr>
+		</table>	
+		</form> 
+	</div>
+	<?php
+}
 	
 writeEntityControl('Is', '');
 writeEntityControl('IsShadowOf', '');
 
 ?>
+
+
 
 </body>
 </html>

@@ -310,6 +310,8 @@ function updateClassControl ( controlName )
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
    selectTriples = selectTriples.sort(sortBySName);
    
+   alert(controlName);
+   
    document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
    var optionsIndex = 0;
    
@@ -788,6 +790,9 @@ function alertStore ( store )
 	}
 }
 
-function typeChanged ( )
+
+function typeChanged ( url )
 {
+	document.entityCreatorForm.newType.value = document.entityCreatorForm.newTypeSelect.value;
+	location.href = url + document.entityCreatorForm.newTypeSelect.value;
 }
