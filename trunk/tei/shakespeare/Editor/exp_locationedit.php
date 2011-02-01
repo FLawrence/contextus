@@ -87,7 +87,8 @@ printXMLHeaders();
 	   controlsToSetup[2] = 'is';
 	   var classControlsToSetup = [];
 	   classControlsToSetup[0] = 'type';  
-	   var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space';
+	   //var entityType = 'http://signage.ecs.soton.ac.uk/ontologies/location#Space';
+	   var entityType = 'http://purl.org/ontomedia/core/space#Space';
 <?php
 	print("\tvar store = new TripleStore();\n");
 	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");

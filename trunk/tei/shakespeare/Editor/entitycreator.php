@@ -21,10 +21,18 @@ $query = FourStore_Namespace::to_sparql();
 $graphAuto = 'http://contextus.net/resource/midsum_night_dream/auto/';
 $graphUser = 'http://contextus.net/resource/midsum_night_dream/' . $userID .  '/';
 
-$queryCharAuto = $query . "\nSELECT ?s ?p \nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s ?p omb:Character . }' . "\n";
-$queryCharUser = $query . "\nSELECT ?s ?p \nFROM <" . $graphUser . ">\n" . 'WHERE { ?s ?p omb:Character . }' . "\n";
-$queryLocAuto = $query . "\nSELECT ?s ?p \nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s ?p loc:Space . }' . "\n";
-$queryLocUser = $query . "\nSELECT ?s ?p \nFROM <" . $graphUser . ">\n" . 'WHERE { ?s ?p loc:Space . }' . "\n";
+//$queryCharAuto = $query . "\nSELECT ?s ?p \nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s ?p omb:Character . }' . "\n";
+//$queryCharUser = $query . "\nSELECT ?s ?p \nFROM <" . $graphUser . ">\n" . 'WHERE { ?s ?p omb:Character . }' . "\n";
+
+$queryCharAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
+$queryCharUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a omb:Character ; ?p ?o . FILTER (?p = foaf:name || ?p = ome:is-shadow-of || ?p = rdf:type || ?p = ome:is) }' . "\n";
+
+
+//$queryLocAuto = $query . "\nSELECT ?s ?p \nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s ?p loc:Space . }' . "\n";
+//$queryLocUser = $query . "\nSELECT ?s ?p \nFROM <" . $graphUser . ">\n" . 'WHERE { ?s ?p loc:Space . }' . "\n";
+
+$queryLocAuto = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphAuto . ">\n" . 'WHERE { ?s a loc:Space ; ?p ?o . FILTER (?p = rdfs:label || ?p = ome:is-shadow-of ||  ?p = rdf:type || ?p = ome:is || ?p = loc:is-part-of || ?p = loc:adjacent-to) }' . "\n";
+$queryLocUser = $query . "\nSELECT ?s ?p ?o\nFROM <" . $graphUser . ">\n" . 'WHERE { ?s a loc:Space ; ?p ?o . FILTER (?p = rdfs:label || ?p = ome:is-shadow-of ||  ?p = rdf:type || ?p = ome:is || ?p = loc:is-part-of || ?p = loc:adjacent-to) }' . "\n";
 
 
 //print($queryUser);
@@ -36,8 +44,10 @@ $autoCharsToBeIgnored = array();
 $chars = array();
 
 $rUser = $s->query($queryCharUser);
+
 foreach ($rUser['result']['rows'] as $result)
 {
+	
 	addTripleToGraph($graph, makeTriple($result['s'], $result['p'], $result['o']));
 	
 	array_push($chars, $result['s']);
@@ -60,7 +70,8 @@ foreach ($rAuto['result']['rows'] as $result)
 	}
 }
 
-//print_r($chars);
+//print($queryCharAuto);
+//print_r($rAuto['result']['rows']);
 
 $autoLocsToBeIgnored = array();
 
@@ -91,17 +102,22 @@ foreach ($rAuto['result']['rows'] as $result)
 	}
 }
 
-$i = 1;
 //$potentialCharacterEntity = "";
 
 //while($potentialCharacterEntity == "")
+$potentialNewEntity = "";
 
 if($newType == "char" || !isset($newType) || $newType = "")
 {
-	if(array_search($graphAuto . 'character/' . $i, $chars) !== false || array_search($graphUser . 'character/' . $i, $chars) !== false)
+	
+	$i = 1;	
+	
+	while(array_search($graphAuto . 'character/' . $i, $chars) !== false || array_search($graphUser . 'character/' . $i, $chars) !== false)
 		$i++;
-	else
-		$potentialCharacterEntity = $graphUser . 'character/' . $i;
+	
+	$potentialNewEntity = $graphUser . 'character/' . $i;
+	
+	addTripleToGraph($graph, makeTriple($potentialNewEntity, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://purl.org/ontomedia/ext/common/being#Character"));
 }
 else
 {
@@ -112,10 +128,12 @@ else
 	
 	if($newType == "loc")
 	{
-		if(array_search($graphAuto . 'location/' . $i, $locs) !== false || array_search($graphUser . 'location/' . $i, $locs) !== false)
+		while(array_search($graphAuto . 'location/' . $i, $locs) !== false || array_search($graphUser . 'location/' . $i, $locs) !== false)
 			$i++;
-		else
-			$potentialLocationEntity = $graphUser . 'location/' . $i;
+		
+		$potentialNewEntity = $graphUser . 'location/' . $i;
+		
+		addTripleToGraph($graph, makeTriple($potentialNewEntity, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://purl.org/ontomedia/core/space#Space"));
 	}
 }
 
@@ -132,15 +150,27 @@ printXMLHeaders();
 	   controlsToSetup[0] = 'is';
 	   controlsToSetup[1] = 'isShadowOf';
 	   var classControlsToSetup = [];
-	   <?php
+	<?php
 	   if($newType == "loc")
-	   	print("classControlsToSetup[0] = 'type'");  
-	   ?>
-	   var entityType = '';
-<?php
+	   {
+	   	print("classControlsToSetup[0] = 'type';\n");  
+	   	print("var entityType = 'http://purl.org/ontomedia/core/space#Space';\n");
+		print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");	   	
+	   }
+	   else
+	   {
+	   	print("var entityType = 'http://purl.org/ontomedia/ext/common/being#Character';\n");
+	   	print("\tvar nameLabel = 'http://xmlns.com/foaf/0.1/name';\n");
+	   }
+
 	print("\tvar store = new TripleStore();\n");
-	print("\tvar nameLabel = 'http://www.w3.org/2000/01/rdf-schema#label';\n");
-	print("\tvar pageType = 'location';\n");
+	
+	if($newType == "loc")
+	   	print("\tvar pageType = 'location';\n");
+	else
+		print("\tvar pageType = 'character';\n");
+	
+	
 	print("\tvar nonLabelTriples = '';\n");
 	print("\tvar properties = [];\n");
 	print("\tvar classes = [];\n");
@@ -208,7 +238,6 @@ printXMLHeaders();
 # if Type is location then show options - else option is character
 if($newType == "loc")
 {
-	print("XXXX");
 	writeEntityControl('Type', 'Class');
 }
 else
@@ -238,7 +267,7 @@ writeEntityControl('IsShadowOf', '');
 
 ?>
 
-
+<p id="namedEntityID"><?php print($potentialNewEntity); ?></p>
 
 </body>
 </html>
