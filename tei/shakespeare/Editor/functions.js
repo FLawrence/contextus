@@ -33,6 +33,8 @@ function sortClass ( a, b )
 
 function setupNewPage ( )
 {
+	currentEntity = createEntityInNewGraph ( document.getElementById('namedEntityID').innerHTML, "" );
+
 	classes.sort(sortClass);
 	updateClassControls ( );
 }
@@ -51,6 +53,8 @@ function setupPage (  )
 
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
    selectTriples = selectTriples.sort(sortBySName);
+   
+  // alert("entityType:" + entityType);
 
    currentEntity = selectTriples[0].getS();
    
@@ -73,7 +77,10 @@ function addEntity ( controlName )
     var index = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].selectedIndex;
     var propertyValue = document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options[index].value;
 
-   mainLabelChanged();
+     if(document.getElementById('entityChooserForm'))
+     {
+    	   mainLabelChanged();
+    }
 
    if (isAuto(propertyValue) == true)
    {
@@ -81,13 +88,17 @@ function addEntity ( controlName )
       var newPropertyValue = createEntityInNewGraph(propertyValue, oldNameTriple.getO());
 
       var option = new Option(oldNameTriple.getO(), newPropertyValue, false, false);
-      for (i = 0; i < document.entityChooserForm.entityChooserSelect.options.length; i++)
-      {
-         if (document.entityChooserForm.entityChooserSelect.options[i].value == propertyValue)
-	 {
-	    document.entityChooserForm.entityChooserSelect.options[i] = option;
-         }
-      }
+      
+     if(document.getElementById('entityChooserForm'))
+     {
+	      for (i = 0; i < document.entityChooserForm.entityChooserSelect.options.length; i++)
+	      {
+			 if (document.entityChooserForm.entityChooserSelect.options[i].value == propertyValue)
+			 {
+			    document.entityChooserForm.entityChooserSelect.options[i] = option;
+			 }
+	      }
+	}
 
       propertyValue = newPropertyValue;
    }
@@ -159,7 +170,14 @@ function removeClassEntity ( controlName, entityToRemove )
 
 function entityChanged ( pageSelect )
 {
-    currentEntity = document.entityChooserForm.entityChooserSelect.options[document.entityChooserForm.entityChooserSelect.selectedIndex].value;
+     if(document.getElementById('entityChooserForm'))
+     {
+    	currentEntity = document.entityChooserForm.entityChooserSelect.options[document.entityChooserForm.entityChooserSelect.selectedIndex].value;
+    }
+    else
+    {
+    	currentEntity = document.getElementById('namedEntityID').innerHTML;
+    }
 
 	if (pageSelect == "basic")
 	{
@@ -191,6 +209,7 @@ function createEntityInNewGraph ( entity, name )
 
 function mainLabelChanged ( )
 {
+   
    if (isAuto(currentEntity) == true)
    {
       userEntity = createEntityInNewGraph(currentEntity, document.generalInformationForm.entityName.value);
@@ -203,10 +222,14 @@ function mainLabelChanged ( )
    }
 
    var option = new Option(document.generalInformationForm.entityName.value, currentEntity, false, false);   
-   var changeIndex = document.entityChooserForm.entityChooserSelect.selectedIndex;
-   
-   document.entityChooserForm.entityChooserSelect.options[changeIndex] = option;
-   document.entityChooserForm.entityChooserSelect.selectedIndex = changeIndex;
+    
+   if(document.getElementById('entityChooserForm'))
+   {  
+   	var changeIndex = document.entityChooserForm.entityChooserSelect.selectedIndex;
+
+   	document.entityChooserForm.entityChooserSelect.options[changeIndex] = option;
+  	document.entityChooserForm.entityChooserSelect.selectedIndex = changeIndex;
+  }
 
    checkFields();
 }
@@ -228,14 +251,23 @@ function updateMainChooser (  )
 
 function updateAllControls ( )
 {
-   updateMainChooser();
+
+   if(document.getElementById('entityChooserForm'))
+   {
+   	updateMainChooser();
+   }
 
    for (control = 0; control < controlsToSetup.length; control++)
    {
       updateControl(controlsToSetup[control]);
    }
    
-   document.getElementById('namedEntityID').innerHTML = currentEntity;
+    if(document.getElementById('entityChooserForm'))
+   {
+   	document.getElementById('namedEntityID').innerHTML = currentEntity;
+   }
+   
+   //alert("currentEntity = " + currentEntity);
 }
 
 function updateClassControls ( )
@@ -309,8 +341,6 @@ function updateClassControl ( controlName )
    listTriples = listTriples.sort(sortByO);
    selectTriples = store.findTriples('*', rdfTypeLabel, entityType);
    selectTriples = selectTriples.sort(sortBySName);
-   
-   alert(controlName);
    
    document.forms[controlName + 'Form'].elements[controlName + 'AddList'].options.length = 0;
    var optionsIndex = 0;
@@ -402,7 +432,6 @@ function getDisplayName ( entityID )
    
    if (nameTriples.length > 0) name = nameTriples[0].getO();
    
-   
    if (isAuto(entityID) == true)
    {
       return name + ' (auto)';
@@ -464,6 +493,8 @@ function setupChooser ( )
 function updateFields ( )
 {
 	item = store.findTriple(document.editForm.namedEntityList.options[document.editForm.namedEntityList.selectedIndex].value, nameLabel);
+	
+	//alert("UpdateFields");
 
 //	document.editForm.namedEntityName.value = item.getO();
 
@@ -477,6 +508,8 @@ function updateFields ( )
 function updateName ( index )
 {
 	var triples = store.getTriples();
+	
+	//alert("UpdateName");
 
 	item = triples[index];
 
@@ -496,9 +529,9 @@ function updateName ( index )
 
 function displayChanges ( )
 {
-	alert('ADDED\n' + document.entityChooserForm.addedTriples.value);
-	alert('CHANGED\n' + document.entityChooserForm.changedTriples.value);
-	alert('DELETED\n' + document.entityChooserForm.deletedTriples.value);
+	//alert('ADDED\n' + document.entityChooserForm.addedTriples.value);
+	//alert('CHANGED\n' + document.entityChooserForm.changedTriples.value);
+	//alert('DELETED\n' + document.entityChooserForm.deletedTriples.value);
 }
 
 function checkFields ( )
@@ -526,12 +559,25 @@ function checkFields ( )
 			deletedString += triples[i].getS() + "|" + triples[i].getP() + "|" + triples[i].getO() + "\n";
 		}
 	}
+	
+	
+	if(document.getElementById('entityChooserForm'))
+	{
+		document.entityChooserForm.addedTriples.value = addedString;
+		document.entityChooserForm.changedTriples.value = changedString;
+		document.entityChooserForm.deletedTriples.value = deletedString;
+	
+		document.entityChooserForm.saveButton.disabled = !store.isChanged();
+	}
+	
+	if(document.getElementById('entityCreatorForm'))
+	{
+		document.entityCreatorForm.addedTriples.value = addedString;
+		document.entityCreatorForm.changedTriples.value = changedString;
+		document.entityCreatorForm.deletedTriples.value = deletedString;
 
-	document.entityChooserForm.addedTriples.value = addedString;
-	document.entityChooserForm.changedTriples.value = changedString;
-	document.entityChooserForm.deletedTriples.value = deletedString;
-
-	document.entityChooserForm.saveButton.disabled = !store.isChanged();
+		document.entityCreatorForm.disabled = !store.isChanged();
+	}
 }
 
 
