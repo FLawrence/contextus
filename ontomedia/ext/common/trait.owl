@@ -479,7 +479,7 @@
   <owl:Class rdf:ID="Unconscious">
     <rdfs:label>Unconscious</rdfs:label>
     <rdfs:comment>This class describes an Entity which is unconscious</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="State-Of-Consciousness"/>
+    <rdfs:subClassOf rdf:resource="#State-Of-Consciousness"/>
     <owl:disjointWith>
      <owl:Class>
        <owl:unionOf rdf:parseType="Collection">
@@ -612,7 +612,7 @@
   <!-- Value Classes -->
  
   <owl:Class rdf:ID="Abstract-Component">
-    <rdfs:subClassOf rdf:resource="Value"/>
+    <rdfs:subClassOf rdf:resource="#Value"/>
     <rdfs:label>Abstract Component</rdfs:label>
     <rdfs:comment>This class represents a component part of an abstract item</rdfs:comment>
   </owl:Class> 
