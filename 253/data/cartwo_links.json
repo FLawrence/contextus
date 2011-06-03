@@ -1,0 +1,993 @@
+[
+  {
+    "to": "14",
+    "category": "Interaction",
+    "from": "13",
+    "label": "13 hears 14 shout"
+  },
+  {
+    "to": "145",
+    "category": "Incidental",
+    "from": "13",
+    "label": "13 lives in fear of kids on the local estate, 145 is pitch a security camera upgrade for the estate"
+  },
+  {
+    "to": "25",
+    "category": "Interaction",
+    "from": "14",
+    "label": "14 fights with 25"
+  },
+  {
+    "to": "ftnt14",
+    "category": "Explanation",
+    "from": "14",
+    "label": "14 lives in Hackney, which is described in ftnt14"
+  },
+  {
+    "to": "24",
+    "category": "Interaction",
+    "from": "14",
+    "label": "24 hears 14's threat"
+  },
+  {
+    "to": "151",
+    "category": "History",
+    "from": "21",
+    "label": "21 slept homeless on the streets with 151"
+  },
+  {
+    "to": "40",
+    "category": "Interaction",
+    "from": "38",
+    "label": "38 hears 40 say \"This is unbearable! Can't you use a deodorant?\""
+  },
+  {
+    "to": "39",
+    "category": "Interaction",
+    "from": "38",
+    "label": "38 smells 39"
+  },
+  {
+    "to": "85",
+    "category": "Incidental",
+    "from": "38",
+    "label": "38 thinking about non-existence of gay priest, 85 had sex with a priest"
+  },
+  {
+    "to": "94",
+    "category": "History",
+    "from": "38",
+    "label": "94 played high school football in the jacket worn by 94"
+  },
+  {
+    "to": "81",
+    "category": "Spatial",
+    "from": "39",
+    "label": "38 and 81 both work at Mosstains"
+  },
+  {
+    "to": "40",
+    "category": "Interaction",
+    "from": "39",
+    "label": "39 is told \"This is unbearable! Can't you use a deodorant?\" by 40"
+  },
+  {
+    "to": "81",
+    "category": "Spatial",
+    "from": "39",
+    "label": "39 and 81 work at Mosstains"
+  },
+  {
+    "to": "123",
+    "category": "Spatial",
+    "from": "39",
+    "label": "39 and 123 work at Mosstains"
+  },
+  {
+    "to": "25",
+    "category": "Spatial",
+    "from": "39",
+    "label": "39 and 25 work at Mosstains"
+  },
+  {
+    "to": "38",
+    "category": "Shared thoughts",
+    "from": "40",
+    "label": "38 is thinking about the non-existence of gay priests, 40 is on her way to a briefing about gay priests"
+  },
+  {
+    "to": "38",
+    "category": "Interaction",
+    "from": "40",
+    "label": "40 assumes 38 is gay"
+  },
+  {
+    "to": "ftnt40",
+    "category": "Explination",
+    "from": "40",
+    "label": "40 is going to Archibishop's Palace, footnote 40 is about Lambeth Palace"
+  },
+  {
+    "to": "182",
+    "category": "History",
+    "from": "40",
+    "label": "40 met and fell in love with the father of 182 in Queta in 1941"
+  },
+  {
+    "to": "39",
+    "category": "Interaction",
+    "from": "40",
+    "label": "40 smells 39"
+  },
+  {
+    "to": "ftnt186b",
+    "category": "Explination",
+    "from": "40",
+    "label": "40 supports Thatcher and footnote 186b is about Thatcher"
+  },
+  {
+    "to": "143",
+    "category": "Shared thoughts",
+    "from": "40",
+    "label": "40 supports Thatcher, 143 is impressed by Thatcher's grooming"
+  },
+  {
+    "to": "ad3",
+    "category": "Incidental",
+    "from": "40",
+    "label": "40 supports Thatcher, personal ad 3 (Young 50) mentions Thatcher (as destroyer of country)"
+  },
+  {
+    "to": "186",
+    "category": "Incidental",
+    "from": "40",
+    "label": "40 supports Thatcher, 186 is called Margaret Thatcher"
+  },
+  {
+    "to": "39",
+    "category": "Interaction",
+    "from": "40",
+    "label": "40 tells 39 \"This is unbearable! Can't you use a deodorant?\""
+  },
+  {
+    "to": "94",
+    "category": "Shared thoughts",
+    "from": "40",
+    "label": "Both 40 and 94 support Thatcher"
+  },
+  {
+    "to": "68",
+    "category": "Interaction",
+    "from": "41",
+    "label": "41 frightens 68"
+  },
+  {
+    "to": "69",
+    "category": "Interaction",
+    "from": "41",
+    "label": "41 interests 69"
+  },
+  {
+    "to": "ftnt14",
+    "category": "Explination",
+    "from": "41",
+    "label": "41 used to work for Hackney Council, ftnt14 is about Hackney Council"
+  },
+  {
+    "to": "62",
+    "category": "Spatial",
+    "from": "41",
+    "label": "Both 41 and 62 are going to the Multi-Use Resource Centre at Lambeth North"
+  },
+  {
+    "to": "215",
+    "category": "History",
+    "from": "42",
+    "label": "42 impressed 215 at an earlier meeting"
+  },
+  {
+    "to": "147",
+    "category": "Incidental",
+    "from": "42",
+    "label": "42 was trying to negotiate sponsorship from Dun and Old, 147 works for Dun and Old"
+  },
+  {
+    "to": "ftnt29",
+    "category": "Explination",
+    "from": "42",
+    "label": "42 works at Florence Nightingale Museum, St Thomas' Hospital, ftnt20 is about St Thomas' Hospital"
+  },
+  {
+    "to": "97",
+    "category": "Spatial",
+    "from": "42",
+    "label": "Both 42 and 97 are going to St Thomas' Hospital"
+  },
+  {
+    "to": "138",
+    "category": "Spatial",
+    "from": "43",
+    "label": "43 and 138 both work on Lower Marsh"
+  },
+  {
+    "to": "16",
+    "category": "Spatial",
+    "from": "43",
+    "label": "43 and 16 both work on Lower Marsh"
+  },
+  {
+    "to": "204",
+    "category": "Spatial",
+    "from": "43",
+    "label": "43 and 204 both work on Lower Marsh"
+  },
+  {
+    "to": "236",
+    "category": "Spatial",
+    "from": "43",
+    "label": "43 and 236 both work on Lower Marsh"
+  },
+  {
+    "to": "67",
+    "category": "Spatial",
+    "from": "43",
+    "label": "43 and 67 both work on Lower Marsh"
+  },
+  {
+    "to": "190",
+    "category": "Incidental",
+    "from": "43",
+    "label": "43 played rugby, 190 works with a rugby player"
+  },
+  {
+    "to": "201",
+    "category": "Shared thoughts",
+    "from": "43",
+    "label": "43 played rugby, 201 plays rugby"
+  },
+  {
+    "to": "39",
+    "category": "Interaction",
+    "from": "43",
+    "label": "43 smells 39"
+  },
+  {
+    "to": "12",
+    "category": "Spatial",
+    "from": "43",
+    "label": "43 works on Lower Marsh, 12 wants to buy a Health Centre on Lower Marsh"
+  },
+  {
+    "to": "28",
+    "category": "Spatial",
+    "from": "43",
+    "label": "Both 43 and 28 work on Lower Marsh"
+  },
+  {
+    "to": "108",
+    "category": "Spatial",
+    "from": "44",
+    "label": "44 and 108 both work for the Metropolitan police"
+  },
+  {
+    "to": "119",
+    "category": "History",
+    "from": "44",
+    "label": "44 and 119 are lovers "
+  },
+  {
+    "to": "119",
+    "category": "Spatial",
+    "from": "44",
+    "label": "44 and 119 both work for the Metropolitan Police"
+  },
+  {
+    "to": "66",
+    "category": "Spatial",
+    "from": "44",
+    "label": "44 and 66 are sitting across from each other"
+  },
+  {
+    "to": "66",
+    "category": "Interaction",
+    "from": "44",
+    "label": "44 notices 66's stockings"
+  },
+  {
+    "to": "108",
+    "category": "Spatial",
+    "from": "44",
+    "label": "Both work for the Police"
+  },
+  {
+    "to": "119",
+    "category": "Spatial",
+    "from": "44",
+    "label": "Both work for the Police"
+  },
+  {
+    "to": "119",
+    "category": "History",
+    "from": "44",
+    "label": "119 is having an affair with 44"
+  },
+  {
+    "to": "193",
+    "category": "Incidental",
+    "from": "44",
+    "label": "44 works for the police, 193 is a policeman's daughter"
+  },
+  {
+    "to": "83",
+    "category": "Spatial",
+    "from": "45",
+    "label": "45 and 83 work at the London Emergency Service"
+  },
+  {
+    "to": "ftnt45",
+    "category": "Spatial",
+    "from": "45",
+    "label": "45 and 83 work at the London Emergency Service"
+  },
+  {
+    "to": "47",
+    "category": "Interaction",
+    "from": "46",
+    "label": "46 hits 47 with a bundle of books"
+  },
+  {
+    "to": "120",
+    "category": "Spatial",
+    "from": "46",
+    "label": "46 runs  bookstall in front of the National Theatre, where 120 works"
+  },
+  {
+    "to": "ftnt46",
+    "category": "Spatial",
+    "from": "46",
+    "label": "46 runs a bookstall under the arches of Waterloo Bridge near Southbank"
+  },
+  {
+    "to": "249",
+    "category": "Spatial",
+    "from": "47",
+    "label": "47 runs a \"black themed\" stall near 249, who runs a party novelty stall"
+  },
+  {
+    "to": "ftnt47",
+    "category": "Explination",
+    "from": "47",
+    "label": "47 runs a stall by the Elephant and Castle Shopping Center"
+  },
+  {
+    "to": "204",
+    "category": "History",
+    "from": "47",
+    "label": "the stall by 47 is supplied with CDs from 204"
+  },
+  {
+    "to": "115",
+    "category": "Spatial",
+    "from": "48",
+    "label": "48 and 115 both work at the South Bank Technology Park"
+  },
+  {
+    "to": "ftnt48",
+    "category": "Explination",
+    "from": "48",
+    "label": "48 works for the South Bank Technology Park, ftnt48 is about the South Bank Technology Park"
+  },
+  {
+    "to": "63",
+    "category": "History",
+    "from": "48",
+    "label": "48 saw 63 commit a burglary at ftnt48"
+  },
+  {
+    "to": "163",
+    "category": "Shared thoughts",
+    "from": "49",
+    "label": "49 and 163 are both reading The Independent"
+  },
+  {
+    "to": "ftnt67",
+    "category": "Explination",
+    "from": "49",
+    "label": "49 is reading about Parkhurst Prison"
+  },
+  {
+    "to": "ftnt179",
+    "category": "Explination",
+    "from": "49",
+    "label": "49 knows someone who is planning to visit Oregon"
+  },
+  {
+    "to": "179",
+    "category": "Incidental",
+    "from": "49",
+    "label": "49 knows someone who is planning to visit Oregon, and 179 has visited Oregon"
+  },
+  {
+    "to": "ftnt49",
+    "category": "Explination",
+    "from": "49",
+    "label": "49 manages the Waterloo Spare Parts"
+  },
+  {
+    "to": "13",
+    "category": "Incidental",
+    "from": "50",
+    "label": "50 works at the fetish shop, 13 is scared of their customers"
+  },
+  {
+    "to": "215",
+    "category": "Incidental",
+    "from": "51",
+    "label": "51's son, Imran, runs a newsagents, which is insured by the company that passenger 215 works for."
+  },
+  {
+    "to": "207",
+    "category": "Relationship",
+    "from": "52",
+    "label": "52 is a friend of 207"
+  },
+  {
+    "to": "86",
+    "category": "Spatial",
+    "from": "52",
+    "label": "52 is taking a course at the same college that 86 teaches at"
+  },
+  {
+    "to": "ftnt46",
+    "category": "Explination",
+    "from": "53",
+    "label": "53 is going to the Royal Festival Hall, ftnt46 is about the Royal Festival Hall"
+  },
+  {
+    "to": "139",
+    "category": "Spatial",
+    "from": "54",
+    "label": "54 works at BT, as does 139 who's on a graduate placement there."
+  },
+  {
+    "to": "165",
+    "category": "Incidental",
+    "from": "55",
+    "label": "55 chased a suspect who had sprayed graffiti on the school walls where 165's husband works (different school to 82!)"
+  },
+  {
+    "to": "82",
+    "category": "Incidental",
+    "from": "55",
+    "label": "55 chased a suspect who had sprayed graffiti on the school walls where 82 works"
+  },
+  {
+    "to": "21",
+    "category": "Spatial",
+    "from": "55",
+    "label": "55 works at Lambeth Police Station, 21 is on his way there"
+  },
+  {
+    "to": "84",
+    "category": "Spatial",
+    "from": "56",
+    "label": "56 manages the shop next to 84"
+  },
+  {
+    "to": "50",
+    "category": "Incidental",
+    "from": "56",
+    "label": "56 imagines 50 as a woman"
+  },
+  {
+    "to": "51",
+    "category": "Incidental",
+    "from": "56",
+    "label": "56 imagines 51 as a man"
+  },
+  {
+    "to": "52",
+    "category": "Incidental",
+    "from": "56",
+    "label": "56 imagines 52 as a man"
+  },
+  {
+    "to": "53",
+    "category": "Incidental",
+    "from": "56",
+    "label": "56 imagines 53 as a man"
+  },
+  {
+    "to": "54",
+    "category": "Incidental",
+    "from": "56",
+    "label": "56 imagines 54 as a man"
+  },
+  {
+    "to": "55",
+    "category": "Incidental",
+    "from": "56",
+    "label": "56 imagines 55 as a woman"
+  },
+  {
+    "to": "101",
+    "category": "Spatial",
+    "from": "57",
+    "label": "57 and 101 work at Adventure Capital"
+  },
+  {
+    "to": "79",
+    "category": "Shared thoughts",
+    "from": "57",
+    "label": "57 and 79 are thinking of inviting 216 to live with them"
+  },
+  {
+    "to": "140",
+    "category": "Shared thoughts",
+    "from": "57",
+    "label": "57 and 140 are thinking of inviting 216 to live with them"
+  },
+  {
+    "to": "198",
+    "category": "Incidental",
+    "from": "57",
+    "label": "57 is thinking about inviting 216 to live with her, 198 is thinking of inviting 216 to help teach EFL"
+  },
+  {
+    "to": "216",
+    "category": "History",
+    "from": "57",
+    "label": "57 has been talking to 216 regularly believing him to be Pascal from Switzerland"
+  },
+  {
+    "to": "90",
+    "category": "Spatial",
+    "from": "58",
+    "label": "58 teaches at Bruenwalt International College, 90 studies Bruenwalt International College"
+  },
+  {
+    "to": "92",
+    "category": "Spatial",
+    "from": "58",
+    "label": "58 teaches at Bruenwalt International College, 92 studies Bruenwalt International College"
+  },
+  {
+    "to": "198",
+    "category": "Spatial",
+    "from": "58",
+    "label": "58 and 198 teach at Bruenwalt International College"
+  },
+  {
+    "to": "23",
+    "category": "Spatial",
+    "from": "58",
+    "label": "58 teaches at Bruenwalt International College, 58 studies Bruenwalt International College"
+  },
+  {
+    "to": "60",
+    "category": "Relationship",
+    "from": "59",
+    "label": "59 is friends with 60"
+  },
+  {
+    "to": "60",
+    "category": "History",
+    "from": "59",
+    "label": "Went drinking together"
+  },
+  {
+    "to": "60",
+    "category": "Spatial",
+    "from": "59",
+    "label": "Worked together"
+  },
+  {
+    "to": "59",
+    "category": "History",
+    "from": "60",
+    "label": "Came from Russia together"
+  },
+  {
+    "to": "59",
+    "category": "Spatial",
+    "from": "60",
+    "label": "Worked together"
+  },
+  {
+    "to": "107",
+    "category": "Shared thoughts",
+    "from": "62",
+    "label": "62 and 107 are both fangirls"
+  },
+  {
+    "to": "80",
+    "category": "Shared thoughts",
+    "from": "62",
+    "label": "62 has 8 cats, 80 wants to open a cattery"
+  },
+  {
+    "to": "41",
+    "category": "Spatial",
+    "from": "62",
+    "label": "62 works with the Asian Women's Group at Multi-Use Resource Centre, 41 is interviewing for a job teaching Karate at the Multi-Use Resource Centre"
+  },
+  {
+    "to": "2",
+    "category": "Incidental",
+    "from": "63",
+    "label": "63 took part in a robbery, 2 is writing an article on photo ids which were required after the second robbery in the area"
+  },
+  {
+    "to": "48",
+    "category": "History",
+    "from": "63",
+    "label": "63 was seen by 48 during a robbery at 48's place of work"
+  },
+  {
+    "to": "132",
+    "category": "Incidental",
+    "from": "64",
+    "label": "64 works for Pall Mall Oil, 132 has many friends at Pall Mall Oil"
+  },
+  {
+    "to": "102",
+    "category": "Spatial",
+    "from": "64",
+    "label": "Both 64 and 102 work for Pall Mall Oil"
+  },
+  {
+    "to": "129",
+    "category": "Spatial",
+    "from": "64",
+    "label": "Both 64 and 129 work for Pall Mall Oil"
+  },
+  {
+    "to": "150",
+    "category": "Spatial",
+    "from": "64",
+    "label": "Both 64 and 150 work for Pall Mall Oil"
+  },
+  {
+    "to": "205",
+    "category": "Spatial",
+    "from": "64",
+    "label": "Both 64 and 205 work for Pall Mall Oil"
+  },
+  {
+    "to": "232",
+    "category": "Spatial",
+    "from": "64",
+    "label": "Both 64 and 232 work for Pall Mall Oil"
+  },
+  {
+    "to": "246",
+    "category": "Incidental",
+    "from": "65",
+    "label": "65 works at a hairdressers, 246 works at a beauty salon"
+  },
+  {
+    "to": "45",
+    "category": "Interaction",
+    "from": "66",
+    "label": "66 sees 45 holding a box"
+  },
+  {
+    "to": "46",
+    "category": "Interaction",
+    "from": "66",
+    "label": "66 sees 46 clump 47 with a bike seat"
+  },
+  {
+    "to": "47",
+    "category": "Interaction",
+    "from": "66",
+    "label": "66 sees 47 clumped with a bike seat by 46"
+  },
+  {
+    "to": "44",
+    "category": "Interaction",
+    "from": "66",
+    "label": "66 thinks 44 is Mick Hucknall while she is sleepwalking"
+  },
+  {
+    "to": "13",
+    "category": "Spatial",
+    "from": "67",
+    "label": "67 lives in the same housing estate as 13"
+  },
+  {
+    "to": "138",
+    "category": "Spatial",
+    "from": "67",
+    "label": "67 and 138 both work on Lower Marsh"
+  },
+  {
+    "to": "204",
+    "category": "Spatial",
+    "from": "67",
+    "label": "67 and 204 both work on Lower Marsh"
+  },
+  {
+    "to": "236",
+    "category": "Spatial",
+    "from": "67",
+    "label": "67 and 236 both work on Lower Marsh"
+  },
+  {
+    "to": "43",
+    "category": "Spatial",
+    "from": "67",
+    "label": "67 and 43 both work on Lower Marsh"
+  },
+  {
+    "to": "49",
+    "category": "Incidental",
+    "from": "67",
+    "label": "67 is a next door neighbour to a friend of some escaped prisoners, 49 is reading about the escape "
+  },
+  {
+    "to": "ftnt67",
+    "category": "Incidental",
+    "from": "67",
+    "label": "67 is the next door neighbour of a friend of some prisoners who escaped from Parkhurst prison, ftnt67 is about the prison"
+  },
+  {
+    "to": "39",
+    "category": "Interaction",
+    "from": "67",
+    "label": "67 smells 39"
+  },
+  {
+    "to": "69",
+    "category": "Relationship",
+    "from": "68",
+    "label": "68 is 69's grandmother"
+  },
+  {
+    "to": "203",
+    "category": "Incidental",
+    "from": "68",
+    "label": "Both 68 and 203 have grandchildren (who they are looking after/visiting or will be shortly)"
+  },
+  {
+    "to": "26",
+    "category": "Incidental",
+    "from": "68",
+    "label": "Both 68 and 26 have grandchildren"
+  },
+  {
+    "to": "68",
+    "category": "Relationship",
+    "from": "69",
+    "label": "69 is 68's granddaughter"
+  },
+  {
+    "to": "41",
+    "category": "Interaction",
+    "from": "69",
+    "label": "69 is fascinated by 41 who she thinks looks like is from the tell"
+  },
+  {
+    "to": "ad3",
+    "category": "Explination",
+    "from": "71",
+    "label": "71 is reading personal ads, ad3 are personal ads"
+  },
+  {
+    "to": "184",
+    "category": "Interaction",
+    "from": "71",
+    "label": "71 read personal advert put in Time Out by 184"
+  },
+  {
+    "to": "210",
+    "category": "Spatial",
+    "from": "71",
+    "label": "Both 71 and 210 live in Harrow"
+  },
+  {
+    "to": "221",
+    "category": "Spatial",
+    "from": "71",
+    "label": "Both 71 and 221 live in Harrow"
+  },
+  {
+    "to": "233",
+    "category": "Spatial",
+    "from": "71",
+    "label": "Both 71 and 233 live in Harrow"
+  },
+  {
+    "to": "71",
+    "category": "Interaction",
+    "from": "72",
+    "label": "72 fancies 71"
+  },
+  {
+    "to": "39",
+    "category": "Interaction",
+    "from": "72",
+    "label": "72 smells 39"
+  },
+  {
+    "to": "71",
+    "category": "Interaction",
+    "from": "72",
+    "label": "72 thinks 71 smells"
+  },
+  {
+    "to": "196",
+    "category": "Spatial",
+    "from": "72",
+    "label": "72 works at London Television Centre, 196 works for London Weekend Television"
+  },
+  {
+    "to": "231",
+    "category": "Spatial",
+    "from": "72",
+    "label": "72 works at London Television Centre, 231 is pretending to work at London Weekend Television and has a temporary pass"
+  },
+  {
+    "to": "19",
+    "category": "Relationship",
+    "from": "73",
+    "label": "73 is stepfather of 19"
+  },
+  {
+    "to": "J",
+    "category": "Interaction",
+    "from": "73",
+    "label": "73 thinks he is sitting with Jesus"
+  },
+  {
+    "to": "19",
+    "category": "Interaction",
+    "from": "73",
+    "label": "73 wants to kill 19"
+  },
+  {
+    "to": "94",
+    "category": "Shared thoughts",
+    "from": "73",
+    "label": "Both 73 and 94 are thinking of Andrew Lloyd Webber"
+  },
+  {
+    "to": "136",
+    "category": "Incidental",
+    "from": "74",
+    "label": "74 claimed her husband was an IRA informant and they don't know how to get him out now there is a ceasefire, 136 is thinking of visiting Northern Ireland now there is a ceasefire"
+  },
+  {
+    "to": "152",
+    "category": "Interaction",
+    "from": "74",
+    "label": "74 is being tailed by 152"
+  },
+  {
+    "to": "126",
+    "category": "Spatial",
+    "from": "74",
+    "label": "Both 74 and 126 work at Epik Publications"
+  },
+  {
+    "to": "ftnt108",
+    "category": "Explanation",
+    "from": "108",
+    "label": "108 visits Ghandi's statue every morning. ftnt108 describes the statue."
+  },
+  {
+    "to": "111",
+    "category": "Interaction",
+    "from": "110",
+    "label": "110 pats the seat next to him, encouraging 111 to sit down next to him"
+  },
+  {
+    "to": "198",
+    "category": "Interaction",
+    "from": "111",
+    "label": "110 suggests to 111 that she could get a qualification to teach English as a foreign language. 198 is trying to find a book that explains the use of English verbs in a way her foreign students might understand\n"
+  },
+  {
+    "to": "182",
+    "category": "Incidental",
+    "from": "111",
+    "label": "111 often goes to France, where her husband lives. 182 has just returned from a wedding in France"
+  },
+  {
+    "to": "110",
+    "category": "Interaction",
+    "from": "145",
+    "label": "110 moves his feet so that 145 can sit down"
+  },
+  {
+    "to": "171",
+    "category": "Incidental",
+    "from": "145",
+    "label": "145 is concerned about security, 171 works for a security firm"
+  },
+  {
+    "to": "193",
+    "category": "Incidental",
+    "from": "145",
+    "label": "145 is due to give a presentation to the Met Police. 193 is a policeman's daughter"
+  },
+  {
+    "to": "213",
+    "category": "Incidental",
+    "from": "145",
+    "label": "145 visited New Scotland Yard, 213 has a data licensing agreement with Scotland Yard"
+  },
+  {
+    "to": "91",
+    "category": "Incidental",
+    "from": "145",
+    "label": "At New Scotland Yard, 145 saw surveillance cameras monitor someone getting on a bus. 91 is presumably now tracking the same person."
+  },
+  {
+    "to": "235",
+    "category": "Shared thoughts",
+    "from": "150",
+    "label": "Both have copies of the FT"
+  },
+  {
+    "to": "205",
+    "category": "Spatial",
+    "from": "150",
+    "label": "Both work for Pall Mall Oil"
+  },
+  {
+    "to": "150",
+    "category": "Interaction",
+    "from": "151",
+    "label": "151 admires 150"
+  },
+  {
+    "to": "176",
+    "category": "Interaction",
+    "from": "151",
+    "label": "151 talks to 176"
+  },
+  {
+    "to": "192",
+    "category": "Interaction",
+    "from": "193",
+    "label": "193 is watching 192 as he sleeps and then wakes up, suddenly"
+  },
+  {
+    "to": "206",
+    "category": "Interaction",
+    "from": "193",
+    "label": "They're having a tense whistling competition."
+  },
+  {
+    "to": "216",
+    "category": "Interaction",
+    "from": "198",
+    "label": "198 is in love with 216"
+  },
+  {
+    "to": "23",
+    "category": "Spatial",
+    "from": "198",
+    "label": "198 teaches at Bruenwalt International, where 23 is a student."
+  },
+  {
+    "to": "232",
+    "category": "Spatial",
+    "from": "205",
+    "label": "Both work for Pall Mall Oil"
+  },
+  {
+    "to": "219",
+    "category": "Incidental",
+    "from": "216",
+    "label": "216 is a taxi driver, 219 had an incident in a taxi recently"
+  },
+  {
+    "to": "102",
+    "category": "Shared thoughts",
+    "from": "235",
+    "label": "Both have copies of the FT"
+  }
+]
+

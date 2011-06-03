@@ -1,0 +1,143 @@
+<link name="*untitled" sourceid="3312059464" sourcecreator="system" sstart="126" slen="16" style="0" destid="3312059462" destcreator="system" URL="http://natematias.com/projects/"  />
+<link name="*untitled" sourceid="3312059464" sourcecreator="system" sstart="117" slen="4" style="0" destid="3312059462" destcreator="system" URL="http://stef.io"  />
+</links>
+<macros >
+</macros>
+<preferences >
+   <Creator > system</Creator>
+   <ToolbarVisible > 1</ToolbarVisible>
+   <OpenTextImmediately > 0</OpenTextImmediately>
+   <RunScriptsAutomatically > 1</RunScriptsAutomatically>
+   <Tinderbox5Wizard > 1</Tinderbox5Wizard>
+   <DynamicSpelling > 0</DynamicSpelling>
+   <AutoOpen > 1</AutoOpen>
+   <RememberWindowPositions > 1</RememberWindowPositions>
+   <KeepWindowsOpen > 1</KeepWindowsOpen>
+   <LeftMargin > 2</LeftMargin>
+   <RightMargin > -2</RightMargin>
+   <ParagraphSpacing > 2</ParagraphSpacing>
+   <MagnifyFonts > 1</MagnifyFonts>
+   <TextFont > Lucida Grande</TextFont>
+   <TextSize > 3</TextSize>
+   <TextJust > 0</TextJust>
+   <AlwaysShowTextLinks > 0</AlwaysShowTextLinks>
+   <TextLinkFrames > 1</TextLinkFrames>
+   <TextLinkColor > 0 26112 52224</TextLinkColor>
+   <VisitedLinkColor > 26112 0 52224</VisitedLinkColor>
+   <ActiveLinkColor > 65535 0 0</ActiveLinkColor>
+   <MagnifyPictures > 1</MagnifyPictures>
+   <TextWindowWidth > 6</TextWindowWidth>
+   <TextWindowHeight > 4</TextWindowHeight>
+   <TextBackgroundColor > 65535 65535 65535</TextBackgroundColor>
+   <TextColor > 0 0 0</TextColor>
+   <ShowSidebar > 1</ShowSidebar>
+   <AutoIndentLists > 1</AutoIndentLists>
+   <ShowTitle > 1</ShowTitle>
+   <TitleBackgroundColor > 0 0 0</TitleBackgroundColor>
+   <TitleForegroundColor > 65535 65535 65535</TitleForegroundColor>
+   <TitleFont > Lucida Grande</TitleFont>
+   <TitleSize > 2</TitleSize>
+   <TitleJust > 2</TitleJust>
+   <MapShowLinks > 1</MapShowLinks>
+   <MapEnacted > 1</MapEnacted>
+   <InPlaceEditing > 1</InPlaceEditing>
+   <MapLabelSize > 3</MapLabelSize>
+   <MapBackgroundColor > 56661 58205 58658</MapBackgroundColor>
+   <MapPrototypeColor > 56797 61166 56797</MapPrototypeColor>
+   <MapFont > Lucida Grande</MapFont>
+   <DarkenOutlineColors > 1</DarkenOutlineColors>
+   <BlackOutlineText > 0</BlackOutlineText>
+   <OutlineLeading > 2</OutlineLeading>
+   <InteriorScale > 1</InteriorScale>
+   <ExpandMode > 1</ExpandMode>
+   <ExportImageFormat > 1</ExportImageFormat>
+   <ExportURL > http://</ExportURL>
+   <ExportHTMLCreator > 1</ExportHTMLCreator>
+   <ExportHTMLHelper > Safari</ExportHTMLHelper>
+   <ExportHTMLExtension > 0</ExportHTMLExtension>
+   <HTMLParagraphStyle > 1</HTMLParagraphStyle>
+   <HTMLViewFont > Lucida Grande</HTMLViewFont>
+   <HTMLViewFontSize > 2</HTMLViewFontSize>
+   <ExportTemplatePath > plain</ExportTemplatePath>
+   <ExportTemplate > ~/Desktop</ExportTemplate>
+   <ExportTextTemplate > ~/Desktop</ExportTextTemplate>
+   <RoadmapWindowWidth > 0</RoadmapWindowWidth>
+   <RoadmapWindowHeight > 0</RoadmapWindowHeight>
+   <ExportTextCreator > 1</ExportTextCreator>
+   <TextExportViewFont > Lucida Grande</TextExportViewFont>
+   <TextExportViewFontSize > 2</TextExportViewFontSize>
+   <ExportTextTemplatePath > outline</ExportTextTemplatePath>
+   <ExportTextHelper > TextEdit</ExportTextHelper>
+   <AskToDelete > 2</AskToDelete>
+   <DailyTip > 1</DailyTip>
+   <WarnEditingDefault > 1</WarnEditingDefault>
+   <WarnDuplicateName > 1</WarnDuplicateName>
+   <Version > version 5.7</Version>
+   <PreferencePane > 3</PreferencePane>
+   <Fontmap > 1
+ 1024 Lucida Grande
+</Fontmap>
+   <TipWindowX > 300</TipWindowX>
+   <TipWindowY > 50</TipWindowY>
+   <RegUserName > J. Nathan Matias</RegUserName>
+   <RegUserOrg > </RegUserOrg>
+   <CurrentAttributeClass > Appearance</CurrentAttributeClass>
+   <CurrentAttribute > Shadow</CurrentAttribute>
+   <FindCaseSensitive > 1</FindCaseSensitive>
+   <ExportFolder > Hard disk:Users:nathan:</ExportFolder>
+   <ReadOnly > 0</ReadOnly>
+   <InfoWindowHeight > 0</InfoWindowHeight>
+   <InfoWindowWidth > 0</InfoWindowWidth>
+   <RecentFiles > &lt;files &gt;
+&lt;file &gt;Macintosh HD:Users:nathan:Development:Docbox:test:fixtures:files:test_item.tbx&lt;/file&gt;
+&lt;file &gt;Macintosh HD:Users:nathan:Desktop:SA-DEC-Trip2008.tbx&lt;/file&gt;
+&lt;file &gt;Macintosh HD:Users:nathan:Desktop:WUDP:SouthAfricaMarch2008:SA-DEC-Trip2008.tbx&lt;/file&gt;
+&lt;file &gt;Macintosh HD:Users:nathan:Documents:PostsToTexperts:Texpertise2.tbx&lt;/file&gt;
+&lt;/files&gt;
+</RecentFiles>
+   <PingServer > http://rpc.weblogs.com/RPC2</PingServer>
+   <PingMethod > weblogUpdates.ping</PingMethod>
+   <PingTitle > your weblog name</PingTitle>
+   <PingURL > weblog URL</PingURL>
+      <PingTechnorati > 1</PingTechnorati>
+   <PingWeblogsCom > 1</PingWeblogsCom>
+   <PingGoogle > 1</PingGoogle>
+   <PingFeedURL > </PingFeedURL>
+   <WeblogServer > http://your_host/cgi-bin/mt/mt-xmlrpc.cgi</WeblogServer>
+   <WeblogUser > </WeblogUser>
+   <WeblogPassword > </WeblogPassword>
+   <WeblogID > 1</WeblogID>
+   <WeblogKind > 2</WeblogKind>
+   <ToolbarKind > 3</ToolbarKind>
+   <ReadingReminders > 0</ReadingReminders>
+   <AllowViews > 1</AllowViews>
+   <AutomaticAgentUpdate > 1</AutomaticAgentUpdate>
+   <ToolbarX > 69</ToolbarX>
+   <ToolbarY > 514</ToolbarY>
+   <FindWindowX > 600</FindWindowX>
+   <FindWindowY > 100</FindWindowY>
+   <RenameWindowX > 446</RenameWindowX>
+   <RenameWindowY > 75</RenameWindowY>
+   <UpdateViewShown > </UpdateViewShown>
+   <ExportTextTemplatePath > outline</ExportTextTemplatePath>
+   <TimelineScale > 1000</TimelineScale>
+   <TimelineLabelSize > 16</TimelineLabelSize>
+   <LeftMargin > 2</LeftMargin>
+   <RightMargin > -2</RightMargin>
+   <ParagraphSpacing > 2</ParagraphSpacing>
+   <MagnifyFonts > 1</MagnifyFonts>
+   <SoundOn > 1</SoundOn>
+   <BecomeReadOnly > 0</BecomeReadOnly>
+   <CheckMail > 0</CheckMail>
+   <MailHost > </MailHost>
+   <MailUser > </MailUser>
+   <MailPassword > </MailPassword>
+   <CheckSimplenote > 0</CheckSimplenote>
+   <SimplenoteEmail > </SimplenoteEmail>
+   <SimplenotePassword > </SimplenotePassword>
+</preferences>
+<windows >
+<window ID="3312059462" Creator="system" type="map" bounds="Rect[ 464 176 996 586]" x="214" y="140" scale="5" expanded="3382882741 " collapsed="3312059462 "  />
+<window ID="3312059462" Creator="system" type="outline" bounds="Rect[ 738 171 1238 521]" x="0" y="0" scale="5" expanded="3312059462 " collapsed="3382882741 "  />
+</windows>
+</tinderbox>
