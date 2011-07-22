@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="trains" basedir=".">
+
+	<property file="build.properties" />
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+
+	<target name="compile">
+		<mkdir dir="build" />
+		
+		<mxmlc file="${project.class}" target-player="10.0.0" output="build/trains.swf" compiler.as3="${compiler.as3}" compiler.optimize="true" compiler.strict="${compiler.strict}" actionscript-file-encoding="${compiler.encoding}" keep-generated-actionscript="${compiler.keep-generated-as}" incremental="false" benchmark="${compiler.benchmark}" debug="true" use-network="${compiler.use-network}" warnings="${compiler.warnings}" fork="true">
+			<source-path path-element="ext" />
+			<compiler.include-libraries dir="." append="true">
+				<include name="lib/infoGraphicNovel.swc" /> 
+				<include name="lib/greensock.swc" /> 
+			</compiler.include-libraries> 			 
+		</mxmlc>
+	</target>
+	
+	<target name="compile_preloaded" depends="compile">
+		<taskdef resource="flexTasks.tasks" classpath="${flex.dir}/ant/lib/flexTasks.jar" />
+	
+		<mkdir dir="build" />
+		<mxmlc file="${src.dir}/Preloader.as" output="build/preloaded.swf" compiler.as3="${compiler.as3}" compiler.optimize="true" compiler.strict="${compiler.strict}" actionscript-file-encoding="${compiler.encoding}" keep-generated-actionscript="${compiler.keep-generated-as}" incremental="${compiler.incremental}" benchmark="${compiler.benchmark}" debug="false" use-network="true" warnings="${compiler.warnings}" fork="true">
+			<target-player>9.0.0</target-player>
+			<source-path path-element="ext" />
+			<compiler.include-libraries dir="." append="true">
+				<include name="lib/infoGraphicNovel.swc" /> 
+			</compiler.include-libraries> 		
+		</mxmlc>
+	</target>
+	
+
+	<condition property="launch.executable" value="cmd" else="open">
+		<os family="windows" />
+	</condition>
+
+	<condition property="launch.argline" value="/c start " else="">
+		<os family="windows" />
+	</condition>
+	
+	<target name="launch">
+		<exec executable="${launch.executable}" dir="." spawn="true">
+			<arg line="${launch.argline}" />
+			<arg line="${build.swf}" />
+		</exec> 
+	</target>
+	
+	<target name="launch_preloader">
+		<exec executable="${launch.executable}" dir="." resolveexecutable="true">
+			<arg line="${build.swf}" />
+		</exec>
+	</target>
+	
+	<target name="compile-and-launch" depends="compile,launch" />
+</project>
