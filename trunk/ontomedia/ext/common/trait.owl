@@ -991,7 +991,7 @@
     <rdfs:comment>This property specifies the full name of the entity</rdfs:comment>
     <rdfs:domain rdf:resource="#Name"/>
     <rdfs:label>Given Name</rdfs:label>
-    <rdfs:range rdf:resource="http://ontomedia.ecs.soton.ac.uk/ontologies/misc/name#Name-Ordering"/>
+    <rdfs:range rdf:resource="http://contextus.net/ontology/ontomedia/misc/name#Name-Ordering"/>
   </owl:ObjectProperty>
   
   <!-- Profession Properties -->
