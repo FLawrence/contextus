@@ -2,8 +2,8 @@
 <!DOCTYPE owl [
 <!ENTITY ome "http://contextus.net/ontology/ontomedia/core/expression#">
 <!ENTITY omm "http://contextus.net/ontology/ontomedia/core/media#">
-<!ENTITY omt "http://contextus.net/ontology/ontomedia/ext/trait#">
-<!ENTITY bei "http://contextus.net/ontology/ontomedia/ext/fact/being#">
+<!ENTITY omt "http://contextus.net/ontology/ontomedia/ext/common/trait#">
+<!ENTITY bei "http://contextus.net/ontology/ontomedia/ext/common/being#">
 <!ENTITY spc "http://contextus.net/ontology/ontomedia/core/space#">
 <!ENTITY dc "http://purl.org/dc/elements/1.1/">
 <!ENTITY dct "http://purl.org/dc/terms/">
