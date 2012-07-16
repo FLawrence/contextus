@@ -108,7 +108,7 @@
 <owl:Class rdf:ID="Merge">
   <rdfs:subClassOf rdf:resource="&ome;Transformation" />
   <rdfs:comment>This class represents multiple entities merging or otherwise transforming into a single entity</rdfs:comment>
-  <rdfs:label>Division/Seperation</rdfs:label>
+  <rdfs:label>Merge</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:ID="Degradation">
