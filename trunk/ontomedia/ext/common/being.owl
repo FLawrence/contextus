@@ -46,7 +46,7 @@
  <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
  <dct:created>2005-05-11</dct:created>
  <owl:versionInfo>0.25</owl:versionInfo>
- <owl:imports rdf:resource="http://contextus.net/ontology/ontomedia/core/expression#"/>
+ <!-- <owl:imports rdf:resource="http://contextus.net/ontology/ontomedia/core/expression#"/> -->
  <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
 </owl:Ontology>
 
