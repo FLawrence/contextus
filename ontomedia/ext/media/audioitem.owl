@@ -29,7 +29,7 @@
     <dc:creator>Mischa M Tuffield (mailto:mmt04r@ecs.soton.ac.uk)</dc:creator>
     <dct:created>2005-05-10</dct:created>
     <owl:versionInfo>0.1</owl:versionInfo>
-    <owl:imports rdf:resource="http://contextus.net/ontology/ontomedia/core/media" />
+    <!-- <owl:imports rdf:resource="http://contextus.net/ontology/ontomedia/core/media" /> -->
   </owl:Ontology>
 
   <!-- A default audio item -->
