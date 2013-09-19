@@ -58,21 +58,27 @@
 
 <!-- Knowledge Types -->
 
+<owl:Class rdf:ID="Fact">
+  <rdfs:subClassOf rdf:resource="&base;Information" />
+  <rdfs:comment>This class represents something that is observed to be true from outside the containing ome:Context</rdfs:comment>
+  <rdfs:label>Fact</rdfs:label>
+</owl:Class>
+
 <owl:Class rdf:ID="Theory">
   <rdfs:subClassOf rdf:resource="&base;Information" />
-  <rdfs:comment>This class represents theories</rdfs:comment>
+  <rdfs:comment>This class represents something that can be tested to be true</rdfs:comment>
   <rdfs:label>Theory</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:ID="Fact">
+<owl:Class rdf:ID="Belief">
   <rdfs:subClassOf rdf:resource="&base;Information" />
-  <rdfs:comment>This class represents facts</rdfs:comment>
+  <rdfs:comment>This class represents something that is believed to be true although it can't be tested</rdfs:comment>
   <rdfs:label>Fact</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:ID="Memory">
   <rdfs:subClassOf rdf:resource="&base;Information" />
-  <rdfs:comment>This class represents memories</rdfs:comment>
+  <rdfs:comment>This class represents something that was remembered as true</rdfs:comment>
   <rdfs:label>Memory</rdfs:label>
 </owl:Class>
 
